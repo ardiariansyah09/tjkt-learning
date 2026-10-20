@@ -1,0 +1,53 @@
+/* Match the existing Pengenalan Jaringan module shell, without touching gameplay. */
+.topology-consistent{background:#f3f7fb;color:#16304a;font-family:system-ui,Segoe UI,Arial,sans-serif}
+.topology-consistent .module-topbar{background:#103e63;padding:16px 28px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.topology-consistent .module-brand{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none}
+.topology-consistent .module-brand strong{font-size:16px;color:#fff}.topology-consistent .module-brand small{font-size:12px;color:#d1e7f4}
+.topology-consistent .topbar-actions{display:flex;align-items:center;gap:10px}
+.topology-consistent .back-button{background:white;color:#075985;border:1px solid white;padding:10px 18px;border-radius:10px;font-size:13px;font-weight:700;text-decoration:none}
+.topology-consistent .theme-button{background:#e2f3f7;color:#10455e}
+.topology-consistent .layout{display:grid;grid-template-columns:280px minmax(0,1fr);max-width:1300px;margin:auto;min-height:calc(100vh - 70px)}
+.topology-consistent .lesson-sidebar{background:white;border-right:1px solid #d8e2ea;padding:20px}
+.topology-consistent .lesson-sidebar h2{font-size:1.35rem;margin:0 0 10px;color:#16304a}
+.topology-consistent .muted{color:#5e7487}.topology-consistent .small{font-size:.85rem}
+.topology-consistent .progress{height:10px;background:#dceaf0;border-radius:10px;overflow:hidden;margin:15px 0 8px}
+.topology-consistent .progress span{background:#0891a4;height:100%;display:block;transition:width .2s}
+.topology-consistent .lesson-nav{display:block;margin:16px 0}
+.topology-consistent .lesson-nav button,.topology-consistent #reset{display:block;width:100%;margin:5px 0;text-align:left;background:#f1f6fa;color:#16304a;border:1px solid #d5e4ef;padding:12px;border-radius:9px;font-weight:400;font-size:inherit}
+.topology-consistent .lesson-nav button.active{background:#d9f3fa;border-color:#087f91;font-weight:700}
+.topology-consistent .lesson-nav button:disabled{opacity:.55;cursor:not-allowed}
+.topology-consistent .lesson-main{padding:26px;max-width:950px;width:100%;min-width:0}
+.topology-consistent .panel{background:white;border:1px solid #dbe5ec;border-radius:16px;padding:24px;margin-bottom:18px;box-shadow:0 4px 16px #19334d0a;color:#16304a}
+body.topology-page.topology-consistent .lesson-hero{background:linear-gradient(125deg,#075985,#0f172a)!important;color:#fff!important;padding:clamp(28px,4vw,48px);border:0}
+body.topology-page.topology-consistent .lesson-hero h1{font-size:clamp(1.8rem,3.5vw,2.45rem);line-height:1.2;margin:10px 0;color:#fff!important}
+body.topology-page.topology-consistent .lesson-hero p{color:#dbeafe!important;margin:0;line-height:1.7}
+.topology-consistent .lesson-kicker{color:#7dd3fc;font-size:.76rem;font-weight:800;letter-spacing:.12em}
+.topology-consistent .lesson-content{min-height:0}
+.topology-consistent .panel h2{font-size:1.35rem}.topology-consistent p,.topology-consistent li{line-height:1.7}
+.topology-consistent .deep-objectives{padding:18px 20px;border:1px solid #bfdbfe;border-radius:14px;background:linear-gradient(135deg,#eff6ff,#f8fafc)}
+.topology-consistent .deep-objectives h2{margin:0 0 8px;color:#075985!important}
+.topology-consistent .deep-figure{margin:16px 0;padding:12px 16px;border:1px solid #d8e5ef;border-radius:14px;background:#f7fafc}
+.topology-consistent .deep-figure .diagram{display:block;width:100%;max-width:660px;height:auto;margin:0 auto;background:#0d2039}
+.topology-consistent .deep-figure figcaption{text-align:center;color:#5e7487;font-size:.9rem;line-height:1.55;margin-top:8px}
+.topology-consistent .diagram rect{fill:#173f5b;stroke:#69e6ed;stroke-width:2}
+.topology-consistent .actions{display:block}.topology-consistent .feedback{padding:12px;border-radius:10px;background:#edf8fb;margin:0 0 12px;min-height:45px;flex:auto}
+.topology-consistent .actions button{background:#087f91;border:0;border-radius:9px;color:white;padding:11px 17px;font-weight:700;margin:5px 6px 5px 0}
+.topology-consistent .actions button.secondary{background:#e5f0f7;color:#16465b}
+.topology-consistent .actions button:disabled{opacity:.4}
+.topology-consistent .choice{border:1px solid #bed2de;border-radius:10px;background:#f5f9fc;color:#16304a;padding:12px}
+.topology-consistent .choice.selected{background:#c8f4ef;border-color:#087f91}
+.topology-consistent .info,.topology-consistent .lesson-note{background:#edf8fb;border-left:4px solid #0892a5}
+.topology-consistent.dark{background:#101d2d;color:#e6f5ff}
+.topology-consistent.dark .lesson-sidebar,.topology-consistent.dark .panel{background:#192c41!important;color:#e6f5ff;border-color:#34506b}
+.topology-consistent.dark .lesson-hero h1{color:#fff!important}
+.topology-consistent.dark .lesson-hero p,.topology-consistent.dark .muted{color:#dbeafe!important}
+.topology-consistent.dark .lesson-sidebar h2{color:#e6f5ff!important}
+.topology-consistent.dark .deep-objectives{background:#173149;border-color:#38516c}
+.topology-consistent.dark .deep-objectives h2{color:#7dd3fc!important}
+.topology-consistent.dark .deep-figure{background:#173149;border-color:#38516c}
+.topology-consistent.dark .deep-figure figcaption{color:#bdd2e0}
+.topology-consistent.dark .lesson-nav button,.topology-consistent.dark #reset{background:#253c54;color:#e6f5ff;border-color:#34506b}
+.topology-consistent.dark .lesson-nav button.active{background:#16556a}
+.topology-consistent.dark .feedback{background:#234154;color:#e6f5ff}
+@media(max-width:760px){.topology-consistent .layout{grid-template-columns:1fr}.topology-consistent .lesson-sidebar{border-right:0;border-bottom:1px solid #d8e2ea}.topology-consistent .lesson-main{padding:12px}.topology-consistent .panel{padding:16px}.topology-consistent .module-topbar{padding:14px 16px}}
+@media print{.topology-consistent .module-topbar,.topology-consistent .layout{display:none!important}}

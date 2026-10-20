@@ -1,28 +1,22 @@
 
+import { bindThemeToggle } from './theme.js';
+
 const moduleList = document.getElementById("moduleList");
 const themeToggle = document.getElementById("themeToggle");
 
-// ================================
-// PENGATURAN TEMA
-// ================================
+bindThemeToggle(themeToggle);
 
-const savedTheme = localStorage.getItem("tjkt-theme");
-
-if (savedTheme === "dark") {
-  document.body.classList.add("dark");
-}
-
-if (themeToggle) {
-  themeToggle.addEventListener("click", () => {
-    document.body.classList.toggle("dark");
-
-    const theme = document.body.classList.contains("dark")
-      ? "dark"
-      : "light";
-
-    localStorage.setItem("tjkt-theme", theme);
-  });
-}
+const moduleIcons = {
+  "pengenalan-jaringan": "🧭",
+  "topologi-jaringan": "🔀",
+  "perangkat-jaringan": "🔌",
+  "media-transmisi": "📡",
+  "osi-tcpip": "🧱",
+  "ipv4-subnetting": "🧮",
+  "protokol-layanan": "🌐",
+  troubleshooting: "🛠️",
+  "switching-vlan": "🔗"
+};
 
 // ================================
 // MEMUAT KATALOG PEMBELAJARAN
@@ -58,18 +52,32 @@ async function loadModules() {
     modules.forEach((module) => {
       const card = document.createElement("article");
       card.className = "module-card";
+      card.classList.add(module.status === "published" ? "is-published" : "is-coming-soon");
+      card.dataset.moduleId = module.id || "";
+
+      const cardTop = document.createElement("div");
+      cardTop.className = "module-card-top";
 
       const category = document.createElement("small");
+      category.className = "module-category";
       category.textContent =
         `${module.category || "Umum"} • Kelas ${module.classLevel || "-"}`;
 
+      const icon = document.createElement("span");
+      icon.className = "module-icon";
+      icon.setAttribute("aria-hidden", "true");
+      icon.textContent = moduleIcons[module.id] || "📚";
+
       const title = document.createElement("h3");
       title.textContent = module.title || "Tanpa Judul";
+      title.id = `module-title-${module.id || "untitled"}`;
+      card.setAttribute("aria-labelledby", title.id);
 
       const description = document.createElement("p");
       description.textContent = module.description || "";
 
-      card.append(category, title, description);
+      cardTop.append(category, icon);
+      card.append(cardTop, title, description);
 
       if (module.status === "published" && module.path) {
         const link = document.createElement("a");

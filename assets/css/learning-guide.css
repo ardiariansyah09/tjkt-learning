@@ -1,0 +1,296 @@
+.deep-lesson,
+.ip-learning-intro,
+.ip-learning-end {
+  --guide-ink: #16344f;
+  --guide-muted: #526a80;
+  --guide-border: #d8e5ef;
+  color: var(--guide-ink);
+  line-height: 1.8;
+}
+
+.deep-lesson {
+  margin: 18px 0 28px;
+}
+
+.deep-heading {
+  border-left: 5px solid #0284c7;
+  padding: 5px 0 5px 16px;
+  margin: 12px 0 24px;
+}
+
+.deep-heading h2 {
+  margin: 5px 0;
+  font-size: clamp(1.35rem, 2.5vw, 1.85rem);
+  line-height: 1.35;
+}
+
+.deep-kicker,
+.ip-format-kicker {
+  color: #0369a1;
+  font-size: .76rem;
+  font-weight: 800;
+  letter-spacing: .08em;
+}
+
+.deep-section {
+  margin: 22px 0;
+  padding: 0 2px;
+  scroll-margin-top: 92px;
+}
+
+.deep-section h3 {
+  margin: 0 0 10px;
+  color: #075985;
+  font-size: 1.15rem;
+  line-height: 1.4;
+}
+
+.deep-section p {
+  margin: 0 0 13px;
+  line-height: 1.85;
+}
+
+.deep-section li,
+.ip-learning-end li {
+  margin-bottom: 6px;
+  line-height: 1.7;
+}
+
+.deep-callout,
+.ip-format-card {
+  margin: 20px 0;
+  padding: 18px 20px;
+  border: 1px solid #b8dff5;
+  border-radius: 14px;
+  background: #edf7ff;
+}
+
+.deep-callout h3 {
+  margin: 0 0 8px;
+  color: #075985;
+}
+
+.deep-callout p {
+  margin: 6px 0 0;
+}
+
+.deep-example,
+.deep-summary {
+  border-color: #b9e8d7;
+  background: #f0fdf9;
+}
+
+.deep-toc {
+  display: grid;
+  gap: 6px;
+  margin: 18px 0;
+  padding: 17px;
+  border: 1px solid var(--guide-border);
+  border-radius: 14px;
+  background: #f7fafc;
+}
+
+.deep-toc strong {
+  margin-bottom: 5px;
+}
+
+.deep-toc a {
+  padding: 4px 0;
+  color: #0369a1;
+  text-decoration: none;
+}
+
+.deep-toc a:hover {
+  text-decoration: underline;
+}
+
+.deep-case details,
+.ip-format-details {
+  padding: 12px 16px;
+  border: 1px solid #bae6fd;
+  border-radius: 10px;
+  background: #f0f9ff;
+}
+
+.deep-case summary,
+.ip-format-details summary {
+  color: #075985;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.deep-summary {
+  padding: 18px 22px;
+  border-radius: 14px;
+}
+
+.deep-note,
+.ip-format-caption {
+  color: var(--guide-muted);
+  font-size: .93rem;
+  line-height: 1.7;
+}
+
+.deep-note {
+  padding-top: 15px;
+  border-top: 1px solid var(--guide-border);
+}
+
+.ip-learning-intro,
+.ip-learning-end {
+  margin: 1.4rem 0 1.8rem;
+}
+
+.ip-format-objectives,
+.ip-format-prompt {
+  margin: 0 0 1rem;
+  padding: 1rem 1.2rem;
+  border: 1px solid #bfdbfe;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #eff6ff, #f8fafc);
+}
+
+.ip-format-objectives h2,
+.ip-format-prompt h2 {
+  margin: 0 0 .5rem;
+  color: #075985;
+  font-size: 1.05rem;
+}
+
+.ip-format-objectives ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.ip-format-objectives li {
+  margin: .25rem 0;
+}
+
+.ip-format-prompt {
+  border-color: #b8dff5;
+  background: #edf7ff;
+}
+
+.ip-format-prompt p {
+  margin: 0;
+}
+
+.ip-format-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.ip-format-card {
+  margin: 0;
+  padding: 1.15rem;
+  border-color: #bfdbfe;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #eff6ff, #f8fafc);
+  color: #0f172a;
+}
+
+.ip-format-card h2 {
+  margin: 0 0 .55rem;
+  color: #075985;
+  font-size: 1.04rem;
+}
+
+.ip-format-card p {
+  margin: 0;
+  line-height: 1.7;
+}
+
+.ip-format-section {
+  margin: 1.6rem 0 .4rem;
+}
+
+.ip-learning-end {
+  padding-top: 1rem;
+  border-top: 1px solid #cbd5e1;
+}
+
+.ip-learning-end h2 {
+  margin-top: 1.2rem;
+}
+
+.ip-format-details {
+  padding: .8rem 1rem;
+  border-radius: 12px;
+  color: #0f172a;
+}
+
+.ip-format-details p {
+  line-height: 1.7;
+}
+
+body.dark .deep-lesson,
+body.dark .ip-learning-intro,
+body.dark .ip-learning-end {
+  --guide-ink: #e2e8f0;
+  --guide-muted: #a9bdd0;
+  --guide-border: #38516c;
+  color: var(--guide-ink);
+}
+
+body.dark .deep-kicker,
+body.dark .ip-format-kicker,
+body.dark .deep-section h3,
+body.dark .deep-callout h3,
+body.dark .deep-case summary,
+body.dark .deep-toc a,
+body.dark .ip-format-card h2,
+body.dark .ip-format-details summary {
+  color: #7dd3fc;
+}
+
+body.dark .deep-callout,
+body.dark .deep-example,
+body.dark .deep-summary,
+body.dark .deep-toc,
+body.dark .deep-case details,
+body.dark .ip-format-card,
+body.dark .ip-format-objectives,
+body.dark .ip-format-details {
+  border-color: #38516c;
+  background: #173149;
+  color: #e2e8f0;
+}
+
+body.dark .ip-format-prompt {
+  border-color: #38516c;
+  background: #173149;
+  color: #e2e8f0;
+}
+
+body.dark .ip-format-objectives h2,
+body.dark .ip-format-prompt h2 {
+  color: #7dd3fc;
+}
+
+body.dark .deep-note,
+body.dark .ip-format-caption {
+  color: #a9bdd0;
+}
+
+@media (max-width: 680px) {
+  .deep-callout {
+    padding: 14px;
+  }
+
+  .deep-toc {
+    padding: 13px;
+  }
+
+  .deep-section {
+    margin: 18px 0;
+  }
+
+  .ip-format-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ip-format-card {
+    padding: 1rem;
+  }
+}

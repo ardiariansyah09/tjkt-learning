@@ -9,6 +9,10 @@ body.intro-module aside button.active{background:rgba(2,132,199,.10);border-colo
 body.intro-module aside button:disabled{opacity:.5}
 body.intro-module main{max-width:1100px;padding:30px clamp(16px,3vw,42px)}
 body.intro-module .panel{background:var(--surface);border:1px solid var(--border);border-radius:16px;box-shadow:0 5px 22px rgba(15,23,42,.045);padding:26px;margin-bottom:20px}
+body.intro-module main>.panel:first-child{background:linear-gradient(125deg,#075985,#0f172a);border:0;padding:clamp(28px,4vw,48px);color:#fff}
+body.intro-module main>.panel:first-child h1{color:#fff;font-size:clamp(1.8rem,3.5vw,2.45rem);line-height:1.2}
+body.intro-module main>.panel:first-child p{color:#dbeafe}
+body.intro-module main>.panel:first-child .lesson-kicker{color:#7dd3fc;font-size:.76rem;font-weight:800;letter-spacing:.12em}
 body.intro-module h1,body.intro-module h2,body.intro-module h3{color:var(--text)}
 body.intro-module .muted,body.intro-module .small{color:var(--muted)}
 body.intro-module .btn{background:#0369a1;color:#fff;border:1px solid #0369a1;border-radius:10px;padding:11px 17px;font-weight:700}
@@ -29,5 +33,9 @@ body.intro-module .intro-case select,body.intro-module input[type=text]{backgrou
 body.intro-module .success{color:#15803d}body.intro-module.dark .success{color:#86efac}
 body.intro-module .error{color:#b91c1c}body.intro-module.dark .error{color:#fca5a5}
 body.intro-module .cert{color:#102a43;background:#fff}
+body.intro-module .deep-objectives{padding:18px 20px;border:1px solid #bfdbfe;border-radius:14px;background:linear-gradient(135deg,#eff6ff,#f8fafc)}
+body.intro-module .deep-objectives h2{margin:0 0 8px;color:#075985}
+body.intro-module.dark .deep-objectives{background:#173149;border-color:#38516c}
+body.intro-module.dark .deep-objectives h2{color:#7dd3fc}
 @media(max-width:760px){body.intro-module .layout{grid-template-columns:1fr}body.intro-module aside{border-right:0;border-bottom:1px solid var(--border);padding:18px}body.intro-module main{padding:16px}body.intro-module .panel{padding:18px}}
 @media print{body.intro-module .cert{background:#fff!important;color:#102a43!important}}

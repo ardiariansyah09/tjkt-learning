@@ -1,2 +1,3 @@
-/* Tema modul pengenalan, konsisten dengan portal utama. */
-(()=>{const key="tjkt-theme",btn=document.getElementById("introThemeToggle");if(!btn)return;try{document.body.classList.toggle("dark",localStorage.getItem(key)==="dark")}catch{};const sync=()=>{btn.textContent=document.body.classList.contains("dark")?"☀️":"🌙"};btn.addEventListener("click",()=>{document.body.classList.toggle("dark");try{localStorage.setItem(key,document.body.classList.contains("dark")?"dark":"light")}catch{}sync()});sync()})();
+import('./theme.js')
+  .then(({ bindThemeToggle }) => bindThemeToggle(document.getElementById('introThemeToggle')))
+  .catch((error) => console.error('Tema halaman tidak dapat diinisialisasi:', error));

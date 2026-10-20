@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Media Transmisi Jaringan | TJKT Learning Hub</title>
+  <link rel="stylesheet" href="../../../assets/css/style.css">
+  <link rel="stylesheet" href="../../../assets/css/module.css">
+  <link rel="stylesheet" href="../../../assets/css/media-transmisi.css?v=2">
+</head>
+<body class="module-page media-module">
+  <header class="module-topbar">
+    <a class="module-brand" href="../../../index.html"><span class="brand-symbol">🌐</span><span><strong>TJKT Learning Hub</strong></span></a>
+    <div class="topbar-actions">
+      <a class="back-button" href="../../../index.html">← Kembali ke Portal</a>
+      <button id="mediaThemeToggle" class="theme-button" type="button" aria-label="Ganti tema">🌙</button>
+    </div>
+  </header>
+
+  <div class="module-layout media-layout">
+    <aside class="lesson-sidebar" aria-label="Navigasi materi">
+      <div class="sidebar-heading">
+        <span class="eyebrow-dark">MODUL DASAR JARINGAN</span>
+        <h2>Media Transmisi</h2>
+        <p>Kelas X • Materi dan simulasi 2D</p>
+      </div>
+      <nav class="lesson-nav" aria-label="Daftar bahasan">
+        <a href="#simulator">Simulator Media</a>
+        <a href="#virtual-tester">Virtual Cable Tester</a>
+        <a href="#tembaga">Kabel Tembaga</a>
+        <a href="#fiber">Fiber Optik</a>
+        <a href="#nirkabel">Media Nirkabel</a>
+        <a href="#memilih">Memilih dan Menguji Media</a>
+      </nav>
+    </aside>
+
+    <main class="lesson-main">
+      <section class="lesson-hero">
+        <span class="lesson-kicker">MATERI JARINGAN · KELAS X</span>
+        <h1>Media Transmisi Jaringan</h1>
+        <p>Kenali bagaimana data bergerak melalui kabel tembaga, cahaya pada fiber optik, dan gelombang radio Wi-Fi.</p>
+      </section>
+
+      <article class="lesson-content">
+        <section class="media-objectives">
+          <h2>🎯 Tujuan Pembelajaran</h2>
+          <ul>
+            <li>Membedakan cara kerja media tembaga, fiber optik, dan nirkabel.</li>
+            <li>Menghubungkan jangkauan, kondisi lingkungan, kapasitas, dan biaya dengan pemilihan media.</li>
+            <li>Menggunakan simulasi untuk mengamati pengaruh jarak, penghalang, dan interferensi.</li>
+            <li>Memilih alat pemeriksaan yang sesuai dengan media dan jenis gangguan.</li>
+          </ul>
+        </section>
+
+        <section id="simulator" class="media-simulator" aria-labelledby="simulatorTitle">
+          <div class="media-simulator-heading">
+            <span class="lesson-kicker">LAB VISUAL · 2D</span>
+            <h2 id="simulatorTitle">Simulator Jalur Transmisi</h2>
+            <p>Pilih media dan ubah kondisi. Tekan <strong>Kirim Paket</strong> untuk melihat apakah jalur simulasi masih dapat membawa data.</p>
+          </div>
+          <div class="media-types" role="group" aria-label="Pilih media transmisi">
+            <button type="button" data-medium="copper" aria-pressed="true">🧵 Kabel Tembaga</button>
+            <button type="button" data-medium="fiber" aria-pressed="false">✨ Fiber Optik</button>
+            <button type="button" data-medium="wireless" aria-pressed="false">📡 Wi-Fi</button>
+          </div>
+          <div class="media-controls">
+            <label for="mediaDistance">Jarak simulasi <output id="distanceOutput">30 m</output></label>
+            <input id="mediaDistance" type="range" min="1" max="1000" value="30">
+            <label class="media-toggle"><input id="mediaObstacle" type="checkbox"> Ada penghalang</label>
+            <label class="media-toggle"><input id="mediaInterference" type="checkbox"> Ada interferensi radio</label>
+            <button id="sendMediaPacket" class="primary-action" type="button">📨 Kirim Paket</button>
+          </div>
+          <figure class="media-diagram">
+            <svg id="mediaSvg" viewBox="0 0 800 260" role="img" aria-label="Visualisasi jalur transmisi data">
+              <title>Simulator jalur media transmisi</title>
+            </svg>
+            <figcaption id="mediaCaption">Jalur kabel Ethernet tembaga dari PC ke switch.</figcaption>
+          </figure>
+          <div class="media-readout">
+            <div><span>Indikator kualitas relatif</span><strong id="qualityValue">—</strong></div>
+            <div><span>Kondisi jalur</span><strong id="linkState">Siap diuji</strong></div>
+          </div>
+          <p id="mediaFeedback" class="media-feedback" role="status" aria-live="polite">Atur kondisi lalu kirim paket untuk memulai simulasi.</p>
+          <p class="media-disclaimer">Simulasi ini bersifat konseptual, bukan pengukuran throughput atau jaminan jarak. Batas aktual bergantung pada standar, kabel, transceiver, daya pancar, instalasi, dan lingkungan.</p>
+        </section>
+
+        <section id="virtual-tester" class="media-simulator media-tool-simulator" aria-labelledby="testerTitle">
+          <div class="media-simulator-heading">
+            <span class="lesson-kicker">VIRTUAL TOOL · 2D</span>
+            <h2 id="testerTitle">Simulasi Cable Tester</h2>
+            <p>Amati pemetaan delapan pin dan jalankan pengujian kontinuitas. Simulasi mengasumsikan kabel straight-through dengan susunan pin yang sama di kedua ujung.</p>
+          </div>
+          <div class="media-types cable-scenarios" role="group" aria-label="Kondisi kabel simulasi">
+            <button type="button" data-cable-fault="normal" aria-pressed="true">Kabel normal</button>
+            <button type="button" data-cable-fault="open" aria-pressed="false">Pin terputus</button>
+            <button type="button" data-cable-fault="miswire" aria-pressed="false">Pin tertukar</button>
+          </div>
+          <button id="runCableTest" class="primary-action" type="button">▶ Jalankan Cable Tester</button>
+          <figure class="media-diagram">
+            <svg id="cableTesterSvg" viewBox="0 0 800 330" role="img" aria-label="Peta delapan pin kabel Ethernet pada cable tester"></svg>
+            <figcaption id="cableTesterCaption">Pemetaan straight-through: pin 1 sampai 8 tersambung lurus.</figcaption>
+          </figure>
+          <p id="cableTesterFeedback" class="media-feedback" role="status" aria-live="polite">Pilih kondisi kabel, lalu jalankan alat virtual untuk membaca hasilnya.</p>
+          <p class="media-disclaimer">Alat tester dasar memeriksa kontinuitas dan wire map; alat sertifikasi mengukur parameter tambahan. Simulasi bukan pengganti pemeriksaan fisik kabel.</p>
+        </section>
+
+        <section id="tembaga" class="media-topic">
+          <h2>🧵 Kabel Tembaga (Twisted Pair)</h2>
+          <p>Ethernet tembaga mengirimkan sinyal listrik melalui pasangan kabel yang dipilin. Pemilinan membantu mengurangi gangguan elektromagnetik; tipe kabel, kategori, kualitas terminasi, dan instalasi memengaruhi kinerja.</p>
+          <ul>
+            <li>UTP tidak memiliki lapisan pelindung tambahan; STP/FTP memiliki rancangan pelindung yang berbeda dan pemasangannya harus sesuai.</li>
+            <li>Ethernet twisted pair umumnya menggunakan konektor modular 8P8C yang sering disebut RJ45.</li>
+            <li>Batas channel Ethernet tembaga yang umum adalah hingga 100 meter pada standar dan instalasi tertentu; periksa spesifikasi yang digunakan.</li>
+          </ul>
+          <div class="media-callout"><strong>Alat yang relevan:</strong> crimping tool untuk terminasi, cable tester untuk memeriksa kontinuitas dan susunan pin, serta sertifikasi kabel untuk pengujian yang lebih mendalam.</div>
+        </section>
+
+        <section id="fiber" class="media-topic">
+          <h2>✨ Fiber Optik</h2>
+          <p>Fiber membawa informasi sebagai pulsa cahaya di dalam inti serat. Karena tidak menghantarkan sinyal listrik antargedung, fiber tahan terhadap interferensi elektromagnetik dan dapat mendukung jarak atau kapasitas yang lebih tinggi sesuai jenis serat serta transceiver.</p>
+          <ul>
+            <li>Single-mode dan multimode memiliki karakteristik serta pasangan transceiver yang berbeda.</li>
+            <li>Konektor dan permukaan ujung serat perlu dijaga bersih; jangan melihat langsung ke ujung fiber aktif.</li>
+            <li>Radius tekuk, sambungan, redaman, dan kecocokan optik perlu diperhatikan saat instalasi.</li>
+          </ul>
+          <div class="media-callout"><strong>Alat yang relevan:</strong> visual fault locator untuk penelusuran dasar, optical power meter dan light source untuk pengukuran redaman, serta OTDR untuk analisis kejadian sepanjang jalur oleh teknisi terlatih.</div>
+        </section>
+
+        <section id="nirkabel" class="media-topic">
+          <h2>📡 Media Nirkabel</h2>
+          <p>Wi-Fi mengirim data melalui gelombang radio antara perangkat klien dan access point. Mobilitas menjadi keunggulan, tetapi kualitas dapat berubah karena jarak, dinding, kepadatan kanal, pita frekuensi, daya pancar, serta interferensi.</p>
+          <ul>
+            <li>Posisi access point dan perencanaan kanal membantu cakupan serta kapasitas.</li>
+            <li>Penghalang dan interferensi dapat menurunkan kualitas; kondisi tiap lokasi berbeda.</li>
+            <li>Keamanan tetap memerlukan autentikasi dan konfigurasi yang sesuai, bukan hanya sinyal yang kuat.</li>
+          </ul>
+          <div class="media-callout"><strong>Alat yang relevan:</strong> Wi-Fi analyzer membantu mengamati kanal dan kekuatan sinyal. Gunakan hasil survei lokasi, bukan hanya perkiraan jarak, untuk merencanakan cakupan.</div>
+        </section>
+
+        <section id="memilih" class="media-topic">
+          <h2>🧭 Memilih dan Menguji Media</h2>
+          <p>Pilih media berdasarkan jarak, kebutuhan kapasitas, kondisi elektromagnetik, mobilitas, biaya, keamanan fisik, kemudahan perawatan, dan standar perangkat di kedua ujung.</p>
+          <div class="media-comparison">
+            <article><h3>Tembaga</h3><p>Praktis untuk koneksi Ethernet lokal dan mudah diuji dengan alat kabel yang sesuai.</p></article>
+            <article><h3>Fiber</h3><p>Cocok untuk uplink, jarak lebih panjang, atau lingkungan yang memerlukan isolasi dari gangguan listrik.</p></article>
+            <article><h3>Nirkabel</h3><p>Memberi mobilitas; cakupan perlu dirancang dan diverifikasi di lokasi sebenarnya.</p></article>
+          </div>
+          <details class="media-case">
+            <summary>Studi kasus: menghubungkan dua gedung sekolah</summary>
+            <p>Bandingkan jarak, jalur antarbangunan, risiko petir/induksi, kapasitas uplink, biaya instalasi, dan perangkat optik yang tersedia. Fiber sering menjadi kandidat yang baik untuk antarbangunan, tetapi rancangan harus mengikuti standar dan penilaian teknis setempat. Cable tester tembaga saja tidak dapat menguji kualitas jalur fiber.</p>
+          </details>
+        </section>
+      </article>
+    </main>
+  </div>
+  <script type="module" src="../../../assets/js/media-transmisi.js?v=2"></script>
+</body>
+</html>

@@ -40,11 +40,7 @@ export function mountCertificate(root,gate,ids){
   const cert=document.getElementById('stage9PrintableCertificate');
   if(cert)cert.remove();
   const paper=element('section','stage9-printable');paper.id='stage9PrintableCertificate';
-  paper.append(element('div','stage9-cert-logo','TJKT LEARNING HUB'),element('h1','','SERTIFIKAT PENYELESAIAN'),element('p','','Diberikan kepada:'),element('h2','',name),
-   element('p','','Telah menyelesaikan seluruh aktivitas pembelajaran'),element('h3','',MODULE_NAME),
-   element('p','',`Nilai Posttest Terbaik: ${idScore(gate,'posttest')}/100`),
-   element('p','',`Tanggal penerbitan: ${dateID()}`),
-   element('small','','Sertifikat mandiri dari browser. Bukan sertifikat resmi sekolah atau bukti identitas terverifikasi.'));
+  window.TJKTCertificate.render(paper,{name,module:MODULE_NAME,score:idScore(gate,'posttest')});
   document.body.append(paper);
   const print=element('button','primary-action','Cetak / Simpan PDF');
   print.onclick=()=>window.print();

@@ -1,0 +1,24 @@
+/* One consistent print layout for all learning modules. */
+.tjkt-certificate-paper{display:none}
+@media print{
+  @page{size:A4 landscape;margin:0}
+  html,body{background:#fff!important;margin:0!important;padding:0!important;overflow:visible!important}
+  body:has(.tjkt-certificate-paper) > :not(.tjkt-certificate-paper){display:none!important}
+  body:has(.tjkt-certificate-paper) .tjkt-certificate-paper{
+    display:flex!important;position:static!important;box-sizing:border-box!important;
+    width:297mm!important;height:210mm!important;min-height:210mm!important;max-height:210mm!important;
+    margin:0!important;padding:19mm 24mm!important;border:7mm double #0d5479!important;
+    background:white!important;color:#15334b!important;flex-direction:column!important;align-items:center!important;
+    justify-content:center!important;text-align:center!important;overflow:hidden!important;
+    break-inside:avoid!important;page-break-inside:avoid!important;box-shadow:none!important;
+  }
+  .tjkt-certificate-paper .tjkt-cert-brand{font:800 18pt system-ui,Arial,sans-serif!important;color:#0d5479!important;letter-spacing:.06em!important}
+  .tjkt-certificate-paper .tjkt-cert-school{font:600 10pt system-ui,Arial,sans-serif!important;color:#52697d!important;margin:3mm 0!important}
+  .tjkt-certificate-paper .tjkt-cert-rule{height:2px!important;width:72%!important;background:#0d5479!important;margin:5mm 0!important}
+  .tjkt-certificate-paper .tjkt-cert-heading{font:800 26pt system-ui,Arial,sans-serif!important;letter-spacing:.06em!important;margin:3mm 0 5mm!important;color:#15334b!important}
+  .tjkt-certificate-paper .tjkt-cert-intro{font:normal 11pt system-ui,Arial,sans-serif!important;margin:2mm 0!important;color:#41576a!important}
+  .tjkt-certificate-paper .tjkt-cert-name{font:700 25pt system-ui,Arial,sans-serif!important;margin:3mm 0 6mm!important;padding:0 12mm 3mm!important;border:0!important;border-bottom:2px solid #0d5479!important;color:#0d5479!important;overflow-wrap:anywhere!important}
+  .tjkt-certificate-paper .tjkt-cert-module{font:700 18pt system-ui,Arial,sans-serif!important;margin:3mm 0 5mm!important;color:#15334b!important}
+  .tjkt-certificate-paper .tjkt-cert-score,.tjkt-certificate-paper .tjkt-cert-date{font:500 11pt system-ui,Arial,sans-serif!important;margin:2mm 0!important}
+  .tjkt-certificate-paper .tjkt-cert-disclaimer{font:normal 8pt system-ui,Arial,sans-serif!important;color:#64748b!important;margin-top:7mm!important;max-width:220mm!important}
+}

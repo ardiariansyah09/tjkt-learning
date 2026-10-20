@@ -2,20 +2,74 @@
   {
     "id": "pengenalan-jaringan",
     "title": "Pengenalan Jaringan Komputer",
-    "description": "Kenali konsep, manfaat, LAN/MAN/WAN, client-server, dan komponen jaringan melalui simulasi dan mini-games.",
+    "description": "Konsep dasar jaringan, arsitektur, simulasi, dan Network Arcade.",
     "category": "Dasar Jaringan",
     "classLevel": "X",
     "status": "published",
     "path": "modules/dasar-jaringan/pengenalan-jaringan/"
   },
   {
+    "id": "topologi-jaringan",
+    "title": "Topologi Jaringan",
+    "description": "Star, Bus, Ring, Mesh, Tree, Hybrid, Topology Builder, dan game interaktif.",
+    "category": "Dasar Jaringan",
+    "classLevel": "X",
+    "status": "published",
+    "path": "modules/dasar-jaringan/topologi-jaringan/"
+  },
+  {
+    "id": "perangkat-jaringan",
+    "title": "Perangkat Jaringan",
+    "description": "Pelajari NIC, switch, router, access point, modem/ONT, dan firewall melalui ilustrasi, praktikum, serta evaluasi interaktif.",
+    "category": "Dasar Jaringan",
+    "classLevel": "X",
+    "status": "published",
+    "path": "modules/dasar-jaringan/perangkat-jaringan/"
+  },
+  {
+    "id": "media-transmisi",
+    "title": "Media Transmisi Jaringan",
+    "description": "Bandingkan kabel tembaga, fiber optik, dan media nirkabel melalui simulator 2D.",
+    "category": "Dasar Jaringan",
+    "classLevel": "X",
+    "status": "published",
+    "path": "modules/dasar-jaringan/media-transmisi/"
+  },
+  {
+    "id": "osi-tcpip",
+    "title": "Model OSI dan TCP/IP",
+    "description": "Memahami lapisan komunikasi data dan enkapsulasi.",
+    "category": "Dasar Jaringan",
+    "classLevel": "X",
+    "status": "coming-soon",
+    "path": ""
+  },
+  {
     "id": "ipv4-subnetting",
     "title": "IP Address & Subnetting",
-    "description": "Pelajari IPv4, bilangan biner, subnet mask, CIDR, subnetting, dan VLSM melalui teori dan praktikum interaktif.",
+    "description": "IPv4, CIDR, subnetting, VLSM, dan IP Quest.",
     "category": "Dasar Jaringan",
     "classLevel": "X",
     "status": "published",
     "path": "modules/dasar-jaringan/ipv4-subnetting/"
+  },
+  {
+    "id": "protokol-layanan",
+    "title": "Protokol dan Layanan Jaringan Dasar",
+    "description": "DNS, DHCP, HTTP/HTTPS, dan layanan jaringan dasar.",
+    "category": "Dasar Jaringan",
+    "classLevel": "X",
+    "status": "coming-soon",
+    "path": ""
+  },
+  {
+    "id": "troubleshooting",
+    "title": "Troubleshooting Jaringan Dasar",
+    "description": "Analisis gangguan, ping, traceroute, dan pemecahan masalah.",
+    "category": "Dasar Jaringan",
+    "classLevel": "X",
+    "status": "coming-soon",
+    "path": ""
   },
   {
     "id": "switching-vlan",

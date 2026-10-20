@@ -1,4 +1,4 @@
-import {mountIPQuest} from './ip-quest.js';
+import {mountIPQuest} from './ip-quest.js?v=3';
 import {questions} from './question-bank.js';
 const PREFIX='tjkt:ipv4-subnetting:stage8:';
 function el(tag,cls='',text=''){const x=document.createElement(tag);if(cls)x.className=cls;if(text)x.textContent=text;return x;}

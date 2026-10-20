@@ -7,7 +7,7 @@
 
   <title>TJKT Interactive Learning Hub</title>
 
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css?v=3">
 </head>
 <body>
 
@@ -16,7 +16,7 @@
       <div class="brand-icon">🌐</div>
       <div>
         <strong>TJKT Learning Hub</strong>
-        <small>SMK Wikrama Bogor</small>
+        <small>Materi Teknik Jaringan Komputer dan Telekomunikasi</small>
       </div>
     </div>
 
@@ -28,21 +28,50 @@
   <main class="container">
 
     <section class="hero">
-      <span class="eyebrow">INTERACTIVE LEARNING</span>
-
-      <h1>Belajar. Praktik. Kuasai.</h1>
-
-      <p>
-        Platform pembelajaran interaktif Teknik Jaringan
-        Komputer dan Telekomunikasi.
-        Pelajari teori, gunakan simulator,
-        kerjakan latihan, dan selesaikan tantangan.
-      </p>
+      <div class="hero-copy">
+        <span class="eyebrow">TEKNIK JARINGAN KOMPUTER & TELEKOMUNIKASI</span>
+        <h1>Belajar. Praktik. Kuasai.</h1>
+        <p>
+          Pelajari konsep jaringan, uji pemahaman lewat simulator,
+          dan bangun keterampilan melalui latihan interaktif.
+        </p>
+        <div class="hero-actions">
+          <a class="hero-action primary" href="#catalog">Jelajahi Materi <span aria-hidden="true">↓</span></a>
+          <a class="hero-action secondary" href="https://www.instagram.com/ardiariansyah07/" target="_blank" rel="me noopener noreferrer">Tentang Pembuat <span aria-hidden="true">↗</span></a>
+        </div>
+        <p class="creator-credit">Dibuat dan dikembangkan oleh
+          <a href="https://www.instagram.com/ardiariansyah07/" target="_blank" rel="me noopener noreferrer">Ardi Ariansyah</a>.
+        </p>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <span class="visual-label">NETWORK<br>LEARNING</span>
+        <svg viewBox="0 0 360 280" role="presentation">
+          <path d="M180 136 90 68M180 136 270 68M180 136 90 208M180 136 270 208M90 68h180M90 208h180" />
+          <rect x="145" y="101" width="70" height="70" rx="22" />
+          <circle cx="90" cy="68" r="25" /><circle cx="270" cy="68" r="25" />
+          <circle cx="90" cy="208" r="25" /><circle cx="270" cy="208" r="25" />
+          <text x="180" y="140">SW</text>
+          <text x="90" y="72">PC</text><text x="270" y="72">PC</text>
+          <text x="90" y="212">IP</text><text x="270" y="212">WEB</text>
+        </svg>
+      </div>
     </section>
 
-    <section class="catalog">
-      <h2>Katalog Pembelajaran</h2>
-      <p>Pilih materi yang ingin dipelajari.</p>
+    <section class="feature-strip" aria-label="Fitur pembelajaran">
+      <div class="feature-item"><span aria-hidden="true">📘</span><div><strong>Materi terstruktur</strong><small>Konsep dijelaskan bertahap</small></div></div>
+      <div class="feature-item"><span aria-hidden="true">🧪</span><div><strong>Belajar sambil praktik</strong><small>Simulator dan tantangan interaktif</small></div></div>
+      <div class="feature-item"><span aria-hidden="true">📈</span><div><strong>Progres bertahap</strong><small>Lanjut setelah menuntaskan evaluasi</small></div></div>
+    </section>
+
+    <section class="catalog" id="catalog">
+      <div class="catalog-heading">
+        <div>
+          <span class="section-eyebrow">JALUR PEMBELAJARAN</span>
+          <h2>Pilih modul untuk dimulai</h2>
+          <p>Materi TJKT interaktif untuk Kelas X dan XI.</p>
+        </div>
+        <span class="catalog-count"><span aria-hidden="true">✦</span> Terus bertambah</span>
+      </div>
 
       <div id="moduleList" class="module-grid">
         <p>Memuat materi...</p>
@@ -52,10 +81,9 @@
   </main>
 
   <footer>
-    TJKT Interactive Learning Hub
-    &copy; 2026 SMK Wikrama Bogor
+    TJKT Learning Hub &copy; 2026 · Karya Ardi Ariansyah
   </footer>
 
-  <script type="module" src="assets/js/app.js"></script>
+  <script type="module" src="assets/js/app.js?v=4"></script>
 </body>
 </html>
