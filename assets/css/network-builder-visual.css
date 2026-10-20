@@ -1,0 +1,33 @@
+/* Network Builder Visual 3.0 - scoped to .nvb */
+.nvb{margin-top:24px}.nvb-board{position:relative;width:100%;height:380px;overflow:hidden;border:1px solid #cbd5e1;border-radius:16px;background:radial-gradient(circle at 1px 1px,#cbd5e1 1px,transparent 0) 0 0/20px 20px,#f8fbff}
+.nvb-lines{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:1}.nvb-device{position:absolute;transform:translate(-50%,-50%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;width:110px;min-height:84px;padding:8px;border:2px solid #a5c8df;border-radius:14px;background:#fff;color:#17344e;box-shadow:0 4px 14px #0f172a17;cursor:pointer;z-index:2;font:inherit}.nvb-device:hover,.nvb-device:focus-visible{border-color:#0284c7;outline:3px solid #7dd3fc;outline-offset:1px}.nvb-device.nvb-selected{background:#dbeafe;border-color:#0369a1}.nvb-emoji{font-size:27px}.nvb-device strong{font-size:13px}.nvb-toolbar{display:flex;gap:10px;flex-wrap:wrap;margin-top:15px}.nvb-btn{background:#0369a1;color:#fff;border:1px solid #0369a1;border-radius:10px;padding:11px 15px;font-weight:700;cursor:pointer}.nvb-btn:hover{background:#075985}.nvb-btn.nvb-secondary{background:transparent;color:#0369a1}.nvb-status{padding:13px;margin-top:14px;background:#e0f2fe;color:#164e63;border-radius:10px;font-weight:600;min-height:48px}.nvb-cables,.nvb-note{font-size:13px;color:#64748b;line-height:1.7;margin-top:9px;overflow-wrap:anywhere}body.dark .nvb-board{background:radial-gradient(circle at 1px 1px,#334155 1px,transparent 0) 0 0/20px 20px,#111e32;border-color:#334155}body.dark .nvb-device{background:#203550;color:#f1f5f9;border-color:#475569}body.dark .nvb-selected{background:#164e63}body.dark .nvb-status{background:#164e63;color:#e0f2fe}body.dark .nvb-cables,body.dark .nvb-note{color:#cbd5e1}body.dark .nvb-btn.nvb-secondary{color:#7dd3fc}
+@media(max-width:650px){.nvb-board{height:300px}.nvb-device{width:76px;min-height:70px;padding:5px}.nvb-device strong{font-size:11px}.nvb-emoji{font-size:22px}.nvb-toolbar{display:grid;grid-template-columns:1fr}.nvb-btn{width:100%}}
+@media print{.nvb{display:none!important}}
+
+/* Perbaikan area kabel Network Builder */
+
+.nvb-board {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.nvb-lines {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+  overflow: visible;
+}
+
+.nvb-device {
+  position: absolute;
+  z-index: 2;
+}
+
+.nvb-device.nvb-selected {
+  outline: 3px solid #0284c7;
+  outline-offset: 3px;
+}

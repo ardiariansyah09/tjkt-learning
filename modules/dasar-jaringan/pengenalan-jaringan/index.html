@@ -1,0 +1,117 @@
+<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Pengenalan Jaringan Komputer | TJKT Learning Hub</title><style>
+:root{font-family:system-ui,Segoe UI,Arial,sans-serif;color:#16304a;background:#f3f7fb}*{box-sizing:border-box}body{margin:0}header{background:#0d3554;color:white;padding:18px 24px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}a{color:inherit}header a{color:#bde9ff}.layout{display:grid;grid-template-columns:280px minmax(0,1fr);max-width:1300px;margin:auto;min-height:calc(100vh - 70px)}aside{background:#fff;border-right:1px solid #d8e2ea;padding:20px}aside button{width:100%;margin:5px 0;text-align:left;background:#f1f6fa;color:#16304a;border:1px solid #d5e4ef;padding:12px;border-radius:9px;cursor:pointer}aside button.active{background:#d9f3fa;border-color:#087f91;font-weight:700}aside button:disabled{opacity:.55;cursor:not-allowed}main{padding:26px;max-width:950px;width:100%}.panel{background:white;border:1px solid #dbe5ec;border-radius:16px;padding:24px;margin-bottom:18px;box-shadow:0 4px 16px #19334d0a}h1{font-size:1.65rem;margin:0 0 10px}h2{margin-top:0;font-size:1.35rem}p,li{line-height:1.7}.muted{color:#5e7487}.pill{background:#d9f3fa;color:#076375;padding:5px 10px;border-radius:100px;font-size:.8rem}.btn{background:#087f91;border:0;border-radius:9px;color:white;padding:11px 17px;font-weight:700;cursor:pointer;margin:5px 6px 5px 0}.btn:disabled{opacity:.4;cursor:not-allowed}.secondary{background:#e5f0f7;color:#16465b}.success{color:#08734c;font-weight:700}.error{color:#ad3131;font-weight:700}.options{display:grid;gap:9px}.options button,.tile{border:1px solid #bed2de;border-radius:10px;background:#f5f9fc;padding:12px;cursor:pointer;text-align:left;color:#16304a}.options button.selected,.tile.selected{background:#c8f4ef;border-color:#087f91}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}.tile{min-height:94px;text-align:center}.diagram{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:12px;padding:25px;background:#edf8fb;border-radius:12px;margin:14px 0}.node{background:white;border:2px solid #0b8196;border-radius:12px;padding:18px;text-align:center;min-width:105px}.line{height:4px;background:#0b8196;width:35px}.progress{height:10px;background:#dceaf0;border-radius:10px;overflow:hidden}.progress>div{background:#0891a4;height:100%;transition:width .2s}.feedback{padding:12px;border-radius:10px;background:#edf8fb;margin-top:12px;min-height:45px}.small{font-size:.85rem}input[type=text]{padding:12px;border:1px solid #a9bdca;border-radius:9px;font:inherit;max-width:100%;width:350px}.cert{display:none} @media(max-width:760px){.layout{grid-template-columns:1fr}aside{border-right:0;border-bottom:1px solid #d8e2ea}main{padding:12px}.panel{padding:16px}}@media print{@page{size:A4 landscape;margin:0}body{background:white!important}body>*:not(.cert){display:none!important}.cert{display:flex!important;width:297mm;height:210mm;max-height:210mm;overflow:hidden;page-break-after:avoid;break-inside:avoid;flex-direction:column;align-items:center;justify-content:center;border:7mm double #087f91;padding:14mm;text-align:center;color:#12314c;background:white}.cert h1{font-size:29pt}.cert h2{font-size:26pt;border-bottom:2px solid #087f91;padding:10px 20px}.cert p{margin:8px 0}.cert small{margin-top:25px}}
+
+/* HEADER MODUL PENGENALAN JARINGAN */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 28px;
+  background: #103e63;
+}
+
+header > div {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+header > div strong {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+/* Tombol kembali ke portal */
+
+header > a,
+header > a:visited {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  padding: 10px 18px;
+  border-radius: 10px;
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  color: #075985;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background .2s, transform .2s;
+}
+
+header > a:hover {
+  background: #e0f2fe;
+  color: #075985;
+  transform: translateY(-1px);
+}
+
+header > a:focus-visible {
+  outline: 3px solid #7dd3fc;
+  outline-offset: 3px;
+}
+
+/* Label modul */
+
+header .pill {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 30px;
+  background: #d9f3fa;
+  color: #075985;
+  font-size: 12px;
+}
+
+/* Tampilan HP */
+
+@media (max-width: 600px) {
+  header {
+    padding: 14px 16px;
+  }
+
+  header > div {
+    flex: 1;
+    min-width: 0;
+  }
+
+  header > div strong {
+    font-size: 14px;
+  }
+
+  header > a {
+    padding: 9px 12px;
+    font-size: 12px;
+  }
+}
+</style><link rel="stylesheet" href="../../../assets/css/intro-deep-content.css"><link rel="stylesheet" href="../../../assets/css/intro-upgrade.css"><link rel="stylesheet" href="../../../assets/css/tjkt-design-system.css"><link rel="stylesheet" href="../../../assets/css/intro-consistent.css"><link rel="stylesheet" href="../../../assets/css/network-builder-assessment.css"><link rel="stylesheet" href="../../../assets/css/client-server-simulator.css"><link rel="stylesheet" href="../../../assets/css/intro-sticky-navigation.css"><link rel="stylesheet" href="../../../assets/css/network-arcade-game.css?v=21"></head><body class="intro-module"><header class="module-topbar"><a class="module-brand" href="../../../index.html" aria-label="Ke portal TJKT Learning Hub"><span class="brand-symbol">🌐</span><span><strong>TJKT Learning Hub</strong><small>SMK Wikrama Bogor</small></span></a><div class="topbar-actions"><a class="back-button" href="../../../index.html">← Kembali ke Portal</a><button class="theme-button" type="button" id="introThemeToggle" aria-label="Ganti tema">🌙</button></div></header><div class="layout"><aside><h2>📚 Pengenalan Jaringan</h2><p class="muted small">Materi dibuka berurutan. Progres tersimpan pada browser ini.</p><div class="progress"><div id="bar" style="width:0%"></div></div><p id="counter" class="small"></p><nav id="nav"></nav><button class="secondary" id="reset">↻ Reset modul ini</button></aside><main><section class="panel"><h1 id="title"></h1><p id="subtitle" class="muted"></p></section><section id="content" class="panel"></section><section class="panel"><div id="status" class="feedback" aria-live="polite"></div><button class="btn" id="check">Periksa Jawaban</button><button class="btn secondary" id="next">Materi Berikutnya →</button></section></main></div><section id="certificate" class="cert"></section><script src="../../../assets/js/intro-deep-content.js"></script><script src="../../../assets/js/network-arcade-game.js?v=21"></script><script>
+'use strict';const KEY='tjkt:intro-network:v1';const lessons=[
+{id:'def',name:'Pengertian Jaringan',desc:'Jaringan komputer menghubungkan dua atau lebih perangkat untuk bertukar data dan menggunakan sumber daya bersama.',intro:'Perhatikan dua komputer yang terhubung. Jika keduanya dapat bertukar file melalui media komunikasi dan aturan yang sesuai, keduanya membentuk jaringan komputer.',q:'Pernyataan yang tepat tentang jaringan komputer adalah ...',opts:['Sekumpulan perangkat yang saling terhubung untuk bertukar data','Komputer yang selalu harus terhubung internet','Komputer yang tidak dapat berkomunikasi'],answer:0},
+{id:'benefit',name:'Manfaat Jaringan',desc:'Jaringan memudahkan berbagi file, printer, layanan, dan akses internet, serta mendukung kolaborasi.',intro:'Di laboratorium sekolah, beberapa komputer dapat memakai satu printer jaringan dan mengakses penyimpanan bersama.',q:'Manfaat jaringan yang sesuai dengan contoh tersebut adalah ...',opts:['Setiap komputer wajib memiliki printer sendiri','Berbagi perangkat dan data','Semua file otomatis aman tanpa pengaturan'],answer:1},
+{id:'scope',name:'LAN, MAN, dan WAN',desc:'LAN mencakup area lokal seperti ruang atau gedung; MAN mencakup area metropolitan; WAN menghubungkan area geografis yang luas.',intro:'Jenis jaringan sering dibedakan berdasarkan cakupan geografis. Ukuran saja tidak menentukan teknologi atau kepemilikan jaringan.',q:'Jaringan komputer dalam satu laboratorium sekolah paling tepat disebut ...',opts:['WAN','MAN','LAN'],answer:2},
+{id:'internet',name:'Internet dan Intranet',desc:'Internet adalah jaringan global antarjaringan. Intranet adalah jaringan privat organisasi yang menggunakan teknologi jaringan untuk layanan internal.',intro:'Portal absensi internal sekolah dapat berada di intranet, sedangkan situs publik dapat diakses melalui internet. Intranet bisa dihubungkan secara aman ke internet bila diperlukan.',q:'Portal internal sekolah yang hanya bisa diakses pengguna berwenang pada jaringan sekolah merupakan contoh ...',opts:['Intranet','Internet publik tanpa batasan','Bluetooth pribadi'],answer:0},
+{id:'architecture',name:'Client-Server dan Peer-to-Peer',desc:'Pada client-server, klien meminta layanan dari server. Pada peer-to-peer, perangkat dapat saling berbagi langsung tanpa server khusus untuk layanan tersebut.',intro:'Website sekolah yang dilayani server web adalah contoh client-server. Dua laptop berbagi berkas langsung dapat menjadi contoh peer-to-peer.',q:'Ketika browser meminta halaman ke web server, model komunikasinya adalah ...',opts:['Peer-to-peer saja','Client-server','Tidak menggunakan jaringan'],answer:1},
+{id:'components',name:'Komponen Jaringan',desc:'Perangkat akhir seperti komputer dan printer, perangkat penghubung seperti switch/router, media transmisi, alamat, dan protokol membentuk jaringan yang bekerja.',intro:'Switch menghubungkan perangkat dalam LAN; router meneruskan paket antarjaringan; access point menghubungkan perangkat nirkabel ke jaringan.',q:'Perangkat yang lazim dipakai untuk menghubungkan beberapa PC dalam satu LAN Ethernet adalah ...',opts:['Switch','Monitor','Keyboard'],answer:0},
+{id:'lab',name:'Virtual Network Builder',desc:'Pilih perangkat yang dibutuhkan untuk membangun LAN kecil: dua PC yang terhubung ke switch. Untuk akses internet, diperlukan router/gateway yang sesuai.',intro:'Bangun skenario: dua PC saling bertukar data dalam satu LAN kabel, tanpa membutuhkan akses internet.',q:'Pilih komponen yang tepat untuk skenario LAN tersebut.',answer:['pc1','pc2','switch']},
+{id:'games',name:'Network Arcade',desc:'Tiga game 2D dengan nyawa, waktu, efek suara, bintang, dan rekor lokal: Network Maze Runner, Packet Defender, dan Server Rescue. Skor minimum 80 untuk lulus.',intro:'Mainkan tiga misi arcade interaktif untuk menguji pemahaman jaringan komputer.'},
+{id:'posttest',name:'Posttest dan Sertifikat',desc:'Kerjakan 10 soal acak dari bank soal. Minimal 80 untuk menyelesaikan modul.',intro:'Hasil disimpan di browser. Sertifikat bersifat mandiri, bukan sertifikat resmi sekolah.'}
+];const bank=[['Jaringan komputer memungkinkan perangkat untuk ...',['Bertukar data','Selalu mematikan firewall','Bekerja tanpa media komunikasi'],0],['Jaringan di satu ruang praktik termasuk ...',['MAN','LAN','WAN'],1],['Jaringan antarkota dalam cakupan geografis luas lazim disebut ...',['LAN','PAN','WAN'],2],['Contoh berbagi sumber daya adalah ...',['Menggunakan printer jaringan bersama','Memutus seluruh kabel','Menonaktifkan kartu jaringan'],0],['Perangkat penghubung banyak PC dalam LAN Ethernet adalah ...',['Switch','Monitor','Mouse'],0],['Router umumnya digunakan untuk ...',['Menghubungkan jaringan yang berbeda','Mengetik dokumen','Menampilkan gambar'],0],['Access point menyediakan ...',['Koneksi nirkabel ke jaringan','Penyimpanan data wajib','Layar tambahan'],0],['Layanan web server kepada browser menggunakan model ...',['Peer-to-peer wajib','Client-server','Tanpa protokol'],1],['Intranet merupakan ...',['Jaringan privat internal organisasi','Semua situs publik internet','Jenis konektor'],0],['Peer-to-peer memungkinkan ...',['Berbagi langsung antarsesama perangkat','Tidak pernah memakai jaringan','Hanya komunikasi lewat server pusat'],0],['Kabel UTP merupakan ...',['Media transmisi','Sistem operasi','Alamat IP'],0],['Internet adalah ...',['Jaringan global antarjaringan','Satu komputer saja','Nama perangkat switch'],0],['Klien dalam model client-server biasanya ...',['Meminta layanan server','Selalu menjadi router','Tidak dapat menerima data'],0],['Jaringan sekolah untuk akses berkas bersama memberikan manfaat ...',['Kolaborasi','Menghilangkan kebutuhan keamanan','Memutus komunikasi'],0],['Dua PC terhubung ke switch dan saling berkomunikasi membentuk ...',['LAN','WAN global','Tidak ada jaringan'],0],['DNS digunakan untuk ...',['Menerjemahkan nama domain ke informasi alamat','Menyusun kabel UTP','Mengatur kecerahan monitor'],0]];
+const $=id=>document.getElementById(id);let state;try{state=JSON.parse(localStorage.getItem(KEY))||{}}catch{state={}};if(!state.passed)state.passed={};if(!state.scores)state.scores={};let current=0,selection=null,gameStep=0,gameScore=0,quiz=[],quizChoices={};const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(state))}catch{}};const el=(tag,text,cls)=>{let n=document.createElement(tag);if(text!==undefined)n.textContent=text;if(cls)n.className=cls;return n};function clientServerPassed(){try{const d=JSON.parse(localStorage.getItem('tjkt:client-server-sim:v1')||'{}');return Number(d.best||0)>=75}catch{return false}}function passed(i){return !!state.passed[lessons[i].id] && (i!==4 || clientServerPassed())}function unlocked(i){return i===0||passed(i-1)}function complete(score){const l=lessons[current];state.scores[l.id]=Math.max(score,state.scores[l.id]||0);if(score>=(current>=7?80:75)){state.passed[l.id]=true;$('status').textContent=`✓ Lulus! Skor ${score}/100. Materi berikutnya terbuka.`;$('status').className='feedback success'}else{$('status').textContent=`Skor ${score}/100. Minimal ${current>=7?80:75}. Silakan ulangi.`;$('status').className='feedback error'}save();drawNav();clientServerNotice();$('next').disabled=!passed(current)||current===lessons.length-1;if(current===8&&passed(8))showCertificateForm()}
+function clientServerNotice(){if(current!==4)return;const theory=!!state.passed[lessons[4].id];const practical=clientServerPassed();$('status').textContent=theory?(practical?'✓ Evaluasi teori dan praktik Client–Server lulus. Materi berikutnya terbuka.':'✓ Teori lulus. Selesaikan praktik Client–Server dengan nilai minimal 75 untuk membuka materi berikutnya.'):'Kerjakan evaluasi teori dan praktik Client–Server (masing-masing minimal 75).';$('status').className='feedback '+(theory&&practical?'success':'');}
+function drawNav(){const done=lessons.filter((_,i)=>passed(i)).length;$('bar').style.width=(done/lessons.length*100)+'%';$('counter').textContent=`${done}/${lessons.length} tahap tuntas`;const nav=$('nav');nav.replaceChildren();lessons.forEach((l,i)=>{let b=el('button',`${passed(i)?'✓':unlocked(i)?'○':'🔒'} ${i+1}. ${l.name}`);b.disabled=!unlocked(i);if(i===current)b.className='active';b.onclick=()=>{current=i;render()};nav.append(b)})}
+function makeOptions(opts,callback){let wrap=el('div',undefined,'options');opts.forEach((opt,i)=>{let b=el('button',opt);b.type='button';b.onclick=()=>{wrap.querySelectorAll('button').forEach(x=>x.classList.remove('selected'));b.classList.add('selected');callback(i)};wrap.append(b)});return wrap}
+function render(){drawNav();const l=lessons[current];$('title').textContent=`${current+1}. ${l.name}`;$('subtitle').textContent=l.desc;let c=$('content');c.replaceChildren();c.append(el('p',l.intro));if(current<6&&window.renderDeepLesson)window.renderDeepLesson(c,current);$('status').textContent=passed(current)?`✓ Sudah lulus. Nilai terbaik: ${state.scores[l.id]}/100.`:'Kerjakan aktivitas untuk membuka tahap berikutnya.';$('status').className='feedback';$('check').hidden=false;$('check').disabled=false;$('check').textContent='Periksa Jawaban';$('next').disabled=!passed(current)||current===lessons.length-1;clientServerNotice();selection=null;
+if(current===0){let d=el('div',undefined,'diagram');d.append(el('div','💻 PC A','node'),el('div',undefined,'line'),el('div','💻 PC B','node'));c.append(d)}
+if(current===2){let d=el('div',undefined,'grid');[['LAN','Ruang / Gedung'],['MAN','Area metropolitan'],['WAN','Antarwilayah luas']].forEach(([a,b])=>{let t=el('div',undefined,'tile');t.append(el('strong',a),el('p',b));d.append(t)});c.append(d)}
+if(current===4){let d=el('div',undefined,'diagram');d.append(el('div','💻 Browser / Client','node'),el('div','↔ Permintaan / Respons'),el('div','🗄️ Web Server','node'));c.append(d)}
+if(current<6){c.append(el('h3','Cek Pemahaman'),el('p',l.q),makeOptions(l.opts,i=>selection=i));$('check').onclick=()=>{if(selection===null){$('status').textContent='Pilih jawaban terlebih dahulu.';return}complete(selection===l.answer?100:0)}}
+else if(current===6){const selected=new Set();let d=el('div',undefined,'grid');[['pc1','💻 PC 1'],['pc2','💻 PC 2'],['switch','🔀 Switch'],['monitor','🖥️ Monitor'],['router','🌐 Router'],['printer','🖨️ Printer']].forEach(([id,name])=>{let b=el('button',name,'tile');b.onclick=()=>{if(selected.has(id)){selected.delete(id);b.classList.remove('selected')}else{selected.add(id);b.classList.add('selected')}};d.append(b)});c.append(el('p','Pilih tepat tiga komponen yang diperlukan:'),d);$('check').onclick=()=>{let ok=selected.size===3&&l.answer.every(x=>selected.has(x));complete(ok?100:0)}}
+else if(current===7){gameStep=0;gameScore=0;drawGame(c)}
+else{startQuiz(c)} }
+function drawGame(c){if(window.renderCyberArcade){$('check').hidden=true;window.renderCyberArcade(c,score=>complete(score));return}c.replaceChildren();$('check').hidden=true;const challenges=[{title:'Game 1 · Network Match',desc:'Pilih perangkat yang menghubungkan beberapa komputer dalam satu LAN.',opts:['Switch','Keyboard','Monitor'],correct:0,pts:30},{title:'Game 2 · Network Route',desc:'Klik urutan jalur dari laptop ke website di internet.',path:['💻 Laptop','🔀 Switch','🌐 Router','🗄️ Server'],pts:40},{title:'Game 3 · Network Detective',desc:'PC bisa membuka website dengan alamat IP tetapi tidak dengan nama domain. Komponen apa yang perlu diperiksa?',opts:['DNS','Kecerahan layar','Mouse'],correct:0,pts:30}];if(gameStep>=3){c.append(el('h2',`🎮 Arcade selesai — ${gameScore}/100`),el('p','Target kelulusan: 80.'));let b=el('button','Simpan Nilai','btn');b.onclick=()=>complete(gameScore);c.append(b);let again=el('button','Ulangi Games','btn secondary');again.onclick=()=>{gameStep=0;gameScore=0;drawGame(c)};c.append(again);return}const g=challenges[gameStep];c.append(el('h2',g.title),el('p',g.desc));function done(ok){gameScore+=ok?g.pts:0;$('status').textContent=ok?`✓ Tantangan berhasil (+${g.pts})`:'Belum tepat. Lanjut ke tantangan berikutnya.';gameStep++;setTimeout(()=>drawGame(c),450)}if(g.path){let pos=0;let info=el('p','Urutan: Laptop → Switch → Router → Server');c.append(info);let d=el('div',undefined,'grid');['🌐 Router','🗄️ Server','💻 Laptop','🔀 Switch'].forEach(v=>{let b=el('button',v,'tile');b.onclick=()=>{if(v===g.path[pos]){pos++;b.disabled=true;b.classList.add('selected');info.textContent=`Langkah ${pos}/4 benar`;if(pos===4)done(true)}else done(false)};d.append(b)});c.append(d)}else c.append(makeOptions(g.opts,i=>done(i===g.correct)))}
+function startQuiz(c){quiz=bank.map((q,i)=>({q,i})).sort(()=>Math.random()-.5).slice(0,10);quizChoices={};c.append(el('p','Pilih satu jawaban pada setiap soal. Soal diacak saat halaman dibuka ulang.'));quiz.forEach(({q},n)=>{let section=el('section');section.append(el('h3',`${n+1}. ${q[0]}`),makeOptions(q[1],i=>quizChoices[n]=i));c.append(section)});$('check').onclick=()=>{if(Object.keys(quizChoices).length!==quiz.length){$('status').textContent='Jawab semua soal sebelum mengirim.';return}const correct=quiz.filter(({q},i)=>quizChoices[i]===q[2]).length;complete(correct*10)};if(passed(8))showCertificateForm()}
+function showCertificateForm(){const c=$('content');if(c.querySelector('#certName'))return;let box=el('section');box.append(el('h2','🏅 Sertifikat Penyelesaian'),el('p','Masukkan nama lengkap. Sertifikat mandiri ini tidak memverifikasi identitas.'));let inp=el('input');inp.id='certName';inp.type='text';inp.maxLength=70;inp.placeholder='Nama lengkap';box.append(inp);let btn=el('button','Cetak / Simpan PDF','btn');btn.onclick=()=>{let name=inp.value.trim();if(name.length<3){$('status').textContent='Masukkan nama minimal 3 karakter.';return}const cert=$('certificate');cert.replaceChildren();cert.append(el('h3','TJKT INTERACTIVE LEARNING HUB'),el('h1','SERTIFIKAT PENYELESAIAN'),el('p','Diberikan kepada:'),el('h2',name),el('p','Telah menyelesaikan modul'),el('h2','Pengenalan Jaringan Komputer'),el('p',`Nilai Posttest terbaik: ${state.scores.posttest}/100`),el('p',`Tanggal: ${new Intl.DateTimeFormat('id-ID',{dateStyle:'long'}).format(new Date())}`),el('small','Sertifikat mandiri dari browser — bukan sertifikat resmi sekolah.'));window.print()};box.append(btn);c.append(box)}
+window.addEventListener('tjkt:client-server-graded',()=>{drawNav();clientServerNotice();$('next').disabled=!passed(current)||current===lessons.length-1;});$('next').onclick=()=>{if(current<lessons.length-1&&passed(current)){current++;render()}};$('reset').onclick=()=>{if(confirm('Hapus seluruh progres modul Pengenalan Jaringan di browser ini?')&&prompt('Ketik RESET untuk konfirmasi:')==='RESET'){localStorage.removeItem(KEY);localStorage.removeItem('tjkt:client-server-sim:v1');location.reload()}};render();
+</script><script src="../../../assets/js/intro-upgrade.js?v=arcade2-fix1"></script><script src="../../../assets/js/intro-theme.js"></script><script src="../../../assets/js/network-builder-assessment.js"></script><script defer src="../../../assets/js/client-server-simulator.js"></script><script src="../../../assets/js/intro-sticky-navigation.js"></script></body></html>

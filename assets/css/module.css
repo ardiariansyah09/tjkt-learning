@@ -1,0 +1,103 @@
+.module-page { min-height: 100vh; background: var(--bg); }
+.module-topbar { height: 76px; padding: 0 clamp(16px,3vw,42px); background: var(--surface); border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; gap: 16px; position: sticky; top: 0; z-index: 10; }
+.module-brand { display: flex; gap: 12px; align-items: center; color: var(--text); text-decoration: none; }
+.module-brand strong, .module-brand small { display: block; }
+.module-brand strong { font-size: 15px; }
+.module-brand small { color: var(--muted); font-size: 12px; }
+.brand-symbol { background: #e0f2fe; border-radius: 12px; font-size: 24px; padding: 7px; }
+.topbar-actions { display: flex; gap: 10px; align-items: center; }
+.back-button, .theme-button { display: inline-flex; align-items: center; justify-content: center; gap: 9px; text-decoration: none; color: var(--text); background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 9px 14px; font-size: 14px; font-weight: 600; transition: border-color .2s, color .2s, background .2s; }
+.back-button:hover, .theme-button:hover { border-color: var(--primary); color: var(--primary); background: rgba(2,132,199,.07); }
+.module-layout { display: grid; grid-template-columns: 295px minmax(0, 1fr); max-width: 1500px; margin: 0 auto; min-height: calc(100vh - 76px); }
+.lesson-sidebar { border-right: 1px solid var(--border); background: var(--surface); padding: 26px 17px; }
+.sidebar-heading { padding: 0 10px; }
+.eyebrow-dark { color: var(--primary); font-size: 11px; font-weight: 800; letter-spacing: 1.4px; }
+.sidebar-heading h2 { margin: 9px 0 5px; font-size: 20px; line-height: 1.35; }
+.sidebar-heading p { margin: 0; color: var(--muted); font-size: 13px; }
+.progress-widget { background: var(--bg); border: 1px solid var(--border); border-radius: 12px; padding: 15px; margin: 25px 0 20px; }
+.progress-label { display: flex; justify-content: space-between; gap: 8px; font-size: 13px; margin-bottom: 10px; }
+.progress-label span { color: var(--primary); font-weight: 800; }
+.progress-track { background: var(--border); height: 8px; border-radius: 999px; overflow: hidden; }
+#progressFill { width: 0; height: 100%; background: #0d9488; border-radius: 999px; transition: width .25s ease; }
+.progress-widget small { display: block; margin-top: 9px; color: var(--muted); }
+.lesson-nav { display: flex; flex-direction: column; gap: 6px; }
+.lesson-nav-item { display: flex; width: 100%; gap: 12px; align-items: center; text-align: left; border: 1px solid transparent; border-radius: 10px; background: transparent; color: var(--text); padding: 12px 10px; font-size: 14px; font-weight: 500; cursor: pointer; }
+.lesson-nav-item:hover { background: var(--bg); }
+.lesson-nav-item.active { background: rgba(2,132,199,.1); border-color: rgba(2,132,199,.22); color: var(--primary); font-weight: 700; }
+.lesson-number { display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; width: 30px; height: 30px; border-radius: 8px; background: var(--bg); border: 1px solid var(--border); font-size: 12px; font-weight: 800; }
+.lesson-nav-item.active .lesson-number { background: var(--primary); color: white; border-color: var(--primary); }
+.sidebar-tip { font-size: 12px; color: var(--muted); line-height: 1.65; padding: 12px 10px; }
+.lesson-main { padding: 30px clamp(20px,4vw,64px) 50px; min-width: 0; }
+.breadcrumbs { font-size: 12px; color: var(--muted); margin-bottom: 22px; }
+.breadcrumbs span { padding: 0 8px; }
+.breadcrumbs strong { color: var(--text); }
+.lesson-hero { background: linear-gradient(125deg,#075985,#0f172a); color: white; padding: clamp(28px,4vw,48px); border-radius: 18px; margin-bottom: 26px; }
+.lesson-kicker { color: #7dd3fc; letter-spacing: 1.5px; font-size: 12px; font-weight: 800; }
+.lesson-hero h1 { font-size: clamp(26px,3.5vw,39px); line-height: 1.2; margin: 12px 0; }
+.lesson-hero p { color: #e2e8f0; margin: 0; }
+.lesson-content { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: clamp(22px,4vw,40px); line-height: 1.8; }
+.lesson-content h2 { font-size: 22px; margin: 27px 0 9px; line-height: 1.35; }
+.lesson-content h2:first-child { margin-top: 0; }
+.lesson-content p { margin: 10px 0 17px; }
+.lesson-content ul { padding-left: 24px; }
+.lesson-content li { margin-bottom: 8px; }
+.lesson-content code { padding: 2px 5px; background: var(--bg); border-radius: 4px; font-size: .92em; overflow-wrap: anywhere; }
+.concept-card { display: flex; flex-direction: column; gap: 7px; border: 1px solid rgba(2,132,199,.24); background: rgba(2,132,199,.07); border-radius: 13px; padding: 23px; margin: 23px 0; }
+.concept-label { color: var(--primary); font-size: 11px; font-weight: 800; letter-spacing: 1.3px; }
+.ip-example { font-size: clamp(24px,4vw,34px); letter-spacing: .5px; color: var(--text); overflow-wrap: anywhere; }
+.concept-card > span:last-child { color: var(--muted); font-size: 13px; }
+.learning-note { background: rgba(13,148,136,.08); border-left: 4px solid #0d9488; padding: 15px 18px; border-radius: 0 9px 9px 0; margin: 22px 0; }
+.bit-strip { display: grid; grid-template-columns: repeat(8,minmax(0,1fr)); gap: 4px; margin: 20px 0; }
+.bit-strip span { background: rgba(2,132,199,.1); border: 1px solid var(--border); border-radius: 6px; padding: 10px 0; text-align: center; font-weight: 700; font-size: 13px; }
+.lesson-actions { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: 22px; }
+.lesson-actions button { padding: 12px 18px; border-radius: 10px; font-weight: 700; }
+.primary-action { background: var(--primary); color: white; border-color: var(--primary); }
+.primary-action:hover { background: #0369a1; }
+.secondary-action { background: var(--surface); color: var(--text); border-color: var(--border); }
+button:disabled { opacity: .5; cursor: not-allowed; }
+.save-note { color: var(--muted); text-align: right; font-size: 12px; }
+.module-page a:focus-visible, .module-page button:focus-visible { outline: 3px solid #38bdf8; outline-offset: 3px; }
+@media(max-width:850px) { .module-layout { grid-template-columns: 1fr; } .lesson-sidebar { border-right: 0; border-bottom: 1px solid var(--border); padding: 20px; } .lesson-nav { display: grid; grid-template-columns: repeat(auto-fit,minmax(190px,1fr)); } .lesson-main { padding: 20px; } }
+@media(max-width:480px) { .module-topbar { height: auto; min-height: 68px; padding: 12px; } .module-brand small { display: none; } .module-brand strong { font-size: 13px; } .brand-symbol { font-size: 18px; } .back-button { font-size: 12px; padding: 8px; } .lesson-nav { grid-template-columns: 1fr; } .lesson-actions { align-items: stretch; } .lesson-actions button { font-size: 12px; padding: 10px; } }
+
+/* Sticky sidebar: stays visible while lesson content scrolls.
+   The topbar is 76px tall, leaving 16px breathing room. */
+@media (min-width: 851px) {
+  .lesson-sidebar {
+    position: sticky;
+    top: 76px;
+    align-self: start;
+    height: calc(100vh - 76px);
+    max-height: calc(100vh - 76px);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    scrollbar-width: thin;
+    scrollbar-color: #94a3b8 transparent;
+  }
+
+  .lesson-sidebar::-webkit-scrollbar { width: 6px; }
+  .lesson-sidebar::-webkit-scrollbar-thumb {
+    background: #94a3b8;
+    border-radius: 8px;
+  }
+}
+
+@media (max-width: 850px) {
+  .lesson-sidebar {
+    position: static;
+    height: auto;
+    max-height: none;
+    overflow: visible;
+  }
+}
+
+/* Tahap 7.1: navigasi berurutan */
+.lesson-nav-item.locked {opacity:.55;cursor:not-allowed;}
+.lesson-nav-item.locked:hover {transform:none;}
+.lesson-actions button:disabled {opacity:.5;cursor:not-allowed;}
+.gate-message {padding:12px 16px;border:1px solid var(--border);border-radius:10px;background:var(--surface);font-weight:600;}
+.knowledge-gate {margin:28px 0;padding:22px;border:1px solid var(--border);border-radius:14px;background:var(--surface);}
+.knowledge-gate fieldset {border:0;padding:0;margin:12px 0;}
+.knowledge-gate legend {font-weight:600;margin-bottom:10px;}
+.gate-option {display:block;padding:9px 4px;cursor:pointer;}
+.gate-option input {margin-right:8px;}

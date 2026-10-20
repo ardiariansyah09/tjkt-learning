@@ -1,0 +1,20 @@
+.stage8-panel{margin:28px 0;padding:22px;border:1px solid var(--border);border-radius:14px;background:var(--surface)}
+.stage8-question{padding:18px;margin:16px 0;border:1px solid var(--border);border-radius:12px}
+.stage8-question legend{font-weight:700;padding:0 6px}.stage8-question h4{margin:6px 0 14px}.stage8-option{display:block;padding:9px 12px;margin:6px 0;border:1px solid var(--border);border-radius:8px;cursor:pointer}.stage8-option:has(input:checked){outline:2px solid #0284c7}.stage8-option input{margin-right:9px}.stage8-counter{font-size:.9rem;opacity:.8}.stage8-notice{font-size:.9rem;margin-top:12px}.stage8-review li{padding:10px 0;border-bottom:1px solid var(--border)}.stage8-review p{margin:4px 0;font-size:.9rem}.stage8-table{width:100%;border-collapse:collapse;margin:14px 0}.stage8-table th,.stage8-table td{border-bottom:1px solid var(--border);padding:10px;text-align:left}.stage8-table th{font-weight:700}@media(max-width:600px){.stage8-panel{padding:14px}.stage8-question{padding:12px}.stage8-table{font-size:.8rem}}
+
+/* Tahap 8.1 — Arcade interaktif */
+.arcade-board{margin:18px 0}.arcade-status{font-weight:700;padding:12px;border-radius:10px;background:var(--surface);border:1px solid var(--border)}
+.arcade-bits{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:6px;margin:20px 0}
+.arcade-bit-cell{text-align:center;min-width:0}.arcade-bit-cell small{display:block;font-size:11px;margin-top:6px;opacity:.8}
+.arcade-bit{width:100%;min-height:68px;font-size:1.4rem;font-weight:800;border:2px solid #64748b;border-radius:12px;background:#e2e8f0;color:#0f172a;cursor:pointer}
+.arcade-bit.on{background:#0d9488;color:#fff;border-color:#0d9488;box-shadow:0 0 0 2px #99f6e4}
+.arcade-target{font-size:1.4rem}.arcade-readout{font-family:ui-monospace,monospace;overflow-wrap:anywhere}
+.arcade-palette{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}.arcade-chip{padding:14px 22px;border:2px solid #0284c7;background:#dbeafe;color:#075985;border-radius:12px;cursor:grab;font-weight:800;font-size:1.1rem}
+.arcade-chip.selected{outline:3px solid #f59e0b}
+.arcade-zones{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-bottom:20px}
+.arcade-zone{padding:22px 12px;border:2px dashed #0284c7;border-radius:14px;background:var(--surface);color:inherit;min-height:95px;cursor:pointer;font-weight:650}
+.arcade-zone:hover{border-style:solid}
+.arcade-path{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:18px 0}
+.arcade-node{white-space:pre-line;min-height:94px;border:2px solid #64748b;border-radius:14px;background:var(--surface);color:inherit;cursor:pointer;font-weight:700}
+.arcade-node.visited{border-color:#0d9488;background:#ccfbf1;color:#134e4a}
+@media(max-width:600px){.arcade-bits{gap:3px}.arcade-bit{min-height:52px;font-size:1rem}.arcade-zones{grid-template-columns:1fr}.arcade-path{grid-template-columns:repeat(2,minmax(0,1fr))}}

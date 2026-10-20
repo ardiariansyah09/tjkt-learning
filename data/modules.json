@@ -1,0 +1,29 @@
+[
+  {
+    "id": "pengenalan-jaringan",
+    "title": "Pengenalan Jaringan Komputer",
+    "description": "Kenali konsep, manfaat, LAN/MAN/WAN, client-server, dan komponen jaringan melalui simulasi dan mini-games.",
+    "category": "Dasar Jaringan",
+    "classLevel": "X",
+    "status": "published",
+    "path": "modules/dasar-jaringan/pengenalan-jaringan/"
+  },
+  {
+    "id": "ipv4-subnetting",
+    "title": "IP Address & Subnetting",
+    "description": "Pelajari IPv4, bilangan biner, subnet mask, CIDR, subnetting, dan VLSM melalui teori dan praktikum interaktif.",
+    "category": "Dasar Jaringan",
+    "classLevel": "X",
+    "status": "published",
+    "path": "modules/dasar-jaringan/ipv4-subnetting/"
+  },
+  {
+    "id": "switching-vlan",
+    "title": "Switching & VLAN",
+    "description": "Pelajari switching, VLAN, dan konfigurasi jaringan.",
+    "category": "Konfigurasi Jaringan",
+    "classLevel": "XI",
+    "status": "coming-soon",
+    "path": ""
+  }
+]

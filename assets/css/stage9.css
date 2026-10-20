@@ -1,0 +1,50 @@
+/* Tahap 9 — penyempurnaan lokal dan cetak */
+.stage9-dashboard{border:1px solid var(--border);border-radius:14px;padding:14px;margin:16px 0;background:var(--surface)}
+.stage9-dashboard h3{font-size:1rem;margin:0 0 8px}.stage9-dashboard p{margin:0 0 10px}
+.stage9-muted{color:var(--muted, #64748b);font-size:.84rem;line-height:1.5}
+.stage9-next{display:block;width:100%;text-align:left;border:1px solid #0284c7;background:#e0f2fe;color:#075985;border-radius:10px;padding:10px;cursor:pointer;font-weight:650;overflow-wrap:anywhere}
+.stage9-next:disabled{opacity:.6;cursor:default}
+.stage9-reset{display:block;width:100%;border:1px solid #dc2626;color:#b91c1c;background:transparent;padding:10px;border-radius:10px;margin-top:12px;cursor:pointer}
+.stage9-certificate{border:1px solid var(--border);border-radius:14px;padding:22px;margin:26px 0;background:var(--surface)}
+.stage9-name-label{display:block;font-weight:650;margin:16px 0}
+.stage9-name-input{display:block;width:100%;max-width:460px;padding:12px;margin-top:8px;border:1px solid #94a3b8;border-radius:10px;font:inherit;background:var(--surface);color:inherit}
+.stage9-preview{margin-top:14px}
+.stage9-printable{display:none}
+@media(max-width:720px){
+ .lesson-sidebar{max-height:none}
+ .stage9-dashboard{padding:12px}
+ .stage9-certificate{padding:14px}
+}
+/* Sertifikat: satu lembar A4 landscape. Tidak memakai position:fixed. */
+@media print {
+  @page { size: A4 landscape; margin: 10mm; }
+  html, body { margin: 0 !important; padding: 0 !important; width: auto !important; height: auto !important; min-height: 0 !important; overflow: visible !important; background: #fff !important; }
+  body:has(#stage9PrintableCertificate) > :not(#stage9PrintableCertificate) { display: none !important; }
+  body:has(#stage9PrintableCertificate) #stage9PrintableCertificate {
+    display: flex !important;
+    position: static !important;
+    box-sizing: border-box !important;
+    width: 100% !important;
+    height: 188mm !important;
+    min-height: 0 !important;
+    max-height: 188mm !important;
+    margin: 0 !important;
+    padding: 10mm 14mm !important;
+    border: 5px double #0f766e !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    background: #fff !important;
+    color: #0f172a !important;
+    overflow: hidden !important;
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+  .stage9-printable h1 { font-size: 25pt !important; letter-spacing: .06em; margin: 9px 0 !important; line-height: 1.2 !important; }
+  .stage9-printable h2 { font-size: 23pt !important; border-bottom: 2px solid #0f766e; padding: 6px 18px !important; margin: 10px 0 !important; line-height: 1.2 !important; }
+  .stage9-printable h3 { font-size: 17pt !important; margin: 9px 0 !important; line-height: 1.2 !important; }
+  .stage9-printable p { font-size: 11pt !important; margin: 7px 0 !important; line-height: 1.35 !important; }
+  .stage9-printable small { display: block; font-size: 8pt !important; margin-top: 13px !important; color: #475569 !important; }
+  .stage9-cert-logo { font-size: 15pt !important; font-weight: 800; color: #0f766e !important; }
+}

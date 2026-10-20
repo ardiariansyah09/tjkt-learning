@@ -1,0 +1,24 @@
+/* Konten pembelajaran mendalam — menggunakan palet portal TJKT */
+.deep-lesson{--deep-ink:#16344f;--deep-muted:#526a80;--deep-border:#d8e5ef;color:var(--deep-ink);margin:18px 0 28px;line-height:1.8}
+.deep-heading{border-left:5px solid #0284c7;padding:5px 0 5px 16px;margin:12px 0 24px}
+.deep-heading h2{margin:5px 0;font-size:clamp(1.35rem,2.5vw,1.85rem);line-height:1.35}
+.deep-kicker{color:#0369a1;font-weight:800;letter-spacing:.08em;font-size:.73rem}
+.deep-section{margin:22px 0;padding:0 2px;scroll-margin-top:24px}
+.deep-section h3{font-size:1.15rem;line-height:1.4;color:#075985;margin:0 0 10px}
+.deep-section p{margin:0 0 13px;line-height:1.85}
+.deep-section li{margin-bottom:6px;line-height:1.7}
+.deep-callout{background:#edf7ff;border:1px solid #b8dff5;border-radius:14px;padding:18px 20px;margin:20px 0}
+.deep-callout h3{margin:0 0 8px;color:#075985}.deep-callout p{margin:6px 0 0}
+.deep-example{background:#f0fdf9;border-color:#b9e8d7}
+.deep-toc{display:grid;gap:6px;background:#f7fafc;border:1px solid var(--deep-border);border-radius:14px;padding:17px;margin:18px 0}
+.deep-toc strong{margin-bottom:5px}.deep-toc a{color:#0369a1;text-decoration:none;padding:4px 0}.deep-toc a:hover{text-decoration:underline}
+.deep-case details{background:#f8fafc;border:1px solid var(--deep-border);border-radius:10px;padding:12px 16px}
+.deep-case summary{cursor:pointer;font-weight:700;color:#075985}
+.deep-summary{background:#eff6ff;border-radius:14px;padding:18px 22px}
+.deep-note{color:var(--deep-muted);font-size:.9rem;border-top:1px solid var(--deep-border);padding-top:15px}
+body.dark .deep-lesson{--deep-ink:#e2e8f0;--deep-muted:#a9bdd0;--deep-border:#38516c}
+body.dark .deep-section h3,body.dark .deep-callout h3,body.dark .deep-case summary,body.dark .deep-toc a{color:#7dd3fc}
+body.dark .deep-kicker{color:#7dd3fc}
+body.dark .deep-callout,body.dark .deep-example,body.dark .deep-summary{background:#173149;border-color:#38516c}
+body.dark .deep-toc,body.dark .deep-case details{background:#14283c;border-color:#38516c}
+@media(max-width:640px){.deep-callout{padding:14px}.deep-toc{padding:13px}.deep-section{margin:18px 0}}

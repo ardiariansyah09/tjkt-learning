@@ -1,0 +1,14 @@
+/* TJKT Design System — digunakan oleh seluruh halaman. */
+:root{--tjkt-primary:#0369a1;--tjkt-primary-dark:#075985;--tjkt-ink:#102a43;--tjkt-muted:#64748b;--tjkt-border:#e2eaf2;--tjkt-bg:#f4f8fc;--tjkt-surface:#ffffff;--tjkt-radius:16px;--tjkt-focus:#38bdf8}
+body{font-family:Inter,"Segoe UI",Arial,sans-serif}
+button,a,input,select{font-family:inherit}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--tjkt-focus);outline-offset:3px}
+/* Header modul: selaras dengan header IP/Subnetting */
+.module-topbar{min-height:76px;height:auto;padding:12px clamp(16px,3vw,42px);background:var(--surface,#fff);border-bottom:1px solid var(--border,#e2e8f0);display:flex;align-items:center;justify-content:space-between;gap:16px;position:sticky;top:0;z-index:20}
+.module-brand{display:flex;gap:12px;align-items:center;color:var(--text,#0f172a)!important;text-decoration:none!important;min-width:0}
+.module-brand strong,.module-brand small{display:block}.module-brand strong{font-size:15px}.module-brand small{font-size:12px;color:var(--muted,#64748b)}
+.brand-symbol{background:#e0f2fe;border-radius:12px;font-size:24px;padding:7px}
+.topbar-actions{display:flex;gap:10px;align-items:center}
+.back-button,.theme-button{display:inline-flex;align-items:center;justify-content:center;gap:9px;text-decoration:none!important;color:var(--text,#0f172a)!important;background:var(--surface,#fff);border:1px solid var(--border,#e2e8f0);border-radius:10px;padding:9px 14px;font-size:14px;font-weight:600;white-space:nowrap;cursor:pointer}
+.back-button:hover,.theme-button:hover{border-color:var(--tjkt-primary);color:var(--tjkt-primary)!important;background:rgba(2,132,199,.07)}
+@media(max-width:600px){.module-topbar{gap:8px;padding:10px 12px}.module-brand strong{font-size:13px}.module-brand small{font-size:11px}.back-button{padding:9px 10px;font-size:12px}.theme-button{padding:9px 11px}.brand-symbol{font-size:20px}}
