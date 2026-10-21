@@ -1,0 +1,68 @@
+{
+    "moduleId":  "ipv6-dasar",
+    "title":  "Pengalamatan IPv6 Dasar",
+    "version":  2,
+    "contentSource":  "assets/js/course-ipv6.js",
+    "chapters":  [
+                     {
+                         "id":  "orientasi",
+                         "title":  "Orientasi, Tujuan, dan Asesmen Awal",
+                         "summary":  "Menghubungkan IPv6 dengan pengetahuan IPv4 dan menetapkan tujuan penalaran."
+                     },
+                     {
+                         "id":  "konsep-1",
+                         "title":  "Struktur 128 Bit dan Penulisan Kanonis",
+                         "summary":  "Memvalidasi delapan hextet dan menerapkan penyingkatan tanpa ambiguitas."
+                     },
+                     {
+                         "id":  "konsep-2",
+                         "title":  "Jenis, Lingkup, dan Alamat Khusus",
+                         "summary":  "Mengelompokkan unicast, multicast, anycast, link-local, serta alamat khusus."
+                     },
+                     {
+                         "id":  "konsep-3",
+                         "title":  "Prefix, Subnet, dan Rencana Alamat",
+                         "summary":  "Membaca prefix dan membagi ruang dokumentasi menjadi subnet yang tidak tumpang tindih."
+                     },
+                     {
+                         "id":  "konsep-4",
+                         "title":  "Neighbor Discovery dan Router Advertisement",
+                         "summary":  "Menjelaskan NS/NA, pencarian router, serta alasan ICMPv6 tidak boleh diblokir sembarangan."
+                     },
+                     {
+                         "id":  "konsep-5",
+                         "title":  "SLAAC, DHCPv6, DAD, dan Masa Berlaku",
+                         "summary":  "Membedakan sumber konfigurasi serta menjelaskan mengapa satu interface memiliki beberapa alamat."
+                     },
+                     {
+                         "id":  "konsep-6",
+                         "title":  "Routing, DNS, Dual Stack, dan Keamanan",
+                         "summary":  "Mengisolasi masalah penulisan, link, rute, DNS, aplikasi, dan kebijakan keamanan."
+                     },
+                     {
+                         "id":  "kasus",
+                         "title":  "Studi Kasus: Jaringan Sekolah Dual Stack",
+                         "summary":  "Membuat rencana alamat dan diagnosis yang menghubungkan bukti dengan keputusan."
+                     },
+                     {
+                         "id":  "laboratorium",
+                         "title":  "Bengkel Alamat dan Prefix IPv6",
+                         "summary":  "Memeriksa sintaks, ekspansi delapan hextet, bentuk kanonis, serta batas prefix."
+                     },
+                     {
+                         "id":  "game",
+                         "title":  "Misi Pengiriman — Game Petualangan",
+                         "summary":  "Merencanakan rute, mengelola energi, dan menuntaskan urutan pos pada tiga level."
+                     },
+                     {
+                         "id":  "refleksi",
+                         "title":  "Refleksi, Bukti, dan Perbaikan Strategi",
+                         "summary":  "Menjelaskan perubahan pemahaman serta merencanakan pengujian lanjutan."
+                     },
+                     {
+                         "id":  "evaluasi",
+                         "title":  "Evaluasi Akhir dan Transfer Kasus",
+                         "summary":  "Menerapkan konsep alamat, konfigurasi, serta diagnosis pada skenario berbeda."
+                     }
+                 ]
+}

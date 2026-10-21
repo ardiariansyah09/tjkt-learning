@@ -1,0 +1,68 @@
+{
+    "moduleId":  "k3-budaya-kerja",
+    "title":  "K3LH dan Budaya Kerja TJKT",
+    "version":  2,
+    "contentSource":  "assets/js/course-k3.js",
+    "chapters":  [
+                     {
+                         "id":  "orientasi",
+                         "title":  "Orientasi, Tujuan, dan Asesmen Awal",
+                         "summary":  "Menentukan tujuan pribadi dan mengenali alasan menghentikan pekerjaan yang belum aman."
+                     },
+                     {
+                         "id":  "konsep-1",
+                         "title":  "Bahaya, Risiko, dan Penilaian Awal",
+                         "summary":  "Membedakan sumber bahaya, peluang kejadian, dampak, dan prioritas tindak lanjut."
+                     },
+                     {
+                         "id":  "konsep-2",
+                         "title":  "Hierarki Pengendalian dan JSA",
+                         "summary":  "Memilih pengendalian yang mengurangi bahaya pada sumbernya dan menyusun analisis langkah kerja."
+                     },
+                     {
+                         "id":  "konsep-3",
+                         "title":  "Keselamatan Listrik dan ESD",
+                         "summary":  "Membedakan keselamatan manusia terhadap energi berbahaya dari perlindungan komponen terhadap ESD."
+                     },
+                     {
+                         "id":  "konsep-4",
+                         "title":  "Perkakas, Fiber Optik, dan Area Kerja",
+                         "summary":  "Mengidentifikasi bahaya alat tajam, cahaya optik, serpihan, serta penggunaan alat yang tidak sesuai."
+                     },
+                     {
+                         "id":  "konsep-5",
+                         "title":  "Ergonomi, 5R, dan Kerja Tim",
+                         "summary":  "Menerapkan tata kerja yang mengurangi paparan berulang dan mendukung komunikasi keselamatan."
+                     },
+                     {
+                         "id":  "konsep-6",
+                         "title":  "Keadaan Darurat, Lingkungan, dan Izin Kerja",
+                         "summary":  "Menentukan batas tindakan awal, jalur pelaporan, serta pengelolaan limbah dan pekerjaan khusus."
+                     },
+                     {
+                         "id":  "kasus",
+                         "title":  "Studi Kasus: Audit Keselamatan Laboratorium",
+                         "summary":  "Menyusun keputusan dari bukti, alternatif pengendalian, dan risiko sisa."
+                     },
+                     {
+                         "id":  "laboratorium",
+                         "title":  "Inspeksi Area Kerja dan JSA",
+                         "summary":  "Mengidentifikasi kondisi bahaya dan menerapkan alur penghentian, pelaporan, serta perbaikan tata kerja."
+                     },
+                     {
+                         "id":  "game",
+                         "title":  "Misi Pengiriman — Game Petualangan",
+                         "summary":  "Merencanakan rute, mengelola energi, dan menuntaskan urutan pos pada tiga level."
+                     },
+                     {
+                         "id":  "refleksi",
+                         "title":  "Refleksi, Kolaborasi, dan Rencana Perbaikan",
+                         "summary":  "Menilai proses sendiri dan menetapkan tindak lanjut yang dapat diamati."
+                     },
+                     {
+                         "id":  "evaluasi",
+                         "title":  "Evaluasi Akhir dan Transfer Pembelajaran",
+                         "summary":  "Mengevaluasi konsep serta merencanakan penerapan pada konteks kerja baru."
+                     }
+                 ]
+}

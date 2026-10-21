@@ -1,0 +1,68 @@
+{
+    "moduleId":  "perencanaan-jaringan",
+    "title":  "Analisis Kebutuhan dan Dokumentasi Jaringan",
+    "version":  2,
+    "contentSource":  "assets/js/course-planning.js",
+    "chapters":  [
+                     {
+                         "id":  "orientasi",
+                         "title":  "Orientasi, Tujuan, dan Asesmen Awal",
+                         "summary":  "Membedakan masalah pengguna dari pilihan perangkat dan menentukan hasil belajar pribadi."
+                     },
+                     {
+                         "id":  "konsep-1",
+                         "title":  "Pemangku Kepentingan dan Kebutuhan",
+                         "summary":  "Mengelompokkan kebutuhan fungsional, kualitas layanan, kendala, serta prioritas."
+                     },
+                     {
+                         "id":  "konsep-2",
+                         "title":  "Survei Lokasi dan Inventaris",
+                         "summary":  "Mengumpulkan data fisik, logis, dan operasional tanpa melampaui izin."
+                     },
+                     {
+                         "id":  "konsep-3",
+                         "title":  "Perhitungan Port, Kapasitas, dan Pertumbuhan",
+                         "summary":  "Menghitung sumber daya sambil membedakan kapasitas port, uplink, daya, dan trafik."
+                     },
+                     {
+                         "id":  "konsep-4",
+                         "title":  "Rancangan Fisik, Logis, dan Pengalamatan",
+                         "summary":  "Menghubungkan denah perangkat dengan topologi, subnet, VLAN, serta alur layanan."
+                     },
+                     {
+                         "id":  "konsep-5",
+                         "title":  "Anggaran, Pemilihan Alternatif, dan Risiko",
+                         "summary":  "Membandingkan rancangan dengan biaya siklus hidup serta risiko operasional."
+                     },
+                     {
+                         "id":  "konsep-6",
+                         "title":  "Dokumentasi, Uji Penerimaan, dan Perubahan",
+                         "summary":  "Menyusun bukti penerimaan layanan dan menjaga dokumen tetap sesuai kondisi terpasang."
+                     },
+                     {
+                         "id":  "kasus",
+                         "title":  "Studi Kasus: Rancangan Laboratorium Sekolah",
+                         "summary":  "Menghasilkan rancangan yang dapat ditelusuri dari kebutuhan sampai pengujian."
+                     },
+                     {
+                         "id":  "laboratorium",
+                         "title":  "Panel Kapasitas Switch",
+                         "summary":  "Menguji kebutuhan koneksi, cadangan, dan kekurangan port melalui panel switch virtual."
+                     },
+                     {
+                         "id":  "game",
+                         "title":  "Misi Pengiriman — Game Petualangan",
+                         "summary":  "Merencanakan rute, mengelola energi, dan menuntaskan urutan pos pada tiga level."
+                     },
+                     {
+                         "id":  "refleksi",
+                         "title":  "Refleksi dan Review Antar-Kelompok",
+                         "summary":  "Menilai kualitas asumsi, kompromi, dan keterbacaan dokumen untuk memperbaiki rancangan."
+                     },
+                     {
+                         "id":  "evaluasi",
+                         "title":  "Evaluasi Akhir dan Serah Terima Rancangan",
+                         "summary":  "Menghubungkan kebutuhan, kapasitas, dokumen, dan pengujian pada kasus baru."
+                     }
+                 ]
+}

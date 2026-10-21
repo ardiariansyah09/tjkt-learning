@@ -1,0 +1,68 @@
+{
+    "moduleId":  "alat-ukur-tjkt",
+    "title":  "Penggunaan dan Pemeliharaan Alat Ukur TJKT",
+    "version":  2,
+    "contentSource":  "assets/js/course-measurement.js",
+    "chapters":  [
+                     {
+                         "id":  "orientasi",
+                         "title":  "Orientasi, Tujuan, dan Asesmen Awal",
+                         "summary":  "Mengidentifikasi persoalan, tujuan, dan bukti belajar."
+                     },
+                     {
+                         "id":  "konsep-1",
+                         "title":  "Tujuan Ukur, Besaran, dan Pemilihan Alat",
+                         "summary":  "Menetapkan pertanyaan dan bukti sebelum memilih instrumen."
+                     },
+                     {
+                         "id":  "konsep-2",
+                         "title":  "Keselamatan dan Pemeriksaan Sebelum Ukur",
+                         "summary":  "Menerapkan keputusan berhenti dan memeriksa kondisi alat sesuai SOP."
+                     },
+                     {
+                         "id":  "konsep-3",
+                         "title":  "Rentang, Resolusi, Akurasi, dan Ketidakpastian",
+                         "summary":  "Menafsirkan angka tanpa memberi ketelitian melebihi kemampuan alat."
+                     },
+                     {
+                         "id":  "konsep-4",
+                         "title":  "Pengujian Kabel Tembaga dan Dokumentasi Link",
+                         "summary":  "Membedakan wiremap, panjang, performa, dan pengujian layanan."
+                     },
+                     {
+                         "id":  "konsep-5",
+                         "title":  "Daya Optik, Rugi Sisip, dan Margin",
+                         "summary":  "Membedakan dBm absolut dan dB perbandingan serta menghitung anggaran sederhana."
+                     },
+                     {
+                         "id":  "konsep-6",
+                         "title":  "Kalibrasi, Perawatan, dan Laporan Ukur",
+                         "summary":  "Menjaga keterlacakan instrumen serta membedakan pemeriksaan rutin dan kalibrasi."
+                     },
+                     {
+                         "id":  "kasus",
+                         "title":  "Studi Kasus dan Proyek Terapan",
+                         "summary":  "Studi Kasus dan Proyek Terapan"
+                     },
+                     {
+                         "id":  "laboratorium",
+                         "title":  "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+                         "summary":  "Laboratorium: Prediksi, Eksperimen, dan Bukti"
+                     },
+                     {
+                         "id":  "game",
+                         "title":  "Game Misi Terapan",
+                         "summary":  "Game Misi: Petualangan 2D dan 3D"
+                     },
+                     {
+                         "id":  "refleksi",
+                         "title":  "Refleksi, Umpan Balik, dan Transfer",
+                         "summary":  "Refleksi, Umpan Balik, dan Transfer"
+                     },
+                     {
+                         "id":  "evaluasi",
+                         "title":  "Rangkuman dan Evaluasi Akhir",
+                         "summary":  "Rangkuman dan Evaluasi Akhir"
+                     }
+                 ]
+}

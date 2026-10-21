@@ -1,83 +1,652 @@
 [
-  {
-    "id": "pengenalan-jaringan",
-    "title": "Pengenalan Jaringan Komputer",
-    "description": "Konsep dasar jaringan, arsitektur, simulasi, dan Network Arcade.",
-    "category": "Dasar Jaringan",
-    "classLevel": "X",
-    "status": "published",
-    "path": "modules/dasar-jaringan/pengenalan-jaringan/"
-  },
-  {
-    "id": "topologi-jaringan",
-    "title": "Topologi Jaringan",
-    "description": "Star, Bus, Ring, Mesh, Tree, Hybrid, Topology Builder, dan game interaktif.",
-    "category": "Dasar Jaringan",
-    "classLevel": "X",
-    "status": "published",
-    "path": "modules/dasar-jaringan/topologi-jaringan/"
-  },
-  {
-    "id": "perangkat-jaringan",
-    "title": "Perangkat Jaringan",
-    "description": "Pelajari NIC, switch, router, access point, modem/ONT, dan firewall melalui ilustrasi, praktikum, serta evaluasi interaktif.",
-    "category": "Dasar Jaringan",
-    "classLevel": "X",
-    "status": "published",
-    "path": "modules/dasar-jaringan/perangkat-jaringan/"
-  },
-  {
-    "id": "media-transmisi",
-    "title": "Media Transmisi Jaringan",
-    "description": "Bandingkan kabel tembaga, fiber optik, dan media nirkabel melalui simulator 2D.",
-    "category": "Dasar Jaringan",
-    "classLevel": "X",
-    "status": "published",
-    "path": "modules/dasar-jaringan/media-transmisi/"
-  },
-  {
-    "id": "osi-tcpip",
-    "title": "Model OSI dan TCP/IP",
-    "description": "Pelajari tujuh lapisan OSI, pemetaan TCP/IP, enkapsulasi data, dan game susun protokol interaktif.",
-    "category": "Dasar Jaringan",
-    "classLevel": "X",
-    "status": "published",
-    "path": "modules/dasar-jaringan/osi-tcpip/"
-  },
-  {
-    "id": "ipv4-subnetting",
-    "title": "IP Address & Subnetting",
-    "description": "IPv4, CIDR, subnetting, VLSM, dan IP Quest.",
-    "category": "Dasar Jaringan",
-    "classLevel": "X",
-    "status": "published",
-    "path": "modules/dasar-jaringan/ipv4-subnetting/"
-  },
-  {
-    "id": "protokol-layanan",
-    "title": "Protokol dan Layanan Jaringan Dasar",
-    "description": "DNS, DHCP, HTTP/HTTPS, dan layanan jaringan dasar.",
-    "category": "Dasar Jaringan",
-    "classLevel": "X",
-    "status": "coming-soon",
-    "path": ""
-  },
-  {
-    "id": "troubleshooting",
-    "title": "Troubleshooting Jaringan Dasar",
-    "description": "Analisis gangguan, ping, traceroute, dan pemecahan masalah.",
-    "category": "Dasar Jaringan",
-    "classLevel": "X",
-    "status": "coming-soon",
-    "path": ""
-  },
-  {
-    "id": "switching-vlan",
-    "title": "Switching & VLAN",
-    "description": "Pelajari switching, VLAN, dan konfigurasi jaringan.",
-    "category": "Konfigurasi Jaringan",
-    "classLevel": "XI",
-    "status": "coming-soon",
-    "path": ""
-  }
+    {
+        "id":  "proses-bisnis-tjkt",
+        "title":  "Proses Bisnis dan Pelayanan Pelanggan TJKT",
+        "description":  "Survei kebutuhan pelanggan, strategi implementasi, budaya mutu, penanganan pelanggan, dan serah terima layanan.",
+        "category":  "Proses Bisnis TJKT",
+        "classLevel":  "X",
+        "status":  "published",
+        "path":  "modules/dasar-jaringan/proses-bisnis-tjkt/",
+        "groupOrder":  1,
+        "order":  1,
+        "phase":  "E",
+        "prerequisites":  [
+
+                          ]
+    },
+    {
+        "id":  "wawasan-tjkt",
+        "title":  "Perkembangan Teknologi dan Isu Global TJKT",
+        "description":  "Perkembangan 5G, IPv6, fiber optik, IoT, data centre, cloud computing, dan isu keamanan informasi.",
+        "category":  "Perkembangan Teknologi dan Isu Global TJKT",
+        "classLevel":  "X",
+        "status":  "published",
+        "path":  "modules/dasar-jaringan/wawasan-tjkt/",
+        "groupOrder":  2,
+        "order":  1,
+        "phase":  "E",
+        "prerequisites":  [
+
+                          ]
+    },
+    {
+        "id":  "profesi-kewirausahaan-tjkt",
+        "title":  "Profesi dan Kewirausahaan TJKT",
+        "description":  "Kenali job profile, technopreneurship, personal branding, peluang usaha, dan rancangan usaha layanan jaringan.",
+        "category":  "Profesi dan Kewirausahaan TJKT",
+        "classLevel":  "X",
+        "status":  "published",
+        "path":  "modules/dasar-jaringan/profesi-kewirausahaan-tjkt/",
+        "groupOrder":  3,
+        "order":  1,
+        "phase":  "E",
+        "prerequisites":  [
+                              "proses-bisnis-tjkt"
+                          ]
+    },
+    {
+        "id":  "k3-budaya-kerja",
+        "title":  "K3LH dan Budaya Kerja TJKT",
+        "description":  "Identifikasi risiko listrik, ESD, fiber, ergonomi, limbah elektronik, dan prosedur kerja aman.",
+        "category":  "K3LH dan Budaya Kerja Industri",
+        "classLevel":  "X",
+        "status":  "published",
+        "path":  "modules/dasar-jaringan/k3-budaya-kerja/",
+        "groupOrder":  4,
+        "order":  1,
+        "phase":  "E",
+        "prerequisites":  [
+
+                          ]
+    },
+    {
+        "id":  "pengenalan-jaringan",
+        "title":  "Pengenalan Jaringan Komputer",
+        "description":  "Konsep dasar jaringan, arsitektur, simulasi, dan Network Arcade.",
+        "category":  "Dasar-Dasar Teknik Jaringan Komputer dan Telekomunikasi",
+        "classLevel":  "X",
+        "status":  "published",
+        "path":  "modules/dasar-jaringan/pengenalan-jaringan/",
+        "groupOrder":  5,
+        "order":  1,
+        "phase":  "E",
+        "prerequisites":  [
+
+                          ]
+    },
+    {
+        "id":  "perangkat-jaringan",
+        "title":  "Perangkat Jaringan",
+        "description":  "Pelajari NIC, switch, router, access point, modem/ONT, dan firewall melalui ilustrasi, praktikum, serta evaluasi interaktif.",
+        "category":  "Dasar-Dasar Teknik Jaringan Komputer dan Telekomunikasi",
+        "classLevel":  "X",
+        "status":  "published",
+        "path":  "modules/dasar-jaringan/perangkat-jaringan/",
+        "groupOrder":  5,
+        "order":  2,
+        "phase":  "E",
+        "prerequisites":  [
+                              "pengenalan-jaringan"
+                          ]
+    },
+    {
+        "id":  "topologi-jaringan",
+        "title":  "Topologi Jaringan",
+        "description":  "Star, Bus, Ring, Mesh, Tree, Hybrid, Topology Builder, dan game interaktif.",
+        "category":  "Dasar-Dasar Teknik Jaringan Komputer dan Telekomunikasi",
+        "classLevel":  "X",
+        "status":  "published",
+        "path":  "modules/dasar-jaringan/topologi-jaringan/",
+        "groupOrder":  5,
+        "order":  3,
+        "phase":  "E",
+        "prerequisites":  [
+                              "perangkat-jaringan",
+                              "media-transmisi"
+                          ]
+    },
+    {
+        "id":  "perencanaan-jaringan",
+        "title":  "Analisis Kebutuhan dan Dokumentasi Jaringan",
+        "description":  "Inventaris kebutuhan pengguna, kapasitas, denah, anggaran, dan dokumentasi hasil pengujian.",
+        "category":  "Dasar-Dasar Teknik Jaringan Komputer dan Telekomunikasi",
+        "classLevel":  "X",
+        "status":  "published",
+        "path":  "modules/dasar-jaringan/perencanaan-jaringan/",
+        "groupOrder":  5,
+        "order":  4,
+        "phase":  "E",
+        "prerequisites":  [
+                              "topologi-jaringan"
+                          ]
+    },
+    {
+        "id":  "media-transmisi",
+        "title":  "Media Transmisi Jaringan",
+        "description":  "Bandingkan kabel tembaga, fiber optik, dan media nirkabel melalui simulator 2D.",
+        "category":  "Media dan Jaringan Telekomunikasi",
+        "classLevel":  "X",
+        "status":  "published",
+        "path":  "modules/dasar-jaringan/media-transmisi/",
+        "groupOrder":  6,
+        "order":  1,
+        "phase":  "E",
+        "prerequisites":  [
+                              "perangkat-jaringan"
+                          ]
+    },
+    {
+        "id":  "osi-tcpip",
+        "title":  "Model OSI dan TCP/IP",
+        "description":  "Pelajari tujuh lapisan OSI, pemetaan TCP/IP, enkapsulasi data, dan game susun protokol interaktif.",
+        "category":  "Media dan Jaringan Telekomunikasi",
+        "classLevel":  "X",
+        "status":  "published",
+        "path":  "modules/dasar-jaringan/osi-tcpip/",
+        "groupOrder":  6,
+        "order":  2,
+        "phase":  "E",
+        "prerequisites":  [
+                              "pengenalan-jaringan"
+                          ]
+    },
+    {
+        "id":  "ipv4-subnetting",
+        "title":  "IP Address \u0026 Subnetting",
+        "description":  "IPv4, CIDR, subnetting, VLSM, dan IP Quest.",
+        "category":  "Media dan Jaringan Telekomunikasi",
+        "classLevel":  "X",
+        "status":  "published",
+        "path":  "modules/dasar-jaringan/ipv4-subnetting/",
+        "groupOrder":  6,
+        "order":  3,
+        "phase":  "E",
+        "prerequisites":  [
+                              "osi-tcpip"
+                          ]
+    },
+    {
+        "id":  "ipv6-dasar",
+        "title":  "Pengalamatan IPv6 Dasar",
+        "description":  "Alamat 128 bit, penyingkatan, prefix, link-local, multicast, dan pengantar dual stack.",
+        "category":  "Media dan Jaringan Telekomunikasi",
+        "classLevel":  "X",
+        "status":  "published",
+        "path":  "modules/dasar-jaringan/ipv6-dasar/",
+        "groupOrder":  6,
+        "order":  4,
+        "phase":  "E",
+        "prerequisites":  [
+                              "ipv4-subnetting"
+                          ]
+    },
+    {
+        "id":  "protokol-layanan",
+        "title":  "Protokol dan Layanan Jaringan Dasar",
+        "description":  "Pelajari DNS, DHCP, HTTP/HTTPS, port layanan, dan alur komunikasi melalui simulasi serta game interaktif.",
+        "category":  "Media dan Jaringan Telekomunikasi",
+        "classLevel":  "X",
+        "status":  "published",
+        "path":  "modules/dasar-jaringan/protokol-layanan/",
+        "groupOrder":  6,
+        "order":  5,
+        "phase":  "E",
+        "prerequisites":  [
+                              "ipv4-subnetting",
+                              "osi-tcpip"
+                          ]
+    },
+    {
+        "id":  "sistem-telekomunikasi-dasar",
+        "title":  "Dasar Sistem Telekomunikasi",
+        "description":  "Prinsip sistem seluler, gelombang mikro, VSAT IP, jaringan optik, WLAN, dan keamanan komunikasi.",
+        "category":  "Media dan Jaringan Telekomunikasi",
+        "classLevel":  "X",
+        "status":  "published",
+        "path":  "modules/dasar-jaringan/sistem-telekomunikasi-dasar/",
+        "groupOrder":  6,
+        "order":  6,
+        "phase":  "E",
+        "prerequisites":  [
+                              "media-transmisi"
+                          ]
+    },
+    {
+        "id":  "troubleshooting",
+        "title":  "Troubleshooting Jaringan Dasar",
+        "description":  "Telusuri gangguan fisik, IP, gateway, dan DNS melalui lab diagnosa serta game pemulihan jaringan 2D.",
+        "category":  "Media dan Jaringan Telekomunikasi",
+        "classLevel":  "X",
+        "status":  "published",
+        "path":  "modules/dasar-jaringan/troubleshooting/",
+        "groupOrder":  6,
+        "order":  7,
+        "phase":  "E",
+        "prerequisites":  [
+                              "protokol-layanan"
+                          ]
+    },
+    {
+        "id":  "alat-ukur-tjkt",
+        "title":  "Penggunaan dan Pemeliharaan Alat Ukur TJKT",
+        "description":  "Pilih alat ukur listrik dan jaringan, baca hasil ukur, kenali batas ukur, serta lakukan perawatan sesuai prosedur K3.",
+        "category":  "Penggunaan Alat Ukur",
+        "classLevel":  "X",
+        "status":  "published",
+        "path":  "modules/dasar-jaringan/alat-ukur-tjkt/",
+        "groupOrder":  7,
+        "order":  1,
+        "phase":  "E",
+        "prerequisites":  [
+                              "k3-budaya-kerja",
+                              "media-transmisi"
+                          ]
+    },
+    {
+        "id":  "perencanaan-pengalamatan-lanjut",
+        "title":  "Perencanaan Topologi dan Pengalamatan Jaringan",
+        "description":  "Analisis kebutuhan teknis, arsitektur, inventaris perangkat, CIDR, subnetting, VLSM, dan rencana alamat IPv4/IPv6 dalam rancangan terpadu.",
+        "category":  "Perencanaan dan Pengalamatan Jaringan",
+        "classLevel":  "XI–XII",
+        "status":  "coming-soon",
+        "path":  "",
+        "groupOrder":  8,
+        "order":  1,
+        "phase":  "F",
+        "prerequisites":  [
+                              "perencanaan-jaringan",
+                              "ipv4-subnetting",
+                              "ipv6-dasar"
+                          ]
+    },
+    {
+        "id":  "instalasi-kabel",
+        "title":  "Instalasi dan Pengujian Jaringan Kabel",
+        "description":  "Rancang jalur, terminasi kabel, pelabelan, uji wiremap, dan dokumentasi instalasi.",
+        "category":  "Teknologi Jaringan Kabel dan Nirkabel",
+        "classLevel":  "XI–XII",
+        "status":  "coming-soon",
+        "path":  "",
+        "groupOrder":  9,
+        "order":  1,
+        "phase":  "F",
+        "prerequisites":  [
+                              "k3-budaya-kerja",
+                              "perencanaan-jaringan"
+                          ]
+    },
+    {
+        "id":  "wireless-lan",
+        "title":  "Wireless LAN",
+        "description":  "Rencanakan access point, SSID, kanal, cakupan, keamanan Wi-Fi, dan analisis koneksi nirkabel.",
+        "category":  "Teknologi Jaringan Kabel dan Nirkabel",
+        "classLevel":  "XI–XII",
+        "status":  "coming-soon",
+        "path":  "",
+        "groupOrder":  9,
+        "order":  2,
+        "phase":  "F",
+        "prerequisites":  [
+                              "perencanaan-jaringan",
+                              "ipv4-subnetting"
+                          ]
+    },
+    {
+        "id":  "fiber-optik",
+        "title":  "Instalasi dan Pengujian Fiber Optik",
+        "description":  "Konektor, sambungan, anggaran daya optik, OPM/OLS, OTDR, dan perawatan fiber.",
+        "category":  "Teknologi Jaringan Kabel dan Nirkabel",
+        "classLevel":  "XI–XII",
+        "status":  "coming-soon",
+        "path":  "",
+        "groupOrder":  9,
+        "order":  3,
+        "phase":  "F",
+        "prerequisites":  [
+                              "instalasi-kabel"
+                          ]
+    },
+    {
+        "id":  "voip",
+        "title":  "Layanan Komunikasi VoIP",
+        "description":  "SIP, RTP, codec, kebutuhan bandwidth, kualitas suara, dan pengujian panggilan.",
+        "category":  "Teknologi Jaringan Kabel dan Nirkabel",
+        "classLevel":  "XI–XII",
+        "status":  "coming-soon",
+        "path":  "",
+        "groupOrder":  9,
+        "order":  4,
+        "phase":  "F",
+        "prerequisites":  [
+                              "protokol-layanan",
+                              "bandwidth-qos"
+                          ]
+    },
+    {
+        "id":  "keamanan-jaringan",
+        "title":  "Keamanan Jaringan Dasar",
+        "description":  "Pelajari kontrol akses, ACL, firewall, dan praktik aman untuk konfigurasi serta pengelolaan jaringan.",
+        "category":  "Keamanan Jaringan",
+        "classLevel":  "XI–XII",
+        "status":  "coming-soon",
+        "path":  "",
+        "groupOrder":  10,
+        "order":  1,
+        "phase":  "F",
+        "prerequisites":  [
+                              "protokol-layanan",
+                              "switching-vlan"
+                          ]
+    },
+    {
+        "id":  "autentikasi-kriptografi",
+        "title":  "Autentikasi dan Kriptografi",
+        "description":  "AAA, MFA, sertifikat, enkripsi, hashing, dan pengelolaan identitas.",
+        "category":  "Keamanan Jaringan",
+        "classLevel":  "XI–XII",
+        "status":  "coming-soon",
+        "path":  "",
+        "groupOrder":  10,
+        "order":  2,
+        "phase":  "F",
+        "prerequisites":  [
+                              "keamanan-jaringan",
+                              "manajemen-pengguna-server"
+                          ]
+    },
+    {
+        "id":  "ids-hardening",
+        "title":  "Hardening, IDS/IPS, dan Respons Insiden",
+        "description":  "Kurangi permukaan serangan, baca log, analisis peringatan, dan dokumentasikan penanganan insiden di lab berizin.",
+        "category":  "Keamanan Jaringan",
+        "classLevel":  "XI–XII",
+        "status":  "coming-soon",
+        "path":  "",
+        "groupOrder":  10,
+        "order":  3,
+        "phase":  "F",
+        "prerequisites":  [
+                              "autentikasi-kriptografi",
+                              "monitoring-jaringan"
+                          ]
+    },
+    {
+        "id":  "switching-vlan",
+        "title":  "Switching \u0026 VLAN",
+        "description":  "Pahami MAC learning, VLAN access dan trunk, inter-VLAN routing, lalu praktikkan konfigurasi switch lewat simulator dan game 2D.",
+        "category":  "Pemasangan dan Konfigurasi Perangkat Jaringan",
+        "classLevel":  "XI–XII",
+        "status":  "published",
+        "path":  "modules/konfigurasi-jaringan/switching-vlan/",
+        "groupOrder":  11,
+        "order":  1,
+        "phase":  "F",
+        "prerequisites":  [
+                              "ipv4-subnetting",
+                              "topologi-jaringan"
+                          ]
+    },
+    {
+        "id":  "routing-ipv4",
+        "title":  "Routing IPv4",
+        "description":  "Pelajari tabel routing, next hop, default route, dan static route melalui praktik konfigurasi jaringan.",
+        "category":  "Pemasangan dan Konfigurasi Perangkat Jaringan",
+        "classLevel":  "XI–XII",
+        "status":  "coming-soon",
+        "path":  "",
+        "groupOrder":  11,
+        "order":  2,
+        "phase":  "F",
+        "prerequisites":  [
+                              "switching-vlan"
+                          ]
+    },
+    {
+        "id":  "routing-dinamis",
+        "title":  "Routing Dinamis",
+        "description":  "Kenali pertukaran informasi rute dan praktik routing dinamis, termasuk pengantar RIP dan OSPF.",
+        "category":  "Pemasangan dan Konfigurasi Perangkat Jaringan",
+        "classLevel":  "XI–XII",
+        "status":  "coming-soon",
+        "path":  "",
+        "groupOrder":  11,
+        "order":  3,
+        "phase":  "F",
+        "prerequisites":  [
+                              "routing-ipv4"
+                          ]
+    },
+    {
+        "id":  "nat-wan",
+        "title":  "NAT dan Koneksi WAN",
+        "description":  "Pahami hubungan LAN dan WAN, translasi alamat, serta pengujian koneksi jaringan luar.",
+        "category":  "Pemasangan dan Konfigurasi Perangkat Jaringan",
+        "classLevel":  "XI–XII",
+        "status":  "coming-soon",
+        "path":  "",
+        "groupOrder":  11,
+        "order":  4,
+        "phase":  "F",
+        "prerequisites":  [
+                              "routing-ipv4"
+                          ]
+    },
+    {
+        "id":  "bandwidth-qos",
+        "title":  "Manajemen Bandwidth dan QoS",
+        "description":  "Ukur throughput, latency, jitter, loss, lalu terapkan antrean dan prioritas trafik.",
+        "category":  "Pemasangan dan Konfigurasi Perangkat Jaringan",
+        "classLevel":  "XI–XII",
+        "status":  "coming-soon",
+        "path":  "",
+        "groupOrder":  11,
+        "order":  5,
+        "phase":  "F",
+        "prerequisites":  [
+                              "nat-wan"
+                          ]
+    },
+    {
+        "id":  "proxy-load-balancing",
+        "title":  "Proxy dan Load Balancing",
+        "description":  "Bedakan proxy, cache, pembagian beban, failover, dan uji kegagalan jalur.",
+        "category":  "Pemasangan dan Konfigurasi Perangkat Jaringan",
+        "classLevel":  "XI–XII",
+        "status":  "coming-soon",
+        "path":  "",
+        "groupOrder":  11,
+        "order":  6,
+        "phase":  "F",
+        "prerequisites":  [
+                              "bandwidth-qos",
+                              "protokol-layanan"
+                          ]
+    },
+    {
+        "id":  "dasar-administrasi-server",
+        "title":  "Dasar Administrasi Server",
+        "description":  "Kenali peran server, sistem operasi server, akses lokal dan remote, serta pengelolaan layanan dasar.",
+        "category":  "Administrasi Sistem Jaringan",
+        "classLevel":  "XI–XII",
+        "status":  "coming-soon",
+        "path":  "",
+        "groupOrder":  12,
+        "order":  1,
+        "phase":  "F",
+        "prerequisites":  [
+                              "protokol-layanan"
+                          ]
+    },
+    {
+        "id":  "virtualisasi-server",
+        "title":  "Virtualisasi Server Dasar",
+        "description":  "Kenali mesin virtual dan praktikkan pengelolaan server latihan secara terisolasi.",
+        "category":  "Administrasi Sistem Jaringan",
+        "classLevel":  "XI–XII",
+        "status":  "coming-soon",
+        "path":  "",
+        "groupOrder":  12,
+        "order":  2,
+        "phase":  "F",
+        "prerequisites":  [
+                              "dasar-administrasi-server"
+                          ]
+    },
+    {
+        "id":  "administrasi-linux-windows",
+        "title":  "Administrasi Linux dan Windows Server",
+        "description":  "Instalasi OS server, jaringan, penyimpanan, paket, layanan, pembaruan, dan administrasi Linux/Windows di mesin virtual.",
+        "category":  "Administrasi Sistem Jaringan",
+        "classLevel":  "XI–XII",
+        "status":  "coming-soon",
+        "path":  "",
+        "groupOrder":  12,
+        "order":  3,
+        "phase":  "F",
+        "prerequisites":  [
+                              "virtualisasi-server"
+                          ]
+    },
+    {
+        "id":  "manajemen-pengguna-server",
+        "title":  "Manajemen Pengguna dan Hak Akses",
+        "description":  "Kelola akun dan grup, izin berkas, hak administrator, serta akses server dengan prinsip hak minimum.",
+        "category":  "Administrasi Sistem Jaringan",
+        "classLevel":  "XI–XII",
+        "status":  "coming-soon",
+        "path":  "",
+        "groupOrder":  12,
+        "order":  4,
+        "phase":  "F",
+        "prerequisites":  [
+                              "administrasi-linux-windows"
+                          ]
+    },
+    {
+        "id":  "layanan-server",
+        "title":  "DHCP, DNS, dan Remote Server",
+        "description":  "Konfigurasi DHCP scope, reservasi, DNS zone dan record, serta administrasi remote melalui SSH; uji dari klien.",
+        "category":  "Administrasi Sistem Jaringan",
+        "classLevel":  "XI–XII",
+        "status":  "coming-soon",
+        "path":  "",
+        "groupOrder":  12,
+        "order":  5,
+        "phase":  "F",
+        "prerequisites":  [
+                              "manajemen-pengguna-server"
+                          ]
+    },
+    {
+        "id":  "file-server",
+        "title":  "File Server dan Berbagi Sumber Daya",
+        "description":  "Konfigurasikan folder bersama, izin akses, dan penyimpanan untuk berbagi berkas di jaringan.",
+        "category":  "Administrasi Sistem Jaringan",
+        "classLevel":  "XI–XII",
+        "status":  "coming-soon",
+        "path":  "",
+        "groupOrder":  12,
+        "order":  6,
+        "phase":  "F",
+        "prerequisites":  [
+                              "layanan-server"
+                          ]
+    },
+    {
+        "id":  "hosting-server",
+        "title":  "Web, Database, dan Hosting Server",
+        "description":  "Virtual host, TLS, aplikasi dan database, shared hosting, VPS, serta panel administrasi di lab.",
+        "category":  "Administrasi Sistem Jaringan",
+        "classLevel":  "XI–XII",
+        "status":  "coming-soon",
+        "path":  "",
+        "groupOrder":  12,
+        "order":  7,
+        "phase":  "F",
+        "prerequisites":  [
+                              "layanan-server"
+                          ]
+    },
+    {
+        "id":  "mail-server",
+        "title":  "Mail Server",
+        "description":  "SMTP, IMAP, autentikasi pengirim, TLS, dan pengujian pengiriman lokal.",
+        "category":  "Administrasi Sistem Jaringan",
+        "classLevel":  "XI–XII",
+        "status":  "coming-soon",
+        "path":  "",
+        "groupOrder":  12,
+        "order":  8,
+        "phase":  "F",
+        "prerequisites":  [
+                              "hosting-server"
+                          ]
+    },
+    {
+        "id":  "vpn-server",
+        "title":  "VPN dan Akses Jarak Jauh Aman",
+        "description":  "Tunnel, autentikasi, pemilihan rute, akses remote, dan pengujian kebocoran akses.",
+        "category":  "Administrasi Sistem Jaringan",
+        "classLevel":  "XI–XII",
+        "status":  "coming-soon",
+        "path":  "",
+        "groupOrder":  12,
+        "order":  9,
+        "phase":  "F",
+        "prerequisites":  [
+                              "autentikasi-kriptografi",
+                              "routing-ipv4"
+                          ]
+    },
+    {
+        "id":  "monitoring-jaringan",
+        "title":  "Monitoring dan Pemeliharaan Server",
+        "description":  "Pantau layanan, log, dan penggunaan sumber daya; lakukan pemeriksaan serta pemeliharaan server rutin.",
+        "category":  "Administrasi Sistem Jaringan",
+        "classLevel":  "XI–XII",
+        "status":  "coming-soon",
+        "path":  "",
+        "groupOrder":  12,
+        "order":  10,
+        "phase":  "F",
+        "prerequisites":  [
+                              "layanan-server"
+                          ]
+    },
+    {
+        "id":  "backup-pemulihan-server",
+        "title":  "Backup dan Pemulihan Server",
+        "description":  "Rencanakan pencadangan data dan konfigurasi, lalu latih pemulihan layanan dari cadangan.",
+        "category":  "Administrasi Sistem Jaringan",
+        "classLevel":  "XI–XII",
+        "status":  "coming-soon",
+        "path":  "",
+        "groupOrder":  12,
+        "order":  11,
+        "phase":  "F",
+        "prerequisites":  [
+                              "monitoring-jaringan"
+                          ]
+    },
+    {
+        "id":  "proyek-integrasi-jaringan",
+        "title":  "Proyek Integrasi Jaringan",
+        "description":  "Rancang, konfigurasi, uji, dan dokumentasikan jaringan terpadu berdasarkan kebutuhan pengguna.",
+        "category":  "Proyek Integrasi Lintas Elemen",
+        "classLevel":  "XI–XII",
+        "status":  "coming-soon",
+        "path":  "",
+        "groupOrder":  13,
+        "order":  1,
+        "phase":  "F",
+        "prerequisites":  [
+                              "troubleshooting",
+                              "wireless-lan",
+                              "nat-wan",
+                              "layanan-server",
+                              "keamanan-jaringan",
+                              "backup-pemulihan-server",
+                              "perencanaan-pengalamatan-lanjut"
+                          ]
+    }
 ]
