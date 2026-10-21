@@ -328,6 +328,30 @@ body {
 
 /* GRID KARTU MODUL */
 
+.module-group + .module-group {
+  margin-top: 38px;
+}
+
+.module-group-title {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  margin: 0 0 18px;
+  color: #102a43;
+  font-size: clamp(19px, 2.5vw, 23px);
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.module-group-title::before {
+  width: 5px;
+  height: 25px;
+  flex: 0 0 auto;
+  border-radius: 8px;
+  background: linear-gradient(180deg, #0ea5e9, #0369a1);
+  content: "";
+}
+
 .module-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -470,6 +494,10 @@ body.dark .module-card h3 {
   color: #f1f5f9;
 }
 
+body.dark .module-group-title {
+  color: #f1f5f9;
+}
+
 body.dark .module-card > p {
   color: #cbd5e1;
 }
@@ -525,6 +553,14 @@ body.dark #themeToggle {
 
   .catalog h2 {
     font-size: 23px;
+  }
+
+  .module-group + .module-group {
+    margin-top: 30px;
+  }
+
+  .module-group-title {
+    margin-bottom: 14px;
   }
 
   .module-grid {
@@ -865,6 +901,14 @@ body {
 .module-grid {
   gap: 18px;
   margin-top: 0;
+}
+
+#moduleList.module-grid {
+  display: block;
+}
+
+.module-group {
+  min-width: 0;
 }
 
 .module-card {

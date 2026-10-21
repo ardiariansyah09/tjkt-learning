@@ -1,4 +1,5 @@
 import { bindThemeToggle } from './theme.js';
+import { mountActionGame } from './action-game.js';
 
 const KEY = 'tjkt:perangkat-jaringan:progress:v1';
 const MIN_PASS = 75;
@@ -201,8 +202,8 @@ const activities = [
     ]
   },
   {
-    title: 'Packet Rescue: Misi Perangkat Jaringan',
-    summary: 'Game 2D interaktif: temukan perangkat yang bermasalah dan pulihkan konektivitas dalam enam misi.'
+    title: 'Device Delivery: Petualangan Jaringan',
+    summary: 'Gerakkan karakter, ambil muatan, lewati empat pos perangkat, hindari gangguan, dan selesaikan tiga level.'
   }
 ];
 
@@ -1250,7 +1251,7 @@ function render() {
   if (current < 5) renderTheory(root, lesson, current);
   else if (current === 5) renderDeviceSelection(root);
   else if (current === 6) renderBuilder(root);
-  else if (current === 7) renderFaultChallenge(root);
+  else if (current === 7) mountActionGame(root, { moduleId:'perangkat-jaringan', mode:'2d', onComplete:completeCurrent });
   else renderPosttest(root);
   renderNavigation();
 }

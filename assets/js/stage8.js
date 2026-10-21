@@ -1,4 +1,4 @@
-import {mountIPQuest} from './ip-quest.js?v=3';
+import {mountActionGame} from './action-game.js';
 import {questions} from './question-bank.js';
 const PREFIX='tjkt:ipv4-subnetting:stage8:';
 function el(tag,cls='',text=''){const x=document.createElement(tag);if(cls)x.className=cls;if(text)x.textContent=text;return x;}
@@ -7,7 +7,7 @@ function load(key,fallback){try{return JSON.parse(localStorage.getItem(PREFIX+ke
 function save(key,value){try{localStorage.setItem(PREFIX+key,JSON.stringify(value));return true;}catch{return false;}}
 function dispatch(lessonId,score){window.dispatchEvent(new CustomEvent('tjkt:assessment',{detail:{lessonId,score,answeredAll:true}}));}
 function record(key,score,details){const prev=load(key,{attempts:0,best:0});const item={attempts:(prev.attempts||0)+1,best:Math.max(prev.best||0,score),last:score,updatedAt:new Date().toISOString(),details};save(key,item);return item;}
-export function mountGames(root){ mountIPQuest(root); }
+export function mountGames(root){ mountActionGame(root,{moduleId:'ipv4-subnetting',mode:'2d',onComplete(score){record('games',score,{game:'Subnet Courier',levels:3});dispatch('games',score);}}); }
 export function mountPosttest(root){
  const panel=el('section','stage8-panel'),heading=el('h3','','Evaluasi Akhir • 10 Soal'),body=el('div');panel.append(heading,body);root.append(panel);
  function start(){const deck=shuffle(questions).slice(0,10).map(q=>({...q,choices:shuffle(q.a.map((label,i)=>({label,original:i})))}));body.replaceChildren();const form=el('form','stage8-posttest');

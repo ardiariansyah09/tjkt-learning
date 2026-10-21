@@ -11,9 +11,9 @@ export function mountLearnerDashboard(root,gate,ids,lessons,goTo){
  if(!root)return;
  root.replaceChildren();
  const total=ids.filter(id=>passed(gate,id)).length,percentage=Math.round(total/ids.length*100);
- const heading=element('h3','','📊 Ringkasan Belajar'),desc=element('p','stage9-muted',`${total} dari ${ids.length} materi tuntas (${percentage}%).`);
+ const heading=element('h3','','📊 Ringkasan Belajar'),desc=element('p','stage9-muted',`${total} dari ${ids.length} tahap tuntas (${percentage}%).`);
  const next=ids.find(id=>!passed(gate,id));
- const btn=element('button','stage9-next',next?`▶ Lanjut: ${lessons[ids.indexOf(next)].title}`:'✓ Semua materi tuntas');
+ const btn=element('button','stage9-next',next?`▶ Lanjut: ${lessons[ids.indexOf(next)].title}`:'✓ Semua tahap tuntas');
  btn.disabled=!next;
  if(next)btn.onclick=()=>goTo(next);
  const note=element('small','stage9-muted','Data hanya disimpan di browser ini, bukan dikirim ke guru.');

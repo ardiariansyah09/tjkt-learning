@@ -1,0 +1,165 @@
+body.switching-module {
+  --switch-text: #17324a;
+  --switch-muted: #60768a;
+  --switch-border: #d7e3ec;
+  --switch-surface: #fff;
+  --switch-bg: #f2f7fb;
+  background: var(--switch-bg);
+  color: var(--switch-text);
+}
+
+.switching-module.dark {
+  --switch-text: #e8f3fb;
+  --switch-muted: #adbed0;
+  --switch-border: #2d435b;
+  --switch-surface: #142238;
+  --switch-bg: #0b1424;
+}
+
+.switching-module .module-layout { max-width: 1500px; grid-template-columns: 295px minmax(0,1fr); background: var(--switch-bg); }
+.switching-module .lesson-main,.switching-module .lesson-content { background: var(--switch-bg); color: var(--switch-text); }
+.switching-module .lesson-sidebar { border-color: var(--switch-border); background: var(--switch-surface); }
+.switching-module .lesson-sidebar h2,.switching-module .lesson-sidebar p { color: var(--switch-text); }
+.switching-module .switch-objectives,.switching-module .switch-topic,.switching-module .switch-simulator,.switching-module .switch-game {
+  margin: 0 0 20px;
+  padding: clamp(18px,3vw,28px);
+  border: 1px solid var(--switch-border);
+  border-radius: 18px;
+  background: var(--switch-surface);
+  box-shadow: 0 8px 26px #102b4410;
+}
+.switching-module .lesson-hero h1 { margin: 8px 0; color: #fff; font-size: clamp(1.7rem,4vw,2.5rem); }
+.switching-module .lesson-hero p { color: #e2e8f0; }
+.switching-module .lesson-content p,.switching-module .lesson-content li { color: var(--switch-text); line-height: 1.75; }
+.switch-kicker { color: #087f91; font-size: .75rem; font-weight: 800; letter-spacing: .1em; }
+.switching-module .switch-objectives { border-left: 5px solid #0e9ca6; background: linear-gradient(115deg,color-mix(in srgb,#0e9ca6 9%,var(--switch-surface)),var(--switch-surface) 70%); }
+.switching-module .switch-objectives h2,.switching-module .switch-topic h2,.switching-module .switch-simulator h2,.switching-module .switch-game h2 { margin-top: 8px; color: var(--switch-text); }
+.switch-concept-map { display: grid; grid-template-columns: minmax(0,1fr) auto minmax(0,1fr) auto minmax(0,1fr); align-items: center; gap: 10px; margin: 20px 0; }
+.switch-concept-map article { min-height: 130px; padding: 16px; border: 1px solid var(--switch-border); border-radius: 13px; background: var(--switch-bg); }
+.switch-concept-map article span { display: grid; place-items: center; width: 30px; height: 30px; border-radius: 9px; background: #0e7490; color: #fff; font-size: .75rem; font-weight: 850; }
+.switch-concept-map article strong,.switch-concept-map article small { display: block; }
+.switch-concept-map article strong { margin: 10px 0 4px; color: var(--switch-text); }
+.switch-concept-map article small { color: var(--switch-muted); line-height: 1.5; }
+.switch-concept-map > b { color: #0e7490; }
+.switch-callout { margin: 16px 0; padding: 14px 16px; border-left: 4px solid #0e9ca6; border-radius: 8px; background: color-mix(in srgb,#0e9ca6 10%,var(--switch-surface)); line-height: 1.65; }
+.mac-demo { display: grid; grid-template-columns: minmax(0,1fr) auto minmax(0,1fr); align-items: center; gap: 14px; margin: 18px 0; }
+.mac-demo > div { display: grid; gap: 7px; padding: 16px; border: 1px solid var(--switch-border); border-radius: 12px; background: var(--switch-bg); }
+.mac-demo > div span { color: #087f91; font-size: .7rem; font-weight: 850; letter-spacing: .08em; }
+.mac-demo strong { color: var(--switch-text); font-family: ui-monospace,Consolas,monospace; font-size: .88rem; overflow-wrap: anywhere; }
+.mac-demo small { color: var(--switch-muted); }
+.mac-demo > b { color: #0e7490; font-size: 1.4rem; }
+.vlan-cards { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 12px; margin: 18px 0; }
+.vlan-card { padding: 16px; border: 1px solid var(--switch-border); border-top: 4px solid #0e9ca6; border-radius: 12px; background: var(--switch-bg); }
+.vlan-card span { color: #087f91; font-size: .75rem; font-weight: 850; letter-spacing: .06em; }
+.vlan-card h3 { margin: 8px 0 4px; color: var(--switch-text); }
+.vlan-card p { margin: 0; color: var(--switch-muted) !important; font-size: .88rem; }
+.vlan10 { --vlan-accent: #2dd4bf; }
+.vlan20 { --vlan-accent: #fbbf24; }
+.vlan30 { --vlan-accent: #c084fc; }
+.vlan-card.vlan10,.legend-item.vlan-10 { border-color: var(--vlan-accent); }
+.vlan-card.vlan20,.legend-item.vlan-20 { border-color: var(--vlan-accent); }
+.port-example { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 10px; margin: 18px 0; }
+.port-example > div { display: grid; gap: 7px; padding: 14px; border: 1px solid var(--switch-border); border-radius: 12px; background: var(--switch-bg); }
+.port-example span { color: var(--switch-muted); font-size: .75rem; font-weight: 800; }
+.port-example b { color: #087f91; font-family: ui-monospace,Consolas,monospace; }
+.port-example strong { color: var(--switch-text); font-size: .88rem; }
+.trunk-illustration { display: grid; grid-template-columns: minmax(130px,1fr) minmax(140px,1.2fr) minmax(130px,1fr); align-items: center; gap: 14px; margin: 20px 0; padding: 20px; border: 1px solid var(--switch-border); border-radius: 14px; background: var(--switch-bg); }
+.trunk-switch { display: grid; gap: 8px; justify-items: center; padding: 14px; border: 2px solid #0e7490; border-radius: 13px; background: var(--switch-surface); }
+.trunk-switch strong { color: var(--switch-text); }
+.trunk-switch span { width: 100%; padding: 6px; border-radius: 7px; background: color-mix(in srgb,#0e9ca6 10%,var(--switch-surface)); color: var(--switch-text); font-size: .78rem; text-align: center; }
+.trunk-link { display: grid; gap: 7px; justify-items: center; padding: 12px 4px; border-top: 4px solid #0e9ca6; border-bottom: 4px solid #0e9ca6; color: var(--switch-text); text-align: center; }
+.trunk-link b { color: #087f91; font-size: .8rem; }
+.trunk-link span { color: var(--switch-muted); font-size: .78rem; }
+.trunk-link i { color: #0e7490; font-size: 1.5rem; font-style: normal; }
+.routing-flow { display: grid; grid-template-columns: minmax(0,1fr) minmax(150px,.8fr) minmax(0,1fr); align-items: center; gap: 12px; margin: 20px 0; }
+.routing-flow article,.routing-flow > div { display: grid; gap: 7px; justify-items: center; min-height: 110px; align-content: center; padding: 14px; border: 1px solid var(--switch-border); border-radius: 12px; background: var(--switch-bg); text-align: center; }
+.routing-flow article span,.routing-flow > div strong { color: #087f91; font-weight: 850; }
+.routing-flow article small,.routing-flow > div span { color: var(--switch-muted); }
+.routing-flow article b { color: var(--switch-text); font-size: .85rem; }
+.switch-simulator,.switch-game { overflow: hidden; background: linear-gradient(145deg,#10243b,#123c5a) !important; color: #e7f6ff; }
+.switch-simulator h2,.switch-simulator p,.switch-game h2,.switch-game p { color: #e7f6ff !important; }
+.switch-simulator-heading { max-width: 850px; }
+.switch-simulator-heading .switch-kicker,.switch-game > .switch-kicker { color: #7de4ef; }
+.lab-topology { overflow: hidden; margin: 16px 0 8px; border: 1px solid #294c68; border-radius: 14px; background: #071629; }
+.lab-topology svg { display: block; width: 100%; height: auto; min-height: 225px; }
+.vlan-link { stroke: #52758d; stroke-width: 5; stroke-linecap: round; }
+.vlan-link.is-blocked { stroke: #fb7185; stroke-dasharray: 8 8; }
+.vlan-link.is-active { stroke: #7de4ef; stroke-width: 8; filter: drop-shadow(0 0 5px #67e8f9); }
+.vlan-node { stroke-width: 3; }
+.host-node { fill: #113f60; stroke: #60d9e1; }
+.host-node.vlan-10 { stroke: #2dd4bf; }
+.host-node.vlan-20 { stroke: #fbbf24; }
+.switch-node { fill: #164a6a; stroke: #60d9e1; }
+.router-node { fill: #244263; stroke: #c084fc; }
+.vlan-node.is-active { filter: drop-shadow(0 0 8px #7de4ef); }
+.vlan-label { fill: #f0fbff; text-anchor: middle; font: 800 13px system-ui,sans-serif; }
+.vlan-sub-label,.trunk-subtitle { fill: #c5d8e7; text-anchor: middle; font: 600 11px system-ui,sans-serif; }
+.trunk-title { fill: #7de4ef; text-anchor: middle; font: 800 12px system-ui,sans-serif; }
+.topology-legend { display: flex; flex-wrap: wrap; gap: 8px; padding: 10px 12px; }
+.legend-item { padding: 6px 9px; border: 1px solid #52758d; border-radius: 20px; color: #e7f6ff; font-size: .78rem; }
+.legend-item.vlan-10 { border-color: #2dd4bf; }
+.legend-item.vlan-20 { border-color: #fbbf24; }
+.vlan-lab-controls { display: grid; grid-template-columns: minmax(0,1.4fr) minmax(220px,.8fr); gap: 12px; margin: 12px 0; }
+.host-assignments,.trunk-assignments { display: grid; grid-template-columns: minmax(0,1fr) minmax(130px,.8fr); align-items: center; gap: 9px 12px; min-width: 0; margin: 0; padding: 14px; border: 1px solid #365a76; border-radius: 12px; background: #0d1d31; }
+.host-assignments legend,.trunk-assignments legend { padding: 0 6px; color: #d7eaf6; font-weight: 800; }
+.host-assignments label,.trunk-assignments label { color: #d7eaf6; font-size: .86rem; }
+.host-assignments select,.frame-test-controls select { min-height: 38px; padding: 6px 9px; border: 1px solid #4e7895; border-radius: 8px; background: #173b57; color: #f2fbff; font: inherit; }
+.trunk-assignments label { display: flex; align-items: center; gap: 8px; }
+.trunk-assignments input { accent-color: #22d3ee; }
+.trunk-assignments .routing-toggle { grid-column: 1 / -1; margin-top: 6px; padding-top: 10px; border-top: 1px solid #365a76; }
+.frame-test-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 9px; margin: 12px 0; padding: 13px; border: 1px solid #365a76; border-radius: 12px; background: #0d1d31; }
+.frame-test-controls label { color: #d7eaf6; font-weight: 700; }
+.frame-test-controls select { flex: 1 1 135px; }
+.frame-test-controls button { margin: 0; white-space: nowrap; }
+.frame-test-controls .secondary-action,.frame-game-footer .secondary-action { border-color: #4e7895; background: #173b57; color: #f2fbff; }
+.frame-status,.frame-game-status { min-height: 48px; margin: 10px 0; padding: 12px; border: 1px solid #365a76; border-radius: 9px; background: #0d1d31; color: #e7f6ff !important; line-height: 1.55; }
+.frame-log { min-height: 1em; color: #9ed8e9; font-size: .88rem; overflow-wrap: anywhere; }
+.switch-disclaimer { color: #b9cede !important; font-size: .83rem; }
+.frame-game-scene { padding: 16px; border: 1px solid #365a76; border-radius: 15px; background: #0d1d31; }
+.game-topline { display: flex; justify-content: space-between; gap: 10px; color: #d7eaf6; font-weight: 750; }
+.game-topline span:first-child { color: #7de4ef; }
+.frame-prompt { min-height: 3em; margin: 14px 0; }
+.game-frame-card { display: grid; gap: 6px; margin: 12px 0; padding: 14px; border: 1px solid #4e7895; border-radius: 11px; background: #10243b; }
+.game-frame-card span { color: #7de4ef; font-size: .7rem; font-weight: 850; letter-spacing: .08em; }
+.game-frame-card strong { color: #f0fbff; font-family: ui-monospace,Consolas,monospace; overflow-wrap: anywhere; }
+.game-frame-card small { color: #c5d8e7; }
+.game-mac-table { overflow-x: auto; margin: 14px 0; }
+.game-mac-table h3 { color: #e7f6ff; font-size: .95rem; }
+.game-mac-table table { width: 100%; border-collapse: collapse; }
+.game-mac-table th,.game-mac-table td { padding: 9px 11px; border: 1px solid #365a76; color: #e7f6ff; text-align: left; }
+.game-mac-table thead { background: #164a6a; }
+.game-mac-table tbody tr:nth-child(even) { background: #10243b; }
+.game-selection-hint { color: #c5d8e7 !important; font-size: .86rem; }
+.switch-port-choices { display: flex; flex-wrap: wrap; gap: 9px; margin: 12px 0; padding: 14px; border: 1px solid #294c68; border-radius: 12px; background: #071629; }
+.switch-port-choices button { min-width: 90px; padding: 10px 13px; border: 1px solid #4e7895; border-radius: 9px; background: #173b57; color: #e7f6ff; font: inherit; font-weight: 750; cursor: pointer; }
+.switch-port-choices button[aria-pressed="true"] { border-color: #7de4ef; background: #0e6d78; box-shadow: 0 0 0 2px #7de4ef33; }
+.switch-port-choices button:disabled { opacity: .55; cursor: default; }
+.frame-game-footer { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 14px; }
+.frame-game-footer button { margin: 0; }
+@media(max-width:960px) {
+  .switching-module .module-layout { grid-template-columns: 1fr; }
+  .switching-module .lesson-sidebar { border-right: 0; border-bottom: 1px solid var(--switch-border); }
+  .switching-module .lesson-nav { display: grid; grid-template-columns: repeat(auto-fit,minmax(180px,1fr)); }
+}
+@media(max-width:760px) {
+  .vlan-lab-controls { grid-template-columns: 1fr; }
+  .vlan-cards,.port-example { grid-template-columns: 1fr; }
+}
+@media(max-width:640px) {
+  .switching-module .lesson-main { padding: 12px; }
+  .switch-concept-map { grid-template-columns: 1fr; }
+  .switch-concept-map > b { justify-self: center; transform: rotate(90deg); }
+  .mac-demo,.routing-flow { grid-template-columns: 1fr; }
+  .mac-demo > b { justify-self: center; transform: rotate(90deg); }
+  .trunk-illustration { grid-template-columns: 1fr; }
+  .trunk-link { border: 0; border-right: 4px solid #0e9ca6; border-left: 4px solid #0e9ca6; }
+  .trunk-link i { transform: rotate(90deg); }
+  .host-assignments { grid-template-columns: minmax(0,1fr) 120px; }
+  .frame-test-controls { align-items: stretch; flex-direction: column; }
+  .frame-test-controls select,.frame-test-controls button { width: 100%; }
+  .lab-topology svg { min-height: 170px; }
+  .game-topline { flex-direction: column; }
+  .frame-game-footer { flex-direction: column; }
+  .frame-game-footer button { width: 100%; }
+}
+@media(prefers-reduced-motion:reduce) { *,*::before,*::after { scroll-behavior:auto !important; animation-duration:.01ms !important; transition-duration:.01ms !important; } }

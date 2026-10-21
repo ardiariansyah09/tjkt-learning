@@ -1,5 +1,5 @@
 import { bindThemeToggle } from './theme.js';
-import { mountChapterNavigation } from './chapter-navigation.js';
+import { mountChapterNavigation } from './chapter-navigation.js?v=5';
 
 mountChapterNavigation({
   moduleId: 'osi-tcpip',
@@ -38,8 +38,8 @@ mountChapterNavigation({
     },
     {
       id: 'game',
-      title: 'Layer Link-Up: Susun Protokol',
-      summary: 'Tempatkan kartu protokol dan fungsi pada lapisan OSI yang tepat.',
+      title: 'Encapsulation Run — Petualangan Data',
+      summary: 'Gerakkan pembawa data melalui empat pos lapisan, hindari gangguan, dan serahkan muatan pada tiga level.',
       type: 'game',
       questions: [{ question: 'TCP dan UDP paling terkait dengan lapisan OSI ...', options: ['1 · Fisik', '4 · Transport', '7 · Aplikasi'], answer: 1 }]
     },

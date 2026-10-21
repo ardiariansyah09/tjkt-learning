@@ -1,4 +1,6 @@
-export function mountChapterNavigation({ moduleId, title, chapters, passScore = 75, finalPassScore = 80 }) {
+import { mountActionGame } from './action-game.js';
+
+export function mountChapterNavigation({ moduleId, title, classLevel = 'X', chapters, passScore = 75, finalPassScore = 80, storageVersion = 1 }) {
   const root = document.getElementById('lessonContent');
   const objectives = root?.querySelector('#tujuan');
   const nav = document.getElementById('lessonNav');
@@ -14,7 +16,7 @@ export function mountChapterNavigation({ moduleId, title, chapters, passScore = 
   const saveNote = document.getElementById('saveNote');
   const previousButton = document.getElementById('previousChapter');
   const nextButton = document.getElementById('nextChapter');
-  const storageKey = `tjkt:${moduleId}:course:v1`;
+  const storageKey = `tjkt:${moduleId}:course:v${storageVersion}`;
 
   if (![root, nav, progressLabel, progressCount, progressFill, progressBar, heading, summary, breadcrumb, kicker, gateMessage, saveNote, previousButton, nextButton].every(Boolean)) {
     throw new Error(`Kerangka navigasi modul ${moduleId} tidak lengkap.`);
@@ -22,6 +24,7 @@ export function mountChapterNavigation({ moduleId, title, chapters, passScore = 
 
   let state = readState();
   let current = findCurrent();
+  const actionGames = [];
 
   function readState() {
     try {
@@ -39,7 +42,7 @@ export function mountChapterNavigation({ moduleId, title, chapters, passScore = 
 
   function saveState() {
     try {
-      localStorage.setItem(storageKey, JSON.stringify({ version: 1, ...state }));
+      localStorage.setItem(storageKey, JSON.stringify({ version: storageVersion, ...state }));
       saveNote.textContent = 'Progres tersimpan pada browser ini.';
     } catch (error) {
       console.error(`Progres modul ${moduleId} tidak dapat disimpan:`, error);
@@ -79,6 +82,18 @@ export function mountChapterNavigation({ moduleId, title, chapters, passScore = 
     unit.dataset.chapter = chapter.id;
     section.before(unit);
     unit.append(section);
+    if (chapter.type === 'game') {
+      // Preserve legacy IDs for topic engines, while replacing the learner-facing game.
+      section.hidden = true;
+      const host = create('div', undefined, 'chapter-action-host');
+      unit.append(host);
+      actionGames.push(mountActionGame(host, { moduleId, mode:'2d', onComplete(score) {
+        state.scores[chapter.id] = Math.max(Number(state.scores[chapter.id]) || 0, score);
+        if (score >= passScore) state.passed[chapter.id] = score;
+        saveState();render();
+      }}));
+      return;
+    }
     const assessment = create('section', undefined, 'chapter-check');
     assessment.append(create('h2', 'Cek Pemahaman'), create('p', 'Jawab soal di bawah untuk membuka tahap berikutnya.'));
     const form = create('form', undefined, 'chapter-check-form');
@@ -122,6 +137,13 @@ export function mountChapterNavigation({ moduleId, title, chapters, passScore = 
         Number(answer.value) === chapter.questions[questionIndex].answer
       ).length;
       const score = Math.round((correct / chapter.questions.length) * 100);
+      assessment.querySelector('.assessment-review')?.remove();
+      const review = create('div', undefined, 'assessment-review');
+      chapter.questions.forEach((item, questionIndex) => {
+        const matches = Number(selected[questionIndex].value) === item.answer;
+        review.append(create('p', `${matches ? '✓' : 'Tinjau kembali'} ${questionIndex + 1}. ${item.explanation || `Jawaban yang sesuai: ${item.options[item.answer]}. Baca kembali konsep dan contoh pada tahap ini.`}`));
+      });
+      assessment.append(review);
       const required = index === chapters.length - 1 ? finalPassScore : passScore;
       state.scores[chapter.id] = Math.max(Number(state.scores[chapter.id]) || 0, score);
       if (score >= required) {
@@ -174,12 +196,8 @@ export function mountChapterNavigation({ moduleId, title, chapters, passScore = 
     root.querySelectorAll('.chapter-unit[data-chapter]').forEach((unit) => {
       unit.hidden = unit.dataset.chapter !== chapter.id;
     });
-    breadcrumb.textContent = `${title} / ${chapter.title}`;
-    kicker.textContent = chapter.type === 'game'
-      ? `GAME INTERAKTIF · 2D · TAHAP ${String(current + 1).padStart(2, '0')}`
-      : chapter.type === 'simulation'
-        ? `SIMULASI VISUAL · 2D · TAHAP ${String(current + 1).padStart(2, '0')}`
-        : `MATERI ${String(current + 1).padStart(2, '0')} · KELAS X`;
+    breadcrumb.textContent = chapter.title;
+    kicker.textContent = `MATERI ${String(current + 1).padStart(2, '0')}`;
     heading.textContent = chapter.title;
     summary.textContent = chapter.summary;
     previousButton.disabled = current === 0;
@@ -187,6 +205,7 @@ export function mountChapterNavigation({ moduleId, title, chapters, passScore = 
     nextButton.textContent = current === chapters.length - 1 ? '✓ Modul Selesai' : 'Tahap Berikutnya →';
     gateMessage.textContent = passed(current)
       ? `✓ Tahap ini lulus. Nilai terbaik: ${state.passed[chapter.id]}/100.`
+      : chapter.type === 'game' ? 'Selesaikan tiga level permainan untuk membuka tahap berikutnya.'
       : `Selesaikan cek pemahaman dengan nilai minimal ${current === chapters.length - 1 ? finalPassScore : passScore} untuk membuka tahap berikutnya.`;
     renderNavigation();
   }
@@ -212,6 +231,13 @@ export function mountChapterNavigation({ moduleId, title, chapters, passScore = 
       localStorage.removeItem(storageKey);
       state = { passed: {}, scores: {}, current: chapters[0].id };
       current = 0;
+      root.querySelectorAll('.chapter-check-form').forEach(form => {
+        form.reset();
+        form.querySelectorAll('input, button').forEach(control => { control.disabled = false; });
+        form.querySelector('.chapter-check-feedback').textContent = 'Pilih jawaban untuk mulai menjawab.';
+      });
+      root.querySelectorAll('.assessment-review').forEach(review => review.remove());
+      actionGames.forEach(game => game.reset());
       render();
       saveNote.textContent = `Progres modul ${title} telah direset.`;
     } catch (error) {

@@ -1,5 +1,5 @@
 import { bindThemeToggle } from './theme.js';
-import { mountChapterNavigation } from './chapter-navigation.js';
+import { mountChapterNavigation } from './chapter-navigation.js?v=5';
 
 mountChapterNavigation({
   moduleId: 'media-transmisi',
@@ -91,38 +91,20 @@ const svgElement = (tag, attributes, text) => {
 };
 
 function readConditions() {
-  const meters = Number(distance.value);
-  const blocked = obstacle.checked;
-  const noisy = interference.checked;
-  let quality;
+  const meters=Number(distance.value),blocked=obstacle.checked,noisy=interference.checked;
+  const rangeOk=medium!=='copper'||meters<=100;
   let detail;
-  if (medium === 'copper') {
-    quality = 100 - Math.max(0, meters - 1) * 0.04 - (noisy ? 24 : 0) - (blocked ? 4 : 0);
-    detail = meters > 100
-      ? 'Jarak melebihi batas channel Ethernet twisted pair yang umum; pastikan standar dan instalasi yang berlaku.'
-      : 'Pasangan kabel terpilin membantu mengurangi gangguan, tetapi kualitas instalasi dan terminasi tetap penting.';
-  } else if (medium === 'fiber') {
-    quality = 100 - meters * 0.025;
-    detail = 'Fiber tidak terpengaruh interferensi elektromagnetik; jarak aktual tetap bergantung pada jenis serat, transceiver, konektor, dan redaman jalur.';
-  } else {
-    quality = 100 - meters * 0.07 - (blocked ? 27 : 0) - (noisy ? 24 : 0);
-    detail = 'Jarak, penghalang, kepadatan kanal, dan lingkungan radio memengaruhi kualitas Wi-Fi secara berbeda di setiap lokasi.';
-  }
-  quality = Math.max(0, Math.min(100, Math.round(quality)));
-  const rangeOk = medium !== 'copper' || meters <= 100;
-  return { meters, blocked, noisy, quality, rangeOk, detail, reaches: rangeOk && quality >= 25 };
+  if(medium==='copper')detail=(rangeOk?'Periksa kategori, terminasi, dan standar aplikasi twisted pair.':'Jarak melampaui channel 100 m yang umum untuk banyak aplikasi Ethernet twisted pair; tinjau standar dan rancangan. ')+(noisy?' Ada sumber interferensi: perlu evaluasi instalasi dan pengujian.':'')+(blocked?' Penghalang fisik perlu rute kabel yang aman, bukan langsung dihitung sebagai redaman radio.':'');
+  else if(medium==='fiber')detail='Fiber tidak mengalami interferensi elektromagnetik pada serat. Nilai kelayakan memerlukan jenis fiber, transceiver, rugi konektor/sambungan, dan anggaran daya. Penghalang memengaruhi rute instalasi; tidak ada skor kualitas yang dapat diturunkan hanya dari jarak ini.';
+  else detail='Radio memerlukan survei cakupan dan kapasitas. '+(blocked?'Penghalang dapat memengaruhi propagasi; besar dampak bergantung bahan dan geometri. ':'')+(noisy?'Interferensi perlu pengukuran kanal dan lingkungan. ':'')+'Jarak saja tidak menentukan throughput atau memastikan paket gagal.';
+  return {meters,blocked,noisy,rangeOk,detail,quality:medium==='fiber'?100:(blocked||noisy?50:100)};
 }
-
 function updateReadout() {
   const conditions = readConditions();
   distanceOutput.value = `${conditions.meters} m`;
   distanceOutput.textContent = `${conditions.meters} m`;
-  qualityValue.textContent = `${conditions.quality}/100`;
-  linkState.textContent = conditions.quality >= 70 && conditions.rangeOk
-    ? 'Kondisi relatif baik'
-    : conditions.quality >= 25 && conditions.rangeOk
-      ? 'Kondisi menurun'
-      : 'Jalur sulit / di luar contoh';
+  qualityValue.textContent = 'Belum diukur';
+  linkState.textContent = conditions.rangeOk ? 'Tinjau kondisi dan spesifikasi' : 'Perlu tinjauan panjang channel';
   feedback.textContent = conditions.detail;
   draw();
 }
@@ -180,7 +162,7 @@ async function sendPacket() {
   feedback.textContent = 'Paket sedang dikirim melalui media yang dipilih…';
   const packet = svgElement('circle', { cx: 150, cy: 130, r: 10, class: 'media-packet' });
   svg.append(packet);
-  const endX = conditions.reaches ? 650 : 150 + (650 - 150) * Math.max(.12, conditions.quality / 100);
+  const endX = 650;
   const started = performance.now();
   await new Promise((resolve) => {
     const frame = (now) => {
@@ -198,9 +180,7 @@ async function sendPacket() {
   if (currentRun !== animationId) return;
   packet.remove();
   sendButton.disabled = false;
-  feedback.textContent = conditions.reaches
-    ? `✓ Paket tiba melalui ${medium === 'copper' ? 'kabel tembaga' : medium === 'fiber' ? 'fiber optik' : 'Wi-Fi'} pada indikator kualitas relatif ${conditions.quality}/100. ${conditions.detail}`
-    : `⚠ Paket tidak mencapai tujuan pada kondisi simulasi ini (${conditions.quality}/100). ${conditions.detail}`;
+  feedback.textContent = 'Animasi menelusuri arah sinyal, bukan hasil uji konektivitas. ' + conditions.detail;
 }
 
 mediumButtons.forEach((button) => {
