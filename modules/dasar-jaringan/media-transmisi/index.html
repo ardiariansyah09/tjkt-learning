@@ -6,9 +6,10 @@
   <title>Media Transmisi Jaringan | TJKT Learning Hub</title>
   <link rel="stylesheet" href="../../../assets/css/style.css">
   <link rel="stylesheet" href="../../../assets/css/module.css">
-  <link rel="stylesheet" href="../../../assets/css/media-transmisi.css?v=2">
+  <link rel="stylesheet" href="../../../assets/css/chapter-module.css?v=1">
+  <link rel="stylesheet" href="../../../assets/css/media-transmisi.css?v=5">
 </head>
-<body class="module-page media-module">
+<body class="module-page chapter-module media-module">
   <header class="module-topbar">
     <a class="module-brand" href="../../../index.html"><span class="brand-symbol">🌐</span><span><strong>TJKT Learning Hub</strong></span></a>
     <div class="topbar-actions">
@@ -17,32 +18,33 @@
     </div>
   </header>
 
-  <div class="module-layout media-layout">
+  <div class="module-layout">
     <aside class="lesson-sidebar" aria-label="Navigasi materi">
       <div class="sidebar-heading">
-        <span class="eyebrow-dark">MODUL DASAR JARINGAN</span>
+        <span class="eyebrow-dark">MODUL DASAR JARINGAN · KELAS X</span>
         <h2>Media Transmisi</h2>
-        <p>Kelas X • Materi dan simulasi 2D</p>
+        <p>Pelajari media jaringan, alat uji, dan penerapannya.</p>
       </div>
-      <nav class="lesson-nav" aria-label="Daftar bahasan">
-        <a href="#simulator">Simulator Media</a>
-        <a href="#virtual-tester">Virtual Cable Tester</a>
-        <a href="#tembaga">Kabel Tembaga</a>
-        <a href="#fiber">Fiber Optik</a>
-        <a href="#nirkabel">Media Nirkabel</a>
-        <a href="#memilih">Memilih dan Menguji Media</a>
-      </nav>
+      <div class="progress-widget">
+        <div class="progress-label"><strong>Progres Belajar</strong><span id="progressLabel">0%</span></div>
+        <div id="progressBar" class="progress-track" role="progressbar" aria-label="Progres materi" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div id="progressFill"></div></div>
+        <small id="progressCount">0 dari 8 tahap lulus</small>
+      </div>
+      <nav id="lessonNav" class="lesson-nav" aria-label="Daftar tahap pembelajaran"></nav>
+      <p class="sidebar-tip">🔒 Tahap selanjutnya terbuka setelah tahap saat ini lulus.</p>
+      <button id="resetProgress" class="stage9-reset" type="button">Reset Progres Lokal</button>
     </aside>
 
     <main class="lesson-main">
+      <div class="breadcrumbs">Dasar Jaringan <span>/</span> Media Transmisi <span>/</span> <strong id="breadcrumb">Tujuan Pembelajaran</strong></div>
       <section class="lesson-hero">
-        <span class="lesson-kicker">MATERI JARINGAN · KELAS X</span>
-        <h1>Media Transmisi Jaringan</h1>
-        <p>Kenali bagaimana data bergerak melalui kabel tembaga, cahaya pada fiber optik, dan gelombang radio Wi-Fi.</p>
+        <span class="lesson-kicker" id="lessonKicker">MATERI 01</span>
+        <h1 id="lessonTitle">Tujuan Pembelajaran</h1>
+        <p id="lessonSummary">Pahami bagaimana data bergerak melalui media jaringan, dan cara memilih serta mengujinya.</p>
       </section>
 
-      <article class="lesson-content">
-        <section class="media-objectives">
+      <article id="lessonContent" class="lesson-content" aria-live="polite">
+        <section id="tujuan" class="media-objectives">
           <h2>🎯 Tujuan Pembelajaran</h2>
           <ul>
             <li>Membedakan cara kerja media tembaga, fiber optik, dan nirkabel.</li>
@@ -50,6 +52,18 @@
             <li>Menggunakan simulasi untuk mengamati pengaruh jarak, penghalang, dan interferensi.</li>
             <li>Memilih alat pemeriksaan yang sesuai dengan media dan jenis gangguan.</li>
           </ul>
+        </section>
+
+        <section id="pengantar" class="media-topic">
+          <span class="lesson-kicker">KONSEP DASAR</span>
+          <h2>Apa Itu Media Transmisi?</h2>
+          <p>Media transmisi adalah jalur yang membawa sinyal data antara perangkat jaringan. Setiap media mempunyai karakteristik, batas penggunaan, kebutuhan perangkat, dan cara pemeriksaan yang berbeda.</p>
+          <div class="media-comparison">
+            <article><h3>🧵 Tembaga</h3><p>Mengirim sinyal listrik melalui konduktor twisted pair; umum dipakai untuk koneksi Ethernet lokal.</p></article>
+            <article><h3>✨ Fiber optik</h3><p>Mengirim pulsa cahaya melalui serat optik; jenis serat dan transceiver harus sesuai.</p></article>
+            <article><h3>📡 Nirkabel</h3><p>Mengirim sinyal radio antara access point dan perangkat klien; lingkungan memengaruhi kualitasnya.</p></article>
+          </div>
+          <div class="media-callout"><strong>Panduan belajar:</strong> pahami dahulu cara kerja dan batas setiap media, lalu gunakan simulator serta alat uji virtual sebagai model konseptual.</div>
         </section>
 
         <section id="simulator" class="media-simulator" aria-labelledby="simulatorTitle">
@@ -150,9 +164,21 @@
             <p>Bandingkan jarak, jalur antarbangunan, risiko petir/induksi, kapasitas uplink, biaya instalasi, dan perangkat optik yang tersedia. Fiber sering menjadi kandidat yang baik untuk antarbangunan, tetapi rancangan harus mengikuti standar dan penilaian teknis setempat. Cable tester tembaga saja tidak dapat menguji kualitas jalur fiber.</p>
           </details>
         </section>
+
+        <section id="posttest" class="media-topic">
+          <span class="lesson-kicker">EVALUASI AKHIR</span>
+          <h2>Posttest Media Transmisi</h2>
+          <p>Gunakan pemahaman seluruh materi untuk menjawab evaluasi akhir. Nilai minimum kelulusan adalah 80; jawaban tetap dapat diperbaiki bila belum lulus.</p>
+        </section>
       </article>
+      <p id="gateMessage" class="gate-message" role="status" aria-live="polite"></p>
+      <div class="lesson-actions">
+        <button id="previousChapter" class="secondary-action" type="button">&#8592; Sebelumnya</button>
+        <button id="nextChapter" class="primary-action" type="button" disabled>Tahap Berikutnya &#8594;</button>
+      </div>
+      <p id="saveNote" class="save-note" role="status">Progres tersimpan pada browser ini.</p>
     </main>
   </div>
-  <script type="module" src="../../../assets/js/media-transmisi.js?v=2"></script>
+  <script type="module" src="../../../assets/js/media-transmisi.js?v=5"></script>
 </body>
 </html>

@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Model OSI dan TCP/IP | TJKT Learning Hub</title>
+  <link rel="stylesheet" href="../../../assets/css/style.css">
+  <link rel="stylesheet" href="../../../assets/css/module.css">
+  <link rel="stylesheet" href="../../../assets/css/chapter-module.css?v=1">
+  <link rel="stylesheet" href="../../../assets/css/osi-tcpip.css?v=3">
+</head>
+<body class="module-page chapter-module osi-module">
+  <header class="module-topbar">
+    <a class="module-brand" href="../../../index.html"><span class="brand-symbol">🌐</span><span><strong>TJKT Learning Hub</strong></span></a>
+    <div class="topbar-actions">
+      <a class="back-button" href="../../../index.html">← Kembali ke Portal</a>
+      <button id="osiThemeToggle" class="theme-button" type="button" aria-label="Ganti tema">🌙</button>
+    </div>
+  </header>
+
+  <div class="module-layout">
+    <aside class="lesson-sidebar" aria-label="Navigasi materi">
+      <div class="sidebar-heading">
+        <span class="eyebrow-dark">MODUL DASAR JARINGAN · KELAS X</span>
+        <h2>Model OSI dan TCP/IP</h2>
+        <p>Kenali fungsi lapisan dan alur komunikasi data.</p>
+      </div>
+      <div class="progress-widget">
+        <div class="progress-label"><strong>Progres Belajar</strong><span id="progressLabel">0%</span></div>
+        <div id="progressBar" class="progress-track" role="progressbar" aria-label="Progres materi" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div id="progressFill"></div></div>
+        <small id="progressCount">0 dari 7 tahap lulus</small>
+      </div>
+      <nav id="lessonNav" class="lesson-nav" aria-label="Daftar tahap pembelajaran"></nav>
+      <p class="sidebar-tip">🔒 Tahap selanjutnya terbuka setelah tahap saat ini lulus.</p>
+      <button id="resetProgress" class="stage9-reset" type="button">Reset Progres Lokal</button>
+    </aside>
+
+    <main class="lesson-main">
+      <div class="breadcrumbs">Dasar Jaringan <span>/</span> Model OSI dan TCP/IP <span>/</span> <strong id="breadcrumb">Tujuan Pembelajaran</strong></div>
+      <section class="lesson-hero">
+        <span class="lesson-kicker" id="lessonKicker">MATERI 01</span>
+        <h1 id="lessonTitle">Tujuan Pembelajaran</h1>
+        <p id="lessonSummary">Pelajari bagaimana data melewati lapisan komunikasi dari pengirim hingga penerima.</p>
+      </section>
+
+      <article id="lessonContent" class="lesson-content" aria-live="polite">
+        <section id="tujuan" class="osi-objectives">
+          <h2>🎯 Tujuan Pembelajaran</h2>
+          <ul>
+            <li>Menjelaskan fungsi tujuh lapisan model OSI dan empat lapisan model TCP/IP.</li>
+            <li>Menghubungkan lapisan OSI dengan kelompok lapisan pada model TCP/IP.</li>
+            <li>Mengurutkan proses enkapsulasi dan dekapsulasi serta mengenali PDU umum.</li>
+            <li>Menggunakan model berlapis untuk menentukan bagian jaringan yang perlu diperiksa.</li>
+          </ul>
+        </section>
+
+        <section id="pengantar" class="osi-topic osi-introduction">
+          <span class="osi-kicker">KONSEP DASAR</span>
+          <h2>Mengapa Komunikasi Jaringan Dibagi Menjadi Lapisan?</h2>
+          <p>Komunikasi jaringan melibatkan banyak fungsi: aplikasi membuat data, protokol mengatur komunikasi antaraplikasi, alamat membantu menentukan tujuan, dan media membawa sinyal. Model berlapis membantu kita mempelajari serta menelusuri fungsi-fungsi itu secara teratur.</p>
+          <div class="osi-layer-flow" role="img" aria-label="Alur data dari aplikasi pengirim melalui jaringan menuju aplikasi penerima">
+            <article><span>01</span><strong>Aplikasi pengirim</strong><small>Membuat data</small></article>
+            <b aria-hidden="true">→</b>
+            <article><span>02</span><strong>Protokol jaringan</strong><small>Mengatur pengiriman</small></article>
+            <b aria-hidden="true">→</b>
+            <article><span>03</span><strong>Media</strong><small>Membawa sinyal</small></article>
+            <b aria-hidden="true">→</b>
+            <article><span>04</span><strong>Aplikasi penerima</strong><small>Menggunakan data</small></article>
+          </div>
+          <div class="osi-callout"><strong>Model OSI dan TCP/IP</strong> adalah cara untuk mengelompokkan fungsi komunikasi tersebut. Keduanya membantu memahami tugas protokol dan mencari letak masalah, tetapi bukan berarti setiap jaringan nyata tersusun sebagai tujuh atau empat perangkat terpisah.</div>
+        </section>
+
+        <section id="osi" class="osi-topic">
+          <span class="osi-kicker">01 · MODEL REFERENSI</span>
+          <h2>Tujuh Lapisan OSI</h2>
+          <p>Model OSI adalah kerangka konseptual untuk membahas fungsi komunikasi jaringan. Lapisan membantu kita membagi proses yang kompleks menjadi bagian yang lebih mudah dipelajari; implementasi nyata tidak selalu terpisah persis seperti diagramnya.</p>
+          <div class="layer-reference" aria-label="Diagram tujuh lapisan OSI">
+            <article><span>7</span><div><strong>Aplikasi · Application</strong><p>Layanan jaringan yang digunakan aplikasi, seperti HTTP dan DNS.</p></div><b>Data</b></article>
+            <article><span>6</span><div><strong>Presentasi · Presentation</strong><p>Representasi, format, kompresi, atau perlindungan data.</p></div><b>Data</b></article>
+            <article><span>5</span><div><strong>Sesi · Session</strong><p>Mengelola dialog dan konteks sesi komunikasi.</p></div><b>Data</b></article>
+            <article><span>4</span><div><strong>Transport · Transport</strong><p>Komunikasi antaraplikasi, segmentasi, dan mekanisme seperti TCP atau UDP.</p></div><b>Segmen / datagram</b></article>
+            <article><span>3</span><div><strong>Jaringan · Network</strong><p>Pengalamatan logis dan penerusan paket ant jaringan; contoh protokolnya IP.</p></div><b>Paket</b></article>
+            <article><span>2</span><div><strong>Data Link · Tautan Data</strong><p>Pengiriman pada satu link, framing, dan alamat link seperti MAC Ethernet.</p></div><b>Frame</b></article>
+            <article><span>1</span><div><strong>Fisik · Physical</strong><p>Representasi bit menjadi sinyal listrik, cahaya, atau radio pada media.</p></div><b>Bit</b></article>
+          </div>
+          <div class="osi-callout"><strong>Ingat:</strong> nama PDU bisa berbeda menurut protokol dan konteks. “Segmen” lazim dipakai untuk TCP, sedangkan UDP sering disebut datagram.</div>
+        </section>
+
+        <section id="tcpip" class="osi-topic">
+          <span class="osi-kicker">02 · SUITE PROTOKOL INTERNET</span>
+          <h2>Model TCP/IP dan pemetaannya</h2>
+          <p>Model TCP/IP mengelompokkan fungsi komunikasi Internet menjadi lebih sedikit lapisan. Pemetaan terhadap OSI berguna sebagai pendekatan belajar, bukan aturan bahwa semua implementasi harus mempunyai batas yang identik.</p>
+          <div class="mapping-table-wrap">
+            <table class="mapping-table">
+              <thead><tr><th>Model TCP/IP</th><th>Lapisan OSI yang sering dipetakan</th><th>Contoh fungsi / protokol</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">Aplikasi</th><td>OSI 7, 6, dan 5</td><td>HTTP, DNS, SSH, TLS; layanan dan data aplikasi</td></tr>
+                <tr><th scope="row">Transport</th><td>OSI 4</td><td>TCP, UDP; komunikasi antaraplikasi</td></tr>
+                <tr><th scope="row">Internet</th><td>OSI 3</td><td>IP; pengalamatan dan penerusan paket</td></tr>
+                <tr><th scope="row">Akses Jaringan</th><td>OSI 2 dan 1</td><td>Ethernet, Wi-Fi, framing, dan media fisik</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="osi-callout"><strong>Catatan istilah:</strong> beberapa buku menggunakan nama “Link” atau “Network Access” dan dapat membagi lapisan bawah dengan cara berbeda. Ikuti model yang ditetapkan pada materi atau standar yang sedang dipelajari.</div>
+        </section>
+
+        <section id="enkapsulasi" class="osi-topic">
+          <span class="osi-kicker">03 · PERJALANAN DATA</span>
+          <h2>Enkapsulasi dan dekapsulasi</h2>
+          <p>Ketika aplikasi mengirim data, setiap lapisan pengirim menggunakan informasi yang relevan untuk menyiapkan data bagi lapisan berikutnya. Di penerima, informasi itu diproses kembali sesuai fungsi lapisannya.</p>
+          <div class="encapsulation-steps">
+            <article><span>1</span><strong>Aplikasi menghasilkan data</strong><p>Contoh: permintaan halaman web.</p></article>
+            <article><span>2</span><strong>Transport menyiapkan komunikasi</strong><p>Port dan informasi transport membentuk segmen TCP atau datagram UDP.</p></article>
+            <article><span>3</span><strong>Internet memberi informasi IP</strong><p>Informasi alamat IP digunakan untuk penerusan paket.</p></article>
+            <article><span>4</span><strong>Link membuat frame</strong><p>Alamat link dan informasi pemeriksaan frame digunakan pada satu link.</p></article>
+            <article><span>5</span><strong>Fisik mengirim sinyal</strong><p>Bit direpresentasikan sebagai sinyal melalui media yang dipilih.</p></article>
+          </div>
+          <p>Nama umum perjalanan PDU adalah <strong>data → segmen/datagram → paket → frame → bit</strong>. Perangkat perantara memproses informasi sesuai perannya; router, misalnya, meneruskan paket IP dan membentuk ulang frame untuk link berikutnya.</p>
+        </section>
+
+        <section id="simulator" class="osi-simulator" aria-labelledby="simulatorTitle">
+          <div class="osi-simulator-heading">
+            <span class="osi-kicker">LAB VISUAL · 2D</span>
+            <h2 id="simulatorTitle">Simulator Perjalanan Paket</h2>
+            <p>Langkahkan data melewati lapisan pengirim, jaringan, dan penerima. Perhatikan header yang ditambahkan dan dibaca pada setiap tahap.</p>
+          </div>
+          <div class="osi-controls">
+            <label for="scenarioSelect">Skenario komunikasi</label>
+            <select id="scenarioSelect">
+              <option value="web">Permintaan web · TCP/IP</option>
+              <option value="dns">Pencarian nama · DNS melalui UDP</option>
+            </select>
+            <button id="nextPacketStep" class="primary-action" type="button">▶ Langkah Berikutnya</button>
+            <button id="resetPacket" class="secondary-action" type="button">↻ Ulangi Simulasi</button>
+          </div>
+          <figure class="osi-network-figure">
+            <svg id="packetNetwork" viewBox="0 0 800 220" role="img" aria-label="Diagram PC pengirim, jaringan dengan router, dan server penerima"></svg>
+            <figcaption id="packetNetworkCaption">Paket akan bergerak dari PC, melewati router, menuju server.</figcaption>
+          </figure>
+          <div class="packet-readout">
+            <section><h3>Pengirim · enkapsulasi</h3><ol id="senderStack" aria-label="Lapisan pengirim"></ol></section>
+            <section><h3>PDU saat ini</h3><div id="currentPdu" class="pdu-visual" aria-live="polite"></div></section>
+            <section><h3>Penerima · dekapsulasi</h3><ol id="receiverStack" aria-label="Lapisan penerima"></ol></section>
+          </div>
+          <p id="packetStatus" class="osi-feedback" role="status" aria-live="polite">Pilih skenario, lalu mulai langkah untuk mengenkapsulasi data.</p>
+          <p class="osi-disclaimer">Model ini menyederhanakan header dan peran perangkat untuk tujuan belajar. Bukan semua header selalu hadir dengan bentuk yang sama; routing, keamanan, dan protokol dapat menambah detail lain.</p>
+        </section>
+
+        <section id="game" class="osi-game" aria-labelledby="gameTitle">
+          <span class="osi-kicker">GAME INTERAKTIF · 2D</span>
+          <h2 id="gameTitle">Layer Link-Up: Susun Protokol</h2>
+          <p>Bangun peta jaringan dengan menempatkan kartu protokol atau fungsi pada lapisan OSI yang sesuai. Pilih kartu, lalu pilih lapisan tujuan; kartu benar akan tersusun pada menara jaringan.</p>
+          <div class="game-scene">
+            <div class="game-network" aria-label="Jalur visual dari klien ke server">
+              <span>💻 Klien</span><i aria-hidden="true">⟶</i><span>🔀 Jaringan</span><i aria-hidden="true">⟶</i><span>🗄️ Server</span>
+            </div>
+            <div class="game-board">
+              <div id="layerTower" class="layer-tower" aria-label="Menara tujuh lapisan OSI"></div>
+              <div class="protocol-bank">
+                <h3>Kartu protokol dan fungsi</h3>
+                <p id="gamePrompt" role="status" aria-live="polite">Pilih kartu, lalu lapisan tujuan.</p>
+                <div id="protocolCards" class="protocol-cards"></div>
+              </div>
+            </div>
+            <div class="game-footer">
+              <span id="gameScore">Tepat 0 · Kesalahan 0</span>
+              <button id="restartLayerGame" class="secondary-action" type="button">↻ Ulangi Game</button>
+            </div>
+          </div>
+        </section>
+
+        <section id="rangkuman" class="osi-topic">
+          <span class="osi-kicker">04 · REFLEKSI</span>
+          <h2>Rangkuman</h2>
+          <ul>
+            <li>OSI menyediakan tujuh lapisan untuk menjelaskan fungsi komunikasi jaringan.</li>
+            <li>TCP/IP mengelompokkan fungsi menjadi lapisan aplikasi, transport, internet, dan akses jaringan.</li>
+            <li>Enkapsulasi menambahkan informasi sesuai kebutuhan lapisan; penerima memprosesnya kembali.</li>
+            <li>Model berlapis membantu mengarahkan pemeriksaan, tetapi gejala yang sama dapat memiliki penyebab di lapisan berbeda.</li>
+          </ul>
+        </section>
+
+        <section id="posttest" class="osi-topic">
+          <span class="osi-kicker">EVALUASI AKHIR</span>
+          <h2>Posttest OSI dan TCP/IP</h2>
+          <p>Jawab delapan soal untuk menuntaskan modul. Nilai minimum kelulusan adalah 80; jika belum lulus, ubah jawaban dan periksa kembali.</p>
+        </section>
+      </article>
+      <p id="gateMessage" class="gate-message" role="status" aria-live="polite"></p>
+      <div class="lesson-actions">
+        <button id="previousChapter" class="secondary-action" type="button">&#8592; Sebelumnya</button>
+        <button id="nextChapter" class="primary-action" type="button" disabled>Tahap Berikutnya &#8594;</button>
+      </div>
+      <p id="saveNote" class="save-note" role="status">Progres tersimpan pada browser ini.</p>
+    </main>
+  </div>
+  <script type="module" src="../../../assets/js/osi-tcpip.js?v=4"></script>
+</body>
+</html>

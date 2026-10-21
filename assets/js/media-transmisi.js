@@ -1,4 +1,71 @@
 import { bindThemeToggle } from './theme.js';
+import { mountChapterNavigation } from './chapter-navigation.js';
+
+mountChapterNavigation({
+  moduleId: 'media-transmisi',
+  title: 'Media Transmisi',
+  chapters: [
+    {
+      id: 'pengantar',
+      title: 'Mengenal Media Transmisi',
+      summary: 'Pelajari fungsi media transmisi dan perbedaan tembaga, fiber, serta nirkabel.',
+      questions: [{ question: 'Media transmisi pada jaringan berfungsi untuk ...', options: ['Membawa sinyal/data antara perangkat', 'Memberi nama pengguna', 'Menggantikan semua protokol'], answer: 0 }]
+    },
+    {
+      id: 'tembaga',
+      title: 'Kabel Tembaga',
+      summary: 'Pelajari twisted pair, konektor, batas channel, dan pemeriksaan kabel.',
+      questions: [{ question: 'Fungsi pasangan kabel yang dipilin pada twisted pair adalah membantu ...', options: ['Mengurangi pengaruh gangguan elektromagnetik', 'Menyimpan alamat IP', 'Memancarkan Wi-Fi'], answer: 0 }]
+    },
+    {
+      id: 'fiber',
+      title: 'Fiber Optik',
+      summary: 'Kenali transmisi cahaya, karakteristik serat, dan alat pemeriksa optik.',
+      questions: [{ question: 'Salah satu keunggulan fiber optik adalah ...', options: ['Tahan terhadap interferensi elektromagnetik', 'Selalu dapat disambung dengan konektor Ethernet tembaga', 'Tidak membutuhkan transceiver'], answer: 0 }]
+    },
+    {
+      id: 'nirkabel',
+      title: 'Media Nirkabel',
+      summary: 'Pahami sinyal radio Wi-Fi, cakupan, penghalang, dan interferensi.',
+      questions: [{ question: 'Kondisi yang dapat memengaruhi kualitas Wi-Fi adalah ...', options: ['Penghalang, jarak, dan interferensi radio', 'Warna kabel Ethernet', 'Jumlah inti fiber'], answer: 0 }]
+    },
+    {
+      id: 'memilih',
+      title: 'Memilih dan Menguji Media',
+      summary: 'Bandingkan kebutuhan lokasi, jarak, biaya, kapasitas, dan alat uji.',
+      questions: [{ question: 'Untuk memilih media antarbangunan, hal utama yang perlu dibandingkan adalah ...', options: ['Jarak, jalur, lingkungan, kapasitas, dan standar perangkat', 'Hanya warna konektor', 'Nama merek tanpa memeriksa kompatibilitas'], answer: 0 }]
+    },
+    {
+      id: 'simulator',
+      title: 'Simulator Jalur Transmisi',
+      summary: 'Ubah kondisi tembaga, fiber, dan Wi-Fi lalu amati paket pada simulasi.',
+      type: 'simulation',
+      questions: [{ question: 'Simulator media ini menunjukkan ...', options: ['Model konseptual pengaruh kondisi pada jalur', 'Jaminan throughput dan jarak nyata', 'Hasil sertifikasi kabel profesional'], answer: 0 }]
+    },
+    {
+      id: 'virtual-tester',
+      title: 'Virtual Cable Tester',
+      summary: 'Jalankan pemeriksaan wire map untuk menemukan kabel putus atau pin tertukar.',
+      type: 'simulation',
+      questions: [{ question: 'Cable tester dasar membantu memeriksa ...', options: ['Kontinuitas dan susunan pin kabel', 'Redaman fiber sepanjang jalur secara lengkap', 'Konfigurasi DNS server'], answer: 0 }]
+    },
+    {
+      id: 'posttest',
+      title: 'Posttest Media Transmisi',
+      summary: 'Ukur pemahaman tentang tembaga, fiber, nirkabel, dan pengujian media.',
+      questions: [
+        { question: 'Data pada kabel twisted pair Ethernet dibawa terutama sebagai ...', options: ['Sinyal listrik', 'Pulsa cahaya pada inti serat', 'Gelombang radio Wi-Fi'], answer: 0 },
+        { question: 'Fiber optik membawa informasi menggunakan ...', options: ['Pulsa cahaya', 'Arus listrik pada pasangan tembaga', 'Alamat MAC sebagai sinyal'], answer: 0 },
+        { question: 'Access point berkomunikasi dengan klien Wi-Fi melalui ...', options: ['Gelombang radio', 'Konektor 8P8C saja', 'Pulsa cahaya dalam serat'], answer: 0 },
+        { question: 'Cable tester straight-through dasar membandingkan ...', options: ['Pemetaan kontinuitas pin di kedua ujung', 'Kualitas autentikasi Wi-Fi', 'Rute IP antarjaringan'], answer: 0 },
+        { question: 'Kualitas Wi-Fi dapat berubah karena ...', options: ['Penghalang, jarak, kanal, dan interferensi', 'Jenis alamat IPv4 privat saja', 'Jumlah pasangan kabel pada fiber'], answer: 0 },
+        { question: 'Batas umum channel twisted-pair Ethernet perlu dipahami sebagai ...', options: ['Bergantung standar serta instalasi yang berlaku', 'Selalu 1.000 meter untuk semua kategori', 'Tidak dipengaruhi jenis kabel'], answer: 0 },
+        { question: 'Untuk mengukur redaman jalur fiber, alat yang sesuai dapat mencakup ...', options: ['Optical power meter dan light source', 'Crimping tool saja', 'Wi-Fi analyzer'], answer: 0 },
+        { question: 'Pemilihan media jaringan sebaiknya berdasarkan ...', options: ['Kebutuhan, kondisi lokasi, kompatibilitas, dan biaya', 'Merek yang paling populer saja', 'Jenis konektor yang tersedia tanpa melihat jarak'], answer: 0 }
+      ]
+    }
+  ]
+});
 
 bindThemeToggle(document.getElementById('mediaThemeToggle'));
 

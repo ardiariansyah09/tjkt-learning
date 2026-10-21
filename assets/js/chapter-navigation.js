@@ -1,0 +1,224 @@
+export function mountChapterNavigation({ moduleId, title, chapters, passScore = 75, finalPassScore = 80 }) {
+  const root = document.getElementById('lessonContent');
+  const objectives = root?.querySelector('#tujuan');
+  const nav = document.getElementById('lessonNav');
+  const progressLabel = document.getElementById('progressLabel');
+  const progressCount = document.getElementById('progressCount');
+  const progressFill = document.getElementById('progressFill');
+  const progressBar = document.getElementById('progressBar');
+  const heading = document.getElementById('lessonTitle');
+  const summary = document.getElementById('lessonSummary');
+  const breadcrumb = document.getElementById('breadcrumb');
+  const kicker = document.getElementById('lessonKicker');
+  const gateMessage = document.getElementById('gateMessage');
+  const saveNote = document.getElementById('saveNote');
+  const previousButton = document.getElementById('previousChapter');
+  const nextButton = document.getElementById('nextChapter');
+  const storageKey = `tjkt:${moduleId}:course:v1`;
+
+  if (![root, nav, progressLabel, progressCount, progressFill, progressBar, heading, summary, breadcrumb, kicker, gateMessage, saveNote, previousButton, nextButton].every(Boolean)) {
+    throw new Error(`Kerangka navigasi modul ${moduleId} tidak lengkap.`);
+  }
+
+  let state = readState();
+  let current = findCurrent();
+
+  function readState() {
+    try {
+      const parsed = JSON.parse(localStorage.getItem(storageKey) || '{}');
+      return {
+        passed: parsed && parsed.passed && typeof parsed.passed === 'object' ? parsed.passed : {},
+        scores: parsed && parsed.scores && typeof parsed.scores === 'object' ? parsed.scores : {},
+        current: typeof parsed?.current === 'string' ? parsed.current : chapters[0].id
+      };
+    } catch (error) {
+      console.warn(`Progres modul ${moduleId} tidak dapat dibaca:`, error);
+      return { passed: {}, scores: {}, current: chapters[0].id };
+    }
+  }
+
+  function saveState() {
+    try {
+      localStorage.setItem(storageKey, JSON.stringify({ version: 1, ...state }));
+      saveNote.textContent = 'Progres tersimpan pada browser ini.';
+    } catch (error) {
+      console.error(`Progres modul ${moduleId} tidak dapat disimpan:`, error);
+      saveNote.textContent = 'Progres gagal disimpan. Periksa ruang penyimpanan browser.';
+    }
+  }
+
+  function passed(index) {
+    const chapter = chapters[index];
+    const required = index === chapters.length - 1 ? finalPassScore : passScore;
+    return Boolean(chapter && Number(state.passed[chapter.id]) >= required);
+  }
+
+  function unlocked(index) {
+    return index === 0 || passed(index - 1);
+  }
+
+  function findCurrent() {
+    const nextIncomplete = chapters.findIndex((_, index) => !passed(index));
+    const savedIndex = chapters.findIndex((chapter) => chapter.id === state.current);
+    if (savedIndex >= 0 && unlocked(savedIndex)) return savedIndex;
+    return nextIncomplete < 0 ? chapters.length - 1 : nextIncomplete;
+  }
+
+  function create(tag, text, className) {
+    const element = document.createElement(tag);
+    if (text !== undefined) element.textContent = text;
+    if (className) element.className = className;
+    return element;
+  }
+
+  function setupAssessment(chapter, index) {
+    const section = root.querySelector(`#${CSS.escape(chapter.id)}`);
+    if (!section) throw new Error(`Konten tahap "${chapter.title}" tidak ditemukan.`);
+    const unit = document.createElement('div');
+    unit.className = 'chapter-unit';
+    unit.dataset.chapter = chapter.id;
+    section.before(unit);
+    unit.append(section);
+    const assessment = create('section', undefined, 'chapter-check');
+    assessment.append(create('h2', 'Cek Pemahaman'), create('p', 'Jawab soal di bawah untuk membuka tahap berikutnya.'));
+    const form = create('form', undefined, 'chapter-check-form');
+    const feedback = create('p', 'Pilih jawaban untuk mulai menjawab.', 'chapter-check-feedback');
+    feedback.setAttribute('role', 'status');
+    feedback.setAttribute('aria-live', 'polite');
+    chapter.questions.forEach((item, questionIndex) => {
+      const field = document.createElement('fieldset');
+      field.append(create('legend', `${questionIndex + 1}. ${item.question}`));
+      const options = item.options.map((text, optionIndex) => ({ text, optionIndex }));
+      for (let index = options.length - 1; index > 0; index -= 1) {
+        const randomIndex = Math.floor(Math.random() * (index + 1));
+        [options[index], options[randomIndex]] = [options[randomIndex], options[index]];
+      }
+      options.forEach(({ text, optionIndex }) => {
+        const label = create('label', undefined, 'chapter-check-option');
+        const input = document.createElement('input');
+        input.type = 'radio';
+        input.name = `${moduleId}-${chapter.id}-${questionIndex}`;
+        input.value = String(optionIndex);
+        input.required = true;
+        label.append(input, document.createTextNode(` ${text}`));
+        field.append(label);
+      });
+      form.append(field);
+    });
+
+    const submit = create('button', 'Periksa Jawaban', 'primary-action');
+    submit.type = 'submit';
+    form.append(submit, feedback);
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const selected = chapter.questions.map((_, questionIndex) =>
+        form.querySelector(`input[name="${moduleId}-${chapter.id}-${questionIndex}"]:checked`)
+      );
+      if (selected.some((answer) => !answer)) {
+        feedback.textContent = 'Jawab seluruh soal terlebih dahulu.';
+        return;
+      }
+      const correct = selected.filter((answer, questionIndex) =>
+        Number(answer.value) === chapter.questions[questionIndex].answer
+      ).length;
+      const score = Math.round((correct / chapter.questions.length) * 100);
+      const required = index === chapters.length - 1 ? finalPassScore : passScore;
+      state.scores[chapter.id] = Math.max(Number(state.scores[chapter.id]) || 0, score);
+      if (score >= required) {
+        state.passed[chapter.id] = score;
+        feedback.textContent = `✓ Lulus dengan nilai ${score}/100. Tahap berikutnya terbuka.`;
+        form.querySelectorAll('input').forEach((input) => { input.disabled = true; });
+        submit.disabled = true;
+        saveState();
+        render();
+      } else {
+        feedback.textContent = `Nilai ${score}/100 belum mencapai nilai minimum ${required}. Pilihan tetap aktif; ubah jawaban yang salah lalu periksa kembali.`;
+      }
+    });
+
+    if (passed(index)) {
+      form.querySelectorAll('input').forEach((input) => { input.disabled = true; });
+      submit.disabled = true;
+      feedback.textContent = `✓ Tahap lulus. Nilai terbaik: ${state.passed[chapter.id]}/100.`;
+    }
+    assessment.append(form);
+    unit.append(assessment);
+  }
+
+  chapters.forEach(setupAssessment);
+
+  function renderNavigation() {
+    nav.replaceChildren();
+    chapters.forEach((chapter, index) => {
+      const button = create('button', undefined, `lesson-nav-item${index === current ? ' active' : ''}${!unlocked(index) ? ' locked' : ''}`);
+      button.type = 'button';
+      button.disabled = !unlocked(index);
+      if (index === current) button.setAttribute('aria-current', 'step');
+      const number = create('span', passed(index) ? '✓' : unlocked(index) ? String(index + 1).padStart(2, '0') : '🔒', 'lesson-number');
+      button.append(number, create('span', chapter.title));
+      button.addEventListener('click', () => goTo(index));
+      nav.append(button);
+    });
+
+    const completed = chapters.filter((_, index) => passed(index)).length;
+    const percent = Math.round((completed / chapters.length) * 100);
+    progressLabel.textContent = `${percent}%`;
+    progressCount.textContent = `${completed} dari ${chapters.length} tahap lulus`;
+    progressFill.style.width = `${percent}%`;
+    progressBar.setAttribute('aria-valuenow', String(percent));
+  }
+
+  function render() {
+    const chapter = chapters[current];
+    if (objectives) objectives.hidden = current !== 0;
+    root.querySelectorAll('.chapter-unit[data-chapter]').forEach((unit) => {
+      unit.hidden = unit.dataset.chapter !== chapter.id;
+    });
+    breadcrumb.textContent = `${title} / ${chapter.title}`;
+    kicker.textContent = chapter.type === 'game'
+      ? `GAME INTERAKTIF · 2D · TAHAP ${String(current + 1).padStart(2, '0')}`
+      : chapter.type === 'simulation'
+        ? `SIMULASI VISUAL · 2D · TAHAP ${String(current + 1).padStart(2, '0')}`
+        : `MATERI ${String(current + 1).padStart(2, '0')} · KELAS X`;
+    heading.textContent = chapter.title;
+    summary.textContent = chapter.summary;
+    previousButton.disabled = current === 0;
+    nextButton.disabled = !passed(current) || current === chapters.length - 1;
+    nextButton.textContent = current === chapters.length - 1 ? '✓ Modul Selesai' : 'Tahap Berikutnya →';
+    gateMessage.textContent = passed(current)
+      ? `✓ Tahap ini lulus. Nilai terbaik: ${state.passed[chapter.id]}/100.`
+      : `Selesaikan cek pemahaman dengan nilai minimal ${current === chapters.length - 1 ? finalPassScore : passScore} untuk membuka tahap berikutnya.`;
+    renderNavigation();
+  }
+
+  function goTo(index) {
+    if (!unlocked(index)) return;
+    current = index;
+    state.current = chapters[index].id;
+    saveState();
+    render();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  previousButton.addEventListener('click', () => {
+    if (current > 0) goTo(current - 1);
+  });
+  nextButton.addEventListener('click', () => {
+    if (passed(current) && current < chapters.length - 1) goTo(current + 1);
+  });
+  document.getElementById('resetProgress').addEventListener('click', () => {
+    if (!window.confirm(`Hapus progres modul ${title} pada browser ini?`)) return;
+    try {
+      localStorage.removeItem(storageKey);
+      state = { passed: {}, scores: {}, current: chapters[0].id };
+      current = 0;
+      render();
+      saveNote.textContent = `Progres modul ${title} telah direset.`;
+    } catch (error) {
+      console.error(`Progres modul ${moduleId} gagal direset:`, error);
+      saveNote.textContent = 'Progres gagal direset. Periksa pengaturan penyimpanan browser.';
+    }
+  });
+
+  render();
+}

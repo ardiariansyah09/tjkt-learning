@@ -1,0 +1,77 @@
+.chapter-module {
+  --bg: #f4f8fc;
+  --surface: #fff;
+  --text: #102a43;
+  --muted: #64748b;
+  --border: #e2eaf2;
+  --primary: #0369a1;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.chapter-module.dark {
+  --bg: #0b1424;
+  --surface: #142238;
+  --text: #f1f5f9;
+  --muted: #a7b8cd;
+  --border: #2a3e57;
+  --primary: #38bdf8;
+}
+
+.chapter-module .module-topbar { height: auto; min-height: 76px; padding: 12px clamp(16px,3vw,42px); background: var(--surface); border-color: var(--border); }
+.chapter-module .module-brand,.chapter-module .module-brand strong { color: var(--text); }
+.chapter-module .module-layout { max-width: 1500px; min-height: calc(100vh - 76px); grid-template-columns: 295px minmax(0,1fr); background: var(--bg); }
+.chapter-module .lesson-sidebar,.chapter-module .lesson-main,.chapter-module .lesson-content { background: var(--bg); color: var(--text); }
+.chapter-module .lesson-sidebar { border-color: var(--border); }
+.chapter-module .sidebar-heading h2 { margin: 9px 0 5px; color: var(--text); font-size: 21px; }
+.chapter-module .sidebar-heading p,.chapter-module .sidebar-tip,.chapter-module .save-note { color: var(--muted); font-size: 13px; }
+.chapter-module .eyebrow-dark { color: var(--primary); font-size: 10px; font-weight: 800; letter-spacing: 1px; }
+.chapter-module .progress-widget { margin: 18px 0; padding: 15px; border: 1px solid var(--border); border-radius: 13px; background: var(--surface); }
+.chapter-module .progress-track { overflow: hidden; height: 8px; border-radius: 99px; background: var(--border); }
+.chapter-module #progressFill { width: 0; height: 100%; border-radius: inherit; background: #0d9488; transition: width .25s ease; }
+.chapter-module .progress-widget small { display: block; margin-top: 8px; color: var(--muted); }
+.chapter-module .lesson-nav { display: flex; flex-direction: column; gap: 6px; }
+.chapter-module .lesson-nav-item { display: flex; width: 100%; align-items: center; gap: 10px; padding: 10px; border: 1px solid transparent; border-radius: 10px; background: transparent; color: var(--text); cursor: pointer; font-size: 13px; line-height: 1.4; text-align: left; }
+.chapter-module .lesson-nav-item:hover:not(:disabled) { background: var(--surface); }
+.chapter-module .lesson-nav-item.active { border-color: rgba(2,132,199,.25); background: rgba(2,132,199,.1); color: var(--primary); font-weight: 700; }
+.chapter-module .lesson-nav-item:disabled { cursor: not-allowed; opacity: .5; }
+.chapter-module .lesson-number { display: grid; width: 28px; height: 28px; flex: 0 0 28px; place-items: center; border: 1px solid var(--border); border-radius: 8px; background: var(--surface); font-size: 11px; font-weight: 800; }
+.chapter-module .lesson-nav-item.active .lesson-number { border-color: var(--primary); background: var(--primary); color: #fff; }
+.chapter-module .stage9-reset { width: 100%; margin-top: 8px; border: 1px solid var(--border); background: var(--surface); color: var(--text); }
+.chapter-module .lesson-main { max-width: 1120px; min-width: 0; padding: 28px clamp(18px,4vw,58px) 50px; }
+.chapter-module .breadcrumbs { margin-bottom: 16px; color: var(--muted); font-size: 12px; }
+.chapter-module .breadcrumbs span { padding: 0 7px; }
+.chapter-module .lesson-hero { margin-bottom: 20px; border: 0; background: linear-gradient(125deg,#075985,#0f172a); box-shadow: 0 12px 30px rgba(15,23,42,.1); }
+.chapter-module .lesson-hero h1 { color: #fff; }
+.chapter-module .lesson-content { min-height: 280px; padding: clamp(22px,4vw,38px); }
+.chapter-module .lesson-content h2 { margin-top: 25px; }
+.chapter-module .lesson-content h2:first-child { margin-top: 0; }
+.chapter-module .lesson-content [hidden] { display: none !important; }
+.chapter-module .gate-message { margin: 14px 0; }
+.chapter-module .lesson-actions { display: flex; justify-content: space-between; gap: 12px; margin-top: 14px; }
+.chapter-module .lesson-actions button { min-height: 44px; }
+.chapter-module .save-note { text-align: right; }
+.chapter-check { margin-top: 24px; padding: 18px; border: 1px solid var(--border); border-radius: 14px; background: var(--bg); }
+.chapter-check h2 { margin: 0 0 8px !important; color: var(--text); font-size: 1.1rem !important; }
+.chapter-check > p { margin: 0 0 14px; color: var(--muted); }
+.chapter-check-form fieldset { margin: 0 0 14px; padding: 12px; border: 1px solid var(--border); border-radius: 10px; }
+.chapter-check-form legend { padding: 0 5px; color: var(--text); font-weight: 700; line-height: 1.55; }
+.chapter-check-option { display: block; padding: 8px 4px; color: var(--text); cursor: pointer; line-height: 1.5; }
+.chapter-check-option input { margin-right: 7px; accent-color: var(--primary); }
+.chapter-check-feedback { min-height: 1.5em; margin: 12px 0 0 !important; font-weight: 700; }
+.chapter-module .primary-action,.chapter-module .secondary-action { min-height: 42px; }
+@media(max-width:850px) {
+  .chapter-module .module-layout { grid-template-columns: 1fr; }
+  .chapter-module .lesson-sidebar { border-right: 0; border-bottom: 1px solid var(--border); padding: 20px; }
+  .chapter-module .lesson-nav { display: grid; grid-template-columns: repeat(auto-fit,minmax(190px,1fr)); }
+  .chapter-module .lesson-main { padding: 20px; }
+}
+@media(max-width:480px) {
+  .chapter-module .module-topbar { min-height: 68px; padding: 12px; }
+  .chapter-module .module-brand strong { font-size: 13px; }
+  .chapter-module .brand-symbol { font-size: 18px; }
+  .chapter-module .back-button { padding: 8px; font-size: 12px; }
+  .chapter-module .lesson-main { padding: 14px; }
+  .chapter-module .lesson-actions { align-items: stretch; }
+  .chapter-module .lesson-actions button { flex: 1; padding: 10px; font-size: 12px; }
+}

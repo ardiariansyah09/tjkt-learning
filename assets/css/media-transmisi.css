@@ -17,12 +17,11 @@ body.media-module {
 }
 
 .media-module .module-layout {
-  max-width: 1480px;
-  grid-template-columns: 270px minmax(0, 1fr);
+  max-width: 1500px;
+  grid-template-columns: 295px minmax(0, 1fr);
   background: var(--media-bg);
 }
 
-.media-module .lesson-sidebar,
 .media-module .lesson-main,
 .media-module .lesson-content {
   background: var(--media-bg);
@@ -30,6 +29,7 @@ body.media-module {
 }
 
 .media-module .lesson-sidebar {
+  background: var(--media-surface);
   border-color: var(--media-border);
 }
 
@@ -52,7 +52,6 @@ body.media-module {
   outline: 2px solid #0e7490;
 }
 
-.media-module .lesson-hero,
 .media-module .media-objectives,
 .media-module .media-topic,
 .media-module .media-simulator {
@@ -67,16 +66,17 @@ body.media-module {
 .media-module .lesson-hero h1 {
   margin: 8px 0;
   font-size: clamp(1.7rem, 4vw, 2.5rem);
+  color: #fff;
 }
 
+.media-module .lesson-hero p { color: #e2e8f0; }
 .media-module .lesson-hero p,
 .media-module .lesson-content p,
 .media-module .lesson-content li {
-  color: var(--media-text);
   line-height: 1.75;
 }
 
-.media-module .lesson-kicker {
+.media-module .lesson-content .lesson-kicker {
   color: #087f91;
   font-size: .75rem;
   font-weight: 800;
@@ -202,6 +202,7 @@ body.media-module {
   .media-module .module-layout { grid-template-columns: 1fr; }
   .media-module .lesson-sidebar { border-right: 0; border-bottom: 1px solid var(--media-border); }
   .media-module .lesson-nav { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
+  .media-module .lesson-nav-item { width: 100%; }
   .media-controls { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 

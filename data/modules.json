@@ -38,11 +38,11 @@
   {
     "id": "osi-tcpip",
     "title": "Model OSI dan TCP/IP",
-    "description": "Memahami lapisan komunikasi data dan enkapsulasi.",
+    "description": "Pelajari tujuh lapisan OSI, pemetaan TCP/IP, enkapsulasi data, dan game susun protokol interaktif.",
     "category": "Dasar Jaringan",
     "classLevel": "X",
-    "status": "coming-soon",
-    "path": ""
+    "status": "published",
+    "path": "modules/dasar-jaringan/osi-tcpip/"
   },
   {
     "id": "ipv4-subnetting",
