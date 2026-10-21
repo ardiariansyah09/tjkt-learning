@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Pelajari DNS, DHCP, HTTP/HTTPS, port layanan, dan alur komunikasi melalui simulasi serta game interaktif.">
+  <title>Protokol dan Layanan Jaringan Dasar | TJKT Learning Hub</title>
+  <link rel="stylesheet" href="../../../assets/css/style.css">
+  <link rel="stylesheet" href="../../../assets/css/module.css">
+  <link rel="stylesheet" href="../../../assets/css/chapter-module.css?v=2">
+  <link rel="stylesheet" href="../../../assets/css/protokol-layanan.css?v=1">
+  <link rel="stylesheet" href="../../../assets/css/module-standard.css?v=4">
+</head>
+<body class="module-page module-standard chapter-module service-module" data-module-id="protokol-layanan" data-standard-shell="1">
+  <a class="skip-link" href="#mainContent">Lewati ke materi</a>
+  <header class="module-topbar">
+    <a class="module-brand" href="../../../index.html" aria-label="Ke portal TJKT Learning Hub"><span class="brand-symbol" aria-hidden="true">🌐</span><strong>TJKT Learning Hub</strong></a>
+    <div class="topbar-actions"><a class="back-button" href="../../../index.html#catalog">← Kembali ke Portal</a><button id="serviceThemeToggle" class="theme-button" type="button" aria-label="Ganti tema">🌙</button></div>
+  </header>
+  <div class="layout module-layout">
+    <aside class="lesson-sidebar" aria-label="Navigasi materi">
+      <div class="sidebar-heading"><span class="eyebrow-dark">FASE E · KELAS X · DASAR-DASAR TJKT</span><h2>Protokol dan Layanan Jaringan Dasar</h2><p>Pelajari DNS, DHCP, HTTP/HTTPS, port layanan, dan alur komunikasi melalui simulasi serta game interaktif.</p></div>
+      <div class="progress-widget">
+        <div class="progress-label"><strong>Progres Belajar</strong><span id="progressLabel" data-progress-percent>0%</span></div>
+        <div id="progressBar" class="progress-track progress" role="progressbar" aria-label="Progres materi" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div id="progressFill" data-progress-fill></div></div>
+        <small id="progressCount" data-progress-count>Memuat progres...</small>
+      </div>
+
+      <nav id="lessonNav" class="lesson-nav" aria-label="Daftar tahap pembelajaran"></nav>
+      <p class="sidebar-tip">Tahap berikutnya terbuka setelah evaluasi tahap saat ini lulus.</p>
+      <button id="resetProgress" class="stage9-reset" type="button">Reset Progres Lokal</button>
+    </aside>
+    <main class="lesson-main" id="mainContent" tabindex="-1">
+      <div class="breadcrumbs"><a href="../../../index.html#fase-e">Fase E</a> <span>/</span> Protokol dan Layanan Jaringan Dasar <span>/</span> <strong id="breadcrumb" data-breadcrumb>Tahap Pembelajaran</strong></div>
+      <section class="panel lesson-hero"><span id="lessonKicker" class="lesson-kicker">MATERI 01</span><h1 id="lessonTitle">Protokol dan Layanan Jaringan Dasar</h1><p id="lessonSummary">Pelajari DNS, DHCP, HTTP/HTTPS, port layanan, dan alur komunikasi melalui simulasi serta game interaktif.</p></section>
+      <article id="lessonContent" class="panel lesson-content" aria-live="polite"><section id="tujuan" class="service-objectives"><h2>Tujuan Pembelajaran</h2><ul><li>Membedakan DHCP, DNS, HTTP, HTTPS, serta peran port transport.</li><li>Menjelaskan alur pencarian nama dan akses web.</li><li>Mencocokkan layanan dengan port konvensional dan batas penggunaannya.</li></ul></section>
+<section id="pengantar" class="service-topic"><h2>Mengenal Protokol dan Layanan</h2><p>Protokol menetapkan aturan komunikasi, sedangkan layanan menyediakan fungsi yang digunakan klien. Satu layanan dapat bergantung pada beberapa protokol. Membuka situs dengan nama domain biasanya melibatkan konfigurasi IP, pencarian DNS, transport, dan komunikasi web.</p><div class="service-grid"><article><h3>Konfigurasi</h3><p>DHCP membantu memberi konfigurasi IP.</p></article><article><h3>Penamaan</h3><p>DNS mencari informasi melalui record.</p></article><article><h3>Akses web</h3><p>HTTP bertukar pesan web; HTTPS melindunginya dengan TLS.</p></article></div><p><strong>Contoh:</strong> nama situs gagal tetapi IP dapat diakses. Periksa pencarian DNS sebelum mengubah seluruh jaringan.</p></section>
+<section id="dhcp" class="service-topic"><h2>DHCP dan Konfigurasi Otomatis</h2><p>DHCPv4 dapat memberikan alamat, subnet mask, gateway, DNS, dan masa sewa. Alur awal yang umum adalah Discover → Offer → Request → Acknowledge (DORA), menggunakan UDP server 67 dan klien 68. Jika server berada di subnet lain, diperlukan rancangan relay yang sesuai.</p><p>Alamat yang berhasil diperoleh belum menjamin semua opsi benar. Periksa scope, sewa, gateway, dan resolver. Bandingkan konfigurasi klien dengan rencana alamat; hindari alamat statis bertabrakan dengan pool DHCP.</p></section>
+<section id="dns" class="service-topic"><h2>DNS dan Record</h2><p>DNS menyediakan pencarian informasi nama. Record A berisi alamat IPv4, AAAA alamat IPv6, CNAME alias, dan MX tujuan layanan surat. Resolver dapat memakai cache sesuai TTL; tidak semua pencarian langsung menuju server otoritatif.</p><p>DNS konvensional memakai UDP atau TCP port 53; DNS tidak selalu hanya UDP. Gunakan alat kueri seperti nslookup untuk melihat jawaban dan server yang digunakan. Respons ping terhadap IP tidak membuktikan resolver DNS berfungsi.</p></section>
+<section id="web" class="service-topic"><h2>HTTP, HTTPS, dan TLS</h2><p>HTTP menggunakan pola permintaan dan respons; HTTPS mengamankan komunikasi HTTP dengan TLS. Browser memeriksa identitas server melalui sertifikat, lalu membentuk kanal terlindungi sesuai protokol yang digunakan. HTTP konvensional menggunakan TCP 80; HTTPS lazim menggunakan TCP 443, sementara HTTP/3 menggunakan QUIC melalui UDP.</p><p>HTTPS melindungi komunikasi selama perjalanan dan membantu autentikasi server. Itu tidak otomatis menjamin seluruh isi situs dapat dipercaya atau perangkat pengguna bebas masalah.</p></section>
+<section id="ports" class="service-topic"><h2>Port dan Layanan Umum</h2><div class="mapping-table-wrap"><table><thead><tr><th>Layanan</th><th>Port konvensional</th><th>Peran</th></tr></thead><tbody><tr><td>DHCPv4</td><td>UDP 67/68</td><td>Konfigurasi alamat</td></tr><tr><td>DNS</td><td>UDP/TCP 53</td><td>Pencarian informasi nama</td></tr><tr><td>HTTP</td><td>TCP 80</td><td>Pertukaran pesan web</td></tr><tr><td>HTTPS</td><td>TCP 443</td><td>Web melalui TLS, untuk skenario latihan ini</td></tr><tr><td>SSH</td><td>TCP 22</td><td>Administrasi remote aman</td></tr></tbody></table></div><p>Nomor port dapat dikonfigurasi berbeda. Port terbuka bukan bukti layanan sehat; gunakan pengujian protokol yang sesuai.</p></section>
+<section id="simulator" class="service-topic"><h2>Simulasi Perjalanan Layanan</h2><p>Pilih skenario, jalankan setiap langkah, lalu jelaskan peran klien, resolver, dan server. Ini model konseptual, bukan koneksi ke jaringan nyata.</p><div class="service-toolbar"><label>Skenario <select id="serviceScenario"><option value="web">Akses web HTTPS</option><option value="dhcp">Konfigurasi DHCPv4</option><option value="dns">Pencarian DNS</option></select></label><button id="serviceStep" class="primary-action" type="button">Langkah Berikutnya</button><button id="serviceReset" class="secondary-action" type="button">Ulangi Simulasi</button></div><figure><svg id="serviceSvg" viewBox="0 0 800 224" role="img" aria-label="Alur komunikasi layanan"></svg><figcaption id="serviceCaption"></figcaption></figure><ol id="serviceSequence"></ol><p id="serviceStatus" role="status" aria-live="polite"></p></section>
+<section id="game" class="service-topic"><h2>Service Route: Pasangkan Layanan</h2><p>Pilih kartu layanan lalu gerbang port konvensional yang sesuai dengan skenario ini.</p><div id="routeStatus" class="route-status" role="status" aria-live="polite"></div><div class="route-board"><section><h3>Kartu layanan</h3><div id="serviceCards" class="service-cards"></div></section><section><h3>Gerbang port</h3><div id="portGates" class="port-gates"></div></section></div><div class="route-footer"><span id="routeScore"></span><button id="routeRestart" class="secondary-action" type="button">Ulangi Game</button></div></section>
+<section id="posttest" class="service-topic"><h2>Rangkuman dan Posttest</h2><p>DHCP mengatur konfigurasi, DNS mencari informasi nama, dan HTTP/HTTPS menyediakan komunikasi web. Periksa setiap fungsi secara terpisah saat mencari gangguan. Jawab delapan soal; nilai minimum kelulusan 80.</p></section>
+</article>
+      <p id="gateMessage" class="gate-message feedback" role="status" aria-live="polite"></p>
+      <div class="lesson-actions"><button id="previousChapter" class="secondary-action" type="button" disabled>← Sebelumnya</button><div class="lesson-forward-actions"><button id="nextChapter" class="primary-action" type="button" disabled>Tahap Berikutnya →</button></div></div>
+      <p id="saveNote" class="save-note" role="status">Progres tersimpan pada browser ini.</p>
+    </main>
+  </div>
+
+  <script type="module" src="../../../assets/js/protokol-layanan.js?v=action1"></script>
+  <script type="module" src="../../../assets/js/module-shell.js?v=4"></script>
+</body>
+</html>

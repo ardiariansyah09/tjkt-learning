@@ -1,0 +1,121 @@
+﻿{
+    "modules":  [
+                    {
+                        "id":  "media-transmisi",
+                        "stageCount":  8,
+                        "stages":  [
+                                       "Mengenal Media Transmisi",
+                                       "Kabel Tembaga",
+                                       "Fiber Optik",
+                                       "Media Nirkabel",
+                                       "Memilih dan Menguji Media",
+                                       "Simulator Jalur Transmisi",
+                                       "Virtual Cable Tester",
+                                       "Posttest Media Transmisi"
+                                   ],
+                        "studio":  {
+                                       "core":  {
+                                                    "representationVectors":  5,
+                                                    "invalidVectors":  7,
+                                                    "scopeVectors":  3,
+                                                    "otherModels":  4
+                                                },
+                                       "ui":  {
+                                                  "globalStudioRemoved":  true,
+                                                  "contextualActivities":  true,
+                                                  "models":  {
+                                                                 "vectors":  10
+                                                             }
+                                              }
+                                   },
+                        "themeToggled":  true,
+                        "errors":  [
+
+                                   ]
+                    },
+                    {
+                        "id":  "ipv6-dasar",
+                        "stageCount":  12,
+                        "stages":  [
+                                       "Orientasi, Tujuan, dan Asesmen Awal",
+                                       "Struktur 128 Bit dan Penulisan Kanonis",
+                                       "Jenis, Lingkup, dan Alamat Khusus",
+                                       "Prefix, Subnet, dan Rencana Alamat",
+                                       "Neighbor Discovery dan Router Advertisement",
+                                       "SLAAC, DHCPv6, DAD, dan Masa Berlaku",
+                                       "Routing, DNS, Dual Stack, dan Keamanan",
+                                       "Studi Kasus: Jaringan Sekolah Dual Stack",
+                                       "Bengkel Alamat dan Prefix IPv6",
+                                       "Misi Pengiriman — Game Petualangan",
+                                       "Refleksi, Bukti, dan Perbaikan Strategi",
+                                       "Evaluasi Akhir dan Transfer Kasus"
+                                   ],
+                        "studio":  {
+                                       "core":  {
+                                                    "representationVectors":  5,
+                                                    "invalidVectors":  7,
+                                                    "scopeVectors":  3,
+                                                    "otherModels":  4
+                                                },
+                                       "ui":  {
+                                                  "globalStudioRemoved":  true,
+                                                  "contextualActivities":  true,
+                                                  "models":  {
+                                                                 "vectors":  10
+                                                             }
+                                              }
+                                   },
+                        "themeToggled":  true,
+                        "errors":  [
+
+                                   ]
+                    },
+                    {
+                        "id":  "alat-ukur-tjkt",
+                        "stageCount":  12,
+                        "stages":  [
+                                       "Orientasi, Tujuan, dan Asesmen Awal",
+                                       "Tujuan Ukur, Besaran, dan Pemilihan Alat",
+                                       "Keselamatan dan Pemeriksaan Sebelum Ukur",
+                                       "Rentang, Resolusi, Akurasi, dan Ketidakpastian",
+                                       "Pengujian Kabel Tembaga dan Dokumentasi Link",
+                                       "Daya Optik, Rugi Sisip, dan Margin",
+                                       "Kalibrasi, Perawatan, dan Laporan Ukur",
+                                       "Studi Kasus dan Proyek Terapan",
+                                       "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+                                       "Game Misi Terapan",
+                                       "Refleksi, Umpan Balik, dan Transfer",
+                                       "Rangkuman dan Evaluasi Akhir"
+                                   ],
+                        "studio":  {
+                                       "core":  {
+                                                    "representationVectors":  5,
+                                                    "invalidVectors":  7,
+                                                    "scopeVectors":  3,
+                                                    "otherModels":  4
+                                                },
+                                       "ui":  {
+                                                  "globalStudioRemoved":  true,
+                                                  "contextualActivities":  true,
+                                                  "models":  {
+                                                                 "vectors":  10
+                                                             }
+                                              }
+                                   },
+                        "themeToggled":  true,
+                        "errors":  [
+
+                                   ]
+                    }
+                ],
+    "checkedAt":  "2026-10-21T09:13:12.6232790Z",
+    "styleParity":  true,
+    "viewports":  [
+                      "1280x900",
+                      "390x844"
+                  ],
+    "themes":  [
+                   "light",
+                   "dark"
+               ]
+}

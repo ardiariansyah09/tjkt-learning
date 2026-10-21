@@ -1,0 +1,613 @@
+﻿{
+    "modules":  [
+                    {
+                        "id":  "proses-bisnis-tjkt",
+                        "stageCount":  12,
+                        "stages":  [
+                                       "Orientasi, Tujuan, dan Asesmen Awal",
+                                       "Rantai Nilai dan Alur Proses Layanan",
+                                       "Survei dan Kebutuhan Pelanggan",
+                                       "Perencanaan, Implementasi, dan Perubahan",
+                                       "Tiket, Prioritas, dan Kesepakatan Layanan",
+                                       "Komunikasi, Keluhan, dan Etika Layanan",
+                                       "Pengujian, Serah Terima, dan Mutu Berkelanjutan",
+                                       "Studi Kasus dan Proyek Terapan",
+                                       "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+                                       "Game Misi Terapan",
+                                       "Refleksi, Umpan Balik, dan Transfer",
+                                       "Rangkuman dan Evaluasi Akhir"
+                                   ],
+                        "studio":  {
+                                       "core":  {
+                                                    "representationVectors":  5,
+                                                    "invalidVectors":  7,
+                                                    "scopeVectors":  3,
+                                                    "otherModels":  4
+                                                },
+                                       "ui":  {
+                                                  "globalStudioRemoved":  true,
+                                                  "contextualActivities":  true,
+                                                  "models":  {
+                                                                 "vectors":  10
+                                                             }
+                                              }
+                                   },
+                        "themeToggled":  true,
+                        "errors":  [
+
+                                   ]
+                    },
+                    {
+                        "id":  "wawasan-tjkt",
+                        "stageCount":  12,
+                        "stages":  [
+                                       "Orientasi, Tujuan, dan Asesmen Awal",
+                                       "Literasi Teknologi dan Penilaian Bukti",
+                                       "5G, Mobilitas, dan Akses Fiber",
+                                       "IPv6 dan Internet of Things",
+                                       "Pusat Data, Virtualisasi, Cloud, dan Edge",
+                                       "Keamanan, Privasi, dan Ketahanan",
+                                       "Dampak Lingkungan, Inklusi, dan Keputusan Adopsi",
+                                       "Studi Kasus dan Proyek Terapan",
+                                       "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+                                       "Game Misi Terapan",
+                                       "Refleksi, Umpan Balik, dan Transfer",
+                                       "Rangkuman dan Evaluasi Akhir"
+                                   ],
+                        "studio":  {
+                                       "core":  {
+                                                    "representationVectors":  5,
+                                                    "invalidVectors":  7,
+                                                    "scopeVectors":  3,
+                                                    "otherModels":  4
+                                                },
+                                       "ui":  {
+                                                  "globalStudioRemoved":  true,
+                                                  "contextualActivities":  true,
+                                                  "models":  {
+                                                                 "vectors":  10
+                                                             }
+                                              }
+                                   },
+                        "themeToggled":  true,
+                        "errors":  [
+
+                                   ]
+                    },
+                    {
+                        "id":  "profesi-kewirausahaan-tjkt",
+                        "stageCount":  12,
+                        "stages":  [
+                                       "Orientasi, Tujuan, dan Asesmen Awal",
+                                       "Peta Profesi dan Kompetensi TJKT",
+                                       "Portofolio, Personal Branding, dan Etika",
+                                       "Peluang Usaha dan Validasi Masalah",
+                                       "Proposisi Nilai dan Model Usaha Layanan",
+                                       "Biaya, Harga, Titik Impas, dan Arus Kas",
+                                       "Proposal, Operasi, dan Rencana Pengembangan",
+                                       "Studi Kasus dan Proyek Terapan",
+                                       "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+                                       "Game Misi Terapan",
+                                       "Refleksi, Umpan Balik, dan Transfer",
+                                       "Rangkuman dan Evaluasi Akhir"
+                                   ],
+                        "studio":  {
+                                       "core":  {
+                                                    "representationVectors":  5,
+                                                    "invalidVectors":  7,
+                                                    "scopeVectors":  3,
+                                                    "otherModels":  4
+                                                },
+                                       "ui":  {
+                                                  "globalStudioRemoved":  true,
+                                                  "contextualActivities":  true,
+                                                  "models":  {
+                                                                 "vectors":  10
+                                                             }
+                                              }
+                                   },
+                        "themeToggled":  true,
+                        "errors":  [
+
+                                   ]
+                    },
+                    {
+                        "id":  "k3-budaya-kerja",
+                        "stageCount":  12,
+                        "stages":  [
+                                       "Orientasi, Tujuan, dan Asesmen Awal",
+                                       "Bahaya, Risiko, dan Penilaian Awal",
+                                       "Hierarki Pengendalian dan JSA",
+                                       "Keselamatan Listrik dan ESD",
+                                       "Perkakas, Fiber Optik, dan Area Kerja",
+                                       "Ergonomi, 5R, dan Kerja Tim",
+                                       "Keadaan Darurat, Lingkungan, dan Izin Kerja",
+                                       "Studi Kasus: Audit Keselamatan Laboratorium",
+                                       "Inspeksi Area Kerja dan JSA",
+                                       "Misi Pengiriman — Game Petualangan",
+                                       "Refleksi, Kolaborasi, dan Rencana Perbaikan",
+                                       "Evaluasi Akhir dan Transfer Pembelajaran"
+                                   ],
+                        "studio":  {
+                                       "core":  {
+                                                    "representationVectors":  5,
+                                                    "invalidVectors":  7,
+                                                    "scopeVectors":  3,
+                                                    "otherModels":  4
+                                                },
+                                       "ui":  {
+                                                  "globalStudioRemoved":  true,
+                                                  "contextualActivities":  true,
+                                                  "models":  {
+                                                                 "vectors":  10
+                                                             }
+                                              }
+                                   },
+                        "themeToggled":  true,
+                        "errors":  [
+
+                                   ]
+                    },
+                    {
+                        "id":  "pengenalan-jaringan",
+                        "stageCount":  9,
+                        "stages":  [
+                                       "Pengertian Jaringan",
+                                       "Manfaat Jaringan",
+                                       "LAN, MAN, dan WAN",
+                                       "Internet dan Intranet",
+                                       "Client-Server dan Peer-to-Peer",
+                                       "Komponen Jaringan",
+                                       "Virtual Network Builder",
+                                       "Network Arcade",
+                                       "Posttest dan Sertifikat"
+                                   ],
+                        "studio":  {
+                                       "core":  {
+                                                    "representationVectors":  5,
+                                                    "invalidVectors":  7,
+                                                    "scopeVectors":  3,
+                                                    "otherModels":  4
+                                                },
+                                       "ui":  {
+                                                  "globalStudioRemoved":  true,
+                                                  "contextualActivities":  true,
+                                                  "models":  {
+                                                                 "vectors":  10
+                                                             }
+                                              }
+                                   },
+                        "themeToggled":  true,
+                        "errors":  [
+
+                                   ]
+                    },
+                    {
+                        "id":  "perangkat-jaringan",
+                        "stageCount":  9,
+                        "stages":  [
+                                       "Peran Perangkat Jaringan",
+                                       "NIC dan Perangkat Akhir",
+                                       "Hub, Bridge, dan Switch",
+                                       "Router dan Default Gateway",
+                                       "Access Point, Modem/ONT, dan Firewall",
+                                       "Device Selection Lab",
+                                       "Virtual Network Builder",
+                                       "Device Delivery: Petualangan Jaringan",
+                                       "Posttest Perangkat Jaringan"
+                                   ],
+                        "studio":  {
+                                       "core":  {
+                                                    "representationVectors":  5,
+                                                    "invalidVectors":  7,
+                                                    "scopeVectors":  3,
+                                                    "otherModels":  4
+                                                },
+                                       "ui":  {
+                                                  "globalStudioRemoved":  true,
+                                                  "contextualActivities":  true,
+                                                  "models":  {
+                                                                 "vectors":  10
+                                                             }
+                                              }
+                                   },
+                        "themeToggled":  true,
+                        "errors":  [
+
+                                   ]
+                    },
+                    {
+                        "id":  "topologi-jaringan",
+                        "stageCount":  9,
+                        "stages":  [
+                                       "Pengertian dan Fungsi Topologi",
+                                       "Topologi Bus dan Ring",
+                                       "Topologi Star dan Tree",
+                                       "Topologi Mesh dan Hybrid",
+                                       "Memilih Topologi untuk Sekolah",
+                                       "Topology Builder — Virtual Lab",
+                                       "Link Rescue: Simulasi Topologi 2D",
+                                       "Topology Arcade",
+                                       "Posttest dan Sertifikat"
+                                   ],
+                        "studio":  {
+                                       "core":  {
+                                                    "representationVectors":  5,
+                                                    "invalidVectors":  7,
+                                                    "scopeVectors":  3,
+                                                    "otherModels":  4
+                                                },
+                                       "ui":  {
+                                                  "globalStudioRemoved":  true,
+                                                  "contextualActivities":  true,
+                                                  "models":  {
+                                                                 "vectors":  10
+                                                             }
+                                              }
+                                   },
+                        "themeToggled":  true,
+                        "errors":  [
+
+                                   ]
+                    },
+                    {
+                        "id":  "perencanaan-jaringan",
+                        "stageCount":  12,
+                        "stages":  [
+                                       "Orientasi, Tujuan, dan Asesmen Awal",
+                                       "Pemangku Kepentingan dan Kebutuhan",
+                                       "Survei Lokasi dan Inventaris",
+                                       "Perhitungan Port, Kapasitas, dan Pertumbuhan",
+                                       "Rancangan Fisik, Logis, dan Pengalamatan",
+                                       "Anggaran, Pemilihan Alternatif, dan Risiko",
+                                       "Dokumentasi, Uji Penerimaan, dan Perubahan",
+                                       "Studi Kasus: Rancangan Laboratorium Sekolah",
+                                       "Panel Kapasitas Switch",
+                                       "Misi Pengiriman — Game Petualangan",
+                                       "Refleksi dan Review Antar-Kelompok",
+                                       "Evaluasi Akhir dan Serah Terima Rancangan"
+                                   ],
+                        "studio":  {
+                                       "core":  {
+                                                    "representationVectors":  5,
+                                                    "invalidVectors":  7,
+                                                    "scopeVectors":  3,
+                                                    "otherModels":  4
+                                                },
+                                       "ui":  {
+                                                  "globalStudioRemoved":  true,
+                                                  "contextualActivities":  true,
+                                                  "models":  {
+                                                                 "vectors":  10
+                                                             }
+                                              }
+                                   },
+                        "themeToggled":  true,
+                        "errors":  [
+
+                                   ]
+                    },
+                    {
+                        "id":  "media-transmisi",
+                        "stageCount":  8,
+                        "stages":  [
+                                       "Mengenal Media Transmisi",
+                                       "Kabel Tembaga",
+                                       "Fiber Optik",
+                                       "Media Nirkabel",
+                                       "Memilih dan Menguji Media",
+                                       "Simulator Jalur Transmisi",
+                                       "Virtual Cable Tester",
+                                       "Posttest Media Transmisi"
+                                   ],
+                        "studio":  {
+                                       "core":  {
+                                                    "representationVectors":  5,
+                                                    "invalidVectors":  7,
+                                                    "scopeVectors":  3,
+                                                    "otherModels":  4
+                                                },
+                                       "ui":  {
+                                                  "globalStudioRemoved":  true,
+                                                  "contextualActivities":  true,
+                                                  "models":  {
+                                                                 "vectors":  10
+                                                             }
+                                              }
+                                   },
+                        "themeToggled":  true,
+                        "errors":  [
+
+                                   ]
+                    },
+                    {
+                        "id":  "osi-tcpip",
+                        "stageCount":  8,
+                        "stages":  [
+                                       "Mengenal Model Berlapis",
+                                       "Tujuh Lapisan OSI",
+                                       "Model TCP/IP",
+                                       "Enkapsulasi dan Dekapsulasi",
+                                       "Simulator Perjalanan Paket",
+                                       "Encapsulation Run — Petualangan Data",
+                                       "Rangkuman",
+                                       "Posttest OSI dan TCP/IP"
+                                   ],
+                        "studio":  {
+                                       "core":  {
+                                                    "representationVectors":  5,
+                                                    "invalidVectors":  7,
+                                                    "scopeVectors":  3,
+                                                    "otherModels":  4
+                                                },
+                                       "ui":  {
+                                                  "globalStudioRemoved":  true,
+                                                  "contextualActivities":  true,
+                                                  "models":  {
+                                                                 "vectors":  10
+                                                             }
+                                              }
+                                   },
+                        "themeToggled":  true,
+                        "errors":  [
+
+                                   ]
+                    },
+                    {
+                        "id":  "ipv4-subnetting",
+                        "stageCount":  9,
+                        "stages":  [
+                                       "Pengenalan IPv4",
+                                       "Struktur Alamat IPv4",
+                                       "Bilangan Biner",
+                                       "Subnet Mask \u0026 CIDR",
+                                       "Dasar Subnetting",
+                                       "Praktikum VLSM",
+                                       "Virtual Network Lab",
+                                       "Subnet Courier — Game Petualangan",
+                                       "Posttest \u0026 Rekap"
+                                   ],
+                        "studio":  {
+                                       "core":  {
+                                                    "representationVectors":  5,
+                                                    "invalidVectors":  7,
+                                                    "scopeVectors":  3,
+                                                    "otherModels":  4
+                                                },
+                                       "ui":  {
+                                                  "globalStudioRemoved":  true,
+                                                  "contextualActivities":  true,
+                                                  "models":  {
+                                                                 "vectors":  10
+                                                             }
+                                              }
+                                   },
+                        "themeToggled":  true,
+                        "errors":  [
+
+                                   ]
+                    },
+                    {
+                        "id":  "ipv6-dasar",
+                        "stageCount":  12,
+                        "stages":  [
+                                       "Orientasi, Tujuan, dan Asesmen Awal",
+                                       "Struktur 128 Bit dan Penulisan Kanonis",
+                                       "Jenis, Lingkup, dan Alamat Khusus",
+                                       "Prefix, Subnet, dan Rencana Alamat",
+                                       "Neighbor Discovery dan Router Advertisement",
+                                       "SLAAC, DHCPv6, DAD, dan Masa Berlaku",
+                                       "Routing, DNS, Dual Stack, dan Keamanan",
+                                       "Studi Kasus: Jaringan Sekolah Dual Stack",
+                                       "Bengkel Alamat dan Prefix IPv6",
+                                       "Misi Pengiriman — Game Petualangan",
+                                       "Refleksi, Bukti, dan Perbaikan Strategi",
+                                       "Evaluasi Akhir dan Transfer Kasus"
+                                   ],
+                        "studio":  {
+                                       "core":  {
+                                                    "representationVectors":  5,
+                                                    "invalidVectors":  7,
+                                                    "scopeVectors":  3,
+                                                    "otherModels":  4
+                                                },
+                                       "ui":  {
+                                                  "globalStudioRemoved":  true,
+                                                  "contextualActivities":  true,
+                                                  "models":  {
+                                                                 "vectors":  10
+                                                             }
+                                              }
+                                   },
+                        "themeToggled":  true,
+                        "errors":  [
+
+                                   ]
+                    },
+                    {
+                        "id":  "protokol-layanan",
+                        "stageCount":  8,
+                        "stages":  [
+                                       "Mengenal Protokol dan Layanan",
+                                       "DHCP dan Konfigurasi Otomatis",
+                                       "DNS dan Record",
+                                       "HTTP, HTTPS, dan TLS",
+                                       "Port dan Layanan Umum",
+                                       "Simulasi Perjalanan Layanan",
+                                       "Service Delivery — Petualangan Layanan",
+                                       "Posttest Protokol dan Layanan"
+                                   ],
+                        "studio":  {
+                                       "core":  {
+                                                    "representationVectors":  5,
+                                                    "invalidVectors":  7,
+                                                    "scopeVectors":  3,
+                                                    "otherModels":  4
+                                                },
+                                       "ui":  {
+                                                  "globalStudioRemoved":  true,
+                                                  "contextualActivities":  true,
+                                                  "models":  {
+                                                                 "vectors":  10
+                                                             }
+                                              }
+                                   },
+                        "themeToggled":  true,
+                        "errors":  [
+
+                                   ]
+                    },
+                    {
+                        "id":  "sistem-telekomunikasi-dasar",
+                        "stageCount":  12,
+                        "stages":  [
+                                       "Orientasi, Tujuan, dan Asesmen Awal",
+                                       "Model Sistem dan Representasi Sinyal",
+                                       "Frekuensi, Kapasitas, dan Mutu Layanan",
+                                       "Jaringan Seluler dan WLAN",
+                                       "Radio Gelombang Mikro dan Link Terestrial",
+                                       "Satelit, VSAT IP, dan Propagasi",
+                                       "Jaringan Optik, Keamanan, dan Pemilihan Sistem",
+                                       "Studi Kasus dan Proyek Terapan",
+                                       "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+                                       "Game Misi Terapan",
+                                       "Refleksi, Umpan Balik, dan Transfer",
+                                       "Rangkuman dan Evaluasi Akhir"
+                                   ],
+                        "studio":  {
+                                       "core":  {
+                                                    "representationVectors":  5,
+                                                    "invalidVectors":  7,
+                                                    "scopeVectors":  3,
+                                                    "otherModels":  4
+                                                },
+                                       "ui":  {
+                                                  "globalStudioRemoved":  true,
+                                                  "contextualActivities":  true,
+                                                  "models":  {
+                                                                 "vectors":  10
+                                                             }
+                                              }
+                                   },
+                        "themeToggled":  true,
+                        "errors":  [
+
+                                   ]
+                    },
+                    {
+                        "id":  "troubleshooting",
+                        "stageCount":  9,
+                        "stages":  [
+                                       "Memulai Troubleshooting",
+                                       "Mengisolasi Lingkup Masalah",
+                                       "Memeriksa Link Fisik dan Tautan",
+                                       "Memeriksa Konfigurasi IP",
+                                       "Menguji Gateway, Jalur, dan DNS",
+                                       "Memilih Alat Diagnostik",
+                                       "Network Clinic: Lab Diagnosa",
+                                       "Network Rescue Run — Petualangan Pemulihan",
+                                       "Posttest Troubleshooting Jaringan"
+                                   ],
+                        "studio":  {
+                                       "core":  {
+                                                    "representationVectors":  5,
+                                                    "invalidVectors":  7,
+                                                    "scopeVectors":  3,
+                                                    "otherModels":  4
+                                                },
+                                       "ui":  {
+                                                  "globalStudioRemoved":  true,
+                                                  "contextualActivities":  true,
+                                                  "models":  {
+                                                                 "vectors":  10
+                                                             }
+                                              }
+                                   },
+                        "themeToggled":  true,
+                        "errors":  [
+
+                                   ]
+                    },
+                    {
+                        "id":  "alat-ukur-tjkt",
+                        "stageCount":  12,
+                        "stages":  [
+                                       "Orientasi, Tujuan, dan Asesmen Awal",
+                                       "Tujuan Ukur, Besaran, dan Pemilihan Alat",
+                                       "Keselamatan dan Pemeriksaan Sebelum Ukur",
+                                       "Rentang, Resolusi, Akurasi, dan Ketidakpastian",
+                                       "Pengujian Kabel Tembaga dan Dokumentasi Link",
+                                       "Daya Optik, Rugi Sisip, dan Margin",
+                                       "Kalibrasi, Perawatan, dan Laporan Ukur",
+                                       "Studi Kasus dan Proyek Terapan",
+                                       "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+                                       "Game Misi Terapan",
+                                       "Refleksi, Umpan Balik, dan Transfer",
+                                       "Rangkuman dan Evaluasi Akhir"
+                                   ],
+                        "studio":  {
+                                       "core":  {
+                                                    "representationVectors":  5,
+                                                    "invalidVectors":  7,
+                                                    "scopeVectors":  3,
+                                                    "otherModels":  4
+                                                },
+                                       "ui":  {
+                                                  "globalStudioRemoved":  true,
+                                                  "contextualActivities":  true,
+                                                  "models":  {
+                                                                 "vectors":  10
+                                                             }
+                                              }
+                                   },
+                        "themeToggled":  true,
+                        "errors":  [
+
+                                   ]
+                    },
+                    {
+                        "id":  "switching-vlan",
+                        "stageCount":  9,
+                        "stages":  [
+                                       "Memahami Switching dan VLAN",
+                                       "Learning dan Forwarding MAC",
+                                       "VLAN dan Domain Broadcast",
+                                       "Port Access",
+                                       "Trunk dan IEEE 802.1Q",
+                                       "Inter-VLAN Routing",
+                                       "VLAN Studio: Lab Konfigurasi",
+                                       "VLAN Transit — Petualangan Frame",
+                                       "Posttest Switching \u0026 VLAN"
+                                   ],
+                        "studio":  {
+                                       "core":  {
+                                                    "representationVectors":  5,
+                                                    "invalidVectors":  7,
+                                                    "scopeVectors":  3,
+                                                    "otherModels":  4
+                                                },
+                                       "ui":  {
+                                                  "globalStudioRemoved":  true,
+                                                  "contextualActivities":  true,
+                                                  "models":  {
+                                                                 "vectors":  10
+                                                             }
+                                              }
+                                   },
+                        "themeToggled":  true,
+                        "errors":  [
+
+                                   ]
+                    }
+                ],
+    "checkedAt":  "2026-10-21T08:47:41.9094938Z",
+    "styleParity":  true,
+    "viewports":  [
+                      "1280x900",
+                      "390x844"
+                  ],
+    "themes":  [
+                   "light",
+                   "dark"
+               ]
+}

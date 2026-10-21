@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Pahami MAC learning, VLAN access dan trunk, inter-VLAN routing, lalu praktikkan konfigurasi switch lewat simulator dan game 2D.">
+  <title>Switching &amp; VLAN | TJKT Learning Hub</title>
+  <link rel="stylesheet" href="../../../assets/css/style.css">
+  <link rel="stylesheet" href="../../../assets/css/module.css">
+  <link rel="stylesheet" href="../../../assets/css/chapter-module.css?v=2">
+  <link rel="stylesheet" href="../../../assets/css/switching-vlan.css?v=1">
+  <link rel="stylesheet" href="../../../assets/css/module-standard.css?v=4">
+</head>
+<body class="module-page module-standard chapter-module switching-module" data-module-id="switching-vlan" data-standard-shell="1">
+  <a class="skip-link" href="#mainContent">Lewati ke materi</a>
+  <header class="module-topbar">
+    <a class="module-brand" href="../../../index.html" aria-label="Ke portal TJKT Learning Hub"><span class="brand-symbol" aria-hidden="true">🌐</span><strong>TJKT Learning Hub</strong></a>
+    <div class="topbar-actions"><a class="back-button" href="../../../index.html#catalog">← Kembali ke Portal</a><button id="switchThemeToggle" class="theme-button" type="button" aria-label="Ganti tema">🌙</button></div>
+  </header>
+  <div class="layout module-layout">
+    <aside class="lesson-sidebar" aria-label="Navigasi materi">
+      <div class="sidebar-heading"><span class="eyebrow-dark">FASE F · KELAS XI–XII · TKJ</span><h2>Switching &amp; VLAN</h2><p>Pahami MAC learning, VLAN access dan trunk, inter-VLAN routing, lalu praktikkan konfigurasi switch lewat simulator dan game 2D.</p></div>
+      <div class="progress-widget">
+        <div class="progress-label"><strong>Progres Belajar</strong><span id="progressLabel" data-progress-percent>0%</span></div>
+        <div id="progressBar" class="progress-track progress" role="progressbar" aria-label="Progres materi" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div id="progressFill" data-progress-fill></div></div>
+        <small id="progressCount" data-progress-count>Memuat progres...</small>
+      </div>
+
+      <nav id="lessonNav" class="lesson-nav" aria-label="Daftar tahap pembelajaran"></nav>
+      <p class="sidebar-tip">Tahap berikutnya terbuka setelah evaluasi tahap saat ini lulus.</p>
+      <button id="resetProgress" class="stage9-reset" type="button">Reset Progres Lokal</button>
+    </aside>
+    <main class="lesson-main" id="mainContent" tabindex="-1">
+      <div class="breadcrumbs"><a href="../../../index.html#fase-f">Fase F</a> <span>/</span> Switching &amp; VLAN <span>/</span> <strong id="breadcrumb" data-breadcrumb>Tahap Pembelajaran</strong></div>
+      <section class="panel lesson-hero"><span id="lessonKicker" class="lesson-kicker">MATERI 01</span><h1 id="lessonTitle">Switching &amp; VLAN</h1><p id="lessonSummary">Pahami MAC learning, VLAN access dan trunk, inter-VLAN routing, lalu praktikkan konfigurasi switch lewat simulator dan game 2D.</p></section>
+      <article id="lessonContent" class="panel lesson-content" aria-live="polite"><section id="tujuan" class="switch-objectives"><h2>Tujuan Pembelajaran</h2><ul><li>Menjelaskan MAC learning dan keputusan forwarding.</li><li>Membedakan VLAN, port access, trunk, dan routing antar-VLAN.</li><li>Menguji segmentasi dan membaca kegagalan pengiriman frame.</li></ul></section>
+<section id="pengantar" class="switch-topic"><h2>Memahami Switching dan VLAN</h2><p>Switch menghubungkan perangkat pada jaringan link-layer. VLAN memisahkan domain broadcast secara logis pada infrastruktur switch. Pemisahan tersebut membantu pengelolaan, tetapi tidak otomatis mengenkripsi trafik atau menggantikan aturan keamanan.</p><div class="switch-concepts"><article><h3>Switching</h3><p>Teruskan frame sesuai informasi MAC dan VLAN.</p></article><article><h3>Segmentasi</h3><p>Kelompokkan port dan trafik ke VLAN.</p></article><article><h3>Routing</h3><p>Hubungkan subnet melalui perangkat Layer 3.</p></article></div></section>
+<section id="switching" class="switch-topic"><h2>Learning dan Forwarding MAC</h2><p>Switch mempelajari alamat MAC sumber dari frame masuk dan mencatat port serta VLAN. Jika MAC tujuan unicast diketahui pada VLAN itu, frame diteruskan ke port tujuan yang sesuai. Jika tujuan berada pada port masuk yang sama, frame tidak perlu dikirim kembali melalui port tersebut.</p><p>Unknown unicast umumnya di-flood ke port forwarding lain pada VLAN yang sama, selain port masuk. Broadcast juga dibatasi pada VLAN terkait. Tabel MAC bersifat dinamis dan dapat mengalami aging; tabel ini berbeda dengan tabel routing IP.</p></section>
+<section id="vlan" class="switch-topic"><h2>VLAN dan Domain Broadcast</h2><p>VLAN membentuk pemisahan logis jaringan Layer 2. VLAN 10 dan VLAN 20 merupakan domain broadcast berbeda meskipun memakai switch fisik yang sama. Pengalamatan tiap VLAN perlu dirancang menjadi subnet yang sesuai.</p><p><strong>Contoh:</strong> VLAN siswa dan administrasi dapat memakai subnet berbeda. Komunikasi antar-keduanya mengikuti routing dan kebijakan akses; sekadar memberi alamat dari subnet berbeda tidak membuat switch Layer 2 merutekan paket.</p></section>
+<section id="access" class="switch-topic"><h2>Port Access</h2><p>Port access umumnya menghubungkan satu perangkat akhir ke satu VLAN data. Frame pada sambungan host biasa tidak memerlukan tag VLAN; switch mengaitkannya dengan VLAN access port tersebut. Samakan rancangan VLAN, konfigurasi port, dan alamat host.</p><p><strong>Praktik:</strong> jika PC-A dan PC-C dirancang pada VLAN 10 tetapi salah satunya masuk VLAN 20, perbaiki keanggotaan port sebelum menyimpulkan ada masalah routing.</p></section>
+<section id="trunk" class="switch-topic"><h2>Trunk dan IEEE 802.1Q</h2><p>Trunk dapat membawa trafik beberapa VLAN pada satu link. IEEE 802.1Q menambahkan identitas VLAN pada frame bertag; allowed VLAN menentukan VLAN yang diizinkan melintasi trunk tersebut.</p><p>Perhatikan native VLAN dan penanganan frame tanpa tag sesuai perangkat serta rancangan. Ketidaksesuaian konfigurasi antarujung dapat mengakibatkan trafik masuk ke VLAN yang tidak dimaksud. VLAN yang tidak diizinkan pada trunk tidak dapat sekadar melewati link karena nomor IP host sama.</p></section>
+<section id="routing" class="switch-topic"><h2>Inter-VLAN Routing</h2><p>Komunikasi antar-VLAN memerlukan fungsi Layer 3, seperti router dengan subinterface atau switch Layer 3. Setiap subnet membutuhkan gateway dan rute yang sesuai. Trunk membawa VLAN, sedangkan router meneruskan paket antarjaringan; kedua tugas ini berbeda.</p><p>Urutkan pengujian: keanggotaan access port → allowed VLAN trunk → koneksi satu VLAN → interface/gateway → routing antar-VLAN → aturan akses. Simulator berikut menyederhanakan proses tanpa menjalankan IOS nyata.</p></section>
+<section id="simulator" class="switch-topic"><h2>VLAN Studio: Lab Konfigurasi</h2><p>Atur VLAN port access, allowed VLAN trunk, serta routing. Uji PC-A ke PC-C untuk satu VLAN, lalu PC-A ke PC-B untuk antar-VLAN. Bandingkan log ketika salah satu VLAN dikeluarkan dari trunk.</p><div class="vlan-controls"><label>PC-A <select id="hostASelect"><option value="10">VLAN 10</option><option value="20">VLAN 20</option></select></label><label>PC-B <select id="hostBSelect"><option value="10">VLAN 10</option><option value="20" selected>VLAN 20</option></select></label><label>PC-C <select id="hostCSelect"><option value="10">VLAN 10</option><option value="20">VLAN 20</option></select></label><label>PC-D <select id="hostDSelect"><option value="10">VLAN 10</option><option value="20" selected>VLAN 20</option></select></label></div><fieldset><legend>Allowed VLAN pada trunk</legend><label><input type="checkbox" name="allowedVlan" value="10" checked> VLAN 10</label><label><input type="checkbox" name="allowedVlan" value="20" checked> VLAN 20</label></fieldset><label><input id="routingEnabled" type="checkbox" checked> Aktifkan routing antar-VLAN</label><figure><svg id="vlanDiagram" viewBox="0 0 800 360" role="img" aria-label="Topologi VLAN dua switch"></svg><figcaption id="topologyLegend"></figcaption></figure><label>Sumber <select id="sourceHost"><option>A</option><option>B</option><option>C</option><option>D</option></select></label><label>Tujuan <select id="destinationHost"><option>A</option><option>B</option><option selected>C</option><option>D</option></select></label><button id="sendFrame" class="primary-action" type="button">Kirim Frame</button><button id="resetVlanLab" class="secondary-action" type="button">Ulangi Lab</button><p id="frameStatus" role="status" aria-live="polite"></p><ol id="frameLog"></ol></section>
+<section id="game" class="switch-topic"><h2>Frame Forwarder: Tantangan Switching</h2><p id="frameMissionLabel"></p><p id="framePrompt"></p><dl><dt>MAC tujuan</dt><dd id="frameDestination"></dd><dt>Port masuk</dt><dd id="frameIngress"></dd><dt>VLAN</dt><dd id="frameVlan"></dd></dl><div class="table-scroll"><table><thead><tr><th>VLAN</th><th>MAC</th><th>Port</th></tr></thead><tbody id="macTableBody"></tbody></table></div><p id="gameSelectionHint"></p><div id="switchPortChoices"></div><p id="frameGameStatus" role="status" aria-live="polite"></p><p id="frameGameScore"></p><button id="submitForwarding" class="primary-action" type="button">Periksa Forwarding</button><button id="nextFrameMission" class="secondary-action" type="button">Misi Berikutnya</button><button id="restartFrameGame" class="secondary-action" type="button">Ulangi Game</button></section>
+<section id="posttest" class="switch-topic"><h2>Rangkuman dan Posttest</h2><p>Switch mempelajari MAC sumber, VLAN memisahkan domain broadcast, trunk membawa VLAN yang diizinkan, dan perangkat Layer 3 menghubungkan subnet. Jawab seluruh soal; nilai minimum kelulusan 80.</p></section>
+</article>
+      <p id="gateMessage" class="gate-message feedback" role="status" aria-live="polite"></p>
+      <div class="lesson-actions"><button id="previousChapter" class="secondary-action" type="button" disabled>← Sebelumnya</button><div class="lesson-forward-actions"><button id="nextChapter" class="primary-action" type="button" disabled>Tahap Berikutnya →</button></div></div>
+      <p id="saveNote" class="save-note" role="status">Progres tersimpan pada browser ini.</p>
+    </main>
+  </div>
+
+  <script type="module" src="../../../assets/js/switching-vlan.js?v=action1"></script>
+  <script type="module" src="../../../assets/js/module-shell.js?v=4"></script>
+</body>
+</html>

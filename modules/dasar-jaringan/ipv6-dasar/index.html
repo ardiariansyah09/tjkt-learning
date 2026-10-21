@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Alamat 128 bit, penyingkatan, prefix, link-local, multicast, dan pengantar dual stack.">
+  <title>Pengalamatan IPv6 Dasar | TJKT Learning Hub</title>
+  <link rel="stylesheet" href="../../../assets/css/style.css">
+  <link rel="stylesheet" href="../../../assets/css/module.css">
+  <link rel="stylesheet" href="../../../assets/css/module-standard.css?v=4">
+</head>
+<body class="module-page module-standard  chapter-module foundation-module" data-module-id="ipv6-dasar" data-standard-shell="1">
+  <a class="skip-link" href="#mainContent">Lewati ke materi</a>
+  <header class="module-topbar">
+    <a class="module-brand" href="../../../index.html" aria-label="Ke portal TJKT Learning Hub"><span class="brand-symbol" aria-hidden="true">🌐</span><strong>TJKT Learning Hub</strong></a>
+    <div class="topbar-actions"><a class="back-button" href="../../../index.html#catalog">← Kembali ke Portal</a><button id="foundationThemeToggle" class="theme-button" type="button" aria-label="Ganti tema">🌙</button></div>
+  </header>
+  <div class="layout module-layout">
+    <aside class="lesson-sidebar" aria-label="Navigasi materi">
+      <div class="sidebar-heading"><span class="eyebrow-dark">FASE E · KELAS X · DASAR-DASAR TJKT</span><h2>Pengalamatan IPv6 Dasar</h2><p>Alamat 128 bit, penyingkatan, prefix, link-local, multicast, dan pengantar dual stack.</p></div>
+      <div class="progress-widget">
+        <div class="progress-label"><strong>Progres Belajar</strong><span id="progressLabel" data-progress-percent>0%</span></div>
+        <div id="progressBar" class="progress-track progress" role="progressbar" aria-label="Progres materi" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div id="progressFill" data-progress-fill></div></div>
+        <small id="progressCount" data-progress-count>Memuat progres...</small>
+      </div>
+
+      <nav id="lessonNav" class="lesson-nav" aria-label="Daftar tahap pembelajaran"></nav>
+      <p class="sidebar-tip">Tahap berikutnya terbuka setelah evaluasi tahap saat ini lulus.</p>
+      <button id="resetProgress" class="stage9-reset" type="button">Reset Progres Lokal</button>
+    </aside>
+    <main class="lesson-main" id="mainContent" tabindex="-1">
+      <div class="breadcrumbs"><a href="../../../index.html#fase-e">Fase E</a> <span>/</span> Pengalamatan IPv6 Dasar <span>/</span> <strong id="breadcrumb" data-breadcrumb>Tahap Pembelajaran</strong></div>
+      <section class="panel lesson-hero"><span id="lessonKicker" class="lesson-kicker">MATERI 01</span><h1 id="lessonTitle">Pengalamatan IPv6 Dasar</h1><p id="lessonSummary">Alamat 128 bit, penyingkatan, prefix, link-local, multicast, dan pengantar dual stack.</p></section>
+      <article id="lessonContent" class="panel lesson-content" aria-live="polite"><section id="tujuan"><h2>Tujuan Pembelajaran</h2><p>Membaca alamat IPv6, mengenali lingkup alamat, dan memahami dual stack.</p></section><section id="konsep-1"><h2>128 bit dan heksadesimal</h2><p>IPv6 menggunakan alamat 128 bit yang ditulis dalam delapan kelompok heksadesimal 16 bit. Contoh dokumentasi: 2001:db8:0:1:0:0:0:10. Nol di awal kelompok boleh dihapus; satu rangkaian kelompok nol boleh diganti :: hanya sekali dalam satu alamat. Contoh tersebut dapat disingkat menjadi 2001:db8:0:1::10. Prefix /64 menyatakan 64 bit pertama sebagai bagian prefix.</p></section><section id="konsep-2"><h2>Lingkup dan jenis alamat</h2><p>Alamat link-local berada pada fe80::/10 dan digunakan pada satu link; router tidak meneruskannya ke link lain. Alamat multicast menggunakan ff00::/8. IPv6 tidak menggunakan broadcast. ::1 adalah loopback, sedangkan :: merupakan alamat unspecified. 2001:db8::/32 dicadangkan untuk dokumentasi, sehingga contoh ini bukan alokasi Internet untuk sekolah.</p></section><section id="konsep-3"><h2>Konfigurasi dan transisi</h2><p>Neighbor Discovery menggunakan ICMPv6 untuk menemukan tetangga dan router; jangan menyamakannya dengan ARP IPv4. Host dapat memperoleh konfigurasi melalui SLAAC dan/atau DHCPv6 sesuai rancangan; informasi default router dipelajari melalui Router Advertisement. Dual stack menjalankan IPv4 dan IPv6 berdampingan. Uji alamat lokal sebelum tujuan jauh dan periksa rute serta DNS AAAA. Ketiadaan NAT tidak menghilangkan kebutuhan firewall.</p></section><section id="praktik"><h2>Latihan Penerapan</h2><p>Uraikan 2001:db8:0:1::10 menjadi delapan kelompok: 2001:0db8:0000:0001:0000:0000:0000:0010. Kelompokkan ::1, fe80::1, dan ff02::1 sebagai loopback, link-local unicast, dan multicast. Pada lab dual stack berizin, catat alamat, prefix, rute default, dan hasil ping IPv4/IPv6. Perintah berbeda antar-OS; gunakan bantuan sistem yang tersedia.</p></section><section id="evaluasi"><h2>Rangkuman dan Evaluasi</h2><p>Membaca alamat IPv6, mengenali lingkup alamat, dan memahami dual stack.</p><p>Jawab evaluasi formatif untuk menuntaskan modul pengantar ini.</p></section></article>
+      <p id="gateMessage" class="gate-message feedback" role="status" aria-live="polite"></p>
+      <div class="lesson-actions"><button id="previousChapter" class="secondary-action" type="button" disabled>← Sebelumnya</button><div class="lesson-forward-actions"><button id="nextChapter" class="primary-action" type="button" disabled>Tahap Berikutnya →</button></div></div>
+      <p id="saveNote" class="save-note" role="status">Progres tersimpan pada browser ini.</p>
+    </main>
+  </div>
+
+  <script type="module" src="../../../assets/js/foundation-check.js?v=5"></script>
+  <script type="module" src="../../../assets/js/module-shell.js?v=4"></script>
+</body>
+</html>
