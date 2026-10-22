@@ -28,7 +28,39 @@
                                                   "globalStudioRemoved":  true,
                                                   "contextualActivities":  true,
                                                   "models":  {
-                                                                 "vectors":  10
+                                                                 "vectors":  10,
+                                                                 "requirements":  {
+                                                                                      "vectors":  8,
+                                                                                      "contracts":  3
+                                                                                  },
+                                                                 "layout":  {
+                                                                                "vectors":  5,
+                                                                                "levelLengths":  [
+                                                                                                     12,
+                                                                                                     12,
+                                                                                                     12
+                                                                                                 ]
+                                                                            },
+                                                                 "addressPlan":  {
+                                                                                     "vectors":  13,
+                                                                                     "levels":  3
+                                                                                 },
+                                                                 "cabling":  {
+                                                                                 "vectors":  9
+                                                                             },
+                                                                 "wlan":  {
+                                                                              "vectors":  6,
+                                                                              "levels":  3
+                                                                          },
+                                                                 "maintenance":  {
+                                                                                     "incidents":  3,
+                                                                                     "verificationVectors":  12,
+                                                                                     "boards":  3
+                                                                                 },
+                                                                 "voip":  {
+                                                                              "callVectors":  10,
+                                                                              "bufferLevels":  3
+                                                                          }
                                                              }
                                               }
                                    },
@@ -65,7 +97,39 @@
                                                   "globalStudioRemoved":  true,
                                                   "contextualActivities":  true,
                                                   "models":  {
-                                                                 "vectors":  10
+                                                                 "vectors":  10,
+                                                                 "requirements":  {
+                                                                                      "vectors":  8,
+                                                                                      "contracts":  3
+                                                                                  },
+                                                                 "layout":  {
+                                                                                "vectors":  5,
+                                                                                "levelLengths":  [
+                                                                                                     12,
+                                                                                                     12,
+                                                                                                     12
+                                                                                                 ]
+                                                                            },
+                                                                 "addressPlan":  {
+                                                                                     "vectors":  13,
+                                                                                     "levels":  3
+                                                                                 },
+                                                                 "cabling":  {
+                                                                                 "vectors":  9
+                                                                             },
+                                                                 "wlan":  {
+                                                                              "vectors":  6,
+                                                                              "levels":  3
+                                                                          },
+                                                                 "maintenance":  {
+                                                                                     "incidents":  3,
+                                                                                     "verificationVectors":  12,
+                                                                                     "boards":  3
+                                                                                 },
+                                                                 "voip":  {
+                                                                              "callVectors":  10,
+                                                                              "bufferLevels":  3
+                                                                          }
                                                              }
                                               }
                                    },
@@ -102,7 +166,39 @@
                                                   "globalStudioRemoved":  true,
                                                   "contextualActivities":  true,
                                                   "models":  {
-                                                                 "vectors":  10
+                                                                 "vectors":  10,
+                                                                 "requirements":  {
+                                                                                      "vectors":  8,
+                                                                                      "contracts":  3
+                                                                                  },
+                                                                 "layout":  {
+                                                                                "vectors":  5,
+                                                                                "levelLengths":  [
+                                                                                                     12,
+                                                                                                     12,
+                                                                                                     12
+                                                                                                 ]
+                                                                            },
+                                                                 "addressPlan":  {
+                                                                                     "vectors":  13,
+                                                                                     "levels":  3
+                                                                                 },
+                                                                 "cabling":  {
+                                                                                 "vectors":  9
+                                                                             },
+                                                                 "wlan":  {
+                                                                              "vectors":  6,
+                                                                              "levels":  3
+                                                                          },
+                                                                 "maintenance":  {
+                                                                                     "incidents":  3,
+                                                                                     "verificationVectors":  12,
+                                                                                     "boards":  3
+                                                                                 },
+                                                                 "voip":  {
+                                                                              "callVectors":  10,
+                                                                              "bufferLevels":  3
+                                                                          }
                                                              }
                                               }
                                    },
@@ -139,7 +235,39 @@
                                                   "globalStudioRemoved":  true,
                                                   "contextualActivities":  true,
                                                   "models":  {
-                                                                 "vectors":  10
+                                                                 "vectors":  10,
+                                                                 "requirements":  {
+                                                                                      "vectors":  8,
+                                                                                      "contracts":  3
+                                                                                  },
+                                                                 "layout":  {
+                                                                                "vectors":  5,
+                                                                                "levelLengths":  [
+                                                                                                     12,
+                                                                                                     12,
+                                                                                                     12
+                                                                                                 ]
+                                                                            },
+                                                                 "addressPlan":  {
+                                                                                     "vectors":  13,
+                                                                                     "levels":  3
+                                                                                 },
+                                                                 "cabling":  {
+                                                                                 "vectors":  9
+                                                                             },
+                                                                 "wlan":  {
+                                                                              "vectors":  6,
+                                                                              "levels":  3
+                                                                          },
+                                                                 "maintenance":  {
+                                                                                     "incidents":  3,
+                                                                                     "verificationVectors":  12,
+                                                                                     "boards":  3
+                                                                                 },
+                                                                 "voip":  {
+                                                                              "callVectors":  10,
+                                                                              "bufferLevels":  3
+                                                                          }
                                                              }
                                               }
                                    },
@@ -173,7 +301,39 @@
                                                   "globalStudioRemoved":  true,
                                                   "contextualActivities":  true,
                                                   "models":  {
-                                                                 "vectors":  10
+                                                                 "vectors":  10,
+                                                                 "requirements":  {
+                                                                                      "vectors":  8,
+                                                                                      "contracts":  3
+                                                                                  },
+                                                                 "layout":  {
+                                                                                "vectors":  5,
+                                                                                "levelLengths":  [
+                                                                                                     12,
+                                                                                                     12,
+                                                                                                     12
+                                                                                                 ]
+                                                                            },
+                                                                 "addressPlan":  {
+                                                                                     "vectors":  13,
+                                                                                     "levels":  3
+                                                                                 },
+                                                                 "cabling":  {
+                                                                                 "vectors":  9
+                                                                             },
+                                                                 "wlan":  {
+                                                                              "vectors":  6,
+                                                                              "levels":  3
+                                                                          },
+                                                                 "maintenance":  {
+                                                                                     "incidents":  3,
+                                                                                     "verificationVectors":  12,
+                                                                                     "boards":  3
+                                                                                 },
+                                                                 "voip":  {
+                                                                              "callVectors":  10,
+                                                                              "bufferLevels":  3
+                                                                          }
                                                              }
                                               }
                                    },
@@ -207,7 +367,39 @@
                                                   "globalStudioRemoved":  true,
                                                   "contextualActivities":  true,
                                                   "models":  {
-                                                                 "vectors":  10
+                                                                 "vectors":  10,
+                                                                 "requirements":  {
+                                                                                      "vectors":  8,
+                                                                                      "contracts":  3
+                                                                                  },
+                                                                 "layout":  {
+                                                                                "vectors":  5,
+                                                                                "levelLengths":  [
+                                                                                                     12,
+                                                                                                     12,
+                                                                                                     12
+                                                                                                 ]
+                                                                            },
+                                                                 "addressPlan":  {
+                                                                                     "vectors":  13,
+                                                                                     "levels":  3
+                                                                                 },
+                                                                 "cabling":  {
+                                                                                 "vectors":  9
+                                                                             },
+                                                                 "wlan":  {
+                                                                              "vectors":  6,
+                                                                              "levels":  3
+                                                                          },
+                                                                 "maintenance":  {
+                                                                                     "incidents":  3,
+                                                                                     "verificationVectors":  12,
+                                                                                     "boards":  3
+                                                                                 },
+                                                                 "voip":  {
+                                                                              "callVectors":  10,
+                                                                              "bufferLevels":  3
+                                                                          }
                                                              }
                                               }
                                    },
@@ -241,7 +433,39 @@
                                                   "globalStudioRemoved":  true,
                                                   "contextualActivities":  true,
                                                   "models":  {
-                                                                 "vectors":  10
+                                                                 "vectors":  10,
+                                                                 "requirements":  {
+                                                                                      "vectors":  8,
+                                                                                      "contracts":  3
+                                                                                  },
+                                                                 "layout":  {
+                                                                                "vectors":  5,
+                                                                                "levelLengths":  [
+                                                                                                     12,
+                                                                                                     12,
+                                                                                                     12
+                                                                                                 ]
+                                                                            },
+                                                                 "addressPlan":  {
+                                                                                     "vectors":  13,
+                                                                                     "levels":  3
+                                                                                 },
+                                                                 "cabling":  {
+                                                                                 "vectors":  9
+                                                                             },
+                                                                 "wlan":  {
+                                                                              "vectors":  6,
+                                                                              "levels":  3
+                                                                          },
+                                                                 "maintenance":  {
+                                                                                     "incidents":  3,
+                                                                                     "verificationVectors":  12,
+                                                                                     "boards":  3
+                                                                                 },
+                                                                 "voip":  {
+                                                                              "callVectors":  10,
+                                                                              "bufferLevels":  3
+                                                                          }
                                                              }
                                               }
                                    },
@@ -278,7 +502,39 @@
                                                   "globalStudioRemoved":  true,
                                                   "contextualActivities":  true,
                                                   "models":  {
-                                                                 "vectors":  10
+                                                                 "vectors":  10,
+                                                                 "requirements":  {
+                                                                                      "vectors":  8,
+                                                                                      "contracts":  3
+                                                                                  },
+                                                                 "layout":  {
+                                                                                "vectors":  5,
+                                                                                "levelLengths":  [
+                                                                                                     12,
+                                                                                                     12,
+                                                                                                     12
+                                                                                                 ]
+                                                                            },
+                                                                 "addressPlan":  {
+                                                                                     "vectors":  13,
+                                                                                     "levels":  3
+                                                                                 },
+                                                                 "cabling":  {
+                                                                                 "vectors":  9
+                                                                             },
+                                                                 "wlan":  {
+                                                                              "vectors":  6,
+                                                                              "levels":  3
+                                                                          },
+                                                                 "maintenance":  {
+                                                                                     "incidents":  3,
+                                                                                     "verificationVectors":  12,
+                                                                                     "boards":  3
+                                                                                 },
+                                                                 "voip":  {
+                                                                              "callVectors":  10,
+                                                                              "bufferLevels":  3
+                                                                          }
                                                              }
                                               }
                                    },
@@ -311,7 +567,39 @@
                                                   "globalStudioRemoved":  true,
                                                   "contextualActivities":  true,
                                                   "models":  {
-                                                                 "vectors":  10
+                                                                 "vectors":  10,
+                                                                 "requirements":  {
+                                                                                      "vectors":  8,
+                                                                                      "contracts":  3
+                                                                                  },
+                                                                 "layout":  {
+                                                                                "vectors":  5,
+                                                                                "levelLengths":  [
+                                                                                                     12,
+                                                                                                     12,
+                                                                                                     12
+                                                                                                 ]
+                                                                            },
+                                                                 "addressPlan":  {
+                                                                                     "vectors":  13,
+                                                                                     "levels":  3
+                                                                                 },
+                                                                 "cabling":  {
+                                                                                 "vectors":  9
+                                                                             },
+                                                                 "wlan":  {
+                                                                              "vectors":  6,
+                                                                              "levels":  3
+                                                                          },
+                                                                 "maintenance":  {
+                                                                                     "incidents":  3,
+                                                                                     "verificationVectors":  12,
+                                                                                     "boards":  3
+                                                                                 },
+                                                                 "voip":  {
+                                                                              "callVectors":  10,
+                                                                              "bufferLevels":  3
+                                                                          }
                                                              }
                                               }
                                    },
@@ -344,7 +632,39 @@
                                                   "globalStudioRemoved":  true,
                                                   "contextualActivities":  true,
                                                   "models":  {
-                                                                 "vectors":  10
+                                                                 "vectors":  10,
+                                                                 "requirements":  {
+                                                                                      "vectors":  8,
+                                                                                      "contracts":  3
+                                                                                  },
+                                                                 "layout":  {
+                                                                                "vectors":  5,
+                                                                                "levelLengths":  [
+                                                                                                     12,
+                                                                                                     12,
+                                                                                                     12
+                                                                                                 ]
+                                                                            },
+                                                                 "addressPlan":  {
+                                                                                     "vectors":  13,
+                                                                                     "levels":  3
+                                                                                 },
+                                                                 "cabling":  {
+                                                                                 "vectors":  9
+                                                                             },
+                                                                 "wlan":  {
+                                                                              "vectors":  6,
+                                                                              "levels":  3
+                                                                          },
+                                                                 "maintenance":  {
+                                                                                     "incidents":  3,
+                                                                                     "verificationVectors":  12,
+                                                                                     "boards":  3
+                                                                                 },
+                                                                 "voip":  {
+                                                                              "callVectors":  10,
+                                                                              "bufferLevels":  3
+                                                                          }
                                                              }
                                               }
                                    },
@@ -378,7 +698,39 @@
                                                   "globalStudioRemoved":  true,
                                                   "contextualActivities":  true,
                                                   "models":  {
-                                                                 "vectors":  10
+                                                                 "vectors":  10,
+                                                                 "requirements":  {
+                                                                                      "vectors":  8,
+                                                                                      "contracts":  3
+                                                                                  },
+                                                                 "layout":  {
+                                                                                "vectors":  5,
+                                                                                "levelLengths":  [
+                                                                                                     12,
+                                                                                                     12,
+                                                                                                     12
+                                                                                                 ]
+                                                                            },
+                                                                 "addressPlan":  {
+                                                                                     "vectors":  13,
+                                                                                     "levels":  3
+                                                                                 },
+                                                                 "cabling":  {
+                                                                                 "vectors":  9
+                                                                             },
+                                                                 "wlan":  {
+                                                                              "vectors":  6,
+                                                                              "levels":  3
+                                                                          },
+                                                                 "maintenance":  {
+                                                                                     "incidents":  3,
+                                                                                     "verificationVectors":  12,
+                                                                                     "boards":  3
+                                                                                 },
+                                                                 "voip":  {
+                                                                              "callVectors":  10,
+                                                                              "bufferLevels":  3
+                                                                          }
                                                              }
                                               }
                                    },
@@ -415,7 +767,39 @@
                                                   "globalStudioRemoved":  true,
                                                   "contextualActivities":  true,
                                                   "models":  {
-                                                                 "vectors":  10
+                                                                 "vectors":  10,
+                                                                 "requirements":  {
+                                                                                      "vectors":  8,
+                                                                                      "contracts":  3
+                                                                                  },
+                                                                 "layout":  {
+                                                                                "vectors":  5,
+                                                                                "levelLengths":  [
+                                                                                                     12,
+                                                                                                     12,
+                                                                                                     12
+                                                                                                 ]
+                                                                            },
+                                                                 "addressPlan":  {
+                                                                                     "vectors":  13,
+                                                                                     "levels":  3
+                                                                                 },
+                                                                 "cabling":  {
+                                                                                 "vectors":  9
+                                                                             },
+                                                                 "wlan":  {
+                                                                              "vectors":  6,
+                                                                              "levels":  3
+                                                                          },
+                                                                 "maintenance":  {
+                                                                                     "incidents":  3,
+                                                                                     "verificationVectors":  12,
+                                                                                     "boards":  3
+                                                                                 },
+                                                                 "voip":  {
+                                                                              "callVectors":  10,
+                                                                              "bufferLevels":  3
+                                                                          }
                                                              }
                                               }
                                    },
@@ -448,7 +832,39 @@
                                                   "globalStudioRemoved":  true,
                                                   "contextualActivities":  true,
                                                   "models":  {
-                                                                 "vectors":  10
+                                                                 "vectors":  10,
+                                                                 "requirements":  {
+                                                                                      "vectors":  8,
+                                                                                      "contracts":  3
+                                                                                  },
+                                                                 "layout":  {
+                                                                                "vectors":  5,
+                                                                                "levelLengths":  [
+                                                                                                     12,
+                                                                                                     12,
+                                                                                                     12
+                                                                                                 ]
+                                                                            },
+                                                                 "addressPlan":  {
+                                                                                     "vectors":  13,
+                                                                                     "levels":  3
+                                                                                 },
+                                                                 "cabling":  {
+                                                                                 "vectors":  9
+                                                                             },
+                                                                 "wlan":  {
+                                                                              "vectors":  6,
+                                                                              "levels":  3
+                                                                          },
+                                                                 "maintenance":  {
+                                                                                     "incidents":  3,
+                                                                                     "verificationVectors":  12,
+                                                                                     "boards":  3
+                                                                                 },
+                                                                 "voip":  {
+                                                                              "callVectors":  10,
+                                                                              "bufferLevels":  3
+                                                                          }
                                                              }
                                               }
                                    },
@@ -485,7 +901,39 @@
                                                   "globalStudioRemoved":  true,
                                                   "contextualActivities":  true,
                                                   "models":  {
-                                                                 "vectors":  10
+                                                                 "vectors":  10,
+                                                                 "requirements":  {
+                                                                                      "vectors":  8,
+                                                                                      "contracts":  3
+                                                                                  },
+                                                                 "layout":  {
+                                                                                "vectors":  5,
+                                                                                "levelLengths":  [
+                                                                                                     12,
+                                                                                                     12,
+                                                                                                     12
+                                                                                                 ]
+                                                                            },
+                                                                 "addressPlan":  {
+                                                                                     "vectors":  13,
+                                                                                     "levels":  3
+                                                                                 },
+                                                                 "cabling":  {
+                                                                                 "vectors":  9
+                                                                             },
+                                                                 "wlan":  {
+                                                                              "vectors":  6,
+                                                                              "levels":  3
+                                                                          },
+                                                                 "maintenance":  {
+                                                                                     "incidents":  3,
+                                                                                     "verificationVectors":  12,
+                                                                                     "boards":  3
+                                                                                 },
+                                                                 "voip":  {
+                                                                              "callVectors":  10,
+                                                                              "bufferLevels":  3
+                                                                          }
                                                              }
                                               }
                                    },
@@ -519,7 +967,39 @@
                                                   "globalStudioRemoved":  true,
                                                   "contextualActivities":  true,
                                                   "models":  {
-                                                                 "vectors":  10
+                                                                 "vectors":  10,
+                                                                 "requirements":  {
+                                                                                      "vectors":  8,
+                                                                                      "contracts":  3
+                                                                                  },
+                                                                 "layout":  {
+                                                                                "vectors":  5,
+                                                                                "levelLengths":  [
+                                                                                                     12,
+                                                                                                     12,
+                                                                                                     12
+                                                                                                 ]
+                                                                            },
+                                                                 "addressPlan":  {
+                                                                                     "vectors":  13,
+                                                                                     "levels":  3
+                                                                                 },
+                                                                 "cabling":  {
+                                                                                 "vectors":  9
+                                                                             },
+                                                                 "wlan":  {
+                                                                              "vectors":  6,
+                                                                              "levels":  3
+                                                                          },
+                                                                 "maintenance":  {
+                                                                                     "incidents":  3,
+                                                                                     "verificationVectors":  12,
+                                                                                     "boards":  3
+                                                                                 },
+                                                                 "voip":  {
+                                                                              "callVectors":  10,
+                                                                              "bufferLevels":  3
+                                                                          }
                                                              }
                                               }
                                    },
@@ -556,7 +1036,522 @@
                                                   "globalStudioRemoved":  true,
                                                   "contextualActivities":  true,
                                                   "models":  {
-                                                                 "vectors":  10
+                                                                 "vectors":  10,
+                                                                 "requirements":  {
+                                                                                      "vectors":  8,
+                                                                                      "contracts":  3
+                                                                                  },
+                                                                 "layout":  {
+                                                                                "vectors":  5,
+                                                                                "levelLengths":  [
+                                                                                                     12,
+                                                                                                     12,
+                                                                                                     12
+                                                                                                 ]
+                                                                            },
+                                                                 "addressPlan":  {
+                                                                                     "vectors":  13,
+                                                                                     "levels":  3
+                                                                                 },
+                                                                 "cabling":  {
+                                                                                 "vectors":  9
+                                                                             },
+                                                                 "wlan":  {
+                                                                              "vectors":  6,
+                                                                              "levels":  3
+                                                                          },
+                                                                 "maintenance":  {
+                                                                                     "incidents":  3,
+                                                                                     "verificationVectors":  12,
+                                                                                     "boards":  3
+                                                                                 },
+                                                                 "voip":  {
+                                                                              "callVectors":  10,
+                                                                              "bufferLevels":  3
+                                                                          }
+                                                             }
+                                              }
+                                   },
+                        "themeToggled":  true,
+                        "errors":  [
+
+                                   ]
+                    },
+                    {
+                        "id":  "kebutuhan-teknis-jaringan",
+                        "stageCount":  12,
+                        "stages":  [
+                                       "Orientasi, Tujuan, dan Asesmen Awal",
+                                       "Dari Kegiatan Pengguna ke Kebutuhan Teknis",
+                                       "Survei, Inventaris, dan Kualitas Bukti",
+                                       "Pengguna Bersamaan dan Profil Trafik",
+                                       "Port, Daya, dan Kompatibilitas Peralatan",
+                                       "Matriks Spesifikasi dan Perbandingan Alternatif",
+                                       "Keterlacakan, Validasi, dan Penyerahan Analisis",
+                                       "Studi Kasus dan Proyek Terapan",
+                                       "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+                                       "Game Gudang Peralatan",
+                                       "Refleksi, Umpan Balik, dan Transfer",
+                                       "Rangkuman dan Evaluasi Akhir"
+                                   ],
+                        "studio":  {
+                                       "core":  {
+                                                    "representationVectors":  5,
+                                                    "invalidVectors":  7,
+                                                    "scopeVectors":  3,
+                                                    "otherModels":  4
+                                                },
+                                       "ui":  {
+                                                  "globalStudioRemoved":  true,
+                                                  "contextualActivities":  true,
+                                                  "models":  {
+                                                                 "vectors":  10,
+                                                                 "requirements":  {
+                                                                                      "vectors":  8,
+                                                                                      "contracts":  3
+                                                                                  },
+                                                                 "layout":  {
+                                                                                "vectors":  5,
+                                                                                "levelLengths":  [
+                                                                                                     12,
+                                                                                                     12,
+                                                                                                     12
+                                                                                                 ]
+                                                                            },
+                                                                 "addressPlan":  {
+                                                                                     "vectors":  13,
+                                                                                     "levels":  3
+                                                                                 },
+                                                                 "cabling":  {
+                                                                                 "vectors":  9
+                                                                             },
+                                                                 "wlan":  {
+                                                                              "vectors":  6,
+                                                                              "levels":  3
+                                                                          },
+                                                                 "maintenance":  {
+                                                                                     "incidents":  3,
+                                                                                     "verificationVectors":  12,
+                                                                                     "boards":  3
+                                                                                 },
+                                                                 "voip":  {
+                                                                              "callVectors":  10,
+                                                                              "bufferLevels":  3
+                                                                          }
+                                                             }
+                                              }
+                                   },
+                        "themeToggled":  true,
+                        "errors":  [
+
+                                   ]
+                    },
+                    {
+                        "id":  "desain-topologi-arsitektur",
+                        "stageCount":  12,
+                        "stages":  [
+                                       "Orientasi, Tujuan, dan Asesmen Awal",
+                                       "Topologi Fisik, Logis, dan Keterlacakan Kebutuhan",
+                                       "Arsitektur Akses, Agregasi, dan Titik Kegagalan",
+                                       "Survei Lokasi, Peta Jalur Fiber, dan Batas Pengukuran",
+                                       "Skala, Satuan, dan Layout dengan Visio atau draw.io",
+                                       "Penempatan Perangkat dan Estimasi Jalur Kabel",
+                                       "Dokumentasi Desain, Review, dan Penyerahan",
+                                       "Studi Kasus dan Proyek Terapan",
+                                       "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+                                       "Game Cable Route Builder",
+                                       "Refleksi, Umpan Balik, dan Transfer",
+                                       "Rangkuman dan Evaluasi Akhir"
+                                   ],
+                        "studio":  {
+                                       "core":  {
+                                                    "representationVectors":  5,
+                                                    "invalidVectors":  7,
+                                                    "scopeVectors":  3,
+                                                    "otherModels":  4
+                                                },
+                                       "ui":  {
+                                                  "globalStudioRemoved":  true,
+                                                  "contextualActivities":  true,
+                                                  "models":  {
+                                                                 "vectors":  10,
+                                                                 "requirements":  {
+                                                                                      "vectors":  8,
+                                                                                      "contracts":  3
+                                                                                  },
+                                                                 "layout":  {
+                                                                                "vectors":  5,
+                                                                                "levelLengths":  [
+                                                                                                     12,
+                                                                                                     12,
+                                                                                                     12
+                                                                                                 ]
+                                                                            },
+                                                                 "addressPlan":  {
+                                                                                     "vectors":  13,
+                                                                                     "levels":  3
+                                                                                 },
+                                                                 "cabling":  {
+                                                                                 "vectors":  9
+                                                                             },
+                                                                 "wlan":  {
+                                                                              "vectors":  6,
+                                                                              "levels":  3
+                                                                          },
+                                                                 "maintenance":  {
+                                                                                     "incidents":  3,
+                                                                                     "verificationVectors":  12,
+                                                                                     "boards":  3
+                                                                                 },
+                                                                 "voip":  {
+                                                                              "callVectors":  10,
+                                                                              "bufferLevels":  3
+                                                                          }
+                                                             }
+                                              }
+                                   },
+                        "themeToggled":  true,
+                        "errors":  [
+
+                                   ]
+                    },
+                    {
+                        "id":  "perencanaan-pengalamatan-lanjut",
+                        "stageCount":  12,
+                        "stages":  [
+                                       "Orientasi, Tujuan, dan Asesmen Awal",
+                                       "Menurunkan Kebutuhan Alamat dari Desain",
+                                       "CIDR, Batas Network, dan Kapasitas Subnet",
+                                       "Menyusun VLSM dari Blok Besar ke Kecil",
+                                       "Validasi Overlap, Gateway, dan Kebijakan Alamat",
+                                       "Rencana IPv6 dan Dual Stack per Segmen",
+                                       "Agregasi, Dokumentasi, dan Rencana Perubahan",
+                                       "Studi Kasus dan Proyek Terapan",
+                                       "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+                                       "Game Subnet Block Builder",
+                                       "Refleksi, Umpan Balik, dan Transfer",
+                                       "Rangkuman dan Evaluasi Akhir"
+                                   ],
+                        "studio":  {
+                                       "core":  {
+                                                    "representationVectors":  5,
+                                                    "invalidVectors":  7,
+                                                    "scopeVectors":  3,
+                                                    "otherModels":  4
+                                                },
+                                       "ui":  {
+                                                  "globalStudioRemoved":  true,
+                                                  "contextualActivities":  true,
+                                                  "models":  {
+                                                                 "vectors":  10,
+                                                                 "requirements":  {
+                                                                                      "vectors":  8,
+                                                                                      "contracts":  3
+                                                                                  },
+                                                                 "layout":  {
+                                                                                "vectors":  5,
+                                                                                "levelLengths":  [
+                                                                                                     12,
+                                                                                                     12,
+                                                                                                     12
+                                                                                                 ]
+                                                                            },
+                                                                 "addressPlan":  {
+                                                                                     "vectors":  13,
+                                                                                     "levels":  3
+                                                                                 },
+                                                                 "cabling":  {
+                                                                                 "vectors":  9
+                                                                             },
+                                                                 "wlan":  {
+                                                                              "vectors":  6,
+                                                                              "levels":  3
+                                                                          },
+                                                                 "maintenance":  {
+                                                                                     "incidents":  3,
+                                                                                     "verificationVectors":  12,
+                                                                                     "boards":  3
+                                                                                 },
+                                                                 "voip":  {
+                                                                              "callVectors":  10,
+                                                                              "bufferLevels":  3
+                                                                          }
+                                                             }
+                                              }
+                                   },
+                        "themeToggled":  true,
+                        "errors":  [
+
+                                   ]
+                    },
+                    {
+                        "id":  "instalasi-kabel",
+                        "stageCount":  12,
+                        "stages":  [
+                                       "Orientasi, Tujuan, dan Asesmen Awal",
+                                       "Persiapan, Izin, dan Rencana Kerja Instalasi",
+                                       "Struktur Permanent Link, Channel, dan Komponen",
+                                       "Terminasi T568A/B dan Integritas Pasangan",
+                                       "Penataan Jalur, Proses Terminasi, dan Pelabelan",
+                                       "Wiremap, Gangguan, dan Batas Kemampuan Tester",
+                                       "Perbaikan, Pengujian Ulang, dan Dokumentasi Penerimaan",
+                                       "Studi Kasus dan Proyek Terapan",
+                                       "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+                                       "Game Patch Cord Assembly",
+                                       "Refleksi, Umpan Balik, dan Transfer",
+                                       "Rangkuman dan Evaluasi Akhir"
+                                   ],
+                        "studio":  {
+                                       "core":  {
+                                                    "representationVectors":  5,
+                                                    "invalidVectors":  7,
+                                                    "scopeVectors":  3,
+                                                    "otherModels":  4
+                                                },
+                                       "ui":  {
+                                                  "globalStudioRemoved":  true,
+                                                  "contextualActivities":  true,
+                                                  "models":  {
+                                                                 "vectors":  10,
+                                                                 "requirements":  {
+                                                                                      "vectors":  8,
+                                                                                      "contracts":  3
+                                                                                  },
+                                                                 "layout":  {
+                                                                                "vectors":  5,
+                                                                                "levelLengths":  [
+                                                                                                     12,
+                                                                                                     12,
+                                                                                                     12
+                                                                                                 ]
+                                                                            },
+                                                                 "addressPlan":  {
+                                                                                     "vectors":  13,
+                                                                                     "levels":  3
+                                                                                 },
+                                                                 "cabling":  {
+                                                                                 "vectors":  9
+                                                                             },
+                                                                 "wlan":  {
+                                                                              "vectors":  6,
+                                                                              "levels":  3
+                                                                          },
+                                                                 "maintenance":  {
+                                                                                     "incidents":  3,
+                                                                                     "verificationVectors":  12,
+                                                                                     "boards":  3
+                                                                                 },
+                                                                 "voip":  {
+                                                                              "callVectors":  10,
+                                                                              "bufferLevels":  3
+                                                                          }
+                                                             }
+                                              }
+                                   },
+                        "themeToggled":  true,
+                        "errors":  [
+
+                                   ]
+                    },
+                    {
+                        "id":  "wireless-lan",
+                        "stageCount":  12,
+                        "stages":  [
+                                       "Orientasi, Tujuan, dan Asesmen Awal",
+                                       "Arsitektur WLAN dan Rantai Layanan",
+                                       "Survei, RSSI, SNR, dan Kebutuhan Kapasitas",
+                                       "Pita, Kanal, Lebar Kanal, dan Airtime",
+                                       "Penempatan, Daya, dan Konfigurasi AP",
+                                       "Keamanan, Segmentasi, dan Mobilitas",
+                                       "Pengujian, Diagnosis, dan Dokumentasi WLAN",
+                                       "Studi Kasus dan Proyek Terapan",
+                                       "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+                                       "Game Channel Planner",
+                                       "Refleksi, Umpan Balik, dan Transfer",
+                                       "Rangkuman dan Evaluasi Akhir"
+                                   ],
+                        "studio":  {
+                                       "core":  {
+                                                    "representationVectors":  5,
+                                                    "invalidVectors":  7,
+                                                    "scopeVectors":  3,
+                                                    "otherModels":  4
+                                                },
+                                       "ui":  {
+                                                  "globalStudioRemoved":  true,
+                                                  "contextualActivities":  true,
+                                                  "models":  {
+                                                                 "vectors":  10,
+                                                                 "requirements":  {
+                                                                                      "vectors":  8,
+                                                                                      "contracts":  3
+                                                                                  },
+                                                                 "layout":  {
+                                                                                "vectors":  5,
+                                                                                "levelLengths":  [
+                                                                                                     12,
+                                                                                                     12,
+                                                                                                     12
+                                                                                                 ]
+                                                                            },
+                                                                 "addressPlan":  {
+                                                                                     "vectors":  13,
+                                                                                     "levels":  3
+                                                                                 },
+                                                                 "cabling":  {
+                                                                                 "vectors":  9
+                                                                             },
+                                                                 "wlan":  {
+                                                                              "vectors":  6,
+                                                                              "levels":  3
+                                                                          },
+                                                                 "maintenance":  {
+                                                                                     "incidents":  3,
+                                                                                     "verificationVectors":  12,
+                                                                                     "boards":  3
+                                                                                 },
+                                                                 "voip":  {
+                                                                              "callVectors":  10,
+                                                                              "bufferLevels":  3
+                                                                          }
+                                                             }
+                                              }
+                                   },
+                        "themeToggled":  true,
+                        "errors":  [
+
+                                   ]
+                    },
+                    {
+                        "id":  "pemeliharaan-kabel-nirkabel",
+                        "stageCount":  12,
+                        "stages":  [
+                                       "Orientasi, Tujuan, dan Asesmen Awal",
+                                       "Baseline dan Pemeliharaan Preventif",
+                                       "Triage, Ruang Lingkup, dan Hipotesis",
+                                       "Isolasi Gangguan Jaringan Kabel",
+                                       "Isolasi Gangguan WLAN dan Layanan IP",
+                                       "Perubahan Terkontrol dan Rollback",
+                                       "Verifikasi, Penutupan Tiket, dan Pencegahan",
+                                       "Studi Kasus dan Proyek Terapan",
+                                       "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+                                       "Game Bengkel Jalur Data",
+                                       "Refleksi, Umpan Balik, dan Transfer",
+                                       "Rangkuman dan Evaluasi Akhir"
+                                   ],
+                        "studio":  {
+                                       "core":  {
+                                                    "representationVectors":  5,
+                                                    "invalidVectors":  7,
+                                                    "scopeVectors":  3,
+                                                    "otherModels":  4
+                                                },
+                                       "ui":  {
+                                                  "globalStudioRemoved":  true,
+                                                  "contextualActivities":  true,
+                                                  "models":  {
+                                                                 "vectors":  10,
+                                                                 "requirements":  {
+                                                                                      "vectors":  8,
+                                                                                      "contracts":  3
+                                                                                  },
+                                                                 "layout":  {
+                                                                                "vectors":  5,
+                                                                                "levelLengths":  [
+                                                                                                     12,
+                                                                                                     12,
+                                                                                                     12
+                                                                                                 ]
+                                                                            },
+                                                                 "addressPlan":  {
+                                                                                     "vectors":  13,
+                                                                                     "levels":  3
+                                                                                 },
+                                                                 "cabling":  {
+                                                                                 "vectors":  9
+                                                                             },
+                                                                 "wlan":  {
+                                                                              "vectors":  6,
+                                                                              "levels":  3
+                                                                          },
+                                                                 "maintenance":  {
+                                                                                     "incidents":  3,
+                                                                                     "verificationVectors":  12,
+                                                                                     "boards":  3
+                                                                                 },
+                                                                 "voip":  {
+                                                                              "callVectors":  10,
+                                                                              "bufferLevels":  3
+                                                                          }
+                                                             }
+                                              }
+                                   },
+                        "themeToggled":  true,
+                        "errors":  [
+
+                                   ]
+                    },
+                    {
+                        "id":  "voip",
+                        "stageCount":  12,
+                        "stages":  [
+                                       "Orientasi, Tujuan, dan Asesmen Awal",
+                                       "Arsitektur Telepon IP dan Rencana Ekstensi",
+                                       "Registrasi dan Pembentukan Sesi SIP",
+                                       "SDP, Codec, dan Jalur Media RTP",
+                                       "Packetization dan Perencanaan Bandwidth",
+                                       "Kualitas Suara dan Jitter Buffer",
+                                       "Konfigurasi Aman, Pengujian, dan Diagnosis",
+                                       "Studi Kasus dan Proyek Terapan",
+                                       "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+                                       "Game Jitter Buffer Rescue",
+                                       "Refleksi, Umpan Balik, dan Transfer",
+                                       "Rangkuman dan Evaluasi Akhir"
+                                   ],
+                        "studio":  {
+                                       "core":  {
+                                                    "representationVectors":  5,
+                                                    "invalidVectors":  7,
+                                                    "scopeVectors":  3,
+                                                    "otherModels":  4
+                                                },
+                                       "ui":  {
+                                                  "globalStudioRemoved":  true,
+                                                  "contextualActivities":  true,
+                                                  "models":  {
+                                                                 "vectors":  10,
+                                                                 "requirements":  {
+                                                                                      "vectors":  8,
+                                                                                      "contracts":  3
+                                                                                  },
+                                                                 "layout":  {
+                                                                                "vectors":  5,
+                                                                                "levelLengths":  [
+                                                                                                     12,
+                                                                                                     12,
+                                                                                                     12
+                                                                                                 ]
+                                                                            },
+                                                                 "addressPlan":  {
+                                                                                     "vectors":  13,
+                                                                                     "levels":  3
+                                                                                 },
+                                                                 "cabling":  {
+                                                                                 "vectors":  9
+                                                                             },
+                                                                 "wlan":  {
+                                                                              "vectors":  6,
+                                                                              "levels":  3
+                                                                          },
+                                                                 "maintenance":  {
+                                                                                     "incidents":  3,
+                                                                                     "verificationVectors":  12,
+                                                                                     "boards":  3
+                                                                                 },
+                                                                 "voip":  {
+                                                                              "callVectors":  10,
+                                                                              "bufferLevels":  3
+                                                                          }
                                                              }
                                               }
                                    },
@@ -590,7 +1585,39 @@
                                                   "globalStudioRemoved":  true,
                                                   "contextualActivities":  true,
                                                   "models":  {
-                                                                 "vectors":  10
+                                                                 "vectors":  10,
+                                                                 "requirements":  {
+                                                                                      "vectors":  8,
+                                                                                      "contracts":  3
+                                                                                  },
+                                                                 "layout":  {
+                                                                                "vectors":  5,
+                                                                                "levelLengths":  [
+                                                                                                     12,
+                                                                                                     12,
+                                                                                                     12
+                                                                                                 ]
+                                                                            },
+                                                                 "addressPlan":  {
+                                                                                     "vectors":  13,
+                                                                                     "levels":  3
+                                                                                 },
+                                                                 "cabling":  {
+                                                                                 "vectors":  9
+                                                                             },
+                                                                 "wlan":  {
+                                                                              "vectors":  6,
+                                                                              "levels":  3
+                                                                          },
+                                                                 "maintenance":  {
+                                                                                     "incidents":  3,
+                                                                                     "verificationVectors":  12,
+                                                                                     "boards":  3
+                                                                                 },
+                                                                 "voip":  {
+                                                                              "callVectors":  10,
+                                                                              "bufferLevels":  3
+                                                                          }
                                                              }
                                               }
                                    },
@@ -600,7 +1627,7 @@
                                    ]
                     }
                 ],
-    "checkedAt":  "2026-10-21T08:47:41.9094938Z",
+    "checkedAt":  "2026-10-22T06:45:44.5491776Z",
     "styleParity":  true,
     "viewports":  [
                       "1280x900",

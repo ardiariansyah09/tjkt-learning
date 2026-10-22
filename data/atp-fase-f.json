@@ -1,0 +1,19 @@
+{
+  "school": "SMK Wikrama Bogor",
+  "schoolYear": "2026-2027",
+  "sources": [
+    { "classLevel": "XI", "file": "ATP Fase F XI KK TKJ 2026-2027.docx" },
+    { "classLevel": "XII", "file": "ATP Fase F XII KK TKJ 2026-2027.docx" }
+  ],
+  "classes": [
+    { "classLevel": "XI", "totalJP": 576, "summary": "Perencanaan dan pengalamatan, jaringan kabel/nirkabel, konfigurasi perangkat, serta administrasi sistem jaringan." },
+    { "classLevel": "XII", "totalJP": 180, "summary": "Keamanan jaringan: ancaman, sistem keamanan, host hardening, DMZ, dan pengujian keamanan." }
+  ],
+  "elements": [
+    { "id": "perencanaan", "classLevel": "XI", "category": "Perencanaan dan Pengalamatan Jaringan", "jp": 48 },
+    { "id": "media", "classLevel": "XI", "category": "Teknologi Jaringan Kabel dan Nirkabel", "jp": 216 },
+    { "id": "konfigurasi", "classLevel": "XI", "category": "Konfigurasi Perangkat Jaringan", "jp": 168 },
+    { "id": "administrasi", "classLevel": "XI", "category": "Administrasi Sistem Jaringan", "jp": 144 },
+    { "id": "keamanan", "classLevel": "XII", "category": "Keamanan Jaringan", "jp": 180 }
+  ]
+}

@@ -1,7 +1,16 @@
+import { checkInstallationGame } from './installation-checks.js';
+import { checkFiberGame } from './fiber-checks.js';
+import { checkVoIPGame } from './voip-checks.js';
+import { checkMaintenanceGame } from './maintenance-checks.js';
 // Browser-only regression checks; runs in an isolated QA profile.
 import { studioPacks } from '../assets/js/studio-data.js';
 import { parseIPv6, subnetIPv4, capacity, reachable } from '../assets/js/studio-core.js';
 import { solveActionGame,checkActionCore } from './action-game-checks.js';
+import { checkRequirementsGame } from './requirements-checks.js';
+import { checkLayoutGame } from './layout-checks.js';
+import { checkAddressGame } from './address-plan-checks.js';
+import { checkCablingGame } from './cabling-checks.js';
+import { checkWLANGame } from './wlan-checks.js';
 import { checkTopicModels,checkTopicStage } from './topic-checks.js';
 export { checkTopicStage };
 
@@ -38,6 +47,15 @@ export async function checkGameStage(){
   const legacy=['pengenalan-jaringan','topologi-jaringan','perangkat-jaringan','ipv4-subnetting'].includes(id);
   const expected=(legacy&&index===7)||Boolean(content.querySelector('.chapter-unit[data-chapter="game"]:not([hidden])'));
   if(!expected)return null;
+  if(id==='kebutuhan-teknis-jaringan')return checkRequirementsGame(content.querySelector('.requirements-game'));
+  if(id==='desain-topologi-arsitektur')return checkLayoutGame(content.querySelector('.layout-game'));
+  if(id==='perencanaan-pengalamatan-lanjut')return checkAddressGame(content.querySelector('.address-game'));
+  if(id==='instalasi-kabel')return checkCablingGame(content.querySelector('.cabling-game'));
+  if(id==='pemeliharaan-kabel-nirkabel')return checkMaintenanceGame(content.querySelector('.maintenance-game'));
+  if(id==='pemasangan-perangkat-jaringan')return checkInstallationGame(content.querySelector('.installation-game'));
+  if(id==='fiber-optik')return checkFiberGame(content.querySelector('.fiber-game'));
+  if(id==='voip')return checkVoIPGame(content.querySelector('.voip-game'));
+  if(id==='wireless-lan')return checkWLANGame(content.querySelector('.wlan-game'));
   const game=[...content.querySelectorAll('.action-game')].find(node=>node.getClientRects().length);
   assert(game,`Actual action game missing in ${id}`);
   assert(![...content.querySelectorAll('input[type=radio],.chapter-check')].some(node=>node.getClientRects().length),'Quiz visible inside game stage');

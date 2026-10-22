@@ -1,89 +1,19 @@
 ﻿{
     "modules":  [
                     {
-                        "id":  "media-transmisi",
-                        "stageCount":  8,
-                        "stages":  [
-                                       "Mengenal Media Transmisi",
-                                       "Kabel Tembaga",
-                                       "Fiber Optik",
-                                       "Media Nirkabel",
-                                       "Memilih dan Menguji Media",
-                                       "Simulator Jalur Transmisi",
-                                       "Virtual Cable Tester",
-                                       "Posttest Media Transmisi"
-                                   ],
-                        "studio":  {
-                                       "core":  {
-                                                    "representationVectors":  5,
-                                                    "invalidVectors":  7,
-                                                    "scopeVectors":  3,
-                                                    "otherModels":  4
-                                                },
-                                       "ui":  {
-                                                  "globalStudioRemoved":  true,
-                                                  "contextualActivities":  true,
-                                                  "models":  {
-                                                                 "vectors":  10
-                                                             }
-                                              }
-                                   },
-                        "themeToggled":  true,
-                        "errors":  [
-
-                                   ]
-                    },
-                    {
-                        "id":  "ipv6-dasar",
+                        "id":  "fiber-optik",
                         "stageCount":  12,
                         "stages":  [
                                        "Orientasi, Tujuan, dan Asesmen Awal",
-                                       "Struktur 128 Bit dan Penulisan Kanonis",
-                                       "Jenis, Lingkup, dan Alamat Khusus",
-                                       "Prefix, Subnet, dan Rencana Alamat",
-                                       "Neighbor Discovery dan Router Advertisement",
-                                       "SLAAC, DHCPv6, DAD, dan Masa Berlaku",
-                                       "Routing, DNS, Dual Stack, dan Keamanan",
-                                       "Studi Kasus: Jaringan Sekolah Dual Stack",
-                                       "Bengkel Alamat dan Prefix IPv6",
-                                       "Misi Pengiriman — Game Petualangan",
-                                       "Refleksi, Bukti, dan Perbaikan Strategi",
-                                       "Evaluasi Akhir dan Transfer Kasus"
-                                   ],
-                        "studio":  {
-                                       "core":  {
-                                                    "representationVectors":  5,
-                                                    "invalidVectors":  7,
-                                                    "scopeVectors":  3,
-                                                    "otherModels":  4
-                                                },
-                                       "ui":  {
-                                                  "globalStudioRemoved":  true,
-                                                  "contextualActivities":  true,
-                                                  "models":  {
-                                                                 "vectors":  10
-                                                             }
-                                              }
-                                   },
-                        "themeToggled":  true,
-                        "errors":  [
-
-                                   ]
-                    },
-                    {
-                        "id":  "alat-ukur-tjkt",
-                        "stageCount":  12,
-                        "stages":  [
-                                       "Orientasi, Tujuan, dan Asesmen Awal",
-                                       "Tujuan Ukur, Besaran, dan Pemilihan Alat",
-                                       "Keselamatan dan Pemeriksaan Sebelum Ukur",
-                                       "Rentang, Resolusi, Akurasi, dan Ketidakpastian",
-                                       "Pengujian Kabel Tembaga dan Dokumentasi Link",
-                                       "Daya Optik, Rugi Sisip, dan Margin",
-                                       "Kalibrasi, Perawatan, dan Laporan Ukur",
+                                       "Komponen Fiber dan Kompatibilitas Link",
+                                       "SOP K3, Survei, dan Instalasi",
+                                       "Konektor, Inspeksi, dan Penyambungan",
+                                       "Anggaran Rugi, Daya Terima, dan Cadangan",
+                                       "Pengujian OPM/OLS dan Pembacaan OTDR",
+                                       "Perawatan, Perbaikan, dan Penyerahan Fiber/FTTH",
                                        "Studi Kasus dan Proyek Terapan",
                                        "Laboratorium: Prediksi, Eksperimen, dan Bukti",
-                                       "Game Misi Terapan",
+                                       "Game Splice Tray Puzzle",
                                        "Refleksi, Umpan Balik, dan Transfer",
                                        "Rangkuman dan Evaluasi Akhir"
                                    ],
@@ -98,7 +28,124 @@
                                                   "globalStudioRemoved":  true,
                                                   "contextualActivities":  true,
                                                   "models":  {
-                                                                 "vectors":  10
+                                                                 "vectors":  10,
+                                                                 "requirements":  {
+                                                                                      "vectors":  8,
+                                                                                      "contracts":  3
+                                                                                  },
+                                                                 "layout":  {
+                                                                                "vectors":  5,
+                                                                                "levelLengths":  [
+                                                                                                     12,
+                                                                                                     12,
+                                                                                                     12
+                                                                                                 ]
+                                                                            },
+                                                                 "addressPlan":  {
+                                                                                     "vectors":  13,
+                                                                                     "levels":  3
+                                                                                 },
+                                                                 "cabling":  {
+                                                                                 "vectors":  9
+                                                                             },
+                                                                 "wlan":  {
+                                                                              "vectors":  6,
+                                                                              "levels":  3
+                                                                          },
+                                                                 "maintenance":  {
+                                                                                     "incidents":  3,
+                                                                                     "verificationVectors":  12,
+                                                                                     "boards":  3
+                                                                                 },
+                                                                 "voip":  {
+                                                                              "callVectors":  10,
+                                                                              "bufferLevels":  3
+                                                                          },
+                                                                 "fiber":  {
+                                                                               "opticalVectors":  8,
+                                                                               "trays":  3
+                                                                           },
+                                                                 "installation":  {
+                                                                                      "integrationVectors":  8,
+                                                                                      "chassis":  3
+                                                                                  }
+                                                             }
+                                              }
+                                   },
+                        "themeToggled":  true,
+                        "errors":  [
+
+                                   ]
+                    },
+                    {
+                        "id":  "pemasangan-perangkat-jaringan",
+                        "stageCount":  12,
+                        "stages":  [
+                                       "Orientasi, Tujuan, dan Asesmen Awal",
+                                       "Kebutuhan Integrasi dan Kesiapan Pemasangan",
+                                       "Pemasangan Fisik dan Pemetaan Port",
+                                       "Konfigurasi Awal dan Akses Pengelolaan",
+                                       "Integrasi Access, Trunk, dan Uplink",
+                                       "Penerapan, Penyimpanan, dan Restart",
+                                       "Uji Penerimaan dan Serah Terima",
+                                       "Studi Kasus dan Proyek Terapan",
+                                       "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+                                       "Game Port Commissioning Challenge",
+                                       "Refleksi, Umpan Balik, dan Transfer",
+                                       "Rangkuman dan Evaluasi Akhir"
+                                   ],
+                        "studio":  {
+                                       "core":  {
+                                                    "representationVectors":  5,
+                                                    "invalidVectors":  7,
+                                                    "scopeVectors":  3,
+                                                    "otherModels":  4
+                                                },
+                                       "ui":  {
+                                                  "globalStudioRemoved":  true,
+                                                  "contextualActivities":  true,
+                                                  "models":  {
+                                                                 "vectors":  10,
+                                                                 "requirements":  {
+                                                                                      "vectors":  8,
+                                                                                      "contracts":  3
+                                                                                  },
+                                                                 "layout":  {
+                                                                                "vectors":  5,
+                                                                                "levelLengths":  [
+                                                                                                     12,
+                                                                                                     12,
+                                                                                                     12
+                                                                                                 ]
+                                                                            },
+                                                                 "addressPlan":  {
+                                                                                     "vectors":  13,
+                                                                                     "levels":  3
+                                                                                 },
+                                                                 "cabling":  {
+                                                                                 "vectors":  9
+                                                                             },
+                                                                 "wlan":  {
+                                                                              "vectors":  6,
+                                                                              "levels":  3
+                                                                          },
+                                                                 "maintenance":  {
+                                                                                     "incidents":  3,
+                                                                                     "verificationVectors":  12,
+                                                                                     "boards":  3
+                                                                                 },
+                                                                 "voip":  {
+                                                                              "callVectors":  10,
+                                                                              "bufferLevels":  3
+                                                                          },
+                                                                 "fiber":  {
+                                                                               "opticalVectors":  8,
+                                                                               "trays":  3
+                                                                           },
+                                                                 "installation":  {
+                                                                                      "integrationVectors":  8,
+                                                                                      "chassis":  3
+                                                                                  }
                                                              }
                                               }
                                    },
@@ -108,7 +155,7 @@
                                    ]
                     }
                 ],
-    "checkedAt":  "2026-10-21T09:13:12.6232790Z",
+    "checkedAt":  "2026-10-22T08:52:17.2909719Z",
     "styleParity":  true,
     "viewports":  [
                       "1280x900",

@@ -1,0 +1,68 @@
+{
+    "moduleId":  "perencanaan-pengalamatan-lanjut",
+    "title":  "Perancangan Pengalamatan Jaringan: Subnetting, CIDR, dan VLSM",
+    "version":  2,
+    "contentSource":  "assets/js/course-address-plan.js",
+    "chapters":  [
+                     {
+                         "id":  "orientasi",
+                         "title":  "Orientasi, Tujuan, dan Asesmen Awal",
+                         "summary":  "Menentukan kebutuhan usable dan sumber alokasi."
+                     },
+                     {
+                         "id":  "konsep-1",
+                         "title":  "Menurunkan Kebutuhan Alamat dari Desain",
+                         "summary":  "Membedakan perangkat, interface, segmen, gateway, dan cadangan."
+                     },
+                     {
+                         "id":  "konsep-2",
+                         "title":  "CIDR, Batas Network, dan Kapasitas Subnet",
+                         "summary":  "Menghubungkan panjang prefix dengan ukuran serta alignment blok."
+                     },
+                     {
+                         "id":  "konsep-3",
+                         "title":  "Menyusun VLSM dari Blok Besar ke Kecil",
+                         "summary":  "Mengalokasikan prefix berbeda tanpa tumpang tindih dan menyatakan ruang tersisa."
+                     },
+                     {
+                         "id":  "konsep-4",
+                         "title":  "Validasi Overlap, Gateway, dan Kebijakan Alamat",
+                         "summary":  "Memeriksa beberapa jenis kesalahan yang tidak diselesaikan hanya dengan tabel yang rapi."
+                     },
+                     {
+                         "id":  "konsep-5",
+                         "title":  "Rencana IPv6 dan Dual Stack per Segmen",
+                         "summary":  "Menyusun prefix IPv6 dengan identitas segmen yang konsisten tanpa rumus konservasi host IPv4."
+                     },
+                     {
+                         "id":  "konsep-6",
+                         "title":  "Agregasi, Dokumentasi, dan Rencana Perubahan",
+                         "summary":  "Membedakan summary yang tepat dengan prefix penutup yang mengikutsertakan ruang lain."
+                     },
+                     {
+                         "id":  "kasus",
+                         "title":  "Studi Kasus dan Proyek Terapan",
+                         "summary":  "Studi Kasus dan Proyek Terapan"
+                     },
+                     {
+                         "id":  "laboratorium",
+                         "title":  "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+                         "summary":  "Laboratorium: Prediksi, Eksperimen, dan Bukti"
+                     },
+                     {
+                         "id":  "game",
+                         "title":  "Game Subnet Block Builder",
+                         "summary":  "Game Subnet Block Builder"
+                     },
+                     {
+                         "id":  "refleksi",
+                         "title":  "Refleksi, Umpan Balik, dan Transfer",
+                         "summary":  "Refleksi, Umpan Balik, dan Transfer"
+                     },
+                     {
+                         "id":  "evaluasi",
+                         "title":  "Rangkuman dan Evaluasi Akhir",
+                         "summary":  "Rangkuman dan Evaluasi Akhir"
+                     }
+                 ]
+}

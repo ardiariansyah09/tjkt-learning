@@ -1,0 +1,68 @@
+{
+    "moduleId":  "voip",
+    "title":  "Layanan Komunikasi VoIP",
+    "version":  2,
+    "contentSource":  "assets/js/course-voip.js",
+    "chapters":  [
+                     {
+                         "id":  "orientasi",
+                         "title":  "Orientasi, Tujuan, dan Asesmen Awal",
+                         "summary":  "Merancang dan membuktikan layanan telepon IP lokal."
+                     },
+                     {
+                         "id":  "konsep-1",
+                         "title":  "Arsitektur Telepon IP dan Rencana Ekstensi",
+                         "summary":  "Menghubungkan kebutuhan percakapan dengan komponen dan identitas layanan."
+                     },
+                     {
+                         "id":  "konsep-2",
+                         "title":  "Registrasi dan Pembentukan Sesi SIP",
+                         "summary":  "Menafsirkan urutan pesan tanpa menyamakan registrasi dengan percakapan."
+                     },
+                     {
+                         "id":  "konsep-3",
+                         "title":  "SDP, Codec, dan Jalur Media RTP",
+                         "summary":  "Memisahkan negosiasi parameter, pengiriman audio, serta laporan penerima."
+                     },
+                     {
+                         "id":  "konsep-4",
+                         "title":  "Packetization dan Perencanaan Bandwidth",
+                         "summary":  "Menghitung kebutuhan lapisan IP dengan asumsi overhead yang dinyatakan."
+                     },
+                     {
+                         "id":  "konsep-5",
+                         "title":  "Kualitas Suara dan Jitter Buffer",
+                         "summary":  "Membaca loss, keterlambatan, dan kompromi waktu putar tanpa skor kualitas palsu."
+                     },
+                     {
+                         "id":  "konsep-6",
+                         "title":  "Konfigurasi Aman, Pengujian, dan Diagnosis",
+                         "summary":  "Membuktikan layanan dengan urutan uji dan dokumentasi sebelum–sesudah."
+                     },
+                     {
+                         "id":  "kasus",
+                         "title":  "Studi Kasus dan Proyek Terapan",
+                         "summary":  "Studi Kasus dan Proyek Terapan"
+                     },
+                     {
+                         "id":  "laboratorium",
+                         "title":  "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+                         "summary":  "Laboratorium: Prediksi, Eksperimen, dan Bukti"
+                     },
+                     {
+                         "id":  "game",
+                         "title":  "Game Jitter Buffer Rescue",
+                         "summary":  "Mengelola paket tidak berurutan dalam buffer dua tempat."
+                     },
+                     {
+                         "id":  "refleksi",
+                         "title":  "Refleksi, Umpan Balik, dan Transfer",
+                         "summary":  "Refleksi, Umpan Balik, dan Transfer"
+                     },
+                     {
+                         "id":  "evaluasi",
+                         "title":  "Rangkuman dan Evaluasi Akhir",
+                         "summary":  "Rangkuman dan Evaluasi Akhir"
+                     }
+                 ]
+}

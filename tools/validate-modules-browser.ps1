@@ -1,4 +1,4 @@
-﻿param([int]$Port = 9337, [string[]]$OnlyModules = @())
+﻿param([int]$Port = 9337, [string[]]$OnlyModules = @(), [string]$SiteUrl = 'http://localhost/tjkt-learning/')
 $ErrorActionPreference='Stop'
 $root=Split-Path $PSScriptRoot -Parent
 $profile=Join-Path ([IO.Path]::GetTempPath()) ('tjkt-module-qa-'+[guid]::NewGuid().ToString('N'))
@@ -67,7 +67,7 @@ try {
  foreach($module in $modules | Where-Object { $_.status -eq 'published' -and (!$OnlyModules.Count -or $_.id -in $OnlyModules) }) {
   $script:errors.Clear()
   Call-CDP 'Emulation.setDeviceMetricsOverride' @{width=1280;height=900;deviceScaleFactor=1;mobile=$false} | Out-Null
-  Navigate ('http://localhost/tjkt-learning/'+$module.path)
+  Navigate (($SiteUrl+$module.path))
   $desktop=Evaluate $snapshot
   if($module.id -in @('k3-budaya-kerja','pengenalan-jaringan','osi-tcpip')){
    $capture=Call-CDP 'Page.captureScreenshot' @{format='png';captureBeyondViewport=$false}
@@ -92,7 +92,7 @@ try {
    $answer=if($module.id -eq 'ipv6-dasar'){2}else{0}
    $grading='(()=>{const f=document.querySelector(".chapter-check-form");[...f.querySelectorAll("input")].find(input=>input.value===String(ANSWER)).checked=true;f.requestSubmit();if(document.getElementById("nextChapter").disabled)throw Error("Correct answer did not unlock");document.getElementById("nextChapter").click();return true})()'
    Evaluate ($grading.Replace('ANSWER',[string]$answer)) | Out-Null
-   Navigate ('http://localhost/tjkt-learning/'+$module.path)
+   Navigate (($SiteUrl+$module.path))
    Evaluate '(()=>{const b=[...document.querySelectorAll(".lesson-nav button")];if(!b[1].classList.contains("active"))throw Error("Progress did not persist");window.confirm=()=>true;document.getElementById("resetProgress").click();if(!document.getElementById("nextChapter").disabled)throw Error("Reset did not lock next stage");if(document.querySelector(".chapter-check-form input").disabled)throw Error("Reset left questions disabled");return true})()' | Out-Null
   }
   # Unlock only this disposable browser profile to inspect every existing stage.
@@ -114,7 +114,7 @@ try {
   }
   $idsJson=ConvertTo-Json -InputObject $ids -Compress
   Evaluate "(()=>{const ids=$idsJson;const passed=Object.fromEntries(ids.map(id=>[id,100]));localStorage.setItem('$key',JSON.stringify({passed,scores:passed}));return true})()" | Out-Null
-  Navigate ('http://localhost/tjkt-learning/'+$module.path)
+  Navigate (($SiteUrl+$module.path))
   $stages=@()
   for($stage=0;$stage -lt $desktop.stageCount;$stage++){
    Evaluate "(()=>{const b=document.querySelectorAll('.lesson-nav > button')[$stage];if(b.disabled)throw Error('Stage still locked: $stage');b.click();return true})()" | Out-Null

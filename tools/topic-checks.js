@@ -1,5 +1,15 @@
+import { checkInstallationModels,checkInstallationLab } from './installation-checks.js';
+import { checkFiberModels,checkFiberLab } from './fiber-checks.js';
+import { checkActivityInstructions } from './instruction-checks.js';
+import { checkVoIPModels,checkVoIPLab } from './voip-checks.js';
+import { checkMaintenanceModels,checkMaintenanceLab } from './maintenance-checks.js';
 import { topicActivityTypes } from '../assets/js/topic-activities.js';
 import { ticketLoad,sensorData,venture,propagation,opticalPower } from '../assets/js/topic-models.js';
+import { checkRequirementsModels } from './requirements-checks.js';
+import { checkLayoutModels } from './layout-checks.js';
+import { checkAddressModels } from './address-plan-checks.js';
+import { checkCablingModels } from './cabling-checks.js';
+import { checkWLANModels } from './wlan-checks.js';
 const assert=(condition,message)=>{if(!condition)throw Error(message);};
 export function checkTopicModels(){
   assert(ticketLoad(16,45,2,300).remaining===-120,'Ticket overload');
@@ -12,13 +22,14 @@ export function checkTopicModels(){
   assert(opticalPower(-3,16,-18,-1).state==='low','Low optical power');
   assert(opticalPower(5,0,-18,-1).state==='overload','Optical overload');
   let rejected=false;try{opticalPower(-3,8,0,-1);}catch{rejected=true;}assert(rejected,'Invalid receiver limits');
-  return {vectors:10};
+  return {vectors:10,requirements:checkRequirementsModels(),layout:checkLayoutModels(),addressPlan:checkAddressModels(),cabling:checkCablingModels(),wlan:checkWLANModels(),maintenance:checkMaintenanceModels(),voip:checkVoIPModels(),fiber:checkFiberModels(),installation:checkInstallationModels()};
 }
 export async function checkTopicStage(){
+  checkActivityInstructions();
   const id=document.body.dataset.moduleId,type=topicActivityTypes[id];
   assert(!document.getElementById('learning-studio'),'Global studio should be removed');
   assert(!document.querySelector('[data-studio-panel]'),'Forced studio panels should be removed');
-  const visibleGames=[...document.querySelectorAll('.action-game')].filter(node=>node.getClientRects().length);
+  const visibleGames=[...document.querySelectorAll('.action-game,.requirements-game,.layout-game,.address-game,.cabling-game,.wlan-game,.maintenance-game,.voip-game,.fiber-game,.installation-game')].filter(node=>node.getClientRects().length);
   const active=document.querySelector('.chapter-unit:not([hidden])');
   if(active&&active.dataset.chapter!=='game')assert(!visibleGames.length,'Game visible outside its chapter');
   const visible=[...document.querySelectorAll('[data-topic-activity]')].filter(node=>node.getClientRects().length);
@@ -38,6 +49,59 @@ export async function checkTopicStage(){
   const state=()=>JSON.parse(root.dataset.result);
   function set(name,value){const input=form.elements[name];input.value=String(value);input.dispatchEvent(new Event('input',{bubbles:true}));}
   switch(type){
+    case 'installation': checkInstallationLab(root);break;
+    case 'fiber': checkFiberLab(root);break;
+    case 'voip': checkVoIPLab(root);break;
+    case 'maintenance': checkMaintenanceLab(root);break;
+    case 'wlan': {
+      assert(state().shared&&!state().loadFits&&state().criteriaMet,'Default WLAN dimensions');
+      set('channelB',6);assert(!state().shared&&state().loadFits,'Separate channels');
+      form.elements.walls.checked=true;form.elements.walls.dispatchEvent(new Event('change',{bubbles:true}));assert(state().zones[1].rssi===-72&&!state().criteriaMet,'Wall effect');
+      set('powerA',20);set('powerB',20);assert(state().zones[1].rssi===-66&&state().criteriaMet,'Downlink model');
+      set('noise',-80);assert(!state().criteriaMet,'Noise criterion');set('noise',-92);set('concurrent',100);assert(!state().loadFits,'Peak WLAN load');break;
+    }
+    case 'cabling': {
+      const stripe=getComputedStyle(root.querySelector('[data-conductor=wo]'));
+      assert(stripe.borderLeftWidth==='7px'&&stripe.borderLeftColor==='rgb(234, 88, 12)'&&stripe.borderLeftStyle==='dashed','Conductor colors and striped wire markers');
+      assert(state().straight&&state().lengths.channel===85,'Cabling baseline');
+      root.querySelector('[data-fill-end=A][data-fill-code=A]').click();assert(state()===null,'Wiring change invalidates result');root.querySelector('[data-cable-lab=test]').click();assert(!state().straight&&!state().splitPair,'Crossed code');
+      root.querySelector('[data-cable-example=split]').click();root.querySelector('[data-cable-lab=test]').click();assert(state().identity&&state().splitPair&&!state().straight,'Split pair versus continuity');
+      root.querySelector('[data-fill-end=A][data-fill-code=B]').click();root.querySelector('[data-fill-end=B][data-fill-code=B]').click();
+      form.elements.fault.value='open';form.elements.fault.dispatchEvent(new Event('change',{bubbles:true}));root.querySelector('[data-cable-lab=test]').click();assert(state().open&&state().map[2]===null,'Open cable');
+      form.elements.fault.value='short';root.querySelector('[data-cable-lab=test]').click();assert(state().short&&!state().straight,'Short cable');
+      form.elements.fault.value='none';set('permanent',95);root.querySelector('[data-cable-lab=test]').click();assert(!state().lengths.permanentWithin&&!state().lengths.channelWithin,'Length review');
+      set('permanent',78);root.querySelector('[data-cable-lab=test]').click();assert(state().straight,'Restored good model');break;
+    }
+    case 'address-plan': {
+      assert(state().allocation.rows[0].cidr==='10.10.0.0/26'&&state().allocation.unallocated===128,'Default VLSM');
+      const subnet=root.querySelector('[data-subnet-row="1"]'),gateway=root.querySelector('[data-gateway-row="1"]');
+      subnet.value='10.10.0.0/27';subnet.dispatchEvent(new Event('input',{bubbles:true}));assert(state().validation.issues.some(t=>t.includes('tumpang tindih')),'Manual overlap');
+      subnet.value='10.10.0.64/27';subnet.dispatchEvent(new Event('input',{bubbles:true}));gateway.value='10.10.0.95';gateway.dispatchEvent(new Event('input',{bubbles:true}));assert(!state().validation.valid,'Broadcast gateway');
+      gateway.value='';gateway.dispatchEvent(new Event('input',{bubbles:true}));assert(!state().validation.valid,'Blank gateway rejected');
+      set('devices0',60);assert(state()===null,'Stale allocation invalidated');
+      [...root.querySelectorAll('button')].find(b=>b.textContent==='Periksa tabel manual').click();assert(state()===null,'Manual check must not bypass stale inputs');form.requestSubmit();assert(state().validation.valid,'Reallocation');
+      set('parent','10.10.0.0/26');form.requestSubmit();assert(state()===null,'Small IPv4 parent');
+      set('parent','10.10.0.0/24');set('ipv6','2001:db8:1200::/64');form.requestSubmit();assert(state()===null,'Small IPv6 parent');
+      set('ipv6','2001:db8:1200::/48');form.requestSubmit();assert(state().validation.valid&&state().ipv6.subnets.length===4,'Valid dual-stack plan');
+      {const create=URL.createObjectURL,click=HTMLAnchorElement.prototype.click;let exported;
+        try{URL.createObjectURL=blob=>{exported=blob;return create.call(URL,blob);};HTMLAnchorElement.prototype.click=function(){};[...root.querySelectorAll('button')].find(b=>b.textContent==='Ekspor rencana JSON').click();assert(exported,'No plan exported');const file=JSON.parse(await exported.text());assert(file.ipv4.length===4&&file.ipv6.subnets.length===4&&file.validation.valid,'Export content');}
+        finally{URL.createObjectURL=create;HTMLAnchorElement.prototype.click=click;}}
+      break;
+    }
+    case 'layout': {
+      assert(state().length===32&&Math.abs(state().cable-37.2)<1e-8&&state().complete,'Layout defaults');
+      set('scale',200);assert(state().paperCm===16&&Math.abs(state().cable-37.2)<1e-8,'Scale invariance');
+      [...root.querySelectorAll('button')].find(b=>b.textContent==='Mulai jalur dari rack').click();assert(!state().complete,'New path should be incomplete');
+      set('x',2);set('y',7);form.requestSubmit();set('x',20);form.requestSubmit();assert(state().length===5&&!state().complete,'Forbidden segment rejected atomically');
+      [...root.querySelectorAll('button')].find(b=>b.textContent==='Mulai jalur dari rack').click();set('x',22);set('y',2);form.requestSubmit();set('y',12);form.requestSubmit();assert(state().length===30&&state().complete&&state().cable===35,'Alternative route');
+      break;
+    }
+    case 'requirements':
+      assert(state().ports===39&&state().passing.join()==='C'&&!state().verified,'Default equipment analysis');
+      set('cameras',8);assert(state().ports===44&&Math.abs(state().poe-112.8)<1e-9,'Camera increase');
+      set('concurrent',100);assert(state().wan===195,'Peak traffic');
+      set('budget',2000000);assert(!state().passing.length,'Unaffordable candidates');
+      set('budget',4000000);form.elements.verified.checked=true;form.elements.verified.dispatchEvent(new Event('change',{bubbles:true}));assert(state().verified,'Evidence status');break;
     case 'safety':
       root.querySelector('[data-hazard="0"]').click();root.querySelector('[data-safety-action="0"]').click();root.querySelector('[data-safety-action="1"]').click();
       assert(state().completed[0]===2&&state().stop.includes('Kabel daya rusak'),'Safety escalation');break;

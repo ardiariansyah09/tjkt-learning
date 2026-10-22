@@ -1,0 +1,68 @@
+{
+    "moduleId":  "fiber-optik",
+    "title":  "Instalasi, Pengujian, dan Perbaikan Fiber Optik",
+    "version":  2,
+    "contentSource":  "assets/js/course-fiber.js",
+    "chapters":  [
+                     {
+                         "id":  "orientasi",
+                         "title":  "Orientasi, Tujuan, dan Asesmen Awal",
+                         "summary":  "Merancang dan membuktikan instalasi fiber dengan SOP serta acuan ukur."
+                     },
+                     {
+                         "id":  "konsep-1",
+                         "title":  "Komponen Fiber dan Kompatibilitas Link",
+                         "summary":  "Menghubungkan kebutuhan layanan dengan jenis serat dan antarmuka optik."
+                     },
+                     {
+                         "id":  "konsep-2",
+                         "title":  "SOP K3, Survei, dan Instalasi",
+                         "summary":  "Merencanakan pekerjaan tanpa merusak serat atau mengekspos bahaya optik."
+                     },
+                     {
+                         "id":  "konsep-3",
+                         "title":  "Konektor, Inspeksi, dan Penyambungan",
+                         "summary":  "Mengendalikan kontaminasi, pemetaan serat, serta mutu sambungan."
+                     },
+                     {
+                         "id":  "konsep-4",
+                         "title":  "Anggaran Rugi, Daya Terima, dan Cadangan",
+                         "summary":  "Menghitung link dengan satuan, batas penerima, dan asumsi yang jelas."
+                     },
+                     {
+                         "id":  "konsep-5",
+                         "title":  "Pengujian OPM/OLS dan Pembacaan OTDR",
+                         "summary":  "Memilih alat serta acuan yang menjawab pertanyaan pengujian."
+                     },
+                     {
+                         "id":  "konsep-6",
+                         "title":  "Perawatan, Perbaikan, dan Penyerahan Fiber/FTTH",
+                         "summary":  "Membuktikan pemulihan dengan kronologi serta pengujian yang sesuai."
+                     },
+                     {
+                         "id":  "kasus",
+                         "title":  "Studi Kasus dan Proyek Terapan",
+                         "summary":  "Studi Kasus dan Proyek Terapan"
+                     },
+                     {
+                         "id":  "laboratorium",
+                         "title":  "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+                         "summary":  "Laboratorium: Prediksi, Eksperimen, dan Bukti"
+                     },
+                     {
+                         "id":  "game",
+                         "title":  "Game Splice Tray Puzzle",
+                         "summary":  "Menyusun pasangan core sesuai splice plan dalam anggaran kerja."
+                     },
+                     {
+                         "id":  "refleksi",
+                         "title":  "Refleksi, Umpan Balik, dan Transfer",
+                         "summary":  "Refleksi, Umpan Balik, dan Transfer"
+                     },
+                     {
+                         "id":  "evaluasi",
+                         "title":  "Rangkuman dan Evaluasi Akhir",
+                         "summary":  "Rangkuman dan Evaluasi Akhir"
+                     }
+                 ]
+}

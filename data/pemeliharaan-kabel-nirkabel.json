@@ -1,0 +1,68 @@
+{
+    "moduleId":  "pemeliharaan-kabel-nirkabel",
+    "title":  "Perawatan dan Perbaikan Jaringan Kabel dan Nirkabel",
+    "version":  2,
+    "contentSource":  "assets/js/course-maintenance.js",
+    "chapters":  [
+                     {
+                         "id":  "orientasi",
+                         "title":  "Orientasi, Tujuan, dan Asesmen Awal",
+                         "summary":  "Mengidentifikasi dampak layanan dan bukti diagnosis."
+                     },
+                     {
+                         "id":  "konsep-1",
+                         "title":  "Baseline dan Pemeliharaan Preventif",
+                         "summary":  "Menentukan kondisi rujukan dan pekerjaan berkala berdasarkan risiko layanan."
+                     },
+                     {
+                         "id":  "konsep-2",
+                         "title":  "Triage, Ruang Lingkup, dan Hipotesis",
+                         "summary":  "Memisahkan gejala pengguna, fakta pengamatan, serta dugaan penyebab."
+                     },
+                     {
+                         "id":  "konsep-3",
+                         "title":  "Isolasi Gangguan Jaringan Kabel",
+                         "summary":  "Menghubungkan indikasi fisik, wiremap, port, dan kualitas link."
+                     },
+                     {
+                         "id":  "konsep-4",
+                         "title":  "Isolasi Gangguan WLAN dan Layanan IP",
+                         "summary":  "Membedakan masalah radio dari autentikasi, segmen, dan layanan hulu."
+                     },
+                     {
+                         "id":  "konsep-5",
+                         "title":  "Perubahan Terkontrol dan Rollback",
+                         "summary":  "Memperbaiki dengan batas dampak, persetujuan, dan jalur kembali."
+                     },
+                     {
+                         "id":  "konsep-6",
+                         "title":  "Verifikasi, Penutupan Tiket, dan Pencegahan",
+                         "summary":  "Membuktikan pemulihan serta mengurangi peluang kejadian berulang."
+                     },
+                     {
+                         "id":  "kasus",
+                         "title":  "Studi Kasus dan Proyek Terapan",
+                         "summary":  "Studi Kasus dan Proyek Terapan"
+                     },
+                     {
+                         "id":  "laboratorium",
+                         "title":  "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+                         "summary":  "Laboratorium: Prediksi, Eksperimen, dan Bukti"
+                     },
+                     {
+                         "id":  "game",
+                         "title":  "Game Bengkel Jalur Data",
+                         "summary":  "Memulihkan lintasan paket dengan anggaran putaran."
+                     },
+                     {
+                         "id":  "refleksi",
+                         "title":  "Refleksi, Umpan Balik, dan Transfer",
+                         "summary":  "Refleksi, Umpan Balik, dan Transfer"
+                     },
+                     {
+                         "id":  "evaluasi",
+                         "title":  "Rangkuman dan Evaluasi Akhir",
+                         "summary":  "Rangkuman dan Evaluasi Akhir"
+                     }
+                 ]
+}
