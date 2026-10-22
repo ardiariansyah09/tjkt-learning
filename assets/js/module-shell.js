@@ -1,4 +1,5 @@
 import { mountLearningStudio } from './learning-studio.js?v=4';
+import { mountActivityInstructions } from './activity-instructions.js';
 // Shared shell behavior. Topic engines retain their own content and progress keys.
 const body = document.body;
 const nav = document.querySelector('.lesson-nav');
@@ -11,6 +12,7 @@ const legacy = ['pengenalan-jaringan', 'topologi-jaringan'].includes(body.datase
 const content = document.querySelector('.lesson-content');
 
 function synchronize() {
+  mountActivityInstructions(content,body.dataset.moduleId);
   content.querySelectorAll('h2, h3').forEach(heading => {
     if (heading.children.length) return;
     const label = heading.textContent.replace(/^[^\p{L}\p{N}]+/u, '');

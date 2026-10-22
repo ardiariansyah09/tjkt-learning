@@ -1,9 +1,27 @@
+import { mountInstallationLab } from './installation-activity.js';
+import { mountFiberLab } from './fiber-activity.js';
+import { mountVoIPLab } from './voip-activity.js';
+import { mountMaintenanceLab } from './maintenance-activity.js';
 import { capacity,parseIPv6,ticketLoad,sensorData,venture,propagation,opticalPower } from './topic-models.js';
+import { mountRequirementsLab } from './requirements-activity.js';
+import { mountLayoutLab } from './layout-activity.js';
+import { mountAddressLab } from './address-plan-activity.js';
+import { mountCablingLab } from './cabling-activity.js';
+import { mountWLANLab } from './wlan-activity.js';
 
 const el=(tag,text,cls)=>{const node=document.createElement(tag);if(text!==undefined)node.textContent=text;if(cls)node.className=cls;return node;};
 const btn=(text,action)=>{const node=el('button',text,'secondary-action');node.type='button';node.addEventListener('click',action);return node;};
 const money=n=>`Rp${n.toLocaleString('id-ID')}`;
 const configurations={
+  'pemasangan-perangkat-jaringan':['Meja Integrasi Port, Running, dan Startup','installation',mountInstallationLab],
+  'fiber-optik':['Meja Anggaran, Referensi Optik, dan Peta Kejadian','fiber',mountFiberLab],
+  'voip':['Meja Panggilan SIP dan Trace Media','voip',mountVoIPLab],
+  'pemeliharaan-kabel-nirkabel':['Meja Investigasi dan Verifikasi Pemulihan','maintenance',mountMaintenanceLab],
+  'wireless-lan':['Laboratorium Kanal, Sampel Sinyal, dan Beban WLAN','wlan',mountWLANLab],
+  'instalasi-kabel':['Meja Terminasi, Wiremap, dan Panjang Link','cabling',mountCablingLab],
+  'perencanaan-pengalamatan-lanjut':['Meja Perencanaan VLSM dan Prefix IPv6','address-plan',mountAddressLab],
+  'desain-topologi-arsitektur':['Editor Denah Berskala dan Lintasan Kabel','layout',mountLayoutLab],
+  'kebutuhan-teknis-jaringan':['Meja Analisis Kebutuhan dan Kandidat Peralatan','requirements',mountRequirementsLab],
   'k3-budaya-kerja': ['Inspeksi area kerja dan lembar JSA','safety',mountSafety],
   'perencanaan-jaringan':['Rancang kapasitas panel switch','ports',mountPorts],
   'ipv6-dasar':['Bongkar dan periksa alamat IPv6','ipv6',mountIPv6],

@@ -1,4 +1,13 @@
+import { mountInstallationGame } from './installation-activity.js';
+import { mountFiberGame } from './fiber-activity.js';
+import { mountVoIPGame } from './voip-activity.js';
+import { mountMaintenanceGame } from './maintenance-activity.js';
 import { mountActionGame } from './action-game.js';
+import { mountRequirementsGame } from './requirements-activity.js';
+import { mountLayoutGame } from './layout-activity.js';
+import { mountAddressGame } from './address-plan-activity.js';
+import { mountCablingGame } from './cabling-activity.js';
+import { mountWLANGame } from './wlan-activity.js';
 
 export function mountChapterNavigation({ moduleId, title, classLevel = 'X', chapters, passScore = 75, finalPassScore = 80, storageVersion = 1 }) {
   const root = document.getElementById('lessonContent');
@@ -87,7 +96,8 @@ export function mountChapterNavigation({ moduleId, title, classLevel = 'X', chap
       section.hidden = true;
       const host = create('div', undefined, 'chapter-action-host');
       unit.append(host);
-      actionGames.push(mountActionGame(host, { moduleId, mode:'2d', onComplete(score) {
+      const mountGame=moduleId==='pemasangan-perangkat-jaringan'?mountInstallationGame:moduleId==='fiber-optik'?mountFiberGame:moduleId==='voip'?mountVoIPGame:moduleId==='pemeliharaan-kabel-nirkabel'?mountMaintenanceGame:moduleId==='kebutuhan-teknis-jaringan'?mountRequirementsGame:moduleId==='desain-topologi-arsitektur'?mountLayoutGame:moduleId==='perencanaan-pengalamatan-lanjut'?mountAddressGame:moduleId==='instalasi-kabel'?mountCablingGame:moduleId==='wireless-lan'?mountWLANGame:mountActionGame;
+      actionGames.push(mountGame(host, { moduleId, mode:'2d', onComplete(score) {
         state.scores[chapter.id] = Math.max(Number(state.scores[chapter.id]) || 0, score);
         if (score >= passScore) state.passed[chapter.id] = score;
         saveState();render();

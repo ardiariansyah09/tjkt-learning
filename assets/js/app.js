@@ -47,6 +47,9 @@ async function loadModules() {
     }
 
     const modules = await response.json();
+    const atpResponse = await fetch('data/atp-fase-f.json', { cache:'no-store' });
+    if (!atpResponse.ok) throw new Error('Data ATP Fase F tidak dapat dimuat.');
+    const atp = await atpResponse.json();
 
     if (!Array.isArray(modules)) {
       throw new Error("Format modules.json harus berupa array.");
@@ -59,11 +62,11 @@ async function loadModules() {
       return;
     }
 
-    modules.sort((a, b) => String(a.phase).localeCompare(String(b.phase)) || (a.groupOrder ?? 99) - (b.groupOrder ?? 99) || (a.order ?? 99) - (b.order ?? 99));
+    modules.sort((a, b) => String(a.phase).localeCompare(String(b.phase)) || (a.phase === 'F' ? String(a.classLevel).localeCompare(String(b.classLevel)) : 0) || (a.groupOrder ?? 99) - (b.groupOrder ?? 99) || (a.order ?? 99) - (b.order ?? 99));
     const byId = new Map(modules.map(module => [module.id, module]));
     const groups = new Map();
     modules.forEach((module) => {
-      const groupTitle = `${module.category || "Umum"} - Fase ${module.phase || "-"}`;
+      const groupTitle = `${module.category || "Umum"} - Fase ${module.phase || "-"}${module.phase === 'F' ? ` · Kelas ${module.classLevel}` : ''}`;
       if (!groups.has(groupTitle)) {
         groups.set(groupTitle, []);
       }
@@ -72,6 +75,7 @@ async function loadModules() {
 
     let groupIndex = 0;
     let currentPhase;
+    let currentClass;
     groups.forEach((groupModules, groupTitle) => {
       const phase = groupModules[0].phase;
       if (phase !== currentPhase) {
@@ -83,10 +87,30 @@ async function loadModules() {
           ? 'Fase E · Kelas X — Dasar-Dasar TJKT'
           : 'Fase F · Kelas XI–XII — Teknik Komputer dan Jaringan';
         moduleList.append(phaseHeading);
+        if (phase === 'F') {
+          const note = document.createElement('p');
+          note.className = 'phase-atp-note';
+          note.textContent = `Mengikuti ATP ${atp.school} ${atp.schoolYear}. JP merupakan alokasi total elemen, bukan alokasi setiap modul.`;
+          moduleList.append(note);
+        }
+      }
+      if (phase === 'F' && groupModules[0].classLevel !== currentClass) {
+        currentClass = groupModules[0].classLevel;
+        const plan = atp.classes.find(item => item.classLevel === currentClass);
+        const classHeading = document.createElement('h3');
+        classHeading.className = 'class-heading';
+        classHeading.id = `fase-f-kelas-${currentClass.toLowerCase()}`;
+        classHeading.textContent = `Kelas ${currentClass} · ${plan.totalJP} JP`;
+        const summary = document.createElement('p');
+        summary.className = 'class-summary';
+        summary.textContent = plan.summary;
+        moduleList.append(classHeading, summary);
       }
       const index = groupIndex++;
       const section = document.createElement("section");
       section.className = "module-group";
+      section.dataset.phase = phase;
+      section.dataset.classLevel = groupModules[0].classLevel;
       section.classList.toggle('module-group-single', groupModules.length === 1);
       section.setAttribute("aria-labelledby", `module-group-title-${index}`);
 
@@ -95,6 +119,15 @@ async function loadModules() {
       heading.id = `module-group-title-${index}`;
       heading.textContent = groupTitle;
       section.append(heading);
+      if (phase === 'F') {
+        const element = atp.elements.find(item => item.classLevel === currentClass && item.category === groupModules[0].category);
+        if (element) {
+          const allocation = document.createElement('p');
+          allocation.className = 'element-allocation';
+          allocation.textContent = `Alokasi elemen: ${element.jp} JP`;
+          section.append(allocation);
+        }
+      }
 
       const grid = document.createElement("div");
       grid.className = "module-grid";
@@ -104,6 +137,7 @@ async function loadModules() {
         card.className = "module-card";
         card.classList.add(module.status === "published" ? "is-published" : "is-coming-soon");
         card.dataset.moduleId = module.id || "";
+        if (phase === 'F') card.dataset.curriculumRole = module.curriculumRole;
 
         const cardTop = document.createElement("div");
         cardTop.className = "module-card-top";
@@ -124,8 +158,14 @@ async function loadModules() {
         cardTop.append(icon);
         const position = document.createElement('p');
         position.className = 'module-position';
-        position.textContent = `Urutan ${module.order} · Fase ${module.phase} · ${module.phase === 'E' ? 'Kelas X' : 'Kelas XI–XII'}`;
+        position.textContent = `Urutan ${module.order} · Fase ${module.phase} · Kelas ${module.classLevel}`;
         card.append(cardTop, title, position, description);
+        if (phase === 'F') {
+          const badge = document.createElement('span');
+          badge.className = `curriculum-badge curriculum-${module.curriculumRole}`;
+          badge.textContent = {inti:'Materi ATP',pendukung:'Pendukung pembelajaran',pengayaan:'Pengayaan'}[module.curriculumRole];
+          card.append(badge);
+        }
 
         const outline = document.createElement('details');
         outline.className = 'module-outline';
