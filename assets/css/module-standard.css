@@ -183,3 +183,6 @@ body.module-page.module-standard.dark .cs-fail { color:#fca5a5; }
   body.module-page.module-standard .module-topbar,body.module-page.module-standard .lesson-sidebar,body.module-page.module-standard .skip-link { display:none; }
   body.module-page.module-standard .module-layout { display:block; }
 }
+.activity-instructions{margin:16px 0 22px;padding:16px 20px;border:1px solid var(--border,#cbd5e1);border-left:4px solid var(--primary,#0284c7);border-radius:10px;background:var(--surface,#fff);color:var(--text,#0f172a);min-width:0;overflow-wrap:anywhere}
+.activity-instructions h3{margin:0 0 10px;font-size:1.05rem;line-height:1.5}.activity-instructions p{margin:10px 0;line-height:1.7}.activity-instructions ol{margin:12px 0;padding-left:1.5rem}.activity-instructions li{margin:8px 0;line-height:1.7}.activity-instructions p:last-child{margin-bottom:0}
+@media(max-width:480px){.activity-instructions{padding:14px}.activity-instructions ol{padding-left:1.25rem}}

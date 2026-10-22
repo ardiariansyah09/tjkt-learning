@@ -50,3 +50,59 @@
  .optical-bench { grid-template-columns:1fr; }.optical-meter { font-size:26px; }
 }
 @media(prefers-reduced-motion:reduce){.signal-pulse,.topic-bar-track>span { transition:none; }}
+.requirements-summary { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,160px),1fr)); gap:10px; margin:18px 0; }
+.requirement-metric { display:flex; flex-direction:column; gap:10px; padding:14px; border:1px solid var(--border); border-radius:10px; background:var(--bg); }
+.requirement-metric small { color:var(--muted); }.requirement-metric strong { font-size:19px; }
+.requirements-confirm { display:flex; align-items:start; gap:10px; line-height:1.7; margin:12px 0; }.requirements-confirm input { margin-top:7px; flex:none; }
+.requirements-game { padding:clamp(12px,3vw,24px); border:1px solid var(--border); border-radius:14px; background:var(--surface); }
+.requirements-game button { white-space:normal; margin:4px; }
+.requirements-warehouse { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,190px),1fr)); gap:12px; }
+.warehouse-item { padding:14px; border:2px solid var(--border); border-radius:10px; background:var(--bg); }
+.warehouse-item p { line-height:1.7; }.requirements-hud { font-weight:700; color:var(--primary); }
+.requirements-cargo { padding:14px; border:2px dashed var(--primary); border-radius:10px; min-height:80px; margin:12px 0; }
+.layout-grid { display:block; width:100%; height:auto; border:1px solid var(--border); border-radius:10px; background:var(--bg); margin:16px 0; touch-action:manipulation; }
+.layout-grid:focus { outline:3px solid var(--primary); outline-offset:3px; }
+.layout-toolbar { display:flex; flex-wrap:wrap; gap:8px; margin:12px 0; }
+.layout-game { padding:clamp(12px,3vw,24px); border:1px solid var(--border); border-radius:14px; background:var(--surface); }
+.layout-game button { margin:4px; white-space:normal; }
+.address-ribbon { display:flex; flex-wrap:wrap; gap:4px; margin:18px 0; }
+.address-allocation { min-width:95px; padding:12px; border:1px solid var(--primary); border-radius:6px; background:var(--bg); font-size:12px; white-space:pre-line; overflow-wrap:anywhere; }
+.address-free { border-style:dashed; color:var(--muted); }
+[data-topic-activity=address-plan] td { white-space:pre-line; min-width:155px; vertical-align:top; }
+[data-topic-activity=address-plan] td input { box-sizing:border-box; width:100%; min-width:150px; max-width:230px; padding:10px; background:var(--surface); color:var(--text); border:1px solid var(--border); border-radius:8px; font:inherit; }
+.address-game { padding:clamp(12px,3vw,24px); border:1px solid var(--border); border-radius:14px; background:var(--surface); }
+.address-tokens { display:flex; flex-wrap:wrap; gap:8px; margin:14px 0; }.address-tokens button[aria-pressed=true] { outline:2px solid var(--primary); }
+.address-lane { display:grid; grid-template-columns:repeat(8,minmax(0,1fr)); gap:6px; margin:18px 0; }
+.address-cell { min-height:80px; padding:8px 3px; border:1px solid var(--border); border-radius:7px; color:var(--text); background:var(--surface); font:inherit; font-size:12px; overflow-wrap:anywhere; cursor:pointer; }
+.address-cell.occupied { border:2px solid var(--primary); background:var(--bg); }.address-cell.reserved { background:#475569; color:white; }
+.address-game>button { margin:5px; white-space:normal; }
+@media(max-width:600px){.address-cell { font-size:10px; padding:5px 2px; min-height:78px; }.address-lane { gap:3px; }}
+.wire-palette { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,140px),1fr)); gap:8px; margin:16px 0; }
+.wire-palette button,.connector-pins button { white-space:normal; border-left:7px solid var(--wire-color); font-size:12px; padding:10px; overflow-wrap:anywhere; }
+.wire-palette button[aria-pressed=true] { outline:2px solid var(--primary); }
+.cable-connectors { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,270px),1fr)); gap:16px; }
+.cable-connector { padding:12px; border:2px solid var(--border); border-radius:12px; background:var(--bg); }
+.connector-pins { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:8px; }
+.cable-wiremap { display:block; width:100%; max-width:650px; height:auto; margin:18px auto; border:1px solid var(--border); border-radius:10px; background:#f8fafc; }
+.cabling-game { padding:clamp(12px,3vw,24px); border:1px solid var(--border); border-radius:14px; background:var(--surface); }
+.cabling-game>button { margin:6px; white-space:normal; }
+body.module-page.module-standard .wire-palette button,body.module-page.module-standard .connector-pins button { border-left:7px solid var(--wire-color); font-size:12px; padding:10px 6px; overflow-wrap:normal; word-break:normal; }
+body.module-page.module-standard .wire-palette button[data-striped=true],body.module-page.module-standard .connector-pins button[data-striped=true] { border-left-style:dashed; }
+body.module-page.module-standard .connector-pins button { min-height:58px; white-space:nowrap; }
+.cable-legend { font-size:11px; line-height:1.8; color:var(--muted); }
+.wlan-checkbox { display:flex; align-items:start; gap:10px; line-height:1.7; margin:12px 0; }.wlan-checkbox input { margin-top:7px; flex:none; }
+.wlan-floor { display:block; width:100%; height:auto; margin:18px 0; border:1px solid var(--border); border-radius:12px; background:#f8fafc; }
+.wlan-game { padding:clamp(12px,3vw,24px); border:1px solid var(--border); border-radius:14px; background:var(--surface); }
+.wlan-game-nodes { display:flex; flex-wrap:wrap; gap:10px; margin:16px 0; }.wlan-game>button { margin:5px; white-space:normal; }
+.wlan-game .layout-toolbar [aria-pressed=true] { outline:2px solid var(--primary); }
+/* Maintenance: evidence workbench and connector rotation puzzle. */
+.maintenance-chain{display:flex;flex-wrap:wrap;gap:.5rem;margin:1rem 0}.maintenance-chain span{border:1px solid var(--border-color,#94a3b8);padding:.6rem;border-radius:.5rem}.maintenance-chain span+span:before{content:'→ ';color:#0284c7}.maintenance-log{max-height:22rem;overflow:auto;padding-left:1.6rem}.maintenance-log li{margin:.6rem 0;overflow-wrap:anywhere}
+.maintenance-board{display:grid;grid-template-columns:repeat(var(--repair-cols),minmax(0,1fr));gap:.5rem;max-width:560px;margin:1rem 0}
+body.module-page.module-standard .maintenance-board .repair-tile{position:relative;min-width:0;min-height:100px;padding:.5rem;border:2px solid #64748b;background:#e2e8f0;color:#0f172a;border-radius:.6rem;cursor:pointer;display:flex;align-items:center;justify-content:center;flex-direction:column}
+.repair-pipe{display:block;font-family:monospace;font-size:4rem;line-height:1;pointer-events:none}.repair-tile small{font-size:.8rem}.repair-tile:focus-visible{outline:3px solid #0284c7;outline-offset:3px}
+body.module-page.module-standard .maintenance-board .repair-reached{border-color:#0f766e;animation:repair-packet .7s ease-out both}
+@keyframes repair-packet{0%{background:#38bdf8;box-shadow:inset 0 0 0 6px #facc15}100%{background:#ccfbf1;box-shadow:inset 0 0 0 1px #0f766e}}
+@media(prefers-reduced-motion:reduce){.repair-reached{animation:none!important;background:#ccfbf1!important}}
+.voip-ladder{display:block;width:100%;height:auto;max-width:740px;background:#f8fafc;border:1px solid #94a3b8;border-radius:10px;margin:1rem 0}.voip-checkbox{display:flex;align-items:center;gap:.6rem;margin:.65rem 0}.voip-checkbox input{width:1.1rem;height:1.1rem;flex:0 0 auto}.voip-packet-tray{display:flex;flex-wrap:wrap;gap:.5rem;padding:1rem;min-height:90px;border:2px dashed var(--border);border-radius:10px;margin:.5rem 0 1rem}.voip-packet-tray p{margin:0}.voip-timeline{display:flex;flex-wrap:wrap;gap:.4rem}.voip-timeline span{padding:.45rem;border:1px solid var(--border);border-radius:.4rem;font-size:.85rem}.voip-game .studio-feedback{white-space:pre-line}
+.fiber-event-map{display:block;width:100%;height:auto;background:#f8fafc;border:1px solid #94a3b8;border-radius:10px}.fiber-meter{display:block;padding:1rem;margin:1rem 0;border:2px solid var(--primary);border-radius:10px;font-size:1.15rem;font-weight:700;overflow-wrap:anywhere}.fiber-meter small{display:block;margin-top:.6rem;font-weight:400;line-height:1.7}.fiber-tray{display:grid;grid-template-columns:minmax(56px,1fr) minmax(30px,2fr) minmax(56px,1fr);gap:.3rem;align-items:stretch;margin:1rem 0}.fiber-tray>svg{width:100%;height:100%;min-height:280px}.fiber-core-list{display:grid;gap:.4rem;align-content:space-between}body.module-page.module-standard .fiber-core-list button{min-width:0;min-height:42px;width:100%;margin:0;padding:6px 3px;white-space:normal;overflow-wrap:anywhere;font-size:.85rem}body.module-page.module-standard .fiber-core-list button[aria-pressed=true]{border-color:var(--primary);outline:2px solid var(--primary)}
+.installation-state{padding:1rem;border:1px solid var(--border);border-radius:8px;font-weight:700}.installation-map,.installation-chassis{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,140px),1fr));gap:.6rem;margin:1rem 0}.installation-map>div{padding:.8rem;border:1px solid var(--border);border-radius:8px;overflow-wrap:anywhere}.installation-game button{white-space:normal}.installation-chassis button{min-height:95px}.topic-activity[data-topic-activity=installation] table input:not([type=checkbox]){min-width:100px}.topic-activity[data-topic-activity=installation] table select{min-width:110px}.topic-activity[data-topic-activity=installation] table label{font-size:.8rem;display:grid;gap:.35rem}.topic-activity[data-topic-activity=installation] table input[type=checkbox]{width:1.2rem;height:1.2rem}
