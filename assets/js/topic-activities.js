@@ -1,3 +1,22 @@
+import { mountFinalLab } from './final-lab-activities.js';
+import { mountMonitoringLab } from './monitoring-activity.js';
+import { mountVPNLab } from './vpn-activity.js';
+import { mountHostingLab } from './hosting-activity.js';
+import { mountWebDBLab } from './web-db-activity.js';
+import { mountFileShareLab } from './file-share-activity.js';
+import { mountFTPLab } from './ftp-activity.js';
+import { mountServicesLab } from './services-activity.js';
+import { mountAccessLab } from './access-activity.js';
+import { mountOSAdminLab } from './os-admin-activity.js';
+import { mountVirtualizationLab } from './virtualization-activity.js';
+import { mountServerBasicsLab } from './server-basics-activity.js';
+import { mountDualWANLab } from './dual-wan-activity.js';
+import { mountQoSLab } from './qos-activity.js';
+import { mountProxyLab } from './proxy-activity.js';
+import { mountNATLab } from './nat-activity.js';
+import { mountDynamicRoutingLab } from './dynamic-routing-activity.js';
+import { mountStaticRoutingLab } from './static-routing-activity.js';
+import { mountReplacementLab } from './replacement-activity.js';
 import { mountInstallationLab } from './installation-activity.js';
 import { mountFiberLab } from './fiber-activity.js';
 import { mountVoIPLab } from './voip-activity.js';
@@ -13,6 +32,33 @@ const el=(tag,text,cls)=>{const node=document.createElement(tag);if(text!==undef
 const btn=(text,action)=>{const node=el('button',text,'secondary-action');node.type='button';node.addEventListener('click',action);return node;};
 const money=n=>`Rp${n.toLocaleString('id-ID')}`;
 const configurations={
+ 'keamanan-jaringan':['Laboratorium Terapan dan Bukti: policy','final-policy',(root,record)=>mountFinalLab(root,record,'policy')],
+ 'pengujian-keamanan':['Laboratorium Terapan dan Bukti: assessment','final-assessment',(root,record)=>mountFinalLab(root,record,'assessment')],
+ 'autentikasi-kriptografi':['Laboratorium Terapan dan Bukti: identity','final-identity',(root,record)=>mountFinalLab(root,record,'identity')],
+ 'mail-server':['Laboratorium Terapan dan Bukti: mail','final-mail',(root,record)=>mountFinalLab(root,record,'mail')],
+ 'ids-respons-insiden':['Laboratorium Terapan dan Bukti: response','final-response',(root,record)=>mountFinalLab(root,record,'response')],
+ 'backup-pemulihan-server':['Laboratorium Terapan dan Bukti: backup','final-backup',(root,record)=>mountFinalLab(root,record,'backup')],
+ 'ids-hardening':['Laboratorium Terapan dan Bukti: hardening','final-hardening',(root,record)=>mountFinalLab(root,record,'hardening')],
+ 'proyek-integrasi-jaringan':['Laboratorium Terapan dan Bukti: campus','final-campus',(root,record)=>mountFinalLab(root,record,'campus')],
+ 'server-dmz':['Laboratorium Terapan dan Bukti: dmz','final-dmz',(root,record)=>mountFinalLab(root,record,'dmz')],
+ 'monitoring-jaringan':['Meja Timeline Probe, Alert dan Snapshot ONU','monitoring',mountMonitoringLab],
+ 'vpn-server':['Meja Peer, Rute, Jalur Balik dan Egress','vpn',mountVPNLab],
+ 'panel-layanan-hosting':['Meja Panel, Tenant, Quota dan Penerimaan Situs','hosting',mountHostingLab],
+ 'hosting-server':['Meja Request, Virtual Host dan Konsistensi Data','web-db',mountWebDBLab],
+ 'file-server':['Meja Share, Sesi, Draft dan Pemulihan Berkas','file-share',mountFileShareLab],
+ 'ftp-server':['Meja Kanal Kontrol, Data dan Integritas Berkas','ftp',mountFTPLab],
+ 'layanan-server':['Meja Lease, Query Nama dan Operasi Remote','services',mountServicesLab],
+ 'manajemen-pengguna-server':['Meja Identitas, Operasi dan Hak Efektif','access',mountAccessLab],
+ 'administrasi-linux-windows':['Meja Administrasi Dua OS dan Bukti Boot','os-admin',mountOSAdminLab],
+  'virtualisasi-server':['Meja Host, Resource, NIC, dan Recovery VM','virtualization',mountVirtualizationLab],
+  'dasar-administrasi-server':['Meja Paket, Konfigurasi, Proses, dan Boot','server-basics',mountServerBasicsLab],
+  'load-balancing':['Meja Distribusi Sesi, Probe, dan Failover','dual-wan',mountDualWANLab],
+  'bandwidth-qos':['Meja Bottleneck, Antrean, dan Token Bucket','qos',mountQoSLab],
+  'proxy-load-balancing':['Meja Aturan Akses, Cache, dan CONNECT','proxy',mountProxyLab],
+  'nat-wan':['Meja Gateway, Translasi, dan Sesi NAT','nat',mountNATLab],
+  'routing-dinamis':['Meja Neighbor, LSDB, dan Konvergensi OSPF','dynamic-routing',mountDynamicRoutingLab],
+  'routing-ipv4':['Meja Rute Statis dan Trace Pergi–Balik','static-routing',mountStaticRoutingLab],
+  'penggantian-perangkat-jaringan':['Meja Migrasi, Jendela Layanan, dan Rollback','replacement',mountReplacementLab],
   'pemasangan-perangkat-jaringan':['Meja Integrasi Port, Running, dan Startup','installation',mountInstallationLab],
   'fiber-optik':['Meja Anggaran, Referensi Optik, dan Peta Kejadian','fiber',mountFiberLab],
   'voip':['Meja Panggilan SIP dan Trace Media','voip',mountVoIPLab],

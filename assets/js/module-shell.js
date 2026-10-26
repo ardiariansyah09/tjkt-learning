@@ -1,5 +1,9 @@
-import { mountLearningStudio } from './learning-studio.js?v=4';
-import { mountActivityInstructions } from './activity-instructions.js';
+import { mountLearningStudio } from './learning-studio.js?v=21';
+import { mountActivityInstructions } from './activity-instructions.js?v=18';
+import { refreshModuleCertificate } from './module-certificate.js';
+import { mountEverydayContext } from './contextual-learning.js?v=3';
+import { mountServiceSecurity } from './service-security.js?v=3';
+import { mountSubnetClassroom } from './subnet-classroom.js';
 // Shared shell behavior. Topic engines retain their own content and progress keys.
 const body = document.body;
 const nav = document.querySelector('.lesson-nav');
@@ -12,6 +16,10 @@ const legacy = ['pengenalan-jaringan', 'topologi-jaringan'].includes(body.datase
 const content = document.querySelector('.lesson-content');
 
 function synchronize() {
+  mountEverydayContext(content,body.dataset.moduleId);
+  mountServiceSecurity(content,body.dataset.moduleId);
+  mountSubnetClassroom(content,body.dataset.moduleId);
+  refreshModuleCertificate();
   mountActivityInstructions(content,body.dataset.moduleId);
   content.querySelectorAll('h2, h3').forEach(heading => {
     if (heading.children.length) return;

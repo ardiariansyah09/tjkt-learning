@@ -13,7 +13,7 @@ export function writeGate(gate) {
   catch{return false;}
 }
 export function markPassed(gate,id,score){if(score>=MIN_SCORE)gate.passed[id]=Math.max(gate.passed[id]||0,score);}
-export function isPassed(gate,id){return Number(gate.passed[id])>=MIN_SCORE;}
+export function isPassed(gate,id){return Number(gate.passed[id])>=(['games','posttest'].includes(id)?80:MIN_SCORE);}
 export function isUnlocked(gate,ids,id){
   const index=ids.indexOf(id);
   return index>=0&&(index===0||ids.slice(0,index).every(previous=>isPassed(gate,previous)));

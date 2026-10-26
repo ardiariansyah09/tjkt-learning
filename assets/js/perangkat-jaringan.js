@@ -679,7 +679,7 @@ function renderTheory(root, lesson, index) {
 function mountTheoryQuiz(root, lesson) {
   const section = el('section', undefined, 'device-check');
   section.append(el('h2', 'Cek Pemahaman'), el('p', 'Jawab seluruh soal untuk membuka tahap berikutnya.'));
-  const form = el('form', 'assessment-form');
+  const form = el('form', undefined, 'assessment-form');
   lesson.questions.forEach(([question, options], index) => {
     const field = document.createElement('fieldset');
     field.append(el('legend', `${index + 1}. ${question}`));
@@ -1123,7 +1123,7 @@ function shuffle(items) {
 function renderPosttest(root) {
   appendHook(root, 'Kerjakan evaluasi secara mandiri. Gunakan alasan fungsi perangkat untuk memilih jawaban.');
   root.append(el('h2', 'Posttest Perangkat Jaringan'), el('p', `Sepuluh soal dipilih secara acak. Semua soal wajib dijawab dan nilai minimal kelulusan ${POSTTEST_MIN_PASS}.`));
-  const form = el('form', 'assessment-form');
+  const form = el('form', undefined, 'assessment-form');
   const result = el('p', 'Nilai tersimpan pada browser ini.', 'device-result');
   const submit = createButton('Kumpulkan Posttest');
   submit.type = 'submit';
@@ -1172,49 +1172,7 @@ function renderPosttest(root) {
   appendSummary(root, ['Posttest mencakup perangkat akhir, switching, routing, akses nirkabel, dan keamanan.', 'Nilai minimal 80/100 diperlukan untuk lulus.', 'Hasil disimpan pada browser yang digunakan.']);
 }
 
-function showCertificate(root) {
-  if (root.querySelector('.certificate-panel')) return;
-  const panel = el('section', undefined, 'certificate-panel');
-  panel.append(el('h2', '🏅 Sertifikat Penyelesaian'), el('p', 'Sertifikat ini merupakan bukti penyelesaian mandiri, bukan sertifikat resmi lembaga.'));
-  const input = document.createElement('input');
-  input.type = 'text';
-  input.maxLength = 70;
-  input.autocomplete = 'name';
-  input.placeholder = 'Nama lengkap';
-  input.setAttribute('aria-label', 'Nama pada sertifikat');
-  const warning = el('p', '', 'device-result');
-  const create = createButton('Siapkan Sertifikat');
-  create.addEventListener('click', () => {
-    const name = input.value.trim().replace(/\s+/g, ' ');
-    if (name.length < 3) {
-      warning.textContent = 'Nama minimal 3 karakter.';
-      return;
-    }
-    if (!window.TJKTCertificate) {
-      warning.textContent = 'Template sertifikat tidak tersedia.';
-      return;
-    }
-    const paper = document.createElement('section');
-    paper.id = 'devicePrintableCertificate';
-    window.TJKTCertificate.render(paper, {
-      name,
-      module: 'Perangkat Jaringan',
-      score: state.scores.posttest || 0
-    });
-    const existing = document.getElementById(paper.id);
-    if (existing) existing.remove();
-    document.body.append(paper);
-    if (!panel.querySelector('.print-certificate')) {
-      const print = createButton('Cetak / Simpan PDF');
-      print.classList.add('print-certificate');
-      print.addEventListener('click', () => window.print());
-      panel.append(print);
-    }
-    warning.textContent = 'Sertifikat siap dicetak atau disimpan sebagai PDF.';
-  });
-  panel.append(input, create, warning);
-  root.append(panel);
-}
+function showCertificate(root) { window.TJKTCertificateFlow?.refresh(); }
 
 function completeCurrent(score) {
   const id = stages[current].id;

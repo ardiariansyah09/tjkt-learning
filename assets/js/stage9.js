@@ -19,37 +19,7 @@ export function mountLearnerDashboard(root,gate,ids,lessons,goTo){
  const note=element('small','stage9-muted','Data hanya disimpan di browser ini, bukan dikirim ke guru.');
  root.append(heading,desc,btn,note);
 }
-export function mountCertificate(root,gate,ids){
- const panel=element('section','stage9-certificate');
- const title=element('h3','','🏅 Sertifikat Penyelesaian Modul');panel.append(title);
- if(!ids.every(id=>passed(gate,id))){
-   panel.append(element('p','stage9-muted','Sertifikat terbuka setelah seluruh materi lulus, termasuk Posttest minimal 80.'));
-   root.append(panel);return;
- }
- panel.append(element('p','','Selamat! Semua tahap pembelajaran telah diselesaikan. Isi nama untuk membuat sertifikat pribadi.'));
- const label=element('label','stage9-name-label','Nama pada sertifikat');
- const input=element('input','stage9-name-input');input.type='text';input.maxLength=70;input.autocomplete='name';input.placeholder='Masukkan nama lengkap';
- try{input.value=localStorage.getItem(LEARNER_KEY)||'';}catch{}
- label.append(input);
- const btn=element('button','primary-action','Buat Sertifikat');
- const warning=element('p','stage9-muted');warning.setAttribute('role','status');
- btn.onclick=()=>{
-  const name=input.value.trim().replace(/\s+/g,' ');
-  if(name.length<3){warning.textContent='Nama minimal 3 karakter.';return;}
-  try{localStorage.setItem(LEARNER_KEY,name);}catch{}
-  const cert=document.getElementById('stage9PrintableCertificate');
-  if(cert)cert.remove();
-  const paper=element('section','stage9-printable');paper.id='stage9PrintableCertificate';
-  window.TJKTCertificate.render(paper,{name,module:MODULE_NAME,score:idScore(gate,'posttest')});
-  document.body.append(paper);
-  const print=element('button','primary-action','Cetak / Simpan PDF');
-  print.onclick=()=>window.print();
-  const preview=panel.querySelector('.stage9-preview');if(preview)preview.remove();
-  const actions=element('div','stage9-preview');actions.append(element('p','','Sertifikat siap. Gunakan tombol di bawah untuk mencetak atau menyimpan sebagai PDF.'),print);panel.append(actions);
-  warning.textContent='Sertifikat berhasil disiapkan.';
- };
- panel.append(label,btn,warning);root.append(panel);
-}
+export function mountCertificate(root,gate,ids){ window.TJKTCertificateFlow?.refresh(); }
 export function setupResetProgress(button){
  if(!button)return;
  button.onclick=()=>{
