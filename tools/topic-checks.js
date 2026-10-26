@@ -1,3 +1,11 @@
+import { checkFinalModels,checkFinalLab } from './final-module-checks.js';
+import { checkMonitoringModels,checkMonitoringLab } from './monitoring-checks.js';
+import { checkContextualModels,checkContextualStage,checkLoginDefenseModels } from './contextual-checks.js';
+import { checkVPNModels,checkVPNLab } from './vpn-checks.js';
+import { checkHostingModels,checkHostingLab } from './hosting-checks.js';
+import { checkWebDBModels,checkWebDBLab } from './web-db-checks.js';
+import { checkFileShareModels,checkFileShareLab } from './file-share-checks.js';
+import { checkFTPModels,checkFTPLab } from './ftp-checks.js';
 import { checkServicesModels,checkServicesLab } from './services-checks.js';
 import { checkAccessModels,checkAccessLab } from './access-checks.js';
 import { checkOSAdminModels,checkOSAdminLab } from './os-admin-checks.js';
@@ -34,14 +42,15 @@ export function checkTopicModels(){
   assert(opticalPower(-3,16,-18,-1).state==='low','Low optical power');
   assert(opticalPower(5,0,-18,-1).state==='overload','Optical overload');
   let rejected=false;try{opticalPower(-3,8,0,-1);}catch{rejected=true;}assert(rejected,'Invalid receiver limits');
-  return {vectors:10,requirements:checkRequirementsModels(),layout:checkLayoutModels(),addressPlan:checkAddressModels(),cabling:checkCablingModels(),wlan:checkWLANModels(),maintenance:checkMaintenanceModels(),voip:checkVoIPModels(),fiber:checkFiberModels(),installation:checkInstallationModels(),replacement:checkReplacementModels(),staticRouting:checkStaticRoutingModels(),dynamicRouting:checkDynamicRoutingModels(),nat:checkNATModels(),proxy:checkProxyModels(),qos:checkQoSModels(),dualWAN:checkDualWANModels(),serverBasics:checkServerBasicsModels(),virtualization:checkVirtualizationModels(),osAdmin:checkOSAdminModels(),access:checkAccessModels(),services:checkServicesModels()};
+  return {contextual:checkContextualModels(),loginDefense:checkLoginDefenseModels(),vectors:10,requirements:checkRequirementsModels(),layout:checkLayoutModels(),addressPlan:checkAddressModels(),cabling:checkCablingModels(),wlan:checkWLANModels(),maintenance:checkMaintenanceModels(),voip:checkVoIPModels(),fiber:checkFiberModels(),installation:checkInstallationModels(),replacement:checkReplacementModels(),staticRouting:checkStaticRoutingModels(),dynamicRouting:checkDynamicRoutingModels(),nat:checkNATModels(),proxy:checkProxyModels(),qos:checkQoSModels(),dualWAN:checkDualWANModels(),serverBasics:checkServerBasicsModels(),virtualization:checkVirtualizationModels(),osAdmin:checkOSAdminModels(),access:checkAccessModels(),services:checkServicesModels(),ftp:checkFTPModels(),fileShare:checkFileShareModels(),webDB:checkWebDBModels(),hosting:checkHostingModels(),vpn:checkVPNModels(),monitoring:checkMonitoringModels(),remaining:checkFinalModels()};
 }
 export async function checkTopicStage(){
   checkActivityInstructions();
+  checkContextualStage();
   const id=document.body.dataset.moduleId,type=topicActivityTypes[id];
   assert(!document.getElementById('learning-studio'),'Global studio should be removed');
   assert(!document.querySelector('[data-studio-panel]'),'Forced studio panels should be removed');
-  const visibleGames=[...document.querySelectorAll('.action-game,.requirements-game,.layout-game,.address-game,.cabling-game,.wlan-game,.maintenance-game,.voip-game,.fiber-game,.installation-game,.replacement-game,.static-routing-game,.dynamic-routing-game,.nat-game,.proxy-game,.qos-game,.wan-game,.server-game,.virtualization-game,.os-admin-game,.access-game,.services-game')].filter(node=>node.getClientRects().length);
+  const visibleGames=[...document.querySelectorAll('.action-game,.requirements-game,.layout-game,.address-game,.cabling-game,.wlan-game,.maintenance-game,.voip-game,.fiber-game,.installation-game,.replacement-game,.static-routing-game,.dynamic-routing-game,.nat-game,.proxy-game,.qos-game,.wan-game,.server-game,.virtualization-game,.os-admin-game,.access-game,.services-game,.ftp-game,.file-share-game,.webdb-game,.hosting-game,.vpn-game,.monitor-game,.final-game')].filter(node=>node.getClientRects().length);
   const active=document.querySelector('.chapter-unit:not([hidden])');
   if(active&&active.dataset.chapter!=='game')assert(!visibleGames.length,'Game visible outside its chapter');
   const visible=[...document.querySelectorAll('[data-topic-activity]')].filter(node=>node.getClientRects().length);
@@ -60,7 +69,14 @@ export async function checkTopicStage(){
   assert(!root.querySelector('canvas,.action-game'),'Generic 3D room or game inside experiment');
   const state=()=>JSON.parse(root.dataset.result);
   function set(name,value){const input=form.elements[name];input.value=String(value);input.dispatchEvent(new Event('input',{bubbles:true}));}
+  if(type.startsWith('final-'))await checkFinalLab(root,type.slice(6));
   switch(type){
+    case 'monitoring': checkMonitoringLab(root);break;
+    case 'vpn': checkVPNLab(root);break;
+    case 'hosting': checkHostingLab(root);break;
+    case 'web-db': checkWebDBLab(root);break;
+    case 'file-share': checkFileShareLab(root);break;
+    case 'ftp': checkFTPLab(root);break;
     case 'services': checkServicesLab(root);break;
     case 'access': checkAccessLab(root);break;
     case 'os-admin': checkOSAdminLab(root);break;

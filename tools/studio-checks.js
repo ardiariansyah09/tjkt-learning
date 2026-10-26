@@ -1,3 +1,11 @@
+import { checkFinalGame } from './final-module-checks.js';
+import { remainingModules } from '../assets/js/final-game-models.js';
+import { checkMonitoringGame } from './monitoring-checks.js';
+import { checkVPNGame } from './vpn-checks.js';
+import { checkHostingGame } from './hosting-checks.js';
+import { checkWebDBGame } from './web-db-checks.js';
+import { checkFileShareGame } from './file-share-checks.js';
+import { checkFTPGame } from './ftp-checks.js';
 import { checkServicesGame } from './services-checks.js';
 import { checkAccessGame } from './access-checks.js';
 import { checkOSAdminGame } from './os-admin-checks.js';
@@ -64,6 +72,13 @@ export async function checkGameStage(){
   if(id==='perencanaan-pengalamatan-lanjut')return checkAddressGame(content.querySelector('.address-game'));
   if(id==='instalasi-kabel')return checkCablingGame(content.querySelector('.cabling-game'));
   if(id==='pemeliharaan-kabel-nirkabel')return checkMaintenanceGame(content.querySelector('.maintenance-game'));
+  if(remainingModules[id])return checkFinalGame(content.querySelector('.final-game'));
+  if(id==='monitoring-jaringan')return checkMonitoringGame(content.querySelector('.monitor-game'));
+  if(id==='vpn-server')return checkVPNGame(content.querySelector('.vpn-game'));
+  if(id==='panel-layanan-hosting')return checkHostingGame(content.querySelector('.hosting-game'));
+  if(id==='hosting-server')return checkWebDBGame(content.querySelector('.webdb-game'));
+  if(id==='file-server')return checkFileShareGame(content.querySelector('.file-share-game'));
+  if(id==='ftp-server')return checkFTPGame(content.querySelector('.ftp-game'));
   if(id==='layanan-server')return checkServicesGame(content.querySelector('.services-game'));
   if(id==='manajemen-pengguna-server')return checkAccessGame(content.querySelector('.access-game'));
   if(id==='administrasi-linux-windows')return checkOSAdminGame(content.querySelector('.os-admin-game'));
