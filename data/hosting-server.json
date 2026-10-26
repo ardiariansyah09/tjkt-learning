@@ -1,0 +1,68 @@
+{
+    "moduleId":  "hosting-server",
+    "title":  "Web dan Database Server",
+    "version":  2,
+    "contentSource":  "assets/js/course-web-db.js",
+    "chapters":  [
+                     {
+                         "id":  "orientasi",
+                         "title":  "Orientasi, Tujuan, dan Asesmen Awal",
+                         "summary":  "Merancang web/runtime/database dan membuktikan fungsi serta konsistensi."
+                     },
+                     {
+                         "id":  "konsep-1",
+                         "title":  "Arsitektur Web, Aplikasi dan Database",
+                         "summary":  "Memisahkan lapisan layanan sebelum memilih tindakan perbaikan."
+                     },
+                     {
+                         "id":  "konsep-2",
+                         "title":  "Virtual Host, Document Root dan TLS",
+                         "summary":  "Menyajikan situs yang benar pada nama serta path yang benar."
+                     },
+                     {
+                         "id":  "konsep-3",
+                         "title":  "Runtime, HTTP, Log dan Pengujian Aplikasi",
+                         "summary":  "Membuktikan handler sebelum menghubungkannya dengan data."
+                     },
+                     {
+                         "id":  "konsep-4",
+                         "title":  "Database, Schema dan Akun Aplikasi",
+                         "summary":  "Menyediakan data dengan hak minimum dan query berparameter."
+                     },
+                     {
+                         "id":  "konsep-5",
+                         "title":  "Transaksi, Konsistensi dan Retry",
+                         "summary":  "Menjaga perubahan terkait agar tidak meninggalkan state sebagian."
+                     },
+                     {
+                         "id":  "konsep-6",
+                         "title":  "Backup, Restore dan Penerimaan End-to-End",
+                         "summary":  "Menguji pemulihan data serta konfigurasi secara terpisah."
+                     },
+                     {
+                         "id":  "kasus",
+                         "title":  "Studi Kasus dan Proyek Terapan",
+                         "summary":  "Menyusun diagram stack, matriks uji dan rencana perubahan/pemulihan."
+                     },
+                     {
+                         "id":  "laboratorium",
+                         "title":  "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+                         "summary":  "Menguji vhost/TLS, runtime, akun DB dan atomicity data."
+                     },
+                     {
+                         "id":  "game",
+                         "title":  "Game Transaksi: Transaction Foundry",
+                         "summary":  "Mengelola token stok, pending/commit dan pemulihan kegagalan."
+                     },
+                     {
+                         "id":  "refleksi",
+                         "title":  "Refleksi, Umpan Balik, dan Transfer",
+                         "summary":  "Menghubungkan prediksi, bukti request/data dan batas model."
+                     },
+                     {
+                         "id":  "evaluasi",
+                         "title":  "Rangkuman dan Evaluasi Akhir",
+                         "summary":  "Memadukan layanan web/database dan penerimaan end-to-end."
+                     }
+                 ]
+}

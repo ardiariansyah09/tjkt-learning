@@ -1,0 +1,68 @@
+{
+    "moduleId":  "monitoring-jaringan",
+    "title":  "Sistem Kontrol, Monitoring, dan Pemeliharaan Jaringan",
+    "version":  2,
+    "contentSource":  "assets/js/course-monitoring.js",
+    "chapters":  [
+                     {
+                         "id":  "orientasi",
+                         "title":  "Orientasi, Tujuan, dan Asesmen Awal",
+                         "summary":  "Merancang monitoring berizin dan membuktikan observasi serta pemulihan layanan."
+                     },
+                     {
+                         "id":  "konsep-1",
+                         "title":  "Tujuan Monitoring, Kontrol dan Pemeliharaan",
+                         "summary":  "Memilih pertanyaan layanan sebelum memilih alat."
+                     },
+                     {
+                         "id":  "konsep-2",
+                         "title":  "Probe, Interval, Timeout dan Ambang",
+                         "summary":  "Menghubungkan jenis pemeriksaan dengan bukti yang dihasilkan."
+                     },
+                     {
+                         "id":  "konsep-3",
+                         "title":  "Timeline, Alert, Log dan Data Stale",
+                         "summary":  "Membaca kapan bukti diambil dan apakah operator benar-benar diberi tahu."
+                     },
+                     {
+                         "id":  "konsep-4",
+                         "title":  "Uptime Kuma, Resource dan Akses Monitoring",
+                         "summary":  "Menerapkan monitoring tanpa membuka panel manajemen sembarangan."
+                     },
+                     {
+                         "id":  "konsep-5",
+                         "title":  "Monitoring Fiber, OLT/ONU dan SmartOLT",
+                         "summary":  "Mengorelasikan status, daya optik dan timestamp sesuai akses lab."
+                     },
+                     {
+                         "id":  "konsep-6",
+                         "title":  "Triage, Maintenance, Pemulihan dan Kontrol",
+                         "summary":  "Menyelesaikan insiden melalui bukti dan tindakan berizin."
+                     },
+                     {
+                         "id":  "kasus",
+                         "title":  "Studi Kasus dan Proyek Terapan",
+                         "summary":  "Menyusun inventaris probe/dependensi, alert dan runbook pemeliharaan."
+                     },
+                     {
+                         "id":  "laboratorium",
+                         "title":  "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+                         "summary":  "Membandingkan probe, threshold, umur data, delivery dan snapshot ONU."
+                     },
+                     {
+                         "id":  "game",
+                         "title":  "Game Penjadwalan: Incident Shift",
+                         "summary":  "Membagi teknisi, mengikuti dependensi dan menutup tiket setelah verifikasi."
+                     },
+                     {
+                         "id":  "refleksi",
+                         "title":  "Refleksi, Umpan Balik, dan Transfer",
+                         "summary":  "Menghubungkan hipotesis, timeline bukti dan batas observasi."
+                     },
+                     {
+                         "id":  "evaluasi",
+                         "title":  "Rangkuman dan Evaluasi Akhir",
+                         "summary":  "Memadukan monitoring, kontrol berizin dan verifikasi pemulihan."
+                     }
+                 ]
+}

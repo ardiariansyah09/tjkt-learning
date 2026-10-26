@@ -1,0 +1,68 @@
+{
+    "moduleId":  "keamanan-jaringan",
+    "title":  "Ancaman dan Sistem Keamanan Jaringan",
+    "version":  2,
+    "contentSource":  "assets/js/course-keamanan-jaringan.js",
+    "chapters":  [
+                     {
+                         "id":  "orientasi",
+                         "title":  "Orientasi, Tujuan, dan Asesmen Awal",
+                         "summary":  "Potensi ancaman/serangan, kebutuhan sistem keamanan, kebijakan akses, ACL, dan firewall pada lab berizin."
+                     },
+                     {
+                         "id":  "konsep-1",
+                         "title":  "Aset, Ancaman, Kerentanan dan Risiko",
+                         "summary":  "Menghubungkan kebutuhan perlindungan dengan dampak."
+                     },
+                     {
+                         "id":  "konsep-2",
+                         "title":  "Kebijakan Akses dan Segmentasi",
+                         "summary":  "Menerjemahkan kebutuhan menjadi matriks aliran."
+                     },
+                     {
+                         "id":  "konsep-3",
+                         "title":  "ACL dan First-Match",
+                         "summary":  "Menelusuri urutan serta aturan yang membayangi."
+                     },
+                     {
+                         "id":  "konsep-4",
+                         "title":  "Stateful, NAT dan Jalur Balasan",
+                         "summary":  "Membedakan translasi alamat dari izin koneksi."
+                     },
+                     {
+                         "id":  "konsep-5",
+                         "title":  "Logging, Perubahan dan Pemulihan",
+                         "summary":  "Mengamankan perubahan tanpa kehilangan jalur pengelolaan."
+                     },
+                     {
+                         "id":  "konsep-6",
+                         "title":  "Validasi Kontrol dan Risiko Tersisa",
+                         "summary":  "Membedakan hasil kasus uji dari jaminan menyeluruh."
+                     },
+                     {
+                         "id":  "kasus",
+                         "title":  "Studi Kasus dan Proyek Terapan",
+                         "summary":  "Menyusun rancangan, matriks uji dan runbook berdasarkan kebutuhan serta bukti."
+                     },
+                     {
+                         "id":  "laboratorium",
+                         "title":  "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+                         "summary":  "Potensi ancaman/serangan, kebutuhan sistem keamanan, kebijakan akses, ACL, dan firewall pada lab berizin."
+                     },
+                     {
+                         "id":  "game",
+                         "title":  "Game Terapan: Policy Weaver",
+                         "summary":  "Memanipulasi objek/state dan menyelesaikan tiga misi sesuai kriteria topik."
+                     },
+                     {
+                         "id":  "refleksi",
+                         "title":  "Refleksi, Umpan Balik, dan Transfer",
+                         "summary":  "Menilai perubahan pemahaman melalui prediksi, hasil percobaan dan batas kesimpulan."
+                     },
+                     {
+                         "id":  "evaluasi",
+                         "title":  "Rangkuman dan Evaluasi Akhir",
+                         "summary":  "Memadukan konsep, bukti, risiko tersisa dan penerimaan pada kasus baru."
+                     }
+                 ]
+}

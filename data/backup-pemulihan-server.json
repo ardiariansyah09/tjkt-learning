@@ -1,0 +1,68 @@
+{
+    "moduleId":  "backup-pemulihan-server",
+    "title":  "Backup dan Pemulihan Server",
+    "version":  2,
+    "contentSource":  "assets/js/course-backup-pemulihan-server.js",
+    "chapters":  [
+                     {
+                         "id":  "orientasi",
+                         "title":  "Orientasi, Tujuan, dan Asesmen Awal",
+                         "summary":  "Rencanakan pencadangan data dan konfigurasi, lalu latih pemulihan layanan dari cadangan."
+                     },
+                     {
+                         "id":  "konsep-1",
+                         "title":  "Kebutuhan Data, RPO dan RTO",
+                         "summary":  "Menentukan apa yang harus dipulihkan sebelum memilih jadwal."
+                     },
+                     {
+                         "id":  "konsep-2",
+                         "title":  "Full, Incremental dan Differential",
+                         "summary":  "Memahami dependensi rantai, bukan hanya ukuran salinan."
+                     },
+                     {
+                         "id":  "konsep-3",
+                         "title":  "Konsistensi, Manifest dan Integritas",
+                         "summary":  "Membuktikan isi, kelengkapan dan konteks salinan."
+                     },
+                     {
+                         "id":  "konsep-4",
+                         "title":  "Lokasi, Akses, Enkripsi dan Retensi",
+                         "summary":  "Menghindari dependensi tunggal pada sumber kegagalan."
+                     },
+                     {
+                         "id":  "konsep-5",
+                         "title":  "Restore Terisolasi dan Verifikasi",
+                         "summary":  "Menghindari kerusakan tambahan saat memulihkan."
+                     },
+                     {
+                         "id":  "konsep-6",
+                         "title":  "Latihan Bencana, Bukti dan Perbaikan",
+                         "summary":  "Mengukur kemampuan pulih pada skenario realistis."
+                     },
+                     {
+                         "id":  "kasus",
+                         "title":  "Studi Kasus dan Proyek Terapan",
+                         "summary":  "Menyusun rancangan, matriks uji dan runbook berdasarkan kebutuhan serta bukti."
+                     },
+                     {
+                         "id":  "laboratorium",
+                         "title":  "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+                         "summary":  "Rencanakan pencadangan data dan konfigurasi, lalu latih pemulihan layanan dari cadangan."
+                     },
+                     {
+                         "id":  "game",
+                         "title":  "Game Terapan: Archive Rescue",
+                         "summary":  "Memanipulasi objek/state dan menyelesaikan tiga misi sesuai kriteria topik."
+                     },
+                     {
+                         "id":  "refleksi",
+                         "title":  "Refleksi, Umpan Balik, dan Transfer",
+                         "summary":  "Menilai perubahan pemahaman melalui prediksi, hasil percobaan dan batas kesimpulan."
+                     },
+                     {
+                         "id":  "evaluasi",
+                         "title":  "Rangkuman dan Evaluasi Akhir",
+                         "summary":  "Memadukan konsep, bukti, risiko tersisa dan penerimaan pada kasus baru."
+                     }
+                 ]
+}

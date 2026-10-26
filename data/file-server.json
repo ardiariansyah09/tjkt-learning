@@ -1,0 +1,68 @@
+{
+    "moduleId":  "file-server",
+    "title":  "File Server dan Berbagi Sumber Daya",
+    "version":  2,
+    "contentSource":  "assets/js/course-file-share.js",
+    "chapters":  [
+                     {
+                         "id":  "orientasi",
+                         "title":  "Orientasi, Tujuan, dan Asesmen Awal",
+                         "summary":  "Merancang share berizin dan membuktikan kolaborasi serta pemulihan file."
+                     },
+                     {
+                         "id":  "konsep-1",
+                         "title":  "File Sharing, SMB dan Peta Sumber Daya",
+                         "summary":  "Menghubungkan namespace klien dengan data di server."
+                     },
+                     {
+                         "id":  "konsep-2",
+                         "title":  "Rancangan Share, Akun dan Hak Efektif",
+                         "summary":  "Menentukan siapa boleh melakukan operasi apa."
+                     },
+                     {
+                         "id":  "konsep-3",
+                         "title":  "Konfigurasi Samba dan Uji Klien",
+                         "summary":  "Menyusun perubahan yang dapat ditinjau dan dipulihkan."
+                     },
+                     {
+                         "id":  "konsep-4",
+                         "title":  "Sesi, Lock dan Perubahan Bersamaan",
+                         "summary":  "Membedakan data server, draft klien dan koordinasi aplikasi."
+                     },
+                     {
+                         "id":  "konsep-5",
+                         "title":  "Kapasitas, Quota, Snapshot dan Backup",
+                         "summary":  "Membedakan batas penggunaan dari perlindungan data."
+                     },
+                     {
+                         "id":  "konsep-6",
+                         "title":  "Penerimaan, Audit dan Pemulihan Gangguan",
+                         "summary":  "Menutup pekerjaan dengan bukti fungsi serta hak minimum."
+                     },
+                     {
+                         "id":  "kasus",
+                         "title":  "Studi Kasus dan Proyek Terapan",
+                         "summary":  "Menyusun peta share, matriks akses dan rancangan kapasitas/pemulihan."
+                     },
+                     {
+                         "id":  "laboratorium",
+                         "title":  "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+                         "summary":  "Menguji sesi, izin, draft/lock, quota dan restore file."
+                     },
+                     {
+                         "id":  "game",
+                         "title":  "Game Puzzle: Storage Allocator",
+                         "summary":  "Menempatkan file sesuai zona/kapasitas dan memulihkan data internal."
+                     },
+                     {
+                         "id":  "refleksi",
+                         "title":  "Refleksi, Umpan Balik, dan Transfer",
+                         "summary":  "Menghubungkan prediksi, bukti akses/kolaborasi dan batas pemulihan."
+                     },
+                     {
+                         "id":  "evaluasi",
+                         "title":  "Rangkuman dan Evaluasi Akhir",
+                         "summary":  "Memadukan layanan share, hak minimum dan bukti penerimaan klien."
+                     }
+                 ]
+}

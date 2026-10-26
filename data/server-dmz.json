@@ -1,0 +1,68 @@
+{
+    "moduleId":  "server-dmz",
+    "title":  "Membangun dan Menguji Server DMZ",
+    "version":  2,
+    "contentSource":  "assets/js/course-server-dmz.js",
+    "chapters":  [
+                     {
+                         "id":  "orientasi",
+                         "title":  "Orientasi, Tujuan, dan Asesmen Awal",
+                         "summary":  "Perancangan segmen DMZ, penempatan layanan publik, aturan akses antarzona, konfigurasi, dan verifikasi isolasi pada lab."
+                     },
+                     {
+                         "id":  "konsep-1",
+                         "title":  "Zona, Trust Boundary dan Tujuan DMZ",
+                         "summary":  "Membatasi dampak layanan yang harus dijangkau publik."
+                     },
+                     {
+                         "id":  "konsep-2",
+                         "title":  "Matriks Aliran dan Default Deny",
+                         "summary":  "Mendefinisikan izin minimum sebelum implementasi."
+                     },
+                     {
+                         "id":  "konsep-3",
+                         "title":  "Routing, DNAT dan Stateful Return",
+                         "summary":  "Menelusuri alamat serta izin dua arah."
+                     },
+                     {
+                         "id":  "konsep-4",
+                         "title":  "Manajemen dan Pembatasan Host",
+                         "summary":  "Memisahkan kanal admin dari layanan publik."
+                     },
+                     {
+                         "id":  "konsep-5",
+                         "title":  "Implementasi dan Uji Isolasi",
+                         "summary":  "Menguji keberhasilan fungsi serta penolakan jalur."
+                     },
+                     {
+                         "id":  "konsep-6",
+                         "title":  "Monitoring, Backup dan Risiko Tersisa",
+                         "summary":  "Mengoperasikan DMZ sebagai layanan yang dipelihara."
+                     },
+                     {
+                         "id":  "kasus",
+                         "title":  "Studi Kasus dan Proyek Terapan",
+                         "summary":  "Menyusun rancangan, matriks uji dan runbook berdasarkan kebutuhan serta bukti."
+                     },
+                     {
+                         "id":  "laboratorium",
+                         "title":  "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+                         "summary":  "Perancangan segmen DMZ, penempatan layanan publik, aturan akses antarzona, konfigurasi, dan verifikasi isolasi pada lab."
+                     },
+                     {
+                         "id":  "game",
+                         "title":  "Game Terapan: DMZ Architect",
+                         "summary":  "Memanipulasi objek/state dan menyelesaikan tiga misi sesuai kriteria topik."
+                     },
+                     {
+                         "id":  "refleksi",
+                         "title":  "Refleksi, Umpan Balik, dan Transfer",
+                         "summary":  "Menilai perubahan pemahaman melalui prediksi, hasil percobaan dan batas kesimpulan."
+                     },
+                     {
+                         "id":  "evaluasi",
+                         "title":  "Rangkuman dan Evaluasi Akhir",
+                         "summary":  "Memadukan konsep, bukti, risiko tersisa dan penerimaan pada kasus baru."
+                     }
+                 ]
+}

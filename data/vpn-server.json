@@ -1,0 +1,68 @@
+{
+    "moduleId":  "vpn-server",
+    "title":  "VPN dan Akses Jarak Jauh Aman",
+    "version":  2,
+    "contentSource":  "assets/js/course-vpn.js",
+    "chapters":  [
+                     {
+                         "id":  "orientasi",
+                         "title":  "Orientasi, Tujuan, dan Asesmen Awal",
+                         "summary":  "Merancang VPN berizin dan membuktikan akses sesuai cakupan jalur."
+                     },
+                     {
+                         "id":  "konsep-1",
+                         "title":  "Tunnel, Remote Access dan Batas Perlindungan",
+                         "summary":  "Memetakan lalu lintas yang dilindungi serta kewenangan yang diperlukan."
+                     },
+                     {
+                         "id":  "konsep-2",
+                         "title":  "Identitas Peer, Endpoint dan Pengelolaan Key",
+                         "summary":  "Memastikan tunnel dibentuk dengan peer yang tepat."
+                     },
+                     {
+                         "id":  "konsep-3",
+                         "title":  "Routing OS, AllowedIPs dan Firewall",
+                         "summary":  "Memisahkan pemilihan interface, peer dan izin layanan."
+                     },
+                     {
+                         "id":  "konsep-4",
+                         "title":  "Forwarding, Rute Balik dan Overlap Subnet",
+                         "summary":  "Membuktikan alur request serta balasan sampai tujuan."
+                     },
+                     {
+                         "id":  "konsep-5",
+                         "title":  "Split/Full, DNS, IPv6 dan Kondisi Tunnel Down",
+                         "summary":  "Menguji perlindungan sesuai matriks kebijakan."
+                     },
+                     {
+                         "id":  "konsep-6",
+                         "title":  "Implementasi, Diagnosis dan Pencabutan Akses",
+                         "summary":  "Menyusun operasi berizin dengan bukti positif/negatif."
+                     },
+                     {
+                         "id":  "kasus",
+                         "title":  "Studi Kasus dan Proyek Terapan",
+                         "summary":  "Menyusun topologi, peer/rute dan matriks akses serta pencabutan."
+                     },
+                     {
+                         "id":  "laboratorium",
+                         "title":  "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+                         "summary":  "Menguji handshake, jalur balik, overlap dan egress."
+                     },
+                     {
+                         "id":  "game",
+                         "title":  "Game Kebijakan: Tunnel Switchboard",
+                         "summary":  "Membangun matriks jalur dan menguji fail-closed saat tunnel terputus."
+                     },
+                     {
+                         "id":  "refleksi",
+                         "title":  "Refleksi, Umpan Balik, dan Transfer",
+                         "summary":  "Menghubungkan prediksi, bukti akses dan batas perlindungan tunnel."
+                     },
+                     {
+                         "id":  "evaluasi",
+                         "title":  "Rangkuman dan Evaluasi Akhir",
+                         "summary":  "Memadukan peer, routing, kebijakan dan penerimaan layanan VPN."
+                     }
+                 ]
+}
