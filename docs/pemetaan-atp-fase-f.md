@@ -25,7 +25,7 @@ Total XI 576 JP; XII 180 JP. Dokumen tidak memberikan pembagian semester atau JP
 
 ## Dampak terhadap katalog
 
-Katalog berisi 53 entri: Fase E 16, XI 30, XII 7. Sebanyak 26 modul sudah terbit; entri lain tetap **Segera Hadir**. Penambahan/pemecahan entri tidak menyatakan materi pembelajaran baru sudah selesai dibuat.
+Katalog berisi 53 entri: Fase E 16, XI 30, XII 7. Sebanyak 28 modul sudah terbit; entri lain tetap **Segera Hadir**. Penambahan/pemecahan entri tidak menyatakan materi pembelajaran baru sudah selesai dibuat.
 
 ID dan URL modul yang sudah terbit dipertahankan. `proxy-load-balancing` menjadi entri Proxy Server dengan load balancing dipisahkan; `ids-hardening` menjadi Host Hardening dan IDS/IPS dipisahkan sebagai pengayaan. Kedua ID tersebut sebelumnya masih berupa rencana, sehingga tidak ada materi atau progres terbit yang dipindahkan. VPN XI tidak lagi mensyaratkan autentikasi/kriptografi XII; dasar akun/hak akses serta jaringan menjadi prasyaratnya. VoIP tidak dikunci oleh manajemen bandwidth yang dipelajari pada elemen konfigurasi berikutnya.
 

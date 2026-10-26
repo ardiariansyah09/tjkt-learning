@@ -20,6 +20,9 @@ foreach($module in $modules | Where-Object status -eq 'published'){
  $file=Join-Path $root ($module.path+'index.html')
  if(!(Test-Path -LiteralPath $file)){throw "Missing page: $file"}
  $html=Get-Content -LiteralPath $file -Raw -Encoding UTF8
+ foreach($asset in @('tjkt-certificate.css','tjkt-certificate.js','module-shell.js')) {
+  if($html -notmatch [regex]::Escape($asset)){throw "Missing completion asset $asset in $($module.id)"}
+ }
  foreach($class in $required){if($html -notmatch ('class="[^"]*\b'+$class+'\b')){throw "Missing $class in $($module.id)"}}
  if($html -notmatch 'data-standard-shell="1"'){throw "Nonstandard module: $($module.id)"}
  $styles=@([regex]::Matches($html,'<link[^>]*href="([^"]+)"') | ForEach-Object {$_.Groups[1].Value})

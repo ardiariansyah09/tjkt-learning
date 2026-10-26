@@ -16,8 +16,8 @@
   <link rel="stylesheet" href="../../../assets/css/client-server-simulator.css">
   <link rel="stylesheet" href="../../../assets/css/intro-sticky-navigation.css">
   <link rel="stylesheet" href="../../../assets/css/network-arcade-game.css?v=21">
-  <link rel="stylesheet" href="../../../assets/css/tjkt-certificate.css?v=1">
-  <link rel="stylesheet" href="../../../assets/css/module-standard.css?v=4">
+  <link rel="stylesheet" href="../../../assets/css/tjkt-certificate.css?v=3">
+  <link rel="stylesheet" href="../../../assets/css/module-standard.css?v=5">
 </head>
 <body class="module-page module-standard intro-module" data-module-id="pengenalan-jaringan" data-standard-shell="1">
   <a class="skip-link" href="#mainContent">Lewati ke materi</a>
@@ -48,7 +48,7 @@
     </main>
   </div>
   <section id="certificate" class="cert"></section>
-  <script src="../../../assets/js/tjkt-certificate.js?v=2"></script>
+  <script src="../../../assets/js/tjkt-certificate.js?v=3"></script>
 <script src="../../../assets/js/intro-deep-content.js?v=2"></script>
 <script src="../../../assets/js/network-arcade-game.js?v=21"></script>
 <script>
@@ -76,7 +76,7 @@ else if(current===7){gameStep=0;gameScore=0;drawGame(c)}
 else{startQuiz(c)} }
 function drawGame(c){$('check').hidden=true;c.replaceChildren();import('../../../assets/js/action-game.js?v=1').then(({mountActionGame})=>{if(current===7&&c.isConnected)mountActionGame(c,{moduleId:'pengenalan-jaringan',mode:'2d',onComplete:score=>complete(score)});});}
 function startQuiz(c){quiz=bank.map((q,i)=>({q,i})).sort(()=>Math.random()-.5).slice(0,10);quizChoices={};c.append(el('p','Pilih satu jawaban pada setiap soal. Soal diacak saat halaman dibuka ulang.'));quiz.forEach(({q},n)=>{let section=el('section');section.append(el('h3',`${n+1}. ${q[0]}`),makeOptions(q[1],i=>quizChoices[n]=i));c.append(section)});$('check').onclick=()=>{if(Object.keys(quizChoices).length!==quiz.length){$('status').textContent='Jawab semua soal sebelum mengirim.';return}const correct=quiz.filter(({q},i)=>quizChoices[i]===q[2]).length;complete(correct*10)};if(passed(8))showCertificateForm()}
-function showCertificateForm(){const c=$('content');if(c.querySelector('#certName'))return;let box=el('section');box.append(el('h2','🏅 Sertifikat Penyelesaian'),el('p','Masukkan nama lengkap. Sertifikat mandiri ini tidak memverifikasi identitas.'));let inp=el('input');inp.id='certName';inp.type='text';inp.maxLength=70;inp.placeholder='Nama lengkap';box.append(inp);let btn=el('button','Cetak / Simpan PDF','btn');btn.onclick=()=>{let name=inp.value.trim();if(name.length<3){$('status').textContent='Masukkan nama minimal 3 karakter.';return}const cert=$('certificate');window.TJKTCertificate.render(cert,{name,module:'Pengenalan Jaringan Komputer',score:state.scores.posttest});window.print()};box.append(btn);c.append(box)}
+function showCertificateForm(){window.TJKTCertificateFlow?.refresh();}
 window.addEventListener('tjkt:client-server-graded',()=>{drawNav();clientServerNotice();$('next').disabled=!passed(current)||current===lessons.length-1;});$('next').onclick=()=>{if(current<lessons.length-1&&passed(current)){current++;render()}};$('reset').onclick=()=>{if(confirm('Hapus seluruh progres modul Pengenalan Jaringan di browser ini?')&&prompt('Ketik RESET untuk konfirmasi:')==='RESET'){localStorage.removeItem(KEY);localStorage.removeItem('tjkt:client-server-sim:v1');location.reload()}};render();
 </script>
 <script src="../../../assets/js/intro-upgrade.js?v=action1"></script>
@@ -84,6 +84,6 @@ window.addEventListener('tjkt:client-server-graded',()=>{drawNav();clientServerN
 <script src="../../../assets/js/network-builder-assessment.js"></script>
 <script defer src="../../../assets/js/client-server-simulator.js"></script>
 <script src="../../../assets/js/intro-sticky-navigation.js"></script>
-  <script type="module" src="../../../assets/js/module-shell.js?v=4"></script>
+  <script type="module" src="../../../assets/js/module-shell.js?v=15"></script>
 </body>
 </html>

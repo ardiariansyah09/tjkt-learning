@@ -60,7 +60,33 @@
                                                                  "voip":  {
                                                                               "callVectors":  10,
                                                                               "bufferLevels":  3
-                                                                          }
+                                                                          },
+                                                                 "fiber":  {
+                                                                               "opticalVectors":  8,
+                                                                               "trays":  3
+                                                                           },
+                                                                 "installation":  {
+                                                                                      "integrationVectors":  8,
+                                                                                      "chassis":  3
+                                                                                  },
+                                                                 "replacement":  {
+                                                                                     "migrationVectors":  8,
+                                                                                     "rooms":  3,
+                                                                                     "solutionLengths":  [
+                                                                                                             12,
+                                                                                                             12,
+                                                                                                             12
+                                                                                                         ]
+                                                                                 },
+                                                                 "staticRouting":  {
+                                                                                       "routingVectors":  12,
+                                                                                       "ttlLevels":  3,
+                                                                                       "solutionLengths":  [
+                                                                                                               3,
+                                                                                                               4,
+                                                                                                               7
+                                                                                                           ]
+                                                                                   }
                                                              }
                                               }
                                    },
@@ -129,7 +155,33 @@
                                                                  "voip":  {
                                                                               "callVectors":  10,
                                                                               "bufferLevels":  3
-                                                                          }
+                                                                          },
+                                                                 "fiber":  {
+                                                                               "opticalVectors":  8,
+                                                                               "trays":  3
+                                                                           },
+                                                                 "installation":  {
+                                                                                      "integrationVectors":  8,
+                                                                                      "chassis":  3
+                                                                                  },
+                                                                 "replacement":  {
+                                                                                     "migrationVectors":  8,
+                                                                                     "rooms":  3,
+                                                                                     "solutionLengths":  [
+                                                                                                             12,
+                                                                                                             12,
+                                                                                                             12
+                                                                                                         ]
+                                                                                 },
+                                                                 "staticRouting":  {
+                                                                                       "routingVectors":  12,
+                                                                                       "ttlLevels":  3,
+                                                                                       "solutionLengths":  [
+                                                                                                               3,
+                                                                                                               4,
+                                                                                                               7
+                                                                                                           ]
+                                                                                   }
                                                              }
                                               }
                                    },
@@ -198,7 +250,33 @@
                                                                  "voip":  {
                                                                               "callVectors":  10,
                                                                               "bufferLevels":  3
-                                                                          }
+                                                                          },
+                                                                 "fiber":  {
+                                                                               "opticalVectors":  8,
+                                                                               "trays":  3
+                                                                           },
+                                                                 "installation":  {
+                                                                                      "integrationVectors":  8,
+                                                                                      "chassis":  3
+                                                                                  },
+                                                                 "replacement":  {
+                                                                                     "migrationVectors":  8,
+                                                                                     "rooms":  3,
+                                                                                     "solutionLengths":  [
+                                                                                                             12,
+                                                                                                             12,
+                                                                                                             12
+                                                                                                         ]
+                                                                                 },
+                                                                 "staticRouting":  {
+                                                                                       "routingVectors":  12,
+                                                                                       "ttlLevels":  3,
+                                                                                       "solutionLengths":  [
+                                                                                                               3,
+                                                                                                               4,
+                                                                                                               7
+                                                                                                           ]
+                                                                                   }
                                                              }
                                               }
                                    },
@@ -267,7 +345,33 @@
                                                                  "voip":  {
                                                                               "callVectors":  10,
                                                                               "bufferLevels":  3
-                                                                          }
+                                                                          },
+                                                                 "fiber":  {
+                                                                               "opticalVectors":  8,
+                                                                               "trays":  3
+                                                                           },
+                                                                 "installation":  {
+                                                                                      "integrationVectors":  8,
+                                                                                      "chassis":  3
+                                                                                  },
+                                                                 "replacement":  {
+                                                                                     "migrationVectors":  8,
+                                                                                     "rooms":  3,
+                                                                                     "solutionLengths":  [
+                                                                                                             12,
+                                                                                                             12,
+                                                                                                             12
+                                                                                                         ]
+                                                                                 },
+                                                                 "staticRouting":  {
+                                                                                       "routingVectors":  12,
+                                                                                       "ttlLevels":  3,
+                                                                                       "solutionLengths":  [
+                                                                                                               3,
+                                                                                                               4,
+                                                                                                               7
+                                                                                                           ]
+                                                                                   }
                                                              }
                                               }
                                    },
@@ -333,7 +437,33 @@
                                                                  "voip":  {
                                                                               "callVectors":  10,
                                                                               "bufferLevels":  3
-                                                                          }
+                                                                          },
+                                                                 "fiber":  {
+                                                                               "opticalVectors":  8,
+                                                                               "trays":  3
+                                                                           },
+                                                                 "installation":  {
+                                                                                      "integrationVectors":  8,
+                                                                                      "chassis":  3
+                                                                                  },
+                                                                 "replacement":  {
+                                                                                     "migrationVectors":  8,
+                                                                                     "rooms":  3,
+                                                                                     "solutionLengths":  [
+                                                                                                             12,
+                                                                                                             12,
+                                                                                                             12
+                                                                                                         ]
+                                                                                 },
+                                                                 "staticRouting":  {
+                                                                                       "routingVectors":  12,
+                                                                                       "ttlLevels":  3,
+                                                                                       "solutionLengths":  [
+                                                                                                               3,
+                                                                                                               4,
+                                                                                                               7
+                                                                                                           ]
+                                                                                   }
                                                              }
                                               }
                                    },
@@ -399,7 +529,33 @@
                                                                  "voip":  {
                                                                               "callVectors":  10,
                                                                               "bufferLevels":  3
-                                                                          }
+                                                                          },
+                                                                 "fiber":  {
+                                                                               "opticalVectors":  8,
+                                                                               "trays":  3
+                                                                           },
+                                                                 "installation":  {
+                                                                                      "integrationVectors":  8,
+                                                                                      "chassis":  3
+                                                                                  },
+                                                                 "replacement":  {
+                                                                                     "migrationVectors":  8,
+                                                                                     "rooms":  3,
+                                                                                     "solutionLengths":  [
+                                                                                                             12,
+                                                                                                             12,
+                                                                                                             12
+                                                                                                         ]
+                                                                                 },
+                                                                 "staticRouting":  {
+                                                                                       "routingVectors":  12,
+                                                                                       "ttlLevels":  3,
+                                                                                       "solutionLengths":  [
+                                                                                                               3,
+                                                                                                               4,
+                                                                                                               7
+                                                                                                           ]
+                                                                                   }
                                                              }
                                               }
                                    },
@@ -465,7 +621,33 @@
                                                                  "voip":  {
                                                                               "callVectors":  10,
                                                                               "bufferLevels":  3
-                                                                          }
+                                                                          },
+                                                                 "fiber":  {
+                                                                               "opticalVectors":  8,
+                                                                               "trays":  3
+                                                                           },
+                                                                 "installation":  {
+                                                                                      "integrationVectors":  8,
+                                                                                      "chassis":  3
+                                                                                  },
+                                                                 "replacement":  {
+                                                                                     "migrationVectors":  8,
+                                                                                     "rooms":  3,
+                                                                                     "solutionLengths":  [
+                                                                                                             12,
+                                                                                                             12,
+                                                                                                             12
+                                                                                                         ]
+                                                                                 },
+                                                                 "staticRouting":  {
+                                                                                       "routingVectors":  12,
+                                                                                       "ttlLevels":  3,
+                                                                                       "solutionLengths":  [
+                                                                                                               3,
+                                                                                                               4,
+                                                                                                               7
+                                                                                                           ]
+                                                                                   }
                                                              }
                                               }
                                    },
@@ -534,7 +716,33 @@
                                                                  "voip":  {
                                                                               "callVectors":  10,
                                                                               "bufferLevels":  3
-                                                                          }
+                                                                          },
+                                                                 "fiber":  {
+                                                                               "opticalVectors":  8,
+                                                                               "trays":  3
+                                                                           },
+                                                                 "installation":  {
+                                                                                      "integrationVectors":  8,
+                                                                                      "chassis":  3
+                                                                                  },
+                                                                 "replacement":  {
+                                                                                     "migrationVectors":  8,
+                                                                                     "rooms":  3,
+                                                                                     "solutionLengths":  [
+                                                                                                             12,
+                                                                                                             12,
+                                                                                                             12
+                                                                                                         ]
+                                                                                 },
+                                                                 "staticRouting":  {
+                                                                                       "routingVectors":  12,
+                                                                                       "ttlLevels":  3,
+                                                                                       "solutionLengths":  [
+                                                                                                               3,
+                                                                                                               4,
+                                                                                                               7
+                                                                                                           ]
+                                                                                   }
                                                              }
                                               }
                                    },
@@ -599,7 +807,33 @@
                                                                  "voip":  {
                                                                               "callVectors":  10,
                                                                               "bufferLevels":  3
-                                                                          }
+                                                                          },
+                                                                 "fiber":  {
+                                                                               "opticalVectors":  8,
+                                                                               "trays":  3
+                                                                           },
+                                                                 "installation":  {
+                                                                                      "integrationVectors":  8,
+                                                                                      "chassis":  3
+                                                                                  },
+                                                                 "replacement":  {
+                                                                                     "migrationVectors":  8,
+                                                                                     "rooms":  3,
+                                                                                     "solutionLengths":  [
+                                                                                                             12,
+                                                                                                             12,
+                                                                                                             12
+                                                                                                         ]
+                                                                                 },
+                                                                 "staticRouting":  {
+                                                                                       "routingVectors":  12,
+                                                                                       "ttlLevels":  3,
+                                                                                       "solutionLengths":  [
+                                                                                                               3,
+                                                                                                               4,
+                                                                                                               7
+                                                                                                           ]
+                                                                                   }
                                                              }
                                               }
                                    },
@@ -664,7 +898,33 @@
                                                                  "voip":  {
                                                                               "callVectors":  10,
                                                                               "bufferLevels":  3
-                                                                          }
+                                                                          },
+                                                                 "fiber":  {
+                                                                               "opticalVectors":  8,
+                                                                               "trays":  3
+                                                                           },
+                                                                 "installation":  {
+                                                                                      "integrationVectors":  8,
+                                                                                      "chassis":  3
+                                                                                  },
+                                                                 "replacement":  {
+                                                                                     "migrationVectors":  8,
+                                                                                     "rooms":  3,
+                                                                                     "solutionLengths":  [
+                                                                                                             12,
+                                                                                                             12,
+                                                                                                             12
+                                                                                                         ]
+                                                                                 },
+                                                                 "staticRouting":  {
+                                                                                       "routingVectors":  12,
+                                                                                       "ttlLevels":  3,
+                                                                                       "solutionLengths":  [
+                                                                                                               3,
+                                                                                                               4,
+                                                                                                               7
+                                                                                                           ]
+                                                                                   }
                                                              }
                                               }
                                    },
@@ -730,7 +990,33 @@
                                                                  "voip":  {
                                                                               "callVectors":  10,
                                                                               "bufferLevels":  3
-                                                                          }
+                                                                          },
+                                                                 "fiber":  {
+                                                                               "opticalVectors":  8,
+                                                                               "trays":  3
+                                                                           },
+                                                                 "installation":  {
+                                                                                      "integrationVectors":  8,
+                                                                                      "chassis":  3
+                                                                                  },
+                                                                 "replacement":  {
+                                                                                     "migrationVectors":  8,
+                                                                                     "rooms":  3,
+                                                                                     "solutionLengths":  [
+                                                                                                             12,
+                                                                                                             12,
+                                                                                                             12
+                                                                                                         ]
+                                                                                 },
+                                                                 "staticRouting":  {
+                                                                                       "routingVectors":  12,
+                                                                                       "ttlLevels":  3,
+                                                                                       "solutionLengths":  [
+                                                                                                               3,
+                                                                                                               4,
+                                                                                                               7
+                                                                                                           ]
+                                                                                   }
                                                              }
                                               }
                                    },
@@ -799,7 +1085,33 @@
                                                                  "voip":  {
                                                                               "callVectors":  10,
                                                                               "bufferLevels":  3
-                                                                          }
+                                                                          },
+                                                                 "fiber":  {
+                                                                               "opticalVectors":  8,
+                                                                               "trays":  3
+                                                                           },
+                                                                 "installation":  {
+                                                                                      "integrationVectors":  8,
+                                                                                      "chassis":  3
+                                                                                  },
+                                                                 "replacement":  {
+                                                                                     "migrationVectors":  8,
+                                                                                     "rooms":  3,
+                                                                                     "solutionLengths":  [
+                                                                                                             12,
+                                                                                                             12,
+                                                                                                             12
+                                                                                                         ]
+                                                                                 },
+                                                                 "staticRouting":  {
+                                                                                       "routingVectors":  12,
+                                                                                       "ttlLevels":  3,
+                                                                                       "solutionLengths":  [
+                                                                                                               3,
+                                                                                                               4,
+                                                                                                               7
+                                                                                                           ]
+                                                                                   }
                                                              }
                                               }
                                    },
@@ -864,7 +1176,33 @@
                                                                  "voip":  {
                                                                               "callVectors":  10,
                                                                               "bufferLevels":  3
-                                                                          }
+                                                                          },
+                                                                 "fiber":  {
+                                                                               "opticalVectors":  8,
+                                                                               "trays":  3
+                                                                           },
+                                                                 "installation":  {
+                                                                                      "integrationVectors":  8,
+                                                                                      "chassis":  3
+                                                                                  },
+                                                                 "replacement":  {
+                                                                                     "migrationVectors":  8,
+                                                                                     "rooms":  3,
+                                                                                     "solutionLengths":  [
+                                                                                                             12,
+                                                                                                             12,
+                                                                                                             12
+                                                                                                         ]
+                                                                                 },
+                                                                 "staticRouting":  {
+                                                                                       "routingVectors":  12,
+                                                                                       "ttlLevels":  3,
+                                                                                       "solutionLengths":  [
+                                                                                                               3,
+                                                                                                               4,
+                                                                                                               7
+                                                                                                           ]
+                                                                                   }
                                                              }
                                               }
                                    },
@@ -933,7 +1271,33 @@
                                                                  "voip":  {
                                                                               "callVectors":  10,
                                                                               "bufferLevels":  3
-                                                                          }
+                                                                          },
+                                                                 "fiber":  {
+                                                                               "opticalVectors":  8,
+                                                                               "trays":  3
+                                                                           },
+                                                                 "installation":  {
+                                                                                      "integrationVectors":  8,
+                                                                                      "chassis":  3
+                                                                                  },
+                                                                 "replacement":  {
+                                                                                     "migrationVectors":  8,
+                                                                                     "rooms":  3,
+                                                                                     "solutionLengths":  [
+                                                                                                             12,
+                                                                                                             12,
+                                                                                                             12
+                                                                                                         ]
+                                                                                 },
+                                                                 "staticRouting":  {
+                                                                                       "routingVectors":  12,
+                                                                                       "ttlLevels":  3,
+                                                                                       "solutionLengths":  [
+                                                                                                               3,
+                                                                                                               4,
+                                                                                                               7
+                                                                                                           ]
+                                                                                   }
                                                              }
                                               }
                                    },
@@ -999,7 +1363,33 @@
                                                                  "voip":  {
                                                                               "callVectors":  10,
                                                                               "bufferLevels":  3
-                                                                          }
+                                                                          },
+                                                                 "fiber":  {
+                                                                               "opticalVectors":  8,
+                                                                               "trays":  3
+                                                                           },
+                                                                 "installation":  {
+                                                                                      "integrationVectors":  8,
+                                                                                      "chassis":  3
+                                                                                  },
+                                                                 "replacement":  {
+                                                                                     "migrationVectors":  8,
+                                                                                     "rooms":  3,
+                                                                                     "solutionLengths":  [
+                                                                                                             12,
+                                                                                                             12,
+                                                                                                             12
+                                                                                                         ]
+                                                                                 },
+                                                                 "staticRouting":  {
+                                                                                       "routingVectors":  12,
+                                                                                       "ttlLevels":  3,
+                                                                                       "solutionLengths":  [
+                                                                                                               3,
+                                                                                                               4,
+                                                                                                               7
+                                                                                                           ]
+                                                                                   }
                                                              }
                                               }
                                    },
@@ -1068,7 +1458,33 @@
                                                                  "voip":  {
                                                                               "callVectors":  10,
                                                                               "bufferLevels":  3
-                                                                          }
+                                                                          },
+                                                                 "fiber":  {
+                                                                               "opticalVectors":  8,
+                                                                               "trays":  3
+                                                                           },
+                                                                 "installation":  {
+                                                                                      "integrationVectors":  8,
+                                                                                      "chassis":  3
+                                                                                  },
+                                                                 "replacement":  {
+                                                                                     "migrationVectors":  8,
+                                                                                     "rooms":  3,
+                                                                                     "solutionLengths":  [
+                                                                                                             12,
+                                                                                                             12,
+                                                                                                             12
+                                                                                                         ]
+                                                                                 },
+                                                                 "staticRouting":  {
+                                                                                       "routingVectors":  12,
+                                                                                       "ttlLevels":  3,
+                                                                                       "solutionLengths":  [
+                                                                                                               3,
+                                                                                                               4,
+                                                                                                               7
+                                                                                                           ]
+                                                                                   }
                                                              }
                                               }
                                    },
@@ -1137,7 +1553,33 @@
                                                                  "voip":  {
                                                                               "callVectors":  10,
                                                                               "bufferLevels":  3
-                                                                          }
+                                                                          },
+                                                                 "fiber":  {
+                                                                               "opticalVectors":  8,
+                                                                               "trays":  3
+                                                                           },
+                                                                 "installation":  {
+                                                                                      "integrationVectors":  8,
+                                                                                      "chassis":  3
+                                                                                  },
+                                                                 "replacement":  {
+                                                                                     "migrationVectors":  8,
+                                                                                     "rooms":  3,
+                                                                                     "solutionLengths":  [
+                                                                                                             12,
+                                                                                                             12,
+                                                                                                             12
+                                                                                                         ]
+                                                                                 },
+                                                                 "staticRouting":  {
+                                                                                       "routingVectors":  12,
+                                                                                       "ttlLevels":  3,
+                                                                                       "solutionLengths":  [
+                                                                                                               3,
+                                                                                                               4,
+                                                                                                               7
+                                                                                                           ]
+                                                                                   }
                                                              }
                                               }
                                    },
@@ -1206,7 +1648,33 @@
                                                                  "voip":  {
                                                                               "callVectors":  10,
                                                                               "bufferLevels":  3
-                                                                          }
+                                                                          },
+                                                                 "fiber":  {
+                                                                               "opticalVectors":  8,
+                                                                               "trays":  3
+                                                                           },
+                                                                 "installation":  {
+                                                                                      "integrationVectors":  8,
+                                                                                      "chassis":  3
+                                                                                  },
+                                                                 "replacement":  {
+                                                                                     "migrationVectors":  8,
+                                                                                     "rooms":  3,
+                                                                                     "solutionLengths":  [
+                                                                                                             12,
+                                                                                                             12,
+                                                                                                             12
+                                                                                                         ]
+                                                                                 },
+                                                                 "staticRouting":  {
+                                                                                       "routingVectors":  12,
+                                                                                       "ttlLevels":  3,
+                                                                                       "solutionLengths":  [
+                                                                                                               3,
+                                                                                                               4,
+                                                                                                               7
+                                                                                                           ]
+                                                                                   }
                                                              }
                                               }
                                    },
@@ -1275,7 +1743,33 @@
                                                                  "voip":  {
                                                                               "callVectors":  10,
                                                                               "bufferLevels":  3
-                                                                          }
+                                                                          },
+                                                                 "fiber":  {
+                                                                               "opticalVectors":  8,
+                                                                               "trays":  3
+                                                                           },
+                                                                 "installation":  {
+                                                                                      "integrationVectors":  8,
+                                                                                      "chassis":  3
+                                                                                  },
+                                                                 "replacement":  {
+                                                                                     "migrationVectors":  8,
+                                                                                     "rooms":  3,
+                                                                                     "solutionLengths":  [
+                                                                                                             12,
+                                                                                                             12,
+                                                                                                             12
+                                                                                                         ]
+                                                                                 },
+                                                                 "staticRouting":  {
+                                                                                       "routingVectors":  12,
+                                                                                       "ttlLevels":  3,
+                                                                                       "solutionLengths":  [
+                                                                                                               3,
+                                                                                                               4,
+                                                                                                               7
+                                                                                                           ]
+                                                                                   }
                                                              }
                                               }
                                    },
@@ -1344,7 +1838,33 @@
                                                                  "voip":  {
                                                                               "callVectors":  10,
                                                                               "bufferLevels":  3
-                                                                          }
+                                                                          },
+                                                                 "fiber":  {
+                                                                               "opticalVectors":  8,
+                                                                               "trays":  3
+                                                                           },
+                                                                 "installation":  {
+                                                                                      "integrationVectors":  8,
+                                                                                      "chassis":  3
+                                                                                  },
+                                                                 "replacement":  {
+                                                                                     "migrationVectors":  8,
+                                                                                     "rooms":  3,
+                                                                                     "solutionLengths":  [
+                                                                                                             12,
+                                                                                                             12,
+                                                                                                             12
+                                                                                                         ]
+                                                                                 },
+                                                                 "staticRouting":  {
+                                                                                       "routingVectors":  12,
+                                                                                       "ttlLevels":  3,
+                                                                                       "solutionLengths":  [
+                                                                                                               3,
+                                                                                                               4,
+                                                                                                               7
+                                                                                                           ]
+                                                                                   }
                                                              }
                                               }
                                    },
@@ -1413,7 +1933,33 @@
                                                                  "voip":  {
                                                                               "callVectors":  10,
                                                                               "bufferLevels":  3
-                                                                          }
+                                                                          },
+                                                                 "fiber":  {
+                                                                               "opticalVectors":  8,
+                                                                               "trays":  3
+                                                                           },
+                                                                 "installation":  {
+                                                                                      "integrationVectors":  8,
+                                                                                      "chassis":  3
+                                                                                  },
+                                                                 "replacement":  {
+                                                                                     "migrationVectors":  8,
+                                                                                     "rooms":  3,
+                                                                                     "solutionLengths":  [
+                                                                                                             12,
+                                                                                                             12,
+                                                                                                             12
+                                                                                                         ]
+                                                                                 },
+                                                                 "staticRouting":  {
+                                                                                       "routingVectors":  12,
+                                                                                       "ttlLevels":  3,
+                                                                                       "solutionLengths":  [
+                                                                                                               3,
+                                                                                                               4,
+                                                                                                               7
+                                                                                                           ]
+                                                                                   }
                                                              }
                                               }
                                    },
@@ -1482,7 +2028,33 @@
                                                                  "voip":  {
                                                                               "callVectors":  10,
                                                                               "bufferLevels":  3
-                                                                          }
+                                                                          },
+                                                                 "fiber":  {
+                                                                               "opticalVectors":  8,
+                                                                               "trays":  3
+                                                                           },
+                                                                 "installation":  {
+                                                                                      "integrationVectors":  8,
+                                                                                      "chassis":  3
+                                                                                  },
+                                                                 "replacement":  {
+                                                                                     "migrationVectors":  8,
+                                                                                     "rooms":  3,
+                                                                                     "solutionLengths":  [
+                                                                                                             12,
+                                                                                                             12,
+                                                                                                             12
+                                                                                                         ]
+                                                                                 },
+                                                                 "staticRouting":  {
+                                                                                       "routingVectors":  12,
+                                                                                       "ttlLevels":  3,
+                                                                                       "solutionLengths":  [
+                                                                                                               3,
+                                                                                                               4,
+                                                                                                               7
+                                                                                                           ]
+                                                                                   }
                                                              }
                                               }
                                    },
@@ -1551,7 +2123,318 @@
                                                                  "voip":  {
                                                                               "callVectors":  10,
                                                                               "bufferLevels":  3
-                                                                          }
+                                                                          },
+                                                                 "fiber":  {
+                                                                               "opticalVectors":  8,
+                                                                               "trays":  3
+                                                                           },
+                                                                 "installation":  {
+                                                                                      "integrationVectors":  8,
+                                                                                      "chassis":  3
+                                                                                  },
+                                                                 "replacement":  {
+                                                                                     "migrationVectors":  8,
+                                                                                     "rooms":  3,
+                                                                                     "solutionLengths":  [
+                                                                                                             12,
+                                                                                                             12,
+                                                                                                             12
+                                                                                                         ]
+                                                                                 },
+                                                                 "staticRouting":  {
+                                                                                       "routingVectors":  12,
+                                                                                       "ttlLevels":  3,
+                                                                                       "solutionLengths":  [
+                                                                                                               3,
+                                                                                                               4,
+                                                                                                               7
+                                                                                                           ]
+                                                                                   }
+                                                             }
+                                              }
+                                   },
+                        "themeToggled":  true,
+                        "errors":  [
+
+                                   ]
+                    },
+                    {
+                        "id":  "fiber-optik",
+                        "stageCount":  12,
+                        "stages":  [
+                                       "Orientasi, Tujuan, dan Asesmen Awal",
+                                       "Komponen Fiber dan Kompatibilitas Link",
+                                       "SOP K3, Survei, dan Instalasi",
+                                       "Konektor, Inspeksi, dan Penyambungan",
+                                       "Anggaran Rugi, Daya Terima, dan Cadangan",
+                                       "Pengujian OPM/OLS dan Pembacaan OTDR",
+                                       "Perawatan, Perbaikan, dan Penyerahan Fiber/FTTH",
+                                       "Studi Kasus dan Proyek Terapan",
+                                       "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+                                       "Game Splice Tray Puzzle",
+                                       "Refleksi, Umpan Balik, dan Transfer",
+                                       "Rangkuman dan Evaluasi Akhir"
+                                   ],
+                        "studio":  {
+                                       "core":  {
+                                                    "representationVectors":  5,
+                                                    "invalidVectors":  7,
+                                                    "scopeVectors":  3,
+                                                    "otherModels":  4
+                                                },
+                                       "ui":  {
+                                                  "globalStudioRemoved":  true,
+                                                  "contextualActivities":  true,
+                                                  "models":  {
+                                                                 "vectors":  10,
+                                                                 "requirements":  {
+                                                                                      "vectors":  8,
+                                                                                      "contracts":  3
+                                                                                  },
+                                                                 "layout":  {
+                                                                                "vectors":  5,
+                                                                                "levelLengths":  [
+                                                                                                     12,
+                                                                                                     12,
+                                                                                                     12
+                                                                                                 ]
+                                                                            },
+                                                                 "addressPlan":  {
+                                                                                     "vectors":  13,
+                                                                                     "levels":  3
+                                                                                 },
+                                                                 "cabling":  {
+                                                                                 "vectors":  9
+                                                                             },
+                                                                 "wlan":  {
+                                                                              "vectors":  6,
+                                                                              "levels":  3
+                                                                          },
+                                                                 "maintenance":  {
+                                                                                     "incidents":  3,
+                                                                                     "verificationVectors":  12,
+                                                                                     "boards":  3
+                                                                                 },
+                                                                 "voip":  {
+                                                                              "callVectors":  10,
+                                                                              "bufferLevels":  3
+                                                                          },
+                                                                 "fiber":  {
+                                                                               "opticalVectors":  8,
+                                                                               "trays":  3
+                                                                           },
+                                                                 "installation":  {
+                                                                                      "integrationVectors":  8,
+                                                                                      "chassis":  3
+                                                                                  },
+                                                                 "replacement":  {
+                                                                                     "migrationVectors":  8,
+                                                                                     "rooms":  3,
+                                                                                     "solutionLengths":  [
+                                                                                                             12,
+                                                                                                             12,
+                                                                                                             12
+                                                                                                         ]
+                                                                                 },
+                                                                 "staticRouting":  {
+                                                                                       "routingVectors":  12,
+                                                                                       "ttlLevels":  3,
+                                                                                       "solutionLengths":  [
+                                                                                                               3,
+                                                                                                               4,
+                                                                                                               7
+                                                                                                           ]
+                                                                                   }
+                                                             }
+                                              }
+                                   },
+                        "themeToggled":  true,
+                        "errors":  [
+
+                                   ]
+                    },
+                    {
+                        "id":  "pemasangan-perangkat-jaringan",
+                        "stageCount":  12,
+                        "stages":  [
+                                       "Orientasi, Tujuan, dan Asesmen Awal",
+                                       "Kebutuhan Integrasi dan Kesiapan Pemasangan",
+                                       "Pemasangan Fisik dan Pemetaan Port",
+                                       "Konfigurasi Awal dan Akses Pengelolaan",
+                                       "Integrasi Access, Trunk, dan Uplink",
+                                       "Penerapan, Penyimpanan, dan Restart",
+                                       "Uji Penerimaan dan Serah Terima",
+                                       "Studi Kasus dan Proyek Terapan",
+                                       "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+                                       "Game Port Commissioning Challenge",
+                                       "Refleksi, Umpan Balik, dan Transfer",
+                                       "Rangkuman dan Evaluasi Akhir"
+                                   ],
+                        "studio":  {
+                                       "core":  {
+                                                    "representationVectors":  5,
+                                                    "invalidVectors":  7,
+                                                    "scopeVectors":  3,
+                                                    "otherModels":  4
+                                                },
+                                       "ui":  {
+                                                  "globalStudioRemoved":  true,
+                                                  "contextualActivities":  true,
+                                                  "models":  {
+                                                                 "vectors":  10,
+                                                                 "requirements":  {
+                                                                                      "vectors":  8,
+                                                                                      "contracts":  3
+                                                                                  },
+                                                                 "layout":  {
+                                                                                "vectors":  5,
+                                                                                "levelLengths":  [
+                                                                                                     12,
+                                                                                                     12,
+                                                                                                     12
+                                                                                                 ]
+                                                                            },
+                                                                 "addressPlan":  {
+                                                                                     "vectors":  13,
+                                                                                     "levels":  3
+                                                                                 },
+                                                                 "cabling":  {
+                                                                                 "vectors":  9
+                                                                             },
+                                                                 "wlan":  {
+                                                                              "vectors":  6,
+                                                                              "levels":  3
+                                                                          },
+                                                                 "maintenance":  {
+                                                                                     "incidents":  3,
+                                                                                     "verificationVectors":  12,
+                                                                                     "boards":  3
+                                                                                 },
+                                                                 "voip":  {
+                                                                              "callVectors":  10,
+                                                                              "bufferLevels":  3
+                                                                          },
+                                                                 "fiber":  {
+                                                                               "opticalVectors":  8,
+                                                                               "trays":  3
+                                                                           },
+                                                                 "installation":  {
+                                                                                      "integrationVectors":  8,
+                                                                                      "chassis":  3
+                                                                                  },
+                                                                 "replacement":  {
+                                                                                     "migrationVectors":  8,
+                                                                                     "rooms":  3,
+                                                                                     "solutionLengths":  [
+                                                                                                             12,
+                                                                                                             12,
+                                                                                                             12
+                                                                                                         ]
+                                                                                 },
+                                                                 "staticRouting":  {
+                                                                                       "routingVectors":  12,
+                                                                                       "ttlLevels":  3,
+                                                                                       "solutionLengths":  [
+                                                                                                               3,
+                                                                                                               4,
+                                                                                                               7
+                                                                                                           ]
+                                                                                   }
+                                                             }
+                                              }
+                                   },
+                        "themeToggled":  true,
+                        "errors":  [
+
+                                   ]
+                    },
+                    {
+                        "id":  "penggantian-perangkat-jaringan",
+                        "stageCount":  12,
+                        "stages":  [
+                                       "Orientasi, Tujuan, dan Asesmen Awal",
+                                       "Alasan Penggantian dan Dampak Layanan",
+                                       "Kompatibilitas dan Pemetaan Lama–Baru",
+                                       "Cadangan Teruji dan Staging Terisolasi",
+                                       "Jendela Migrasi dan Cutover Terkendali",
+                                       "Verifikasi, Perbaikan Terbatas, dan Rollback",
+                                       "Penerimaan dan Pengelolaan Perangkat Lama",
+                                       "Studi Kasus dan Proyek Terapan",
+                                       "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+                                       "Game Rack Swap Logistics",
+                                       "Refleksi, Umpan Balik, dan Transfer",
+                                       "Rangkuman dan Evaluasi Akhir"
+                                   ],
+                        "studio":  {
+                                       "core":  {
+                                                    "representationVectors":  5,
+                                                    "invalidVectors":  7,
+                                                    "scopeVectors":  3,
+                                                    "otherModels":  4
+                                                },
+                                       "ui":  {
+                                                  "globalStudioRemoved":  true,
+                                                  "contextualActivities":  true,
+                                                  "models":  {
+                                                                 "vectors":  10,
+                                                                 "requirements":  {
+                                                                                      "vectors":  8,
+                                                                                      "contracts":  3
+                                                                                  },
+                                                                 "layout":  {
+                                                                                "vectors":  5,
+                                                                                "levelLengths":  [
+                                                                                                     12,
+                                                                                                     12,
+                                                                                                     12
+                                                                                                 ]
+                                                                            },
+                                                                 "addressPlan":  {
+                                                                                     "vectors":  13,
+                                                                                     "levels":  3
+                                                                                 },
+                                                                 "cabling":  {
+                                                                                 "vectors":  9
+                                                                             },
+                                                                 "wlan":  {
+                                                                              "vectors":  6,
+                                                                              "levels":  3
+                                                                          },
+                                                                 "maintenance":  {
+                                                                                     "incidents":  3,
+                                                                                     "verificationVectors":  12,
+                                                                                     "boards":  3
+                                                                                 },
+                                                                 "voip":  {
+                                                                              "callVectors":  10,
+                                                                              "bufferLevels":  3
+                                                                          },
+                                                                 "fiber":  {
+                                                                               "opticalVectors":  8,
+                                                                               "trays":  3
+                                                                           },
+                                                                 "installation":  {
+                                                                                      "integrationVectors":  8,
+                                                                                      "chassis":  3
+                                                                                  },
+                                                                 "replacement":  {
+                                                                                     "migrationVectors":  8,
+                                                                                     "rooms":  3,
+                                                                                     "solutionLengths":  [
+                                                                                                             12,
+                                                                                                             12,
+                                                                                                             12
+                                                                                                         ]
+                                                                                 },
+                                                                 "staticRouting":  {
+                                                                                       "routingVectors":  12,
+                                                                                       "ttlLevels":  3,
+                                                                                       "solutionLengths":  [
+                                                                                                               3,
+                                                                                                               4,
+                                                                                                               7
+                                                                                                           ]
+                                                                                   }
                                                              }
                                               }
                                    },
@@ -1617,7 +2500,128 @@
                                                                  "voip":  {
                                                                               "callVectors":  10,
                                                                               "bufferLevels":  3
-                                                                          }
+                                                                          },
+                                                                 "fiber":  {
+                                                                               "opticalVectors":  8,
+                                                                               "trays":  3
+                                                                           },
+                                                                 "installation":  {
+                                                                                      "integrationVectors":  8,
+                                                                                      "chassis":  3
+                                                                                  },
+                                                                 "replacement":  {
+                                                                                     "migrationVectors":  8,
+                                                                                     "rooms":  3,
+                                                                                     "solutionLengths":  [
+                                                                                                             12,
+                                                                                                             12,
+                                                                                                             12
+                                                                                                         ]
+                                                                                 },
+                                                                 "staticRouting":  {
+                                                                                       "routingVectors":  12,
+                                                                                       "ttlLevels":  3,
+                                                                                       "solutionLengths":  [
+                                                                                                               3,
+                                                                                                               4,
+                                                                                                               7
+                                                                                                           ]
+                                                                                   }
+                                                             }
+                                              }
+                                   },
+                        "themeToggled":  true,
+                        "errors":  [
+
+                                   ]
+                    },
+                    {
+                        "id":  "routing-ipv4",
+                        "stageCount":  12,
+                        "stages":  [
+                                       "Orientasi, Tujuan, dan Asesmen Awal",
+                                       "Jaringan Terhubung dan Fungsi Forwarding",
+                                       "Rute Statis, Next-Hop, dan Default Route",
+                                       "Longest-Prefix Match dan Seleksi Rute",
+                                       "Jalur Balik, TTL, dan Loop",
+                                       "Konfigurasi Perangkat dan Router Berbasis Server",
+                                       "Pengujian, Diagnosis, dan Dokumentasi Rute",
+                                       "Studi Kasus dan Proyek Terapan",
+                                       "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+                                       "Game TTL Route Runner",
+                                       "Refleksi, Umpan Balik, dan Transfer",
+                                       "Rangkuman dan Evaluasi Akhir"
+                                   ],
+                        "studio":  {
+                                       "core":  {
+                                                    "representationVectors":  5,
+                                                    "invalidVectors":  7,
+                                                    "scopeVectors":  3,
+                                                    "otherModels":  4
+                                                },
+                                       "ui":  {
+                                                  "globalStudioRemoved":  true,
+                                                  "contextualActivities":  true,
+                                                  "models":  {
+                                                                 "vectors":  10,
+                                                                 "requirements":  {
+                                                                                      "vectors":  8,
+                                                                                      "contracts":  3
+                                                                                  },
+                                                                 "layout":  {
+                                                                                "vectors":  5,
+                                                                                "levelLengths":  [
+                                                                                                     12,
+                                                                                                     12,
+                                                                                                     12
+                                                                                                 ]
+                                                                            },
+                                                                 "addressPlan":  {
+                                                                                     "vectors":  13,
+                                                                                     "levels":  3
+                                                                                 },
+                                                                 "cabling":  {
+                                                                                 "vectors":  9
+                                                                             },
+                                                                 "wlan":  {
+                                                                              "vectors":  6,
+                                                                              "levels":  3
+                                                                          },
+                                                                 "maintenance":  {
+                                                                                     "incidents":  3,
+                                                                                     "verificationVectors":  12,
+                                                                                     "boards":  3
+                                                                                 },
+                                                                 "voip":  {
+                                                                              "callVectors":  10,
+                                                                              "bufferLevels":  3
+                                                                          },
+                                                                 "fiber":  {
+                                                                               "opticalVectors":  8,
+                                                                               "trays":  3
+                                                                           },
+                                                                 "installation":  {
+                                                                                      "integrationVectors":  8,
+                                                                                      "chassis":  3
+                                                                                  },
+                                                                 "replacement":  {
+                                                                                     "migrationVectors":  8,
+                                                                                     "rooms":  3,
+                                                                                     "solutionLengths":  [
+                                                                                                             12,
+                                                                                                             12,
+                                                                                                             12
+                                                                                                         ]
+                                                                                 },
+                                                                 "staticRouting":  {
+                                                                                       "routingVectors":  12,
+                                                                                       "ttlLevels":  3,
+                                                                                       "solutionLengths":  [
+                                                                                                               3,
+                                                                                                               4,
+                                                                                                               7
+                                                                                                           ]
+                                                                                   }
                                                              }
                                               }
                                    },
@@ -1627,7 +2631,7 @@
                                    ]
                     }
                 ],
-    "checkedAt":  "2026-10-22T06:45:44.5491776Z",
+    "checkedAt":  "2026-10-24T06:27:20.2850227Z",
     "styleParity":  true,
     "viewports":  [
                       "1280x900",

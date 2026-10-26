@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Pratinjau Sertifikat TJKT</title>
+  <link rel="stylesheet" href="../assets/css/tjkt-certificate.css?v=3">
+  <style>
+    body{margin:0;padding:24px;background:#eaf1f7;color:#071c3d;font:15px/1.6 Arial,sans-serif}header{max-width:1123px;margin:0 auto 20px}h1{font-size:24px;margin:0 0 6px}p{margin:6px 0}.controls{display:flex;gap:12px;flex-wrap:wrap;margin:16px 0}label{display:grid;gap:4px;flex:1;min-width:210px}input,select,button{font:inherit;padding:10px;border:1px solid #a5bfd0;border-radius:7px}button{background:#075a8c;color:#fff;cursor:pointer}.preview-note{font-size:13px;color:#42576b}body .tjkt-certificate-paper{margin:0 auto!important}#previewStatus{min-height:24px}
+  </style>
+</head>
+<body>
+  <header><h1>Pratinjau desain sertifikat</h1><p>Data contoh untuk meninjau desain. Sertifikat siswa tetap dibuat melalui modul yang telah dituntaskan.</p>
+    <div class="controls"><label>Nama contoh<input id="previewName" value="Nama Peserta" maxlength="70"></label><label>Modul contoh<select id="previewModule"><option>Pengenalan Jaringan Komputer</option><option>Instalasi, Pengujian, dan Perbaikan Fiber Optik</option><option>Perawatan dan Perbaikan Jaringan Kabel dan Nirkabel</option></select></label><button id="previewPrint" type="button">Cetak / Simpan PDF</button></div>
+    <p class="preview-note">A4 mendatar. Pada ponsel, geser ke samping untuk meninjau lembar berukuran penuh. Logo dipertahankan utuh dan proporsional.</p><p id="previewStatus" role="status"></p>
+  </header>
+  <section id="previewPaper" data-preview="true"></section>
+  <script src="../assets/js/tjkt-certificate.js?v=3"></script>
+  <script>
+    const paper=document.getElementById('previewPaper'),nameInput=document.getElementById('previewName'),moduleInput=document.getElementById('previewModule');
+    async function update(){TJKTCertificate.render(paper,{name:nameInput.value||'Nama Peserta',module:moduleInput.value,score:90});try{await TJKTCertificate.ready(paper);document.getElementById('previewStatus').textContent='Logo dan desain siap ditinjau.';}catch{document.getElementById('previewStatus').textContent='Logo belum berhasil dimuat; periksa berkas aset.';}}
+    nameInput.addEventListener('input',update);moduleInput.addEventListener('change',update);document.getElementById('previewPrint').addEventListener('click',()=>TJKTCertificate.print());update();
+  </script>
+</body>
+</html>

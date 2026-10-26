@@ -66,9 +66,9 @@ try {
  assert(document.querySelector("[data-module-id=switching-vlan]").closest(".module-group").dataset.classLevel==="XI","VLAN class");
  assert(document.querySelector("[data-module-id=mail-server]").dataset.curriculumRole==="pengayaan","Mail enrichment");
  assert(document.querySelector("[data-module-id=virtualisasi-server]").dataset.curriculumRole==="pendukung","Virtualization support");
- assert(cards.filter(c=>c.classList.contains("is-published")).length===26,"Published status preservation");
+ assert(cards.filter(c=>c.classList.contains("is-published")).length===28,"Published status preservation");
  const ids=[...document.querySelectorAll("[id]")].map(e=>e.id);assert(ids.length===new Set(ids).size,"Duplicate IDs");
- return {cards:cards.length,phaseF:f.length,headings,allocations:5,published:26};
+ return {cards:cards.length,phaseF:f.length,headings,allocations:5,published:28};
  })()'
  foreach($width in @(1280,390)){
   Call-CDP 'Emulation.setDeviceMetricsOverride' @{width=$width;height=900;deviceScaleFactor=1;mobile=($width -lt 600)} | Out-Null

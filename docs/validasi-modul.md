@@ -1,15 +1,22 @@
 # Standar dan validasi modul
 
-Seluruh 26 modul terbit menggunakan kerangka navigasi yang sama: header, tema, sidebar fase/judul, progres, daftar tahap, reset, breadcrumb, materi, evaluasi, dan tombol sebelumnya/berikutnya. Stylesheet `module-standard.css` dimuat terakhir. Keseragaman berlaku pada kerangka dan kontrol, bukan pada bentuk aktivitas setiap materi.
+Seluruh 38 modul terbit menggunakan kerangka navigasi yang sama: header, tema, sidebar fase/judul, progres, daftar tahap, reset, breadcrumb, materi, evaluasi, dan tombol sebelumnya/berikutnya. Stylesheet `module-standard.css` dimuat terakhir. Keseragaman berlaku pada kerangka dan kontrol, bukan pada bentuk aktivitas setiap materi.
 
 ## Aktivitas mengikuti karakter materi
 
+Penambahan terbaru: DHCP, DNS, dan Remote Server XI mempunyai laboratorium lease/cache/SSH berlapis serta game Service Dispatch tiga level. Cakupan katalog kini 38 modul/426 tahap. Audit lengkap sebelumnya mencakup 28 modul/306 tahap; masing-masing tambahan 12 tahap OSPF, NAT, Proxy Server, QoS, dual-WAN, dasar server, virtualisasi, administrasi Linux/Windows, manajemen pengguna, dan layanan server diuji terpisah sampai PDF sertifikat dan cetak ulang. Lihat dokumentasi modul terkait, termasuk `docs/layanan-server.md`, serta laporan browser focused untuk lingkup dan hasil terbaru.
+
 Studio global enam panel dihapus. Tidak ada lagi kewajiban ilustrasi empat node, laboratorium kubus 3D, atau dua salinan game pada setiap tahap. Sembilan modul yang sudah memiliki simulator khusus tetap menggunakan aktivitas aslinya di tahap terkait: perakitan jaringan, topologi/gangguan, fungsi perangkat, media/cable tester, enkapsulasi, subnetting, DHCP/DNS/web, diagnosis, dan VLAN.
 
-Tujuh belas modul pembelajaran mendalam mempunyai aktivitas di dalam tahap laboratorium masing-masing:
+Dua puluh sembilan modul pembelajaran mendalam mempunyai aktivitas di dalam tahap laboratorium masing-masing:
 
 | Modul | Bentuk interaksi |
 | --- | --- |
+| DHCP/DNS/remote XI | Lease, relay, reservasi, opsi resolver, TTL/cache dan lapisan identitas/autentikasi/otorisasi SSH |
+| Manajemen pengguna XI | Kelas mode Linux, traversal, ACL Windows sederhana, jalur lokal/remote dan jejak keputusan |
+| Administrasi Linux/Windows XI | Dua platform, dependensi instalasi, volume persisten, sumber paket/role, startup, patch dan bukti boot |
+| Routing statis XI | Tabel connected/statis, LPM, status next-hop, gateway, forwarding, TTL, serta trace request/reply |
+| Penggantian perangkat XI | Cadangan teruji, staging, kompatibilitas, cutover, uji, perbaikan terbatas, dan rollback berwaktu |
 | Pemasangan perangkat XI | Draft/running/startup, pemetaan port, PoE, jalur manajemen, penerimaan, dan restart |
 | Fiber optik XI | Anggaran rugi/daya, referensi OPM/OLS, pengukuran ulang, dan peta kejadian fiktif |
 | VoIP XI | Diagram SIP, codec, media dua arah, bandwidth IP, deadline paket dan loss terpisah |
@@ -36,7 +43,7 @@ Simulator media tidak lagi menghasilkan skor kualitas atau keberhasilan paket da
 
 Game hanya tampil di tahap game. Arena memiliki gerak karakter, tabrakan, muatan, pos, drone, energi, nyawa, jeda, pengulangan, dan tiga level. Tidak ada soal pilihan di area game. Pada modul yang menyediakan sudut pandang 3D, tombol 2D/3D mengganti pandangan pada permainan yang sama dan mempertahankan progres; 3D tidak disisipkan ke pertemuan lain. Tema dan pos mengaitkan cerita pada topik, sedangkan aturan arena tetap merupakan model simbolik, bukan prosedur operasional nyata.
 
-Tujuh belas modul pembelajaran mendalam masing-masing mempunyai 12 tahap: orientasi, enam konsep, kasus, laboratorium, game, refleksi, dan evaluasi. Tahap berisi tujuan, konsep, contoh beralasan, tugas transfer, miskonsepsi, dan umpan balik. Proyek menggunakan rubrik guru/teman. Evaluasi akhir mempunyai 10 soal dengan ambang 80; kelulusan otomatis dan skor game tidak menggantikan penilaian praktik.
+Sembilan belas modul pembelajaran mendalam masing-masing mempunyai 12 tahap: orientasi, enam konsep, kasus, laboratorium, game, refleksi, dan evaluasi. Tahap berisi tujuan, konsep, contoh beralasan, tugas transfer, miskonsepsi, dan umpan balik. Proyek menggunakan rubrik guru/teman. Evaluasi akhir mempunyai 10 soal dengan ambang 80; kelulusan otomatis dan skor game tidak menggantikan penilaian praktik.
 
 ## Pemeriksaan
 
@@ -47,11 +54,11 @@ Jalankan dari akar proyek:
 ./tools/validate-modules-browser.ps1
 ```
 
-Pemeriksaan statis mencakup 26 kerangka halaman, stylesheet terakhir, aset/import lokal, ID katalog, dan graf prasyarat. Pemeriksaan browser memakai Edge headless dengan profil sementara terpisah dan situs XAMPP di `http://localhost/tjkt-learning/`.
+Pemeriksaan statis mencakup 28 kerangka halaman, stylesheet terakhir, aset/import lokal, ID katalog, dan graf prasyarat. Pemeriksaan browser memakai Edge headless dengan profil sementara terpisah dan situs XAMPP di `http://localhost/tjkt-learning/`.
 
-Cakupan browser: 282 tahap, desktop 1280×900, ponsel 390×844, tema terang/gelap, overflow, ID ganda, error JavaScript, serta kesamaan properti style 18 komponen kerangka. Evaluasi, persistensi, dan reset diperiksa pada tujuh belas modul mendalam. Simulator asli cable tester, enkapsulasi, layanan, diagnosis, VLAN, dan client–server tetap diperiksa.
+Cakupan browser: 306 tahap, desktop 1280×900, ponsel 390×844, tema terang/gelap, overflow, ID ganda, error JavaScript, serta kesamaan properti style 18 komponen kerangka. Evaluasi, persistensi, dan reset diperiksa pada sembilan belas modul mendalam. Simulator asli cable tester, enkapsulasi, layanan, diagnosis, VLAN, dan client–server tetap diperiksa.
 
-`tools/topic-checks.js` memeriksa lokasi aktivitas hanya pada tahap terkait, penempatan jurnal, metadata, penyimpanan, serta interaksi khusus tujuh belas topik. Vektor meliputi kelebihan beban individual walau agregat cukup, kekurangan port, IPv6 tidak valid, uplink putus, kontribusi nol, propagasi satu arah/RTT, referensi optik, sensitivitas, overload, dan batas penerima tidak valid. `tools/studio-checks.js` memeriksa hilangnya studio global, serta integrasi game. `tools/action-game-checks.js` memainkan tiga level melalui keyboard dan memeriksa gerak, tabrakan, jeda, kondisi gagal, penyerahan, serta ketiadaan kontrol soal. Tampilan 3D yang tersedia turut diuji tanpa mereset progres saat pergantian pandangan.
+`tools/topic-checks.js` memeriksa lokasi aktivitas hanya pada tahap terkait, penempatan jurnal, metadata, penyimpanan, serta interaksi khusus sembilan belas topik. Vektor meliputi kelebihan beban individual walau agregat cukup, kekurangan port, IPv6 tidak valid, uplink putus, kontribusi nol, propagasi satu arah/RTT, referensi optik, sensitivitas, overload, dan batas penerima tidak valid. `tools/studio-checks.js` memeriksa hilangnya studio global, serta integrasi game. `tools/action-game-checks.js` memainkan tiga level melalui keyboard dan memeriksa gerak, tabrakan, jeda, kondisi gagal, penyerahan, serta ketiadaan kontrol soal. Tampilan 3D yang tersedia turut diuji tanpa mereset progres saat pergantian pandangan.
 
 Hasil tersedia pada `docs/module-validation-browser.json`; pengujian terpilih pada `docs/module-validation-browser-focused.json`. Pemeriksaan tidak menggantikan audit setiap kalimat, pengujian perangkat fisik, dan observasi praktik oleh guru.
 
@@ -72,7 +79,7 @@ Instalasi dan Pengujian Jaringan Kabel (XI) memakai baki konduktor, dua ujung be
 Wireless LAN (XI) memakai profil RSSI fiktif, perubahan daya downlink relatif referensi, rugi dinding asumsi, SNR, serta beban kanal berdasarkan input kapasitas efektif. Tidak menghasilkan radius cakupan atau throughput nyata dari jarak/RSSI. Game Channel Planner menempatkan token kanal pada graf AP, mempertahankan radio terkunci, dan memeriksa konflik. Vektor rumus, batas asumsi, serta tiga level dan progres diuji pada tools/wlan-checks.js.
 
 
-Pemeliharaan dan Perbaikan XI menggunakan dataset tiga insiden, kronologi uji, perubahan tunggal, rollback, serta verifikasi link/aplikasi pascaperubahan. Game Bengkel Jalur Data merupakan puzzle putaran konektor dengan aliran paket, anggaran, kondisi gagal, reset, dan tiga papan. Pengujian model dan UI ada pada tools/maintenance-checks.js. Jumlah 282 tahap adalah cakupan kumulatif modul terbit; pengujian terbaru terpilih dicatat pada laporan focused.
+Pemeliharaan dan Perbaikan XI menggunakan dataset tiga insiden, kronologi uji, perubahan tunggal, rollback, serta verifikasi link/aplikasi pascaperubahan. Game Bengkel Jalur Data merupakan puzzle putaran konektor dengan aliran paket, anggaran, kondisi gagal, reset, dan tiga papan. Pengujian model dan UI ada pada tools/maintenance-checks.js. Jumlah 306 tahap adalah cakupan kumulatif modul terbit; pengujian terbaru terpilih dicatat pada laporan focused.
 
 
 Layanan Komunikasi VoIP XI memisahkan registrasi, negosiasi codec, jalur RTP dua arah, kapasitas per arah di lapisan IP, serta network loss dan paket terlambat pada trace deterministik. Game Jitter Buffer Rescue memakai antrean kedatangan, buffer dua tempat, pemindahan paket, jam manual, tenggat putar, kegagalan, pengulangan, dan tiga trace. Tidak memakai kuis. Pengujian model dan UI ada pada tools/voip-checks.js.
@@ -85,7 +92,13 @@ Petunjuk tampil terbuka sebelum kontrol setiap aktivitas yang didaftarkan pada a
 Pengujian tools/instruction-checks.js dijalankan pada tiap tahap dalam audit browser: petunjuk harus sudah dipasang halaman, hadir sebelum kontrol, tidak tersembunyi pada aktivitas aktif, tidak terduplikasi saat pembaruan, dan tidak mengubah isian siswa. Kontrol serta mekanika diuji kembali oleh pemeriksaan simulator/game yang telah ada. Audit tidak menggantikan uji keterpahaman langsung bersama siswa.
 
 
-Fiber Optik XI memakai anggaran dengan koefisien serta loss komponen sebagai asumsi, referensi yang batal saat sumber/panjang gelombang berubah, dan hasil ukur yang batal saat input link berubah. Dataset putus tidak menampilkan daya terima terhingga. Peta kejadian bukan trace OTDR. Game Splice Tray Puzzle mempunyai pemetaan pasangan, pelepasan, anggaran pemasangan, uji kontinuitas sebelum penyerahan, tiga tray, gagal, dan pengulangan. Pengujian ada pada tools/fiber-checks.js. Jumlah 282 tahap adalah cakupan kumulatif yang tersedia; pengujian terbaru modul terpilih dicatat pada laporan focused.
+Fiber Optik XI memakai anggaran dengan koefisien serta loss komponen sebagai asumsi, referensi yang batal saat sumber/panjang gelombang berubah, dan hasil ukur yang batal saat input link berubah. Dataset putus tidak menampilkan daya terima terhingga. Peta kejadian bukan trace OTDR. Game Splice Tray Puzzle mempunyai pemetaan pasangan, pelepasan, anggaran pemasangan, uji kontinuitas sebelum penyerahan, tiga tray, gagal, dan pengulangan. Pengujian ada pada tools/fiber-checks.js. Jumlah 306 tahap adalah cakupan kumulatif yang tersedia; pengujian terbaru modul terpilih dicatat pada laporan focused.
 
 
-Pemasangan Perangkat XI memisahkan draft, running, dan startup sebagai snapshot. Edit draft membatalkan pencatatan hasil lama; penerapan/restart memerlukan uji versi baru dan startup hanya disimpan setelah versi berjalan lulus. Uji memeriksa pemetaan, bukan layanan nyata. Game Port Commissioning Challenge memakai alokasi media/port, PoE, persediaan adaptor tunggal, anggaran pemasangan, penolakan, pelepasan, pengulangan, dan tiga chassis. Pengujian ada pada tools/installation-checks.js. Jumlah 282 tahap adalah cakupan kumulatif modul terbit, bukan klaim seluruhnya diuji ulang pada penambahan ini.
+Pemasangan Perangkat XI memisahkan draft, running, dan startup sebagai snapshot. Edit draft membatalkan pencatatan hasil lama; penerapan/restart memerlukan uji versi baru dan startup hanya disimpan setelah versi berjalan lulus. Uji memeriksa pemetaan, bukan layanan nyata. Game Port Commissioning Challenge memakai alokasi media/port, PoE, persediaan adaptor tunggal, anggaran pemasangan, penolakan, pelepasan, pengulangan, dan tiga chassis. Pengujian ada pada tools/installation-checks.js. Jumlah 306 tahap adalah cakupan kumulatif modul terbit, bukan klaim seluruhnya diuji ulang pada penambahan ini.
+
+
+Penggantian Perangkat XI memakai keadaan migrasi dan bukti terikat versi. Edit rancangan membatalkan staging/readiness; cutover memerlukan cadangan serta restore teruji. Langkah memakai menit dataset, bukan waktu nyata; perbaikan mempertahankan cadangan rollback beserta uji lama. Game Rack Swap Logistics menggunakan gerak/dorong peti, urutan penyimpanan lama sebelum rak baru, dinding, batas langkah, undo, gagal, pengulangan, dan tiga ruang. Solvabilitas diuji dengan pencarian keadaan dan mekanika dimainkan melalui kontrol UI. Pengujian ada pada tools/replacement-checks.js.
+
+
+Routing Statis XI memakai aritmetika IPv4 tanpa signed overflow, validasi network/prefix, longest-prefix match pada rute aktif, dan connected route sesuai link. Model membatasi next-hop pada tetangga langsung, menelusuri request/reply terpisah dengan TTL awal masing-masing, dan mendeteksi loop lebih dini. Edit membatalkan bukti. Game TTL Route Runner memakai navigasi graf, link putus, TTL untuk tiap penerusan termasuk host tujuan, kegagalan, pengulangan, dan tiga graf. Pengujian ada pada tools/static-routing-checks.js. Jumlah 306 tahap adalah cakupan kumulatif modul tersedia, bukan klaim seluruhnya diuji ulang pada penambahan ini.

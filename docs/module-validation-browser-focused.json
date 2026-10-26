@@ -1,19 +1,19 @@
 ﻿{
     "modules":  [
                     {
-                        "id":  "fiber-optik",
+                        "id":  "layanan-server",
                         "stageCount":  12,
                         "stages":  [
                                        "Orientasi, Tujuan, dan Asesmen Awal",
-                                       "Komponen Fiber dan Kompatibilitas Link",
-                                       "SOP K3, Survei, dan Instalasi",
-                                       "Konektor, Inspeksi, dan Penyambungan",
-                                       "Anggaran Rugi, Daya Terima, dan Cadangan",
-                                       "Pengujian OPM/OLS dan Pembacaan OTDR",
-                                       "Perawatan, Perbaikan, dan Penyerahan Fiber/FTTH",
+                                       "Rencana Scope, Exclusion dan Reservation DHCP",
+                                       "DORA, Lease, Renew dan DHCP Relay",
+                                       "Zona DNS, Resolver dan Jenis Record",
+                                       "TTL, Cache dan Diagnosis Nama dari Klien",
+                                       "SSH, Identitas Host dan Akses Remote Berizin",
+                                       "Implementasi, Matriks Uji dan Pemulihan Layanan",
                                        "Studi Kasus dan Proyek Terapan",
                                        "Laboratorium: Prediksi, Eksperimen, dan Bukti",
-                                       "Game Splice Tray Puzzle",
+                                       "Game Puzzle: Service Dispatch",
                                        "Refleksi, Umpan Balik, dan Transfer",
                                        "Rangkuman dan Evaluasi Akhir"
                                    ],
@@ -68,84 +68,177 @@
                                                                  "installation":  {
                                                                                       "integrationVectors":  8,
                                                                                       "chassis":  3
-                                                                                  }
-                                                             }
-                                              }
-                                   },
-                        "themeToggled":  true,
-                        "errors":  [
-
-                                   ]
-                    },
-                    {
-                        "id":  "pemasangan-perangkat-jaringan",
-                        "stageCount":  12,
-                        "stages":  [
-                                       "Orientasi, Tujuan, dan Asesmen Awal",
-                                       "Kebutuhan Integrasi dan Kesiapan Pemasangan",
-                                       "Pemasangan Fisik dan Pemetaan Port",
-                                       "Konfigurasi Awal dan Akses Pengelolaan",
-                                       "Integrasi Access, Trunk, dan Uplink",
-                                       "Penerapan, Penyimpanan, dan Restart",
-                                       "Uji Penerimaan dan Serah Terima",
-                                       "Studi Kasus dan Proyek Terapan",
-                                       "Laboratorium: Prediksi, Eksperimen, dan Bukti",
-                                       "Game Port Commissioning Challenge",
-                                       "Refleksi, Umpan Balik, dan Transfer",
-                                       "Rangkuman dan Evaluasi Akhir"
-                                   ],
-                        "studio":  {
-                                       "core":  {
-                                                    "representationVectors":  5,
-                                                    "invalidVectors":  7,
-                                                    "scopeVectors":  3,
-                                                    "otherModels":  4
-                                                },
-                                       "ui":  {
-                                                  "globalStudioRemoved":  true,
-                                                  "contextualActivities":  true,
-                                                  "models":  {
-                                                                 "vectors":  10,
-                                                                 "requirements":  {
-                                                                                      "vectors":  8,
-                                                                                      "contracts":  3
                                                                                   },
-                                                                 "layout":  {
-                                                                                "vectors":  5,
-                                                                                "levelLengths":  [
-                                                                                                     12,
-                                                                                                     12,
-                                                                                                     12
-                                                                                                 ]
-                                                                            },
-                                                                 "addressPlan":  {
-                                                                                     "vectors":  13,
-                                                                                     "levels":  3
+                                                                 "replacement":  {
+                                                                                     "migrationVectors":  8,
+                                                                                     "rooms":  3,
+                                                                                     "solutionLengths":  [
+                                                                                                             12,
+                                                                                                             12,
+                                                                                                             12
+                                                                                                         ]
                                                                                  },
-                                                                 "cabling":  {
-                                                                                 "vectors":  9
-                                                                             },
-                                                                 "wlan":  {
-                                                                              "vectors":  6,
-                                                                              "levels":  3
-                                                                          },
-                                                                 "maintenance":  {
-                                                                                     "incidents":  3,
-                                                                                     "verificationVectors":  12,
-                                                                                     "boards":  3
-                                                                                 },
-                                                                 "voip":  {
-                                                                              "callVectors":  10,
-                                                                              "bufferLevels":  3
-                                                                          },
-                                                                 "fiber":  {
-                                                                               "opticalVectors":  8,
-                                                                               "trays":  3
+                                                                 "staticRouting":  {
+                                                                                       "routingVectors":  12,
+                                                                                       "ttlLevels":  3,
+                                                                                       "solutionLengths":  [
+                                                                                                               3,
+                                                                                                               4,
+                                                                                                               7
+                                                                                                           ]
+                                                                                   },
+                                                                 "dynamicRouting":  {
+                                                                                        "routingVectors":  12,
+                                                                                        "relayLevels":  3,
+                                                                                        "transmissions":  [
+                                                                                                              10,
+                                                                                                              10,
+                                                                                                              13
+                                                                                                          ]
+                                                                                    },
+                                                                 "nat":  {
+                                                                             "natVectors":  20,
+                                                                             "gameLevels":  3,
+                                                                             "solutionTurns":  [
+                                                                                                   6,
+                                                                                                   10,
+                                                                                                   12
+                                                                                               ]
+                                                                         },
+                                                                 "proxy":  {
+                                                                               "proxyVectors":  20,
+                                                                               "gameLevels":  3,
+                                                                               "solutions":  [
+                                                                                                 {
+                                                                                                     "steps":  53,
+                                                                                                     "WAN":  4
+                                                                                                 },
+                                                                                                 {
+                                                                                                     "steps":  67,
+                                                                                                     "WAN":  6
+                                                                                                 },
+                                                                                                 {
+                                                                                                     "steps":  116,
+                                                                                                     "WAN":  12
+                                                                                                 }
+                                                                                             ]
                                                                            },
-                                                                 "installation":  {
-                                                                                      "integrationVectors":  8,
-                                                                                      "chassis":  3
-                                                                                  }
+                                                                 "qos":  {
+                                                                             "queueVectors":  36,
+                                                                             "metricCases":  8,
+                                                                             "gameLevels":  3,
+                                                                             "solutionTurns":  [
+                                                                                                   6,
+                                                                                                   5,
+                                                                                                   7
+                                                                                               ]
+                                                                         },
+                                                                 "dualWAN":  {
+                                                                                 "WANVectors":  18,
+                                                                                 "gameLevels":  3,
+                                                                                 "solutions":  [
+                                                                                                   {
+                                                                                                       "turns":  3,
+                                                                                                       "retries":  0
+                                                                                                   },
+                                                                                                   {
+                                                                                                       "turns":  7,
+                                                                                                       "retries":  1
+                                                                                                   },
+                                                                                                   {
+                                                                                                       "turns":  10,
+                                                                                                       "retries":  3
+                                                                                                   }
+                                                                                               ]
+                                                                             },
+                                                                 "serverBasics":  {
+                                                                                      "serverCases":  20,
+                                                                                      "gameLevels":  3,
+                                                                                      "solutionSteps":  [
+                                                                                                            17,
+                                                                                                            26,
+                                                                                                            40
+                                                                                                        ]
+                                                                                  },
+                                                                 "virtualization":  {
+                                                                                        "VMScenarios":  22,
+                                                                                        "gameLevels":  3,
+                                                                                        "solutions":  [
+                                                                                                          {
+                                                                                                              "turns":  7,
+                                                                                                              "restores":  0
+                                                                                                          },
+                                                                                                          {
+                                                                                                              "turns":  16,
+                                                                                                              "restores":  3
+                                                                                                          },
+                                                                                                          {
+                                                                                                              "turns":  15,
+                                                                                                              "restores":  2
+                                                                                                          }
+                                                                                                      ]
+                                                                                    },
+                                                                 "osAdmin":  {
+                                                                                 "scenarios":  32,
+                                                                                 "platforms":  2,
+                                                                                 "solutions":  [
+                                                                                                   {
+                                                                                                       "level":  1,
+                                                                                                       "turns":  26,
+                                                                                                       "budget":  28
+                                                                                                   },
+                                                                                                   {
+                                                                                                       "level":  2,
+                                                                                                       "turns":  30,
+                                                                                                       "budget":  32
+                                                                                                   },
+                                                                                                   {
+                                                                                                       "level":  3,
+                                                                                                       "turns":  24,
+                                                                                                       "budget":  26
+                                                                                                   }
+                                                                                               ]
+                                                                             },
+                                                                 "access":  {
+                                                                                "vectors":  16,
+                                                                                "solutions":  [
+                                                                                                  {
+                                                                                                      "level":  1,
+                                                                                                      "turns":  4,
+                                                                                                      "budget":  10
+                                                                                                  },
+                                                                                                  {
+                                                                                                      "level":  2,
+                                                                                                      "turns":  8,
+                                                                                                      "budget":  10
+                                                                                                  },
+                                                                                                  {
+                                                                                                      "level":  3,
+                                                                                                      "turns":  7,
+                                                                                                      "budget":  12
+                                                                                                  }
+                                                                                              ]
+                                                                            },
+                                                                 "services":  {
+                                                                                  "scenarios":  24,
+                                                                                  "solutions":  [
+                                                                                                    {
+                                                                                                        "level":  1,
+                                                                                                        "turns":  5,
+                                                                                                        "budget":  12
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "level":  2,
+                                                                                                        "turns":  7,
+                                                                                                        "budget":  16
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "level":  3,
+                                                                                                        "turns":  9,
+                                                                                                        "budget":  18
+                                                                                                    }
+                                                                                                ]
+                                                                              }
                                                              }
                                               }
                                    },
@@ -155,7 +248,7 @@
                                    ]
                     }
                 ],
-    "checkedAt":  "2026-10-22T08:52:17.2909719Z",
+    "checkedAt":  "2026-10-26T02:28:27.5686914Z",
     "styleParity":  true,
     "viewports":  [
                       "1280x900",

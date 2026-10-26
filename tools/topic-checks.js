@@ -1,3 +1,15 @@
+import { checkServicesModels,checkServicesLab } from './services-checks.js';
+import { checkAccessModels,checkAccessLab } from './access-checks.js';
+import { checkOSAdminModels,checkOSAdminLab } from './os-admin-checks.js';
+import { checkVirtualizationModels,checkVirtualizationLab } from './virtualization-checks.js';
+import { checkServerBasicsModels,checkServerBasicsLab } from './server-basics-checks.js';
+import { checkDualWANModels,checkDualWANLab } from './dual-wan-checks.js';
+import { checkQoSModels,checkQoSLab } from './qos-checks.js';
+import { checkProxyModels,checkProxyLab } from './proxy-checks.js';
+import { checkNATModels,checkNATLab } from './nat-checks.js';
+import { checkDynamicRoutingModels,checkDynamicRoutingLab } from './dynamic-routing-checks.js';
+import { checkStaticRoutingModels,checkStaticRoutingLab } from './static-routing-checks.js';
+import { checkReplacementModels,checkReplacementLab } from './replacement-checks.js';
 import { checkInstallationModels,checkInstallationLab } from './installation-checks.js';
 import { checkFiberModels,checkFiberLab } from './fiber-checks.js';
 import { checkActivityInstructions } from './instruction-checks.js';
@@ -22,14 +34,14 @@ export function checkTopicModels(){
   assert(opticalPower(-3,16,-18,-1).state==='low','Low optical power');
   assert(opticalPower(5,0,-18,-1).state==='overload','Optical overload');
   let rejected=false;try{opticalPower(-3,8,0,-1);}catch{rejected=true;}assert(rejected,'Invalid receiver limits');
-  return {vectors:10,requirements:checkRequirementsModels(),layout:checkLayoutModels(),addressPlan:checkAddressModels(),cabling:checkCablingModels(),wlan:checkWLANModels(),maintenance:checkMaintenanceModels(),voip:checkVoIPModels(),fiber:checkFiberModels(),installation:checkInstallationModels()};
+  return {vectors:10,requirements:checkRequirementsModels(),layout:checkLayoutModels(),addressPlan:checkAddressModels(),cabling:checkCablingModels(),wlan:checkWLANModels(),maintenance:checkMaintenanceModels(),voip:checkVoIPModels(),fiber:checkFiberModels(),installation:checkInstallationModels(),replacement:checkReplacementModels(),staticRouting:checkStaticRoutingModels(),dynamicRouting:checkDynamicRoutingModels(),nat:checkNATModels(),proxy:checkProxyModels(),qos:checkQoSModels(),dualWAN:checkDualWANModels(),serverBasics:checkServerBasicsModels(),virtualization:checkVirtualizationModels(),osAdmin:checkOSAdminModels(),access:checkAccessModels(),services:checkServicesModels()};
 }
 export async function checkTopicStage(){
   checkActivityInstructions();
   const id=document.body.dataset.moduleId,type=topicActivityTypes[id];
   assert(!document.getElementById('learning-studio'),'Global studio should be removed');
   assert(!document.querySelector('[data-studio-panel]'),'Forced studio panels should be removed');
-  const visibleGames=[...document.querySelectorAll('.action-game,.requirements-game,.layout-game,.address-game,.cabling-game,.wlan-game,.maintenance-game,.voip-game,.fiber-game,.installation-game')].filter(node=>node.getClientRects().length);
+  const visibleGames=[...document.querySelectorAll('.action-game,.requirements-game,.layout-game,.address-game,.cabling-game,.wlan-game,.maintenance-game,.voip-game,.fiber-game,.installation-game,.replacement-game,.static-routing-game,.dynamic-routing-game,.nat-game,.proxy-game,.qos-game,.wan-game,.server-game,.virtualization-game,.os-admin-game,.access-game,.services-game')].filter(node=>node.getClientRects().length);
   const active=document.querySelector('.chapter-unit:not([hidden])');
   if(active&&active.dataset.chapter!=='game')assert(!visibleGames.length,'Game visible outside its chapter');
   const visible=[...document.querySelectorAll('[data-topic-activity]')].filter(node=>node.getClientRects().length);
@@ -49,6 +61,18 @@ export async function checkTopicStage(){
   const state=()=>JSON.parse(root.dataset.result);
   function set(name,value){const input=form.elements[name];input.value=String(value);input.dispatchEvent(new Event('input',{bubbles:true}));}
   switch(type){
+    case 'services': checkServicesLab(root);break;
+    case 'access': checkAccessLab(root);break;
+    case 'os-admin': checkOSAdminLab(root);break;
+    case 'virtualization': checkVirtualizationLab(root);break;
+    case 'server-basics': checkServerBasicsLab(root);break;
+    case 'dual-wan': checkDualWANLab(root);break;
+    case 'qos': checkQoSLab(root);break;
+    case 'proxy': checkProxyLab(root);break;
+    case 'nat': checkNATLab(root);break;
+    case 'dynamic-routing': checkDynamicRoutingLab(root);break;
+    case 'static-routing': checkStaticRoutingLab(root);break;
+    case 'replacement': checkReplacementLab(root);break;
     case 'installation': checkInstallationLab(root);break;
     case 'fiber': checkFiberLab(root);break;
     case 'voip': checkVoIPLab(root);break;

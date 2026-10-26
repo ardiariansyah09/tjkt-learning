@@ -1,0 +1,68 @@
+﻿{
+    "modules":  [
+                    {
+                        "module":  "pengenalan-jaringan",
+                        "normal":  {
+                                       "width":  1122.515625,
+                                       "height":  793.6875,
+                                       "logoWidth":  94.484375
+                                   },
+                        "long":  {
+                                     "width":  1122.515625,
+                                     "height":  793.6875,
+                                     "logoWidth":  94.484375
+                                 },
+                        "originalLogo":  true,
+                        "darkPrint":  true
+                    },
+                    {
+                        "module":  "topologi-jaringan",
+                        "normal":  {
+                                       "width":  1122.515625,
+                                       "height":  793.6875,
+                                       "logoWidth":  94.484375
+                                   },
+                        "long":  {
+                                     "width":  1122.515625,
+                                     "height":  793.6875,
+                                     "logoWidth":  94.484375
+                                 },
+                        "originalLogo":  true,
+                        "darkPrint":  true
+                    },
+                    {
+                        "module":  "ipv4-subnetting",
+                        "normal":  {
+                                       "width":  1122.515625,
+                                       "height":  793.6875,
+                                       "logoWidth":  94.484375
+                                   },
+                        "long":  {
+                                     "width":  1122.515625,
+                                     "height":  793.6875,
+                                     "logoWidth":  94.484375
+                                 },
+                        "originalLogo":  true,
+                        "darkPrint":  true
+                    },
+                    {
+                        "module":  "perangkat-jaringan",
+                        "normal":  {
+                                       "width":  1122.515625,
+                                       "height":  793.6875,
+                                       "logoWidth":  94.484375
+                                   },
+                        "long":  {
+                                     "width":  1122.515625,
+                                     "height":  793.6875,
+                                     "logoWidth":  94.484375
+                                 },
+                        "originalLogo":  true,
+                        "darkPrint":  true
+                    }
+                ],
+    "previewMobile":  true,
+    "checkedAt":  "2026-10-24T06:27:30.3259443Z",
+    "javascriptErrors":  0,
+    "design":  "tjkt-circuit-v3"
+}
