@@ -1,0 +1,68 @@
+{
+    "moduleId":  "manajemen-pengguna-server",
+    "title":  "Manajemen Pengguna dan Hak Akses",
+    "version":  2,
+    "contentSource":  "assets/js/course-access.js",
+    "chapters":  [
+                     {
+                         "id":  "orientasi",
+                         "title":  "Orientasi, Tujuan, dan Asesmen Awal",
+                         "summary":  "Merancang siklus akun, hak minimum dan pembuktian izin efektif."
+                     },
+                     {
+                         "id":  "konsep-1",
+                         "title":  "Identitas, Autentikasi, Otorisasi dan Audit",
+                         "summary":  "Memisahkan siapa yang meminta, bukti identitas, izin dan catatan tindakan."
+                     },
+                     {
+                         "id":  "konsep-2",
+                         "title":  "Siklus Akun, Grup dan Hak Minimum",
+                         "summary":  "Mengelola kebutuhan orang serta akun layanan sepanjang siklusnya."
+                     },
+                     {
+                         "id":  "konsep-3",
+                         "title":  "Mode Linux, Direktori dan Kepemilikan",
+                         "summary":  "Menghitung owner/group/other untuk operasi yang benar."
+                     },
+                     {
+                         "id":  "konsep-4",
+                         "title":  "ACL Linux, Mask dan Bukti Perubahan",
+                         "summary":  "Memahami saat tiga kelas mode tidak cukup."
+                     },
+                     {
+                         "id":  "konsep-5",
+                         "title":  "Token Windows, DACL, Pewarisan dan Share",
+                         "summary":  "Membaca izin berlapis tanpa menyamakan ACL dengan mode Linux."
+                     },
+                     {
+                         "id":  "konsep-6",
+                         "title":  "Uji Positif, Negatif, Audit dan Pencabutan",
+                         "summary":  "Menutup perubahan dengan bukti yang relevan dan dapat diulang."
+                     },
+                     {
+                         "id":  "kasus",
+                         "title":  "Studi Kasus dan Proyek Terapan",
+                         "summary":  "Studi Kasus dan Proyek Terapan"
+                     },
+                     {
+                         "id":  "laboratorium",
+                         "title":  "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+                         "summary":  "Laboratorium: Prediksi, Eksperimen, dan Bukti"
+                     },
+                     {
+                         "id":  "game",
+                         "title":  "Game Strategi: Access Weaver",
+                         "summary":  "Menyusun koneksi orang–grup dengan hak tepat dan anggaran terbatas."
+                     },
+                     {
+                         "id":  "refleksi",
+                         "title":  "Refleksi, Umpan Balik, dan Transfer",
+                         "summary":  "Refleksi, Umpan Balik, dan Transfer"
+                     },
+                     {
+                         "id":  "evaluasi",
+                         "title":  "Rangkuman dan Evaluasi Akhir",
+                         "summary":  "Rangkuman dan Evaluasi Akhir"
+                     }
+                 ]
+}

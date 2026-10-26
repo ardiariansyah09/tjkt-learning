@@ -1,0 +1,68 @@
+{
+    "moduleId":  "layanan-server",
+    "title":  "DHCP, DNS, dan Remote Server",
+    "version":  2,
+    "contentSource":  "assets/js/course-services.js",
+    "chapters":  [
+                     {
+                         "id":  "orientasi",
+                         "title":  "Orientasi, Tujuan, dan Asesmen Awal",
+                         "summary":  "Merancang scope DHCP, zona DNS dan akses SSH berizin serta uji klien berlapis."
+                     },
+                     {
+                         "id":  "konsep-1",
+                         "title":  "Rencana Scope, Exclusion dan Reservation DHCP",
+                         "summary":  "Menyiapkan alamat serta opsi tanpa konflik dengan infrastruktur."
+                     },
+                     {
+                         "id":  "konsep-2",
+                         "title":  "DORA, Lease, Renew dan DHCP Relay",
+                         "summary":  "Menelusuri distribusi parameter serta batas broadcast."
+                     },
+                     {
+                         "id":  "konsep-3",
+                         "title":  "Zona DNS, Resolver dan Jenis Record",
+                         "summary":  "Memisahkan sumber jawaban dari jalur pencarian nama."
+                     },
+                     {
+                         "id":  "konsep-4",
+                         "title":  "TTL, Cache dan Diagnosis Nama dari Klien",
+                         "summary":  "Membedakan jawaban lama, nama tidak ada dan kegagalan resolver."
+                     },
+                     {
+                         "id":  "konsep-5",
+                         "title":  "SSH, Identitas Host dan Akses Remote Berizin",
+                         "summary":  "Mendiagnosis transport, kepercayaan, autentikasi dan hak operasi."
+                     },
+                     {
+                         "id":  "konsep-6",
+                         "title":  "Implementasi, Matriks Uji dan Pemulihan Layanan",
+                         "summary":  "Menghubungkan konfigurasi server dengan bukti dari klien."
+                     },
+                     {
+                         "id":  "kasus",
+                         "title":  "Studi Kasus dan Proyek Terapan",
+                         "summary":  "Menyusun rancangan scope, zona dan akses remote beserta matriks penerimaan klien."
+                     },
+                     {
+                         "id":  "laboratorium",
+                         "title":  "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+                         "summary":  "Membandingkan lease, relay, opsi resolver, TTL/cache dan lapisan akses SSH."
+                     },
+                     {
+                         "id":  "game",
+                         "title":  "Game Puzzle: Service Dispatch",
+                         "summary":  "Mengalokasikan alamat, memperbaiki reservasi/cache dan membatasi akses remote."
+                     },
+                     {
+                         "id":  "refleksi",
+                         "title":  "Refleksi, Umpan Balik, dan Transfer",
+                         "summary":  "Menghubungkan prediksi, tiga percobaan, bukti dan batas model layanan."
+                     },
+                     {
+                         "id":  "evaluasi",
+                         "title":  "Rangkuman dan Evaluasi Akhir",
+                         "summary":  "Memadukan DHCP, DNS dan akses remote berizin pada kasus baru."
+                     }
+                 ]
+}

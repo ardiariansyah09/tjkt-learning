@@ -1,0 +1,68 @@
+{
+    "moduleId":  "penggantian-perangkat-jaringan",
+    "title":  "Penggantian Perangkat Jaringan",
+    "version":  2,
+    "contentSource":  "assets/js/course-replacement.js",
+    "chapters":  [
+                     {
+                         "id":  "orientasi",
+                         "title":  "Orientasi, Tujuan, dan Asesmen Awal",
+                         "summary":  "Merencanakan migrasi berbukti dengan cadangan, staging, dan jalur kembali."
+                     },
+                     {
+                         "id":  "konsep-1",
+                         "title":  "Alasan Penggantian dan Dampak Layanan",
+                         "summary":  "Membedakan kebutuhan terkonfirmasi dari dugaan kerusakan."
+                     },
+                     {
+                         "id":  "konsep-2",
+                         "title":  "Kompatibilitas dan Pemetaan Lama–Baru",
+                         "summary":  "Menerjemahkan fungsi layanan ke profil perangkat pengganti."
+                     },
+                     {
+                         "id":  "konsep-3",
+                         "title":  "Cadangan Teruji dan Staging Terisolasi",
+                         "summary":  "Membuktikan pemulihan sebelum layanan dipindahkan."
+                     },
+                     {
+                         "id":  "konsep-4",
+                         "title":  "Jendela Migrasi dan Cutover Terkendali",
+                         "summary":  "Menyisakan waktu untuk pengujian serta rollback yang benar-benar dapat dilakukan."
+                     },
+                     {
+                         "id":  "konsep-5",
+                         "title":  "Verifikasi, Perbaikan Terbatas, dan Rollback",
+                         "summary":  "Mengambil keputusan dari bukti versi keadaan terkini."
+                     },
+                     {
+                         "id":  "konsep-6",
+                         "title":  "Penerimaan dan Pengelolaan Perangkat Lama",
+                         "summary":  "Menyelesaikan perubahan dengan dokumentasi dan masa observasi."
+                     },
+                     {
+                         "id":  "kasus",
+                         "title":  "Studi Kasus dan Proyek Terapan",
+                         "summary":  "Studi Kasus dan Proyek Terapan"
+                     },
+                     {
+                         "id":  "laboratorium",
+                         "title":  "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+                         "summary":  "Laboratorium: Prediksi, Eksperimen, dan Bukti"
+                     },
+                     {
+                         "id":  "game",
+                         "title":  "Game Rack Swap Logistics",
+                         "summary":  "Mendorong unit lama ke penyimpanan dan unit pengganti ke rak dalam tiga ruang."
+                     },
+                     {
+                         "id":  "refleksi",
+                         "title":  "Refleksi, Umpan Balik, dan Transfer",
+                         "summary":  "Refleksi, Umpan Balik, dan Transfer"
+                     },
+                     {
+                         "id":  "evaluasi",
+                         "title":  "Rangkuman dan Evaluasi Akhir",
+                         "summary":  "Rangkuman dan Evaluasi Akhir"
+                     }
+                 ]
+}

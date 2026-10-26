@@ -1,0 +1,68 @@
+{
+    "moduleId":  "load-balancing",
+    "title":  "Load Balancing dan Failover",
+    "version":  2,
+    "contentSource":  "assets/js/course-dual-wan.js",
+    "chapters":  [
+                     {
+                         "id":  "orientasi",
+                         "title":  "Orientasi, Tujuan, dan Asesmen Awal",
+                         "summary":  "Merancang dual-WAN dari distribusi sesi, health, NAT, kapasitas, dan bukti aplikasi."
+                     },
+                     {
+                         "id":  "konsep-1",
+                         "title":  "Pembagian Beban, Failover, dan Kapasitas",
+                         "summary":  "Membedakan tujuan ketersediaan dengan agregasi satu aliran."
+                     },
+                     {
+                         "id":  "konsep-2",
+                         "title":  "Distribusi Per Sesi, Bobot, dan Affinity",
+                         "summary":  "Menganalisis pola pembagian tanpa menganggap jumlah koneksi sama dengan jumlah byte."
+                     },
+                     {
+                         "id":  "konsep-3",
+                         "title":  "Health Check, Target, dan Ambang Deteksi",
+                         "summary":  "Membedakan link lokal, gateway, jalur lanjut, serta hasil probe yang belum memadai."
+                     },
+                     {
+                         "id":  "konsep-4",
+                         "title":  "Sesi Lama, NAT, Failover, dan Failback",
+                         "summary":  "Menjelaskan dampak perubahan jalur terhadap identitas serta keadaan aplikasi."
+                     },
+                     {
+                         "id":  "konsep-5",
+                         "title":  "Konfigurasi Dual-WAN dan Kebijakan Rute",
+                         "summary":  "Menerapkan rancangan sesuai platform serta membatasi contoh konfigurasi."
+                     },
+                     {
+                         "id":  "konsep-6",
+                         "title":  "Pengujian Gangguan, Kapasitas Cadangan, dan Rollback",
+                         "summary":  "Membuktikan keberhasilan layanan serta dampak perubahan secara terukur."
+                     },
+                     {
+                         "id":  "kasus",
+                         "title":  "Studi Kasus dan Proyek Terapan",
+                         "summary":  "Studi Kasus dan Proyek Terapan"
+                     },
+                     {
+                         "id":  "laboratorium",
+                         "title":  "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+                         "summary":  "Laboratorium: Prediksi, Eksperimen, dan Bukti"
+                     },
+                     {
+                         "id":  "game",
+                         "title":  "Game Dual-WAN Bridgekeeper",
+                         "summary":  "Mengalokasikan dan memulihkan sesi melalui dua jembatan dengan batas kapasitas."
+                     },
+                     {
+                         "id":  "refleksi",
+                         "title":  "Refleksi, Umpan Balik, dan Transfer",
+                         "summary":  "Refleksi, Umpan Balik, dan Transfer"
+                     },
+                     {
+                         "id":  "evaluasi",
+                         "title":  "Rangkuman dan Evaluasi Akhir",
+                         "summary":  "Rangkuman dan Evaluasi Akhir"
+                     }
+                 ]
+}

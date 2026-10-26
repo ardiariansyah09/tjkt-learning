@@ -1,0 +1,68 @@
+{
+    "moduleId":  "virtualisasi-server",
+    "title":  "Virtualisasi Server Dasar",
+    "version":  2,
+    "contentSource":  "assets/js/course-virtualization.js",
+    "chapters":  [
+                     {
+                         "id":  "orientasi",
+                         "title":  "Orientasi, Tujuan, dan Asesmen Awal",
+                         "summary":  "Merancang resource/jaringan VM dan membuktikan guest serta pemulihan."
+                     },
+                     {
+                         "id":  "konsep-1",
+                         "title":  "Host, Guest, Hypervisor, dan Tujuan Lab",
+                         "summary":  "Membedakan lapisan yang menjalankan VM dari OS serta layanan di dalamnya."
+                     },
+                     {
+                         "id":  "konsep-2",
+                         "title":  "RAM, vCPU, dan Kapasitas Storage",
+                         "summary":  "Membedakan alokasi virtual, kebijakan admission, serta penggunaan host."
+                     },
+                     {
+                         "id":  "konsep-3",
+                         "title":  "Membuat VM, Media, Boot, dan Shutdown",
+                         "summary":  "Membuktikan tahap kesiapan tanpa menyamakan template dengan instalasi nyata."
+                     },
+                     {
+                         "id":  "konsep-4",
+                         "title":  "NAT, Host-only, Internal, dan Bridged",
+                         "summary":  "Memilih isolasi serta arah akses menurut topologi, bukan label aman mutlak."
+                     },
+                     {
+                         "id":  "konsep-5",
+                         "title":  "Snapshot, Clone, Archive, dan Uji Restore",
+                         "summary":  "Memisahkan titik rollback lokal dari cadangan yang bertahan ketika host gagal."
+                     },
+                     {
+                         "id":  "konsep-6",
+                         "title":  "Runbook Lab Virtual dan Penerimaan",
+                         "summary":  "Memverifikasi resource, isolasi, identitas, serta pemulihan secara berulang."
+                     },
+                     {
+                         "id":  "kasus",
+                         "title":  "Studi Kasus dan Proyek Terapan",
+                         "summary":  "Studi Kasus dan Proyek Terapan"
+                     },
+                     {
+                         "id":  "laboratorium",
+                         "title":  "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+                         "summary":  "Laboratorium: Prediksi, Eksperimen, dan Bukti"
+                     },
+                     {
+                         "id":  "game",
+                         "title":  "Game Hypervisor Dock",
+                         "summary":  "Menempatkan VM dan memulihkan image setelah host gagal dengan batas resource."
+                     },
+                     {
+                         "id":  "refleksi",
+                         "title":  "Refleksi, Umpan Balik, dan Transfer",
+                         "summary":  "Refleksi, Umpan Balik, dan Transfer"
+                     },
+                     {
+                         "id":  "evaluasi",
+                         "title":  "Rangkuman dan Evaluasi Akhir",
+                         "summary":  "Rangkuman dan Evaluasi Akhir"
+                     }
+                 ]
+}

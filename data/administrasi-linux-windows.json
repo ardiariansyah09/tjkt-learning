@@ -1,0 +1,68 @@
+{
+    "moduleId":  "administrasi-linux-windows",
+    "title":  "Administrasi Linux dan Windows Server",
+    "version":  2,
+    "contentSource":  "assets/js/course-os-admin.js",
+    "chapters":  [
+                     {
+                         "id":  "orientasi",
+                         "title":  "Orientasi, Tujuan, dan Asesmen Awal",
+                         "summary":  "Menyiapkan dua OS serta membuktikan volume, jaringan, layanan dan pembaruan sesudah boot."
+                     },
+                     {
+                         "id":  "konsep-1",
+                         "title":  "Rencana Instalasi dan Baseline Dua OS",
+                         "summary":  "Memilih media, edisi dan target instalasi sesuai kebutuhan layanan."
+                     },
+                     {
+                         "id":  "konsep-2",
+                         "title":  "Shell, Identitas, Akun dan Izin",
+                         "summary":  "Membandingkan objek, teks dan hak administrasi secara terarah."
+                     },
+                     {
+                         "id":  "konsep-3",
+                         "title":  "Jaringan Persisten dan Akses Administrasi",
+                         "summary":  "Membedakan konfigurasi interface, resolusi dan pengujian klien."
+                     },
+                     {
+                         "id":  "konsep-4",
+                         "title":  "Disk, Filesystem, Volume dan Persistensi",
+                         "summary":  "Menyiapkan disk data kosong tanpa menyamakan format dengan mount."
+                     },
+                     {
+                         "id":  "konsep-5",
+                         "title":  "Paket, Role, Service dan Startup",
+                         "summary":  "Menggunakan alat sesuai platform dengan bukti pada tiap lapisan."
+                     },
+                     {
+                         "id":  "konsep-6",
+                         "title":  "Pembaruan, Log dan Penerimaan Setelah Boot",
+                         "summary":  "Merencanakan perubahan yang dapat dipulihkan serta diperiksa."
+                     },
+                     {
+                         "id":  "kasus",
+                         "title":  "Studi Kasus dan Proyek Terapan",
+                         "summary":  "Studi Kasus dan Proyek Terapan"
+                     },
+                     {
+                         "id":  "laboratorium",
+                         "title":  "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+                         "summary":  "Laboratorium: Prediksi, Eksperimen, dan Bukti"
+                     },
+                     {
+                         "id":  "game",
+                         "title":  "Game Strategi: Deployment Relay",
+                         "summary":  "Menyelesaikan deployment Linux dan Windows dalam anggaran tindakan."
+                     },
+                     {
+                         "id":  "refleksi",
+                         "title":  "Refleksi, Umpan Balik, dan Transfer",
+                         "summary":  "Refleksi, Umpan Balik, dan Transfer"
+                     },
+                     {
+                         "id":  "evaluasi",
+                         "title":  "Rangkuman dan Evaluasi Akhir",
+                         "summary":  "Rangkuman dan Evaluasi Akhir"
+                     }
+                 ]
+}

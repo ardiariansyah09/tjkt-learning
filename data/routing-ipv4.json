@@ -1,0 +1,68 @@
+{
+    "moduleId":  "routing-ipv4",
+    "title":  "Routing Statis",
+    "version":  2,
+    "contentSource":  "assets/js/course-static-routing.js",
+    "chapters":  [
+                     {
+                         "id":  "orientasi",
+                         "title":  "Orientasi, Tujuan, dan Asesmen Awal",
+                         "summary":  "Menyusun dan membuktikan rute statis IPv4 melalui trace pergi–balik."
+                     },
+                     {
+                         "id":  "konsep-1",
+                         "title":  "Jaringan Terhubung dan Fungsi Forwarding",
+                         "summary":  "Membedakan komunikasi lokal, gateway, dan penerusan antarnetwork."
+                     },
+                     {
+                         "id":  "konsep-2",
+                         "title":  "Rute Statis, Next-Hop, dan Default Route",
+                         "summary":  "Menentukan tujuan dan jalan keluar tanpa menyamakan gateway dengan alamat tujuan."
+                     },
+                     {
+                         "id":  "konsep-3",
+                         "title":  "Longest-Prefix Match dan Seleksi Rute",
+                         "summary":  "Menjelaskan mengapa rute lebih spesifik dapat mengalahkan rute yang terlihat benar."
+                     },
+                     {
+                         "id":  "konsep-4",
+                         "title":  "Jalur Balik, TTL, dan Loop",
+                         "summary":  "Membedakan request tiba, balasan tiba, serta kegagalan penerusan."
+                     },
+                     {
+                         "id":  "konsep-5",
+                         "title":  "Konfigurasi Perangkat dan Router Berbasis Server",
+                         "summary":  "Menerapkan rancangan melalui alat yang sesuai lingkungan lab."
+                     },
+                     {
+                         "id":  "konsep-6",
+                         "title":  "Pengujian, Diagnosis, dan Dokumentasi Rute",
+                         "summary":  "Menyusun bukti dari interface hingga layanan tanpa mengubah banyak variabel."
+                     },
+                     {
+                         "id":  "kasus",
+                         "title":  "Studi Kasus dan Proyek Terapan",
+                         "summary":  "Studi Kasus dan Proyek Terapan"
+                     },
+                     {
+                         "id":  "laboratorium",
+                         "title":  "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+                         "summary":  "Laboratorium: Prediksi, Eksperimen, dan Bukti"
+                     },
+                     {
+                         "id":  "game",
+                         "title":  "Game TTL Route Runner",
+                         "summary":  "Mengantar paket melalui graf router dengan link terputus dan TTL terbatas."
+                     },
+                     {
+                         "id":  "refleksi",
+                         "title":  "Refleksi, Umpan Balik, dan Transfer",
+                         "summary":  "Refleksi, Umpan Balik, dan Transfer"
+                     },
+                     {
+                         "id":  "evaluasi",
+                         "title":  "Rangkuman dan Evaluasi Akhir",
+                         "summary":  "Rangkuman dan Evaluasi Akhir"
+                     }
+                 ]
+}
