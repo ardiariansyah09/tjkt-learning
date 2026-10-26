@@ -1,3 +1,23 @@
+import { mountFinalGame } from './final-games.js';
+import { remainingModules } from './final-game-models.js';
+import { mountMonitoringGame } from './monitoring-activity.js';
+import { mountVPNGame } from './vpn-activity.js';
+import { mountHostingGame } from './hosting-activity.js';
+import { mountWebDBGame } from './web-db-activity.js';
+import { mountFileShareGame } from './file-share-activity.js';
+import { mountFTPGame } from './ftp-activity.js';
+import { mountServicesGame } from './services-activity.js';
+import { mountAccessGame } from './access-activity.js';
+import { mountOSAdminGame } from './os-admin-activity.js';
+import { mountVirtualizationGame } from './virtualization-activity.js';
+import { mountServerBasicsGame } from './server-basics-activity.js';
+import { mountDualWANGame } from './dual-wan-activity.js';
+import { mountQoSGame } from './qos-activity.js';
+import { mountProxyGame } from './proxy-activity.js';
+import { mountNATGame } from './nat-activity.js';
+import { mountDynamicRoutingGame } from './dynamic-routing-activity.js';
+import { mountStaticRoutingGame } from './static-routing-activity.js';
+import { mountReplacementGame } from './replacement-activity.js';
 import { mountInstallationGame } from './installation-activity.js';
 import { mountFiberGame } from './fiber-activity.js';
 import { mountVoIPGame } from './voip-activity.js';
@@ -96,7 +116,7 @@ export function mountChapterNavigation({ moduleId, title, classLevel = 'X', chap
       section.hidden = true;
       const host = create('div', undefined, 'chapter-action-host');
       unit.append(host);
-      const mountGame=moduleId==='pemasangan-perangkat-jaringan'?mountInstallationGame:moduleId==='fiber-optik'?mountFiberGame:moduleId==='voip'?mountVoIPGame:moduleId==='pemeliharaan-kabel-nirkabel'?mountMaintenanceGame:moduleId==='kebutuhan-teknis-jaringan'?mountRequirementsGame:moduleId==='desain-topologi-arsitektur'?mountLayoutGame:moduleId==='perencanaan-pengalamatan-lanjut'?mountAddressGame:moduleId==='instalasi-kabel'?mountCablingGame:moduleId==='wireless-lan'?mountWLANGame:mountActionGame;
+      const mountGame=remainingModules[moduleId]?mountFinalGame:moduleId==='monitoring-jaringan'?mountMonitoringGame:moduleId==='vpn-server'?mountVPNGame:moduleId==='panel-layanan-hosting'?mountHostingGame:moduleId==='hosting-server'?mountWebDBGame:moduleId==='file-server'?mountFileShareGame:moduleId==='ftp-server'?mountFTPGame:moduleId==='layanan-server'?mountServicesGame:moduleId==='manajemen-pengguna-server'?mountAccessGame:moduleId==='administrasi-linux-windows'?mountOSAdminGame:moduleId==='virtualisasi-server'?mountVirtualizationGame:moduleId==='dasar-administrasi-server'?mountServerBasicsGame:moduleId==='load-balancing'?mountDualWANGame:moduleId==='bandwidth-qos'?mountQoSGame:moduleId==='proxy-load-balancing'?mountProxyGame:moduleId==='nat-wan'?mountNATGame:moduleId==='routing-dinamis'?mountDynamicRoutingGame:moduleId==='routing-ipv4'?mountStaticRoutingGame:moduleId==='penggantian-perangkat-jaringan'?mountReplacementGame:moduleId==='pemasangan-perangkat-jaringan'?mountInstallationGame:moduleId==='fiber-optik'?mountFiberGame:moduleId==='voip'?mountVoIPGame:moduleId==='pemeliharaan-kabel-nirkabel'?mountMaintenanceGame:moduleId==='kebutuhan-teknis-jaringan'?mountRequirementsGame:moduleId==='desain-topologi-arsitektur'?mountLayoutGame:moduleId==='perencanaan-pengalamatan-lanjut'?mountAddressGame:moduleId==='instalasi-kabel'?mountCablingGame:moduleId==='wireless-lan'?mountWLANGame:mountActionGame;
       actionGames.push(mountGame(host, { moduleId, mode:'2d', onComplete(score) {
         state.scores[chapter.id] = Math.max(Number(state.scores[chapter.id]) || 0, score);
         if (score >= passScore) state.passed[chapter.id] = score;

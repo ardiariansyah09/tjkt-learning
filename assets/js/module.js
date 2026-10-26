@@ -4,7 +4,7 @@ import { mountInteractive } from './interactive.js';
 import { mountVLSM } from './vlsm-lab.js';
 import { mountNetworkLab } from './network-lab.js';
 import { mountGames, mountPosttest, mountReport } from './stage8.js?v=4';
-import { mountLearnerDashboard, mountCertificate, setupResetProgress } from './stage9.js?v=2';
+import { mountLearnerDashboard, mountCertificate, setupResetProgress } from './stage9.js?v=completion1';
 import { bindThemeToggle } from './theme.js';
 
 // Materi tahap 4. Konten teori statis; aktivitas interaktif berada dalam modul JavaScript terpisah.
@@ -47,7 +47,7 @@ const lessons = [
 ];
 
 
-import { readGate, writeGate, markPassed, isUnlocked, isPassed, MIN_SCORE } from './sequential.js';
+import { readGate, writeGate, markPassed, isUnlocked, isPassed, MIN_SCORE } from './sequential.js?v=completion1';
 const ids = lessons.map(x => x.id);
 const nav = document.getElementById('lessonNav');
 const content = document.getElementById('lessonContent');
@@ -110,6 +110,23 @@ function mountKnowledge(lessonId) {
   });
   panel.append(h,desc,form);content.append(panel);
 }
+function renderNavigation() {
+  nav.replaceChildren();
+  lessons.forEach((item,i)=>{
+    const button=document.createElement('button');button.type='button';
+    const unlocked=isUnlocked(gate,ids,item.id),passed=isPassed(gate,item.id);
+    button.className=`lesson-nav-item${item.id===progress.current?' active':''}${!unlocked?' locked':''}`;
+    button.disabled=!unlocked;
+    if(!unlocked)button.title='Selesaikan materi sebelumnya terlebih dahulu';
+    if(item.id===progress.current)button.setAttribute('aria-current','step');
+    const number=document.createElement('span');number.className='lesson-number';
+    number.textContent=passed?'✓':unlocked?String(i+1).padStart(2,'0'):'🔒';
+    const title=document.createElement('span');title.textContent=item.title;
+    button.append(number,title);
+    button.addEventListener('click',()=>goTo(item.id));
+    nav.append(button);
+  });
+}
 function render() {
   if (!isUnlocked(gate,ids,progress.current)) progress.current=ids.find(id=>isUnlocked(gate,ids,id))||ids[0];
   const index=ids.indexOf(progress.current), lesson=lessons[index];
@@ -131,21 +148,7 @@ function render() {
     if(practice&&summary)summary.after(practice);
   }
   mountLearnerDashboard(document.getElementById('learnerDashboard'),gate,ids,lessons,goTo);
-  nav.replaceChildren();
-  lessons.forEach((item,i)=>{
-    const button=document.createElement('button');button.type='button';
-    const unlocked=isUnlocked(gate,ids,item.id),passed=isPassed(gate,item.id);
-    button.className=`lesson-nav-item${item.id===progress.current?' active':''}${!unlocked?' locked':''}`;
-    button.disabled=!unlocked;
-    if(!unlocked)button.title='Selesaikan materi sebelumnya terlebih dahulu';
-    if(item.id===progress.current)button.setAttribute('aria-current','step');
-    const number=document.createElement('span');number.className='lesson-number';
-    number.textContent=passed?'✓':unlocked?String(i+1).padStart(2,'0'):'🔒';
-    const title=document.createElement('span');title.textContent=item.title;
-    button.append(number,title);
-    button.addEventListener('click',()=>goTo(item.id));
-    nav.append(button);
-  });
+  renderNavigation();
   const count=ids.filter(id=>isPassed(gate,id)).length;
   const percentage=Math.round(count/ids.length*100);
   progressText.textContent=`${percentage}%`;
@@ -174,6 +177,7 @@ window.addEventListener('tjkt:assessment',event=>{
     markPassed(gate,lessonId,score);
     save();
     if(['games','posttest'].includes(lessonId) && progress.current===lessonId){
+      renderNavigation();
       completeButton.disabled=lessonId===ids[ids.length-1];
       completeButton.textContent=lessonId===ids[ids.length-1]?'✓ Seluruh Materi Selesai':'Lanjut Materi →';
       gateMessage.textContent='✓ Lulus. Nilai terbaik tersimpan.';
