@@ -1,5 +1,5 @@
 import { bindThemeToggle } from './theme.js';
-import { mountChapterNavigation } from './chapter-navigation.js?v=5';
+import { mountChapterNavigation } from './chapter-navigation.js?v=25';
 
 mountChapterNavigation({
   moduleId: 'troubleshooting',
@@ -50,7 +50,7 @@ mountChapterNavigation({
     },
     {
       id: 'game',
-      title: 'Network Rescue Run — Petualangan Pemulihan',
+      title: 'Game 2D: Teknisi dalam Batas Waktu',
       summary: 'Bawa laporan melalui empat pos pemeriksaan, hindari zona gangguan, dan selesaikan tiga level.',
       type: 'game',
       questions: [{ question: 'Urutan tindakan dalam misi pemulihan adalah ...', options: ['Amati gejala, pilih perangkat, lalu terapkan perbaikan yang sesuai', 'Pilih perangkat acak lalu reset seluruh jaringan', 'Lewati pemeriksaan dan ubah semua konfigurasi'], answer: 0 }]

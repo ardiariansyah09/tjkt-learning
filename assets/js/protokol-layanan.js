@@ -1,5 +1,5 @@
 import { bindThemeToggle } from './theme.js';
-import { mountChapterNavigation } from './chapter-navigation.js?v=5';
+import { mountChapterNavigation } from './chapter-navigation.js?v=25';
 
 mountChapterNavigation({
   moduleId: 'protokol-layanan',
@@ -44,7 +44,7 @@ mountChapterNavigation({
     },
     {
       id: 'game',
-      title: 'Service Delivery — Petualangan Layanan',
+      title: 'Game 2D: Antrean Layanan Digital',
       summary: 'Ambil muatan layanan, lalui empat pos, buka gerbang dan antarkan ke tujuan tanpa kehabisan energi.',
       type: 'game',
       questions: [{ question: 'Port UDP 68 digunakan pada DHCPv4 oleh ...', options: ['Klien', 'Server', 'Resolver DNS'], answer: 0 }]

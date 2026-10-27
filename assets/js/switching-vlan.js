@@ -1,5 +1,5 @@
 import { bindThemeToggle } from './theme.js';
-import { mountChapterNavigation } from './chapter-navigation.js?v=5';
+import { mountChapterNavigation } from './chapter-navigation.js?v=25';
 
 mountChapterNavigation({
   moduleId: 'switching-vlan',
@@ -51,7 +51,7 @@ mountChapterNavigation({
     },
     {
       id: 'game',
-      title: 'VLAN Transit — Petualangan Frame',
+      title: 'Game 2D: Ruang Kendali Frame',
       summary: 'Gerakkan pembawa frame melalui empat pos, ambil kunci, hindari gangguan, dan selesaikan tiga level.',
       type: 'game',
       questions: [{ question: 'Broadcast yang masuk melalui trunk VLAN 10 seharusnya ...', options: ['Di-flood ke port anggota VLAN 10 selain port masuk', 'Dikirim hanya ke gateway internet', 'Di-flood ke access port semua VLAN'], answer: 0 }]

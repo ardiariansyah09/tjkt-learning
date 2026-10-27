@@ -1,5 +1,5 @@
 import { bindThemeToggle } from './theme.js';
-import { mountActionGame } from './action-game.js';
+import { mountActionGame } from './action-game.js?v=3';
 
 const KEY = 'tjkt:perangkat-jaringan:progress:v1';
 const MIN_PASS = 75;
@@ -202,8 +202,8 @@ const activities = [
     ]
   },
   {
-    title: 'Device Delivery: Petualangan Jaringan',
-    summary: 'Gerakkan karakter, ambil muatan, lewati empat pos perangkat, hindari gangguan, dan selesaikan tiga level.'
+    title: 'Game 2D: Bengkel Modul Perangkat',
+    summary: 'Pulihkan perangkat dengan modul kompatibel dan prosedur model yang aman.'
   }
 ];
 
@@ -408,7 +408,7 @@ function passed(index) {
 }
 
 function unlocked(index) {
-  return index === 0 || passed(index - 1);
+  return window.TJKTLocalInstructor?.isActive() || index === 0 || passed(index - 1);
 }
 
 function firstUnlocked() {
@@ -1181,7 +1181,7 @@ function completeCurrent(score) {
   if (score >= requiredScore) state.passed[id] = score;
   saveState();
   renderNavigation();
-  $('nextLesson').disabled = !passed(current) || current === stages.length - 1;
+  $('nextLesson').disabled = (!window.TJKTLocalInstructor?.isActive() && !passed(current)) || current === stages.length - 1;
   $('gateMessage').textContent = score >= requiredScore
     ? `✓ Lulus dengan nilai ${score}/100. Tahap berikutnya terbuka.`
     : `Nilai ${score}/100 belum mencapai nilai minimum ${requiredScore}. Coba lagi setelah meninjau materi.`;
@@ -1200,7 +1200,7 @@ function render() {
   $('lessonTitle').textContent = lesson.title;
   $('lessonSummary').textContent = lesson.summary;
   $('previousLesson').disabled = current === 0;
-  $('nextLesson').disabled = !passed(current) || current === stages.length - 1;
+  $('nextLesson').disabled = (!window.TJKTLocalInstructor?.isActive() && !passed(current)) || current === stages.length - 1;
   $('gateMessage').textContent = passed(current)
     ? `✓ Tahap ini lulus. Nilai terbaik: ${state.scores[lesson.id]}/100.`
     : current === 8 ? 'Jawab seluruh soal dan raih minimal 80 untuk menuntaskan modul.' : 'Luluskan evaluasi tahap ini untuk membuka tahap berikutnya.';
@@ -1219,7 +1219,7 @@ $('previousLesson').addEventListener('click', () => {
 });
 
 $('nextLesson').addEventListener('click', () => {
-  if (passed(current) && current < stages.length - 1) goTo(current + 1);
+  if ((window.TJKTLocalInstructor?.isActive() || passed(current)) && current < stages.length - 1) goTo(current + 1);
 });
 
 $('resetProgress').addEventListener('click', () => {

@@ -5,7 +5,7 @@ import { mountHostingLab } from './hosting-activity.js';
 import { mountWebDBLab } from './web-db-activity.js';
 import { mountFileShareLab } from './file-share-activity.js';
 import { mountFTPLab } from './ftp-activity.js';
-import { mountServicesLab } from './services-activity.js';
+import { mountServicesLab } from './services-activity.js?v=3';
 import { mountAccessLab } from './access-activity.js';
 import { mountOSAdminLab } from './os-admin-activity.js';
 import { mountVirtualizationLab } from './virtualization-activity.js';
