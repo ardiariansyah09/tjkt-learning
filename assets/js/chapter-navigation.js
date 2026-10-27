@@ -22,7 +22,8 @@ import { mountInstallationGame } from './installation-activity.js';
 import { mountFiberGame } from './fiber-activity.js';
 import { mountVoIPGame } from './voip-activity.js';
 import { mountMaintenanceGame } from './maintenance-activity.js';
-import { mountActionGame } from './action-game.js';
+import { mountActionGame } from './action-game.js?v=3';
+import { topicGameDefinitions } from './topic-games-model.js';
 import { mountRequirementsGame } from './requirements-activity.js';
 import { mountLayoutGame } from './layout-activity.js';
 import { mountAddressGame } from './address-plan-activity.js';
@@ -30,6 +31,7 @@ import { mountCablingGame } from './cabling-activity.js';
 import { mountWLANGame } from './wlan-activity.js';
 
 export function mountChapterNavigation({ moduleId, title, classLevel = 'X', chapters, passScore = 75, finalPassScore = 80, storageVersion = 1 }) {
+  if(topicGameDefinitions[moduleId])chapters=chapters.map(c=>c.type==='game'?{...c,summary:topicGameDefinitions[moduleId].goal}:c);
   const root = document.getElementById('lessonContent');
   const objectives = root?.querySelector('#tujuan');
   const nav = document.getElementById('lessonNav');
@@ -86,7 +88,7 @@ export function mountChapterNavigation({ moduleId, title, classLevel = 'X', chap
   }
 
   function unlocked(index) {
-    return index === 0 || passed(index - 1);
+    return window.TJKTLocalInstructor?.isActive() || index === 0 || passed(index - 1);
   }
 
   function findCurrent() {
@@ -231,7 +233,7 @@ export function mountChapterNavigation({ moduleId, title, classLevel = 'X', chap
     heading.textContent = chapter.title;
     summary.textContent = chapter.summary;
     previousButton.disabled = current === 0;
-    nextButton.disabled = !passed(current) || current === chapters.length - 1;
+    nextButton.disabled = (!window.TJKTLocalInstructor?.isActive() && !passed(current)) || current === chapters.length - 1;
     nextButton.textContent = current === chapters.length - 1 ? '✓ Modul Selesai' : 'Tahap Berikutnya →';
     gateMessage.textContent = passed(current)
       ? `✓ Tahap ini lulus. Nilai terbaik: ${state.passed[chapter.id]}/100.`
@@ -253,7 +255,7 @@ export function mountChapterNavigation({ moduleId, title, classLevel = 'X', chap
     if (current > 0) goTo(current - 1);
   });
   nextButton.addEventListener('click', () => {
-    if (passed(current) && current < chapters.length - 1) goTo(current + 1);
+    if ((window.TJKTLocalInstructor?.isActive() || passed(current)) && current < chapters.length - 1) goTo(current + 1);
   });
   document.getElementById('resetProgress').addEventListener('click', () => {
     if (!window.confirm(`Hapus progres modul ${title} pada browser ini?`)) return;

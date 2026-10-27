@@ -1,9 +1,9 @@
-import { applyLearningFormat } from './ipv4-learning-format.js?v=3';
+import { applyLearningFormat } from './ipv4-learning-format.js?v=4';
 import { readProgress, writeProgress } from './progress.js';
 import { mountInteractive } from './interactive.js';
 import { mountVLSM } from './vlsm-lab.js';
 import { mountNetworkLab } from './network-lab.js';
-import { mountGames, mountPosttest, mountReport } from './stage8.js?v=4';
+import { mountGames, mountPosttest, mountReport } from './stage8.js?v=6';
 import { mountLearnerDashboard, mountCertificate, setupResetProgress } from './stage9.js?v=completion1';
 import { bindThemeToggle } from './theme.js';
 
@@ -42,12 +42,12 @@ const lessons = [
     html: `<h2>VLSM: Subnet Sesuai Kebutuhan</h2><p><strong>Variable Length Subnet Mask (VLSM)</strong> memungkinkan satu network induk dibagi menjadi subnet dengan prefix berbeda sesuai kebutuhan host. Tujuannya mengurangi pemborosan alamat IPv4.</p><h2>Langkah merencanakan VLSM</h2><ol><li>Catat jumlah host pada tiap ruangan.</li><li>Urutkan kebutuhan host dari yang terbesar ke yang terkecil.</li><li>Untuk setiap ruangan, pilih blok terkecil yang cukup menampung kebutuhan host ditambah alamat network dan broadcast pada subnet biasa.</li><li>Alokasikan blok dari alamat paling rendah yang sesuai batas subnet (<em>network alignment</em>).</li><li>Pastikan setiap blok berada di dalam network induk dan tidak saling tumpang tindih.</li></ol><div class="learning-note"><strong>Studi kasus:</strong> SMK memiliki network induk <code>192.168.10.0/24</code>. Ruang Lab TJKT membutuhkan 60 host, Administrasi 28 host, Perpustakaan 12 host, dan CCTV 6 host. Susun urutan alokasi dengan drag &amp; drop, kemudian isi network address dan prefix masing-masing.</div><h2>Praktikum mandiri</h2><p>Nilai dihitung dari ketepatan prefix, network address, dan validitas keseluruhan rancangan. Tombol contoh solusi dapat digunakan setelah mencoba sendiri.</p>`
   },
   { id: 'network-lab', title: 'Virtual Network Lab', summary: 'Konfigurasi PC, switch, router, ping, dan troubleshooting jaringan dua subnet.', html: `<h2>Praktikum Jaringan Virtual</h2><p>Setelah mempelajari subnetting dan VLSM, sekarang saatnya menerapkan pengalamatan pada topologi dua jaringan. Dua PC terhubung melalui dua switch dan satu router dengan dua interface. Siswa dapat mengubah konfigurasi, melakukan pengujian, lalu memperbaiki gangguan.</p><h2>Menentukan konfigurasi host</h2><p>Setiap PC memerlukan alamat IPv4 dan prefix yang sesuai dengan subnetnya. Jika PC mengirim paket ke alamat di luar subnet lokal, paket diteruskan ke default gateway pada jaringan tersebut.</p><p>Contoh: PC-A <code>192.168.1.10/24</code> menggunakan gateway <code>192.168.1.1</code>; PC-B <code>192.168.2.10/24</code> menggunakan gateway <code>192.168.2.1</code>. Router harus memiliki interface pada kedua subnet dan jalur yang aktif.</p><h2>Menguji dan menelusuri gangguan</h2><ol><li>Periksa link dan status interface.</li><li>Validasi alamat IP, prefix, dan gateway setiap host.</li><li>Uji koneksi lokal sebelum menguji jaringan lain.</li><li>Periksa interface router, rute, dan kemungkinan pemblokiran trafik.</li></ol><div class="learning-note"><strong>Model edukasi:</strong> terminal dan pengiriman paket merupakan simulasi logika di browser, bukan emulator Cisco IOS atau sistem operasi nyata. Simulasi ini tidak mengirim paket ke jaringan fisik.</div>` },
-  { id:'games', title:'Subnet Courier — Game Petualangan', summary:'Gerakkan karakter, ambil muatan, aktifkan empat pos dan selesaikan tiga level pengiriman.', html:`<h2>Subnet Courier</h2><p>Rencanakan rute, ambil token kunci, hindari drone, kelola energi, dan antarkan muatan ke gerbang tujuan. Gunakan panah/WASD serta E atau kontrol sentuh.</p>` },
+  { id:'games', title:'Game 2D: Lahan Subnet', summary:'Pecah blok alamat dan alokasikan ruang minimum yang sejajar tanpa overlap.', html:"<h2>Lahan Subnet</h2><p>Pilih kebutuhan ruang, bagi blok menjadi dua dan alokasikan ukuran yang cocok. Gunakan klik atau seret; selesaikan tiga level untuk memperoleh nilai.</p>" },
   { id:'posttest', title:'Posttest & Rekap', summary:'Evaluasi akhir 10 soal acak, pembahasan, dan rekap nilai seluruh materi.', html:`<h2>Posttest Akhir Modul</h2><p>Kerjakan sepuluh soal yang dipilih acak dari bank soal. Semua soal wajib dijawab sebelum dikumpulkan. Nilai minimal kelulusan adalah 80/100.</p><div class="learning-note">Setiap percobaan mengambil urutan soal acak baru. Hasil tersimpan pada browser ini dan bukan nilai resmi server sekolah.</div>` }
 ];
 
 
-import { readGate, writeGate, markPassed, isUnlocked, isPassed, MIN_SCORE } from './sequential.js?v=completion1';
+import { readGate, writeGate, markPassed, isUnlocked, isPassed, MIN_SCORE } from './sequential.js?v=instructor1';
 const ids = lessons.map(x => x.id);
 const nav = document.getElementById('lessonNav');
 const content = document.getElementById('lessonContent');
@@ -157,8 +157,8 @@ function render() {
   progressBar.setAttribute('aria-valuenow',String(percentage));
   previousButton.disabled=index===0;
   const passed=isPassed(gate,lesson.id);
-  completeButton.disabled=!passed || index===ids.length-1;
-  completeButton.textContent=passed?(index===ids.length-1?'✓ Seluruh Materi Selesai':'Lanjut Materi →'):'🔒 Selesaikan Evaluasi untuk Lanjut';
+  completeButton.disabled=(!window.TJKTLocalInstructor?.isActive()&&!passed) || index===ids.length-1;
+  completeButton.textContent=(window.TJKTLocalInstructor?.isActive()||passed)?(index===ids.length-1?'✓ Seluruh Materi Selesai':'Lanjut Materi →'):'🔒 Selesaikan Evaluasi untuk Lanjut';
   gateMessage.textContent=passed?'✓ Persyaratan materi ini sudah terpenuhi.':lesson.id==='subnet'?`Jawab seluruh soal latihan dan raih minimal ${MIN_SCORE} poin.`:lesson.id==='vlsm'?`Periksa rancangan VLSM dan raih minimal ${MIN_SCORE} poin.`:lesson.id==='network-lab'?`Nilai praktikum jaringan harus minimal ${MIN_SCORE} poin.`:lesson.id==='games'?'Selesaikan tiga level permainan untuk membuka Posttest.':lesson.id==='posttest'?'Jawab semua 10 soal posttest dan raih minimal 80 poin.':'Jawab soal Cek Pemahaman Wajib dengan benar.';
 }
 previousButton.addEventListener('click',()=>{
@@ -166,7 +166,7 @@ previousButton.addEventListener('click',()=>{
 });
 completeButton.addEventListener('click',()=>{
   const i=ids.indexOf(progress.current);
-  if(!isPassed(gate,progress.current))return;
+  if(!window.TJKTLocalInstructor?.isActive()&&!isPassed(gate,progress.current))return;
   if(i<ids.length-1)goTo(ids[i+1]);
 });
 window.addEventListener('tjkt:assessment',event=>{
@@ -195,3 +195,4 @@ window.addEventListener('tjkt:assessment',event=>{
 bindThemeToggle(document.getElementById('moduleThemeToggle'));
 setupResetProgress(document.getElementById('resetProgressButton'));
 render();
+

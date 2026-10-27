@@ -1,5 +1,5 @@
 import { unit as u, question as q } from './deep-course.js';
-export default {
+const course = {
   moduleId:'perencanaan-jaringan',title:'Analisis Kebutuhan dan Dokumentasi Jaringan',
   objectives:['Mengumpulkan kebutuhan pengguna dan bukti survei secara etis.','Menghitung kebutuhan port, kapasitas, dan pertumbuhan dengan asumsi eksplisit.','Menyusun rancangan fisik/logis, anggaran, serta kriteria penerimaan.','Membuat dokumentasi yang dapat dipakai orang lain dan merefleksikan kompromi desain.'],
   sources:[['Campus LAN/WLAN design — Cisco','https://www.cisco.com/c/en/us/td/docs/solutions/CVD/Campus/cisco-campus-lan-wlan-design-guide.html'],['Pengumpulan kebutuhan dan validasi rancangan — Cisco','https://spg.xgslb-v3.cisco.com/c/en/us/support/docs/availability/high-availability/15113-newsoln.html']],
@@ -54,3 +54,6 @@ export default {
     ],'Akses tamu perpustakaan tidak otomatis boleh menjangkau server administrasi. Perubahan pengguna menuntut peninjauan segmentasi, aturan akses, serta pengujian negatif yang membuktikan pembatasan bekerja.','Buat tiga kebutuhan dan tiga uji untuk perpustakaan, lalu jelaskan dua perbedaan dari rancangan lab.','Dokumen akhir masih perlu dipelihara ketika jaringan berubah; final bukan berarti berhenti memperbarui.',[])
   ]
 };
+
+
+export default course;

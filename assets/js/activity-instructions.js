@@ -123,9 +123,21 @@ export function activityTargets(root,moduleId){
 function element(tag,text){const n=document.createElement(tag);if(text)n.textContent=text;return n;}
 export function mountActivityInstructions(root,moduleId){
  for(const {node,data,key} of activityTargets(root,moduleId)){
+  if(Object.hasOwn(games,key)){
+   let state;try{state=JSON.parse(node.dataset.state||'null');}catch{}
+   if(Number.isInteger(state?.level)&&state.level>=0&&state.level<=2)node.querySelectorAll('button').forEach(button=>{if(!Object.values(button.dataset).includes('next'))return;const text=state.completed?'Permainan selesai':state.level===2?'Selesaikan dan catat nilai':'Level berikutnya';if(button.textContent!==text)button.textContent=text;});
+  }
   if([...node.children].some(child=>child.classList.contains('activity-instructions')))continue;
   const box=element('aside');box.className='activity-instructions';box.dataset.instructionFor=key;box.setAttribute('aria-label','Petunjuk aktivitas');
-  box.append(element('h3','Petunjuk: mulai dari sini'),element('p',`Tujuan: ${data.goal}`));const steps=element('ol');data.steps.forEach(text=>steps.append(element('li',text)));box.append(steps,element('p',`Tanda selesai: ${data.success}`),element('p',`Jika ingin mengulang atau memperbaiki: ${data.retry}`));
+  const isGame=Object.hasOwn(games,key),steps=element('ol');data.steps.forEach(text=>steps.append(element('li',text)));
+  box.append(element('h3',isGame?'Cara bermain':'Petunjuk: mulai dari sini'),element('p',`Tujuan: ${data.goal}`));
+  if(isGame){
+   box.dataset.gameHelp='compact';const firstStep=(data.steps[0].match(/^[\s\S]*?[.!?](?:\s|$)/u)||[data.steps[0]])[0].trim();box.append(element('p',`Mulai: ${firstStep}`),element('p',`Tanda selesai: ${data.success}`));
+   const more=element('details'),summary=element('summary','Petunjuk lengkap dan cara mengulang');more.append(summary,steps,element('p',`Jika ingin mengulang atau memperbaiki: ${data.retry}`));
+   const heading=[...node.children].find(child=>/^H[1-4]$/.test(child.tagName)),intro=heading?.nextElementSibling;
+   if(intro?.tagName==='P'&&!intro.className&&!intro.id&&!intro.hasAttribute('role')&&!intro.querySelector('button,input,select')&&intro.textContent.length>100&&!/^(Level|Tiga |Skor|Misi \d|Kontrak \d)/.test(intro.textContent))more.append(intro);
+   box.append(more);
+  }else box.append(steps,element('p',`Tanda selesai: ${data.success}`),element('p',`Jika ingin mengulang atau memperbaiki: ${data.retry}`));
   if(node.matches('[data-topic-activity],.topic-journal,.deep-course-unit#kasus'))box.append(element('p','Untuk lanjut tahap: setelah menyelesaikan tugas di sini, kerjakan cek pemahaman pada tahap yang sama lalu klik Periksa Jawaban. Menyimpan percobaan/jurnal atau menyelesaikan produk saja tidak membuka tombol Tahap Berikutnya.'));
   const heading=[...node.children].find(child=>/^H[1-4]$/.test(child.tagName));if(heading)heading.after(box);else node.prepend(box);
  }

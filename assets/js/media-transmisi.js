@@ -1,5 +1,5 @@
 import { bindThemeToggle } from './theme.js';
-import { mountChapterNavigation } from './chapter-navigation.js?v=5';
+import { mountChapterNavigation } from './chapter-navigation.js?v=25';
 
 mountChapterNavigation({
   moduleId: 'media-transmisi',
