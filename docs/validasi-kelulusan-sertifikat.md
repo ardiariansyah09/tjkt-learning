@@ -2,9 +2,9 @@
 
 Audit mencakup seluruh modul berstatus `published` di `data/modules.json`. Modul rencana (`planned`) tidak dianggap sudah tersedia atau lulus.
 
-Hasil audit 24 Oktober 2026: **28 modul, 306 tahap lulus dari progres kosong; 28 PDF satu halaman; 28 cetak ulang dari progres tersimpan; 28 penolakan cetak ketika skor akhir uji diturunkan di bawah 80.** Tidak ditemukan kegagalan pada putaran lengkap terakhir.
+Hasil audit ulang 26 Oktober 2026: **53 modul, 606 tahap lulus dari progres kosong; 53 PDF satu halaman; 53 cetak ulang dari progres tersimpan; 53 penolakan cetak ketika skor akhir uji diturunkan di bawah 80.** Tidak ditemukan kegagalan pada putaran lengkap terakhir. Seluruh hasil memakai desain sertifikat `tjkt-circuit-v3`. Audit ini menggantikan cakupan historis 28 modul/306 tahap pada 24 Oktober 2026.
 
-Regresi tambahan juga selesai: seluruh 306 tahap diperiksa pada desktop 1280×900, ponsel 390×844, dan tema terang/gelap. Kerangka tampilan konsisten, tanpa kesalahan browser, ID ganda, atau luapan halaman. Laporan: `docs/module-validation-browser.json`. Pengujian tata letak sertifikat pada empat mesin lama juga lulus untuk logo asli, A4 mendatar, teks normal/panjang, tema gelap, dan PDF satu halaman; lihat `docs/certificate-validation-browser.json`.
+Audit tampilan terbaru juga mencakup seluruh 606 tahap pada desktop 1280×900, ponsel 390×844, dan tema terang/gelap. Kerangka tampilan konsisten, tanpa kesalahan browser, ID ganda, atau luapan halaman. Laporan: `docs/module-validation-browser.json`. Pengujian historis tata letak sertifikat pada empat mesin lama juga lulus untuk logo asli, A4 mendatar, teks normal/panjang, tema gelap, dan PDF satu halaman; lihat `docs/certificate-validation-browser.json`.
 
 ## Masalah dan perbaikan
 

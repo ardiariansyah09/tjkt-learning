@@ -1,0 +1,633 @@
+﻿{
+    "checkedAt":  "2026-10-26T14:14:57.7855496Z",
+    "modules":  [
+                    {
+                        "id":  "proses-bisnis-tjkt",
+                        "inspection":  {
+                                           "hasGame":  true,
+                                           "twoD":  true,
+                                           "multipleChoice":  false,
+                                           "simpleInstructions":  true,
+                                           "controls":  6,
+                                           "draggableObjects":  0,
+                                           "noFakeCompletion":  true
+                                       }
+                    },
+                    {
+                        "id":  "wawasan-tjkt",
+                        "inspection":  {
+                                           "hasGame":  true,
+                                           "twoD":  true,
+                                           "multipleChoice":  false,
+                                           "simpleInstructions":  true,
+                                           "controls":  9,
+                                           "draggableObjects":  0,
+                                           "noFakeCompletion":  true
+                                       }
+                    },
+                    {
+                        "id":  "profesi-kewirausahaan-tjkt",
+                        "inspection":  {
+                                           "hasGame":  true,
+                                           "twoD":  true,
+                                           "multipleChoice":  false,
+                                           "simpleInstructions":  true,
+                                           "controls":  8,
+                                           "draggableObjects":  0,
+                                           "noFakeCompletion":  true
+                                       }
+                    },
+                    {
+                        "id":  "k3-budaya-kerja",
+                        "inspection":  {
+                                           "hasGame":  true,
+                                           "twoD":  true,
+                                           "multipleChoice":  false,
+                                           "simpleInstructions":  true,
+                                           "controls":  17,
+                                           "draggableObjects":  3,
+                                           "noFakeCompletion":  true
+                                       }
+                    },
+                    {
+                        "id":  "pengenalan-jaringan",
+                        "inspection":  {
+                                           "hasGame":  true,
+                                           "twoD":  true,
+                                           "multipleChoice":  false,
+                                           "simpleInstructions":  true,
+                                           "controls":  5,
+                                           "draggableObjects":  0,
+                                           "noFakeCompletion":  true
+                                       }
+                    },
+                    {
+                        "id":  "perangkat-jaringan",
+                        "inspection":  {
+                                           "hasGame":  true,
+                                           "twoD":  true,
+                                           "multipleChoice":  false,
+                                           "simpleInstructions":  true,
+                                           "controls":  11,
+                                           "draggableObjects":  5,
+                                           "noFakeCompletion":  true
+                                       }
+                    },
+                    {
+                        "id":  "topologi-jaringan",
+                        "inspection":  {
+                                           "hasGame":  true,
+                                           "twoD":  true,
+                                           "multipleChoice":  false,
+                                           "simpleInstructions":  true,
+                                           "controls":  14,
+                                           "draggableObjects":  0,
+                                           "noFakeCompletion":  true
+                                       }
+                    },
+                    {
+                        "id":  "perencanaan-jaringan",
+                        "inspection":  {
+                                           "hasGame":  true,
+                                           "twoD":  true,
+                                           "multipleChoice":  false,
+                                           "simpleInstructions":  true,
+                                           "controls":  15,
+                                           "draggableObjects":  4,
+                                           "noFakeCompletion":  true
+                                       }
+                    },
+                    {
+                        "id":  "media-transmisi",
+                        "hasGame":  false
+                    },
+                    {
+                        "id":  "osi-tcpip",
+                        "inspection":  {
+                                           "hasGame":  true,
+                                           "twoD":  true,
+                                           "multipleChoice":  false,
+                                           "simpleInstructions":  true,
+                                           "controls":  11,
+                                           "draggableObjects":  5,
+                                           "noFakeCompletion":  true
+                                       }
+                    },
+                    {
+                        "id":  "ipv4-subnetting",
+                        "inspection":  {
+                                           "hasGame":  true,
+                                           "twoD":  true,
+                                           "multipleChoice":  false,
+                                           "simpleInstructions":  true,
+                                           "controls":  9,
+                                           "draggableObjects":  3,
+                                           "noFakeCompletion":  true
+                                       }
+                    },
+                    {
+                        "id":  "ipv6-dasar",
+                        "inspection":  {
+                                           "hasGame":  true,
+                                           "twoD":  true,
+                                           "multipleChoice":  false,
+                                           "simpleInstructions":  true,
+                                           "controls":  14,
+                                           "draggableObjects":  0,
+                                           "noFakeCompletion":  true
+                                       }
+                    },
+                    {
+                        "id":  "protokol-layanan",
+                        "inspection":  {
+                                           "hasGame":  true,
+                                           "twoD":  true,
+                                           "multipleChoice":  false,
+                                           "simpleInstructions":  true,
+                                           "controls":  12,
+                                           "draggableObjects":  0,
+                                           "noFakeCompletion":  true
+                                       }
+                    },
+                    {
+                        "id":  "sistem-telekomunikasi-dasar",
+                        "inspection":  {
+                                           "hasGame":  true,
+                                           "twoD":  true,
+                                           "multipleChoice":  false,
+                                           "simpleInstructions":  true,
+                                           "controls":  7,
+                                           "draggableObjects":  2,
+                                           "noFakeCompletion":  true
+                                       }
+                    },
+                    {
+                        "id":  "troubleshooting",
+                        "inspection":  {
+                                           "hasGame":  true,
+                                           "twoD":  true,
+                                           "multipleChoice":  false,
+                                           "simpleInstructions":  true,
+                                           "controls":  12,
+                                           "draggableObjects":  0,
+                                           "noFakeCompletion":  true
+                                       }
+                    },
+                    {
+                        "id":  "alat-ukur-tjkt",
+                        "inspection":  {
+                                           "hasGame":  true,
+                                           "twoD":  true,
+                                           "multipleChoice":  false,
+                                           "simpleInstructions":  true,
+                                           "controls":  10,
+                                           "draggableObjects":  0,
+                                           "noFakeCompletion":  true
+                                       }
+                    },
+                    {
+                        "id":  "kebutuhan-teknis-jaringan",
+                        "inspection":  {
+                                           "hasGame":  true,
+                                           "twoD":  true,
+                                           "multipleChoice":  false,
+                                           "simpleInstructions":  true,
+                                           "controls":  6,
+                                           "draggableObjects":  0,
+                                           "noFakeCompletion":  true
+                                       }
+                    },
+                    {
+                        "id":  "desain-topologi-arsitektur",
+                        "inspection":  {
+                                           "hasGame":  true,
+                                           "twoD":  true,
+                                           "multipleChoice":  false,
+                                           "simpleInstructions":  true,
+                                           "controls":  7,
+                                           "draggableObjects":  0,
+                                           "noFakeCompletion":  true
+                                       }
+                    },
+                    {
+                        "id":  "perencanaan-pengalamatan-lanjut",
+                        "inspection":  {
+                                           "hasGame":  true,
+                                           "twoD":  true,
+                                           "multipleChoice":  false,
+                                           "simpleInstructions":  true,
+                                           "controls":  22,
+                                           "draggableObjects":  0,
+                                           "noFakeCompletion":  true
+                                       }
+                    },
+                    {
+                        "id":  "instalasi-kabel",
+                        "inspection":  {
+                                           "hasGame":  true,
+                                           "twoD":  true,
+                                           "multipleChoice":  false,
+                                           "simpleInstructions":  true,
+                                           "controls":  18,
+                                           "draggableObjects":  0,
+                                           "noFakeCompletion":  true
+                                       }
+                    },
+                    {
+                        "id":  "wireless-lan",
+                        "inspection":  {
+                                           "hasGame":  true,
+                                           "twoD":  true,
+                                           "multipleChoice":  false,
+                                           "simpleInstructions":  true,
+                                           "controls":  8,
+                                           "draggableObjects":  0,
+                                           "noFakeCompletion":  true
+                                       }
+                    },
+                    {
+                        "id":  "pemeliharaan-kabel-nirkabel",
+                        "inspection":  {
+                                           "hasGame":  true,
+                                           "twoD":  true,
+                                           "multipleChoice":  false,
+                                           "simpleInstructions":  true,
+                                           "controls":  7,
+                                           "draggableObjects":  0,
+                                           "noFakeCompletion":  true
+                                       }
+                    },
+                    {
+                        "id":  "voip",
+                        "inspection":  {
+                                           "hasGame":  true,
+                                           "twoD":  true,
+                                           "multipleChoice":  false,
+                                           "simpleInstructions":  true,
+                                           "controls":  5,
+                                           "draggableObjects":  0,
+                                           "noFakeCompletion":  true
+                                       }
+                    },
+                    {
+                        "id":  "fiber-optik",
+                        "inspection":  {
+                                           "hasGame":  true,
+                                           "twoD":  true,
+                                           "multipleChoice":  false,
+                                           "simpleInstructions":  true,
+                                           "controls":  12,
+                                           "draggableObjects":  0,
+                                           "noFakeCompletion":  true
+                                       }
+                    },
+                    {
+                        "id":  "pemasangan-perangkat-jaringan",
+                        "inspection":  {
+                                           "hasGame":  true,
+                                           "twoD":  true,
+                                           "multipleChoice":  false,
+                                           "simpleInstructions":  true,
+                                           "controls":  13,
+                                           "draggableObjects":  0,
+                                           "noFakeCompletion":  true
+                                       }
+                    },
+                    {
+                        "id":  "penggantian-perangkat-jaringan",
+                        "inspection":  {
+                                           "hasGame":  true,
+                                           "twoD":  true,
+                                           "multipleChoice":  false,
+                                           "simpleInstructions":  true,
+                                           "controls":  8,
+                                           "draggableObjects":  0,
+                                           "noFakeCompletion":  true
+                                       }
+                    },
+                    {
+                        "id":  "switching-vlan",
+                        "inspection":  {
+                                           "hasGame":  true,
+                                           "twoD":  true,
+                                           "multipleChoice":  false,
+                                           "simpleInstructions":  true,
+                                           "controls":  10,
+                                           "draggableObjects":  1,
+                                           "noFakeCompletion":  true
+                                       }
+                    },
+                    {
+                        "id":  "routing-ipv4",
+                        "inspection":  {
+                                           "hasGame":  true,
+                                           "twoD":  true,
+                                           "multipleChoice":  false,
+                                           "simpleInstructions":  true,
+                                           "controls":  7,
+                                           "draggableObjects":  0,
+                                           "noFakeCompletion":  true
+                                       }
+                    },
+                    {
+                        "id":  "routing-dinamis",
+                        "inspection":  {
+                                           "hasGame":  true,
+                                           "twoD":  true,
+                                           "multipleChoice":  false,
+                                           "simpleInstructions":  true,
+                                           "controls":  4,
+                                           "draggableObjects":  0,
+                                           "noFakeCompletion":  true
+                                       }
+                    },
+                    {
+                        "id":  "nat-wan",
+                        "inspection":  {
+                                           "hasGame":  true,
+                                           "twoD":  true,
+                                           "multipleChoice":  false,
+                                           "simpleInstructions":  true,
+                                           "controls":  13,
+                                           "draggableObjects":  3,
+                                           "noFakeCompletion":  true
+                                       }
+                    },
+                    {
+                        "id":  "proxy-load-balancing",
+                        "inspection":  {
+                                           "hasGame":  true,
+                                           "twoD":  true,
+                                           "multipleChoice":  false,
+                                           "simpleInstructions":  true,
+                                           "controls":  9,
+                                           "draggableObjects":  0,
+                                           "noFakeCompletion":  true
+                                       }
+                    },
+                    {
+                        "id":  "bandwidth-qos",
+                        "inspection":  {
+                                           "hasGame":  true,
+                                           "twoD":  true,
+                                           "multipleChoice":  false,
+                                           "simpleInstructions":  true,
+                                           "controls":  8,
+                                           "draggableObjects":  3,
+                                           "noFakeCompletion":  true
+                                       }
+                    },
+                    {
+                        "id":  "load-balancing",
+                        "inspection":  {
+                                           "hasGame":  true,
+                                           "twoD":  true,
+                                           "multipleChoice":  false,
+                                           "simpleInstructions":  true,
+                                           "controls":  10,
+                                           "draggableObjects":  3,
+                                           "noFakeCompletion":  true
+                                       }
+                    },
+                    {
+                        "id":  "dasar-administrasi-server",
+                        "inspection":  {
+                                           "hasGame":  true,
+                                           "twoD":  true,
+                                           "multipleChoice":  false,
+                                           "simpleInstructions":  true,
+                                           "controls":  8,
+                                           "draggableObjects":  0,
+                                           "noFakeCompletion":  true
+                                       }
+                    },
+                    {
+                        "id":  "virtualisasi-server",
+                        "inspection":  {
+                                           "hasGame":  true,
+                                           "twoD":  true,
+                                           "multipleChoice":  false,
+                                           "simpleInstructions":  true,
+                                           "controls":  15,
+                                           "draggableObjects":  3,
+                                           "noFakeCompletion":  true
+                                       }
+                    },
+                    {
+                        "id":  "administrasi-linux-windows",
+                        "inspection":  {
+                                           "hasGame":  true,
+                                           "twoD":  true,
+                                           "multipleChoice":  false,
+                                           "simpleInstructions":  true,
+                                           "controls":  20,
+                                           "draggableObjects":  0,
+                                           "noFakeCompletion":  true
+                                       }
+                    },
+                    {
+                        "id":  "manajemen-pengguna-server",
+                        "inspection":  {
+                                           "hasGame":  true,
+                                           "twoD":  true,
+                                           "multipleChoice":  false,
+                                           "simpleInstructions":  true,
+                                           "controls":  11,
+                                           "draggableObjects":  0,
+                                           "noFakeCompletion":  true
+                                       }
+                    },
+                    {
+                        "id":  "layanan-server",
+                        "inspection":  {
+                                           "hasGame":  true,
+                                           "twoD":  true,
+                                           "multipleChoice":  false,
+                                           "simpleInstructions":  true,
+                                           "controls":  16,
+                                           "draggableObjects":  4,
+                                           "noFakeCompletion":  true
+                                       }
+                    },
+                    {
+                        "id":  "ftp-server",
+                        "inspection":  {
+                                           "hasGame":  true,
+                                           "twoD":  true,
+                                           "multipleChoice":  false,
+                                           "simpleInstructions":  true,
+                                           "controls":  12,
+                                           "draggableObjects":  0,
+                                           "noFakeCompletion":  true
+                                       }
+                    },
+                    {
+                        "id":  "file-server",
+                        "inspection":  {
+                                           "hasGame":  true,
+                                           "twoD":  true,
+                                           "multipleChoice":  false,
+                                           "simpleInstructions":  true,
+                                           "controls":  13,
+                                           "draggableObjects":  3,
+                                           "noFakeCompletion":  true
+                                       }
+                    },
+                    {
+                        "id":  "hosting-server",
+                        "inspection":  {
+                                           "hasGame":  true,
+                                           "twoD":  true,
+                                           "multipleChoice":  false,
+                                           "simpleInstructions":  true,
+                                           "controls":  14,
+                                           "draggableObjects":  0,
+                                           "noFakeCompletion":  true
+                                       }
+                    },
+                    {
+                        "id":  "panel-layanan-hosting",
+                        "inspection":  {
+                                           "hasGame":  true,
+                                           "twoD":  true,
+                                           "multipleChoice":  false,
+                                           "simpleInstructions":  true,
+                                           "controls":  10,
+                                           "draggableObjects":  2,
+                                           "noFakeCompletion":  true
+                                       }
+                    },
+                    {
+                        "id":  "vpn-server",
+                        "inspection":  {
+                                           "hasGame":  true,
+                                           "twoD":  true,
+                                           "multipleChoice":  false,
+                                           "simpleInstructions":  true,
+                                           "controls":  16,
+                                           "draggableObjects":  0,
+                                           "noFakeCompletion":  true
+                                       }
+                    },
+                    {
+                        "id":  "monitoring-jaringan",
+                        "inspection":  {
+                                           "hasGame":  true,
+                                           "twoD":  true,
+                                           "multipleChoice":  false,
+                                           "simpleInstructions":  true,
+                                           "controls":  12,
+                                           "draggableObjects":  0,
+                                           "noFakeCompletion":  true
+                                       }
+                    },
+                    {
+                        "id":  "backup-pemulihan-server",
+                        "inspection":  {
+                                           "hasGame":  true,
+                                           "twoD":  true,
+                                           "multipleChoice":  false,
+                                           "simpleInstructions":  true,
+                                           "controls":  10,
+                                           "draggableObjects":  0,
+                                           "noFakeCompletion":  true
+                                       }
+                    },
+                    {
+                        "id":  "mail-server",
+                        "inspection":  {
+                                           "hasGame":  true,
+                                           "twoD":  true,
+                                           "multipleChoice":  false,
+                                           "simpleInstructions":  true,
+                                           "controls":  18,
+                                           "draggableObjects":  0,
+                                           "noFakeCompletion":  true
+                                       }
+                    },
+                    {
+                        "id":  "keamanan-jaringan",
+                        "inspection":  {
+                                           "hasGame":  true,
+                                           "twoD":  true,
+                                           "multipleChoice":  false,
+                                           "simpleInstructions":  true,
+                                           "controls":  19,
+                                           "draggableObjects":  0,
+                                           "noFakeCompletion":  true
+                                       }
+                    },
+                    {
+                        "id":  "autentikasi-kriptografi",
+                        "inspection":  {
+                                           "hasGame":  true,
+                                           "twoD":  true,
+                                           "multipleChoice":  false,
+                                           "simpleInstructions":  true,
+                                           "controls":  16,
+                                           "draggableObjects":  0,
+                                           "noFakeCompletion":  true
+                                       }
+                    },
+                    {
+                        "id":  "ids-hardening",
+                        "inspection":  {
+                                           "hasGame":  true,
+                                           "twoD":  true,
+                                           "multipleChoice":  false,
+                                           "simpleInstructions":  true,
+                                           "controls":  14,
+                                           "draggableObjects":  0,
+                                           "noFakeCompletion":  true
+                                       }
+                    },
+                    {
+                        "id":  "server-dmz",
+                        "inspection":  {
+                                           "hasGame":  true,
+                                           "twoD":  true,
+                                           "multipleChoice":  false,
+                                           "simpleInstructions":  true,
+                                           "controls":  15,
+                                           "draggableObjects":  0,
+                                           "noFakeCompletion":  true
+                                       }
+                    },
+                    {
+                        "id":  "pengujian-keamanan",
+                        "inspection":  {
+                                           "hasGame":  true,
+                                           "twoD":  true,
+                                           "multipleChoice":  false,
+                                           "simpleInstructions":  true,
+                                           "controls":  13,
+                                           "draggableObjects":  0,
+                                           "noFakeCompletion":  true
+                                       }
+                    },
+                    {
+                        "id":  "ids-respons-insiden",
+                        "inspection":  {
+                                           "hasGame":  true,
+                                           "twoD":  true,
+                                           "multipleChoice":  false,
+                                           "simpleInstructions":  true,
+                                           "controls":  22,
+                                           "draggableObjects":  0,
+                                           "noFakeCompletion":  true
+                                       }
+                    },
+                    {
+                        "id":  "proyek-integrasi-jaringan",
+                        "inspection":  {
+                                           "hasGame":  true,
+                                           "twoD":  true,
+                                           "multipleChoice":  false,
+                                           "simpleInstructions":  true,
+                                           "controls":  15,
+                                           "draggableObjects":  0,
+                                           "noFakeCompletion":  true
+                                       }
+                    }
+                ]
+}

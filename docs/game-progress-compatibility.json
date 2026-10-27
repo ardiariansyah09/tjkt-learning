@@ -1,0 +1,117 @@
+﻿{
+    "checkedAt":  "2026-10-26T13:42:10.5624314Z",
+    "modules":  [
+                    {
+                        "journalAndGameHistoryPreserved":  true,
+                        "replacementResetPreservesGrade":  true,
+                        "existingProgressReprint":  true,
+                        "id":  "proses-bisnis-tjkt",
+                        "oldGrade85Preserved":  true
+                    },
+                    {
+                        "journalAndGameHistoryPreserved":  true,
+                        "replacementResetPreservesGrade":  true,
+                        "existingProgressReprint":  true,
+                        "id":  "wawasan-tjkt",
+                        "oldGrade85Preserved":  true
+                    },
+                    {
+                        "journalAndGameHistoryPreserved":  true,
+                        "replacementResetPreservesGrade":  true,
+                        "existingProgressReprint":  true,
+                        "id":  "profesi-kewirausahaan-tjkt",
+                        "oldGrade85Preserved":  true
+                    },
+                    {
+                        "journalAndGameHistoryPreserved":  true,
+                        "replacementResetPreservesGrade":  true,
+                        "existingProgressReprint":  true,
+                        "id":  "k3-budaya-kerja",
+                        "oldGrade85Preserved":  true
+                    },
+                    {
+                        "journalAndGameHistoryPreserved":  true,
+                        "replacementResetPreservesGrade":  true,
+                        "existingProgressReprint":  true,
+                        "id":  "pengenalan-jaringan",
+                        "oldGrade85Preserved":  true
+                    },
+                    {
+                        "journalAndGameHistoryPreserved":  true,
+                        "replacementResetPreservesGrade":  true,
+                        "existingProgressReprint":  true,
+                        "id":  "perangkat-jaringan",
+                        "oldGrade85Preserved":  true
+                    },
+                    {
+                        "journalAndGameHistoryPreserved":  true,
+                        "replacementResetPreservesGrade":  true,
+                        "existingProgressReprint":  true,
+                        "id":  "topologi-jaringan",
+                        "oldGrade85Preserved":  true
+                    },
+                    {
+                        "journalAndGameHistoryPreserved":  true,
+                        "replacementResetPreservesGrade":  true,
+                        "existingProgressReprint":  true,
+                        "id":  "perencanaan-jaringan",
+                        "oldGrade85Preserved":  true
+                    },
+                    {
+                        "journalAndGameHistoryPreserved":  true,
+                        "replacementResetPreservesGrade":  true,
+                        "existingProgressReprint":  true,
+                        "id":  "osi-tcpip",
+                        "oldGrade85Preserved":  true
+                    },
+                    {
+                        "journalAndGameHistoryPreserved":  true,
+                        "replacementResetPreservesGrade":  true,
+                        "existingProgressReprint":  true,
+                        "id":  "ipv4-subnetting",
+                        "oldGrade85Preserved":  true
+                    },
+                    {
+                        "journalAndGameHistoryPreserved":  true,
+                        "replacementResetPreservesGrade":  true,
+                        "existingProgressReprint":  true,
+                        "id":  "ipv6-dasar",
+                        "oldGrade85Preserved":  true
+                    },
+                    {
+                        "journalAndGameHistoryPreserved":  true,
+                        "replacementResetPreservesGrade":  true,
+                        "existingProgressReprint":  true,
+                        "id":  "protokol-layanan",
+                        "oldGrade85Preserved":  true
+                    },
+                    {
+                        "journalAndGameHistoryPreserved":  true,
+                        "replacementResetPreservesGrade":  true,
+                        "existingProgressReprint":  true,
+                        "id":  "sistem-telekomunikasi-dasar",
+                        "oldGrade85Preserved":  true
+                    },
+                    {
+                        "journalAndGameHistoryPreserved":  true,
+                        "replacementResetPreservesGrade":  true,
+                        "existingProgressReprint":  true,
+                        "id":  "troubleshooting",
+                        "oldGrade85Preserved":  true
+                    },
+                    {
+                        "journalAndGameHistoryPreserved":  true,
+                        "replacementResetPreservesGrade":  true,
+                        "existingProgressReprint":  true,
+                        "id":  "alat-ukur-tjkt",
+                        "oldGrade85Preserved":  true
+                    },
+                    {
+                        "journalAndGameHistoryPreserved":  true,
+                        "replacementResetPreservesGrade":  true,
+                        "existingProgressReprint":  true,
+                        "id":  "switching-vlan",
+                        "oldGrade85Preserved":  true
+                    }
+                ]
+}

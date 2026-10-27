@@ -1,0 +1,2975 @@
+﻿{
+    "moduleCount":  53,
+    "checkedAt":  "2026-10-26T12:32:45.7784098Z",
+    "checks":  212,
+    "results":  [
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "proses-bisnis-tjkt",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "proses-bisnis-tjkt",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "proses-bisnis-tjkt",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "proses-bisnis-tjkt",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "wawasan-tjkt",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "wawasan-tjkt",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "wawasan-tjkt",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "wawasan-tjkt",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "profesi-kewirausahaan-tjkt",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "profesi-kewirausahaan-tjkt",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "profesi-kewirausahaan-tjkt",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "profesi-kewirausahaan-tjkt",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "k3-budaya-kerja",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "k3-budaya-kerja",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "k3-budaya-kerja",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "k3-budaya-kerja",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "pengenalan-jaringan",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "pengenalan-jaringan",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "pengenalan-jaringan",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "pengenalan-jaringan",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "perangkat-jaringan",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "perangkat-jaringan",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "perangkat-jaringan",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "perangkat-jaringan",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "topologi-jaringan",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "topologi-jaringan",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "topologi-jaringan",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "topologi-jaringan",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "perencanaan-jaringan",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "perencanaan-jaringan",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "perencanaan-jaringan",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "perencanaan-jaringan",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "media-transmisi",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "media-transmisi",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "media-transmisi",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "media-transmisi",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "osi-tcpip",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "osi-tcpip",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "osi-tcpip",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "osi-tcpip",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "ipv4-subnetting",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "ipv4-subnetting",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "ipv4-subnetting",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "ipv4-subnetting",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "ipv6-dasar",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "ipv6-dasar",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "ipv6-dasar",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "ipv6-dasar",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "protokol-layanan",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "protokol-layanan",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "protokol-layanan",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "protokol-layanan",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "sistem-telekomunikasi-dasar",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "sistem-telekomunikasi-dasar",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "sistem-telekomunikasi-dasar",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "sistem-telekomunikasi-dasar",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "troubleshooting",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "troubleshooting",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "troubleshooting",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "troubleshooting",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "alat-ukur-tjkt",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "alat-ukur-tjkt",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "alat-ukur-tjkt",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "alat-ukur-tjkt",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "kebutuhan-teknis-jaringan",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "kebutuhan-teknis-jaringan",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "kebutuhan-teknis-jaringan",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "kebutuhan-teknis-jaringan",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "desain-topologi-arsitektur",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "desain-topologi-arsitektur",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "desain-topologi-arsitektur",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "desain-topologi-arsitektur",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "perencanaan-pengalamatan-lanjut",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "perencanaan-pengalamatan-lanjut",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "perencanaan-pengalamatan-lanjut",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "perencanaan-pengalamatan-lanjut",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "instalasi-kabel",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "instalasi-kabel",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "instalasi-kabel",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "instalasi-kabel",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "wireless-lan",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "wireless-lan",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "wireless-lan",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "wireless-lan",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "pemeliharaan-kabel-nirkabel",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "pemeliharaan-kabel-nirkabel",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "pemeliharaan-kabel-nirkabel",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "pemeliharaan-kabel-nirkabel",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "voip",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "voip",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "voip",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "voip",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "fiber-optik",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "fiber-optik",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "fiber-optik",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "fiber-optik",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "pemasangan-perangkat-jaringan",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "pemasangan-perangkat-jaringan",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "pemasangan-perangkat-jaringan",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "pemasangan-perangkat-jaringan",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "penggantian-perangkat-jaringan",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "penggantian-perangkat-jaringan",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "penggantian-perangkat-jaringan",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "penggantian-perangkat-jaringan",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "switching-vlan",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "switching-vlan",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "switching-vlan",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "switching-vlan",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "routing-ipv4",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "routing-ipv4",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "routing-ipv4",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "routing-ipv4",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "routing-dinamis",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "routing-dinamis",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "routing-dinamis",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "routing-dinamis",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "nat-wan",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "nat-wan",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "nat-wan",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "nat-wan",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "proxy-load-balancing",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "proxy-load-balancing",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "proxy-load-balancing",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "proxy-load-balancing",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "bandwidth-qos",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "bandwidth-qos",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "bandwidth-qos",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "bandwidth-qos",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "load-balancing",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "load-balancing",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "load-balancing",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "load-balancing",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "dasar-administrasi-server",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "dasar-administrasi-server",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "dasar-administrasi-server",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "dasar-administrasi-server",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "virtualisasi-server",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "virtualisasi-server",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "virtualisasi-server",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "virtualisasi-server",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "administrasi-linux-windows",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "administrasi-linux-windows",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "administrasi-linux-windows",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "administrasi-linux-windows",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "manajemen-pengguna-server",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "manajemen-pengguna-server",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "manajemen-pengguna-server",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "manajemen-pengguna-server",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "layanan-server",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "layanan-server",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "layanan-server",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "layanan-server",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "ftp-server",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "ftp-server",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "ftp-server",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "ftp-server",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "file-server",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "file-server",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "file-server",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "file-server",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "hosting-server",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "hosting-server",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "hosting-server",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "hosting-server",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "panel-layanan-hosting",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "panel-layanan-hosting",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "panel-layanan-hosting",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "panel-layanan-hosting",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "vpn-server",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "vpn-server",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "vpn-server",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "vpn-server",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "monitoring-jaringan",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "monitoring-jaringan",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "monitoring-jaringan",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "monitoring-jaringan",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "backup-pemulihan-server",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "backup-pemulihan-server",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "backup-pemulihan-server",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "backup-pemulihan-server",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "mail-server",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "mail-server",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "mail-server",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "mail-server",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "keamanan-jaringan",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "keamanan-jaringan",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "keamanan-jaringan",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "keamanan-jaringan",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "autentikasi-kriptografi",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "autentikasi-kriptografi",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "autentikasi-kriptografi",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "autentikasi-kriptografi",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "ids-hardening",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "ids-hardening",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "ids-hardening",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "ids-hardening",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "server-dmz",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "server-dmz",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "server-dmz",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "server-dmz",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "pengujian-keamanan",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "pengujian-keamanan",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "pengujian-keamanan",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "pengujian-keamanan",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "ids-respons-insiden",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "ids-respons-insiden",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "ids-respons-insiden",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "ids-respons-insiden",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "proyek-integrasi-jaringan",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0,
+                                          "headerY":  0.5,
+                                          "box":  42,
+                                          "image":  24,
+                                          "overflow":  false
+                                      },
+                        "width":  1280,
+                        "id":  "proyek-integrasi-jaringan",
+                        "dark":  true
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "proyek-integrasi-jaringan",
+                        "dark":  false
+                    },
+                    {
+                        "alignment":  {
+                                          "iconX":  0,
+                                          "iconY":  0,
+                                          "labelY":  0.0078125,
+                                          "headerY":  0.5,
+                                          "box":  32,
+                                          "image":  20,
+                                          "overflow":  false
+                                      },
+                        "width":  390,
+                        "id":  "proyek-integrasi-jaringan",
+                        "dark":  true
+                    }
+                ]
+}

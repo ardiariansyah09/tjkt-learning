@@ -123,3 +123,8 @@ Penggantian Perangkat XI memakai keadaan migrasi dan bukti terikat versi. Edit r
 
 
 Routing Statis XI memakai aritmetika IPv4 tanpa signed overflow, validasi network/prefix, longest-prefix match pada rute aktif, dan connected route sesuai link. Model membatasi next-hop pada tetangga langsung, menelusuri request/reply terpisah dengan TTL awal masing-masing, dan mendeteksi loop lebih dini. Edit membatalkan bukti. Game TTL Route Runner memakai navigasi graf, link putus, TTL untuk tiap penerusan termasuk host tujuan, kegagalan, pengulangan, dan tiga graf. Pengujian ada pada tools/static-routing-checks.js. Jumlah 306 tahap adalah cakupan kumulatif modul tersedia, bukan klaim seluruhnya diuji ulang pada penambahan ini.
+
+
+## Pembaruan game 2D bertopik — 26 Oktober 2026
+
+Enam belas modul yang memakai kurir grid berulang telah diganti dengan 16 mekanik/48 level sesuai materi. Inventaris 53 modul dan pemeriksaan progres lama dijelaskan pada [game 2D sesuai materi](game-2d-sesuai-materi.md). Audit seluruh 53 modul/606 tahap serta focused akhir 16 modul lulus; 17 alur penyelesaian sampai PDF dan 16 pemeriksaan progres lama/cetak ulang lulus. Kunci penyimpanan dan ID tahap dipertahankan.

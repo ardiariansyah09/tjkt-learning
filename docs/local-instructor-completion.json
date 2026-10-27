@@ -1,0 +1,90 @@
+﻿{
+    "checkedAt":  "2026-10-26T12:47:27.6512835Z",
+    "modules":  [
+                    {
+                        "id":  "pengenalan-jaringan",
+                        "existingProgressReprint":  true,
+                        "certificate":  {
+                                            "stages":  9,
+                                            "score":  100,
+                                            "form":  true,
+                                            "print":  true,
+                                            "logo":  1254,
+                                            "design":  "tjkt-circuit-v3"
+                                        },
+                        "stages":  9,
+                        "pdfBytes":  1689910,
+                        "freshSequential":  true,
+                        "pdfPages":  1,
+                        "belowThresholdBlocked":  true
+                    },
+                    {
+                        "id":  "perangkat-jaringan",
+                        "existingProgressReprint":  true,
+                        "certificate":  {
+                                            "stages":  9,
+                                            "score":  100,
+                                            "form":  true,
+                                            "print":  true,
+                                            "logo":  1254,
+                                            "design":  "tjkt-circuit-v3"
+                                        },
+                        "stages":  9,
+                        "pdfBytes":  1689081,
+                        "freshSequential":  true,
+                        "pdfPages":  1,
+                        "belowThresholdBlocked":  true
+                    },
+                    {
+                        "id":  "topologi-jaringan",
+                        "existingProgressReprint":  true,
+                        "certificate":  {
+                                            "stages":  9,
+                                            "score":  100,
+                                            "form":  true,
+                                            "print":  true,
+                                            "logo":  1254,
+                                            "design":  "tjkt-circuit-v3"
+                                        },
+                        "stages":  9,
+                        "pdfBytes":  1689336,
+                        "freshSequential":  true,
+                        "pdfPages":  1,
+                        "belowThresholdBlocked":  true
+                    },
+                    {
+                        "id":  "perencanaan-jaringan",
+                        "existingProgressReprint":  true,
+                        "certificate":  {
+                                            "stages":  12,
+                                            "score":  100,
+                                            "form":  true,
+                                            "print":  true,
+                                            "logo":  1254,
+                                            "design":  "tjkt-circuit-v3"
+                                        },
+                        "stages":  12,
+                        "pdfBytes":  1690821,
+                        "freshSequential":  true,
+                        "pdfPages":  1,
+                        "belowThresholdBlocked":  true
+                    },
+                    {
+                        "id":  "ipv4-subnetting",
+                        "existingProgressReprint":  true,
+                        "certificate":  {
+                                            "stages":  9,
+                                            "score":  100,
+                                            "form":  true,
+                                            "print":  true,
+                                            "logo":  1254,
+                                            "design":  "tjkt-circuit-v3"
+                                        },
+                        "stages":  9,
+                        "pdfBytes":  1690090,
+                        "freshSequential":  true,
+                        "pdfPages":  1,
+                        "belowThresholdBlocked":  true
+                    }
+                ]
+}

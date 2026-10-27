@@ -1,0 +1,121 @@
+﻿{
+    "models":  {
+                   "distinctMechanics":  16,
+                   "levels":  48,
+                   "negativeGuards":  true
+               },
+    "games":  [
+                  {
+                      "id":  "proses-bisnis-tjkt",
+                      "levels":  3,
+                      "distinctMechanic":  "tickets",
+                      "realControls":  true,
+                      "score":  100
+                  },
+                  {
+                      "id":  "wawasan-tjkt",
+                      "levels":  3,
+                      "distinctMechanic":  "sensor",
+                      "realControls":  true,
+                      "score":  100
+                  },
+                  {
+                      "id":  "profesi-kewirausahaan-tjkt",
+                      "levels":  3,
+                      "distinctMechanic":  "shop",
+                      "realControls":  true,
+                      "score":  100
+                  },
+                  {
+                      "id":  "sistem-telekomunikasi-dasar",
+                      "levels":  3,
+                      "distinctMechanic":  "radio",
+                      "realControls":  true,
+                      "score":  100
+                  },
+                  {
+                      "id":  "alat-ukur-tjkt",
+                      "levels":  3,
+                      "distinctMechanic":  "meter",
+                      "realControls":  true,
+                      "score":  100
+                  },
+                  {
+                      "id":  "k3-budaya-kerja",
+                      "levels":  3,
+                      "distinctMechanic":  "safety",
+                      "realControls":  true,
+                      "score":  100
+                  },
+                  {
+                      "id":  "perencanaan-jaringan",
+                      "levels":  3,
+                      "distinctMechanic":  "rack",
+                      "realControls":  true,
+                      "score":  100
+                  },
+                  {
+                      "id":  "ipv6-dasar",
+                      "levels":  3,
+                      "distinctMechanic":  "ipv6",
+                      "realControls":  true,
+                      "score":  100
+                  },
+                  {
+                      "id":  "pengenalan-jaringan",
+                      "levels":  3,
+                      "distinctMechanic":  "delivery",
+                      "realControls":  true,
+                      "score":  100
+                  },
+                  {
+                      "id":  "topologi-jaringan",
+                      "levels":  3,
+                      "distinctMechanic":  "resilience",
+                      "realControls":  true,
+                      "score":  100
+                  },
+                  {
+                      "id":  "perangkat-jaringan",
+                      "levels":  3,
+                      "distinctMechanic":  "workshop",
+                      "realControls":  true,
+                      "score":  100
+                  },
+                  {
+                      "id":  "osi-tcpip",
+                      "levels":  3,
+                      "distinctMechanic":  "envelopes",
+                      "realControls":  true,
+                      "score":  100
+                  },
+                  {
+                      "id":  "ipv4-subnetting",
+                      "levels":  3,
+                      "distinctMechanic":  "blocks",
+                      "realControls":  true,
+                      "score":  100
+                  },
+                  {
+                      "id":  "protokol-layanan",
+                      "levels":  3,
+                      "distinctMechanic":  "windows",
+                      "realControls":  true,
+                      "score":  100
+                  },
+                  {
+                      "id":  "troubleshooting",
+                      "levels":  3,
+                      "distinctMechanic":  "diagnostic",
+                      "realControls":  true,
+                      "score":  100
+                  },
+                  {
+                      "id":  "switching-vlan",
+                      "levels":  3,
+                      "distinctMechanic":  "frames",
+                      "realControls":  true,
+                      "score":  100
+                  }
+              ]
+}

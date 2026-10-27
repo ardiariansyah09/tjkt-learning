@@ -1,0 +1,872 @@
+﻿{
+    "modules":  [
+                    {
+                        "id":  "perencanaan-jaringan",
+                        "stageCount":  12,
+                        "stages":  [
+                                       "Orientasi, Tujuan, dan Asesmen Awal",
+                                       "Pemangku Kepentingan dan Kebutuhan",
+                                       "Survei Lokasi dan Inventaris",
+                                       "Perhitungan Port, Kapasitas, dan Pertumbuhan",
+                                       "Rancangan Fisik, Logis, dan Pengalamatan",
+                                       "Anggaran, Pemilihan Alternatif, dan Risiko",
+                                       "Dokumentasi, Uji Penerimaan, dan Perubahan",
+                                       "Studi Kasus: Rancangan Laboratorium Sekolah",
+                                       "Panel Kapasitas Switch",
+                                       "Misi Pengiriman — Game Petualangan",
+                                       "Refleksi dan Review Antar-Kelompok",
+                                       "Evaluasi Akhir dan Serah Terima Rancangan"
+                                   ],
+                        "studio":  {
+                                       "core":  {
+                                                    "representationVectors":  5,
+                                                    "invalidVectors":  7,
+                                                    "scopeVectors":  3,
+                                                    "otherModels":  4
+                                                },
+                                       "ui":  {
+                                                  "globalStudioRemoved":  true,
+                                                  "contextualActivities":  true,
+                                                  "models":  {
+                                                                 "contextual":  {
+                                                                                    "contexts":  53,
+                                                                                    "securityProfiles":  20,
+                                                                                    "prefixes":  7,
+                                                                                    "parentAddresses":  256
+                                                                                },
+                                                                 "loginDefense":  {
+                                                                                      "findtime":  60,
+                                                                                      "bantime":  120,
+                                                                                      "sourceIsolation":  true,
+                                                                                      "filter":  true,
+                                                                                      "unban":  true
+                                                                                  },
+                                                                 "vectors":  10,
+                                                                 "requirements":  {
+                                                                                      "vectors":  8,
+                                                                                      "contracts":  3
+                                                                                  },
+                                                                 "layout":  {
+                                                                                "vectors":  5,
+                                                                                "levelLengths":  [
+                                                                                                     12,
+                                                                                                     12,
+                                                                                                     12
+                                                                                                 ]
+                                                                            },
+                                                                 "addressPlan":  {
+                                                                                     "vectors":  13,
+                                                                                     "levels":  3
+                                                                                 },
+                                                                 "cabling":  {
+                                                                                 "vectors":  9
+                                                                             },
+                                                                 "wlan":  {
+                                                                              "vectors":  6,
+                                                                              "levels":  3
+                                                                          },
+                                                                 "maintenance":  {
+                                                                                     "incidents":  3,
+                                                                                     "verificationVectors":  12,
+                                                                                     "boards":  3
+                                                                                 },
+                                                                 "voip":  {
+                                                                              "callVectors":  10,
+                                                                              "bufferLevels":  3
+                                                                          },
+                                                                 "fiber":  {
+                                                                               "opticalVectors":  8,
+                                                                               "trays":  3
+                                                                           },
+                                                                 "installation":  {
+                                                                                      "integrationVectors":  8,
+                                                                                      "chassis":  3
+                                                                                  },
+                                                                 "replacement":  {
+                                                                                     "migrationVectors":  8,
+                                                                                     "rooms":  3,
+                                                                                     "solutionLengths":  [
+                                                                                                             12,
+                                                                                                             12,
+                                                                                                             12
+                                                                                                         ]
+                                                                                 },
+                                                                 "staticRouting":  {
+                                                                                       "routingVectors":  12,
+                                                                                       "ttlLevels":  3,
+                                                                                       "solutionLengths":  [
+                                                                                                               3,
+                                                                                                               4,
+                                                                                                               7
+                                                                                                           ]
+                                                                                   },
+                                                                 "dynamicRouting":  {
+                                                                                        "routingVectors":  12,
+                                                                                        "relayLevels":  3,
+                                                                                        "transmissions":  [
+                                                                                                              10,
+                                                                                                              10,
+                                                                                                              13
+                                                                                                          ]
+                                                                                    },
+                                                                 "nat":  {
+                                                                             "natVectors":  20,
+                                                                             "gameLevels":  3,
+                                                                             "solutionTurns":  [
+                                                                                                   6,
+                                                                                                   10,
+                                                                                                   12
+                                                                                               ]
+                                                                         },
+                                                                 "proxy":  {
+                                                                               "proxyVectors":  20,
+                                                                               "gameLevels":  3,
+                                                                               "solutions":  [
+                                                                                                 {
+                                                                                                     "steps":  53,
+                                                                                                     "WAN":  4
+                                                                                                 },
+                                                                                                 {
+                                                                                                     "steps":  67,
+                                                                                                     "WAN":  6
+                                                                                                 },
+                                                                                                 {
+                                                                                                     "steps":  116,
+                                                                                                     "WAN":  12
+                                                                                                 }
+                                                                                             ]
+                                                                           },
+                                                                 "qos":  {
+                                                                             "queueVectors":  36,
+                                                                             "metricCases":  8,
+                                                                             "gameLevels":  3,
+                                                                             "solutionTurns":  [
+                                                                                                   6,
+                                                                                                   5,
+                                                                                                   7
+                                                                                               ]
+                                                                         },
+                                                                 "dualWAN":  {
+                                                                                 "WANVectors":  18,
+                                                                                 "gameLevels":  3,
+                                                                                 "solutions":  [
+                                                                                                   {
+                                                                                                       "turns":  3,
+                                                                                                       "retries":  0
+                                                                                                   },
+                                                                                                   {
+                                                                                                       "turns":  7,
+                                                                                                       "retries":  1
+                                                                                                   },
+                                                                                                   {
+                                                                                                       "turns":  10,
+                                                                                                       "retries":  3
+                                                                                                   }
+                                                                                               ]
+                                                                             },
+                                                                 "serverBasics":  {
+                                                                                      "serverCases":  20,
+                                                                                      "gameLevels":  3,
+                                                                                      "solutionSteps":  [
+                                                                                                            17,
+                                                                                                            26,
+                                                                                                            40
+                                                                                                        ]
+                                                                                  },
+                                                                 "virtualization":  {
+                                                                                        "VMScenarios":  22,
+                                                                                        "gameLevels":  3,
+                                                                                        "solutions":  [
+                                                                                                          {
+                                                                                                              "turns":  7,
+                                                                                                              "restores":  0
+                                                                                                          },
+                                                                                                          {
+                                                                                                              "turns":  16,
+                                                                                                              "restores":  3
+                                                                                                          },
+                                                                                                          {
+                                                                                                              "turns":  15,
+                                                                                                              "restores":  2
+                                                                                                          }
+                                                                                                      ]
+                                                                                    },
+                                                                 "osAdmin":  {
+                                                                                 "scenarios":  32,
+                                                                                 "platforms":  2,
+                                                                                 "solutions":  [
+                                                                                                   {
+                                                                                                       "level":  1,
+                                                                                                       "turns":  26,
+                                                                                                       "budget":  28
+                                                                                                   },
+                                                                                                   {
+                                                                                                       "level":  2,
+                                                                                                       "turns":  30,
+                                                                                                       "budget":  32
+                                                                                                   },
+                                                                                                   {
+                                                                                                       "level":  3,
+                                                                                                       "turns":  24,
+                                                                                                       "budget":  26
+                                                                                                   }
+                                                                                               ]
+                                                                             },
+                                                                 "access":  {
+                                                                                "vectors":  16,
+                                                                                "solutions":  [
+                                                                                                  {
+                                                                                                      "level":  1,
+                                                                                                      "turns":  4,
+                                                                                                      "budget":  10
+                                                                                                  },
+                                                                                                  {
+                                                                                                      "level":  2,
+                                                                                                      "turns":  8,
+                                                                                                      "budget":  10
+                                                                                                  },
+                                                                                                  {
+                                                                                                      "level":  3,
+                                                                                                      "turns":  7,
+                                                                                                      "budget":  12
+                                                                                                  }
+                                                                                              ]
+                                                                            },
+                                                                 "services":  {
+                                                                                  "scenarios":  24,
+                                                                                  "solutions":  [
+                                                                                                    {
+                                                                                                        "level":  1,
+                                                                                                        "turns":  5,
+                                                                                                        "budget":  12
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "level":  2,
+                                                                                                        "turns":  7,
+                                                                                                        "budget":  16
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "level":  3,
+                                                                                                        "turns":  9,
+                                                                                                        "budget":  18
+                                                                                                    }
+                                                                                                ]
+                                                                              },
+                                                                 "ftp":  {
+                                                                             "scenarios":  21,
+                                                                             "solutions":  [
+                                                                                               {
+                                                                                                   "level":  1,
+                                                                                                   "turns":  8,
+                                                                                                   "budget":  12
+                                                                                               },
+                                                                                               {
+                                                                                                   "level":  2,
+                                                                                                   "turns":  17,
+                                                                                                   "budget":  18
+                                                                                               },
+                                                                                               {
+                                                                                                   "level":  3,
+                                                                                                   "turns":  21,
+                                                                                                   "budget":  24
+                                                                                               }
+                                                                                           ]
+                                                                         },
+                                                                 "fileShare":  {
+                                                                                   "scenarios":  23,
+                                                                                   "solutions":  [
+                                                                                                     {
+                                                                                                         "level":  1,
+                                                                                                         "turns":  4,
+                                                                                                         "budget":  9
+                                                                                                     },
+                                                                                                     {
+                                                                                                         "level":  2,
+                                                                                                         "turns":  5,
+                                                                                                         "budget":  12
+                                                                                                     },
+                                                                                                     {
+                                                                                                         "level":  3,
+                                                                                                         "turns":  10,
+                                                                                                         "budget":  18
+                                                                                                     }
+                                                                                                 ]
+                                                                               },
+                                                                 "webDB":  {
+                                                                               "scenarios":  21,
+                                                                               "solutions":  [
+                                                                                                 {
+                                                                                                     "level":  1,
+                                                                                                     "turns":  7,
+                                                                                                     "budget":  12
+                                                                                                 },
+                                                                                                 {
+                                                                                                     "level":  2,
+                                                                                                     "turns":  8,
+                                                                                                     "budget":  15
+                                                                                                 },
+                                                                                                 {
+                                                                                                     "level":  3,
+                                                                                                     "turns":  10,
+                                                                                                     "budget":  18
+                                                                                                 }
+                                                                                             ]
+                                                                           },
+                                                                 "hosting":  {
+                                                                                 "scenarios":  21,
+                                                                                 "solutions":  [
+                                                                                                   {
+                                                                                                       "level":  1,
+                                                                                                       "turns":  3,
+                                                                                                       "cost":  5
+                                                                                                   },
+                                                                                                   {
+                                                                                                       "level":  2,
+                                                                                                       "turns":  4,
+                                                                                                       "cost":  14
+                                                                                                   },
+                                                                                                   {
+                                                                                                       "level":  3,
+                                                                                                       "turns":  5,
+                                                                                                       "cost":  16
+                                                                                                   }
+                                                                                               ]
+                                                                             },
+                                                                 "vpn":  {
+                                                                             "scenarios":  21,
+                                                                             "solutions":  [
+                                                                                               {
+                                                                                                   "level":  1,
+                                                                                                   "turns":  4
+                                                                                               },
+                                                                                               {
+                                                                                                   "level":  2,
+                                                                                                   "turns":  4
+                                                                                               },
+                                                                                               {
+                                                                                                   "level":  3,
+                                                                                                   "turns":  4
+                                                                                               }
+                                                                                           ]
+                                                                         },
+                                                                 "monitoring":  {
+                                                                                    "scenarios":  22,
+                                                                                    "solutions":  [
+                                                                                                      {
+                                                                                                          "level":  1,
+                                                                                                          "ticks":  9,
+                                                                                                          "deadline":  11
+                                                                                                      },
+                                                                                                      {
+                                                                                                          "level":  2,
+                                                                                                          "ticks":  13,
+                                                                                                          "deadline":  15
+                                                                                                      },
+                                                                                                      {
+                                                                                                          "level":  3,
+                                                                                                          "ticks":  14,
+                                                                                                          "deadline":  16
+                                                                                                      }
+                                                                                                  ]
+                                                                                },
+                                                                 "remaining":  {
+                                                                                   "labFamilies":  9,
+                                                                                   "negativeCases":  25,
+                                                                                   "gameLevels":  27,
+                                                                                   "solutions":  {
+                                                                                                     "archive":  [
+                                                                                                                     3,
+                                                                                                                     3,
+                                                                                                                     4
+                                                                                                                 ],
+                                                                                                     "postroom":  [
+                                                                                                                      5,
+                                                                                                                      6,
+                                                                                                                      5
+                                                                                                                  ],
+                                                                                                     "rules":  [
+                                                                                                                   4,
+                                                                                                                   5,
+                                                                                                                   5
+                                                                                                               ],
+                                                                                                     "vault":  [
+                                                                                                                   6,
+                                                                                                                   8,
+                                                                                                                   7
+                                                                                                               ],
+                                                                                                     "change":  [
+                                                                                                                    6,
+                                                                                                                    9,
+                                                                                                                    11
+                                                                                                                ],
+                                                                                                     "zones":  [
+                                                                                                                   5,
+                                                                                                                   6,
+                                                                                                                   7
+                                                                                                               ],
+                                                                                                     "trail":  [
+                                                                                                                   10,
+                                                                                                                   10,
+                                                                                                                   10
+                                                                                                               ],
+                                                                                                     "incident":  [
+                                                                                                                      13,
+                                                                                                                      13,
+                                                                                                                      13
+                                                                                                                  ],
+                                                                                                     "launch":  [
+                                                                                                                    8,
+                                                                                                                    8,
+                                                                                                                    13
+                                                                                                                ]
+                                                                                                 }
+                                                                               }
+                                                             }
+                                              }
+                                   },
+                        "themeToggled":  true,
+                        "errors":  [
+
+                                   ]
+                    },
+                    {
+                        "id":  "layanan-server",
+                        "stageCount":  12,
+                        "stages":  [
+                                       "Orientasi, Tujuan, dan Asesmen Awal",
+                                       "Rencana Scope, Exclusion dan Reservation DHCP",
+                                       "DORA, Lease, Renew dan DHCP Relay",
+                                       "Zona DNS, Resolver dan Jenis Record",
+                                       "TTL, Cache dan Diagnosis Nama dari Klien",
+                                       "SSH, Identitas Host dan Akses Remote Berizin",
+                                       "Implementasi, Matriks Uji dan Pemulihan Layanan",
+                                       "Studi Kasus dan Proyek Terapan",
+                                       "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+                                       "Game Puzzle: Service Dispatch",
+                                       "Refleksi, Umpan Balik, dan Transfer",
+                                       "Rangkuman dan Evaluasi Akhir"
+                                   ],
+                        "studio":  {
+                                       "core":  {
+                                                    "representationVectors":  5,
+                                                    "invalidVectors":  7,
+                                                    "scopeVectors":  3,
+                                                    "otherModels":  4
+                                                },
+                                       "ui":  {
+                                                  "globalStudioRemoved":  true,
+                                                  "contextualActivities":  true,
+                                                  "models":  {
+                                                                 "contextual":  {
+                                                                                    "contexts":  53,
+                                                                                    "securityProfiles":  20,
+                                                                                    "prefixes":  7,
+                                                                                    "parentAddresses":  256
+                                                                                },
+                                                                 "loginDefense":  {
+                                                                                      "findtime":  60,
+                                                                                      "bantime":  120,
+                                                                                      "sourceIsolation":  true,
+                                                                                      "filter":  true,
+                                                                                      "unban":  true
+                                                                                  },
+                                                                 "vectors":  10,
+                                                                 "requirements":  {
+                                                                                      "vectors":  8,
+                                                                                      "contracts":  3
+                                                                                  },
+                                                                 "layout":  {
+                                                                                "vectors":  5,
+                                                                                "levelLengths":  [
+                                                                                                     12,
+                                                                                                     12,
+                                                                                                     12
+                                                                                                 ]
+                                                                            },
+                                                                 "addressPlan":  {
+                                                                                     "vectors":  13,
+                                                                                     "levels":  3
+                                                                                 },
+                                                                 "cabling":  {
+                                                                                 "vectors":  9
+                                                                             },
+                                                                 "wlan":  {
+                                                                              "vectors":  6,
+                                                                              "levels":  3
+                                                                          },
+                                                                 "maintenance":  {
+                                                                                     "incidents":  3,
+                                                                                     "verificationVectors":  12,
+                                                                                     "boards":  3
+                                                                                 },
+                                                                 "voip":  {
+                                                                              "callVectors":  10,
+                                                                              "bufferLevels":  3
+                                                                          },
+                                                                 "fiber":  {
+                                                                               "opticalVectors":  8,
+                                                                               "trays":  3
+                                                                           },
+                                                                 "installation":  {
+                                                                                      "integrationVectors":  8,
+                                                                                      "chassis":  3
+                                                                                  },
+                                                                 "replacement":  {
+                                                                                     "migrationVectors":  8,
+                                                                                     "rooms":  3,
+                                                                                     "solutionLengths":  [
+                                                                                                             12,
+                                                                                                             12,
+                                                                                                             12
+                                                                                                         ]
+                                                                                 },
+                                                                 "staticRouting":  {
+                                                                                       "routingVectors":  12,
+                                                                                       "ttlLevels":  3,
+                                                                                       "solutionLengths":  [
+                                                                                                               3,
+                                                                                                               4,
+                                                                                                               7
+                                                                                                           ]
+                                                                                   },
+                                                                 "dynamicRouting":  {
+                                                                                        "routingVectors":  12,
+                                                                                        "relayLevels":  3,
+                                                                                        "transmissions":  [
+                                                                                                              10,
+                                                                                                              10,
+                                                                                                              13
+                                                                                                          ]
+                                                                                    },
+                                                                 "nat":  {
+                                                                             "natVectors":  20,
+                                                                             "gameLevels":  3,
+                                                                             "solutionTurns":  [
+                                                                                                   6,
+                                                                                                   10,
+                                                                                                   12
+                                                                                               ]
+                                                                         },
+                                                                 "proxy":  {
+                                                                               "proxyVectors":  20,
+                                                                               "gameLevels":  3,
+                                                                               "solutions":  [
+                                                                                                 {
+                                                                                                     "steps":  53,
+                                                                                                     "WAN":  4
+                                                                                                 },
+                                                                                                 {
+                                                                                                     "steps":  67,
+                                                                                                     "WAN":  6
+                                                                                                 },
+                                                                                                 {
+                                                                                                     "steps":  116,
+                                                                                                     "WAN":  12
+                                                                                                 }
+                                                                                             ]
+                                                                           },
+                                                                 "qos":  {
+                                                                             "queueVectors":  36,
+                                                                             "metricCases":  8,
+                                                                             "gameLevels":  3,
+                                                                             "solutionTurns":  [
+                                                                                                   6,
+                                                                                                   5,
+                                                                                                   7
+                                                                                               ]
+                                                                         },
+                                                                 "dualWAN":  {
+                                                                                 "WANVectors":  18,
+                                                                                 "gameLevels":  3,
+                                                                                 "solutions":  [
+                                                                                                   {
+                                                                                                       "turns":  3,
+                                                                                                       "retries":  0
+                                                                                                   },
+                                                                                                   {
+                                                                                                       "turns":  7,
+                                                                                                       "retries":  1
+                                                                                                   },
+                                                                                                   {
+                                                                                                       "turns":  10,
+                                                                                                       "retries":  3
+                                                                                                   }
+                                                                                               ]
+                                                                             },
+                                                                 "serverBasics":  {
+                                                                                      "serverCases":  20,
+                                                                                      "gameLevels":  3,
+                                                                                      "solutionSteps":  [
+                                                                                                            17,
+                                                                                                            26,
+                                                                                                            40
+                                                                                                        ]
+                                                                                  },
+                                                                 "virtualization":  {
+                                                                                        "VMScenarios":  22,
+                                                                                        "gameLevels":  3,
+                                                                                        "solutions":  [
+                                                                                                          {
+                                                                                                              "turns":  7,
+                                                                                                              "restores":  0
+                                                                                                          },
+                                                                                                          {
+                                                                                                              "turns":  16,
+                                                                                                              "restores":  3
+                                                                                                          },
+                                                                                                          {
+                                                                                                              "turns":  15,
+                                                                                                              "restores":  2
+                                                                                                          }
+                                                                                                      ]
+                                                                                    },
+                                                                 "osAdmin":  {
+                                                                                 "scenarios":  32,
+                                                                                 "platforms":  2,
+                                                                                 "solutions":  [
+                                                                                                   {
+                                                                                                       "level":  1,
+                                                                                                       "turns":  26,
+                                                                                                       "budget":  28
+                                                                                                   },
+                                                                                                   {
+                                                                                                       "level":  2,
+                                                                                                       "turns":  30,
+                                                                                                       "budget":  32
+                                                                                                   },
+                                                                                                   {
+                                                                                                       "level":  3,
+                                                                                                       "turns":  24,
+                                                                                                       "budget":  26
+                                                                                                   }
+                                                                                               ]
+                                                                             },
+                                                                 "access":  {
+                                                                                "vectors":  16,
+                                                                                "solutions":  [
+                                                                                                  {
+                                                                                                      "level":  1,
+                                                                                                      "turns":  4,
+                                                                                                      "budget":  10
+                                                                                                  },
+                                                                                                  {
+                                                                                                      "level":  2,
+                                                                                                      "turns":  8,
+                                                                                                      "budget":  10
+                                                                                                  },
+                                                                                                  {
+                                                                                                      "level":  3,
+                                                                                                      "turns":  7,
+                                                                                                      "budget":  12
+                                                                                                  }
+                                                                                              ]
+                                                                            },
+                                                                 "services":  {
+                                                                                  "scenarios":  24,
+                                                                                  "solutions":  [
+                                                                                                    {
+                                                                                                        "level":  1,
+                                                                                                        "turns":  5,
+                                                                                                        "budget":  12
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "level":  2,
+                                                                                                        "turns":  7,
+                                                                                                        "budget":  16
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "level":  3,
+                                                                                                        "turns":  9,
+                                                                                                        "budget":  18
+                                                                                                    }
+                                                                                                ]
+                                                                              },
+                                                                 "ftp":  {
+                                                                             "scenarios":  21,
+                                                                             "solutions":  [
+                                                                                               {
+                                                                                                   "level":  1,
+                                                                                                   "turns":  8,
+                                                                                                   "budget":  12
+                                                                                               },
+                                                                                               {
+                                                                                                   "level":  2,
+                                                                                                   "turns":  17,
+                                                                                                   "budget":  18
+                                                                                               },
+                                                                                               {
+                                                                                                   "level":  3,
+                                                                                                   "turns":  21,
+                                                                                                   "budget":  24
+                                                                                               }
+                                                                                           ]
+                                                                         },
+                                                                 "fileShare":  {
+                                                                                   "scenarios":  23,
+                                                                                   "solutions":  [
+                                                                                                     {
+                                                                                                         "level":  1,
+                                                                                                         "turns":  4,
+                                                                                                         "budget":  9
+                                                                                                     },
+                                                                                                     {
+                                                                                                         "level":  2,
+                                                                                                         "turns":  5,
+                                                                                                         "budget":  12
+                                                                                                     },
+                                                                                                     {
+                                                                                                         "level":  3,
+                                                                                                         "turns":  10,
+                                                                                                         "budget":  18
+                                                                                                     }
+                                                                                                 ]
+                                                                               },
+                                                                 "webDB":  {
+                                                                               "scenarios":  21,
+                                                                               "solutions":  [
+                                                                                                 {
+                                                                                                     "level":  1,
+                                                                                                     "turns":  7,
+                                                                                                     "budget":  12
+                                                                                                 },
+                                                                                                 {
+                                                                                                     "level":  2,
+                                                                                                     "turns":  8,
+                                                                                                     "budget":  15
+                                                                                                 },
+                                                                                                 {
+                                                                                                     "level":  3,
+                                                                                                     "turns":  10,
+                                                                                                     "budget":  18
+                                                                                                 }
+                                                                                             ]
+                                                                           },
+                                                                 "hosting":  {
+                                                                                 "scenarios":  21,
+                                                                                 "solutions":  [
+                                                                                                   {
+                                                                                                       "level":  1,
+                                                                                                       "turns":  3,
+                                                                                                       "cost":  5
+                                                                                                   },
+                                                                                                   {
+                                                                                                       "level":  2,
+                                                                                                       "turns":  4,
+                                                                                                       "cost":  14
+                                                                                                   },
+                                                                                                   {
+                                                                                                       "level":  3,
+                                                                                                       "turns":  5,
+                                                                                                       "cost":  16
+                                                                                                   }
+                                                                                               ]
+                                                                             },
+                                                                 "vpn":  {
+                                                                             "scenarios":  21,
+                                                                             "solutions":  [
+                                                                                               {
+                                                                                                   "level":  1,
+                                                                                                   "turns":  4
+                                                                                               },
+                                                                                               {
+                                                                                                   "level":  2,
+                                                                                                   "turns":  4
+                                                                                               },
+                                                                                               {
+                                                                                                   "level":  3,
+                                                                                                   "turns":  4
+                                                                                               }
+                                                                                           ]
+                                                                         },
+                                                                 "monitoring":  {
+                                                                                    "scenarios":  22,
+                                                                                    "solutions":  [
+                                                                                                      {
+                                                                                                          "level":  1,
+                                                                                                          "ticks":  9,
+                                                                                                          "deadline":  11
+                                                                                                      },
+                                                                                                      {
+                                                                                                          "level":  2,
+                                                                                                          "ticks":  13,
+                                                                                                          "deadline":  15
+                                                                                                      },
+                                                                                                      {
+                                                                                                          "level":  3,
+                                                                                                          "ticks":  14,
+                                                                                                          "deadline":  16
+                                                                                                      }
+                                                                                                  ]
+                                                                                },
+                                                                 "remaining":  {
+                                                                                   "labFamilies":  9,
+                                                                                   "negativeCases":  25,
+                                                                                   "gameLevels":  27,
+                                                                                   "solutions":  {
+                                                                                                     "archive":  [
+                                                                                                                     3,
+                                                                                                                     3,
+                                                                                                                     4
+                                                                                                                 ],
+                                                                                                     "postroom":  [
+                                                                                                                      5,
+                                                                                                                      6,
+                                                                                                                      5
+                                                                                                                  ],
+                                                                                                     "rules":  [
+                                                                                                                   4,
+                                                                                                                   5,
+                                                                                                                   5
+                                                                                                               ],
+                                                                                                     "vault":  [
+                                                                                                                   6,
+                                                                                                                   8,
+                                                                                                                   7
+                                                                                                               ],
+                                                                                                     "change":  [
+                                                                                                                    6,
+                                                                                                                    9,
+                                                                                                                    11
+                                                                                                                ],
+                                                                                                     "zones":  [
+                                                                                                                   5,
+                                                                                                                   6,
+                                                                                                                   7
+                                                                                                               ],
+                                                                                                     "trail":  [
+                                                                                                                   10,
+                                                                                                                   10,
+                                                                                                                   10
+                                                                                                               ],
+                                                                                                     "incident":  [
+                                                                                                                      13,
+                                                                                                                      13,
+                                                                                                                      13
+                                                                                                                  ],
+                                                                                                     "launch":  [
+                                                                                                                    8,
+                                                                                                                    8,
+                                                                                                                    13
+                                                                                                                ]
+                                                                                                 }
+                                                                               }
+                                                             }
+                                              }
+                                   },
+                        "themeToggled":  true,
+                        "errors":  [
+
+                                   ]
+                    }
+                ],
+    "checkedAt":  "2026-10-26T12:24:32.7634590Z",
+    "styleParity":  true,
+    "viewports":  [
+                      "1280x900",
+                      "390x844"
+                  ],
+    "themes":  [
+                   "light",
+                   "dark"
+               ]
+}

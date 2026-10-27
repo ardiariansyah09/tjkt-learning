@@ -1,0 +1,22 @@
+﻿{
+    "checkedAt":  "2026-10-26T12:24:39.5153905Z",
+    "modules":  [
+                    {
+                        "id":  "layanan-server",
+                        "existingProgressReprint":  true,
+                        "certificate":  {
+                                            "stages":  12,
+                                            "score":  100,
+                                            "form":  true,
+                                            "print":  true,
+                                            "logo":  1254,
+                                            "design":  "tjkt-circuit-v3"
+                                        },
+                        "stages":  12,
+                        "pdfBytes":  1689918,
+                        "freshSequential":  true,
+                        "pdfPages":  1,
+                        "belowThresholdBlocked":  true
+                    }
+                ]
+}

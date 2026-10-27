@@ -1,0 +1,19 @@
+﻿{
+    "checkedAt":  "2026-10-26T13:45:00.2400843Z",
+    "modules":  [
+                    {
+                        "journalAndGameHistoryPreserved":  true,
+                        "replacementResetPreservesGrade":  true,
+                        "existingProgressReprint":  true,
+                        "id":  "osi-tcpip",
+                        "oldGrade85Preserved":  true
+                    },
+                    {
+                        "journalAndGameHistoryPreserved":  true,
+                        "replacementResetPreservesGrade":  true,
+                        "existingProgressReprint":  true,
+                        "id":  "ipv4-subnetting",
+                        "oldGrade85Preserved":  true
+                    }
+                ]
+}

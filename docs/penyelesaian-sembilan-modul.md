@@ -53,7 +53,7 @@ Pemeriksaan awal focused sembilan modul:108 tahap, tanpa error, style parity ben
 
 - Validasi ATP dan aset: 53 modul tersedia, tidak ada modul berstatus segera hadir.
 - Audit browser seluruh katalog: 53 modul, 606 tahap; desktop 1280x900 dan ponsel 390x844, tema terang/gelap, tanpa error; style parity benar (`module-validation-browser.json`).
-- Penyelesaian sembilan modul baru: 108 tahap dari progres kosong, evaluasi dan sertifikat PDF satu halaman berhasil; cetak ulang progres lama menggunakan desain TJKT terbaru, dan nilai di bawah ambang tetap diblokir (`completion-validation-focused.json`).
+- Penyelesaian sembilan modul baru: 108 tahap dari progres kosong, evaluasi dan sertifikat PDF satu halaman berhasil; cetak ulang progres lama menggunakan desain TJKT terbaru, dan nilai di bawah ambang tetap diblokir (`completion-validation-browser.json`, subset sembilan modul dari audit lengkap 53 modul).
 - Beranda: 53 kartu tersedia, tautan utama benar, tanpa overflow pada desktop/ponsel (`catalog-validation.json`).
 
 Pengujian otomatis membuktikan alur aplikasi dan kondisi model yang tercatat. Kedalaman jawaban, praktik pada perangkat nyata dan mutu hasil proyek tetap dinilai guru. Semua perubahan masih lokal, belum dipush atau dipublikasikan.

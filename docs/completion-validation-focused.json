@@ -1,8 +1,8 @@
 ﻿{
-    "checkedAt":  "2026-10-26T05:49:32.8859280Z",
+    "checkedAt":  "2026-10-26T14:15:12.7529436Z",
     "modules":  [
                     {
-                        "id":  "backup-pemulihan-server",
+                        "id":  "proses-bisnis-tjkt",
                         "existingProgressReprint":  true,
                         "certificate":  {
                                             "stages":  12,
@@ -13,13 +13,13 @@
                                             "design":  "tjkt-circuit-v3"
                                         },
                         "stages":  12,
-                        "pdfBytes":  1690456,
+                        "pdfBytes":  1690451,
                         "freshSequential":  true,
                         "pdfPages":  1,
                         "belowThresholdBlocked":  true
                     },
                     {
-                        "id":  "mail-server",
+                        "id":  "profesi-kewirausahaan-tjkt",
                         "existingProgressReprint":  true,
                         "certificate":  {
                                             "stages":  12,
@@ -30,30 +30,30 @@
                                             "design":  "tjkt-circuit-v3"
                                         },
                         "stages":  12,
-                        "pdfBytes":  1688820,
+                        "pdfBytes":  1690657,
                         "freshSequential":  true,
                         "pdfPages":  1,
                         "belowThresholdBlocked":  true
                     },
                     {
-                        "id":  "keamanan-jaringan",
+                        "id":  "perangkat-jaringan",
                         "existingProgressReprint":  true,
                         "certificate":  {
-                                            "stages":  12,
+                                            "stages":  9,
                                             "score":  100,
                                             "form":  true,
                                             "print":  true,
                                             "logo":  1254,
                                             "design":  "tjkt-circuit-v3"
                                         },
-                        "stages":  12,
-                        "pdfBytes":  1690651,
+                        "stages":  9,
+                        "pdfBytes":  1689081,
                         "freshSequential":  true,
                         "pdfPages":  1,
                         "belowThresholdBlocked":  true
                     },
                     {
-                        "id":  "autentikasi-kriptografi",
+                        "id":  "perencanaan-jaringan",
                         "existingProgressReprint":  true,
                         "certificate":  {
                                             "stages":  12,
@@ -64,30 +64,30 @@
                                             "design":  "tjkt-circuit-v3"
                                         },
                         "stages":  12,
-                        "pdfBytes":  1690506,
+                        "pdfBytes":  1690821,
                         "freshSequential":  true,
                         "pdfPages":  1,
                         "belowThresholdBlocked":  true
                     },
                     {
-                        "id":  "ids-hardening",
+                        "id":  "osi-tcpip",
                         "existingProgressReprint":  true,
                         "certificate":  {
-                                            "stages":  12,
+                                            "stages":  8,
                                             "score":  100,
                                             "form":  true,
                                             "print":  true,
                                             "logo":  1254,
                                             "design":  "tjkt-circuit-v3"
                                         },
-                        "stages":  12,
-                        "pdfBytes":  1690049,
+                        "stages":  8,
+                        "pdfBytes":  1689076,
                         "freshSequential":  true,
                         "pdfPages":  1,
                         "belowThresholdBlocked":  true
                     },
                     {
-                        "id":  "server-dmz",
+                        "id":  "sistem-telekomunikasi-dasar",
                         "existingProgressReprint":  true,
                         "certificate":  {
                                             "stages":  12,
@@ -98,30 +98,30 @@
                                             "design":  "tjkt-circuit-v3"
                                         },
                         "stages":  12,
-                        "pdfBytes":  1690633,
+                        "pdfBytes":  1690016,
                         "freshSequential":  true,
                         "pdfPages":  1,
                         "belowThresholdBlocked":  true
                     },
                     {
-                        "id":  "pengujian-keamanan",
+                        "id":  "switching-vlan",
                         "existingProgressReprint":  true,
                         "certificate":  {
-                                            "stages":  12,
+                                            "stages":  9,
                                             "score":  100,
                                             "form":  true,
                                             "print":  true,
                                             "logo":  1254,
                                             "design":  "tjkt-circuit-v3"
                                         },
-                        "stages":  12,
-                        "pdfBytes":  1691251,
+                        "stages":  9,
+                        "pdfBytes":  1690231,
                         "freshSequential":  true,
                         "pdfPages":  1,
                         "belowThresholdBlocked":  true
                     },
                     {
-                        "id":  "ids-respons-insiden",
+                        "id":  "layanan-server",
                         "existingProgressReprint":  true,
                         "certificate":  {
                                             "stages":  12,
@@ -132,24 +132,7 @@
                                             "design":  "tjkt-circuit-v3"
                                         },
                         "stages":  12,
-                        "pdfBytes":  1689775,
-                        "freshSequential":  true,
-                        "pdfPages":  1,
-                        "belowThresholdBlocked":  true
-                    },
-                    {
-                        "id":  "proyek-integrasi-jaringan",
-                        "existingProgressReprint":  true,
-                        "certificate":  {
-                                            "stages":  12,
-                                            "score":  100,
-                                            "form":  true,
-                                            "print":  true,
-                                            "logo":  1254,
-                                            "design":  "tjkt-circuit-v3"
-                                        },
-                        "stages":  12,
-                        "pdfBytes":  1690116,
+                        "pdfBytes":  1689918,
                         "freshSequential":  true,
                         "pdfPages":  1,
                         "belowThresholdBlocked":  true

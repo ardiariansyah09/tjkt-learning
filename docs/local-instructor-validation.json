@@ -1,0 +1,1331 @@
+﻿{
+    "modules":  53,
+    "checkedAt":  "2026-10-26T12:47:06.6076675Z",
+    "results":  [
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "allAccessible":  true,
+                                       "noFakeCompletion":  true
+                                   },
+                        "id":  "proses-bisnis-tjkt",
+                        "mode":  "instructor"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "allAccessible":  true,
+                                       "noFakeCompletion":  true
+                                   },
+                        "id":  "wawasan-tjkt",
+                        "mode":  "instructor"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "allAccessible":  true,
+                                       "noFakeCompletion":  true
+                                   },
+                        "id":  "profesi-kewirausahaan-tjkt",
+                        "mode":  "instructor"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "allAccessible":  true,
+                                       "noFakeCompletion":  true
+                                   },
+                        "id":  "k3-budaya-kerja",
+                        "mode":  "instructor"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  9,
+                                       "allAccessible":  true,
+                                       "noFakeCompletion":  true
+                                   },
+                        "id":  "pengenalan-jaringan",
+                        "mode":  "instructor"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  9,
+                                       "allAccessible":  true,
+                                       "noFakeCompletion":  true
+                                   },
+                        "id":  "perangkat-jaringan",
+                        "mode":  "instructor"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  9,
+                                       "allAccessible":  true,
+                                       "noFakeCompletion":  true
+                                   },
+                        "id":  "topologi-jaringan",
+                        "mode":  "instructor"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "allAccessible":  true,
+                                       "noFakeCompletion":  true
+                                   },
+                        "id":  "perencanaan-jaringan",
+                        "mode":  "instructor"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  8,
+                                       "allAccessible":  true,
+                                       "noFakeCompletion":  true
+                                   },
+                        "id":  "media-transmisi",
+                        "mode":  "instructor"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  8,
+                                       "allAccessible":  true,
+                                       "noFakeCompletion":  true
+                                   },
+                        "id":  "osi-tcpip",
+                        "mode":  "instructor"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  9,
+                                       "allAccessible":  true,
+                                       "noFakeCompletion":  true
+                                   },
+                        "id":  "ipv4-subnetting",
+                        "mode":  "instructor"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "allAccessible":  true,
+                                       "noFakeCompletion":  true
+                                   },
+                        "id":  "ipv6-dasar",
+                        "mode":  "instructor"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  8,
+                                       "allAccessible":  true,
+                                       "noFakeCompletion":  true
+                                   },
+                        "id":  "protokol-layanan",
+                        "mode":  "instructor"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "allAccessible":  true,
+                                       "noFakeCompletion":  true
+                                   },
+                        "id":  "sistem-telekomunikasi-dasar",
+                        "mode":  "instructor"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  9,
+                                       "allAccessible":  true,
+                                       "noFakeCompletion":  true
+                                   },
+                        "id":  "troubleshooting",
+                        "mode":  "instructor"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "allAccessible":  true,
+                                       "noFakeCompletion":  true
+                                   },
+                        "id":  "alat-ukur-tjkt",
+                        "mode":  "instructor"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "allAccessible":  true,
+                                       "noFakeCompletion":  true
+                                   },
+                        "id":  "kebutuhan-teknis-jaringan",
+                        "mode":  "instructor"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "allAccessible":  true,
+                                       "noFakeCompletion":  true
+                                   },
+                        "id":  "desain-topologi-arsitektur",
+                        "mode":  "instructor"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "allAccessible":  true,
+                                       "noFakeCompletion":  true
+                                   },
+                        "id":  "perencanaan-pengalamatan-lanjut",
+                        "mode":  "instructor"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "allAccessible":  true,
+                                       "noFakeCompletion":  true
+                                   },
+                        "id":  "instalasi-kabel",
+                        "mode":  "instructor"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "allAccessible":  true,
+                                       "noFakeCompletion":  true
+                                   },
+                        "id":  "wireless-lan",
+                        "mode":  "instructor"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "allAccessible":  true,
+                                       "noFakeCompletion":  true
+                                   },
+                        "id":  "pemeliharaan-kabel-nirkabel",
+                        "mode":  "instructor"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "allAccessible":  true,
+                                       "noFakeCompletion":  true
+                                   },
+                        "id":  "voip",
+                        "mode":  "instructor"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "allAccessible":  true,
+                                       "noFakeCompletion":  true
+                                   },
+                        "id":  "fiber-optik",
+                        "mode":  "instructor"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "allAccessible":  true,
+                                       "noFakeCompletion":  true
+                                   },
+                        "id":  "pemasangan-perangkat-jaringan",
+                        "mode":  "instructor"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "allAccessible":  true,
+                                       "noFakeCompletion":  true
+                                   },
+                        "id":  "penggantian-perangkat-jaringan",
+                        "mode":  "instructor"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  9,
+                                       "allAccessible":  true,
+                                       "noFakeCompletion":  true
+                                   },
+                        "id":  "switching-vlan",
+                        "mode":  "instructor"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "allAccessible":  true,
+                                       "noFakeCompletion":  true
+                                   },
+                        "id":  "routing-ipv4",
+                        "mode":  "instructor"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "allAccessible":  true,
+                                       "noFakeCompletion":  true
+                                   },
+                        "id":  "routing-dinamis",
+                        "mode":  "instructor"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "allAccessible":  true,
+                                       "noFakeCompletion":  true
+                                   },
+                        "id":  "nat-wan",
+                        "mode":  "instructor"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "allAccessible":  true,
+                                       "noFakeCompletion":  true
+                                   },
+                        "id":  "proxy-load-balancing",
+                        "mode":  "instructor"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "allAccessible":  true,
+                                       "noFakeCompletion":  true
+                                   },
+                        "id":  "bandwidth-qos",
+                        "mode":  "instructor"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "allAccessible":  true,
+                                       "noFakeCompletion":  true
+                                   },
+                        "id":  "load-balancing",
+                        "mode":  "instructor"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "allAccessible":  true,
+                                       "noFakeCompletion":  true
+                                   },
+                        "id":  "dasar-administrasi-server",
+                        "mode":  "instructor"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "allAccessible":  true,
+                                       "noFakeCompletion":  true
+                                   },
+                        "id":  "virtualisasi-server",
+                        "mode":  "instructor"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "allAccessible":  true,
+                                       "noFakeCompletion":  true
+                                   },
+                        "id":  "administrasi-linux-windows",
+                        "mode":  "instructor"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "allAccessible":  true,
+                                       "noFakeCompletion":  true
+                                   },
+                        "id":  "manajemen-pengguna-server",
+                        "mode":  "instructor"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "allAccessible":  true,
+                                       "noFakeCompletion":  true
+                                   },
+                        "id":  "layanan-server",
+                        "mode":  "instructor"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "allAccessible":  true,
+                                       "noFakeCompletion":  true
+                                   },
+                        "id":  "ftp-server",
+                        "mode":  "instructor"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "allAccessible":  true,
+                                       "noFakeCompletion":  true
+                                   },
+                        "id":  "file-server",
+                        "mode":  "instructor"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "allAccessible":  true,
+                                       "noFakeCompletion":  true
+                                   },
+                        "id":  "hosting-server",
+                        "mode":  "instructor"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "allAccessible":  true,
+                                       "noFakeCompletion":  true
+                                   },
+                        "id":  "panel-layanan-hosting",
+                        "mode":  "instructor"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "allAccessible":  true,
+                                       "noFakeCompletion":  true
+                                   },
+                        "id":  "vpn-server",
+                        "mode":  "instructor"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "allAccessible":  true,
+                                       "noFakeCompletion":  true
+                                   },
+                        "id":  "monitoring-jaringan",
+                        "mode":  "instructor"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "allAccessible":  true,
+                                       "noFakeCompletion":  true
+                                   },
+                        "id":  "backup-pemulihan-server",
+                        "mode":  "instructor"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "allAccessible":  true,
+                                       "noFakeCompletion":  true
+                                   },
+                        "id":  "mail-server",
+                        "mode":  "instructor"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "allAccessible":  true,
+                                       "noFakeCompletion":  true
+                                   },
+                        "id":  "keamanan-jaringan",
+                        "mode":  "instructor"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "allAccessible":  true,
+                                       "noFakeCompletion":  true
+                                   },
+                        "id":  "autentikasi-kriptografi",
+                        "mode":  "instructor"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "allAccessible":  true,
+                                       "noFakeCompletion":  true
+                                   },
+                        "id":  "ids-hardening",
+                        "mode":  "instructor"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "allAccessible":  true,
+                                       "noFakeCompletion":  true
+                                   },
+                        "id":  "server-dmz",
+                        "mode":  "instructor"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "allAccessible":  true,
+                                       "noFakeCompletion":  true
+                                   },
+                        "id":  "pengujian-keamanan",
+                        "mode":  "instructor"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "allAccessible":  true,
+                                       "noFakeCompletion":  true
+                                   },
+                        "id":  "ids-respons-insiden",
+                        "mode":  "instructor"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "allAccessible":  true,
+                                       "noFakeCompletion":  true
+                                   },
+                        "id":  "proyek-integrasi-jaringan",
+                        "mode":  "instructor"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "proses-bisnis-tjkt",
+                        "mode":  "student"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "wawasan-tjkt",
+                        "mode":  "student"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "profesi-kewirausahaan-tjkt",
+                        "mode":  "student"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "k3-budaya-kerja",
+                        "mode":  "student"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  9,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "pengenalan-jaringan",
+                        "mode":  "student"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  9,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "perangkat-jaringan",
+                        "mode":  "student"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  9,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "topologi-jaringan",
+                        "mode":  "student"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "perencanaan-jaringan",
+                        "mode":  "student"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  8,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "media-transmisi",
+                        "mode":  "student"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  8,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "osi-tcpip",
+                        "mode":  "student"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  9,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "ipv4-subnetting",
+                        "mode":  "student"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "ipv6-dasar",
+                        "mode":  "student"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  8,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "protokol-layanan",
+                        "mode":  "student"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "sistem-telekomunikasi-dasar",
+                        "mode":  "student"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  9,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "troubleshooting",
+                        "mode":  "student"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "alat-ukur-tjkt",
+                        "mode":  "student"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "kebutuhan-teknis-jaringan",
+                        "mode":  "student"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "desain-topologi-arsitektur",
+                        "mode":  "student"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "perencanaan-pengalamatan-lanjut",
+                        "mode":  "student"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "instalasi-kabel",
+                        "mode":  "student"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "wireless-lan",
+                        "mode":  "student"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "pemeliharaan-kabel-nirkabel",
+                        "mode":  "student"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "voip",
+                        "mode":  "student"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "fiber-optik",
+                        "mode":  "student"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "pemasangan-perangkat-jaringan",
+                        "mode":  "student"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "penggantian-perangkat-jaringan",
+                        "mode":  "student"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  9,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "switching-vlan",
+                        "mode":  "student"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "routing-ipv4",
+                        "mode":  "student"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "routing-dinamis",
+                        "mode":  "student"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "nat-wan",
+                        "mode":  "student"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "proxy-load-balancing",
+                        "mode":  "student"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "bandwidth-qos",
+                        "mode":  "student"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "load-balancing",
+                        "mode":  "student"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "dasar-administrasi-server",
+                        "mode":  "student"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "virtualisasi-server",
+                        "mode":  "student"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "administrasi-linux-windows",
+                        "mode":  "student"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "manajemen-pengguna-server",
+                        "mode":  "student"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "layanan-server",
+                        "mode":  "student"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "ftp-server",
+                        "mode":  "student"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "file-server",
+                        "mode":  "student"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "hosting-server",
+                        "mode":  "student"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "panel-layanan-hosting",
+                        "mode":  "student"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "vpn-server",
+                        "mode":  "student"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "monitoring-jaringan",
+                        "mode":  "student"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "backup-pemulihan-server",
+                        "mode":  "student"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "mail-server",
+                        "mode":  "student"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "keamanan-jaringan",
+                        "mode":  "student"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "autentikasi-kriptografi",
+                        "mode":  "student"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "ids-hardening",
+                        "mode":  "student"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "server-dmz",
+                        "mode":  "student"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "pengujian-keamanan",
+                        "mode":  "student"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "ids-respons-insiden",
+                        "mode":  "student"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "proyek-integrasi-jaringan",
+                        "mode":  "student"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "proses-bisnis-tjkt",
+                        "mode":  "public"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "wawasan-tjkt",
+                        "mode":  "public"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "profesi-kewirausahaan-tjkt",
+                        "mode":  "public"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "k3-budaya-kerja",
+                        "mode":  "public"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  9,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "pengenalan-jaringan",
+                        "mode":  "public"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  9,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "perangkat-jaringan",
+                        "mode":  "public"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  9,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "topologi-jaringan",
+                        "mode":  "public"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "perencanaan-jaringan",
+                        "mode":  "public"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  8,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "media-transmisi",
+                        "mode":  "public"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  8,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "osi-tcpip",
+                        "mode":  "public"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  9,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "ipv4-subnetting",
+                        "mode":  "public"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "ipv6-dasar",
+                        "mode":  "public"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  8,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "protokol-layanan",
+                        "mode":  "public"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "sistem-telekomunikasi-dasar",
+                        "mode":  "public"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  9,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "troubleshooting",
+                        "mode":  "public"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "alat-ukur-tjkt",
+                        "mode":  "public"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "kebutuhan-teknis-jaringan",
+                        "mode":  "public"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "desain-topologi-arsitektur",
+                        "mode":  "public"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "perencanaan-pengalamatan-lanjut",
+                        "mode":  "public"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "instalasi-kabel",
+                        "mode":  "public"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "wireless-lan",
+                        "mode":  "public"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "pemeliharaan-kabel-nirkabel",
+                        "mode":  "public"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "voip",
+                        "mode":  "public"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "fiber-optik",
+                        "mode":  "public"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "pemasangan-perangkat-jaringan",
+                        "mode":  "public"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "penggantian-perangkat-jaringan",
+                        "mode":  "public"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  9,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "switching-vlan",
+                        "mode":  "public"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "routing-ipv4",
+                        "mode":  "public"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "routing-dinamis",
+                        "mode":  "public"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "nat-wan",
+                        "mode":  "public"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "proxy-load-balancing",
+                        "mode":  "public"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "bandwidth-qos",
+                        "mode":  "public"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "load-balancing",
+                        "mode":  "public"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "dasar-administrasi-server",
+                        "mode":  "public"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "virtualisasi-server",
+                        "mode":  "public"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "administrasi-linux-windows",
+                        "mode":  "public"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "manajemen-pengguna-server",
+                        "mode":  "public"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "layanan-server",
+                        "mode":  "public"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "ftp-server",
+                        "mode":  "public"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "file-server",
+                        "mode":  "public"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "hosting-server",
+                        "mode":  "public"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "panel-layanan-hosting",
+                        "mode":  "public"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "vpn-server",
+                        "mode":  "public"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "monitoring-jaringan",
+                        "mode":  "public"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "backup-pemulihan-server",
+                        "mode":  "public"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "mail-server",
+                        "mode":  "public"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "keamanan-jaringan",
+                        "mode":  "public"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "autentikasi-kriptografi",
+                        "mode":  "public"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "ids-hardening",
+                        "mode":  "public"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "server-dmz",
+                        "mode":  "public"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "pengujian-keamanan",
+                        "mode":  "public"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "ids-respons-insiden",
+                        "mode":  "public"
+                    },
+                    {
+                        "result":  {
+                                       "stages":  12,
+                                       "locksRetained":  true
+                                   },
+                        "id":  "proyek-integrasi-jaringan",
+                        "mode":  "public"
+                    }
+                ]
+}

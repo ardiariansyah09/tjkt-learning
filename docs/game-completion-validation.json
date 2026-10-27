@@ -1,0 +1,294 @@
+﻿{
+    "checkedAt":  "2026-10-26T13:42:40.9675288Z",
+    "modules":  [
+                    {
+                        "id":  "proses-bisnis-tjkt",
+                        "existingProgressReprint":  true,
+                        "certificate":  {
+                                            "stages":  12,
+                                            "score":  100,
+                                            "form":  true,
+                                            "print":  true,
+                                            "logo":  1254,
+                                            "design":  "tjkt-circuit-v3"
+                                        },
+                        "stages":  12,
+                        "pdfBytes":  1690451,
+                        "freshSequential":  true,
+                        "pdfPages":  1,
+                        "belowThresholdBlocked":  true
+                    },
+                    {
+                        "id":  "wawasan-tjkt",
+                        "existingProgressReprint":  true,
+                        "certificate":  {
+                                            "stages":  12,
+                                            "score":  100,
+                                            "form":  true,
+                                            "print":  true,
+                                            "logo":  1254,
+                                            "design":  "tjkt-circuit-v3"
+                                        },
+                        "stages":  12,
+                        "pdfBytes":  1690658,
+                        "freshSequential":  true,
+                        "pdfPages":  1,
+                        "belowThresholdBlocked":  true
+                    },
+                    {
+                        "id":  "profesi-kewirausahaan-tjkt",
+                        "existingProgressReprint":  true,
+                        "certificate":  {
+                                            "stages":  12,
+                                            "score":  100,
+                                            "form":  true,
+                                            "print":  true,
+                                            "logo":  1254,
+                                            "design":  "tjkt-circuit-v3"
+                                        },
+                        "stages":  12,
+                        "pdfBytes":  1690657,
+                        "freshSequential":  true,
+                        "pdfPages":  1,
+                        "belowThresholdBlocked":  true
+                    },
+                    {
+                        "id":  "k3-budaya-kerja",
+                        "existingProgressReprint":  true,
+                        "certificate":  {
+                                            "stages":  12,
+                                            "score":  100,
+                                            "form":  true,
+                                            "print":  true,
+                                            "logo":  1254,
+                                            "design":  "tjkt-circuit-v3"
+                                        },
+                        "stages":  12,
+                        "pdfBytes":  1689856,
+                        "freshSequential":  true,
+                        "pdfPages":  1,
+                        "belowThresholdBlocked":  true
+                    },
+                    {
+                        "id":  "pengenalan-jaringan",
+                        "existingProgressReprint":  true,
+                        "certificate":  {
+                                            "stages":  9,
+                                            "score":  100,
+                                            "form":  true,
+                                            "print":  true,
+                                            "logo":  1254,
+                                            "design":  "tjkt-circuit-v3"
+                                        },
+                        "stages":  9,
+                        "pdfBytes":  1689910,
+                        "freshSequential":  true,
+                        "pdfPages":  1,
+                        "belowThresholdBlocked":  true
+                    },
+                    {
+                        "id":  "perangkat-jaringan",
+                        "existingProgressReprint":  true,
+                        "certificate":  {
+                                            "stages":  9,
+                                            "score":  100,
+                                            "form":  true,
+                                            "print":  true,
+                                            "logo":  1254,
+                                            "design":  "tjkt-circuit-v3"
+                                        },
+                        "stages":  9,
+                        "pdfBytes":  1689081,
+                        "freshSequential":  true,
+                        "pdfPages":  1,
+                        "belowThresholdBlocked":  true
+                    },
+                    {
+                        "id":  "topologi-jaringan",
+                        "existingProgressReprint":  true,
+                        "certificate":  {
+                                            "stages":  9,
+                                            "score":  100,
+                                            "form":  true,
+                                            "print":  true,
+                                            "logo":  1254,
+                                            "design":  "tjkt-circuit-v3"
+                                        },
+                        "stages":  9,
+                        "pdfBytes":  1689336,
+                        "freshSequential":  true,
+                        "pdfPages":  1,
+                        "belowThresholdBlocked":  true
+                    },
+                    {
+                        "id":  "perencanaan-jaringan",
+                        "existingProgressReprint":  true,
+                        "certificate":  {
+                                            "stages":  12,
+                                            "score":  100,
+                                            "form":  true,
+                                            "print":  true,
+                                            "logo":  1254,
+                                            "design":  "tjkt-circuit-v3"
+                                        },
+                        "stages":  12,
+                        "pdfBytes":  1690821,
+                        "freshSequential":  true,
+                        "pdfPages":  1,
+                        "belowThresholdBlocked":  true
+                    },
+                    {
+                        "id":  "media-transmisi",
+                        "existingProgressReprint":  true,
+                        "certificate":  {
+                                            "stages":  8,
+                                            "score":  100,
+                                            "form":  true,
+                                            "print":  true,
+                                            "logo":  1254,
+                                            "design":  "tjkt-circuit-v3"
+                                        },
+                        "stages":  8,
+                        "pdfBytes":  1690332,
+                        "freshSequential":  true,
+                        "pdfPages":  1,
+                        "belowThresholdBlocked":  true
+                    },
+                    {
+                        "id":  "osi-tcpip",
+                        "existingProgressReprint":  true,
+                        "certificate":  {
+                                            "stages":  8,
+                                            "score":  100,
+                                            "form":  true,
+                                            "print":  true,
+                                            "logo":  1254,
+                                            "design":  "tjkt-circuit-v3"
+                                        },
+                        "stages":  8,
+                        "pdfBytes":  1689076,
+                        "freshSequential":  true,
+                        "pdfPages":  1,
+                        "belowThresholdBlocked":  true
+                    },
+                    {
+                        "id":  "ipv4-subnetting",
+                        "existingProgressReprint":  true,
+                        "certificate":  {
+                                            "stages":  9,
+                                            "score":  100,
+                                            "form":  true,
+                                            "print":  true,
+                                            "logo":  1254,
+                                            "design":  "tjkt-circuit-v3"
+                                        },
+                        "stages":  9,
+                        "pdfBytes":  1690090,
+                        "freshSequential":  true,
+                        "pdfPages":  1,
+                        "belowThresholdBlocked":  true
+                    },
+                    {
+                        "id":  "ipv6-dasar",
+                        "existingProgressReprint":  true,
+                        "certificate":  {
+                                            "stages":  12,
+                                            "score":  100,
+                                            "form":  true,
+                                            "print":  true,
+                                            "logo":  1254,
+                                            "design":  "tjkt-circuit-v3"
+                                        },
+                        "stages":  12,
+                        "pdfBytes":  1690355,
+                        "freshSequential":  true,
+                        "pdfPages":  1,
+                        "belowThresholdBlocked":  true
+                    },
+                    {
+                        "id":  "protokol-layanan",
+                        "existingProgressReprint":  true,
+                        "certificate":  {
+                                            "stages":  8,
+                                            "score":  100,
+                                            "form":  true,
+                                            "print":  true,
+                                            "logo":  1254,
+                                            "design":  "tjkt-circuit-v3"
+                                        },
+                        "stages":  8,
+                        "pdfBytes":  1690434,
+                        "freshSequential":  true,
+                        "pdfPages":  1,
+                        "belowThresholdBlocked":  true
+                    },
+                    {
+                        "id":  "sistem-telekomunikasi-dasar",
+                        "existingProgressReprint":  true,
+                        "certificate":  {
+                                            "stages":  12,
+                                            "score":  100,
+                                            "form":  true,
+                                            "print":  true,
+                                            "logo":  1254,
+                                            "design":  "tjkt-circuit-v3"
+                                        },
+                        "stages":  12,
+                        "pdfBytes":  1690016,
+                        "freshSequential":  true,
+                        "pdfPages":  1,
+                        "belowThresholdBlocked":  true
+                    },
+                    {
+                        "id":  "troubleshooting",
+                        "existingProgressReprint":  true,
+                        "certificate":  {
+                                            "stages":  9,
+                                            "score":  100,
+                                            "form":  true,
+                                            "print":  true,
+                                            "logo":  1254,
+                                            "design":  "tjkt-circuit-v3"
+                                        },
+                        "stages":  9,
+                        "pdfBytes":  1690221,
+                        "freshSequential":  true,
+                        "pdfPages":  1,
+                        "belowThresholdBlocked":  true
+                    },
+                    {
+                        "id":  "alat-ukur-tjkt",
+                        "existingProgressReprint":  true,
+                        "certificate":  {
+                                            "stages":  12,
+                                            "score":  100,
+                                            "form":  true,
+                                            "print":  true,
+                                            "logo":  1254,
+                                            "design":  "tjkt-circuit-v3"
+                                        },
+                        "stages":  12,
+                        "pdfBytes":  1690176,
+                        "freshSequential":  true,
+                        "pdfPages":  1,
+                        "belowThresholdBlocked":  true
+                    },
+                    {
+                        "id":  "switching-vlan",
+                        "existingProgressReprint":  true,
+                        "certificate":  {
+                                            "stages":  9,
+                                            "score":  100,
+                                            "form":  true,
+                                            "print":  true,
+                                            "logo":  1254,
+                                            "design":  "tjkt-circuit-v3"
+                                        },
+                        "stages":  9,
+                        "pdfBytes":  1690231,
+                        "freshSequential":  true,
+                        "pdfPages":  1,
+                        "belowThresholdBlocked":  true
+                    }
+                ]
+}

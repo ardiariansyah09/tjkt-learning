@@ -1727,7 +1727,7 @@
                                        "Client-Server dan Peer-to-Peer",
                                        "Komponen Jaringan",
                                        "Virtual Network Builder",
-                                       "Network Arcade",
+                                       "Game 2D: Loket Paket Jaringan",
                                        "Posttest dan Sertifikat"
                                    ],
                         "studio":  {
@@ -2153,7 +2153,7 @@
                                        "Access Point, Modem/ONT, dan Firewall",
                                        "Device Selection Lab",
                                        "Virtual Network Builder",
-                                       "Device Delivery: Petualangan Jaringan",
+                                       "Game 2D: Bengkel Modul Perangkat",
                                        "Posttest Perangkat Jaringan"
                                    ],
                         "studio":  {
@@ -2579,7 +2579,7 @@
                                        "Memilih Topologi untuk Sekolah",
                                        "Topology Builder — Virtual Lab",
                                        "Link Rescue: Simulasi Topologi 2D",
-                                       "Topology Arcade",
+                                       "Game 2D: Jaringan Tetap Terhubung",
                                        "Posttest dan Sertifikat"
                                    ],
                         "studio":  {
@@ -3857,7 +3857,7 @@
                                        "Model TCP/IP",
                                        "Enkapsulasi dan Dekapsulasi",
                                        "Simulator Perjalanan Paket",
-                                       "Encapsulation Run — Petualangan Data",
+                                       "Game 2D: Pabrik Enkapsulasi",
                                        "Rangkuman",
                                        "Posttest OSI dan TCP/IP"
                                    ],
@@ -4284,7 +4284,7 @@
                                        "Dasar Subnetting",
                                        "Praktikum VLSM",
                                        "Virtual Network Lab",
-                                       "Subnet Courier — Game Petualangan",
+                                       "Game 2D: Lahan Subnet",
                                        "Posttest \u0026 Rekap"
                                    ],
                         "studio":  {
@@ -5138,7 +5138,7 @@
                                        "HTTP, HTTPS, dan TLS",
                                        "Port dan Layanan Umum",
                                        "Simulasi Perjalanan Layanan",
-                                       "Service Delivery — Petualangan Layanan",
+                                       "Game 2D: Antrean Layanan Digital",
                                        "Posttest Protokol dan Layanan"
                                    ],
                         "studio":  {
@@ -5993,7 +5993,7 @@
                                        "Menguji Gateway, Jalur, dan DNS",
                                        "Memilih Alat Diagnostik",
                                        "Network Clinic: Lab Diagnosa",
-                                       "Network Rescue Run — Petualangan Pemulihan",
+                                       "Game 2D: Teknisi dalam Batas Waktu",
                                        "Posttest Troubleshooting Jaringan"
                                    ],
                         "studio":  {
@@ -11138,7 +11138,7 @@
                                        "Trunk dan IEEE 802.1Q",
                                        "Inter-VLAN Routing",
                                        "VLAN Studio: Lab Konfigurasi",
-                                       "VLAN Transit — Petualangan Frame",
+                                       "Game 2D: Ruang Kendali Frame",
                                        "Posttest Switching \u0026 VLAN"
                                    ],
                         "studio":  {
@@ -22708,7 +22708,7 @@
                                    ]
                     }
                 ],
-    "checkedAt":  "2026-10-26T05:48:40.0101060Z",
+    "checkedAt":  "2026-10-26T14:14:15.9754884Z",
     "styleParity":  true,
     "viewports":  [
                       "1280x900",

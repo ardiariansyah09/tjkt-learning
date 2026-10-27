@@ -1,5 +1,5 @@
 ﻿{
-    "checkedAt":  "2026-10-24T06:15:02.5493659Z",
+    "checkedAt":  "2026-10-26T07:50:24.0156727Z",
     "modules":  [
                     {
                         "id":  "proses-bisnis-tjkt",
@@ -13,7 +13,7 @@
                                             "design":  "tjkt-circuit-v3"
                                         },
                         "stages":  12,
-                        "pdfBytes":  1690684,
+                        "pdfBytes":  1690451,
                         "freshSequential":  true,
                         "pdfPages":  1,
                         "belowThresholdBlocked":  true
@@ -30,7 +30,7 @@
                                             "design":  "tjkt-circuit-v3"
                                         },
                         "stages":  12,
-                        "pdfBytes":  1690893,
+                        "pdfBytes":  1690658,
                         "freshSequential":  true,
                         "pdfPages":  1,
                         "belowThresholdBlocked":  true
@@ -47,7 +47,7 @@
                                             "design":  "tjkt-circuit-v3"
                                         },
                         "stages":  12,
-                        "pdfBytes":  1690900,
+                        "pdfBytes":  1690657,
                         "freshSequential":  true,
                         "pdfPages":  1,
                         "belowThresholdBlocked":  true
@@ -64,7 +64,7 @@
                                             "design":  "tjkt-circuit-v3"
                                         },
                         "stages":  12,
-                        "pdfBytes":  1690073,
+                        "pdfBytes":  1689856,
                         "freshSequential":  true,
                         "pdfPages":  1,
                         "belowThresholdBlocked":  true
@@ -81,7 +81,7 @@
                                             "design":  "tjkt-circuit-v3"
                                         },
                         "stages":  9,
-                        "pdfBytes":  1690148,
+                        "pdfBytes":  1689910,
                         "freshSequential":  true,
                         "pdfPages":  1,
                         "belowThresholdBlocked":  true
@@ -98,7 +98,7 @@
                                             "design":  "tjkt-circuit-v3"
                                         },
                         "stages":  9,
-                        "pdfBytes":  1689328,
+                        "pdfBytes":  1689081,
                         "freshSequential":  true,
                         "pdfPages":  1,
                         "belowThresholdBlocked":  true
@@ -115,7 +115,7 @@
                                             "design":  "tjkt-circuit-v3"
                                         },
                         "stages":  9,
-                        "pdfBytes":  1689565,
+                        "pdfBytes":  1689336,
                         "freshSequential":  true,
                         "pdfPages":  1,
                         "belowThresholdBlocked":  true
@@ -132,7 +132,7 @@
                                             "design":  "tjkt-circuit-v3"
                                         },
                         "stages":  12,
-                        "pdfBytes":  1691066,
+                        "pdfBytes":  1690821,
                         "freshSequential":  true,
                         "pdfPages":  1,
                         "belowThresholdBlocked":  true
@@ -149,7 +149,7 @@
                                             "design":  "tjkt-circuit-v3"
                                         },
                         "stages":  8,
-                        "pdfBytes":  1690571,
+                        "pdfBytes":  1690332,
                         "freshSequential":  true,
                         "pdfPages":  1,
                         "belowThresholdBlocked":  true
@@ -166,7 +166,7 @@
                                             "design":  "tjkt-circuit-v3"
                                         },
                         "stages":  8,
-                        "pdfBytes":  1689329,
+                        "pdfBytes":  1689076,
                         "freshSequential":  true,
                         "pdfPages":  1,
                         "belowThresholdBlocked":  true
@@ -183,7 +183,7 @@
                                             "design":  "tjkt-circuit-v3"
                                         },
                         "stages":  9,
-                        "pdfBytes":  1690325,
+                        "pdfBytes":  1690090,
                         "freshSequential":  true,
                         "pdfPages":  1,
                         "belowThresholdBlocked":  true
@@ -200,7 +200,7 @@
                                             "design":  "tjkt-circuit-v3"
                                         },
                         "stages":  12,
-                        "pdfBytes":  1690596,
+                        "pdfBytes":  1690355,
                         "freshSequential":  true,
                         "pdfPages":  1,
                         "belowThresholdBlocked":  true
@@ -217,7 +217,7 @@
                                             "design":  "tjkt-circuit-v3"
                                         },
                         "stages":  8,
-                        "pdfBytes":  1690667,
+                        "pdfBytes":  1690434,
                         "freshSequential":  true,
                         "pdfPages":  1,
                         "belowThresholdBlocked":  true
@@ -234,7 +234,7 @@
                                             "design":  "tjkt-circuit-v3"
                                         },
                         "stages":  12,
-                        "pdfBytes":  1690261,
+                        "pdfBytes":  1690016,
                         "freshSequential":  true,
                         "pdfPages":  1,
                         "belowThresholdBlocked":  true
@@ -251,7 +251,7 @@
                                             "design":  "tjkt-circuit-v3"
                                         },
                         "stages":  9,
-                        "pdfBytes":  1690473,
+                        "pdfBytes":  1690221,
                         "freshSequential":  true,
                         "pdfPages":  1,
                         "belowThresholdBlocked":  true
@@ -268,7 +268,7 @@
                                             "design":  "tjkt-circuit-v3"
                                         },
                         "stages":  12,
-                        "pdfBytes":  1690411,
+                        "pdfBytes":  1690176,
                         "freshSequential":  true,
                         "pdfPages":  1,
                         "belowThresholdBlocked":  true
@@ -285,7 +285,7 @@
                                             "design":  "tjkt-circuit-v3"
                                         },
                         "stages":  12,
-                        "pdfBytes":  1690724,
+                        "pdfBytes":  1690480,
                         "freshSequential":  true,
                         "pdfPages":  1,
                         "belowThresholdBlocked":  true
@@ -302,7 +302,7 @@
                                             "design":  "tjkt-circuit-v3"
                                         },
                         "stages":  12,
-                        "pdfBytes":  1691179,
+                        "pdfBytes":  1690943,
                         "freshSequential":  true,
                         "pdfPages":  1,
                         "belowThresholdBlocked":  true
@@ -319,7 +319,7 @@
                                             "design":  "tjkt-circuit-v3"
                                         },
                         "stages":  12,
-                        "pdfBytes":  1691282,
+                        "pdfBytes":  1691046,
                         "freshSequential":  true,
                         "pdfPages":  1,
                         "belowThresholdBlocked":  true
@@ -336,7 +336,7 @@
                                             "design":  "tjkt-circuit-v3"
                                         },
                         "stages":  12,
-                        "pdfBytes":  1690658,
+                        "pdfBytes":  1690425,
                         "freshSequential":  true,
                         "pdfPages":  1,
                         "belowThresholdBlocked":  true
@@ -353,7 +353,7 @@
                                             "design":  "tjkt-circuit-v3"
                                         },
                         "stages":  12,
-                        "pdfBytes":  1689395,
+                        "pdfBytes":  1689157,
                         "freshSequential":  true,
                         "pdfPages":  1,
                         "belowThresholdBlocked":  true
@@ -370,7 +370,7 @@
                                             "design":  "tjkt-circuit-v3"
                                         },
                         "stages":  12,
-                        "pdfBytes":  1690205,
+                        "pdfBytes":  1689956,
                         "freshSequential":  true,
                         "pdfPages":  1,
                         "belowThresholdBlocked":  true
@@ -387,7 +387,7 @@
                                             "design":  "tjkt-circuit-v3"
                                         },
                         "stages":  12,
-                        "pdfBytes":  1690735,
+                        "pdfBytes":  1690494,
                         "freshSequential":  true,
                         "pdfPages":  1,
                         "belowThresholdBlocked":  true
@@ -404,7 +404,7 @@
                                             "design":  "tjkt-circuit-v3"
                                         },
                         "stages":  12,
-                        "pdfBytes":  1691061,
+                        "pdfBytes":  1690824,
                         "freshSequential":  true,
                         "pdfPages":  1,
                         "belowThresholdBlocked":  true
@@ -421,7 +421,7 @@
                                             "design":  "tjkt-circuit-v3"
                                         },
                         "stages":  12,
-                        "pdfBytes":  1690445,
+                        "pdfBytes":  1690197,
                         "freshSequential":  true,
                         "pdfPages":  1,
                         "belowThresholdBlocked":  true
@@ -438,7 +438,7 @@
                                             "design":  "tjkt-circuit-v3"
                                         },
                         "stages":  12,
-                        "pdfBytes":  1689369,
+                        "pdfBytes":  1689121,
                         "freshSequential":  true,
                         "pdfPages":  1,
                         "belowThresholdBlocked":  true
@@ -455,7 +455,7 @@
                                             "design":  "tjkt-circuit-v3"
                                         },
                         "stages":  9,
-                        "pdfBytes":  1690461,
+                        "pdfBytes":  1690231,
                         "freshSequential":  true,
                         "pdfPages":  1,
                         "belowThresholdBlocked":  true
@@ -472,7 +472,432 @@
                                             "design":  "tjkt-circuit-v3"
                                         },
                         "stages":  12,
-                        "pdfBytes":  1690142,
+                        "pdfBytes":  1689902,
+                        "freshSequential":  true,
+                        "pdfPages":  1,
+                        "belowThresholdBlocked":  true
+                    },
+                    {
+                        "id":  "routing-dinamis",
+                        "existingProgressReprint":  true,
+                        "certificate":  {
+                                            "stages":  12,
+                                            "score":  100,
+                                            "form":  true,
+                                            "print":  true,
+                                            "logo":  1254,
+                                            "design":  "tjkt-circuit-v3"
+                                        },
+                        "stages":  12,
+                        "pdfBytes":  1690382,
+                        "freshSequential":  true,
+                        "pdfPages":  1,
+                        "belowThresholdBlocked":  true
+                    },
+                    {
+                        "id":  "nat-wan",
+                        "existingProgressReprint":  true,
+                        "certificate":  {
+                                            "stages":  12,
+                                            "score":  100,
+                                            "form":  true,
+                                            "print":  true,
+                                            "logo":  1254,
+                                            "design":  "tjkt-circuit-v3"
+                                        },
+                        "stages":  12,
+                        "pdfBytes":  1689538,
+                        "freshSequential":  true,
+                        "pdfPages":  1,
+                        "belowThresholdBlocked":  true
+                    },
+                    {
+                        "id":  "proxy-load-balancing",
+                        "existingProgressReprint":  true,
+                        "certificate":  {
+                                            "stages":  12,
+                                            "score":  100,
+                                            "form":  true,
+                                            "print":  true,
+                                            "logo":  1254,
+                                            "design":  "tjkt-circuit-v3"
+                                        },
+                        "stages":  12,
+                        "pdfBytes":  1688758,
+                        "freshSequential":  true,
+                        "pdfPages":  1,
+                        "belowThresholdBlocked":  true
+                    },
+                    {
+                        "id":  "bandwidth-qos",
+                        "existingProgressReprint":  true,
+                        "certificate":  {
+                                            "stages":  12,
+                                            "score":  100,
+                                            "form":  true,
+                                            "print":  true,
+                                            "logo":  1254,
+                                            "design":  "tjkt-circuit-v3"
+                                        },
+                        "stages":  12,
+                        "pdfBytes":  1690491,
+                        "freshSequential":  true,
+                        "pdfPages":  1,
+                        "belowThresholdBlocked":  true
+                    },
+                    {
+                        "id":  "load-balancing",
+                        "existingProgressReprint":  true,
+                        "certificate":  {
+                                            "stages":  12,
+                                            "score":  100,
+                                            "form":  true,
+                                            "print":  true,
+                                            "logo":  1254,
+                                            "design":  "tjkt-circuit-v3"
+                                        },
+                        "stages":  12,
+                        "pdfBytes":  1690031,
+                        "freshSequential":  true,
+                        "pdfPages":  1,
+                        "belowThresholdBlocked":  true
+                    },
+                    {
+                        "id":  "dasar-administrasi-server",
+                        "existingProgressReprint":  true,
+                        "certificate":  {
+                                            "stages":  12,
+                                            "score":  100,
+                                            "form":  true,
+                                            "print":  true,
+                                            "logo":  1254,
+                                            "design":  "tjkt-circuit-v3"
+                                        },
+                        "stages":  12,
+                        "pdfBytes":  1690258,
+                        "freshSequential":  true,
+                        "pdfPages":  1,
+                        "belowThresholdBlocked":  true
+                    },
+                    {
+                        "id":  "virtualisasi-server",
+                        "existingProgressReprint":  true,
+                        "certificate":  {
+                                            "stages":  12,
+                                            "score":  100,
+                                            "form":  true,
+                                            "print":  true,
+                                            "logo":  1254,
+                                            "design":  "tjkt-circuit-v3"
+                                        },
+                        "stages":  12,
+                        "pdfBytes":  1689996,
+                        "freshSequential":  true,
+                        "pdfPages":  1,
+                        "belowThresholdBlocked":  true
+                    },
+                    {
+                        "id":  "administrasi-linux-windows",
+                        "existingProgressReprint":  true,
+                        "certificate":  {
+                                            "stages":  12,
+                                            "score":  100,
+                                            "form":  true,
+                                            "print":  true,
+                                            "logo":  1254,
+                                            "design":  "tjkt-circuit-v3"
+                                        },
+                        "stages":  12,
+                        "pdfBytes":  1691664,
+                        "freshSequential":  true,
+                        "pdfPages":  1,
+                        "belowThresholdBlocked":  true
+                    },
+                    {
+                        "id":  "manajemen-pengguna-server",
+                        "existingProgressReprint":  true,
+                        "certificate":  {
+                                            "stages":  12,
+                                            "score":  100,
+                                            "form":  true,
+                                            "print":  true,
+                                            "logo":  1254,
+                                            "design":  "tjkt-circuit-v3"
+                                        },
+                        "stages":  12,
+                        "pdfBytes":  1690674,
+                        "freshSequential":  true,
+                        "pdfPages":  1,
+                        "belowThresholdBlocked":  true
+                    },
+                    {
+                        "id":  "layanan-server",
+                        "existingProgressReprint":  true,
+                        "certificate":  {
+                                            "stages":  12,
+                                            "score":  100,
+                                            "form":  true,
+                                            "print":  true,
+                                            "logo":  1254,
+                                            "design":  "tjkt-circuit-v3"
+                                        },
+                        "stages":  12,
+                        "pdfBytes":  1689918,
+                        "freshSequential":  true,
+                        "pdfPages":  1,
+                        "belowThresholdBlocked":  true
+                    },
+                    {
+                        "id":  "ftp-server",
+                        "existingProgressReprint":  true,
+                        "certificate":  {
+                                            "stages":  12,
+                                            "score":  100,
+                                            "form":  true,
+                                            "print":  true,
+                                            "logo":  1254,
+                                            "design":  "tjkt-circuit-v3"
+                                        },
+                        "stages":  12,
+                        "pdfBytes":  1690946,
+                        "freshSequential":  true,
+                        "pdfPages":  1,
+                        "belowThresholdBlocked":  true
+                    },
+                    {
+                        "id":  "file-server",
+                        "existingProgressReprint":  true,
+                        "certificate":  {
+                                            "stages":  12,
+                                            "score":  100,
+                                            "form":  true,
+                                            "print":  true,
+                                            "logo":  1254,
+                                            "design":  "tjkt-circuit-v3"
+                                        },
+                        "stages":  12,
+                        "pdfBytes":  1690657,
+                        "freshSequential":  true,
+                        "pdfPages":  1,
+                        "belowThresholdBlocked":  true
+                    },
+                    {
+                        "id":  "hosting-server",
+                        "existingProgressReprint":  true,
+                        "certificate":  {
+                                            "stages":  12,
+                                            "score":  100,
+                                            "form":  true,
+                                            "print":  true,
+                                            "logo":  1254,
+                                            "design":  "tjkt-circuit-v3"
+                                        },
+                        "stages":  12,
+                        "pdfBytes":  1690131,
+                        "freshSequential":  true,
+                        "pdfPages":  1,
+                        "belowThresholdBlocked":  true
+                    },
+                    {
+                        "id":  "panel-layanan-hosting",
+                        "existingProgressReprint":  true,
+                        "certificate":  {
+                                            "stages":  12,
+                                            "score":  100,
+                                            "form":  true,
+                                            "print":  true,
+                                            "logo":  1254,
+                                            "design":  "tjkt-circuit-v3"
+                                        },
+                        "stages":  12,
+                        "pdfBytes":  1691615,
+                        "freshSequential":  true,
+                        "pdfPages":  1,
+                        "belowThresholdBlocked":  true
+                    },
+                    {
+                        "id":  "vpn-server",
+                        "existingProgressReprint":  true,
+                        "certificate":  {
+                                            "stages":  12,
+                                            "score":  100,
+                                            "form":  true,
+                                            "print":  true,
+                                            "logo":  1254,
+                                            "design":  "tjkt-circuit-v3"
+                                        },
+                        "stages":  12,
+                        "pdfBytes":  1690436,
+                        "freshSequential":  true,
+                        "pdfPages":  1,
+                        "belowThresholdBlocked":  true
+                    },
+                    {
+                        "id":  "monitoring-jaringan",
+                        "existingProgressReprint":  true,
+                        "certificate":  {
+                                            "stages":  12,
+                                            "score":  100,
+                                            "form":  true,
+                                            "print":  true,
+                                            "logo":  1254,
+                                            "design":  "tjkt-circuit-v3"
+                                        },
+                        "stages":  12,
+                        "pdfBytes":  1690809,
+                        "freshSequential":  true,
+                        "pdfPages":  1,
+                        "belowThresholdBlocked":  true
+                    },
+                    {
+                        "id":  "backup-pemulihan-server",
+                        "existingProgressReprint":  true,
+                        "certificate":  {
+                                            "stages":  12,
+                                            "score":  100,
+                                            "form":  true,
+                                            "print":  true,
+                                            "logo":  1254,
+                                            "design":  "tjkt-circuit-v3"
+                                        },
+                        "stages":  12,
+                        "pdfBytes":  1690456,
+                        "freshSequential":  true,
+                        "pdfPages":  1,
+                        "belowThresholdBlocked":  true
+                    },
+                    {
+                        "id":  "mail-server",
+                        "existingProgressReprint":  true,
+                        "certificate":  {
+                                            "stages":  12,
+                                            "score":  100,
+                                            "form":  true,
+                                            "print":  true,
+                                            "logo":  1254,
+                                            "design":  "tjkt-circuit-v3"
+                                        },
+                        "stages":  12,
+                        "pdfBytes":  1688820,
+                        "freshSequential":  true,
+                        "pdfPages":  1,
+                        "belowThresholdBlocked":  true
+                    },
+                    {
+                        "id":  "keamanan-jaringan",
+                        "existingProgressReprint":  true,
+                        "certificate":  {
+                                            "stages":  12,
+                                            "score":  100,
+                                            "form":  true,
+                                            "print":  true,
+                                            "logo":  1254,
+                                            "design":  "tjkt-circuit-v3"
+                                        },
+                        "stages":  12,
+                        "pdfBytes":  1690651,
+                        "freshSequential":  true,
+                        "pdfPages":  1,
+                        "belowThresholdBlocked":  true
+                    },
+                    {
+                        "id":  "autentikasi-kriptografi",
+                        "existingProgressReprint":  true,
+                        "certificate":  {
+                                            "stages":  12,
+                                            "score":  100,
+                                            "form":  true,
+                                            "print":  true,
+                                            "logo":  1254,
+                                            "design":  "tjkt-circuit-v3"
+                                        },
+                        "stages":  12,
+                        "pdfBytes":  1690506,
+                        "freshSequential":  true,
+                        "pdfPages":  1,
+                        "belowThresholdBlocked":  true
+                    },
+                    {
+                        "id":  "ids-hardening",
+                        "existingProgressReprint":  true,
+                        "certificate":  {
+                                            "stages":  12,
+                                            "score":  100,
+                                            "form":  true,
+                                            "print":  true,
+                                            "logo":  1254,
+                                            "design":  "tjkt-circuit-v3"
+                                        },
+                        "stages":  12,
+                        "pdfBytes":  1690049,
+                        "freshSequential":  true,
+                        "pdfPages":  1,
+                        "belowThresholdBlocked":  true
+                    },
+                    {
+                        "id":  "server-dmz",
+                        "existingProgressReprint":  true,
+                        "certificate":  {
+                                            "stages":  12,
+                                            "score":  100,
+                                            "form":  true,
+                                            "print":  true,
+                                            "logo":  1254,
+                                            "design":  "tjkt-circuit-v3"
+                                        },
+                        "stages":  12,
+                        "pdfBytes":  1690633,
+                        "freshSequential":  true,
+                        "pdfPages":  1,
+                        "belowThresholdBlocked":  true
+                    },
+                    {
+                        "id":  "pengujian-keamanan",
+                        "existingProgressReprint":  true,
+                        "certificate":  {
+                                            "stages":  12,
+                                            "score":  100,
+                                            "form":  true,
+                                            "print":  true,
+                                            "logo":  1254,
+                                            "design":  "tjkt-circuit-v3"
+                                        },
+                        "stages":  12,
+                        "pdfBytes":  1691251,
+                        "freshSequential":  true,
+                        "pdfPages":  1,
+                        "belowThresholdBlocked":  true
+                    },
+                    {
+                        "id":  "ids-respons-insiden",
+                        "existingProgressReprint":  true,
+                        "certificate":  {
+                                            "stages":  12,
+                                            "score":  100,
+                                            "form":  true,
+                                            "print":  true,
+                                            "logo":  1254,
+                                            "design":  "tjkt-circuit-v3"
+                                        },
+                        "stages":  12,
+                        "pdfBytes":  1689775,
+                        "freshSequential":  true,
+                        "pdfPages":  1,
+                        "belowThresholdBlocked":  true
+                    },
+                    {
+                        "id":  "proyek-integrasi-jaringan",
+                        "existingProgressReprint":  true,
+                        "certificate":  {
+                                            "stages":  12,
+                                            "score":  100,
+                                            "form":  true,
+                                            "print":  true,
+                                            "logo":  1254,
+                                            "design":  "tjkt-circuit-v3"
+                                        },
+                        "stages":  12,
+                        "pdfBytes":  1690116,
                         "freshSequential":  true,
                         "pdfPages":  1,
                         "belowThresholdBlocked":  true

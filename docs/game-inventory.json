@@ -1,0 +1,320 @@
+﻿[
+    {
+        "id":  "proses-bisnis-tjkt",
+        "title":  "Proses Bisnis dan Pelayanan Pelanggan TJKT",
+        "engine":  "topic-tickets",
+        "replaced":  true
+    },
+    {
+        "id":  "wawasan-tjkt",
+        "title":  "Perkembangan Teknologi dan Isu Global TJKT",
+        "engine":  "topic-sensor",
+        "replaced":  true
+    },
+    {
+        "id":  "profesi-kewirausahaan-tjkt",
+        "title":  "Profesi dan Kewirausahaan TJKT",
+        "engine":  "topic-shop",
+        "replaced":  true
+    },
+    {
+        "id":  "k3-budaya-kerja",
+        "title":  "K3LH dan Budaya Kerja TJKT",
+        "engine":  "topic-safety",
+        "replaced":  true
+    },
+    {
+        "id":  "pengenalan-jaringan",
+        "title":  "Pengenalan Jaringan Komputer",
+        "engine":  "topic-delivery",
+        "replaced":  true
+    },
+    {
+        "id":  "perangkat-jaringan",
+        "title":  "Perangkat Jaringan",
+        "engine":  "topic-workshop",
+        "replaced":  true
+    },
+    {
+        "id":  "topologi-jaringan",
+        "title":  "Topologi Jaringan",
+        "engine":  "topic-resilience",
+        "replaced":  true
+    },
+    {
+        "id":  "perencanaan-jaringan",
+        "title":  "Analisis Kebutuhan dan Dokumentasi Jaringan",
+        "engine":  "topic-rack",
+        "replaced":  true
+    },
+    {
+        "id":  "media-transmisi",
+        "title":  "Media Transmisi Jaringan",
+        "engine":  "no-game",
+        "replaced":  false
+    },
+    {
+        "id":  "osi-tcpip",
+        "title":  "Model OSI dan TCP/IP",
+        "engine":  "topic-envelopes",
+        "replaced":  true
+    },
+    {
+        "id":  "ipv4-subnetting",
+        "title":  "IP Address \u0026 Subnetting",
+        "engine":  "topic-blocks",
+        "replaced":  true
+    },
+    {
+        "id":  "ipv6-dasar",
+        "title":  "Pengalamatan IPv6 Dasar",
+        "engine":  "topic-ipv6",
+        "replaced":  true
+    },
+    {
+        "id":  "protokol-layanan",
+        "title":  "Protokol dan Layanan Jaringan Dasar",
+        "engine":  "topic-windows",
+        "replaced":  true
+    },
+    {
+        "id":  "sistem-telekomunikasi-dasar",
+        "title":  "Dasar Sistem Telekomunikasi",
+        "engine":  "topic-radio",
+        "replaced":  true
+    },
+    {
+        "id":  "troubleshooting",
+        "title":  "Troubleshooting Jaringan Dasar",
+        "engine":  "topic-diagnostic",
+        "replaced":  true
+    },
+    {
+        "id":  "alat-ukur-tjkt",
+        "title":  "Penggunaan dan Pemeliharaan Alat Ukur TJKT",
+        "engine":  "topic-meter",
+        "replaced":  true
+    },
+    {
+        "id":  "kebutuhan-teknis-jaringan",
+        "title":  "Analisis Kebutuhan Teknis dan Peralatan Jaringan",
+        "engine":  "mountRequirementsGame",
+        "replaced":  false
+    },
+    {
+        "id":  "desain-topologi-arsitektur",
+        "title":  "Desain Topologi, Arsitektur, dan Layout Jaringan",
+        "engine":  "mountLayoutGame",
+        "replaced":  false
+    },
+    {
+        "id":  "perencanaan-pengalamatan-lanjut",
+        "title":  "Perancangan Pengalamatan Jaringan: Subnetting, CIDR, dan VLSM",
+        "engine":  "mountAddressGame",
+        "replaced":  false
+    },
+    {
+        "id":  "instalasi-kabel",
+        "title":  "Instalasi dan Pengujian Jaringan Kabel",
+        "engine":  "mountCablingGame",
+        "replaced":  false
+    },
+    {
+        "id":  "wireless-lan",
+        "title":  "Wireless LAN",
+        "engine":  "mountWLANGame",
+        "replaced":  false
+    },
+    {
+        "id":  "pemeliharaan-kabel-nirkabel",
+        "title":  "Perawatan dan Perbaikan Jaringan Kabel dan Nirkabel",
+        "engine":  "mountMaintenanceGame",
+        "replaced":  false
+    },
+    {
+        "id":  "voip",
+        "title":  "Layanan Komunikasi VoIP",
+        "engine":  "mountVoIPGame",
+        "replaced":  false
+    },
+    {
+        "id":  "fiber-optik",
+        "title":  "Instalasi, Pengujian, dan Perbaikan Fiber Optik",
+        "engine":  "mountFiberGame",
+        "replaced":  false
+    },
+    {
+        "id":  "pemasangan-perangkat-jaringan",
+        "title":  "Pemasangan Perangkat ke Sistem Jaringan",
+        "engine":  "mountInstallationGame",
+        "replaced":  false
+    },
+    {
+        "id":  "penggantian-perangkat-jaringan",
+        "title":  "Penggantian Perangkat Jaringan",
+        "engine":  "mountReplacementGame",
+        "replaced":  false
+    },
+    {
+        "id":  "switching-vlan",
+        "title":  "Switching \u0026 VLAN",
+        "engine":  "topic-frames",
+        "replaced":  true
+    },
+    {
+        "id":  "routing-ipv4",
+        "title":  "Routing Statis",
+        "engine":  "mountStaticRoutingGame",
+        "replaced":  false
+    },
+    {
+        "id":  "routing-dinamis",
+        "title":  "Routing Dinamis OSPF",
+        "engine":  "mountDynamicRoutingGame",
+        "replaced":  false
+    },
+    {
+        "id":  "nat-wan",
+        "title":  "Internet Gateway dan NAT",
+        "engine":  "mountNATGame",
+        "replaced":  false
+    },
+    {
+        "id":  "proxy-load-balancing",
+        "title":  "Proxy Server",
+        "engine":  "mountProxyGame",
+        "replaced":  false
+    },
+    {
+        "id":  "bandwidth-qos",
+        "title":  "Manajemen Bandwidth dan QoS",
+        "engine":  "mountQoSGame",
+        "replaced":  false
+    },
+    {
+        "id":  "load-balancing",
+        "title":  "Load Balancing dan Failover",
+        "engine":  "mountDualWANGame",
+        "replaced":  false
+    },
+    {
+        "id":  "dasar-administrasi-server",
+        "title":  "Dasar Administrasi Server",
+        "engine":  "mountServerBasicsGame",
+        "replaced":  false
+    },
+    {
+        "id":  "virtualisasi-server",
+        "title":  "Virtualisasi Server Dasar",
+        "engine":  "mountVirtualizationGame",
+        "replaced":  false
+    },
+    {
+        "id":  "administrasi-linux-windows",
+        "title":  "Administrasi Linux dan Windows Server",
+        "engine":  "mountOSAdminGame",
+        "replaced":  false
+    },
+    {
+        "id":  "manajemen-pengguna-server",
+        "title":  "Manajemen Pengguna dan Hak Akses",
+        "engine":  "mountAccessGame",
+        "replaced":  false
+    },
+    {
+        "id":  "layanan-server",
+        "title":  "DHCP, DNS, dan Remote Server",
+        "engine":  "mountServicesGame",
+        "replaced":  false
+    },
+    {
+        "id":  "ftp-server",
+        "title":  "FTP Server dan Pengujian Transfer Berkas",
+        "engine":  "mountFTPGame",
+        "replaced":  false
+    },
+    {
+        "id":  "file-server",
+        "title":  "File Server dan Berbagi Sumber Daya",
+        "engine":  "mountFileShareGame",
+        "replaced":  false
+    },
+    {
+        "id":  "hosting-server",
+        "title":  "Web dan Database Server",
+        "engine":  "mountWebDBGame",
+        "replaced":  false
+    },
+    {
+        "id":  "panel-layanan-hosting",
+        "title":  "Control Panel, Shared Hosting, Dedicated Server, dan VPS",
+        "engine":  "mountHostingGame",
+        "replaced":  false
+    },
+    {
+        "id":  "vpn-server",
+        "title":  "VPN dan Akses Jarak Jauh Aman",
+        "engine":  "mountVPNGame",
+        "replaced":  false
+    },
+    {
+        "id":  "monitoring-jaringan",
+        "title":  "Sistem Kontrol, Monitoring, dan Pemeliharaan Jaringan",
+        "engine":  "mountMonitoringGame",
+        "replaced":  false
+    },
+    {
+        "id":  "backup-pemulihan-server",
+        "title":  "Backup dan Pemulihan Server",
+        "engine":  "mission-archive",
+        "replaced":  false
+    },
+    {
+        "id":  "mail-server",
+        "title":  "Mail Server",
+        "engine":  "mission-postroom",
+        "replaced":  false
+    },
+    {
+        "id":  "keamanan-jaringan",
+        "title":  "Ancaman dan Sistem Keamanan Jaringan",
+        "engine":  "mission-rules",
+        "replaced":  false
+    },
+    {
+        "id":  "autentikasi-kriptografi",
+        "title":  "Autentikasi dan Kriptografi",
+        "engine":  "mission-vault",
+        "replaced":  false
+    },
+    {
+        "id":  "ids-hardening",
+        "title":  "Host Hardening",
+        "engine":  "mission-change",
+        "replaced":  false
+    },
+    {
+        "id":  "server-dmz",
+        "title":  "Membangun dan Menguji Server DMZ",
+        "engine":  "mission-zones",
+        "replaced":  false
+    },
+    {
+        "id":  "pengujian-keamanan",
+        "title":  "Pengujian Keamanan Jaringan, Host, dan Server",
+        "engine":  "mission-trail",
+        "replaced":  false
+    },
+    {
+        "id":  "ids-respons-insiden",
+        "title":  "IDS/IPS dan Respons Insiden",
+        "engine":  "mission-incident",
+        "replaced":  false
+    },
+    {
+        "id":  "proyek-integrasi-jaringan",
+        "title":  "Proyek Integrasi Jaringan",
+        "engine":  "mission-launch",
+        "replaced":  false
+    }
+]
