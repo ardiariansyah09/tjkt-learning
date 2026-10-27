@@ -52,6 +52,7 @@ try {
  Call-CDP 'Runtime.enable' | Out-Null
  Call-CDP 'Log.enable' | Out-Null
  Call-CDP 'Page.enable' | Out-Null
+ Call-CDP 'Page.addScriptToEvaluateOnNewDocument' @{source="localStorage.setItem('tjkt:local-instructor:v1','off');"} | Out-Null
  $modules=Get-Content (Join-Path $root 'data/modules.json') -Raw -Encoding UTF8 | ConvertFrom-Json
  $results=@()
  $snapshot=@'
@@ -125,6 +126,16 @@ try {
    $stageDesktop=Evaluate $snapshot
    if($stageDesktop.overflow){throw "Invalid desktop stage $($module.id) $stage"}
    Evaluate 'import("/tjkt-learning/tools/studio-checks.js").then(async tests=>({topic:await tests.checkTopicStage(),game:await tests.checkGameStage()}))' | Out-Null
+   if($OnlyModules.Count -and $module.id -eq 'layanan-server' -and (Evaluate 'Boolean(document.querySelector(".chapter-unit:not([hidden]) .services-practice"))')) {
+    Evaluate '(()=>{const box=document.querySelector(".services-practice");box.querySelector("select").value="cache";box.querySelector("[data-services-practice=start]").click();box.scrollIntoView({block:"start"});return new Promise(resolve=>setTimeout(()=>resolve(true),150));})()' | Out-Null
+    $servicesCapture=Call-CDP 'Page.captureScreenshot' @{format='png';captureBeyondViewport=$false}
+    [IO.File]::WriteAllBytes((Join-Path $root 'docs/pratinjau-praktik-layanan-server.png'),[Convert]::FromBase64String($servicesCapture.data))
+   }
+   if($OnlyModules.Count -and $module.id -eq 'perencanaan-jaringan' -and (Evaluate 'Boolean(document.querySelector(".chapter-unit:not([hidden]) .basic-practice"))')) {
+    Evaluate 'document.querySelector(".basic-network").scrollIntoView({block:"start"});new Promise(resolve=>setTimeout(()=>resolve(true),150))' | Out-Null
+    $basicCapture=Call-CDP 'Page.captureScreenshot' @{format='png';captureBeyondViewport=$false}
+    [IO.File]::WriteAllBytes((Join-Path $root 'docs/pratinjau-praktikum-dasar.png'),[Convert]::FromBase64String($basicCapture.data))
+   }
    if($OnlyModules.Count -and $stageDesktop.title -and (Evaluate 'Boolean(document.querySelector(".chapter-unit:not([hidden]) [data-topic-activity]"))')) {
     Evaluate 'document.querySelector(".chapter-unit:not([hidden]) [data-topic-activity]").scrollIntoView({block:"start"});new Promise(resolve=>setTimeout(()=>resolve(true),150))' | Out-Null
     $capture=Call-CDP 'Page.captureScreenshot' @{format='png';captureBeyondViewport=$false}

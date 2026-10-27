@@ -1,4 +1,6 @@
 import { checkFinalModels,checkFinalLab } from './final-module-checks.js';
+
+
 import { checkMonitoringModels,checkMonitoringLab } from './monitoring-checks.js';
 import { checkContextualModels,checkContextualStage,checkLoginDefenseModels } from './contextual-checks.js';
 import { checkVPNModels,checkVPNLab } from './vpn-checks.js';
@@ -45,12 +47,13 @@ export function checkTopicModels(){
   return {contextual:checkContextualModels(),loginDefense:checkLoginDefenseModels(),vectors:10,requirements:checkRequirementsModels(),layout:checkLayoutModels(),addressPlan:checkAddressModels(),cabling:checkCablingModels(),wlan:checkWLANModels(),maintenance:checkMaintenanceModels(),voip:checkVoIPModels(),fiber:checkFiberModels(),installation:checkInstallationModels(),replacement:checkReplacementModels(),staticRouting:checkStaticRoutingModels(),dynamicRouting:checkDynamicRoutingModels(),nat:checkNATModels(),proxy:checkProxyModels(),qos:checkQoSModels(),dualWAN:checkDualWANModels(),serverBasics:checkServerBasicsModels(),virtualization:checkVirtualizationModels(),osAdmin:checkOSAdminModels(),access:checkAccessModels(),services:checkServicesModels(),ftp:checkFTPModels(),fileShare:checkFileShareModels(),webDB:checkWebDBModels(),hosting:checkHostingModels(),vpn:checkVPNModels(),monitoring:checkMonitoringModels(),remaining:checkFinalModels()};
 }
 export async function checkTopicStage(){
+  if(document.querySelector('.basic-practice,.services-practice,.services-practice-hint'))throw Error('Removed guided practice still visible');
   checkActivityInstructions();
   checkContextualStage();
   const id=document.body.dataset.moduleId,type=topicActivityTypes[id];
   assert(!document.getElementById('learning-studio'),'Global studio should be removed');
   assert(!document.querySelector('[data-studio-panel]'),'Forced studio panels should be removed');
-  const visibleGames=[...document.querySelectorAll('.action-game,.requirements-game,.layout-game,.address-game,.cabling-game,.wlan-game,.maintenance-game,.voip-game,.fiber-game,.installation-game,.replacement-game,.static-routing-game,.dynamic-routing-game,.nat-game,.proxy-game,.qos-game,.wan-game,.server-game,.virtualization-game,.os-admin-game,.access-game,.services-game,.ftp-game,.file-share-game,.webdb-game,.hosting-game,.vpn-game,.monitor-game,.final-game')].filter(node=>node.getClientRects().length);
+  const visibleGames=[...document.querySelectorAll('.topic-2d-game,.action-game,.requirements-game,.layout-game,.address-game,.cabling-game,.wlan-game,.maintenance-game,.voip-game,.fiber-game,.installation-game,.replacement-game,.static-routing-game,.dynamic-routing-game,.nat-game,.proxy-game,.qos-game,.wan-game,.server-game,.virtualization-game,.os-admin-game,.access-game,.services-game,.ftp-game,.file-share-game,.webdb-game,.hosting-game,.vpn-game,.monitor-game,.final-game')].filter(node=>node.getClientRects().length);
   const active=document.querySelector('.chapter-unit:not([hidden])');
   if(active&&active.dataset.chapter!=='game')assert(!visibleGames.length,'Game visible outside its chapter');
   const visible=[...document.querySelectorAll('[data-topic-activity]')].filter(node=>node.getClientRects().length);

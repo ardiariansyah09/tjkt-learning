@@ -1,3 +1,4 @@
+import {checkTopicGameUI,checkTopicGamesModels} from './topic-game-checks.js';
 import { checkFinalGame } from './final-module-checks.js';
 import { remainingModules } from '../assets/js/final-game-models.js';
 import { checkMonitoringGame } from './monitoring-checks.js';
@@ -37,7 +38,7 @@ export { checkTopicStage };
 function assert(condition,message){if(!condition)throw new Error(message);}
 const wait=()=>new Promise(resolve=>setTimeout(resolve,120));
 
-export function checkStudioCore(){
+export function checkStudioCore(){checkTopicGamesModels();
   const vectors=[['::','0000:0000:0000:0000:0000:0000:0000:0000','::'],['::1','0000:0000:0000:0000:0000:0000:0000:0001','::1'],['2001:0DB8:0000:0001:0000:0000:0000:0010','2001:0db8:0000:0001:0000:0000:0000:0010','2001:db8:0:1::10'],['2001:0:0:1:0:0:1:1','2001:0000:0000:0001:0000:0000:0001:0001','2001::1:0:0:1:1'],['2001:db8:0:1:2:3:4:5','2001:0db8:0000:0001:0002:0003:0004:0005','2001:db8:0:1:2:3:4:5']];
   vectors.forEach(([input,expanded,canonical])=>{const actual=parseIPv6(input);assert(actual.expanded===expanded&&actual.canonical===canonical,`IPv6 representation: ${input}`);});
   ['2001::1::2','1:2:3:4:5:6:7','1:2:3:4:5:6:7:8:9','gggg::1','2001:::1','1:2:3:4:5:6:7:8::','fe80::1/129'].forEach(input=>{let rejected=false;try{parseIPv6(input);}catch{rejected=true;}assert(rejected,`Invalid IPv6 accepted: ${input}`);});
@@ -95,17 +96,6 @@ export async function checkGameStage(){
   if(id==='fiber-optik')return checkFiberGame(content.querySelector('.fiber-game'));
   if(id==='voip')return checkVoIPGame(content.querySelector('.voip-game'));
   if(id==='wireless-lan')return checkWLANGame(content.querySelector('.wlan-game'));
-  const game=[...content.querySelectorAll('.action-game')].find(node=>node.getClientRects().length);
-  assert(game,`Actual action game missing in ${id}`);
-  assert(![...content.querySelectorAll('input[type=radio],.chapter-check')].some(node=>node.getClientRects().length),'Quiz visible inside game stage');
-  const twoD=solveActionGame(game);
-  const view=game.querySelector('[data-game-view="3d"]');
-  if(!view)return {twoD};
-  const before=game.dataset.state;view.click();
-  assert(before===game.dataset.state,'Changing view reset game progress');
-  await new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)));
-  assert(game.dataset.mode==='3d'&&game.querySelector('.action-camera').getClientRects().length,'3D camera only inside game');
-  game.querySelector('[data-game-action=next]').click();
-  const threeD=solveActionGame(game);
-  return {twoD,threeD,view3d:true,progressPreserved:true};
+  for(let attempt=0;attempt<50&&!content.querySelector('.topic-2d-game')?.getClientRects().length;attempt++)await wait();
+  return checkTopicGameUI(content.querySelector('.topic-2d-game'));
 }

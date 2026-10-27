@@ -18,6 +18,7 @@ export function checkActivityInstructions(){
   const control=node.querySelector('button,input,select,textarea,canvas,[role=application]');
   if(control)assert(Boolean(box.compareDocumentPosition(control)&Node.DOCUMENT_POSITION_FOLLOWING),`Instructions appear after controls: ${key}`);
   if(node.getClientRects().length){visible++;assert(box.getClientRects().length,'Guide hidden on visible activity');}
+  if(box.dataset.gameHelp==='compact'){assert(box.querySelector('details:not([open])'),'Game rules should start collapsed');assert(box.textContent.includes('Mulai:'),'Missing first action');}
  });
  return {targets:targets.length,visible,idempotent:true,inputsPreserved:true};
 }
