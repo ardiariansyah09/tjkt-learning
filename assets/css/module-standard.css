@@ -1,6 +1,7 @@
 @import url('./learning-studio.css?v=2');
 @import url('./action-game.css?v=1');
 @import url('./topic-activities.css?v=1');
+@import url('./topic-games.css?v=3');
 /* Shared presentation contract for every published learning module.
    Loaded last so topic styles only customize their diagrams and activities. */
 body.module-page.module-standard {
@@ -32,7 +33,8 @@ body.module-page.module-standard .module-brand {
   color:var(--text) !important; text-decoration:none; transform:none; font-size:16px; line-height:1.7;
 }
 body.module-page.module-standard .module-brand strong { color:var(--text) !important; font-size:15px; line-height:1.4; }
-body.module-page.module-standard .brand-symbol { display:grid; place-items:center; width:42px; height:42px; padding:7px; border-radius:12px; background:#e0f2fe; font-size:24px; }
+body.module-page.module-standard .brand-symbol { display:flex; align-items:center; justify-content:center; flex:0 0 42px; width:42px; height:42px; padding:0; margin:0; border-radius:12px; background:#e0f2fe; line-height:1; }
+body.module-page.module-standard .brand-symbol img { display:block; flex:none; width:24px; height:24px; margin:0; padding:0; border:0; object-fit:contain; }
 body.module-page.module-standard .topbar-actions { display:flex; flex-wrap:nowrap; align-items:center; gap:10px; }
 body.module-page.module-standard .back-button, body.module-page.module-standard .theme-button {
   display:inline-flex; justify-content:center; align-items:center; gap:8px;
@@ -169,7 +171,8 @@ body.module-page.module-standard.dark .cs-fail { color:#fca5a5; }
   body.module-page.module-standard .module-topbar { height:68px; min-height:68px; padding:10px 12px; gap:8px; }
   body.module-page.module-standard .module-brand { gap:6px; }
   body.module-page.module-standard .module-brand strong { font-size:12px; }
-  body.module-page.module-standard .brand-symbol { width:32px; height:32px; padding:5px; font-size:18px; }
+  body.module-page.module-standard .brand-symbol { flex-basis:32px; width:32px; height:32px; padding:0; }
+  body.module-page.module-standard .brand-symbol img { width:20px; height:20px; }
   body.module-page.module-standard .topbar-actions { gap:6px; }
   body.module-page.module-standard .back-button, body.module-page.module-standard .theme-button { min-height:40px; padding:8px; font-size:11px; }
   body.module-page.module-standard .lesson-nav { grid-template-columns:minmax(0,1fr); }
@@ -187,3 +190,5 @@ body.module-page.module-standard.dark .cs-fail { color:#fca5a5; }
 .activity-instructions h3{margin:0 0 10px;font-size:1.05rem;line-height:1.5}.activity-instructions p{margin:10px 0;line-height:1.7}.activity-instructions ol{margin:12px 0;padding-left:1.5rem}.activity-instructions li{margin:8px 0;line-height:1.7}.activity-instructions p:last-child{margin-bottom:0}
 @media(max-width:480px){.activity-instructions{padding:14px}.activity-instructions ol{padding-left:1.25rem}}
 .module-certificate-panel{margin:24px 0;padding:clamp(16px,3vw,26px);border:2px solid var(--primary);border-radius:12px;background:var(--surface);color:var(--text);min-width:0;overflow-wrap:anywhere}.module-certificate-form{display:flex;flex-wrap:wrap;align-items:end;gap:12px}.module-certificate-form label{display:grid;gap:8px;flex:1 1 100%;font-weight:600}.module-certificate-form input{width:100%;max-width:550px;box-sizing:border-box;padding:12px;border:1px solid var(--border);border-radius:8px;background:var(--bg);color:var(--text);font:inherit}.module-certificate-form .certificate-status{flex:1 1 100%;margin:0;line-height:1.7}.module-certificate-form button{white-space:normal}
+
+body.module-standard .local-instructor-tools{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.65rem clamp(16px,3vw,42px);background:var(--surface);border-bottom:1px solid var(--border);font-size:13px}body.module-standard .local-instructor-tools p{margin:0}body.module-standard .local-instructor-tools button{width:auto;max-width:100%;white-space:normal;flex-shrink:0}@media(max-width:600px){body.module-standard .local-instructor-tools{align-items:stretch;flex-direction:column;gap:.4rem}}
