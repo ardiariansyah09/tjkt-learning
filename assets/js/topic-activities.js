@@ -27,6 +27,7 @@ import { mountLayoutLab } from './layout-activity.js';
 import { mountAddressLab } from './address-plan-activity.js';
 import { mountCablingLab } from './cabling-activity.js';
 import { mountWLANLab } from './wlan-activity.js';
+import {projectOnlyActivities,projectHref} from './activity-scope.js';
 
 const el=(tag,text,cls)=>{const node=document.createElement(tag);if(text!==undefined)node.textContent=text;if(cls)node.className=cls;return node;};
 const btn=(text,action)=>{const node=el('button',text,'secondary-action');node.type='button';node.addEventListener('click',action);return node;};
@@ -111,7 +112,11 @@ export function mountTopicActivities(moduleId){
     activity.append(el('h2',config[0]));
     const log=el('p','Uji satu perubahan, amati hasil, lalu catat bukti percobaan.','topic-save-status');log.setAttribute('role','status');
     let latest=null;
-    config[2](activity,(inputs,result)=>{latest=result===null?null:{inputs,result};activity.dataset.result=JSON.stringify(result);});
+    if(projectOnlyActivities.has(config[1])){
+      activity.dataset.activityMode='project-reference';activity.dataset.topicActivity='standalone-reference';activity.querySelector('h2').textContent='Praktik mandiri administrasi OS';
+      activity.append(el('p','Gunakan installer OS pada bab instalasi dan terminal pada aktivitas ini untuk memeriksa satu kemampuan. Rangkaian instalasi, jaringan, layanan, patch dan pemulihan dipisahkan ke proyek gabungan.'));
+      const link=el('a','Buka proyek layanan server dan pengamanan');link.href=projectHref();activity.append(link);
+    }else config[2](activity,(inputs,result)=>{latest=result===null?null:{inputs,result};activity.dataset.result=JSON.stringify(result);});
     activity.append(btn('Catat percobaan',()=>{
       const form=activity.querySelector('.topic-form');
       if(form&&!form.reportValidity()){log.textContent='Perbaiki input percobaan sebelum mencatat hasil.';return;}
@@ -119,7 +124,7 @@ export function mountTopicActivities(moduleId){
       saved.experiments=Array.isArray(saved.experiments)?saved.experiments:[];
       saved.experiments.push({at:new Date().toISOString(),...latest});saved.experiments=saved.experiments.slice(-30);
       log.textContent=save()?`Percobaan tersimpan. ${saved.experiments.length} catatan tersedia pada browser ini.`:'Penyimpanan tidak tersedia; salin atau ekspor catatan Anda.';
-    }),log);lab.append(activity);
+    }),log);if(activity.dataset.activityMode==='project-reference'){for(const n of [...activity.children])if(n.tagName==='BUTTON'||n===log)n.remove();}lab.append(activity);
     const journal=el('section',undefined,'topic-journal');journal.append(el('h2','Jurnal bukti dan tindak lanjut'));
     const form=el('form',undefined,'studio-journal'),fields={};
     [['prediction','Prediksi awal'],['evidence','Hasil dan bukti percobaan'],['reasoning','Penjelasan serta batas kesimpulan'],['transfer','Perbaikan dan rencana uji berikutnya']].forEach(([name,label])=>{

@@ -8,10 +8,10 @@ const legacy={
 const el=(tag,text,cls)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;if(cls)n.className=cls;return n;};
 export function completionSnapshot(){
  const moduleId=document.body.dataset.moduleId,buttons=[...document.querySelectorAll('.lesson-nav>button')],old=legacy[moduleId],units=[...document.querySelectorAll('.chapter-unit[data-chapter]')],ids=old?.ids||units.map(n=>n.dataset.chapter),key=old?.key||`tjkt:${moduleId}:course:v${document.body.classList.contains('foundation-module')?2:1}`;
- let state={},storageError=false;try{state=JSON.parse(localStorage.getItem(key)||'{}')||{};}catch{storageError=true;}
+ let state={},storageError=false;const actualKey=document.body.dataset.progressVersion?`tjkt:${moduleId}:course:v${document.body.dataset.progressVersion}`:key;try{state=JSON.parse(localStorage.getItem(actualKey)||'{}')||{};}catch{storageError=true;}
  const finalIndex=ids.length-1,missing=ids.map((id,index)=>{const threshold=index===finalIndex?80:old?.game===id?80:75,raw=state.passed?.[id],grade=typeof raw==='number'?raw:Number(state.scores?.[id]),passed=Boolean(raw)&&Number.isFinite(grade)&&grade>=threshold&&grade<=100;return {id,index,threshold,grade,passed,title:buttons[index]?.textContent.replace(/^[^\p{L}\p{N}]*\d*[.\s]*/u,'').trim()||`Tahap ${index+1}`};}).filter(s=>!s.passed);
  const active=buttons.findIndex(b=>b.classList.contains('active')),complete=ids.length>0&&ids.length===buttons.length&&!storageError&&!missing.length,finalId=ids[finalIndex],rawFinal=state.passed?.[finalId],score=Math.max(...[typeof rawFinal==='number'?rawFinal:NaN,Number(state.scores?.[finalId])].filter(value=>Number.isFinite(value)&&value>=0&&value<=100));
- return {moduleId,key,ids,complete,missing,score,storageError,finalActive:active===finalIndex,finalTarget:old?document.querySelector('.lesson-content'):units[finalIndex],title:document.title.split('|')[0].trim()};
+ return {moduleId,key:actualKey,ids,complete,missing,score,storageError,finalActive:active===finalIndex,finalTarget:old?document.querySelector('.lesson-content'):units[finalIndex],title:document.title.split('|')[0].trim()};
 }
 function discardPaper(){document.getElementById('tjktPrintableCertificate')?.remove();}
 export function refreshModuleCertificate(){

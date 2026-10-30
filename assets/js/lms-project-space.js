@@ -1,0 +1,12 @@
+import {projectTracks} from './activity-scope.js';
+const el=(tag,text)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;return n;};
+export function bindLMSProjects(root){
+ if(!window.TJKTLMS||root.dataset.projectsBound)return;root.dataset.projectsBound='true';
+ root.addEventListener('click',event=>{const link=event.target.closest('a[href^="#projek-gabungan:"]');if(!link)return;event.preventDefault();const track=projectTracks.find(t=>t.id===link.hash.split(':')[1]);if(!track)return;
+ const dialog=el('dialog');dialog.style.cssText='width:min(800px,92vw);max-height:85vh;overflow:auto;padding:1.5rem;border:1px solid #c2d5e5;border-radius:12px';const close=el('button','Kembali ke materi');close.type='button';close.addEventListener('click',()=>{dialog.close();dialog.remove();});dialog.append(close,el('h2',track.title),el('p',track.goal),el('p','Ruang proyek terpisah dari penilaian modul. Catatan tersimpan pada akun LMS melalui sinkronisasi yang sama.'));
+ const key=`tjkt:${window.TJKTLMS.slug}:project:${track.id}:v1`;let state={step:0,notes:{}};try{const old=JSON.parse(localStorage.getItem(key)||'null');if(old&&Number.isInteger(old.step)&&old.step>=0&&old.step<track.steps.length&&old.notes&&typeof old.notes==='object'&&!Array.isArray(old.notes))state=old;}catch{}
+ const pane=el('section'),status=el('p');status.setAttribute('role','status');dialog.append(pane,status);const save=()=>{try{localStorage.setItem(key,JSON.stringify(state));status.textContent='Catatan proyek tersimpan; periksa indikator sinkronisasi LMS.';}catch{status.textContent='Belum tersimpan. Salin catatan sebelum menutup.';}};
+ function draw(){pane.replaceChildren();const [title,text]=track.steps[state.step];pane.append(el('p',`Tahap ${state.step+1}/${track.steps.length}`),el('h3',title),el('p',text));const label=el('label','Bukti tahap ini tanpa sandi/token'),input=el('textarea');input.rows=5;input.maxLength=3000;input.style.width='100%';input.value=typeof state.notes[state.step]==='string'?state.notes[state.step]:'';input.addEventListener('input',()=>{state.notes[state.step]=input.value;save();});label.append(input);pane.append(label);for(const [name,d] of [['Sebelumnya',-1],['Berikutnya',1]]){const b=el('button',name);b.type='button';b.disabled=state.step+d<0||state.step+d>=track.steps.length;b.addEventListener('click',()=>{state.step+=d;save();draw();});pane.append(b);}}
+ draw();document.body.append(dialog);dialog.showModal();dialog.addEventListener('close',()=>dialog.remove(),{once:true});
+ });
+}

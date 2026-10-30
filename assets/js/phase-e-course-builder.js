@@ -34,5 +34,9 @@ export function buildPhaseECourse(config) {
     sections(['Hubungkan gagasan utama',config.synthesis],['Bukti ketuntasan','Kerjakan evaluasi konsep dengan ambang ketuntasan 80%. Baca umpan balik dan kembali ke bagian yang belum dipahami bila perlu. Kelulusan evaluasi otomatis belum menggantikan penilaian proyek dan keterampilan oleh guru. Serahkan produk, rekaman tiga percobaan, hasil tinjauan teman, revisi, serta jurnal refleksi. Jelaskan satu keputusan tanpa membaca teks dan tanggapi perubahan kondisi yang diberikan guru.']),
     config.projectExample,'Buat peta hubungan enam konsep utama. Pilih satu keputusan pada proyek dan jelaskan bagaimana keputusan berubah bila satu asumsi penting dibalik. Gunakan data baru dan nyatakan apa yang tetap belum dapat disimpulkan.',
     'Menghafal jawaban evaluasi tidak cukup untuk memindahkan pengetahuan ke situasi baru.',[]));
+  chapters.find(c=>c.id==='laboratorium').sections.push(['Laporan kegiatan satu halaman',[
+    'Setelah kegiatan, catat tujuan; alat/bahan atau model yang digunakan; langkah penting; input dan satuan; hasil asli; kesimpulan; satu perbaikan. Bedakan praktik fisik, simulasi dan data contoh. Gunakan format singkat yang sama untuk percobaan berikutnya, tanpa menyalin hasil teman. Jangan sertakan kata sandi atau data pribadi.',
+    'Contoh susunan: tujuan → kondisi awal → tindakan → bukti hasil → penjelasan → tindak lanjut. Jika uji belum dapat dilakukan, tulis belum diuji beserta sebabnya. Laporan dinilai dari ketepatan dan keterlacakan bukti, bukan panjang tulisan.'
+  ]]);
   return {moduleId:config.moduleId,title:config.title,objectives:config.objectives,sources:config.sources,chapters};
 }

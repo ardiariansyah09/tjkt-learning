@@ -1,9 +1,14 @@
 import { mountLearningStudio } from './learning-studio.js?v=23';
-import { mountActivityInstructions } from './activity-instructions.js?v=19';
+import { mountActivityInstructions, activityTargets } from './activity-instructions.js?v=19';
 import { refreshModuleCertificate } from './module-certificate.js';
 import { mountEverydayContext } from './contextual-learning.js?v=3';
-import { mountServiceSecurity } from './service-security.js?v=3';
 import { mountSubnetClassroom } from './subnet-classroom.js';
+import { mountATPPractice, mountActivityReports } from './atp-practice.js';
+import { mountTerminalLab } from './terminal-lab.js';
+import { mountVirtualLab } from './virtual-lab.js';
+import {simplifyActivities} from './activity-presentation.js';
+import {mountHypervisorLabs} from './hypervisor-lab.js';
+import {bindLMSProjects} from './lms-project-space.js';
 
 // Shared shell behavior. Topic engines retain their own content and progress keys.
 const body = document.body;
@@ -17,9 +22,15 @@ const legacy = ['pengenalan-jaringan', 'topologi-jaringan'].includes(body.datase
 const content = document.querySelector('.lesson-content');
 
 function synchronize() {
+  bindLMSProjects(content);
+  mountHypervisorLabs(content,body.dataset.moduleId);
+  for(const lab of content.querySelectorAll('[data-virtual-lab]'))mountVirtualLab(lab,{moduleId:body.dataset.moduleId,initialOS:lab.dataset.os||'ubuntu',session:lab.dataset.session||'main'});
+  mountATPPractice(content,body.dataset.moduleId);
+  mountTerminalLab(content,body.dataset.moduleId);
+  mountActivityReports(content,body.dataset.moduleId,activityTargets(content,body.dataset.moduleId).map(item=>item.node));
   mountEverydayContext(content,body.dataset.moduleId);
-  mountServiceSecurity(content,body.dataset.moduleId);
   mountSubnetClassroom(content,body.dataset.moduleId);
+  simplifyActivities(content);
 
   refreshModuleCertificate();
   mountActivityInstructions(content,body.dataset.moduleId);
