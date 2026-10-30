@@ -1,6 +1,6 @@
 import { remainingCourses } from './remaining-courses.js';
 import monitoring from './course-monitoring.js';
-import { integrateSecurityCourse } from './service-security.js?v=3';
+import {scopeCourseActivities} from './activity-scope.js';
 import vpn from './course-vpn.js';
 import hosting from './course-hosting.js';
 import webDB from './course-web-db.js';
@@ -42,7 +42,7 @@ import maintenance from './course-maintenance.js';
 bindThemeToggle(document.querySelector('.theme-button'));
 const courses = Object.fromEntries([safety,planning,ipv6,business,technology,career,telecom,measurement,requirements,layout,addressPlan,cabling,wlan,maintenance,voip,fiber,installation,replacement,staticRouting,dynamicRouting,nat,proxy,qos,dualWAN,serverBasics,virtualization,osAdmin,access,services,ftp,fileShare,webDB,hosting,vpn,monitoring,...remainingCourses].map(course=>[course.moduleId,course]));
 const course = courses[document.body.dataset.moduleId];
-integrateSecurityCourse(course);
+scopeCourseActivities(course);
 const root = document.getElementById('lessonContent');
 root.innerHTML = `<section id="tujuan"><h2>Tujuan Pembelajaran</h2><ul>${course.objectives.map(text => `<li>${text}</li>`).join('')}</ul><p>Alur belajar: memahami → mengaplikasi → merefleksi. Baca konsep, uji prediksi pada aktivitas terkait, kumpulkan bukti, lalu jelaskan keputusan Anda.</p></section>${course.chapters.map(renderUnit).join('')}<details class="course-sources"><summary>Referensi belajar</summary><ul>${course.sources.map(([title,url]) => `<li><a href="${url}" target="_blank" rel="noopener noreferrer">${title}</a></li>`).join('')}</ul></details>`;
 const bank = course.chapters.flatMap(chapter => chapter.questions);

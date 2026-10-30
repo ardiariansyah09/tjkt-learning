@@ -1,5 +1,6 @@
+import { enrichPhaseE } from './atp-fase-e-enrichment.js';
 import { buildPhaseECourse, concept as c } from './phase-e-course-builder.js';
-export default buildPhaseECourse({
+export default enrichPhaseE(buildPhaseECourse({
 moduleId:'profesi-kewirausahaan-tjkt',title:'Profesi dan Kewirausahaan TJKT',
 goal:'Menghubungkan kompetensi profesi dengan peluang layanan jaringan yang layak, etis, dan dapat diuji.',
 objectives:['Memetakan tugas profesi, kompetensi, batas kewenangan, dan bukti portofolio.','Memvalidasi masalah pelanggan serta menyusun proposisi nilai dan model layanan.','Membedakan biaya, pendapatan, kontribusi, laba model, serta arus kas.','Menyusun proposal usaha fiktif, menguji titik impas, dan merencanakan pengembangan kompetensi.'],
@@ -62,4 +63,4 @@ game:'Antarkan proposal melalui pos kompetensi, pelanggan, nilai layanan, dan op
 reflection:'Bandingkan gagasan “bisa memasang berarti bisa berusaha” dengan bukti kompetensi, validasi pelanggan, biaya, dan tanggung jawab. Nyatakan satu klaim portofolio yang diperbaiki serta satu asumsi permintaan yang masih perlu diuji.',
 transfer:'Jika layanan berubah menjadi dukungan bulanan, satuan biaya dan pendapatan harus mengikuti periode serta beban dukungan. Rumus per pekerjaan tidak disalin tanpa meninjau definisi unit layanan.',
 synthesis:'Karier berkembang melalui bukti kompetensi dan etika. Usaha memerlukan masalah pelanggan yang tervalidasi, nilai layanan yang jelas, operasi yang mampu memenuhi janji, serta pencatatan biaya dan kas. Model keuangan membantu menguji asumsi, sementara kelayakan tetap memerlukan bukti permintaan dan risiko.'
-});
+}));

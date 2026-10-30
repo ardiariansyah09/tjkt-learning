@@ -1,3 +1,4 @@
+import {completeATP} from './atp-completion-content.js';
 import {buildPhaseECourse as buildCourse,concept as c} from './phase-e-course-builder.js';
 import {unit} from './deep-course.js';
 const course=buildCourse({
@@ -63,4 +64,4 @@ game:'LSA Relay',reflection:'Gunakan tiga bukti lab untuk menjelaskan perbedaan 
 });
 course.classLevel='XI';
 course.chapters[9]=unit('game','Game LSA Relay','Menyebarkan informasi terbaru di empat router dengan anggaran transmisi dan gangguan link.',[['Misi dan tindakan pemain',['Klik router pengirim pada peta, lalu router tetangga penerima. Setiap transmisi menyalin ringkasan versi yang diketahui pengirim dan memakai satu anggaran. Klik pengirim lagi untuk membatalkan pilihan. Baca kartu versi tiap router: kosong atau versi lama harus diperbarui; tanda centang menunjukkan informasi terbaru. Pengiriman satu arah tidak otomatis memperbarui pengirim.']],['Gangguan dan syarat selesai',['Pada level kedua dan ketiga, link tertentu putus setelah jumlah transmisi yang diumumkan. Kedua ujung link menghasilkan versi baru sehingga penyebaran perlu diulang. Garis putus tidak dapat dipakai. Setelah semua router mengetahui versi terbaru, klik Hitung SPF dan kirim paket, lalu Level berikutnya. Selesaikan tiga misi; Ulangi level memulihkan kondisi awal misi, sedangkan Ulangi permainan kembali ke level pertama. Tombol router juga dapat dipakai dengan Tab dan Enter/Spasi.']]],'R2 mempunyai informasi R4 yang belum dimiliki R1. Kirim dari R2 ke R1, kemudian teruskan pengetahuan terbaru melalui link yang masih aktif. Mengirim ulang pasangan yang sama tanpa informasi baru menghabiskan anggaran.','Selesaikan tiga misi. Catat satu urutan transmisi yang efisien, dampak versi baru setelah gangguan, dan perbedaan puzzle ini dari proses flooding OSPF nyata.','Game menggunakan ringkasan versi per giliran, bukan paket OSPF sesungguhnya atau pengukuran waktu konvergensi. Skor game tidak menggantikan penilaian konfigurasi dan diagnosis.',[]);
-export default course;
+export default completeATP(course);

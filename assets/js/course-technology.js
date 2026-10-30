@@ -1,5 +1,6 @@
+import { enrichPhaseE } from './atp-fase-e-enrichment.js';
 import { buildPhaseECourse, concept as c } from './phase-e-course-builder.js';
-export default buildPhaseECourse({
+export default enrichPhaseE(buildPhaseECourse({
 moduleId:'wawasan-tjkt',title:'Perkembangan Teknologi dan Isu Global TJKT',
 goal:'Menilai pilihan teknologi berdasarkan kebutuhan, bukti, risiko, dan dampak lingkungan serta sosial.',
 objectives:['Membedakan kemampuan, batas, dan hubungan 5G, fiber, IPv6, IoT, pusat data, dan cloud.','Menelusuri aliran data sensor menuju edge/cloud beserta risiko keamanan dan privasinya.','Menghitung beban data model dan membandingkan pilihan pengolahan lokal.','Menyusun rekomendasi adopsi teknologi dengan sumber, alternatif, dan rencana evaluasi.'],
@@ -62,4 +63,4 @@ game:'Bawa muatan sensor melalui pos sensor, edge, jaringan, dan cloud. Lindungi
 reflection:'Apakah keputusan awal memilih teknologi berubah setelah menelusuri aliran data? Jelaskan data yang perlu dikumpulkan dan data yang sengaja tidak dikumpulkan. Bandingkan penghematan volume dengan risiko kehilangan kejadian penting.',
 transfer:'Untuk pemantauan kendaraan bergerak, cakupan, mobilitas, dan penyimpanan sementara berubah. Uji ulang asumsi akses tetap; jangan menyalin rancangan sensor ruang perangkat.',
 synthesis:'Teknologi dipilih dari kebutuhan, bukan istilah. Radio dan fiber menyediakan koneksi, IPv6 mendukung pengalamatan, IoT menghasilkan data, edge/cloud membagi pengolahan, sedangkan keamanan, privasi, energi, dan inklusi membentuk keputusan sepanjang siklus hidup.'
-});
+}));

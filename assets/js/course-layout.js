@@ -1,3 +1,4 @@
+import {completeATP} from './atp-completion-content.js';
 import { buildPhaseECourse as buildCourse,concept as c } from './phase-e-course-builder.js';
 import { unit } from './deep-course.js';
 const course=buildCourse({
@@ -69,4 +70,4 @@ course.chapters[9]=unit('game','Game Cable Route Builder','Membangun tiga lintas
  ['Mekanika pemasangan jalur',['Panah/WASD atau tombol arah menggeser ujung kabel satu meter. Mulai di S dan capai T dengan menghindari area merah. Setiap level memiliki panjang gulungan terbatas; langkah dapat diurungkan untuk mengembalikan kabel. Tiga tabrakan menyebabkan gagal dan permainan dapat diulang.','Ketika T tercapai, buka level berikutnya. Setelah tiga level selesai, skor 100 dicatat pada progres game. Tidak ada soal pilihan dan tidak ada aktivitas 3D yang dipaksakan.']],
  ['Membandingkan strategi',['Amati penghalang sebelum menggelar kabel. Bandingkan belokan dan panjang rute; jalur awal yang terlihat pendek dapat berakhir buntu. Gunakan urungkan untuk memperbaiki desain.','Panjang gulungan, tabrakan, dan tujuan adalah aturan game. Di lapangan, lintasan memerlukan SOP, izin, kondisi media, dan pemeriksaan oleh pihak berwenang. Menyelesaikan game bukan bukti kelayakan instalasi.']]
 ],'Jika jalur berbelok ke ruang tertutup, urungkan beberapa langkah lalu pilih koridor yang menghindari penghalang. Mengulangi gerak menabrak tidak menambah panjang yang berguna.','Selesaikan tiga level dan bandingkan panjang akhir dengan strategi awal serta satu hal yang belum dimodelkan.','Rute grid yang berhasil belum menunjukkan kelayakan fisik atau kualitas sinyal.',[]);
-export default course;
+export default completeATP(course);

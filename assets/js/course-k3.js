@@ -1,5 +1,6 @@
+import { enrichPhaseE } from './atp-fase-e-enrichment.js';
 import { unit as u, question as q } from './deep-course.js';
-export default {
+export default enrichPhaseE({
   moduleId:'k3-budaya-kerja', title:'K3LH dan Budaya Kerja TJKT',
   objectives:['Menjelaskan hubungan bahaya, risiko, dan pengendalian sebelum bekerja.', 'Menyusun JSA, checklist, dan laporan kondisi tidak aman berdasarkan bukti.', 'Memilih tindakan aman untuk listrik, perangkat elektronik, fiber, ergonomi, serta lingkungan.', 'Mengevaluasi risiko sisa dan merefleksikan budaya kerja tim.'],
   sources:[['Hierarki pengendalian — NIOSH','https://www.cdc.gov/niosh/hierarchy-of-controls/about/'],['Pencegahan bahaya — OSHA','https://www.osha.gov/safety-management/hazard-prevention'],['Keselamatan laser/fiber — OSHA','https://www.osha.gov/enforcement/directives/std-01-05-001']],
@@ -53,4 +54,4 @@ export default {
       ['Transfer ke lokasi baru',['Bayangkan Anda berpindah dari lab meja ke ruang rak sekolah. Apa bahaya baru, izin yang berbeda, dan bukti yang belum dimiliki? Pertahankan cara berpikir identifikasi–kendali–verifikasi sambil menyesuaikan SOP lokasi.','Tinjau sumber belajar: hierarki pengendalian membantu memilih lapisan perlindungan, sedangkan SOP lembaga dan petugas berwenang menetapkan pelaksanaan. Ketika ragu, hentikan dan klarifikasi sebelum melanjutkan.']]
     ],'JSA lab meja tidak disalin mentah-mentah ke pemasangan atap. Kondisi akses, cuaca, ketinggian, perlindungan jatuh, dan kewenangan memerlukan penilaian serta izin yang berbeda.','Susun tiga pertanyaan yang wajib diklarifikasi sebelum menerima tugas di ruang jaringan baru.','Kompetensi transfer berarti menyesuaikan penalaran dengan konteks, bukan menerapkan satu checklist tanpa peninjauan.',[])
   ]
-};
+});

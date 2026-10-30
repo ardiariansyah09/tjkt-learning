@@ -50,6 +50,12 @@ async function loadModules() {
     const atpResponse = await fetch('data/atp-fase-f.json', { cache:'no-store' });
     if (!atpResponse.ok) throw new Error('Data ATP Fase F tidak dapat dimuat.');
     const atp = await atpResponse.json();
+    const phaseEResponse = await fetch('data/atp-fase-e.json', { cache:'no-store' });
+    if (!phaseEResponse.ok) throw new Error('Data ATP Fase E tidak dapat dimuat.');
+    const phaseE = await phaseEResponse.json();
+    const pathResponse=await fetch('data/learning-paths.json',{cache:'no-store'});
+    if(!pathResponse.ok)throw new Error('Urutan pembelajaran tidak dapat dimuat.');
+    const learningPaths=await pathResponse.json();
 
     if (!Array.isArray(modules)) {
       throw new Error("Format modules.json harus berupa array.");
@@ -87,10 +93,20 @@ async function loadModules() {
           ? 'Fase E · Kelas X — Dasar-Dasar TJKT'
           : 'Fase F · Kelas XI–XII — Teknik Komputer dan Jaringan';
         moduleList.append(phaseHeading);
-        if (phase === 'F') {
+        const roadmap=document.createElement('details');roadmap.className='phase-atp-note';
+        const roadmapTitle=document.createElement('summary');roadmapTitle.textContent='Urutan pembelajaran yang disarankan';roadmap.append(roadmapTitle);
+        for(const learningPath of learningPaths.paths.filter(p=>phase==='E'?p.classLevel==='X':p.classLevel!=='X')){
+          const title=document.createElement('p');title.textContent=learningPath.title;roadmap.append(title);
+          const steps=document.createElement('ol');
+          for(const id of learningPath.moduleIds){const m=byId.get(id);if(!m)continue;const item=document.createElement('li');const link=document.createElement('a');link.href=m.path;link.textContent=m.title+(m.status==='draft'?' (draft)':'');item.append(link);steps.append(item);}
+          roadmap.append(steps);
+        }
+        const draftNote=document.createElement('p');draftNote.textContent='Urutan ini menghubungkan materi lintas elemen; prasyarat wajib tetap ditampilkan pada setiap modul. Progres tersimpan saat Anda menyelesaikan tahap belajar.';roadmap.append(draftNote);moduleList.append(roadmap);
+        if (phase === 'F' || phase === 'E') {
           const note = document.createElement('p');
           note.className = 'phase-atp-note';
-          note.textContent = `Mengikuti ATP ${atp.school} ${atp.schoolYear}. JP merupakan alokasi total elemen, bukan alokasi setiap modul.`;
+          const plan = phase === 'E' ? phaseE : atp;
+          note.textContent = `Mengikuti ATP ${plan.school} ${plan.schoolYear}. JP merupakan alokasi total elemen, bukan alokasi setiap modul.`;
           moduleList.append(note);
         }
       }
@@ -119,8 +135,10 @@ async function loadModules() {
       heading.id = `module-group-title-${index}`;
       heading.textContent = groupTitle;
       section.append(heading);
-      if (phase === 'F') {
-        const element = atp.elements.find(item => item.classLevel === currentClass && item.category === groupModules[0].category);
+      if (phase === 'F' || phase === 'E') {
+        const element = phase === 'E'
+          ? phaseE.elements.find(item => item.category === groupModules[0].category)
+          : atp.elements.find(item => item.classLevel === currentClass && item.category === groupModules[0].category);
         if (element) {
           const allocation = document.createElement('p');
           allocation.className = 'element-allocation';
@@ -202,8 +220,11 @@ async function loadModules() {
           card.append(link);
         } else {
           const status = document.createElement("p");
-          status.textContent = "🔒 Segera Hadir";
+          status.textContent = module.status === 'draft' ? 'Draft · belum bernilai atau bersertifikat' : "🔒 Segera Hadir";
           card.append(status);
+          if(module.status === 'draft' && module.path){
+            const preview=document.createElement('a');preview.href=module.path;preview.textContent='Pratinjau draft →';card.append(preview);
+          }
         }
 
         grid.append(card);

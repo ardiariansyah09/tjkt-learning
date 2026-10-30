@@ -1,3 +1,4 @@
+import {completeATP} from './atp-completion-content.js';
 import { buildPhaseECourse as buildCourse,concept as c } from './phase-e-course-builder.js';
 import { unit } from './deep-course.js';
 const course=buildCourse({
@@ -69,4 +70,4 @@ course.chapters[9]=unit('game','Game Channel Planner','Menyusun kanal untuk tiga
  ['Pasang token kanal',['Ambil token 1, 6, atau 11 lalu klik AP yang hendak disetel. Garis menghubungkan AP yang saling mendengar pada skenario. Pasangan pada setiap garis harus memakai kanal berbeda agar rencana model dapat disahkan.','Level ketiga mempunyai AP dengan kanal tetap. Anda tidak dapat mengubahnya; susun AP lain dengan mempertahankan kendala. Tiga pengesahan gagal menghabiskan kesempatan, lalu permainan dapat diulang.']],
  ['Strategi dan batas',['Tinjau semua tetangga sebelum mengubah satu AP karena perubahan dapat memperbaiki satu garis sekaligus membuat konflik baru pada garis lain. Setelah tiga rencana diterima, skor 100 terhubung ke progres game.','Graf diberikan sebagai aturan puzzle, bukan hasil estimasi jarak. Penggunaan kanal 1/6/11 pada 2,4 GHz/20 MHz hanya lingkup game; rencana nyata memerlukan domain regulasi dan survei. Tidak ada soal pilihan atau ruang 3D generik.']]
 ],'Tiga AP yang membentuk segitiga ketetanggaan memerlukan tiga kanal berbeda pada aturan game. Mengganti satu AP dapat memperbaiki dua hubungan sekaligus, tetapi seluruh graf tetap diperiksa.','Selesaikan tiga level dan jelaskan satu perubahan yang memperbaiki konflik serta satu data yang diperlukan untuk menentukan ketetanggaan pada lokasi nyata.','Rencana tanpa konflik graf tidak membuktikan WLAN nyata bebas interferensi atau memiliki kapasitas memadai.',[]);
-export default course;
+export default completeATP(course);

@@ -1,3 +1,4 @@
+import {completeATP} from './atp-completion-content.js';
 import {buildPhaseECourse as buildCourse,concept as c} from './phase-e-course-builder.js';
 import {unit} from './deep-course.js';
 const course=buildCourse({
@@ -63,4 +64,4 @@ game:'Queue Pilot',reflection:'Bandingkan prediksi waktu tunggu, drop, dan layan
 });
 course.classLevel='XI';
 course.chapters[9]=unit('game','Game Queue Pilot','Menjadwalkan paket ke slot transmisi agar suara tepat waktu dan data tetap selesai pada tiga level.',[['Kartu, slot, dan waktu',['Pilih kartu paket atau seret ke slot layanan yang tersedia. Klik kartu terpilih untuk melepas, atau klik slot untuk mengosongkannya. Rencanakan paket yang dikirim sebelum menekan Jalankan giliran. Paket suara harus selesai selambatnya pada giliran deadline yang tercantum; kartu data juga wajib dituntaskan sebelum batas misi.']],['Tiga misi dan perubahan kapasitas',['Antrean baru masuk pada waktu yang diumumkan. Giliran kosong berarti menunggu dan tetap memajukan waktu. Level ketiga menyempit menjadi satu slot pada t2 dan t3, sehingga perencanaan perlu melihat gelombang mendatang. Paket yang sama tidak boleh mengisi dua slot. Suara lewat deadline, antrean melampaui delapan paket, atau data tertinggal sampai batas giliran menyebabkan gagal. Gunakan Ulangi level atau Ulangi permainan, lalu selesaikan tiga misi untuk menyimpan skor. Tombol kartu/slot dapat digunakan dengan Tab dan Enter.']]],'Melayani dua data lebih dahulu dapat membuat suara yang jatuh tempo tidak mendapat slot pada penyempitan berikutnya. Sebaliknya, terus mengosongkan slot yang sebenarnya dapat dipakai data membuat backlog sulit selesai.','Selesaikan tiga misi dan jelaskan satu keputusan mendahulukan suara, satu kesempatan melayani data, serta perubahan rencana ketika kapasitas berkurang.','Deadline, ukuran paket, kapasitas per giliran, dan buffer game adalah aturan latihan; bukan jaminan jitter/latency atau konfigurasi scheduler vendor.',[]);
-export default course;
+export default completeATP(course);

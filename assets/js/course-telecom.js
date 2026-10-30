@@ -1,5 +1,7 @@
+import {completeATP} from './atp-completion-content.js';
+import { enrichPhaseE } from './atp-fase-e-enrichment.js';
 import { buildPhaseECourse, concept as c } from './phase-e-course-builder.js';
-export default buildPhaseECourse({
+export default completeATP(enrichPhaseE(buildPhaseECourse({
 moduleId:'sistem-telekomunikasi-dasar',title:'Dasar Sistem Telekomunikasi',
 goal:'Menjelaskan jalur komunikasi dan membandingkan media berdasarkan propagasi, kapasitas, keandalan, serta risiko.',
 objectives:['Memodelkan sumber, pengkodean, pemancar, kanal, penerima, dan tujuan.','Membedakan frekuensi, bandwidth, laju bit, throughput, latensi, dan gangguan.','Membandingkan seluler, gelombang mikro, satelit/VSAT IP, optik, dan WLAN.','Menghitung batas bawah propagasi dan menyusun rancangan komunikasi dengan alasan serta batas model.'],
@@ -62,4 +64,4 @@ game:'Bawa pesan melalui pos sumber, pemancar, kanal, dan penerima. Pos mewakili
 reflection:'Jelaskan mengapa media dengan kapasitas besar tetap dapat memiliki delay tinggi. Bandingkan keputusan awal dengan data yang kini Anda butuhkan: lintasan, cakupan, interferensi, kapasitas bersama, dan dukungan.',
 transfer:'Ketika aplikasi berubah dari pengiriman berkas ke kendali respons cepat, bobot delay, variasi delay, dan keselamatan berubah. Uji ulang matriks pilihan; kecepatan nominal saja tidak cukup.',
 synthesis:'Sistem telekomunikasi mengubah informasi menjadi sinyal melalui kanal yang memiliki batas fisik. Setiap media memerlukan pengelolaan kapasitas, delay, gangguan, keamanan, dan pemulihan. Perhitungan propagasi menjelaskan satu komponen layanan dan harus dibaca bersama data lapangan.'
-});
+})));
