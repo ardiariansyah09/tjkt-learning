@@ -1,0 +1,5 @@
+import fs from 'node:fs';import assert from 'node:assert/strict';
+const before=JSON.parse(fs.readFileSync('docs/lms-manifest-before-terminal-update.json')),after=JSON.parse(fs.readFileSync('lms/storage/app/learning-pack/manifest.json'));
+assert.equal(before.length,56);assert.equal(after.length,56);let banks=0;
+for(const old of before){const current=after.find(m=>m.id===old.id);assert(current);assert.deepEqual({...current,contentVersion:null},{...old,contentVersion:null},old.id);const file='data/'+old.id+'.json',prior=`lms/storage/app/learning-pack/releases/${old.contentVersion}/site/${file}`;if(fs.existsSync(prior)&&fs.existsSync(file)){const extract=p=>JSON.parse(fs.readFileSync(p)).chapters?.map(c=>({id:c.id,questions:c.questions}));assert.deepEqual(extract(file),extract(prior));banks++;}}
+const report={result:'PASS',preservedModuleDefinitions:56,preservedMetadataQuestionBanks:banks,stages:after.reduce((n,m)=>n+m.stages.length,0),beforeRelease:before[0].contentVersion,afterRelease:after[0].contentVersion};fs.writeFileSync('docs/terminal-compatibility-validation.json',JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report));

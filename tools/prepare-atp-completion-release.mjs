@@ -1,0 +1,10 @@
+import fs from 'node:fs';
+import {atpCompletion} from '../assets/js/atp-completion-content.js';
+let activation=fs.readFileSync('lms/scripts/activate-curriculum-update.php','utf8');
+activation=activation.replace('e41dc6c182778f89da398686dd938f40391dcd523b9f8a7990084174d79971b8','50d37bca48309b5a8a7fe0e624b63d5bc73d0a5de9d8883e4e37c340566b2669');
+activation=activation.replace("$files=['app/Services/LearningPackage.php'","if(hash_file('sha256',$production.'/resources/views/learning/package-results.blade.php')!=='71d63f3db2bb2f743d96a0ae827a322aff0f052a6795a3f6c82f7e7c0945f803')throw new RuntimeException('Production report view changed since review.');\n$files=['resources/views/learning/package-results.blade.php','resources/views/learning/package-atp-evidence.blade.php','app/Services/LearningPackage.php'");
+activation=activation.replace('/tjkt-lms-backups/curriculum-','/tjkt-lms-backups/atp-completion-').replace("/curriculum-activation.json'","/atp-completion-activation.json'");
+fs.writeFileSync('lms/scripts/activate-atp-completion.php',activation);
+const paragraphs=atpCompletion['routing-dinamis'].sections.flatMap(s=>s[1]);let cfg=paragraphs.map(p=>p.match(/<code[^>]*>([\s\S]*?)<\/code>/)?.[1]).find(Boolean);if(!cfg)throw Error('Missing BIRD config');cfg=cfg.replaceAll('&lt;','<').replaceAll('&gt;','>').replaceAll('&amp;','&');
+fs.mkdirSync('lms/scripts/fixtures',{recursive:true});fs.writeFileSync('lms/scripts/fixtures/bird-r1.conf',cfg+'\n');fs.writeFileSync('lms/scripts/fixtures/bird-r2.conf',cfg.replace('1.1.1.1','2.2.2.2').replace('192.168.20.0/24','192.168.10.0/24')+'\n');
+console.log('Prepared review/activation fixtures; no production changes.');

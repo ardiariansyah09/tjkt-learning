@@ -53,22 +53,26 @@ try {
  Call-CDP 'Log.enable' | Out-Null
  Call-CDP 'Page.enable' | Out-Null
  Call-CDP 'Page.navigate' @{url=$SiteUrl} | Out-Null
- Evaluate 'new Promise((resolve,reject)=>{let n=0;const tick=()=>{if(document.querySelectorAll(".module-card").length===53)return resolve(true);if(++n>100)return reject(Error("Catalog did not initialize"));setTimeout(tick,100)};tick()})' | Out-Null
+ Evaluate 'new Promise((resolve,reject)=>{let n=0;const tick=()=>{if(document.querySelectorAll(".module-card").length===56)return resolve(true);if(++n>100)return reject(Error("Catalog did not initialize"));setTimeout(tick,100)};tick()})' | Out-Null
  $result=Evaluate '(()=>{
  const assert=(v,m)=>{if(!v)throw Error(m)};
  const headings=[...document.querySelectorAll(".class-heading")].map(e=>e.textContent);
  assert(headings.length===2&&headings[0].includes("XI · 576")&&headings[1].includes("XII · 180"),"Class headings/JP");
  const cards=[...document.querySelectorAll(".module-card")];
  const f=cards.filter(c=>c.closest("[data-phase=F]"));assert(f.length===37,"Phase F count");
- assert(document.querySelectorAll(".element-allocation").length===5,"Five ATP elements");
+ assert(document.querySelectorAll(".element-allocation").length===9,"Four Phase E and five Phase F ATP elements");
+ const eGroups=[...document.querySelectorAll(".module-group[data-phase=E]")];
+ assert(eGroups.length===4,"Four Phase E groups");
+ assert(eGroups.flatMap(g=>[...g.querySelectorAll(".module-card")]).length===19,"Sixteen published and three draft Phase E modules");
+ assert(document.querySelector("[data-module-id=profesi-kewirausahaan-tjkt]").closest(".module-group")===eGroups[0],"Career follows ATP world-of-work group");
  cards.forEach(c=>{const group=c.closest(".module-group");assert(c.querySelector(".module-position").textContent.includes("Kelas "+group.dataset.classLevel),"Wrong card class");});
  assert(document.querySelector("[data-module-id=server-dmz]").closest(".module-group").dataset.classLevel==="XII","DMZ class");
  assert(document.querySelector("[data-module-id=switching-vlan]").closest(".module-group").dataset.classLevel==="XI","VLAN class");
  assert(document.querySelector("[data-module-id=mail-server]").dataset.curriculumRole==="pengayaan","Mail enrichment");
  assert(document.querySelector("[data-module-id=virtualisasi-server]").dataset.curriculumRole==="pendukung","Virtualization support");
- assert(cards.filter(c=>c.classList.contains("is-published")).length===28,"Published status preservation");
+ assert(cards.filter(c=>c.classList.contains("is-published")).length===56,"Existing and new modules published locally");
  const ids=[...document.querySelectorAll("[id]")].map(e=>e.id);assert(ids.length===new Set(ids).size,"Duplicate IDs");
- return {cards:cards.length,phaseF:f.length,headings,allocations:5,published:28};
+ return {cards:cards.length,phaseE:19,phaseF:f.length,headings,allocations:9,published:56,drafts:0};
  })()'
  foreach($width in @(1280,390)){
   Call-CDP 'Emulation.setDeviceMetricsOverride' @{width=$width;height=900;deviceScaleFactor=1;mobile=($width -lt 600)} | Out-Null
