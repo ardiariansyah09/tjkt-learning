@@ -1,0 +1,572 @@
+{
+  "moduleId": "virtualisasi-server-dasar",
+  "title": "Dasar Mesin Virtual: VirtualBox dan VMware Workstation",
+  "version": 3,
+  "classLevel": "X",
+  "phase": "E",
+  "atpReference": {
+    "file": "ATP-TJKT X - NEW 27.xlsx",
+    "sheet": "ATP",
+    "tp": [
+      "2.5"
+    ]
+  },
+  "objectives": [
+    "Membuat dan membandingkan VM pada VirtualBox serta VMware Workstation.",
+    "Merencanakan resource, media dan jaringan terisolasi tanpa menghabiskan resource host.",
+    "Membedakan VM, OS guest, layanan, snapshot dan cadangan yang diuji."
+  ],
+  "chapters": [
+    {
+      "id": "orientasi",
+      "title": "Host, guest dan tujuan laboratorium",
+      "summary": "Host, guest dan tujuan laboratorium",
+      "questions": [
+        {
+          "question": "VM tercatat dan menyala, tetapi disk guest kosong. Apa yang sudah terbukti?",
+          "options": [
+            "OS dan aplikasi pasti siap",
+            "Baru keadaan power; OS perlu dipasang dan diuji",
+            "Seluruh data ada pada nama VM"
+          ],
+          "answer": 1,
+          "explanation": "Definisi VM dan power berbeda dari guest OS yang dapat digunakan."
+        }
+      ],
+      "html": "<h3>Tujuan dan prasyarat</h3><p>Peserta membedakan host–hypervisor–guest, menyiapkan VM dengan resource wajar dan jaringan terisolasi, memeriksa OS guest, serta menunjukkan satu layanan lokal dari klien. Prasyarat: instalasi komputer, IP dan layanan dasar. Tidak memerlukan domain, panel hosting, cloud publik atau layanan Internet nyata.</p><h3>1. Orientasi: server adalah peran layanan</h3><p>Sekolah membutuhkan halaman latihan di lab. Satu laptop host menjalankan VM server dan VM klien. Host, OS guest dan aplikasi server adalah lapisan berbeda. Guest berhasil boot belum membuktikan layanan terpasang; proses aktif belum membuktikan klien dapat mengaksesnya.</p><p>Produk: diagram host/guest/jaringan, inventaris resource, hasil uji layanan dan laporan pemulihan. Semua data contoh; tidak ada akun produksi. Guru menentukan platform, image dan layanan yang benar-benar tersedia.</p><figure><svg viewBox=\"0 0 800 130\" role=\"img\" aria-label=\"Komputer host menuju Pengelola VM menuju Guest OS menuju Aplikasi\" style=\"width:100%;height:auto\"><rect x=\"5\" y=\"25\" width=\"175\" height=\"65\" rx=\"10\" fill=\"#075b83\"/><text x=\"92\" y=\"63\" text-anchor=\"middle\" font-size=\"17\" fill=\"white\">Komputer host</text><path d=\"M 180 57 h 23 l -6 -5 m 6 5 l -6 5\" stroke=\"#1680a5\" fill=\"none\" stroke-width=\"3\"/><rect x=\"205\" y=\"25\" width=\"175\" height=\"65\" rx=\"10\" fill=\"#075b83\"/><text x=\"292\" y=\"63\" text-anchor=\"middle\" font-size=\"17\" fill=\"white\">Pengelola VM</text><path d=\"M 380 57 h 23 l -6 -5 m 6 5 l -6 5\" stroke=\"#1680a5\" fill=\"none\" stroke-width=\"3\"/><rect x=\"405\" y=\"25\" width=\"175\" height=\"65\" rx=\"10\" fill=\"#075b83\"/><text x=\"492\" y=\"63\" text-anchor=\"middle\" font-size=\"17\" fill=\"white\">Guest OS</text><path d=\"M 580 57 h 23 l -6 -5 m 6 5 l -6 5\" stroke=\"#1680a5\" fill=\"none\" stroke-width=\"3\"/><rect x=\"605\" y=\"25\" width=\"175\" height=\"65\" rx=\"10\" fill=\"#075b83\"/><text x=\"692\" y=\"63\" text-anchor=\"middle\" font-size=\"17\" fill=\"white\">Aplikasi</text></svg><figcaption>Hubungan konseptual: Komputer host → Pengelola VM → Guest OS → Aplikasi. Panah bukan bukti seluruh lapisan sudah bekerja; gunakan uji pada tiap tahap.</figcaption></figure>"
+    },
+    {
+      "id": "host-resource",
+      "title": "Merencanakan resource host dan guest",
+      "summary": "Merencanakan resource host dan guest",
+      "html": "<p>Host model memiliki 16 GiB RAM, 8 CPU logis dan pool disk 256 GiB. Sisihkan 4 GiB RAM bagi host sehingga guest aktif bersama tidak melebihi 12 GiB pada kebijakan konservatif lab. vCPU tidak menciptakan inti fisik baru. Model tidak mengukur penjadwalan, swap, ballooning atau performa nyata.</p><p>Latihan: buat dua VM RAM 8 GiB dan coba nyalakan bersamaan. Amati penolakan guest kedua. Matikan satu guest, turunkan alokasi agar total tidak melebihi 12 GiB dan ulangi. Bandingkan RAM per guest dengan RAM guest aktif total, bukan hanya ukuran satu VM.</p><p>Disk model menggunakan reservasi kapasitas konservatif, bukan perhitungan thin provisioning nyata. Rencana empat guest 64 GiB tepat mengisi pool 256 GiB model tetapi belum menyediakan cadangan pertumbuhan di lingkungan nyata. Nyatakan batas ini dalam laporan.</p>",
+      "questions": [
+        {
+          "question": "Dua guest masing-masing 8 GiB pada host 16 GiB dengan reserve 4 GiB ...",
+          "options": [
+            "Dapat ditolak berjalan bersama pada kebijakan model",
+            "Selalu cukup karena virtual",
+            "Menghasilkan 16 GiB RAM tambahan"
+          ],
+          "answer": 0,
+          "explanation": "Total guest 16 melebihi jatah 12; ukuran virtual tidak menambah RAM fisik."
+        }
+      ]
+    },
+    {
+      "id": "virtualbox-new",
+      "title": "Praktik membuat VM di VirtualBox",
+      "summary": "Praktik membuat VM di VirtualBox",
+      "html": "<p>Pilih tampilan VirtualBox, New, nama VM unik, jenis guest dan ISO. Periksa Memory, Processors, disk, UEFI serta adapter jaringan. Wizard model menyatukan pengaturan penting; dialog produk asli dapat terbagi menjadi beberapa halaman.</p><p>Untuk latihan Ubuntu gunakan profil Ubuntu dan ISO Ubuntu. Buat disk kosong 64 GiB, RAM 4 GiB serta 2 vCPU. Pilih Internal Network dengan nama kelas-x. Guest belum mempunyai OS meskipun tercatat pada daftar. Klik Start untuk masuk installer, bukan menganggap tombol Create sudah memasang OS.</p><p>Bukti: nama VM, profil, ISO, resource dan keadaan Powered off sebelum Start. Pada praktik produk asli gunakan instalasi manual untuk memahami pilihan installer; unattended installation adalah jalur berbeda.</p>",
+      "questions": [
+        {
+          "question": "Setelah Create VM dengan disk kosong, bukti yang belum ada adalah ...",
+          "options": [
+            "Nama VM",
+            "Ukuran RAM rencana",
+            "OS terpasang serta boot dari disk"
+          ],
+          "answer": 2,
+          "explanation": "Membuat definisi VM tidak sama dengan menginstal OS."
+        }
+      ]
+    },
+    {
+      "id": "vmware-new",
+      "title": "Praktik membuat VM di VMware Workstation",
+      "summary": "Praktik membuat VM di VMware Workstation",
+      "html": "<p>Ubah tampilan ke VMware Workstation lalu Create a New Virtual Machine. Buat guest kedua dengan nama berbeda. Isi profil OS, disk, memory, processors, optical media dan network. Ini Workstation untuk desktop, bukan ESXi yang dipelajari kelas XI.</p><p>Gunakan pengaturan setara dengan guest pertama dan bandingkan lokasi/fungsi pengaturan. LAN Segment pada tampilan latihan memodelkan jaringan internal guest; Host-only mencakup host pada konsep produk, sedangkan NAT memberi arah akses yang berbeda. Jangan menyamakan semua opsi hanya dari letak tombol.</p><p>Catat bahwa perubahan tab platform simulator hanya mengganti tampilan dari state lab yang sama; itu bukan konversi file VDI/VMDK atau migrasi lintas hypervisor nyata. Praktik nyata perlu memeriksa dukungan image, firmware, perangkat dan guest tools.</p>",
+      "questions": [
+        {
+          "question": "VMware Workstation dan VMware ESXi ...",
+          "options": [
+            "Adalah satu produk dengan layar sama",
+            "Mempunyai konteks pengelolaan berbeda; Workstation dasar di X, hypervisor server lanjutan di XI",
+            "Tidak dapat menjalankan guest"
+          ],
+          "answer": 1,
+          "explanation": "Pembelajaran berlanjut dari pengelola desktop ke pengelola host server."
+        }
+      ]
+    },
+    {
+      "id": "hardware-media",
+      "title": "Settings, ISO, firmware dan boot guest",
+      "summary": "Settings, ISO, firmware dan boot guest",
+      "html": "<p>Settings pada model hanya diubah ketika VM OFF. Periksa optical media; Empty pada disk tanpa OS menghasilkan No bootable medium. ISO berbeda profil juga ditolak dalam skenario lab agar target pembelajaran jelas, bukan klaim semua hypervisor selalu menolak ISO lintas nama guest.</p><p>Profil Windows memerlukan 4 GiB RAM, 2 vCPU, disk minimal 64 GiB dan konfigurasi UEFI/TPM/Secure Boot yang sesuai kebutuhan latihan. Kesesuaian CPU serta perangkat grafis asli tidak diemulasikan. Profil Ubuntu memakai batas konservatif latihan 4 GiB, 2 vCPU dan disk 25 GiB.</p><p>Coba media Empty, media salah lalu media sesuai; baca pesan dan perbaiki satu variabel. Setelah OS terpasang, lepaskan ISO dan mulai guest dari disk. Jika kembali ke installer, periksa media serta boot source sebelum memasang ulang.</p>",
+      "questions": [
+        {
+          "question": "Guest disk kosong menampilkan No bootable medium. Tindakan pertama ...",
+          "options": [
+            "Periksa ISO/media dan boot; pasang media yang sesuai saat guest OFF",
+            "Menghapus data host",
+            "Mengganti DNS"
+          ],
+          "answer": 0,
+          "explanation": "Boot medium mendahului konfigurasi guest dan aplikasi."
+        }
+      ]
+    },
+    {
+      "id": "jaringan",
+      "title": "Segmen, alamat dan isolasi jaringan",
+      "summary": "Segmen, alamat dan isolasi jaringan",
+      "questions": [
+        {
+          "question": "Dua guest dengan IP satu subnet tidak dapat berkomunikasi karena segmen internal berbeda. Periksa dahulu ...",
+          "options": [
+            "Warna jendela",
+            "Nama/koneksi segmen NIC pada pengelola, lalu konfigurasi guest",
+            "Selalu pasang ulang OS"
+          ],
+          "answer": 1,
+          "explanation": "Alamat satu subnet belum menyatukan dua link virtual yang berbeda."
+        }
+      ],
+      "html": "<h3>3. Jaringan terisolasi dan identitas guest</h3><p>Pada platform yang dipilih, guru menyiapkan satu segmen internal/terisolasi untuk guest server dan klien. Nama serta perilaku mode berbeda antarplatform. Bridged dapat menghubungkan guest ke LAN nyata sehingga tidak digunakan tanpa izin. Jangan menjalankan DHCP latihan ke jaringan sekolah.</p><p>Contoh: server 192.168.50.10/24 dan klien 192.168.50.20/24 pada segmen internal yang sama. Untuk uji satu subnet tidak diperlukan gateway Internet. Resolver tidak perlu diisi sembarang bila latihan memakai IP langsung. Nama VM pada pengelola tidak otomatis menjadi hostname atau alamat IP guest.</p><p>Latihan: bandingkan dua guest pada segmen yang sama dengan dua guest yang nama jaringannya berbeda. Periksa status NIC, alamat dan subnet sebelum menuduh aplikasi server rusak.</p>"
+    },
+    {
+      "id": "guest-install",
+      "title": "Instalasi guest dan verifikasi boot tanpa ISO",
+      "summary": "Instalasi guest dan verifikasi boot tanpa ISO",
+      "html": "<p>Mulai VM dari ISO untuk membuka installer Ubuntu atau Windows. Ikuti bahasa, keyboard, pilihan instalasi, disk dan tahap akun sesuai profil. Try Ubuntu menjalankan sesi live tanpa menginstal disk; gunakan Install Ubuntu untuk kembali.</p><p>Tinjau Disk 0 virtual kosong. Disk 1 DATA latihan harus dipertahankan dan penulisan ke sana ditolak model. Setelah ringkasan dikonfirmasi, ikuti fase penyalinan, lepaskan ISO, Restart dan selesaikan pengaturan awal. Konsol akan menunjukkan boot source disk.</p><p>Masuk desktop model bukan menjalankan kernel asli. Buktikan OS, akun, partisi dan versi berkas model lalu catat perbedaan dengan OS sungguhan. Detail installer dipelajari lebih lanjut pada modul Instalasi dan Konfigurasi Dasar Sistem Komputer.</p>",
+      "questions": [
+        {
+          "question": "Try Ubuntu berhasil tetapi disk masih kosong. Kesimpulan ...",
+          "options": [
+            "OS pasti terpasang",
+            "Baru sesi live; lakukan instalasi disk lalu uji tanpa ISO",
+            "Semua data sudah tersalin"
+          ],
+          "answer": 1,
+          "explanation": "Live session dan installed system adalah keadaan berbeda."
+        }
+      ]
+    },
+    {
+      "id": "layanan",
+      "title": "Menguji peran server dari klien",
+      "summary": "Menguji peran server dari klien",
+      "questions": [
+        {
+          "question": "Server membuka halaman sendiri, klien gagal. Pemeriksaan pembeda yang relevan ...",
+          "options": [
+            "Proses, alamat listener, segmen dan kebijakan akses klien",
+            "Jumlah wallpaper",
+            "Hanya nama VM"
+          ],
+          "answer": 0,
+          "explanation": "Listener loopback atau jalur/kebijakan dapat membuat hasil lokal berbeda dari klien."
+        }
+      ],
+      "html": "<h3>4. Satu layanan lokal dan bukti dari klien</h3><p>Guru menyediakan image dengan layanan web latihan dan file halaman sintetis, atau panduan pemasangan sesuai OS/versi yang dipilih. Bedakan paket, file konfigurasi, proses, listener, aturan akses dan respons aplikasi. Draft ini belum menetapkan paket/perintah instalasi tertentu agar tidak mengasumsikan lingkungan yang belum dipilih.</p><p>Target contoh HTTP 192.168.50.10 port 8080. Periksa layanan dari guest server, kemudian dari klien di segmen yang sama. Listener hanya loopback dapat melayani pengujian lokal tetapi menolak klien. Kebijakan firewall disesuaikan hanya untuk layanan/sumber latihan, bukan dimatikan seluruhnya. HTTP digunakan hanya pada data sintetis di lab terisolasi, tanpa kredensial nyata.</p><p>Bukti: URL/alamat tujuan, waktu, respons yang diterima, keadaan proses/listener, aturan yang relevan dan batas tes. Halaman lama dari cache bukan selalu bukti server saat ini sehat; lakukan pengujian baru yang dapat ditelusuri.</p>"
+    },
+    {
+      "id": "pemulihan",
+      "title": "Snapshot, backup dan bukti pemulihan",
+      "summary": "Snapshot, backup dan bukti pemulihan",
+      "questions": [
+        {
+          "question": "Storage host hilang bersama snapshot. Apakah snapshot pada storage itu cukup?",
+          "options": [
+            "Ya, snapshot tidak butuh storage",
+            "Tidak; perlu cadangan sesuai cakupan di lokasi berbeda dan uji restore",
+            "Cukup mengganti nama VM"
+          ],
+          "answer": 1,
+          "explanation": "Snapshot yang bergantung pada storage yang sama ikut terdampak kegagalan storage."
+        }
+      ],
+      "html": "<h3>5. Snapshot, cadangan dan pemulihan</h3><p>Snapshot menyimpan keadaan menurut fitur hypervisor dan dapat bergantung pada disk host yang sama; bukan otomatis cadangan terpisah. Salinan VM, backup file konfigurasi dan backup data mempunyai cakupan berbeda. Tentukan kebutuhan pulih dan periksa apa yang benar-benar disalin.</p><p>Sebelum latihan gangguan, simpan baseline yang disetujui. Ubah satu pengaturan layanan pada lingkungan latihan, amati kegagalan, pulihkan dan uji lagi dari klien. Pemulihan berhasil hanya setelah layanan dan data yang dibutuhkan diverifikasi; tombol restore selesai belum cukup.</p>"
+    },
+    {
+      "id": "clone-network",
+      "title": "Clone, identitas guest dan jaringan dua VM",
+      "summary": "Clone, identitas guest dan jaringan dua VM",
+      "html": "<p>Sesudah instalasi, Shut down dan Clone. Clone menyalin data serta identitas OS/IP dalam model. Nyalakan clone bersama sumber dan uji peer: alamat sama menghasilkan konflik. Matikan clone, ubah IP ke 192.168.50.20 dan cocokkan mode serta nama segmen.</p><p>Uji peer hanya untuk dua guest ON yang telah boot disk. Mode internal/host-only dan segmen harus sama, IP berbeda dalam /24 yang sama. NAT biasa per VM tidak dimodelkan sebagai segmen peer bersama; NAT Network merupakan konsep berbeda yang belum tersedia.</p><p>Reply model tidak membuktikan DNS, firewall, aplikasi atau jaringan Internet nyata. Untuk snapshot: guest OFF → Take Snapshot → Start → ubah berkas proyek → Shut down → Restore → Start. Bandingkan versi berkas. Snapshot tetap bergantung host yang sama dan tidak menggantikan backup.</p>",
+      "questions": [
+        {
+          "question": "Clone memakai IP sumber pada segmen sama. Perbaikan yang sesuai ...",
+          "options": [
+            "Ubah identitas/alamat salah satu guest dan uji ulang",
+            "Hanya ubah nama di daftar VM",
+            "Anggap clone otomatis mempunyai IP unik"
+          ],
+          "answer": 0,
+          "explanation": "Nama VM pada pengelola berbeda dari identitas jaringan dalam guest."
+        }
+      ]
+    },
+    {
+      "id": "laboratorium",
+      "title": "Laboratorium rencana VM",
+      "summary": "Laboratorium rencana VM",
+      "questions": [
+        {
+          "question": "Host 16 GiB menyisihkan 4 GiB; rencana guest 16 GiB pada model ...",
+          "options": [
+            "Diterima karena virtual",
+            "Ditolak karena melebihi jatah 12 GiB",
+            "Membuat RAM baru"
+          ],
+          "answer": 1,
+          "explanation": "Resource guest tetap bergantung pada kapasitas host dan cadangan yang dinyatakan."
+        }
+      ],
+      "html": "<section class=\"foundation-lab\"><h3>Praktik VM dan installer di browser</h3><p>Mulai dengan New, siapkan VM dan ISO, Start, lalu ikuti installer sampai boot dari disk. Ubah satu keputusan untuk mengamati penyebab gagal. Sesi disimpan otomatis untuk latihan ini; sandi latihan tidak disimpan.</p><div data-virtual-lab data-os=\"ubuntu\" data-session=\"vm-main\"></div></section>"
+    },
+    {
+      "id": "refleksi",
+      "title": "Penerimaan, laporan dan kesiapan kelas XI",
+      "summary": "Penerimaan, laporan dan kesiapan kelas XI",
+      "questions": [
+        {
+          "question": "Bukti siap menuju VM lanjutan adalah ...",
+          "options": [
+            "Hanya tangkapan layar nama VM",
+            "Dapat menjelaskan resource, memasang guest, menguji jaringan dan membedakan backup dari snapshot",
+            "Menyebut Proxmox tanpa praktik dasar"
+          ],
+          "answer": 1,
+          "explanation": "Penerimaan menghubungkan tindakan pada pengelola dengan hasil guest serta layanan."
+        }
+      ],
+      "html": "<h3>7. Penerimaan dan asesmen</h3><p>Kriteria: resource tidak melebihi rencana; guest boot; segmen dan IP benar; layanan diuji lokal dan dari klien; kegagalan dibedakan menurut lapisan; pemulihan diuji; konfigurasi dan autostart diperiksa setelah boot sesuai tujuan. Tidak menyatakan kompeten cloud atau administrasi server penuh hanya dari satu lab.</p><p>Kasus transfer: server dapat membuka halaman sendiri tetapi klien gagal. Peserta menyusun urutan pemeriksaan link/segmen, alamat, listener dan kebijakan, lalu memilih bukti pembeda. Guru menilai 0–3 pada pemetaan lapisan, konfigurasi, kualitas uji/pemulihan dan dokumentasi. Game tidak wajib; baru dibuat jika mekaniknya membantu konsep dan mempunyai petunjuk jelas.</p><p>Laporan satu halaman: host/platform; dua guest; diagram; parameter; hasil lokal/klien; satu gangguan; pemulihan; uji ulang dan keterbatasan. Referensi implementasi: manual resmi hypervisor, OS dan aplikasi pada versi yang dipilih, ditambah SOP sekolah.</p>"
+    },
+    {
+      "id": "evaluasi",
+      "title": "Evaluasi Akhir dan Sertifikat",
+      "summary": "Menilai konsep dan menjelaskan transfer pembelajaran.",
+      "questions": [
+        {
+          "question": "VM tercatat dan menyala, tetapi disk guest kosong. Apa yang sudah terbukti?",
+          "options": [
+            "OS dan aplikasi pasti siap",
+            "Baru keadaan power; OS perlu dipasang dan diuji",
+            "Seluruh data ada pada nama VM"
+          ],
+          "answer": 1,
+          "explanation": "Definisi VM dan power berbeda dari guest OS yang dapat digunakan."
+        },
+        {
+          "question": "Dua guest masing-masing 8 GiB pada host 16 GiB dengan reserve 4 GiB ...",
+          "options": [
+            "Dapat ditolak berjalan bersama pada kebijakan model",
+            "Selalu cukup karena virtual",
+            "Menghasilkan 16 GiB RAM tambahan"
+          ],
+          "answer": 0,
+          "explanation": "Total guest 16 melebihi jatah 12; ukuran virtual tidak menambah RAM fisik."
+        },
+        {
+          "question": "Setelah Create VM dengan disk kosong, bukti yang belum ada adalah ...",
+          "options": [
+            "Nama VM",
+            "Ukuran RAM rencana",
+            "OS terpasang serta boot dari disk"
+          ],
+          "answer": 2,
+          "explanation": "Membuat definisi VM tidak sama dengan menginstal OS."
+        },
+        {
+          "question": "VMware Workstation dan VMware ESXi ...",
+          "options": [
+            "Adalah satu produk dengan layar sama",
+            "Mempunyai konteks pengelolaan berbeda; Workstation dasar di X, hypervisor server lanjutan di XI",
+            "Tidak dapat menjalankan guest"
+          ],
+          "answer": 1,
+          "explanation": "Pembelajaran berlanjut dari pengelola desktop ke pengelola host server."
+        },
+        {
+          "question": "Guest disk kosong menampilkan No bootable medium. Tindakan pertama ...",
+          "options": [
+            "Periksa ISO/media dan boot; pasang media yang sesuai saat guest OFF",
+            "Menghapus data host",
+            "Mengganti DNS"
+          ],
+          "answer": 0,
+          "explanation": "Boot medium mendahului konfigurasi guest dan aplikasi."
+        },
+        {
+          "question": "Dua guest dengan IP satu subnet tidak dapat berkomunikasi karena segmen internal berbeda. Periksa dahulu ...",
+          "options": [
+            "Warna jendela",
+            "Nama/koneksi segmen NIC pada pengelola, lalu konfigurasi guest",
+            "Selalu pasang ulang OS"
+          ],
+          "answer": 1,
+          "explanation": "Alamat satu subnet belum menyatukan dua link virtual yang berbeda."
+        },
+        {
+          "question": "Try Ubuntu berhasil tetapi disk masih kosong. Kesimpulan ...",
+          "options": [
+            "OS pasti terpasang",
+            "Baru sesi live; lakukan instalasi disk lalu uji tanpa ISO",
+            "Semua data sudah tersalin"
+          ],
+          "answer": 1,
+          "explanation": "Live session dan installed system adalah keadaan berbeda."
+        },
+        {
+          "question": "Server membuka halaman sendiri, klien gagal. Pemeriksaan pembeda yang relevan ...",
+          "options": [
+            "Proses, alamat listener, segmen dan kebijakan akses klien",
+            "Jumlah wallpaper",
+            "Hanya nama VM"
+          ],
+          "answer": 0,
+          "explanation": "Listener loopback atau jalur/kebijakan dapat membuat hasil lokal berbeda dari klien."
+        },
+        {
+          "question": "Storage host hilang bersama snapshot. Apakah snapshot pada storage itu cukup?",
+          "options": [
+            "Ya, snapshot tidak butuh storage",
+            "Tidak; perlu cadangan sesuai cakupan di lokasi berbeda dan uji restore",
+            "Cukup mengganti nama VM"
+          ],
+          "answer": 1,
+          "explanation": "Snapshot yang bergantung pada storage yang sama ikut terdampak kegagalan storage."
+        },
+        {
+          "question": "Clone memakai IP sumber pada segmen sama. Perbaikan yang sesuai ...",
+          "options": [
+            "Ubah identitas/alamat salah satu guest dan uji ulang",
+            "Hanya ubah nama di daftar VM",
+            "Anggap clone otomatis mempunyai IP unik"
+          ],
+          "answer": 0,
+          "explanation": "Nama VM pada pengelola berbeda dari identitas jaringan dalam guest."
+        },
+        {
+          "question": "Host 16 GiB menyisihkan 4 GiB; rencana guest 16 GiB pada model ...",
+          "options": [
+            "Diterima karena virtual",
+            "Ditolak karena melebihi jatah 12 GiB",
+            "Membuat RAM baru"
+          ],
+          "answer": 1,
+          "explanation": "Resource guest tetap bergantung pada kapasitas host dan cadangan yang dinyatakan."
+        },
+        {
+          "question": "Bukti siap menuju VM lanjutan adalah ...",
+          "options": [
+            "Hanya tangkapan layar nama VM",
+            "Dapat menjelaskan resource, memasang guest, menguji jaringan dan membedakan backup dari snapshot",
+            "Menyebut Proxmox tanpa praktik dasar"
+          ],
+          "answer": 1,
+          "explanation": "Penerimaan menghubungkan tindakan pada pengelola dengan hasil guest serta layanan."
+        }
+      ],
+      "html": "<p>Jawab seluruh 12 soal yang mewakili tahap materi. Jawab semua soal dengan nilai minimal 80. Bila belum lulus, periksa umpan balik dan kembali ke materi terkait. Semua tahap sebelumnya harus lulus minimal 75 agar sertifikat tersedia. Sertifikat LMS membuktikan penyelesaian modul, bukan sertifikasi profesi atau pengganti observasi praktik oleh guru.</p><p>Serahkan laporan singkat: tujuan, lingkungan/media, tindakan, hasil, alasan dan perbaikan. Jelaskan satu perbedaan model dengan praktik nyata. Jangan memasukkan kata sandi dalam laporan.</p>"
+    }
+  ],
+  "legacyChapters": [
+    {
+      "id": "orientasi",
+      "title": "Host, guest dan tujuan laboratorium",
+      "summary": "Host, guest dan tujuan laboratorium",
+      "questions": [
+        {
+          "question": "VM tercatat dan menyala, tetapi disk guest kosong. Apa yang sudah terbukti?",
+          "options": [
+            "OS dan aplikasi pasti siap",
+            "Baru keadaan power; OS perlu dipasang dan diuji",
+            "Seluruh data ada pada nama VM"
+          ],
+          "answer": 1,
+          "explanation": "Definisi VM dan power berbeda dari guest OS yang dapat digunakan."
+        }
+      ],
+      "html": "<h3>Tujuan dan prasyarat</h3><p>Peserta membedakan host–hypervisor–guest, menyiapkan VM dengan resource wajar dan jaringan terisolasi, memeriksa OS guest, serta menunjukkan satu layanan lokal dari klien. Prasyarat: instalasi komputer, IP dan layanan dasar. Tidak memerlukan domain, panel hosting, cloud publik atau layanan Internet nyata.</p><h3>1. Orientasi: server adalah peran layanan</h3><p>Sekolah membutuhkan halaman latihan di lab. Satu laptop host menjalankan VM server dan VM klien. Host, OS guest dan aplikasi server adalah lapisan berbeda. Guest berhasil boot belum membuktikan layanan terpasang; proses aktif belum membuktikan klien dapat mengaksesnya.</p><p>Produk: diagram host/guest/jaringan, inventaris resource, hasil uji layanan dan laporan pemulihan. Semua data contoh; tidak ada akun produksi. Guru menentukan platform, image dan layanan yang benar-benar tersedia.</p><figure><svg viewBox=\"0 0 800 130\" role=\"img\" aria-label=\"Komputer host menuju Pengelola VM menuju Guest OS menuju Aplikasi\" style=\"width:100%;height:auto\"><rect x=\"5\" y=\"25\" width=\"175\" height=\"65\" rx=\"10\" fill=\"#075b83\"/><text x=\"92\" y=\"63\" text-anchor=\"middle\" font-size=\"17\" fill=\"white\">Komputer host</text><path d=\"M 180 57 h 23 l -6 -5 m 6 5 l -6 5\" stroke=\"#1680a5\" fill=\"none\" stroke-width=\"3\"/><rect x=\"205\" y=\"25\" width=\"175\" height=\"65\" rx=\"10\" fill=\"#075b83\"/><text x=\"292\" y=\"63\" text-anchor=\"middle\" font-size=\"17\" fill=\"white\">Pengelola VM</text><path d=\"M 380 57 h 23 l -6 -5 m 6 5 l -6 5\" stroke=\"#1680a5\" fill=\"none\" stroke-width=\"3\"/><rect x=\"405\" y=\"25\" width=\"175\" height=\"65\" rx=\"10\" fill=\"#075b83\"/><text x=\"492\" y=\"63\" text-anchor=\"middle\" font-size=\"17\" fill=\"white\">Guest OS</text><path d=\"M 580 57 h 23 l -6 -5 m 6 5 l -6 5\" stroke=\"#1680a5\" fill=\"none\" stroke-width=\"3\"/><rect x=\"605\" y=\"25\" width=\"175\" height=\"65\" rx=\"10\" fill=\"#075b83\"/><text x=\"692\" y=\"63\" text-anchor=\"middle\" font-size=\"17\" fill=\"white\">Aplikasi</text></svg><figcaption>Hubungan konseptual: Komputer host → Pengelola VM → Guest OS → Aplikasi. Panah bukan bukti seluruh lapisan sudah bekerja; gunakan uji pada tiap tahap.</figcaption></figure>"
+    },
+    {
+      "id": "platform",
+      "title": "Membuat VM di VirtualBox dan VMware Workstation",
+      "summary": "Membuat VM di VirtualBox dan VMware Workstation",
+      "questions": [
+        {
+          "question": "Siswa memakai Easy Install lalu menyatakan sudah mempelajari semua keputusan installer. Penilaian yang tepat?",
+          "options": [
+            "Otomatisasi tidak membuktikan pemahaman setiap keputusan; perlu menjelaskan konfigurasi dan mencoba alur manual",
+            "Semua langkah otomatis dianggap praktik manual",
+            "Tidak perlu memeriksa OS hasilnya"
+          ],
+          "answer": 0,
+          "explanation": "Pembuatan VM dan proses memasang OS perlu dicatat sesuai tindakan yang benar-benar dilakukan."
+        }
+      ],
+      "html": "<h3>2. Resource dan pembuatan VM</h3><h4>Jalur VirtualBox</h4><p>Identifikasi versi pengelola dan kemampuan host. Buat VM baru, beri nama serta folder yang jelas, pilih tipe OS/arsitektur dan ISO, lalu tentukan RAM, CPU serta disk kosong sesuai kebutuhan guest dan kapasitas host. Untuk belajar urutan installer, gunakan instalasi manual bila opsi tersebut tersedia; instalasi otomatis tidak menjadi bukti siswa memahami setiap keputusan installer.</p><p>Periksa Settings sebelum power-on: storage/media, urutan boot, firmware dan adapter jaringan. Setelah memasang OS melalui modul instalasi komputer, lepaskan ISO sesuai prosedur, boot dari disk, dan buktikan OS serta jaringan bekerja. Dokumentasikan pengaturan dalam tabel; nama VM pada pengelola dibedakan dari hostname guest. Jangan menganggap semua versi menampilkan dialog yang sama.</p><h4>Jalur VMware Workstation</h4><p>Pilih pembuatan VM baru pada VMware Workstation yang disetujui sekolah. Pilih instalasi manual atau pemasangan OS kemudian bila ingin mempelajari installer, tentukan jenis guest/versi, folder VM, resource, disk dan jaringan sesuai rancangan. Periksa kembali konfigurasi sebelum power-on. Easy Install dapat mengotomatisasi langkah tertentu; catat bila digunakan dan bedakan dari instalasi interaktif.</p><p>VMware Workstation di komputer desktop berbeda dari VMware ESXi di kelas XI. VMX/config, disk virtual dan guest tools mempunyai peran berbeda. Jangan memindahkan file disk saja lalu menyatakan migrasi selesai; verifikasi dukungan format, firmware, NIC, identitas OS dan hasil boot. Penggunaan produk/media mengikuti kebijakan sekolah serta ketentuan penyedia yang berlaku.</p><h4>Perbandingan yang harus dibuktikan</h4><p>Pada kedua produk, buat satu VM kosong, temukan tempat mengatur RAM/disk/media/NIC, jalankan instalasi guest dari modul berikutnya, lalu bandingkan shutdown dan pelepasan ISO. Isi tabel tindakan–lokasi pengaturan–akibat–bukti. NAT biasa, host-only dan segmen internal/LAN segment tidak disamakan hanya dari nama; periksa arah akses host/peer/LAN sesuai dokumentasi produk. Menyalakan VM bukan bukti OS sudah terpasang.</p><p>Referensi: <a href=\"https://docs.oracle.com/en/virtualization/virtualbox/7.2/user/create-vm.html\" target=\"_blank\" rel=\"noopener\">membuat VM VirtualBox</a> dan <a href=\"https://knowledge.broadcom.com/external/article/315434/create-virtual-machines-in-vmware-workst.html\" target=\"_blank\" rel=\"noopener\">membuat VM VMware Workstation</a>.</p><p>RAM/CPU/disk virtual berasal dari resource host. Jangan mengalokasikan seluruh RAM host pada guest. Disk virtual memiliki kapasitas logis dan penggunaan storage host yang dapat berbeda; ruang kosong dalam guest tidak selalu sama dengan ruang host. Catat kebutuhan OS, kapasitas host dan cadangan untuk host tetap bekerja.</p><p>Urutan: pilih nama inventaris; tentukan OS/arsitektur serta firmware; buat disk latihan; pasang media resmi; pilih mode jaringan; instal sesuai draft komputer atau gunakan template yang jelas asalnya. Template siap pakai berbeda dari keterampilan memasang OS. Catat mana yang dilakukan dan mana yang disediakan guru.</p><p>Mulai ulang dan shutdown guest dengan prosedur OS. Menutup jendela VM dapat berarti menyimpan keadaan, mengirim shutdown atau memutus daya bergantung pilihan; jangan menyamakan semua tindakan.</p>"
+    },
+    {
+      "id": "jaringan",
+      "title": "Segmen, alamat dan isolasi jaringan",
+      "summary": "Segmen, alamat dan isolasi jaringan",
+      "questions": [
+        {
+          "question": "Dua guest dengan IP satu subnet tidak dapat berkomunikasi karena segmen internal berbeda. Periksa dahulu ...",
+          "options": [
+            "Warna jendela",
+            "Nama/koneksi segmen NIC pada pengelola, lalu konfigurasi guest",
+            "Selalu pasang ulang OS"
+          ],
+          "answer": 1,
+          "explanation": "Alamat satu subnet belum menyatukan dua link virtual yang berbeda."
+        }
+      ],
+      "html": "<h3>3. Jaringan terisolasi dan identitas guest</h3><p>Pada platform yang dipilih, guru menyiapkan satu segmen internal/terisolasi untuk guest server dan klien. Nama serta perilaku mode berbeda antarplatform. Bridged dapat menghubungkan guest ke LAN nyata sehingga tidak digunakan tanpa izin. Jangan menjalankan DHCP latihan ke jaringan sekolah.</p><p>Contoh: server 192.168.50.10/24 dan klien 192.168.50.20/24 pada segmen internal yang sama. Untuk uji satu subnet tidak diperlukan gateway Internet. Resolver tidak perlu diisi sembarang bila latihan memakai IP langsung. Nama VM pada pengelola tidak otomatis menjadi hostname atau alamat IP guest.</p><p>Latihan: bandingkan dua guest pada segmen yang sama dengan dua guest yang nama jaringannya berbeda. Periksa status NIC, alamat dan subnet sebelum menuduh aplikasi server rusak.</p>"
+    },
+    {
+      "id": "layanan",
+      "title": "Menguji peran server dari klien",
+      "summary": "Menguji peran server dari klien",
+      "questions": [
+        {
+          "question": "Server membuka halaman sendiri, klien gagal. Pemeriksaan pembeda yang relevan ...",
+          "options": [
+            "Proses, alamat listener, segmen dan kebijakan akses klien",
+            "Jumlah wallpaper",
+            "Hanya nama VM"
+          ],
+          "answer": 0,
+          "explanation": "Listener loopback atau jalur/kebijakan dapat membuat hasil lokal berbeda dari klien."
+        }
+      ],
+      "html": "<h3>4. Satu layanan lokal dan bukti dari klien</h3><p>Guru menyediakan image dengan layanan web latihan dan file halaman sintetis, atau panduan pemasangan sesuai OS/versi yang dipilih. Bedakan paket, file konfigurasi, proses, listener, aturan akses dan respons aplikasi. Draft ini belum menetapkan paket/perintah instalasi tertentu agar tidak mengasumsikan lingkungan yang belum dipilih.</p><p>Target contoh HTTP 192.168.50.10 port 8080. Periksa layanan dari guest server, kemudian dari klien di segmen yang sama. Listener hanya loopback dapat melayani pengujian lokal tetapi menolak klien. Kebijakan firewall disesuaikan hanya untuk layanan/sumber latihan, bukan dimatikan seluruhnya. HTTP digunakan hanya pada data sintetis di lab terisolasi, tanpa kredensial nyata.</p><p>Bukti: URL/alamat tujuan, waktu, respons yang diterima, keadaan proses/listener, aturan yang relevan dan batas tes. Halaman lama dari cache bukan selalu bukti server saat ini sehat; lakukan pengujian baru yang dapat ditelusuri.</p>"
+    },
+    {
+      "id": "pemulihan",
+      "title": "Snapshot, backup dan bukti pemulihan",
+      "summary": "Snapshot, backup dan bukti pemulihan",
+      "questions": [
+        {
+          "question": "Storage host hilang bersama snapshot. Apakah snapshot pada storage itu cukup?",
+          "options": [
+            "Ya, snapshot tidak butuh storage",
+            "Tidak; perlu cadangan sesuai cakupan di lokasi berbeda dan uji restore",
+            "Cukup mengganti nama VM"
+          ],
+          "answer": 1,
+          "explanation": "Snapshot yang bergantung pada storage yang sama ikut terdampak kegagalan storage."
+        }
+      ],
+      "html": "<h3>5. Snapshot, cadangan dan pemulihan</h3><p>Snapshot menyimpan keadaan menurut fitur hypervisor dan dapat bergantung pada disk host yang sama; bukan otomatis cadangan terpisah. Salinan VM, backup file konfigurasi dan backup data mempunyai cakupan berbeda. Tentukan kebutuhan pulih dan periksa apa yang benar-benar disalin.</p><p>Sebelum latihan gangguan, simpan baseline yang disetujui. Ubah satu pengaturan layanan pada lingkungan latihan, amati kegagalan, pulihkan dan uji lagi dari klien. Pemulihan berhasil hanya setelah layanan dan data yang dibutuhkan diverifikasi; tombol restore selesai belum cukup.</p>"
+    },
+    {
+      "id": "laboratorium",
+      "title": "Laboratorium rencana VM",
+      "summary": "Laboratorium rencana VM",
+      "questions": [
+        {
+          "question": "Host 16 GiB menyisihkan 4 GiB; rencana guest 16 GiB pada model ...",
+          "options": [
+            "Diterima karena virtual",
+            "Ditolak karena melebihi jatah 12 GiB",
+            "Membuat RAM baru"
+          ],
+          "answer": 1,
+          "explanation": "Resource guest tetap bergantung pada kapasitas host dan cadangan yang dinyatakan."
+        }
+      ],
+      "html": "<section class=\"foundation-lab\"><h3>Praktik VM dan installer di browser</h3><p>Mulai dengan New, siapkan VM dan ISO, Start, lalu ikuti installer sampai boot dari disk. Ubah satu keputusan untuk mengamati penyebab gagal. Sesi disimpan otomatis untuk latihan ini; sandi latihan tidak disimpan.</p><div data-virtual-lab data-os=\"ubuntu\" data-session=\"vm-main\"></div></section>"
+    },
+    {
+      "id": "refleksi",
+      "title": "Penerimaan, laporan dan kesiapan kelas XI",
+      "summary": "Penerimaan, laporan dan kesiapan kelas XI",
+      "questions": [
+        {
+          "question": "Bukti siap menuju VM lanjutan adalah ...",
+          "options": [
+            "Hanya tangkapan layar nama VM",
+            "Dapat menjelaskan resource, memasang guest, menguji jaringan dan membedakan backup dari snapshot",
+            "Menyebut Proxmox tanpa praktik dasar"
+          ],
+          "answer": 1,
+          "explanation": "Penerimaan menghubungkan tindakan pada pengelola dengan hasil guest serta layanan."
+        }
+      ],
+      "html": "<h3>7. Penerimaan dan asesmen</h3><p>Kriteria: resource tidak melebihi rencana; guest boot; segmen dan IP benar; layanan diuji lokal dan dari klien; kegagalan dibedakan menurut lapisan; pemulihan diuji; konfigurasi dan autostart diperiksa setelah boot sesuai tujuan. Tidak menyatakan kompeten cloud atau administrasi server penuh hanya dari satu lab.</p><p>Kasus transfer: server dapat membuka halaman sendiri tetapi klien gagal. Peserta menyusun urutan pemeriksaan link/segmen, alamat, listener dan kebijakan, lalu memilih bukti pembeda. Guru menilai 0–3 pada pemetaan lapisan, konfigurasi, kualitas uji/pemulihan dan dokumentasi. Game tidak wajib; baru dibuat jika mekaniknya membantu konsep dan mempunyai petunjuk jelas.</p><p>Laporan satu halaman: host/platform; dua guest; diagram; parameter; hasil lokal/klien; satu gangguan; pemulihan; uji ulang dan keterbatasan. Referensi implementasi: manual resmi hypervisor, OS dan aplikasi pada versi yang dipilih, ditambah SOP sekolah.</p>"
+    },
+    {
+      "id": "evaluasi",
+      "title": "Evaluasi Akhir dan Sertifikat",
+      "summary": "Menilai konsep dan menjelaskan transfer pembelajaran.",
+      "questions": [
+        {
+          "question": "VM tercatat dan menyala, tetapi disk guest kosong. Apa yang sudah terbukti?",
+          "options": [
+            "OS dan aplikasi pasti siap",
+            "Baru keadaan power; OS perlu dipasang dan diuji",
+            "Seluruh data ada pada nama VM"
+          ],
+          "answer": 1,
+          "explanation": "Definisi VM dan power berbeda dari guest OS yang dapat digunakan."
+        },
+        {
+          "question": "Siswa memakai Easy Install lalu menyatakan sudah mempelajari semua keputusan installer. Penilaian yang tepat?",
+          "options": [
+            "Otomatisasi tidak membuktikan pemahaman setiap keputusan; perlu menjelaskan konfigurasi dan mencoba alur manual",
+            "Semua langkah otomatis dianggap praktik manual",
+            "Tidak perlu memeriksa OS hasilnya"
+          ],
+          "answer": 0,
+          "explanation": "Pembuatan VM dan proses memasang OS perlu dicatat sesuai tindakan yang benar-benar dilakukan."
+        },
+        {
+          "question": "Dua guest dengan IP satu subnet tidak dapat berkomunikasi karena segmen internal berbeda. Periksa dahulu ...",
+          "options": [
+            "Warna jendela",
+            "Nama/koneksi segmen NIC pada pengelola, lalu konfigurasi guest",
+            "Selalu pasang ulang OS"
+          ],
+          "answer": 1,
+          "explanation": "Alamat satu subnet belum menyatukan dua link virtual yang berbeda."
+        },
+        {
+          "question": "Server membuka halaman sendiri, klien gagal. Pemeriksaan pembeda yang relevan ...",
+          "options": [
+            "Proses, alamat listener, segmen dan kebijakan akses klien",
+            "Jumlah wallpaper",
+            "Hanya nama VM"
+          ],
+          "answer": 0,
+          "explanation": "Listener loopback atau jalur/kebijakan dapat membuat hasil lokal berbeda dari klien."
+        },
+        {
+          "question": "Storage host hilang bersama snapshot. Apakah snapshot pada storage itu cukup?",
+          "options": [
+            "Ya, snapshot tidak butuh storage",
+            "Tidak; perlu cadangan sesuai cakupan di lokasi berbeda dan uji restore",
+            "Cukup mengganti nama VM"
+          ],
+          "answer": 1,
+          "explanation": "Snapshot yang bergantung pada storage yang sama ikut terdampak kegagalan storage."
+        },
+        {
+          "question": "Host 16 GiB menyisihkan 4 GiB; rencana guest 16 GiB pada model ...",
+          "options": [
+            "Diterima karena virtual",
+            "Ditolak karena melebihi jatah 12 GiB",
+            "Membuat RAM baru"
+          ],
+          "answer": 1,
+          "explanation": "Resource guest tetap bergantung pada kapasitas host dan cadangan yang dinyatakan."
+        },
+        {
+          "question": "Bukti siap menuju VM lanjutan adalah ...",
+          "options": [
+            "Hanya tangkapan layar nama VM",
+            "Dapat menjelaskan resource, memasang guest, menguji jaringan dan membedakan backup dari snapshot",
+            "Menyebut Proxmox tanpa praktik dasar"
+          ],
+          "answer": 1,
+          "explanation": "Penerimaan menghubungkan tindakan pada pengelola dengan hasil guest serta layanan."
+        }
+      ],
+      "html": "<p>Jawab semua soal dengan nilai minimal 80. Bila belum lulus, periksa umpan balik dan kembali ke materi terkait. Semua tahap sebelumnya harus lulus minimal 75 agar sertifikat tersedia. Sertifikat LMS membuktikan penyelesaian modul, bukan sertifikasi profesi atau pengganti observasi praktik oleh guru.</p><p>Serahkan laporan singkat: tujuan, lingkungan/media, tindakan, hasil, alasan dan perbaikan. Jelaskan satu perbedaan model dengan praktik nyata. Jangan memasukkan kata sandi dalam laporan.</p>"
+    }
+  ],
+  "progressVersion": 3
+}

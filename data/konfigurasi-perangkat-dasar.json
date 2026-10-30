@@ -1,0 +1,225 @@
+{
+  "moduleId": "konfigurasi-perangkat-dasar",
+  "title": "Konfigurasi Dasar Router dan Switch",
+  "version": 2,
+  "classLevel": "X",
+  "phase": "E",
+  "atpReference": {
+    "file": "ATP-TJKT X - NEW 27.xlsx",
+    "sheet": "ATP",
+    "tp": [
+      "2.5"
+    ]
+  },
+  "objectives": [
+    "Membedakan switching L2, alamat manajemen dan routing antar-subnet.",
+    "Menyiapkan konfigurasi awal router/switch berizin dengan rencana alamat dan pengamanan akses.",
+    "Menguji konfigurasi aktif/tersimpan dan membuktikan hasil sesudah mulai ulang."
+  ],
+  "chapters": [
+    {
+      "id": "orientasi",
+      "title": "Rancangan dua subnet dan izin praktik",
+      "summary": "Rancangan dua subnet dan izin praktik",
+      "questions": [
+        {
+          "question": "A dan B satu subnet berkomunikasi, tetapi A gagal ke server subnet lain. Apa yang belum terbukti?",
+          "options": [
+            "Jalur gateway, rute balik dan akses layanan lintas subnet",
+            "Bahwa semua kabel putus",
+            "Bahwa semua OS harus diganti"
+          ],
+          "answer": 0,
+          "explanation": "Uji satu subnet tidak membuktikan jalur antar-subnet."
+        }
+      ],
+      "html": "<h3>Tujuan dan prasyarat</h3><p>Setelah K3LH, perangkat jaringan dan IP dasar, peserta merencanakan identitas serta akses administrasi, mengatur antarmuka sesuai fungsi perangkat, menyimpan konfigurasi dan membuktikan komunikasi setelah mulai ulang. Lingkup: satu switch L2 dan satu router lab; VLAN kompleks, routing dinamis, NAT Internet dan hardening lanjutan berada pada Fase F.</p><h3>1. Orientasi dan skenario</h3><p>PC A 192.168.10.10/24 dan PC B 192.168.10.20/24 terhubung melalui switch lab. Router LAN 192.168.10.1/24 menjadi gateway menuju segmen server 192.168.20.0/24; interface router kedua 192.168.20.1/24 dan server contoh 192.168.20.10/24. Kedua segmen terisolasi dari sekolah. Guru menyediakan server beserta layanan uji atau menandainya belum tersedia.</p><p>Pertanyaan: mengapa A dapat berbicara dengan B tetapi belum tentu dengan server? Susun diagram, tabel alamat, izin perubahan dan kriteria penerimaan. Konektor yang cocok belum menjelaskan seluruh konfigurasi logis.</p><figure><svg viewBox=\"0 0 800 130\" role=\"img\" aria-label=\"PC A · LAN 10 menuju Switch L2 menuju Router menuju Server · LAN 20\" style=\"width:100%;height:auto\"><rect x=\"5\" y=\"25\" width=\"175\" height=\"65\" rx=\"10\" fill=\"#075b83\"/><text x=\"92\" y=\"63\" text-anchor=\"middle\" font-size=\"17\" fill=\"white\">PC A · LAN 10</text><path d=\"M 180 57 h 23 l -6 -5 m 6 5 l -6 5\" stroke=\"#1680a5\" fill=\"none\" stroke-width=\"3\"/><rect x=\"205\" y=\"25\" width=\"175\" height=\"65\" rx=\"10\" fill=\"#075b83\"/><text x=\"292\" y=\"63\" text-anchor=\"middle\" font-size=\"17\" fill=\"white\">Switch L2</text><path d=\"M 380 57 h 23 l -6 -5 m 6 5 l -6 5\" stroke=\"#1680a5\" fill=\"none\" stroke-width=\"3\"/><rect x=\"405\" y=\"25\" width=\"175\" height=\"65\" rx=\"10\" fill=\"#075b83\"/><text x=\"492\" y=\"63\" text-anchor=\"middle\" font-size=\"17\" fill=\"white\">Router</text><path d=\"M 580 57 h 23 l -6 -5 m 6 5 l -6 5\" stroke=\"#1680a5\" fill=\"none\" stroke-width=\"3\"/><rect x=\"605\" y=\"25\" width=\"175\" height=\"65\" rx=\"10\" fill=\"#075b83\"/><text x=\"692\" y=\"63\" text-anchor=\"middle\" font-size=\"17\" fill=\"white\">Server · LAN 20</text></svg><figcaption>Hubungan konseptual: PC A · LAN 10 → Switch L2 → Router → Server · LAN 20. Panah bukan bukti seluruh lapisan sudah bekerja; gunakan uji pada tiap tahap.</figcaption></figure>"
+    },
+    {
+      "id": "akses",
+      "title": "Akses awal dan identitas perangkat",
+      "summary": "Akses awal dan identitas perangkat",
+      "questions": [
+        {
+          "question": "Sebelum mengubah akses administrasi router, siapkan ...",
+          "options": [
+            "Cadangan sesuai cakupan dan jalur konsol/pemulihan berizin",
+            "Hanya sandi bersama di laporan publik",
+            "Penghapusan semua aturan"
+          ],
+          "answer": 0,
+          "explanation": "Perubahan akses dapat memutus sesi; perlukan jalur pemulihan dan bukti identitas tujuan."
+        }
+      ],
+      "html": "<h3>2. Akses awal, inventaris dan identitas</h3><p>Catat vendor/model/versi, kemampuan perangkat, port dan metode akses yang didukung. Console, web dan SSH mempunyai prasyarat berbeda. Gunakan akun berizin; verifikasi perangkat tujuan sebelum mengubah konfigurasi. Nama perangkat memudahkan identifikasi tetapi tidak otomatis memberi alamat atau mengubah rute.</p><p>Hindari memakai akun bawaan tanpa pengamanan sesuai kebijakan. Kredensial tidak dipublikasikan dalam tangkapan layar. Pengaturan akses administrasi harus diuji dari sumber yang diizinkan serta sumber yang ditolak. Cadangkan konfigurasi awal sesuai perangkat dan siapkan console/pemulihan agar perubahan akses tidak mengunci pengelola.</p>"
+    },
+    {
+      "id": "switch",
+      "title": "Switch L2 dan alamat manajemen",
+      "summary": "Switch L2 dan alamat manajemen",
+      "questions": [
+        {
+          "question": "Switch L2 tidak mempunyai IP pada setiap port, tetapi A–B berkomunikasi. Ini ...",
+          "options": [
+            "Sesuai fungsi switching; alamat manajemen adalah kebutuhan berbeda",
+            "Mustahil",
+            "Membuktikan switch menjadi router"
+          ],
+          "answer": 0,
+          "explanation": "Switching frame tidak mensyaratkan alamat IP pada setiap port akses."
+        }
+      ],
+      "html": "<h3>3. Switch layer 2 dan alamat manajemen</h3><p>Switch L2 meneruskan frame pada domain link/VLAN sesuai konfigurasi. Ia tidak membutuhkan alamat IP pada setiap port untuk melakukan switching dasar. Alamat manajemen, jika didukung, digunakan untuk mengelola perangkat; keberadaannya tidak mengubah switch L2 menjadi router.</p><p>Pada lab, guru menetapkan port akses pada satu domain/VLAN latihan dan status aktif. Catat hubungan port dengan PC. Alamat manajemen contoh 192.168.10.2/24 harus unik. Gateway manajemen diperlukan bila pengelolaan dilakukan dari luar subnet dan perangkat mendukungnya. Jangan memasang VLAN/trunk pada jaringan sekolah untuk mencoba-coba.</p><p>Latihan: gambarkan alur A–B dan bedakan alamat MAC tujuan frame dari IP tujuan paket. Jika manajemen switch gagal tetapi A–B berhasil, jangan langsung menyimpulkan fungsi switching rusak.</p>"
+    },
+    {
+      "id": "router",
+      "title": "Router, interface dan gateway klien",
+      "summary": "Router, interface dan gateway klien",
+      "questions": [
+        {
+          "question": "Gateway A berada pada subnet lain tanpa rancangan khusus. Pada skenario ini ...",
+          "options": [
+            "Tetap benar karena sama-sama IP privat",
+            "Tidak sesuai; gateway harus dapat dijangkau pada link/subnet lokal sesuai rancangan",
+            "DNS otomatis memperbaikinya"
+          ],
+          "answer": 1,
+          "explanation": "Rencana gateway, interface router dan jalur balik harus konsisten."
+        }
+      ],
+      "html": "<h3>4. Router dan gateway</h3><p>Router menghubungkan subnet melalui interface dan tabel routing. Tetapkan dua interface sesuai rancangan, periksa status link dan rute jaringan yang langsung terhubung. Klien memakai gateway di subnet lokal; gateway bukan DNS. Server juga memerlukan jalur kembali agar komunikasi dua arah berhasil.</p><p>Untuk skenario dua subnet yang langsung terhubung, jangan menambahkan NAT atau routing dinamis tanpa kebutuhan. Fitur firewall/default policy dapat memengaruhi akses; periksa aturan dan lingkup izin. Jangan mematikan seluruh firewall untuk membuat satu tes lolos. Sintaks dan mekanisme penyimpanan mengikuti platform yang dipilih guru.</p>"
+    },
+    {
+      "id": "persistensi",
+      "title": "Konfigurasi aktif, simpan dan boot",
+      "summary": "Konfigurasi aktif, simpan dan boot",
+      "questions": [
+        {
+          "question": "Konfigurasi bekerja kini tetapi hilang sesudah boot. Periksa ...",
+          "options": [
+            "Mekanisme save/commit/startup sesuai produk dan konfigurasi tersimpan",
+            "Warna kabel",
+            "Hanya cache browser"
+          ],
+          "answer": 0,
+          "explanation": "Apply dan persistensi berbeda pada beberapa platform; gunakan prosedur produk."
+        }
+      ],
+      "html": "<h3>5. Perubahan aktif, penyimpanan dan boot</h3><p>Konfigurasi yang berlaku sekarang belum tentu bertahan setelah mulai ulang. Sebagian perangkat membedakan running/startup configuration; perangkat lain menyimpan/commit melalui mekanisme berbeda. Pelajari arti <strong>Apply</strong>, <strong>Save</strong>, <strong>Commit</strong>, cadangan dan ekspor pada produk sebenarnya. Satu istilah bukan aturan universal.</p><p>Lakukan satu perubahan, uji, simpan sesuai prosedur, kemudian pada jadwal lab mulai ulang dan ulangi tes. Jangan reboot perangkat produksi. Jika hasil berubah setelah boot, bandingkan konfigurasi aktif dan tersimpan sebelum mengulang seluruh pekerjaan.</p>"
+    },
+    {
+      "id": "laboratorium",
+      "title": "Laboratorium jalur dan persistensi",
+      "summary": "Laboratorium jalur dan persistensi",
+      "questions": [
+        {
+          "question": "Gateway model salah tetapi komunikasi A–B tetap berhasil. Mengapa?",
+          "options": [
+            "A–B dalam satu subnet tidak memerlukan gateway untuk komunikasi langsung",
+            "Gateway tidak pernah dipakai",
+            "Server pasti sehat"
+          ],
+          "answer": 0,
+          "explanation": "Dua hasil uji berbeda membantu mengisolasi lapisan yang bermasalah."
+        }
+      ],
+      "html": "<h3>6. Eksperimen interaktif dan praktik</h3><p>Rencana eksperimen dan cakupan model: papan dua subnet, pilihan interface, IP/prefix, status port, gateway klien, konfigurasi aktif/tersimpan dan tombol <strong>Uji jalur</strong> serta <strong>Mulai ulang model</strong>. Umpan balik menunjukkan tahap gagal: link, subnet, gateway, jalur kembali atau layanan. Simulator di bawah melatih keputusan konsep; pelaksanaan produk nyata mengikuti panduan guru.</p><p>Urutan latihan: baseline A–B dan A–server; ubah gateway A menjadi salah lalu uji keduanya; pulihkan; ubah konfigurasi tanpa menyimpan dan amati model setelah restart; simpan dengan benar dan ulangi. Pada perangkat nyata guru menentukan perubahan yang aman. Siswa mengisi tabel prediksi–hasil–penjelasan, bukan menebak tombol.</p><p>Contoh penalaran: A–B masih berhasil saat gateway salah karena satu subnet. A–server gagal karena perlu router. Menambah port switch tidak memperbaiki gateway. Uji aplikasi tetap diperlukan meskipun ping berhasil.</p><section class=\"foundation-lab\"><h3>Petunjuk simulasi</h3><p>Uji gateway benar/salah dan bandingkan satu LAN dengan lintas subnet. Mulai ulang sebelum menyimpan, lalu perbaiki gateway, simpan dan mulai ulang lagi. Uji jalur pada kondisi terakhir. Berhasil jika dapat menjelaskan dampak gateway serta konfigurasi tersimpan.</p><p>Model tidak memasang OS, mengakses disk atau mengirim paket nyata. Perubahan hanya berlaku pada percobaan ini. Mulai percobaan baru mengembalikan model, bukan progres modul.</p><div data-foundation-draft=\"router\"></div></section>"
+    },
+    {
+      "id": "refleksi",
+      "title": "Penerimaan dan laporan konfigurasi",
+      "summary": "Penerimaan dan laporan konfigurasi",
+      "questions": [
+        {
+          "question": "Bukti penerimaan yang lengkap adalah ...",
+          "options": [
+            "Ping satu PC saja",
+            "Uji izin akses, jalur relevan, layanan, dan persistensi setelah boot beserta batasnya",
+            "Screenshot tombol Save"
+          ],
+          "answer": 1,
+          "explanation": "Keberhasilan pengaturan perlu dibuktikan lewat hasil, bukan status tombol."
+        }
+      ],
+      "html": "<h3>7. Penerimaan dan refleksi</h3><p>Kriteria: identitas jelas; alamat tidak bertabrakan; port sesuai; manajemen hanya dari sumber yang diizinkan; kedua subnet mencapai layanan uji menurut izin; konfigurasi bertahan sesudah boot; cadangan dan langkah pemulihan tercatat. Beri status belum diuji bila prasyarat fisik/layanan tidak tersedia.</p><p>Rubrik guru 0–3 per dimensi: fungsi perangkat, konfigurasi, bukti diagnosis dan pemulihan, komunikasi aman. Kasus akhir: switching sehat tetapi pengelolaan dari subnet lain gagal; peserta membedakan gateway manajemen dari gateway klien. Kuis kelak menguji alasan, sedangkan keterampilan perlu observasi.</p><p>Laporan satu halaman: diagram; tabel interface; perubahan; tes positif/negatif; hasil setelah boot; batas dan tindak lanjut. Manual resmi produk/versi dan SOP lab menjadi acuan implementasi; tidak menggunakan CLI satu vendor sebagai bahasa universal.</p>"
+    },
+    {
+      "id": "evaluasi",
+      "title": "Evaluasi Akhir dan Sertifikat",
+      "summary": "Menilai konsep dan menjelaskan transfer pembelajaran.",
+      "questions": [
+        {
+          "question": "A dan B satu subnet berkomunikasi, tetapi A gagal ke server subnet lain. Apa yang belum terbukti?",
+          "options": [
+            "Jalur gateway, rute balik dan akses layanan lintas subnet",
+            "Bahwa semua kabel putus",
+            "Bahwa semua OS harus diganti"
+          ],
+          "answer": 0,
+          "explanation": "Uji satu subnet tidak membuktikan jalur antar-subnet."
+        },
+        {
+          "question": "Sebelum mengubah akses administrasi router, siapkan ...",
+          "options": [
+            "Cadangan sesuai cakupan dan jalur konsol/pemulihan berizin",
+            "Hanya sandi bersama di laporan publik",
+            "Penghapusan semua aturan"
+          ],
+          "answer": 0,
+          "explanation": "Perubahan akses dapat memutus sesi; perlukan jalur pemulihan dan bukti identitas tujuan."
+        },
+        {
+          "question": "Switch L2 tidak mempunyai IP pada setiap port, tetapi A–B berkomunikasi. Ini ...",
+          "options": [
+            "Sesuai fungsi switching; alamat manajemen adalah kebutuhan berbeda",
+            "Mustahil",
+            "Membuktikan switch menjadi router"
+          ],
+          "answer": 0,
+          "explanation": "Switching frame tidak mensyaratkan alamat IP pada setiap port akses."
+        },
+        {
+          "question": "Gateway A berada pada subnet lain tanpa rancangan khusus. Pada skenario ini ...",
+          "options": [
+            "Tetap benar karena sama-sama IP privat",
+            "Tidak sesuai; gateway harus dapat dijangkau pada link/subnet lokal sesuai rancangan",
+            "DNS otomatis memperbaikinya"
+          ],
+          "answer": 1,
+          "explanation": "Rencana gateway, interface router dan jalur balik harus konsisten."
+        },
+        {
+          "question": "Konfigurasi bekerja kini tetapi hilang sesudah boot. Periksa ...",
+          "options": [
+            "Mekanisme save/commit/startup sesuai produk dan konfigurasi tersimpan",
+            "Warna kabel",
+            "Hanya cache browser"
+          ],
+          "answer": 0,
+          "explanation": "Apply dan persistensi berbeda pada beberapa platform; gunakan prosedur produk."
+        },
+        {
+          "question": "Gateway model salah tetapi komunikasi A–B tetap berhasil. Mengapa?",
+          "options": [
+            "A–B dalam satu subnet tidak memerlukan gateway untuk komunikasi langsung",
+            "Gateway tidak pernah dipakai",
+            "Server pasti sehat"
+          ],
+          "answer": 0,
+          "explanation": "Dua hasil uji berbeda membantu mengisolasi lapisan yang bermasalah."
+        },
+        {
+          "question": "Bukti penerimaan yang lengkap adalah ...",
+          "options": [
+            "Ping satu PC saja",
+            "Uji izin akses, jalur relevan, layanan, dan persistensi setelah boot beserta batasnya",
+            "Screenshot tombol Save"
+          ],
+          "answer": 1,
+          "explanation": "Keberhasilan pengaturan perlu dibuktikan lewat hasil, bukan status tombol."
+        }
+      ],
+      "html": "<p>Jawab semua soal dengan nilai minimal 80. Bila belum lulus, periksa umpan balik dan kembali ke materi terkait. Semua tahap sebelumnya harus lulus minimal 75 agar sertifikat tersedia. Sertifikat LMS membuktikan penyelesaian modul, bukan sertifikasi profesi atau pengganti observasi praktik oleh guru.</p><p>Serahkan laporan singkat: tujuan, lingkungan/media, tindakan, hasil, alasan dan perbaikan. Jelaskan satu perbedaan model dengan praktik nyata. Jangan memasukkan kata sandi dalam laporan.</p>"
+    }
+  ]
+}

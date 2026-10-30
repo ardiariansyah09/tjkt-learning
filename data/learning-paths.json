@@ -1,0 +1,20 @@
+{
+  "schoolYear": "2026-2027",
+  "notes": "Urutan rekomendasi lintas elemen ATP. Tiga modul dasar tersedia lokal dengan progres dan evaluasi; server LMS belum diubah. Prasyarat modul lama tetap dipertahankan.",
+  "paths": [
+    {
+      "classLevel": "X",
+      "title": "Kelas X: komputer dan VM menuju jaringan dasar",
+      "moduleIds": ["profesi-kewirausahaan-tjkt", "proses-bisnis-tjkt", "k3-budaya-kerja", "pengenalan-jaringan", "perangkat-jaringan", "virtualisasi-server-dasar", "instalasi-komputer-dasar", "media-transmisi", "topologi-jaringan", "osi-tcpip", "ipv4-subnetting", "ipv6-dasar", "protokol-layanan", "konfigurasi-perangkat-dasar", "perencanaan-jaringan", "sistem-telekomunikasi-dasar", "alat-ukur-tjkt", "troubleshooting", "wawasan-tjkt"]
+    },
+    {
+      "classLevel": "XI",
+      "title": "Kelas XI: VM lanjutan, OS server dan layanan",
+      "moduleIds": ["dasar-administrasi-server", "virtualisasi-server", "administrasi-linux-windows", "manajemen-pengguna-server", "layanan-server", "ftp-server", "file-server", "hosting-server", "backup-pemulihan-server"]
+    }
+  ],
+  "handoff": {
+    "fromClassX": ["VM kosong dibuat dan OS desktop boot tanpa ISO", "Windows desktop dan Linux desktop dibedakan", "Alamat klien, gateway, DNS dan uji dasar dijelaskan", "Konfigurasi dan bukti setelah boot dicatat"],
+    "toClassXI": ["Host Proxmox VE/ESXi dan jaringan manajemen direncanakan", "Linux server dipasang dan baseline diverifikasi", "Layanan diuji dari klien dan akses ditolak sesuai kebijakan", "Backup dipulihkan dan hasilnya diuji"]
+  }
+}

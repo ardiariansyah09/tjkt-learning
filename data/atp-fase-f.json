@@ -2,18 +2,87 @@
   "school": "SMK Wikrama Bogor",
   "schoolYear": "2026-2027",
   "sources": [
-    { "classLevel": "XI", "file": "ATP Fase F XI KK TKJ 2026-2027.docx" },
-    { "classLevel": "XII", "file": "ATP Fase F XII KK TKJ 2026-2027.docx" }
+    {
+      "classLevel": "XI",
+      "file": "ATP Fase F XI KK TKJ 2026-2027.docx"
+    },
+    {
+      "classLevel": "XII",
+      "file": "ATP Fase F XII KK TKJ 2026-2027.docx"
+    },
+    {
+      "classLevel": "XI–XII",
+      "file": "ATP Fase F MP Keamanan Siber.docx",
+      "subject": "Mata Pelajaran Pilihan Keamanan Siber",
+      "totalJP": 180
+    }
   ],
   "classes": [
-    { "classLevel": "XI", "totalJP": 576, "summary": "Perencanaan dan pengalamatan, jaringan kabel/nirkabel, konfigurasi perangkat, serta administrasi sistem jaringan." },
-    { "classLevel": "XII", "totalJP": 180, "summary": "Keamanan jaringan: ancaman, sistem keamanan, host hardening, DMZ, dan pengujian keamanan." }
+    {
+      "classLevel": "XI",
+      "totalJP": 576,
+      "summary": "Perencanaan dan pengalamatan, jaringan kabel/nirkabel, konfigurasi perangkat, serta administrasi sistem jaringan."
+    },
+    {
+      "classLevel": "XII",
+      "totalJP": 180,
+      "summary": "Keamanan jaringan: ancaman, sistem keamanan, host hardening, DMZ, dan pengujian keamanan."
+    }
   ],
   "elements": [
-    { "id": "perencanaan", "classLevel": "XI", "category": "Perencanaan dan Pengalamatan Jaringan", "jp": 48 },
-    { "id": "media", "classLevel": "XI", "category": "Teknologi Jaringan Kabel dan Nirkabel", "jp": 216 },
-    { "id": "konfigurasi", "classLevel": "XI", "category": "Konfigurasi Perangkat Jaringan", "jp": 168 },
-    { "id": "administrasi", "classLevel": "XI", "category": "Administrasi Sistem Jaringan", "jp": 144 },
-    { "id": "keamanan", "classLevel": "XII", "category": "Keamanan Jaringan", "jp": 180 }
-  ]
+    {
+      "id": "perencanaan",
+      "classLevel": "XI",
+      "category": "Perencanaan dan Pengalamatan Jaringan",
+      "jp": 48
+    },
+    {
+      "id": "media",
+      "classLevel": "XI",
+      "category": "Teknologi Jaringan Kabel dan Nirkabel",
+      "jp": 216
+    },
+    {
+      "id": "konfigurasi",
+      "classLevel": "XI",
+      "category": "Konfigurasi Perangkat Jaringan",
+      "jp": 168
+    },
+    {
+      "id": "administrasi",
+      "classLevel": "XI",
+      "category": "Administrasi Sistem Jaringan",
+      "jp": 144
+    },
+    {
+      "id": "keamanan",
+      "classLevel": "XII",
+      "category": "Keamanan Jaringan",
+      "jp": 180
+    }
+  ],
+  "electiveCybersecurity": {
+    "classLevels": [
+      "XI",
+      "XII"
+    ],
+    "totalJP": 180,
+    "source": "modul/ATP Fase F MP Keamanan Siber.docx",
+    "topics": [
+      "Potensi ancaman dan serangan",
+      "Sistem keamanan jaringan",
+      "Host hardening",
+      "Server DMZ",
+      "Uji keamanan jaringan, host dan server"
+    ],
+    "moduleIds": [
+      "keamanan-jaringan",
+      "autentikasi-kriptografi",
+      "ids-hardening",
+      "ids-respons-insiden",
+      "server-dmz",
+      "pengujian-keamanan"
+    ],
+    "notes": "Peta pemanfaatan modul bersama untuk mata pelajaran pilihan; bukan tambahan otomatis 180 JP pada ATP konsentrasi atau duplikasi nilai. Urutan kelas mengikuti rencana mengajar sekolah."
+  }
 }
