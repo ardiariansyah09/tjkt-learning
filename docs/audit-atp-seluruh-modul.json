@@ -1,0 +1,4636 @@
+{
+  "date": "2026-10-29",
+  "stats": {
+    "modules": 56,
+    "objectiveRows": 44,
+    "covered": 44,
+    "partial": 0,
+    "absent": 0
+  },
+  "sources": [
+    "modul/ATP-TJKT X - NEW 27.xlsx",
+    "modul/ATP Fase F XI KK TKJ 2026-2027.docx",
+    "modul/ATP Fase F XII KK TKJ 2026-2027.docx",
+    "modul/ATP Fase F MP Keamanan Siber.docx"
+  ],
+  "note": "Tercakup menyatakan materi/aktivitas terkait tersedia, bukan sertifikasi kompetensi atau bukti penguasaan siswa. Nomor XI-P/M/K/A dan XII/MP-S adalah ID pemetaan audit, bukan nomor resmi ATP.",
+  "objectives": [
+    {
+      "id": "X-1.1",
+      "objective": "Profesi, job profile dan technopreneurship",
+      "modules": [
+        "profesi-kewirausahaan-tjkt"
+      ],
+      "status": "tercakup",
+      "evidence": "Peta profesi/kompetensi, sertifikasi, portofolio, pembeda technopreneurship dan validasi peluang.",
+      "gap": ""
+    },
+    {
+      "id": "X-1.2",
+      "objective": "Analisis peluang usaha TJKT",
+      "modules": [
+        "profesi-kewirausahaan-tjkt"
+      ],
+      "status": "tercakup",
+      "evidence": "Wawancara, hipotesis pelanggan, proposisi nilai, biaya dan titik impas; kasus permintaan vs kapasitas.",
+      "gap": ""
+    },
+    {
+      "id": "X-1.3",
+      "objective": "Peluang usaha untuk vision dan passion",
+      "modules": [
+        "profesi-kewirausahaan-tjkt"
+      ],
+      "status": "tercakup",
+      "evidence": "Tambahan visi karier, pengalaman/minat, target 30 hari dan bukti perubahan pilihan.",
+      "gap": ""
+    },
+    {
+      "id": "X-1.4",
+      "objective": "Analisis proses bisnis",
+      "modules": [
+        "proses-bisnis-tjkt"
+      ],
+      "status": "tercakup",
+      "evidence": "Kebutuhan, proses, mutu, tiket, perubahan, penerimaan dan komunikasi pelanggan.",
+      "gap": ""
+    },
+    {
+      "id": "X-1.5",
+      "objective": "Perkembangan teknologi komunikasi",
+      "modules": [
+        "wawasan-tjkt",
+        "sistem-telekomunikasi-dasar",
+        "ipv4-subnetting",
+        "ipv6-dasar"
+      ],
+      "status": "tercakup",
+      "evidence": "3G/4G/5G, VSAT, microwave, fiber, data center, IoT/cloud, IPv4/IPv6 serta keamanan.",
+      "gap": ""
+    },
+    {
+      "id": "X-2.1",
+      "objective": "K3LH di tempat kerja",
+      "modules": [
+        "k3-budaya-kerja"
+      ],
+      "status": "tercakup",
+      "evidence": "Identifikasi bahaya, risiko, hierarki, JSA, listrik/ESD, optik, ergonomi dan limbah.",
+      "gap": ""
+    },
+    {
+      "id": "X-2.2",
+      "objective": "5R dan pencegahan kecelakaan di ketinggian",
+      "modules": [
+        "k3-budaya-kerja"
+      ],
+      "status": "tercakup",
+      "evidence": "5R dan penambahan skenario akses, cuaca, benda jatuh, izin serta rencana penyelamatan; tugas analisis aman.",
+      "gap": ""
+    },
+    {
+      "id": "X-2.3",
+      "objective": "Prosedur kerja dan APD",
+      "modules": [
+        "k3-budaya-kerja"
+      ],
+      "status": "tercakup",
+      "evidence": "Rambu, SOP, pemilihan APD menurut bahaya, batas kewenangan dan penghentian kerja.",
+      "gap": ""
+    },
+    {
+      "id": "X-2.4",
+      "objective": "Laporan tertulis setiap kegiatan",
+      "modules": [
+        "k3-budaya-kerja",
+        "perencanaan-jaringan",
+        "alat-ukur-tjkt"
+      ],
+      "status": "tercakup",
+      "evidence": "Laporan satu halaman dan bukti percobaan tersedia pada pembangun course bersama serta tiga modul baru. Pelengkapan: Format laporan singkat per aktivitas, sumber bukti, hasil dan kesimpulan; tersimpan di snapshot dan dapat dibaca guru.",
+      "gap": "",
+      "previousGap": "Belum seragam pada seluruh aktivitas sembilan modul legacy; laporan per kegiatan masih memerlukan penugasan/peninjauan guru, bukan sekadar kuis.",
+      "remediation": "Format laporan singkat per aktivitas, sumber bukti, hasil dan kesimpulan; tersimpan di snapshot dan dapat dibaca guru.",
+      "operationalContext": "Perangkat/VM nyata tetap dinilai guru."
+    },
+    {
+      "id": "X-2.5",
+      "objective": "Instalasi/konfigurasi komputer, router, switch, virtualisasi dan server",
+      "modules": [
+        "virtualisasi-server-dasar",
+        "instalasi-komputer-dasar",
+        "konfigurasi-perangkat-dasar"
+      ],
+      "status": "tercakup",
+      "evidence": "13/15/8 tahap; VirtualBox/Workstation, Linux/Windows desktop, router/switch, guest dan pengantar layanan. Simulator installer/VM ditambah; praktik asli tetap dinilai guru.",
+      "gap": ""
+    },
+    {
+      "id": "X-3.1",
+      "objective": "Prinsip dasar IPv4/IPv6",
+      "modules": [
+        "ipv4-subnetting",
+        "ipv6-dasar"
+      ],
+      "status": "tercakup",
+      "evidence": "Representasi, subnet/prefix, lingkup IPv6, link-local, ND/RA/SLAAC, dual stack, diagnosis.",
+      "gap": ""
+    },
+    {
+      "id": "X-3.2",
+      "objective": "TCP/IP dan networking service",
+      "modules": [
+        "osi-tcpip",
+        "protokol-layanan"
+      ],
+      "status": "tercakup",
+      "evidence": "Model lapisan, alur paket, DHCP, DNS, HTTP/HTTPS, port dan pemisahan bukti layanan.",
+      "gap": ""
+    },
+    {
+      "id": "X-3.3",
+      "objective": "Layanan dan keamanan telekomunikasi",
+      "modules": [
+        "protokol-layanan",
+        "perangkat-jaringan",
+        "sistem-telekomunikasi-dasar"
+      ],
+      "status": "tercakup",
+      "evidence": "Peran firewall/TLS/autentikasi, akses berizin/ditolak dan uji jalur layanan; tidak menuntut hardening lanjutan pada X.",
+      "gap": ""
+    },
+    {
+      "id": "X-3.4",
+      "objective": "Prinsip seluler, microwave dan VSAT IP",
+      "modules": [
+        "sistem-telekomunikasi-dasar"
+      ],
+      "status": "tercakup",
+      "evidence": "Arsitektur, mobilitas, link budget/margin, panjang lintasan dan RTT; simulator propagasi serta latihan hitungan. Pelengkapan: Simulator seluler/handover, microwave/margin serta terminal–gateway VSAT dengan kondisi gagal dan pemulihan.",
+      "gap": "",
+      "previousGap": "Latihan penerapan tiap sistem belum sama kuatnya: belum ada simulator terpisah handover/VSAT terminal. Aktivitas saat ini cukup untuk analisis konsep tetapi perlu observasi penerapan berlapis.",
+      "remediation": "Simulator seluler/handover, microwave/margin serta terminal–gateway VSAT dengan kondisi gagal dan pemulihan.",
+      "operationalContext": "Parameter adalah skenario konseptual, bukan jaringan operator."
+    },
+    {
+      "id": "X-3.5",
+      "objective": "Prinsip optik dan WLAN",
+      "modules": [
+        "media-transmisi",
+        "perangkat-jaringan",
+        "sistem-telekomunikasi-dasar",
+        "alat-ukur-tjkt"
+      ],
+      "status": "tercakup",
+      "evidence": "Komponen optik, daya/rugi, karakter WLAN, kanal/cakupan dan prosedur uji akses. Latihan konfigurasi fisik menggunakan perangkat guru.",
+      "gap": ""
+    },
+    {
+      "id": "X-4.1",
+      "objective": "Fungsi alat ukur",
+      "modules": [
+        "alat-ukur-tjkt"
+      ],
+      "status": "tercakup",
+      "evidence": "Pemilihan multimeter, tester, certifier, OPM/OLS/OTDR dan radio sesuai pertanyaan ukur.",
+      "gap": ""
+    },
+    {
+      "id": "X-4.2",
+      "objective": "Analisis penggunaan alat ukur",
+      "modules": [
+        "alat-ukur-tjkt"
+      ],
+      "status": "tercakup",
+      "evidence": "Rentang, akurasi, resolusi, kriteria serta batas kesimpulan.",
+      "gap": ""
+    },
+    {
+      "id": "X-4.3",
+      "objective": "Menggunakan alat ukur",
+      "modules": [
+        "alat-ukur-tjkt"
+      ],
+      "status": "tercakup",
+      "evidence": "Prosedur aman, wiremap dan simulasi daya/rugi; pembuktian fisik melalui observasi guru.",
+      "gap": ""
+    },
+    {
+      "id": "X-4.4",
+      "objective": "Memelihara alat ukur",
+      "modules": [
+        "alat-ukur-tjkt"
+      ],
+      "status": "tercakup",
+      "evidence": "Inspeksi, referensi/kalibrasi, karantina, penyimpanan dan laporan.",
+      "gap": ""
+    },
+    {
+      "id": "XI-P1",
+      "objective": "Kebutuhan teknis pengguna dan peralatan",
+      "modules": [
+        "kebutuhan-teknis-jaringan"
+      ],
+      "status": "tercakup",
+      "evidence": "Kebutuhan terukur, inventaris/port/PoE, kapasitas, dependensi dan kriteria penerimaan.",
+      "gap": ""
+    },
+    {
+      "id": "XI-P2",
+      "objective": "Topologi/arsitektur dan pemetaan fiber Google Maps; sinkron HTS",
+      "modules": [
+        "desain-topologi-arsitektur"
+      ],
+      "status": "tercakup",
+      "evidence": "Peta/jalur, titik belok, skala, panjang vs elevasi/slack, Google Maps, sumber/tanggal dan verifikasi. Pelengkapan: Lembar rekonsiliasi ID, revisi, port/core, panjang, izin dan persetujuan; kontrak penyerahan netral dapat diunduh.",
+      "gap": "",
+      "previousGap": "Istilah sinkron HTS pada catatan ATP belum mempunyai definisi, format keluaran atau dataset sekolah. Jangan mengklaim integrasi HTS sudah tersedia.",
+      "remediation": "Lembar rekonsiliasi ID, revisi, port/core, panjang, izin dan persetujuan; kontrak penyerahan netral dapat diunduh.",
+      "operationalContext": "Nama/format HTS aktual ditetapkan sekolah; tidak mengarang kepanjangan atau menyatakan konektor HTS aktif."
+    },
+    {
+      "id": "XI-P3",
+      "objective": "Perancangan pengalamatan subnetting/CIDR/VLSM",
+      "modules": [
+        "perencanaan-pengalamatan-lanjut"
+      ],
+      "status": "tercakup",
+      "evidence": "Rencana subnet, alokasi, konflik/overlap, ringkasan dan verifikasi.",
+      "gap": ""
+    },
+    {
+      "id": "XI-M1",
+      "objective": "Instalasi kabel/nirkabel; AP Ruijie, kanal dan power",
+      "modules": [
+        "instalasi-kabel",
+        "wireless-lan"
+      ],
+      "status": "tercakup",
+      "evidence": "SOP pemasangan, wiremap/performa, kanal, airtime, daya dua arah, penempatan AP dan contoh Ruijie. Pelengkapan: Profil acuan resmi Reyee RG-RAP, pemetaan menu, konfigurasi SSID/radio/VLAN, uji akses dan persistensi model.",
+      "gap": "",
+      "previousGap": "Belum panduan layar/perintah untuk model/firmware Ruijie sekolah tertentu. Prinsip serta simulasi generik tersedia; penerapan vendor perlu perangkat/versi yang dipakai.",
+      "remediation": "Profil acuan resmi Reyee RG-RAP, pemetaan menu, konfigurasi SSID/radio/VLAN, uji akses dan persistensi model.",
+      "operationalContext": "Pemetaan menu perangkat sekolah mengikuti model/firmware sebenarnya."
+    },
+    {
+      "id": "XI-M2",
+      "objective": "Perawatan dan perbaikan kabel/nirkabel",
+      "modules": [
+        "pemeliharaan-kabel-nirkabel"
+      ],
+      "status": "tercakup",
+      "evidence": "Baseline, diagnosis bukti, perubahan tunggal, uji penerimaan dan laporan pemulihan.",
+      "gap": ""
+    },
+    {
+      "id": "XI-M3",
+      "objective": "Instalasi dan konfigurasi VoIP",
+      "modules": [
+        "voip"
+      ],
+      "status": "tercakup",
+      "evidence": "Registrasi, call setup, dial plan, codec/media, jalur dan diagnosis; model bukan PBX asli.",
+      "gap": ""
+    },
+    {
+      "id": "XI-M4",
+      "objective": "Instalasi fiber; SOP/APD",
+      "modules": [
+        "fiber-optik"
+      ],
+      "status": "tercakup",
+      "evidence": "Kompatibilitas, SOP, jalur, terminasi/splicing konseptual, anggaran optik dan acceptance.",
+      "gap": ""
+    },
+    {
+      "id": "XI-M5",
+      "objective": "Perbaikan fiber dan SOP penanganan",
+      "modules": [
+        "fiber-optik"
+      ],
+      "status": "tercakup",
+      "evidence": "OPM/OLS vs OTDR, gejala/lokasi, isolasi, batas bukti, perbaikan dan pengujian ulang.",
+      "gap": ""
+    },
+    {
+      "id": "XI-K1",
+      "objective": "Pemasangan perangkat pada sistem jaringan",
+      "modules": [
+        "pemasangan-perangkat-jaringan"
+      ],
+      "status": "tercakup",
+      "evidence": "Kompatibilitas, inventaris, pengkabelan, pengaturan awal, uji dan keselamatan.",
+      "gap": ""
+    },
+    {
+      "id": "XI-K2",
+      "objective": "Penggantian perangkat sesuai kebutuhan",
+      "modules": [
+        "penggantian-perangkat-jaringan"
+      ],
+      "status": "tercakup",
+      "evidence": "Baseline/cadangan, kesetaraan fitur, perubahan, penerimaan dan rollback.",
+      "gap": ""
+    },
+    {
+      "id": "XI-K3",
+      "objective": "VLAN, routing statis/dinamis OSPF termasuk BIRD, NAT dan proxy",
+      "modules": [
+        "switching-vlan",
+        "routing-ipv4",
+        "routing-dinamis",
+        "nat-wan",
+        "proxy-load-balancing"
+      ],
+      "status": "tercakup",
+      "evidence": "Konfigurasi/prinsip, model dan diagnosis tiap layanan; OSPF serta kerangka BIRD 2.x dibahas. Pelengkapan: Lab dua router Linux/BIRD 2.x: saluran kernel/filter, forwarding kedua router, jalur balik, validasi, penerimaan dan rollback.",
+      "gap": "",
+      "previousGap": "BIRD masih kerangka/pengenalan; saluran kernel, forwarding/filter dan prosedur penerimaan router Linux lengkap perlu praktik lanjutan yang dipilih sekolah.",
+      "remediation": "Lab dua router Linux/BIRD 2.x: saluran kernel/filter, forwarding kedua router, jalur balik, validasi, penerimaan dan rollback.",
+      "operationalContext": "Simulator tidak menjalankan daemon atau kernel; praktik VM mengikuti versi distro/interface yang dipilih."
+    },
+    {
+      "id": "XI-K4",
+      "objective": "Bandwidth/QoS, RADIUS Linux untuk profil dan load balancing",
+      "modules": [
+        "bandwidth-qos",
+        "load-balancing"
+      ],
+      "status": "tercakup",
+      "evidence": "Scheduler, shaping/policing, counter, failover; AAA/NAS/Filter-Id dan pola radtest dibahas. Pelengkapan: FreeRADIUS 3 + NAS RouterOS 7 PPPoE: client/secret, authorize, atribut rate-limit, sesi, queue, traffic, accounting dan retest.",
+      "gap": "",
+      "previousGap": "RADIUS baru pengantar dan pola konfigurasi; belum lab autentikasi-ke-penegakan profil NAS lengkap. Accept tidak dianggap bukti rate-limit telah bekerja.",
+      "remediation": "FreeRADIUS 3 + NAS RouterOS 7 PPPoE: client/secret, authorize, atribut rate-limit, sesi, queue, traffic, accounting dan retest.",
+      "operationalContext": "Image/lisensi/akun lab serta trafik nyata disediakan guru. Tidak meminta secret produksi."
+    },
+    {
+      "id": "XI-K5",
+      "objective": "Analisis/perbaikan routing, NAT dan proxy",
+      "modules": [
+        "routing-ipv4",
+        "routing-dinamis",
+        "nat-wan",
+        "proxy-load-balancing"
+      ],
+      "status": "tercakup",
+      "evidence": "Skenario gagal, perbandingan jalur balik/policy/cache, perubahan tunggal dan penerimaan.",
+      "gap": ""
+    },
+    {
+      "id": "XI-A1",
+      "objective": "Remote, DHCP, DNS, FTP, file, web dan database",
+      "modules": [
+        "layanan-server",
+        "ftp-server",
+        "file-server",
+        "hosting-server"
+      ],
+      "status": "tercakup",
+      "evidence": "Instalasi/config konseptual dan contoh produk, uji klien positif/negatif, identitas/izin, persistensi dan rollback.",
+      "gap": ""
+    },
+    {
+      "id": "XI-A2",
+      "objective": "Panel hosting, shared/dedicated/VPS, VPN, kontrol/monitoring dan SmartOLT",
+      "modules": [
+        "panel-layanan-hosting",
+        "vpn-server",
+        "monitoring-jaringan"
+      ],
+      "status": "tercakup",
+      "evidence": "Jenis hosting, role/tenant/quota, TLS/DNS, VPN, pemantauan layanan dan data OLT/ONU. Pelengkapan: Praktik operator SmartOLT read-only, endpoint resmi status, normalisasi dataset, timestamp/null, cakupan PON, insiden dan verifikasi pemulihan.",
+      "gap": "",
+      "previousGap": "SmartOLT memakai konsep/dataset; integrasi akun/API/perangkat sekolah belum tersedia. Simulasi bukan provisioning atau query OLT nyata.",
+      "remediation": "Praktik operator SmartOLT read-only, endpoint resmi status, normalisasi dataset, timestamp/null, cakupan PON, insiden dan verifikasi pemulihan.",
+      "operationalContext": "LMS tidak memegang token/provisioning OLT; akses nyata mengikuti role dan fasilitas sekolah."
+    },
+    {
+      "id": "XII-S1",
+      "objective": "Potensi ancaman dan serangan",
+      "modules": [
+        "keamanan-jaringan"
+      ],
+      "status": "tercakup",
+      "evidence": "Aset/ancaman/risiko, skenario dan pemilihan kontrol.",
+      "gap": ""
+    },
+    {
+      "id": "MP-S1",
+      "objective": "Potensi ancaman dan serangan",
+      "modules": [
+        "keamanan-jaringan"
+      ],
+      "status": "tercakup",
+      "evidence": "Aset/ancaman/risiko, skenario dan pemilihan kontrol. Modul digunakan bersama untuk MP Pilihan XI–XII; tidak menggandakan progres/JP otomatis.",
+      "gap": ""
+    },
+    {
+      "id": "XII-S2",
+      "objective": "Sistem keamanan yang diperlukan",
+      "modules": [
+        "keamanan-jaringan",
+        "autentikasi-kriptografi"
+      ],
+      "status": "tercakup",
+      "evidence": "Lapisan kontrol, identitas, kebijakan, kriptografi dan bukti akses.",
+      "gap": ""
+    },
+    {
+      "id": "MP-S2",
+      "objective": "Sistem keamanan yang diperlukan",
+      "modules": [
+        "keamanan-jaringan",
+        "autentikasi-kriptografi"
+      ],
+      "status": "tercakup",
+      "evidence": "Lapisan kontrol, identitas, kebijakan, kriptografi dan bukti akses. Modul digunakan bersama untuk MP Pilihan XI–XII; tidak menggandakan progres/JP otomatis.",
+      "gap": ""
+    },
+    {
+      "id": "XII-S3",
+      "objective": "Langkah penguatan host",
+      "modules": [
+        "ids-hardening"
+      ],
+      "status": "tercakup",
+      "evidence": "Baseline, akun/service/patch/log, kontrol dan pengujian perubahan.",
+      "gap": ""
+    },
+    {
+      "id": "MP-S3",
+      "objective": "Langkah penguatan host",
+      "modules": [
+        "ids-hardening"
+      ],
+      "status": "tercakup",
+      "evidence": "Baseline, akun/service/patch/log, kontrol dan pengujian perubahan. Modul digunakan bersama untuk MP Pilihan XI–XII; tidak menggandakan progres/JP otomatis.",
+      "gap": ""
+    },
+    {
+      "id": "XII-S4",
+      "objective": "Membangun server DMZ",
+      "modules": [
+        "server-dmz"
+      ],
+      "status": "tercakup",
+      "evidence": "Segmentasi zona, akses minimum, jalur publik/internal dan penerimaan.",
+      "gap": ""
+    },
+    {
+      "id": "MP-S4",
+      "objective": "Membangun server DMZ",
+      "modules": [
+        "server-dmz"
+      ],
+      "status": "tercakup",
+      "evidence": "Segmentasi zona, akses minimum, jalur publik/internal dan penerimaan. Modul digunakan bersama untuk MP Pilihan XI–XII; tidak menggandakan progres/JP otomatis.",
+      "gap": ""
+    },
+    {
+      "id": "XII-S5",
+      "objective": "Pengujian jaringan, host dan server",
+      "modules": [
+        "pengujian-keamanan"
+      ],
+      "status": "tercakup",
+      "evidence": "Ruang lingkup/izin, rencana uji, bukti temuan, perbaikan serta retest.",
+      "gap": ""
+    },
+    {
+      "id": "MP-S5",
+      "objective": "Pengujian jaringan, host dan server",
+      "modules": [
+        "pengujian-keamanan"
+      ],
+      "status": "tercakup",
+      "evidence": "Ruang lingkup/izin, rencana uji, bukti temuan, perbaikan serta retest. Modul digunakan bersama untuk MP Pilihan XI–XII; tidak menggandakan progres/JP otomatis.",
+      "gap": ""
+    }
+  ],
+  "modules": [
+    {
+      "id": "proses-bisnis-tjkt",
+      "title": "Proses Bisnis dan Pelayanan Pelanggan TJKT",
+      "classLevel": "X",
+      "role": "ATP/pendukung Fase E",
+      "objectives": [
+        "Mengubah keluhan menjadi kebutuhan dan kriteria penerimaan yang terukur.",
+        "Menyusun alur kerja, pembagian tanggung jawab, jadwal, dan pengendalian perubahan.",
+        "Menangani tiket dengan prioritas, komunikasi, dan bukti penutupan yang tepat.",
+        "Mengevaluasi mutu layanan melalui eksperimen kapasitas dan proyek serah terima."
+      ],
+      "objectiveSource": "Tujuan pada course sumber",
+      "chapters": [
+        {
+          "id": "orientasi",
+          "title": "Orientasi, Tujuan, dan Asesmen Awal"
+        },
+        {
+          "id": "konsep-1",
+          "title": "Rantai Nilai dan Alur Proses Layanan"
+        },
+        {
+          "id": "konsep-2",
+          "title": "Survei dan Kebutuhan Pelanggan"
+        },
+        {
+          "id": "konsep-3",
+          "title": "Perencanaan, Implementasi, dan Perubahan"
+        },
+        {
+          "id": "konsep-4",
+          "title": "Tiket, Prioritas, dan Kesepakatan Layanan"
+        },
+        {
+          "id": "konsep-5",
+          "title": "Komunikasi, Keluhan, dan Etika Layanan"
+        },
+        {
+          "id": "konsep-6",
+          "title": "Pengujian, Serah Terima, dan Mutu Berkelanjutan"
+        },
+        {
+          "id": "kasus",
+          "title": "Studi Kasus dan Proyek Terapan"
+        },
+        {
+          "id": "laboratorium",
+          "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti"
+        },
+        {
+          "id": "game",
+          "title": "Game Misi Terapan"
+        },
+        {
+          "id": "refleksi",
+          "title": "Refleksi, Umpan Balik, dan Transfer"
+        },
+        {
+          "id": "evaluasi",
+          "title": "Rangkuman dan Evaluasi Akhir"
+        }
+      ],
+      "source": "modules/dasar-jaringan/proses-bisnis-tjkt/index.html",
+      "scripts": [
+        "../../../assets/js/local-instructor.js?v=1",
+        "../../../assets/js/foundation-check.js?v=ux2",
+        "../../../assets/js/module-shell.js?v=ux2",
+        "../../../assets/js/tjkt-certificate.js?v=3"
+      ],
+      "atpObjectives": [
+        "X-1.4"
+      ],
+      "review": "Pembahasan terkait TP tersedia; keterampilan nyata perlu bukti guru",
+      "depthMethod": "Ditinjau dari konsep, contoh beralasan, tugas/penerimaan, kondisi gagal dan transfer; jumlah halaman/istilah bukan bukti ketuntasan siswa."
+    },
+    {
+      "id": "wawasan-tjkt",
+      "title": "Perkembangan Teknologi dan Isu Global TJKT",
+      "classLevel": "X",
+      "role": "ATP/pendukung Fase E",
+      "objectives": [
+        "Membedakan kemampuan, batas, dan hubungan 5G, fiber, IPv6, IoT, pusat data, dan cloud.",
+        "Menelusuri aliran data sensor menuju edge/cloud beserta risiko keamanan dan privasinya.",
+        "Menghitung beban data model dan membandingkan pilihan pengolahan lokal.",
+        "Menyusun rekomendasi adopsi teknologi dengan sumber, alternatif, dan rencana evaluasi.",
+        "Membandingkan perkembangan 3G, 4G dan 5G tanpa menyamakan generasi dengan jaminan kinerja."
+      ],
+      "objectiveSource": "Tujuan pada course sumber",
+      "chapters": [
+        {
+          "id": "orientasi",
+          "title": "Orientasi, Tujuan, dan Asesmen Awal"
+        },
+        {
+          "id": "konsep-1",
+          "title": "Literasi Teknologi dan Penilaian Bukti"
+        },
+        {
+          "id": "konsep-2",
+          "title": "5G, Mobilitas, dan Akses Fiber"
+        },
+        {
+          "id": "konsep-3",
+          "title": "IPv6 dan Internet of Things"
+        },
+        {
+          "id": "konsep-4",
+          "title": "Pusat Data, Virtualisasi, Cloud, dan Edge"
+        },
+        {
+          "id": "konsep-5",
+          "title": "Keamanan, Privasi, dan Ketahanan"
+        },
+        {
+          "id": "konsep-6",
+          "title": "Dampak Lingkungan, Inklusi, dan Keputusan Adopsi"
+        },
+        {
+          "id": "kasus",
+          "title": "Studi Kasus dan Proyek Terapan"
+        },
+        {
+          "id": "laboratorium",
+          "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti"
+        },
+        {
+          "id": "game",
+          "title": "Game Misi Terapan"
+        },
+        {
+          "id": "refleksi",
+          "title": "Refleksi, Umpan Balik, dan Transfer"
+        },
+        {
+          "id": "evaluasi",
+          "title": "Rangkuman dan Evaluasi Akhir"
+        }
+      ],
+      "source": "modules/dasar-jaringan/wawasan-tjkt/index.html",
+      "scripts": [
+        "../../../assets/js/local-instructor.js?v=1",
+        "../../../assets/js/foundation-check.js?v=ux2",
+        "../../../assets/js/module-shell.js?v=ux2",
+        "../../../assets/js/tjkt-certificate.js?v=3"
+      ],
+      "atpObjectives": [
+        "X-1.5"
+      ],
+      "review": "Pembahasan terkait TP tersedia; keterampilan nyata perlu bukti guru",
+      "depthMethod": "Ditinjau dari konsep, contoh beralasan, tugas/penerimaan, kondisi gagal dan transfer; jumlah halaman/istilah bukan bukti ketuntasan siswa."
+    },
+    {
+      "id": "profesi-kewirausahaan-tjkt",
+      "title": "Profesi dan Kewirausahaan TJKT",
+      "classLevel": "X",
+      "role": "ATP/pendukung Fase E",
+      "objectives": [
+        "Memetakan tugas profesi, kompetensi, batas kewenangan, dan bukti portofolio.",
+        "Memvalidasi masalah pelanggan serta menyusun proposisi nilai dan model layanan.",
+        "Membedakan biaya, pendapatan, kontribusi, laba model, serta arus kas.",
+        "Menyusun proposal usaha fiktif, menguji titik impas, dan merencanakan pengembangan kompetensi.",
+        "Membedakan kewirausahaan dan technopreneurship serta sertifikat belajar dan sertifikasi profesi.",
+        "Menyusun visi karier/usaha dan rencana pengujian minat berdasarkan pengalaman serta bukti kompetensi."
+      ],
+      "objectiveSource": "Tujuan pada course sumber",
+      "chapters": [
+        {
+          "id": "orientasi",
+          "title": "Orientasi, Tujuan, dan Asesmen Awal"
+        },
+        {
+          "id": "konsep-1",
+          "title": "Peta Profesi dan Kompetensi TJKT"
+        },
+        {
+          "id": "konsep-2",
+          "title": "Portofolio, Personal Branding, dan Etika"
+        },
+        {
+          "id": "konsep-3",
+          "title": "Peluang Usaha dan Validasi Masalah"
+        },
+        {
+          "id": "konsep-4",
+          "title": "Proposisi Nilai dan Model Usaha Layanan"
+        },
+        {
+          "id": "konsep-5",
+          "title": "Biaya, Harga, Titik Impas, dan Arus Kas"
+        },
+        {
+          "id": "konsep-6",
+          "title": "Proposal, Operasi, dan Rencana Pengembangan"
+        },
+        {
+          "id": "kasus",
+          "title": "Studi Kasus dan Proyek Terapan"
+        },
+        {
+          "id": "laboratorium",
+          "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti"
+        },
+        {
+          "id": "game",
+          "title": "Game Misi Terapan"
+        },
+        {
+          "id": "refleksi",
+          "title": "Refleksi, Umpan Balik, dan Transfer"
+        },
+        {
+          "id": "evaluasi",
+          "title": "Rangkuman dan Evaluasi Akhir"
+        }
+      ],
+      "source": "modules/dasar-jaringan/profesi-kewirausahaan-tjkt/index.html",
+      "scripts": [
+        "../../../assets/js/local-instructor.js?v=1",
+        "../../../assets/js/foundation-check.js?v=ux2",
+        "../../../assets/js/module-shell.js?v=ux2",
+        "../../../assets/js/tjkt-certificate.js?v=3"
+      ],
+      "atpObjectives": [
+        "X-1.1",
+        "X-1.2",
+        "X-1.3"
+      ],
+      "review": "Pembahasan terkait TP tersedia; keterampilan nyata perlu bukti guru",
+      "depthMethod": "Ditinjau dari konsep, contoh beralasan, tugas/penerimaan, kondisi gagal dan transfer; jumlah halaman/istilah bukan bukti ketuntasan siswa."
+    },
+    {
+      "id": "k3-budaya-kerja",
+      "title": "K3LH dan Budaya Kerja TJKT",
+      "classLevel": "X",
+      "role": "ATP/pendukung Fase E",
+      "objectives": [
+        "Menjelaskan hubungan bahaya, risiko, dan pengendalian sebelum bekerja.",
+        "Menyusun JSA, checklist, dan laporan kondisi tidak aman berdasarkan bukti.",
+        "Memilih tindakan aman untuk listrik, perangkat elektronik, fiber, ergonomi, serta lingkungan.",
+        "Mengevaluasi risiko sisa dan merefleksikan budaya kerja tim.",
+        "Menafsirkan rambu, memilih APD sesuai bahaya dan menjelaskan pencegahan jatuh serta batas kewenangan."
+      ],
+      "objectiveSource": "Tujuan pada course sumber",
+      "chapters": [
+        {
+          "id": "orientasi",
+          "title": "Orientasi, Tujuan, dan Asesmen Awal"
+        },
+        {
+          "id": "konsep-1",
+          "title": "Bahaya, Risiko, dan Penilaian Awal"
+        },
+        {
+          "id": "konsep-2",
+          "title": "Hierarki Pengendalian dan JSA"
+        },
+        {
+          "id": "konsep-3",
+          "title": "Keselamatan Listrik dan ESD"
+        },
+        {
+          "id": "konsep-4",
+          "title": "Perkakas, Fiber Optik, dan Area Kerja"
+        },
+        {
+          "id": "konsep-5",
+          "title": "Ergonomi, 5R, dan Kerja Tim"
+        },
+        {
+          "id": "konsep-6",
+          "title": "Keadaan Darurat, Lingkungan, dan Izin Kerja"
+        },
+        {
+          "id": "kasus",
+          "title": "Studi Kasus: Audit Keselamatan Laboratorium"
+        },
+        {
+          "id": "laboratorium",
+          "title": "Inspeksi Area Kerja dan JSA"
+        },
+        {
+          "id": "game",
+          "title": "Misi Pengiriman — Game Petualangan"
+        },
+        {
+          "id": "refleksi",
+          "title": "Refleksi, Kolaborasi, dan Rencana Perbaikan"
+        },
+        {
+          "id": "evaluasi",
+          "title": "Evaluasi Akhir dan Transfer Pembelajaran"
+        }
+      ],
+      "source": "modules/dasar-jaringan/k3-budaya-kerja/index.html",
+      "scripts": [
+        "../../../assets/js/local-instructor.js?v=1",
+        "../../../assets/js/foundation-check.js?v=ux2",
+        "../../../assets/js/module-shell.js?v=ux2",
+        "../../../assets/js/tjkt-certificate.js?v=3"
+      ],
+      "atpObjectives": [
+        "X-2.1",
+        "X-2.2",
+        "X-2.3",
+        "X-2.4"
+      ],
+      "review": "Pembahasan terkait TP tersedia; keterampilan nyata perlu bukti guru",
+      "depthMethod": "Ditinjau dari konsep, contoh beralasan, tugas/penerimaan, kondisi gagal dan transfer; jumlah halaman/istilah bukan bukti ketuntasan siswa."
+    },
+    {
+      "id": "pengenalan-jaringan",
+      "title": "Pengenalan Jaringan Komputer",
+      "classLevel": "X",
+      "role": "ATP/pendukung Fase E",
+      "objectives": [],
+      "objectiveSource": "Tujuan ATP yang dipetakan; modul legacy memakai engine tersendiri",
+      "chapters": [
+        {
+          "id": "def",
+          "title": "Pengertian Jaringan"
+        },
+        {
+          "id": "benefit",
+          "title": "Manfaat Jaringan"
+        },
+        {
+          "id": "scope",
+          "title": "LAN, MAN, dan WAN"
+        },
+        {
+          "id": "internet",
+          "title": "Internet dan Intranet"
+        },
+        {
+          "id": "architecture",
+          "title": "Client-Server dan Peer-to-Peer"
+        },
+        {
+          "id": "components",
+          "title": "Komponen Jaringan"
+        },
+        {
+          "id": "lab",
+          "title": "Virtual Network Builder"
+        },
+        {
+          "id": "games",
+          "title": "Game 2D: Loket Paket Jaringan"
+        },
+        {
+          "id": "posttest",
+          "title": "Posttest dan Sertifikat"
+        }
+      ],
+      "source": "modules/dasar-jaringan/pengenalan-jaringan/index.html",
+      "scripts": [
+        "../../../assets/js/local-instructor.js?v=1",
+        "../../../assets/js/tjkt-certificate.js?v=3",
+        "../../../assets/js/intro-deep-content.js?v=2",
+        "../../../assets/js/network-arcade-game.js?v=21",
+        "../../../assets/js/intro-upgrade.js?v=ux2",
+        "../../../assets/js/intro-theme.js",
+        "../../../assets/js/network-builder-assessment.js",
+        "../../../assets/js/client-server-simulator.js",
+        "../../../assets/js/intro-sticky-navigation.js",
+        "../../../assets/js/module-shell.js?v=ux2"
+      ],
+      "atpObjectives": [],
+      "review": "Materi pendukung/pengayaan: melengkapi jalur belajar, bukan TP baru",
+      "depthMethod": "Ditinjau dari konsep, contoh beralasan, tugas/penerimaan, kondisi gagal dan transfer; jumlah halaman/istilah bukan bukti ketuntasan siswa."
+    },
+    {
+      "id": "perangkat-jaringan",
+      "title": "Perangkat Jaringan",
+      "classLevel": "X",
+      "role": "ATP/pendukung Fase E",
+      "objectives": [
+        "Layanan dan keamanan telekomunikasi",
+        "Prinsip optik dan WLAN"
+      ],
+      "objectiveSource": "Tujuan ATP yang dipetakan; modul legacy memakai engine tersendiri",
+      "chapters": [
+        {
+          "id": "peran",
+          "title": "Peran Perangkat Jaringan"
+        },
+        {
+          "id": "nic",
+          "title": "NIC dan Perangkat Akhir"
+        },
+        {
+          "id": "switching",
+          "title": "Hub, Bridge, dan Switch"
+        },
+        {
+          "id": "routing",
+          "title": "Router dan Default Gateway"
+        },
+        {
+          "id": "wifi-keamanan",
+          "title": "Access Point, Modem/ONT, dan Firewall"
+        },
+        {
+          "id": "selection",
+          "title": "Device Selection Lab"
+        },
+        {
+          "id": "builder",
+          "title": "Virtual Network Builder"
+        },
+        {
+          "id": "fault",
+          "title": "Game 2D: Bengkel Modul Perangkat"
+        },
+        {
+          "id": "posttest",
+          "title": "Posttest Perangkat Jaringan"
+        }
+      ],
+      "source": "modules/dasar-jaringan/perangkat-jaringan/index.html",
+      "scripts": [
+        "../../../assets/js/local-instructor.js?v=1",
+        "../../../assets/js/tjkt-certificate.js?v=3",
+        "../../../assets/js/perangkat-jaringan.js?v=ux2",
+        "../../../assets/js/module-shell.js?v=ux2"
+      ],
+      "atpObjectives": [
+        "X-3.3",
+        "X-3.5"
+      ],
+      "review": "Pembahasan terkait TP tersedia; keterampilan nyata perlu bukti guru",
+      "depthMethod": "Ditinjau dari konsep, contoh beralasan, tugas/penerimaan, kondisi gagal dan transfer; jumlah halaman/istilah bukan bukti ketuntasan siswa."
+    },
+    {
+      "id": "topologi-jaringan",
+      "title": "Topologi Jaringan",
+      "classLevel": "X",
+      "role": "ATP/pendukung Fase E",
+      "objectives": [],
+      "objectiveSource": "Tujuan ATP yang dipetakan; modul legacy memakai engine tersendiri",
+      "chapters": [
+        {
+          "id": "0",
+          "title": "Pengertian dan Fungsi Topologi"
+        },
+        {
+          "id": "1",
+          "title": "Topologi Bus dan Ring"
+        },
+        {
+          "id": "2",
+          "title": "Topologi Star dan Tree"
+        },
+        {
+          "id": "3",
+          "title": "Topologi Mesh dan Hybrid"
+        },
+        {
+          "id": "4",
+          "title": "Memilih Topologi untuk Sekolah"
+        },
+        {
+          "id": "5",
+          "title": "Topology Builder — Virtual Lab"
+        },
+        {
+          "id": "6",
+          "title": "Link Rescue: Simulasi Topologi 2D"
+        },
+        {
+          "id": "7",
+          "title": "Game 2D: Jaringan Tetap Terhubung"
+        },
+        {
+          "id": "8",
+          "title": "Posttest dan Sertifikat"
+        }
+      ],
+      "source": "modules/dasar-jaringan/topologi-jaringan/index.html",
+      "scripts": [
+        "../../../assets/js/local-instructor.js?v=1",
+        "../../../assets/js/tjkt-certificate.js?v=3",
+        "../../../assets/js/topology-games.js?v=6",
+        "../../../assets/js/topology-module.js?v=ux2",
+        "../../../assets/js/module-shell.js?v=ux2"
+      ],
+      "atpObjectives": [],
+      "review": "Materi pendukung/pengayaan: melengkapi jalur belajar, bukan TP baru",
+      "depthMethod": "Ditinjau dari konsep, contoh beralasan, tugas/penerimaan, kondisi gagal dan transfer; jumlah halaman/istilah bukan bukti ketuntasan siswa."
+    },
+    {
+      "id": "perencanaan-jaringan",
+      "title": "Analisis Kebutuhan dan Dokumentasi Jaringan",
+      "classLevel": "X",
+      "role": "ATP/pendukung Fase E",
+      "objectives": [
+        "Mengumpulkan kebutuhan pengguna dan bukti survei secara etis.",
+        "Menghitung kebutuhan port, kapasitas, dan pertumbuhan dengan asumsi eksplisit.",
+        "Menyusun rancangan fisik/logis, anggaran, serta kriteria penerimaan.",
+        "Membuat dokumentasi yang dapat dipakai orang lain dan merefleksikan kompromi desain."
+      ],
+      "objectiveSource": "Tujuan pada course sumber",
+      "chapters": [
+        {
+          "id": "orientasi",
+          "title": "Orientasi, Tujuan, dan Asesmen Awal"
+        },
+        {
+          "id": "konsep-1",
+          "title": "Pemangku Kepentingan dan Kebutuhan"
+        },
+        {
+          "id": "konsep-2",
+          "title": "Survei Lokasi dan Inventaris"
+        },
+        {
+          "id": "konsep-3",
+          "title": "Perhitungan Port, Kapasitas, dan Pertumbuhan"
+        },
+        {
+          "id": "konsep-4",
+          "title": "Rancangan Fisik, Logis, dan Pengalamatan"
+        },
+        {
+          "id": "konsep-5",
+          "title": "Anggaran, Pemilihan Alternatif, dan Risiko"
+        },
+        {
+          "id": "konsep-6",
+          "title": "Dokumentasi, Uji Penerimaan, dan Perubahan"
+        },
+        {
+          "id": "kasus",
+          "title": "Studi Kasus: Rancangan Laboratorium Sekolah"
+        },
+        {
+          "id": "laboratorium",
+          "title": "Panel Kapasitas Switch"
+        },
+        {
+          "id": "game",
+          "title": "Misi Pengiriman — Game Petualangan"
+        },
+        {
+          "id": "refleksi",
+          "title": "Refleksi dan Review Antar-Kelompok"
+        },
+        {
+          "id": "evaluasi",
+          "title": "Evaluasi Akhir dan Serah Terima Rancangan"
+        }
+      ],
+      "source": "modules/dasar-jaringan/perencanaan-jaringan/index.html",
+      "scripts": [
+        "../../../assets/js/local-instructor.js?v=1",
+        "../../../assets/js/foundation-check.js?v=ux2",
+        "../../../assets/js/module-shell.js?v=ux2",
+        "../../../assets/js/tjkt-certificate.js?v=3"
+      ],
+      "atpObjectives": [
+        "X-2.4"
+      ],
+      "review": "Pembahasan terkait TP tersedia; keterampilan nyata perlu bukti guru",
+      "depthMethod": "Ditinjau dari konsep, contoh beralasan, tugas/penerimaan, kondisi gagal dan transfer; jumlah halaman/istilah bukan bukti ketuntasan siswa."
+    },
+    {
+      "id": "media-transmisi",
+      "title": "Media Transmisi Jaringan",
+      "classLevel": "X",
+      "role": "ATP/pendukung Fase E",
+      "objectives": [
+        "Prinsip optik dan WLAN"
+      ],
+      "objectiveSource": "Tujuan ATP yang dipetakan; modul legacy memakai engine tersendiri",
+      "chapters": [
+        {
+          "id": "pengantar",
+          "title": "Mengenal Media Transmisi"
+        },
+        {
+          "id": "tembaga",
+          "title": "Kabel Tembaga"
+        },
+        {
+          "id": "fiber",
+          "title": "Fiber Optik"
+        },
+        {
+          "id": "nirkabel",
+          "title": "Media Nirkabel"
+        },
+        {
+          "id": "memilih",
+          "title": "Memilih dan Menguji Media"
+        },
+        {
+          "id": "simulator",
+          "title": "Simulator Jalur Transmisi"
+        },
+        {
+          "id": "virtual-tester",
+          "title": "Virtual Cable Tester"
+        },
+        {
+          "id": "posttest",
+          "title": "Posttest Media Transmisi"
+        }
+      ],
+      "source": "modules/dasar-jaringan/media-transmisi/index.html",
+      "scripts": [
+        "../../../assets/js/local-instructor.js?v=1",
+        "../../../assets/js/media-transmisi.js?v=ux2",
+        "../../../assets/js/module-shell.js?v=ux2",
+        "../../../assets/js/tjkt-certificate.js?v=3"
+      ],
+      "atpObjectives": [
+        "X-3.5"
+      ],
+      "review": "Pembahasan terkait TP tersedia; keterampilan nyata perlu bukti guru",
+      "depthMethod": "Ditinjau dari konsep, contoh beralasan, tugas/penerimaan, kondisi gagal dan transfer; jumlah halaman/istilah bukan bukti ketuntasan siswa."
+    },
+    {
+      "id": "osi-tcpip",
+      "title": "Model OSI dan TCP/IP",
+      "classLevel": "X",
+      "role": "ATP/pendukung Fase E",
+      "objectives": [
+        "TCP/IP dan networking service"
+      ],
+      "objectiveSource": "Tujuan ATP yang dipetakan; modul legacy memakai engine tersendiri",
+      "chapters": [
+        {
+          "id": "pengantar",
+          "title": "Mengenal Model Berlapis"
+        },
+        {
+          "id": "osi",
+          "title": "Tujuh Lapisan OSI"
+        },
+        {
+          "id": "tcpip",
+          "title": "Model TCP/IP"
+        },
+        {
+          "id": "enkapsulasi",
+          "title": "Enkapsulasi dan Dekapsulasi"
+        },
+        {
+          "id": "simulator",
+          "title": "Simulator Perjalanan Paket"
+        },
+        {
+          "id": "game",
+          "title": "Game 2D: Pabrik Enkapsulasi"
+        },
+        {
+          "id": "rangkuman",
+          "title": "Rangkuman"
+        },
+        {
+          "id": "posttest",
+          "title": "Posttest OSI dan TCP/IP"
+        }
+      ],
+      "source": "modules/dasar-jaringan/osi-tcpip/index.html",
+      "scripts": [
+        "../../../assets/js/local-instructor.js?v=1",
+        "../../../assets/js/osi-tcpip.js?v=ux2",
+        "../../../assets/js/module-shell.js?v=ux2",
+        "../../../assets/js/tjkt-certificate.js?v=3"
+      ],
+      "atpObjectives": [
+        "X-3.2"
+      ],
+      "review": "Pembahasan terkait TP tersedia; keterampilan nyata perlu bukti guru",
+      "depthMethod": "Ditinjau dari konsep, contoh beralasan, tugas/penerimaan, kondisi gagal dan transfer; jumlah halaman/istilah bukan bukti ketuntasan siswa."
+    },
+    {
+      "id": "ipv4-subnetting",
+      "title": "IP Address & Subnetting",
+      "classLevel": "X",
+      "role": "ATP/pendukung Fase E",
+      "objectives": [
+        "Perkembangan teknologi komunikasi",
+        "Prinsip dasar IPv4/IPv6"
+      ],
+      "objectiveSource": "Tujuan ATP yang dipetakan; modul legacy memakai engine tersendiri",
+      "chapters": [
+        {
+          "id": "pengenalan",
+          "title": "Pengenalan IPv4"
+        },
+        {
+          "id": "struktur",
+          "title": "Struktur Alamat IPv4"
+        },
+        {
+          "id": "biner",
+          "title": "Bilangan Biner"
+        },
+        {
+          "id": "mask",
+          "title": "Subnet Mask & CIDR"
+        },
+        {
+          "id": "subnet",
+          "title": "Dasar Subnetting"
+        },
+        {
+          "id": "vlsm",
+          "title": "Praktikum VLSM"
+        },
+        {
+          "id": "network-lab",
+          "title": "Virtual Network Lab"
+        },
+        {
+          "id": "games",
+          "title": "Game 2D: Lahan Subnet"
+        },
+        {
+          "id": "posttest",
+          "title": "Posttest & Rekap"
+        }
+      ],
+      "source": "modules/dasar-jaringan/ipv4-subnetting/index.html",
+      "scripts": [
+        "../../../assets/js/local-instructor.js?v=1",
+        "../../../assets/js/tjkt-certificate.js?v=3",
+        "../../../assets/js/module.js?v=ux2",
+        "../../../assets/js/module-shell.js?v=ux2"
+      ],
+      "atpObjectives": [
+        "X-1.5",
+        "X-3.1"
+      ],
+      "review": "Pembahasan terkait TP tersedia; keterampilan nyata perlu bukti guru",
+      "depthMethod": "Ditinjau dari konsep, contoh beralasan, tugas/penerimaan, kondisi gagal dan transfer; jumlah halaman/istilah bukan bukti ketuntasan siswa."
+    },
+    {
+      "id": "ipv6-dasar",
+      "title": "Pengalamatan IPv6 Dasar",
+      "classLevel": "X",
+      "role": "ATP/pendukung Fase E",
+      "objectives": [
+        "Membaca, memperluas, dan menyingkat alamat IPv6 secara benar.",
+        "Membedakan lingkup alamat dan merencanakan prefix tanpa memakai asumsi broadcast IPv4.",
+        "Menjelaskan Neighbor Discovery, RA, SLAAC, DHCPv6, dan hubungan DNS/routing.",
+        "Mendiagnosis skenario dual stack serta menjelaskan batas bukti hasil uji."
+      ],
+      "objectiveSource": "Tujuan pada course sumber",
+      "chapters": [
+        {
+          "id": "orientasi",
+          "title": "Orientasi, Tujuan, dan Asesmen Awal"
+        },
+        {
+          "id": "konsep-1",
+          "title": "Struktur 128 Bit dan Penulisan Kanonis"
+        },
+        {
+          "id": "konsep-2",
+          "title": "Jenis, Lingkup, dan Alamat Khusus"
+        },
+        {
+          "id": "konsep-3",
+          "title": "Prefix, Subnet, dan Rencana Alamat"
+        },
+        {
+          "id": "konsep-4",
+          "title": "Neighbor Discovery dan Router Advertisement"
+        },
+        {
+          "id": "konsep-5",
+          "title": "SLAAC, DHCPv6, DAD, dan Masa Berlaku"
+        },
+        {
+          "id": "konsep-6",
+          "title": "Routing, DNS, Dual Stack, dan Keamanan"
+        },
+        {
+          "id": "kasus",
+          "title": "Studi Kasus: Jaringan Sekolah Dual Stack"
+        },
+        {
+          "id": "laboratorium",
+          "title": "Bengkel Alamat dan Prefix IPv6"
+        },
+        {
+          "id": "game",
+          "title": "Misi Pengiriman — Game Petualangan"
+        },
+        {
+          "id": "refleksi",
+          "title": "Refleksi, Bukti, dan Perbaikan Strategi"
+        },
+        {
+          "id": "evaluasi",
+          "title": "Evaluasi Akhir dan Transfer Kasus"
+        }
+      ],
+      "source": "modules/dasar-jaringan/ipv6-dasar/index.html",
+      "scripts": [
+        "../../../assets/js/local-instructor.js?v=1",
+        "../../../assets/js/foundation-check.js?v=ux2",
+        "../../../assets/js/module-shell.js?v=ux2",
+        "../../../assets/js/tjkt-certificate.js?v=3"
+      ],
+      "atpObjectives": [
+        "X-1.5",
+        "X-3.1"
+      ],
+      "review": "Pembahasan terkait TP tersedia; keterampilan nyata perlu bukti guru",
+      "depthMethod": "Ditinjau dari konsep, contoh beralasan, tugas/penerimaan, kondisi gagal dan transfer; jumlah halaman/istilah bukan bukti ketuntasan siswa."
+    },
+    {
+      "id": "protokol-layanan",
+      "title": "Protokol dan Layanan Jaringan Dasar",
+      "classLevel": "X",
+      "role": "ATP/pendukung Fase E",
+      "objectives": [
+        "TCP/IP dan networking service",
+        "Layanan dan keamanan telekomunikasi"
+      ],
+      "objectiveSource": "Tujuan ATP yang dipetakan; modul legacy memakai engine tersendiri",
+      "chapters": [
+        {
+          "id": "pengantar",
+          "title": "Mengenal Protokol dan Layanan"
+        },
+        {
+          "id": "dhcp",
+          "title": "DHCP dan Konfigurasi Otomatis"
+        },
+        {
+          "id": "dns",
+          "title": "DNS dan Record"
+        },
+        {
+          "id": "web",
+          "title": "HTTP, HTTPS, dan TLS"
+        },
+        {
+          "id": "ports",
+          "title": "Port dan Layanan Umum"
+        },
+        {
+          "id": "simulator",
+          "title": "Simulasi Perjalanan Layanan"
+        },
+        {
+          "id": "game",
+          "title": "Game 2D: Antrean Layanan Digital"
+        },
+        {
+          "id": "posttest",
+          "title": "Posttest Protokol dan Layanan"
+        }
+      ],
+      "source": "modules/dasar-jaringan/protokol-layanan/index.html",
+      "scripts": [
+        "../../../assets/js/local-instructor.js?v=1",
+        "../../../assets/js/protokol-layanan.js?v=ux2",
+        "../../../assets/js/module-shell.js?v=ux2",
+        "../../../assets/js/tjkt-certificate.js?v=3"
+      ],
+      "atpObjectives": [
+        "X-3.2",
+        "X-3.3"
+      ],
+      "review": "Pembahasan terkait TP tersedia; keterampilan nyata perlu bukti guru",
+      "depthMethod": "Ditinjau dari konsep, contoh beralasan, tugas/penerimaan, kondisi gagal dan transfer; jumlah halaman/istilah bukan bukti ketuntasan siswa."
+    },
+    {
+      "id": "sistem-telekomunikasi-dasar",
+      "title": "Dasar Sistem Telekomunikasi",
+      "classLevel": "X",
+      "role": "ATP/pendukung Fase E",
+      "objectives": [
+        "Memodelkan sumber, pengkodean, pemancar, kanal, penerima, dan tujuan.",
+        "Membedakan frekuensi, bandwidth, laju bit, throughput, latensi, dan gangguan.",
+        "Membandingkan seluler, gelombang mikro, satelit/VSAT IP, optik, dan WLAN.",
+        "Menghitung batas bawah propagasi dan menyusun rancangan komunikasi dengan alasan serta batas model.",
+        "Menyusun pengujian akses WLAN yang diizinkan/ditolak serta membandingkan kondisi model microwave, VSAT dan optik.",
+        "Membuktikan penerapan rinci ATP melalui kondisi awal, kegagalan, pemulihan dan laporan yang dapat ditinjau."
+      ],
+      "objectiveSource": "Tujuan pada course sumber",
+      "chapters": [
+        {
+          "id": "orientasi",
+          "title": "Orientasi, Tujuan, dan Asesmen Awal"
+        },
+        {
+          "id": "konsep-1",
+          "title": "Model Sistem dan Representasi Sinyal"
+        },
+        {
+          "id": "konsep-2",
+          "title": "Frekuensi, Kapasitas, dan Mutu Layanan"
+        },
+        {
+          "id": "konsep-3",
+          "title": "Jaringan Seluler dan WLAN"
+        },
+        {
+          "id": "konsep-4",
+          "title": "Radio Gelombang Mikro dan Link Terestrial"
+        },
+        {
+          "id": "konsep-5",
+          "title": "Satelit, VSAT IP, dan Propagasi"
+        },
+        {
+          "id": "konsep-6",
+          "title": "Jaringan Optik, Keamanan, dan Pemilihan Sistem"
+        },
+        {
+          "id": "kasus",
+          "title": "Studi Kasus dan Proyek Terapan"
+        },
+        {
+          "id": "laboratorium",
+          "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti"
+        },
+        {
+          "id": "game",
+          "title": "Game Misi Terapan"
+        },
+        {
+          "id": "refleksi",
+          "title": "Refleksi, Umpan Balik, dan Transfer"
+        },
+        {
+          "id": "evaluasi",
+          "title": "Rangkuman dan Evaluasi Akhir"
+        }
+      ],
+      "source": "modules/dasar-jaringan/sistem-telekomunikasi-dasar/index.html",
+      "scripts": [
+        "../../../assets/js/local-instructor.js?v=1",
+        "../../../assets/js/foundation-check.js?v=ux2",
+        "../../../assets/js/module-shell.js?v=ux2",
+        "../../../assets/js/tjkt-certificate.js?v=3"
+      ],
+      "atpObjectives": [
+        "X-1.5",
+        "X-3.3",
+        "X-3.4",
+        "X-3.5"
+      ],
+      "review": "Pembahasan terkait TP tersedia; keterampilan nyata perlu bukti guru",
+      "depthMethod": "Ditinjau dari konsep, contoh beralasan, tugas/penerimaan, kondisi gagal dan transfer; jumlah halaman/istilah bukan bukti ketuntasan siswa."
+    },
+    {
+      "id": "troubleshooting",
+      "title": "Troubleshooting Jaringan Dasar",
+      "classLevel": "X",
+      "role": "ATP/pendukung Fase E",
+      "objectives": [],
+      "objectiveSource": "Tujuan ATP yang dipetakan; modul legacy memakai engine tersendiri",
+      "chapters": [
+        {
+          "id": "pengantar",
+          "title": "Memulai Troubleshooting"
+        },
+        {
+          "id": "metode",
+          "title": "Mengisolasi Lingkup Masalah"
+        },
+        {
+          "id": "fisik",
+          "title": "Memeriksa Link Fisik dan Tautan"
+        },
+        {
+          "id": "ip",
+          "title": "Memeriksa Konfigurasi IP"
+        },
+        {
+          "id": "layanan",
+          "title": "Menguji Gateway, Jalur, dan DNS"
+        },
+        {
+          "id": "alat",
+          "title": "Memilih Alat Diagnostik"
+        },
+        {
+          "id": "simulator",
+          "title": "Network Clinic: Lab Diagnosa"
+        },
+        {
+          "id": "game",
+          "title": "Game 2D: Teknisi dalam Batas Waktu"
+        },
+        {
+          "id": "posttest",
+          "title": "Posttest Troubleshooting Jaringan"
+        }
+      ],
+      "source": "modules/dasar-jaringan/troubleshooting/index.html",
+      "scripts": [
+        "../../../assets/js/local-instructor.js?v=1",
+        "../../../assets/js/troubleshooting.js?v=ux2",
+        "../../../assets/js/module-shell.js?v=ux2",
+        "../../../assets/js/tjkt-certificate.js?v=3"
+      ],
+      "atpObjectives": [],
+      "review": "Materi pendukung/pengayaan: melengkapi jalur belajar, bukan TP baru",
+      "depthMethod": "Ditinjau dari konsep, contoh beralasan, tugas/penerimaan, kondisi gagal dan transfer; jumlah halaman/istilah bukan bukti ketuntasan siswa."
+    },
+    {
+      "id": "alat-ukur-tjkt",
+      "title": "Penggunaan dan Pemeliharaan Alat Ukur TJKT",
+      "classLevel": "X",
+      "role": "ATP/pendukung Fase E",
+      "objectives": [
+        "Memilih multimeter, cable tester, certifier, OPM/OLS, dan OTDR sesuai pertanyaan ukur serta batas kewenangan.",
+        "Membedakan besaran, satuan, rentang, resolusi, akurasi, pengulangan, dan kalibrasi.",
+        "Menghitung redaman optik serta margin menggunakan daya dBm dan rugi dB dengan benar.",
+        "Menyusun prosedur praktik berisiko rendah, catatan hasil, dan rencana perawatan alat."
+      ],
+      "objectiveSource": "Tujuan pada course sumber",
+      "chapters": [
+        {
+          "id": "orientasi",
+          "title": "Orientasi, Tujuan, dan Asesmen Awal"
+        },
+        {
+          "id": "konsep-1",
+          "title": "Tujuan Ukur, Besaran, dan Pemilihan Alat"
+        },
+        {
+          "id": "konsep-2",
+          "title": "Keselamatan dan Pemeriksaan Sebelum Ukur"
+        },
+        {
+          "id": "konsep-3",
+          "title": "Rentang, Resolusi, Akurasi, dan Ketidakpastian"
+        },
+        {
+          "id": "konsep-4",
+          "title": "Pengujian Kabel Tembaga dan Dokumentasi Link"
+        },
+        {
+          "id": "konsep-5",
+          "title": "Daya Optik, Rugi Sisip, dan Margin"
+        },
+        {
+          "id": "konsep-6",
+          "title": "Kalibrasi, Perawatan, dan Laporan Ukur"
+        },
+        {
+          "id": "kasus",
+          "title": "Studi Kasus dan Proyek Terapan"
+        },
+        {
+          "id": "laboratorium",
+          "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti"
+        },
+        {
+          "id": "game",
+          "title": "Game Misi Terapan"
+        },
+        {
+          "id": "refleksi",
+          "title": "Refleksi, Umpan Balik, dan Transfer"
+        },
+        {
+          "id": "evaluasi",
+          "title": "Rangkuman dan Evaluasi Akhir"
+        }
+      ],
+      "source": "modules/dasar-jaringan/alat-ukur-tjkt/index.html",
+      "scripts": [
+        "../../../assets/js/local-instructor.js?v=1",
+        "../../../assets/js/foundation-check.js?v=ux2",
+        "../../../assets/js/module-shell.js?v=ux2",
+        "../../../assets/js/tjkt-certificate.js?v=3"
+      ],
+      "atpObjectives": [
+        "X-2.4",
+        "X-3.5",
+        "X-4.1",
+        "X-4.2",
+        "X-4.3",
+        "X-4.4"
+      ],
+      "review": "Pembahasan terkait TP tersedia; keterampilan nyata perlu bukti guru",
+      "depthMethod": "Ditinjau dari konsep, contoh beralasan, tugas/penerimaan, kondisi gagal dan transfer; jumlah halaman/istilah bukan bukti ketuntasan siswa."
+    },
+    {
+      "id": "kebutuhan-teknis-jaringan",
+      "title": "Analisis Kebutuhan Teknis dan Peralatan Jaringan",
+      "classLevel": "XI",
+      "role": "inti",
+      "objectives": [
+        "Membedakan kebutuhan bisnis, fungsi layanan, kualitas layanan, kendala, dan asumsi.",
+        "Menyusun inventaris serta matriks kebutuhan dengan sumber bukti, prioritas, dan kriteria penerimaan.",
+        "Menghitung kebutuhan port, daya PoE, dan estimasi trafik menggunakan asumsi yang eksplisit.",
+        "Membandingkan spesifikasi peralatan dan menyusun rekomendasi yang menyatakan risiko serta data belum terverifikasi."
+      ],
+      "objectiveSource": "Tujuan pada course sumber",
+      "chapters": [
+        {
+          "id": "orientasi",
+          "title": "Orientasi, Tujuan, dan Asesmen Awal"
+        },
+        {
+          "id": "konsep-1",
+          "title": "Dari Kegiatan Pengguna ke Kebutuhan Teknis"
+        },
+        {
+          "id": "konsep-2",
+          "title": "Survei, Inventaris, dan Kualitas Bukti"
+        },
+        {
+          "id": "konsep-3",
+          "title": "Pengguna Bersamaan dan Profil Trafik"
+        },
+        {
+          "id": "konsep-4",
+          "title": "Port, Daya, dan Kompatibilitas Peralatan"
+        },
+        {
+          "id": "konsep-5",
+          "title": "Matriks Spesifikasi dan Perbandingan Alternatif"
+        },
+        {
+          "id": "konsep-6",
+          "title": "Keterlacakan, Validasi, dan Penyerahan Analisis"
+        },
+        {
+          "id": "kasus",
+          "title": "Studi Kasus dan Proyek Terapan"
+        },
+        {
+          "id": "laboratorium",
+          "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti"
+        },
+        {
+          "id": "game",
+          "title": "Game Gudang Peralatan"
+        },
+        {
+          "id": "refleksi",
+          "title": "Refleksi, Umpan Balik, dan Transfer"
+        },
+        {
+          "id": "evaluasi",
+          "title": "Rangkuman dan Evaluasi Akhir"
+        }
+      ],
+      "source": "modules/perencanaan-jaringan/kebutuhan-teknis-jaringan/index.html",
+      "scripts": [
+        "../../../assets/js/local-instructor.js?v=1",
+        "../../../assets/js/foundation-check.js?v=ux2",
+        "../../../assets/js/module-shell.js?v=ux2",
+        "../../../assets/js/tjkt-certificate.js?v=3"
+      ],
+      "atpObjectives": [
+        "XI-P1"
+      ],
+      "review": "Pembahasan terkait TP tersedia; keterampilan nyata perlu bukti guru",
+      "depthMethod": "Ditinjau dari konsep, contoh beralasan, tugas/penerimaan, kondisi gagal dan transfer; jumlah halaman/istilah bukan bukti ketuntasan siswa."
+    },
+    {
+      "id": "desain-topologi-arsitektur",
+      "title": "Desain Topologi, Arsitektur, dan Layout Jaringan",
+      "classLevel": "XI",
+      "role": "inti",
+      "objectives": [
+        "Membedakan topologi fisik, topologi logis, dan arsitektur berlapis berdasarkan fungsi.",
+        "Menyusun layout berskala dengan satuan, legenda, koordinat, serta jalur instalasi.",
+        "Membandingkan jarak lurus, lintasan peta, dan panjang kabel termasuk asumsi cadangan serta vertikal.",
+        "Mengevaluasi alternatif desain, ketergantungan jalur, dan dokumen penyerahan untuk pengalamatan berikutnya.",
+        "Membuktikan penerapan rinci ATP melalui kondisi awal, kegagalan, pemulihan dan laporan yang dapat ditinjau."
+      ],
+      "objectiveSource": "Tujuan pada course sumber",
+      "chapters": [
+        {
+          "id": "orientasi",
+          "title": "Orientasi, Tujuan, dan Asesmen Awal"
+        },
+        {
+          "id": "konsep-1",
+          "title": "Topologi Fisik, Logis, dan Keterlacakan Kebutuhan"
+        },
+        {
+          "id": "konsep-2",
+          "title": "Arsitektur Akses, Agregasi, dan Titik Kegagalan"
+        },
+        {
+          "id": "konsep-3",
+          "title": "Survei Lokasi, Peta Jalur Fiber, dan Batas Pengukuran"
+        },
+        {
+          "id": "konsep-4",
+          "title": "Skala, Satuan, dan Layout dengan Visio atau draw.io"
+        },
+        {
+          "id": "konsep-5",
+          "title": "Penempatan Perangkat dan Estimasi Jalur Kabel"
+        },
+        {
+          "id": "konsep-6",
+          "title": "Dokumentasi Desain, Review, dan Penyerahan"
+        },
+        {
+          "id": "kasus",
+          "title": "Studi Kasus dan Proyek Terapan"
+        },
+        {
+          "id": "laboratorium",
+          "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti"
+        },
+        {
+          "id": "game",
+          "title": "Game Cable Route Builder"
+        },
+        {
+          "id": "refleksi",
+          "title": "Refleksi, Umpan Balik, dan Transfer"
+        },
+        {
+          "id": "evaluasi",
+          "title": "Rangkuman dan Evaluasi Akhir"
+        }
+      ],
+      "source": "modules/perencanaan-jaringan/desain-topologi-arsitektur/index.html",
+      "scripts": [
+        "../../../assets/js/local-instructor.js?v=1",
+        "../../../assets/js/foundation-check.js?v=ux2",
+        "../../../assets/js/module-shell.js?v=ux2",
+        "../../../assets/js/tjkt-certificate.js?v=3"
+      ],
+      "atpObjectives": [
+        "XI-P2"
+      ],
+      "review": "Pembahasan terkait TP tersedia; keterampilan nyata perlu bukti guru",
+      "depthMethod": "Ditinjau dari konsep, contoh beralasan, tugas/penerimaan, kondisi gagal dan transfer; jumlah halaman/istilah bukan bukti ketuntasan siswa."
+    },
+    {
+      "id": "perencanaan-pengalamatan-lanjut",
+      "title": "Perancangan Pengalamatan Jaringan: Subnetting, CIDR, dan VLSM",
+      "classLevel": "XI",
+      "role": "inti",
+      "objectives": [
+        "Mengubah inventaris dan pertumbuhan menjadi kebutuhan alamat endpoint, gateway, dan layanan.",
+        "Menghitung batas CIDR, ukuran subnet, host usable, serta alokasi VLSM yang sejajar.",
+        "Memvalidasi kapasitas, cakupan induk, overlap, gateway, dan pemisahan alamat statis/dinamis.",
+        "Menyusun pasangan prefix IPv4 dan IPv6 per segmen, daftar asumsi, serta rencana uji dan perubahan."
+      ],
+      "objectiveSource": "Tujuan pada course sumber",
+      "chapters": [
+        {
+          "id": "orientasi",
+          "title": "Orientasi, Tujuan, dan Asesmen Awal"
+        },
+        {
+          "id": "konsep-1",
+          "title": "Menurunkan Kebutuhan Alamat dari Desain"
+        },
+        {
+          "id": "konsep-2",
+          "title": "CIDR, Batas Network, dan Kapasitas Subnet"
+        },
+        {
+          "id": "konsep-3",
+          "title": "Menyusun VLSM dari Blok Besar ke Kecil"
+        },
+        {
+          "id": "konsep-4",
+          "title": "Validasi Overlap, Gateway, dan Kebijakan Alamat"
+        },
+        {
+          "id": "konsep-5",
+          "title": "Rencana IPv6 dan Dual Stack per Segmen"
+        },
+        {
+          "id": "konsep-6",
+          "title": "Agregasi, Dokumentasi, dan Rencana Perubahan"
+        },
+        {
+          "id": "kasus",
+          "title": "Studi Kasus dan Proyek Terapan"
+        },
+        {
+          "id": "laboratorium",
+          "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti"
+        },
+        {
+          "id": "game",
+          "title": "Game Subnet Block Builder"
+        },
+        {
+          "id": "refleksi",
+          "title": "Refleksi, Umpan Balik, dan Transfer"
+        },
+        {
+          "id": "evaluasi",
+          "title": "Rangkuman dan Evaluasi Akhir"
+        }
+      ],
+      "source": "modules/perencanaan-jaringan/perencanaan-pengalamatan-lanjut/index.html",
+      "scripts": [
+        "../../../assets/js/local-instructor.js?v=1",
+        "../../../assets/js/foundation-check.js?v=ux2",
+        "../../../assets/js/module-shell.js?v=ux2",
+        "../../../assets/js/tjkt-certificate.js?v=3"
+      ],
+      "atpObjectives": [
+        "XI-P3"
+      ],
+      "review": "Pembahasan terkait TP tersedia; keterampilan nyata perlu bukti guru",
+      "depthMethod": "Ditinjau dari konsep, contoh beralasan, tugas/penerimaan, kondisi gagal dan transfer; jumlah halaman/istilah bukan bukti ketuntasan siswa."
+    },
+    {
+      "id": "instalasi-kabel",
+      "title": "Instalasi dan Pengujian Jaringan Kabel",
+      "classLevel": "XI",
+      "role": "inti",
+      "objectives": [
+        "Menyiapkan rute, komponen, label, izin, dan pengendalian risiko berdasarkan desain.",
+        "Membedakan konstruksi link, skema T568A/B, pasangan konduktor, dan kesalahan terminasi.",
+        "Menganalisis wiremap serta panjang model tanpa menyamakannya dengan sertifikasi kabel.",
+        "Menyusun laporan link, tindakan perbaikan, pengujian ulang, dan bukti penerimaan yang dapat ditelusuri."
+      ],
+      "objectiveSource": "Tujuan pada course sumber",
+      "chapters": [
+        {
+          "id": "orientasi",
+          "title": "Orientasi, Tujuan, dan Asesmen Awal"
+        },
+        {
+          "id": "konsep-1",
+          "title": "Persiapan, Izin, dan Rencana Kerja Instalasi"
+        },
+        {
+          "id": "konsep-2",
+          "title": "Struktur Permanent Link, Channel, dan Komponen"
+        },
+        {
+          "id": "konsep-3",
+          "title": "Terminasi T568A/B dan Integritas Pasangan"
+        },
+        {
+          "id": "konsep-4",
+          "title": "Penataan Jalur, Proses Terminasi, dan Pelabelan"
+        },
+        {
+          "id": "konsep-5",
+          "title": "Wiremap, Gangguan, dan Batas Kemampuan Tester"
+        },
+        {
+          "id": "konsep-6",
+          "title": "Perbaikan, Pengujian Ulang, dan Dokumentasi Penerimaan"
+        },
+        {
+          "id": "kasus",
+          "title": "Studi Kasus dan Proyek Terapan"
+        },
+        {
+          "id": "laboratorium",
+          "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti"
+        },
+        {
+          "id": "game",
+          "title": "Game Patch Cord Assembly"
+        },
+        {
+          "id": "refleksi",
+          "title": "Refleksi, Umpan Balik, dan Transfer"
+        },
+        {
+          "id": "evaluasi",
+          "title": "Rangkuman dan Evaluasi Akhir"
+        }
+      ],
+      "source": "modules/jaringan-kabel/instalasi-kabel/index.html",
+      "scripts": [
+        "../../../assets/js/local-instructor.js?v=1",
+        "../../../assets/js/foundation-check.js?v=ux2",
+        "../../../assets/js/module-shell.js?v=ux2",
+        "../../../assets/js/tjkt-certificate.js?v=3"
+      ],
+      "atpObjectives": [
+        "XI-M1"
+      ],
+      "review": "Pembahasan terkait TP tersedia; keterampilan nyata perlu bukti guru",
+      "depthMethod": "Ditinjau dari konsep, contoh beralasan, tugas/penerimaan, kondisi gagal dan transfer; jumlah halaman/istilah bukan bukti ketuntasan siswa."
+    },
+    {
+      "id": "wireless-lan",
+      "title": "Wireless LAN",
+      "classLevel": "XI",
+      "role": "inti",
+      "objectives": [
+        "Membedakan fungsi AP, SSID, radio, uplink, VLAN, dan layanan IP.",
+        "Menganalisis cakupan sampel, RSSI, SNR, airtime, dan kapasitas dengan batas model yang jelas.",
+        "Menyusun rencana kanal, daya, penempatan, serta konfigurasi keamanan sesuai perangkat dan wilayah.",
+        "Membuat prosedur uji asosiasi, IP, layanan, beban, serta mobilitas dan mendokumentasikan perubahan.",
+        "Membuktikan penerapan rinci ATP melalui kondisi awal, kegagalan, pemulihan dan laporan yang dapat ditinjau."
+      ],
+      "objectiveSource": "Tujuan pada course sumber",
+      "chapters": [
+        {
+          "id": "orientasi",
+          "title": "Orientasi, Tujuan, dan Asesmen Awal"
+        },
+        {
+          "id": "konsep-1",
+          "title": "Arsitektur WLAN dan Rantai Layanan"
+        },
+        {
+          "id": "konsep-2",
+          "title": "Survei, RSSI, SNR, dan Kebutuhan Kapasitas"
+        },
+        {
+          "id": "konsep-3",
+          "title": "Pita, Kanal, Lebar Kanal, dan Airtime"
+        },
+        {
+          "id": "konsep-4",
+          "title": "Penempatan, Daya, dan Konfigurasi AP"
+        },
+        {
+          "id": "konsep-5",
+          "title": "Keamanan, Segmentasi, dan Mobilitas"
+        },
+        {
+          "id": "konsep-6",
+          "title": "Pengujian, Diagnosis, dan Dokumentasi WLAN"
+        },
+        {
+          "id": "kasus",
+          "title": "Studi Kasus dan Proyek Terapan"
+        },
+        {
+          "id": "laboratorium",
+          "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti"
+        },
+        {
+          "id": "game",
+          "title": "Game Channel Planner"
+        },
+        {
+          "id": "refleksi",
+          "title": "Refleksi, Umpan Balik, dan Transfer"
+        },
+        {
+          "id": "evaluasi",
+          "title": "Rangkuman dan Evaluasi Akhir"
+        }
+      ],
+      "source": "modules/jaringan-nirkabel/wireless-lan/index.html",
+      "scripts": [
+        "../../../assets/js/local-instructor.js?v=1",
+        "../../../assets/js/foundation-check.js?v=ux2",
+        "../../../assets/js/module-shell.js?v=ux2",
+        "../../../assets/js/tjkt-certificate.js?v=3"
+      ],
+      "atpObjectives": [
+        "XI-M1"
+      ],
+      "review": "Pembahasan terkait TP tersedia; keterampilan nyata perlu bukti guru",
+      "depthMethod": "Ditinjau dari konsep, contoh beralasan, tugas/penerimaan, kondisi gagal dan transfer; jumlah halaman/istilah bukan bukti ketuntasan siswa."
+    },
+    {
+      "id": "pemeliharaan-kabel-nirkabel",
+      "title": "Perawatan dan Perbaikan Jaringan Kabel dan Nirkabel",
+      "classLevel": "XI",
+      "role": "inti",
+      "objectives": [
+        "Menyusun baseline, jadwal pemeliharaan, dan prioritas berdasarkan dampak layanan.",
+        "Mengisolasi gangguan fisik, radio, pengalamatan, serta layanan menggunakan bukti pembanding.",
+        "Melaksanakan perubahan berizin dengan cadangan, batas penghentian, dan rencana rollback.",
+        "Memverifikasi pemulihan, mencatat akar masalah, dan mengusulkan pencegahan berulang."
+      ],
+      "objectiveSource": "Tujuan pada course sumber",
+      "chapters": [
+        {
+          "id": "orientasi",
+          "title": "Orientasi, Tujuan, dan Asesmen Awal"
+        },
+        {
+          "id": "konsep-1",
+          "title": "Baseline dan Pemeliharaan Preventif"
+        },
+        {
+          "id": "konsep-2",
+          "title": "Triage, Ruang Lingkup, dan Hipotesis"
+        },
+        {
+          "id": "konsep-3",
+          "title": "Isolasi Gangguan Jaringan Kabel"
+        },
+        {
+          "id": "konsep-4",
+          "title": "Isolasi Gangguan WLAN dan Layanan IP"
+        },
+        {
+          "id": "konsep-5",
+          "title": "Perubahan Terkontrol dan Rollback"
+        },
+        {
+          "id": "konsep-6",
+          "title": "Verifikasi, Penutupan Tiket, dan Pencegahan"
+        },
+        {
+          "id": "kasus",
+          "title": "Studi Kasus dan Proyek Terapan"
+        },
+        {
+          "id": "laboratorium",
+          "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti"
+        },
+        {
+          "id": "game",
+          "title": "Game Bengkel Jalur Data"
+        },
+        {
+          "id": "refleksi",
+          "title": "Refleksi, Umpan Balik, dan Transfer"
+        },
+        {
+          "id": "evaluasi",
+          "title": "Rangkuman dan Evaluasi Akhir"
+        }
+      ],
+      "source": "modules/pemeliharaan-jaringan/pemeliharaan-kabel-nirkabel/index.html",
+      "scripts": [
+        "../../../assets/js/local-instructor.js?v=1",
+        "../../../assets/js/foundation-check.js?v=ux2",
+        "../../../assets/js/module-shell.js?v=ux2",
+        "../../../assets/js/tjkt-certificate.js?v=3"
+      ],
+      "atpObjectives": [
+        "XI-M2"
+      ],
+      "review": "Pembahasan terkait TP tersedia; keterampilan nyata perlu bukti guru",
+      "depthMethod": "Ditinjau dari konsep, contoh beralasan, tugas/penerimaan, kondisi gagal dan transfer; jumlah halaman/istilah bukan bukti ketuntasan siswa."
+    },
+    {
+      "id": "voip",
+      "title": "Layanan Komunikasi VoIP",
+      "classLevel": "XI",
+      "role": "inti",
+      "objectives": [
+        "Membedakan endpoint, registrar, proxy/PBX, SIP, SDP, RTP, dan RTCP.",
+        "Menyusun rencana ekstensi, codec, pengalamatan, dan kapasitas panggilan bersamaan.",
+        "Menganalisis loss, keterlambatan, variasi kedatangan, dan kompromi jitter buffer.",
+        "Membuktikan registrasi, pembentukan sesi, media dua arah, dan terminasi secara berizin."
+      ],
+      "objectiveSource": "Tujuan pada course sumber",
+      "chapters": [
+        {
+          "id": "orientasi",
+          "title": "Orientasi, Tujuan, dan Asesmen Awal"
+        },
+        {
+          "id": "konsep-1",
+          "title": "Arsitektur Telepon IP dan Rencana Ekstensi"
+        },
+        {
+          "id": "konsep-2",
+          "title": "Registrasi dan Pembentukan Sesi SIP"
+        },
+        {
+          "id": "konsep-3",
+          "title": "SDP, Codec, dan Jalur Media RTP"
+        },
+        {
+          "id": "konsep-4",
+          "title": "Packetization dan Perencanaan Bandwidth"
+        },
+        {
+          "id": "konsep-5",
+          "title": "Kualitas Suara dan Jitter Buffer"
+        },
+        {
+          "id": "konsep-6",
+          "title": "Konfigurasi Aman, Pengujian, dan Diagnosis"
+        },
+        {
+          "id": "kasus",
+          "title": "Studi Kasus dan Proyek Terapan"
+        },
+        {
+          "id": "laboratorium",
+          "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti"
+        },
+        {
+          "id": "game",
+          "title": "Game Jitter Buffer Rescue"
+        },
+        {
+          "id": "refleksi",
+          "title": "Refleksi, Umpan Balik, dan Transfer"
+        },
+        {
+          "id": "evaluasi",
+          "title": "Rangkuman dan Evaluasi Akhir"
+        }
+      ],
+      "source": "modules/jaringan-komunikasi/voip/index.html",
+      "scripts": [
+        "../../../assets/js/local-instructor.js?v=1",
+        "../../../assets/js/foundation-check.js?v=ux2",
+        "../../../assets/js/module-shell.js?v=ux2",
+        "../../../assets/js/tjkt-certificate.js?v=3"
+      ],
+      "atpObjectives": [
+        "XI-M3"
+      ],
+      "review": "Pembahasan terkait TP tersedia; keterampilan nyata perlu bukti guru",
+      "depthMethod": "Ditinjau dari konsep, contoh beralasan, tugas/penerimaan, kondisi gagal dan transfer; jumlah halaman/istilah bukan bukti ketuntasan siswa."
+    },
+    {
+      "id": "fiber-optik",
+      "title": "Instalasi, Pengujian, dan Perbaikan Fiber Optik",
+      "classLevel": "XI",
+      "role": "inti",
+      "objectives": [
+        "Memilih serat, konektor, transceiver, dan rancangan jalur berdasarkan kebutuhan serta kompatibilitas.",
+        "Menyusun SOP instalasi, inspeksi, penyambungan, dan pengelolaan serpihan yang aman.",
+        "Menghitung anggaran optik serta membedakan daya dBm, rugi dB, dan cadangan desain.",
+        "Membedakan bukti OPM/OLS dan OTDR serta memverifikasi perbaikan dan dokumentasi FTTH."
+      ],
+      "objectiveSource": "Tujuan pada course sumber",
+      "chapters": [
+        {
+          "id": "orientasi",
+          "title": "Orientasi, Tujuan, dan Asesmen Awal"
+        },
+        {
+          "id": "konsep-1",
+          "title": "Komponen Fiber dan Kompatibilitas Link"
+        },
+        {
+          "id": "konsep-2",
+          "title": "SOP K3, Survei, dan Instalasi"
+        },
+        {
+          "id": "konsep-3",
+          "title": "Konektor, Inspeksi, dan Penyambungan"
+        },
+        {
+          "id": "konsep-4",
+          "title": "Anggaran Rugi, Daya Terima, dan Cadangan"
+        },
+        {
+          "id": "konsep-5",
+          "title": "Pengujian OPM/OLS dan Pembacaan OTDR"
+        },
+        {
+          "id": "konsep-6",
+          "title": "Perawatan, Perbaikan, dan Penyerahan Fiber/FTTH"
+        },
+        {
+          "id": "kasus",
+          "title": "Studi Kasus dan Proyek Terapan"
+        },
+        {
+          "id": "laboratorium",
+          "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti"
+        },
+        {
+          "id": "game",
+          "title": "Game Splice Tray Puzzle"
+        },
+        {
+          "id": "refleksi",
+          "title": "Refleksi, Umpan Balik, dan Transfer"
+        },
+        {
+          "id": "evaluasi",
+          "title": "Rangkuman dan Evaluasi Akhir"
+        }
+      ],
+      "source": "modules/jaringan-fiber/fiber-optik/index.html",
+      "scripts": [
+        "../../../assets/js/local-instructor.js?v=1",
+        "../../../assets/js/foundation-check.js?v=ux2",
+        "../../../assets/js/module-shell.js?v=ux2",
+        "../../../assets/js/tjkt-certificate.js?v=3"
+      ],
+      "atpObjectives": [
+        "XI-M4",
+        "XI-M5"
+      ],
+      "review": "Pembahasan terkait TP tersedia; keterampilan nyata perlu bukti guru",
+      "depthMethod": "Ditinjau dari konsep, contoh beralasan, tugas/penerimaan, kondisi gagal dan transfer; jumlah halaman/istilah bukan bukti ketuntasan siswa."
+    },
+    {
+      "id": "pemasangan-perangkat-jaringan",
+      "title": "Pemasangan Perangkat ke Sistem Jaringan",
+      "classLevel": "XI",
+      "role": "inti",
+      "objectives": [
+        "Memeriksa kesiapan lokasi, kompatibilitas, daya, dan dokumen pemasangan.",
+        "Menyusun pemetaan port/media, VLAN, uplink, serta akses pengelolaan.",
+        "Membedakan rancangan, konfigurasi berjalan, dan konfigurasi yang dipakai setelah restart.",
+        "Membuktikan konektivitas serta layanan, menyimpan konfigurasi, dan menyerahkan dokumentasi."
+      ],
+      "objectiveSource": "Tujuan pada course sumber",
+      "chapters": [
+        {
+          "id": "orientasi",
+          "title": "Orientasi, Tujuan, dan Asesmen Awal"
+        },
+        {
+          "id": "konsep-1",
+          "title": "Kebutuhan Integrasi dan Kesiapan Pemasangan"
+        },
+        {
+          "id": "konsep-2",
+          "title": "Pemasangan Fisik dan Pemetaan Port"
+        },
+        {
+          "id": "konsep-3",
+          "title": "Konfigurasi Awal dan Akses Pengelolaan"
+        },
+        {
+          "id": "konsep-4",
+          "title": "Integrasi Access, Trunk, dan Uplink"
+        },
+        {
+          "id": "konsep-5",
+          "title": "Penerapan, Penyimpanan, dan Restart"
+        },
+        {
+          "id": "konsep-6",
+          "title": "Uji Penerimaan dan Serah Terima"
+        },
+        {
+          "id": "kasus",
+          "title": "Studi Kasus dan Proyek Terapan"
+        },
+        {
+          "id": "laboratorium",
+          "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti"
+        },
+        {
+          "id": "game",
+          "title": "Game Port Commissioning Challenge"
+        },
+        {
+          "id": "refleksi",
+          "title": "Refleksi, Umpan Balik, dan Transfer"
+        },
+        {
+          "id": "evaluasi",
+          "title": "Rangkuman dan Evaluasi Akhir"
+        }
+      ],
+      "source": "modules/konfigurasi-jaringan/pemasangan-perangkat-jaringan/index.html",
+      "scripts": [
+        "../../../assets/js/local-instructor.js?v=1",
+        "../../../assets/js/foundation-check.js?v=ux2",
+        "../../../assets/js/module-shell.js?v=ux2",
+        "../../../assets/js/tjkt-certificate.js?v=3"
+      ],
+      "atpObjectives": [
+        "XI-K1"
+      ],
+      "review": "Pembahasan terkait TP tersedia; keterampilan nyata perlu bukti guru",
+      "depthMethod": "Ditinjau dari konsep, contoh beralasan, tugas/penerimaan, kondisi gagal dan transfer; jumlah halaman/istilah bukan bukti ketuntasan siswa."
+    },
+    {
+      "id": "penggantian-perangkat-jaringan",
+      "title": "Penggantian Perangkat Jaringan",
+      "classLevel": "XI",
+      "role": "inti",
+      "objectives": [
+        "Menentukan alasan penggantian dan dampak terhadap layanan.",
+        "Memeriksa kompatibilitas serta menyiapkan cadangan dan pemetaan konfigurasi.",
+        "Menjalankan staging, cutover, pengujian, dan rollback melalui urutan terkontrol.",
+        "Mendokumentasikan bukti pemulihan, risiko sisa, serta pengelolaan perangkat lama."
+      ],
+      "objectiveSource": "Tujuan pada course sumber",
+      "chapters": [
+        {
+          "id": "orientasi",
+          "title": "Orientasi, Tujuan, dan Asesmen Awal"
+        },
+        {
+          "id": "konsep-1",
+          "title": "Alasan Penggantian dan Dampak Layanan"
+        },
+        {
+          "id": "konsep-2",
+          "title": "Kompatibilitas dan Pemetaan Lama–Baru"
+        },
+        {
+          "id": "konsep-3",
+          "title": "Cadangan Teruji dan Staging Terisolasi"
+        },
+        {
+          "id": "konsep-4",
+          "title": "Jendela Migrasi dan Cutover Terkendali"
+        },
+        {
+          "id": "konsep-5",
+          "title": "Verifikasi, Perbaikan Terbatas, dan Rollback"
+        },
+        {
+          "id": "konsep-6",
+          "title": "Penerimaan dan Pengelolaan Perangkat Lama"
+        },
+        {
+          "id": "kasus",
+          "title": "Studi Kasus dan Proyek Terapan"
+        },
+        {
+          "id": "laboratorium",
+          "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti"
+        },
+        {
+          "id": "game",
+          "title": "Game Rack Swap Logistics"
+        },
+        {
+          "id": "refleksi",
+          "title": "Refleksi, Umpan Balik, dan Transfer"
+        },
+        {
+          "id": "evaluasi",
+          "title": "Rangkuman dan Evaluasi Akhir"
+        }
+      ],
+      "source": "modules/konfigurasi-jaringan/penggantian-perangkat-jaringan/index.html",
+      "scripts": [
+        "../../../assets/js/local-instructor.js?v=1",
+        "../../../assets/js/foundation-check.js?v=ux2",
+        "../../../assets/js/module-shell.js?v=ux2",
+        "../../../assets/js/tjkt-certificate.js?v=3"
+      ],
+      "atpObjectives": [
+        "XI-K2"
+      ],
+      "review": "Pembahasan terkait TP tersedia; keterampilan nyata perlu bukti guru",
+      "depthMethod": "Ditinjau dari konsep, contoh beralasan, tugas/penerimaan, kondisi gagal dan transfer; jumlah halaman/istilah bukan bukti ketuntasan siswa."
+    },
+    {
+      "id": "switching-vlan",
+      "title": "Switching & VLAN",
+      "classLevel": "XI",
+      "role": "inti",
+      "objectives": [
+        "VLAN, routing statis/dinamis OSPF termasuk BIRD, NAT dan proxy"
+      ],
+      "objectiveSource": "Tujuan ATP yang dipetakan; modul legacy memakai engine tersendiri",
+      "chapters": [
+        {
+          "id": "pengantar",
+          "title": "Memahami Switching dan VLAN"
+        },
+        {
+          "id": "switching",
+          "title": "Learning dan Forwarding MAC"
+        },
+        {
+          "id": "vlan",
+          "title": "VLAN dan Domain Broadcast"
+        },
+        {
+          "id": "access",
+          "title": "Port Access"
+        },
+        {
+          "id": "trunk",
+          "title": "Trunk dan IEEE 802.1Q"
+        },
+        {
+          "id": "routing",
+          "title": "Inter-VLAN Routing"
+        },
+        {
+          "id": "simulator",
+          "title": "VLAN Studio: Lab Konfigurasi"
+        },
+        {
+          "id": "game",
+          "title": "Game 2D: Ruang Kendali Frame"
+        },
+        {
+          "id": "posttest",
+          "title": "Posttest Switching & VLAN"
+        }
+      ],
+      "source": "modules/konfigurasi-jaringan/switching-vlan/index.html",
+      "scripts": [
+        "../../../assets/js/local-instructor.js?v=1",
+        "../../../assets/js/switching-vlan.js?v=ux2",
+        "../../../assets/js/module-shell.js?v=ux2",
+        "../../../assets/js/tjkt-certificate.js?v=3"
+      ],
+      "atpObjectives": [
+        "XI-K3"
+      ],
+      "review": "Pembahasan terkait TP tersedia; keterampilan nyata perlu bukti guru",
+      "depthMethod": "Ditinjau dari konsep, contoh beralasan, tugas/penerimaan, kondisi gagal dan transfer; jumlah halaman/istilah bukan bukti ketuntasan siswa."
+    },
+    {
+      "id": "routing-ipv4",
+      "title": "Routing Statis",
+      "classLevel": "XI",
+      "role": "inti",
+      "objectives": [
+        "Membedakan jaringan terhubung langsung, rute statis, default route, dan jalur pengelolaan.",
+        "Menerapkan longest-prefix match serta memeriksa keterjangkauan next-hop.",
+        "Menelusuri paket dan balasan, loop, TTL, status link, serta fungsi forwarding.",
+        "Menyusun prosedur konfigurasi, penyimpanan, rollback, dan uji router perangkat maupun server."
+      ],
+      "objectiveSource": "Tujuan pada course sumber",
+      "chapters": [
+        {
+          "id": "orientasi",
+          "title": "Orientasi, Tujuan, dan Asesmen Awal"
+        },
+        {
+          "id": "konsep-1",
+          "title": "Jaringan Terhubung dan Fungsi Forwarding"
+        },
+        {
+          "id": "konsep-2",
+          "title": "Rute Statis, Next-Hop, dan Default Route"
+        },
+        {
+          "id": "konsep-3",
+          "title": "Longest-Prefix Match dan Seleksi Rute"
+        },
+        {
+          "id": "konsep-4",
+          "title": "Jalur Balik, TTL, dan Loop"
+        },
+        {
+          "id": "konsep-5",
+          "title": "Konfigurasi Perangkat dan Router Berbasis Server"
+        },
+        {
+          "id": "konsep-6",
+          "title": "Pengujian, Diagnosis, dan Dokumentasi Rute"
+        },
+        {
+          "id": "kasus",
+          "title": "Studi Kasus dan Proyek Terapan"
+        },
+        {
+          "id": "laboratorium",
+          "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti"
+        },
+        {
+          "id": "game",
+          "title": "Game TTL Route Runner"
+        },
+        {
+          "id": "refleksi",
+          "title": "Refleksi, Umpan Balik, dan Transfer"
+        },
+        {
+          "id": "evaluasi",
+          "title": "Rangkuman dan Evaluasi Akhir"
+        }
+      ],
+      "source": "modules/konfigurasi-jaringan/routing-ipv4/index.html",
+      "scripts": [
+        "../../../assets/js/local-instructor.js?v=1",
+        "../../../assets/js/foundation-check.js?v=ux2",
+        "../../../assets/js/module-shell.js?v=ux2",
+        "../../../assets/js/tjkt-certificate.js?v=3"
+      ],
+      "atpObjectives": [
+        "XI-K3",
+        "XI-K5"
+      ],
+      "review": "Pembahasan terkait TP tersedia; keterampilan nyata perlu bukti guru",
+      "depthMethod": "Ditinjau dari konsep, contoh beralasan, tugas/penerimaan, kondisi gagal dan transfer; jumlah halaman/istilah bukan bukti ketuntasan siswa."
+    },
+    {
+      "id": "routing-dinamis",
+      "title": "Routing Dinamis OSPF",
+      "classLevel": "XI",
+      "role": "inti",
+      "objectives": [
+        "Membedakan routing dinamis, penerusan paket, neighbor, LSDB, dan tabel rute.",
+        "Memeriksa identitas router, interface, area, timer, dan passive-interface pada OSPFv2 point-to-point.",
+        "Menghitung cost terarah, pilihan jalur SPF, jalur setara, dan rute pergi–balik.",
+        "Mengonfigurasi serta memverifikasi OSPF pada perangkat lab dan mengenali peran BIRD pada server.",
+        "Mendokumentasikan gangguan, perubahan tunggal, pemulihan, batas model, dan uji layanan.",
+        "Membuktikan penerapan rinci ATP melalui kondisi awal, kegagalan, pemulihan dan laporan yang dapat ditinjau."
+      ],
+      "objectiveSource": "Tujuan pada course sumber",
+      "chapters": [
+        {
+          "id": "orientasi",
+          "title": "Orientasi, Tujuan, dan Asesmen Awal"
+        },
+        {
+          "id": "konsep-1",
+          "title": "Dari Rute Statis ke Routing Dinamis"
+        },
+        {
+          "id": "konsep-2",
+          "title": "Identitas, Area, Interface, dan Neighbor"
+        },
+        {
+          "id": "konsep-3",
+          "title": "LSA, LSDB, dan Konvergensi"
+        },
+        {
+          "id": "konsep-4",
+          "title": "SPF, Cost Terarah, dan Jalur Setara"
+        },
+        {
+          "id": "konsep-5",
+          "title": "Konfigurasi Perangkat dan Pengenalan BIRD"
+        },
+        {
+          "id": "konsep-6",
+          "title": "Pengujian, Diagnosis, Pemulihan, dan Dokumentasi"
+        },
+        {
+          "id": "kasus",
+          "title": "Studi Kasus dan Proyek Terapan"
+        },
+        {
+          "id": "laboratorium",
+          "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti"
+        },
+        {
+          "id": "game",
+          "title": "Game LSA Relay"
+        },
+        {
+          "id": "refleksi",
+          "title": "Refleksi, Umpan Balik, dan Transfer"
+        },
+        {
+          "id": "evaluasi",
+          "title": "Rangkuman dan Evaluasi Akhir"
+        }
+      ],
+      "source": "modules/konfigurasi-jaringan/routing-dinamis/index.html",
+      "scripts": [
+        "../../../assets/js/local-instructor.js?v=1",
+        "../../../assets/js/foundation-check.js?v=ux2",
+        "../../../assets/js/module-shell.js?v=ux2",
+        "../../../assets/js/tjkt-certificate.js?v=3"
+      ],
+      "atpObjectives": [
+        "XI-K3",
+        "XI-K5"
+      ],
+      "review": "Pembahasan terkait TP tersedia; keterampilan nyata perlu bukti guru",
+      "depthMethod": "Ditinjau dari konsep, contoh beralasan, tugas/penerimaan, kondisi gagal dan transfer; jumlah halaman/istilah bukan bukti ketuntasan siswa."
+    },
+    {
+      "id": "nat-wan",
+      "title": "Internet Gateway dan NAT",
+      "classLevel": "XI",
+      "role": "inti",
+      "objectives": [
+        "Memetakan LAN, WAN, default gateway, next-hop ISP, dan rute balik.",
+        "Membedakan static NAT, dynamic Basic NAT, PAT/NAPT, serta static PAT untuk layanan tertentu.",
+        "Menelusuri tuple alamat/port sebelum dan sesudah translasi, termasuk pengembalian balasan.",
+        "Menguji kecocokan aturan, kapasitas mapping, kedaluwarsa, DNS, dan izin koneksi baru.",
+        "Menyusun konfigurasi gateway terisolasi, uji penerimaan, backup, rollback, serta dokumentasi."
+      ],
+      "objectiveSource": "Tujuan pada course sumber",
+      "chapters": [
+        {
+          "id": "orientasi",
+          "title": "Orientasi, Tujuan, dan Asesmen Awal"
+        },
+        {
+          "id": "konsep-1",
+          "title": "Gateway Internet, LAN–WAN, dan Jalur Balik"
+        },
+        {
+          "id": "konsep-2",
+          "title": "Jenis NAT dan Istilah Alamat"
+        },
+        {
+          "id": "konsep-3",
+          "title": "PAT/NAPT dan Tuple Sesi"
+        },
+        {
+          "id": "konsep-4",
+          "title": "Siklus Sesi, Kapasitas, DNS, dan Bukti Uji"
+        },
+        {
+          "id": "konsep-5",
+          "title": "Publikasi Layanan, Static PAT, dan Kebijakan Masuk"
+        },
+        {
+          "id": "konsep-6",
+          "title": "Konfigurasi, Diagnosis Berlapis, dan Pemulihan"
+        },
+        {
+          "id": "kasus",
+          "title": "Studi Kasus dan Proyek Terapan"
+        },
+        {
+          "id": "laboratorium",
+          "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti"
+        },
+        {
+          "id": "game",
+          "title": "Game Port Dispatcher"
+        },
+        {
+          "id": "refleksi",
+          "title": "Refleksi, Umpan Balik, dan Transfer"
+        },
+        {
+          "id": "evaluasi",
+          "title": "Rangkuman dan Evaluasi Akhir"
+        }
+      ],
+      "source": "modules/konfigurasi-jaringan/nat-wan/index.html",
+      "scripts": [
+        "../../../assets/js/local-instructor.js?v=1",
+        "../../../assets/js/foundation-check.js?v=ux2",
+        "../../../assets/js/module-shell.js?v=ux2",
+        "../../../assets/js/tjkt-certificate.js?v=3"
+      ],
+      "atpObjectives": [
+        "XI-K3",
+        "XI-K5"
+      ],
+      "review": "Pembahasan terkait TP tersedia; keterampilan nyata perlu bukti guru",
+      "depthMethod": "Ditinjau dari konsep, contoh beralasan, tugas/penerimaan, kondisi gagal dan transfer; jumlah halaman/istilah bukan bukti ketuntasan siswa."
+    },
+    {
+      "id": "proxy-load-balancing",
+      "title": "Proxy Server",
+      "classLevel": "XI",
+      "role": "inti",
+      "objectives": [
+        "Membedakan forward proxy, reverse proxy, NAT, dan routing.",
+        "Menyusun jalur klien–proxy–origin serta memeriksa listener, DNS, dan konektivitas.",
+        "Menganalisis urutan aturan akses berdasarkan kecocokan pertama.",
+        "Membuktikan MISS/HIT, freshness, eviksi, validasi 304, dan batas shared cache.",
+        "Menguji HTTPS CONNECT, membaca bukti log, serta menyusun perbaikan/pemulihan."
+      ],
+      "objectiveSource": "Tujuan pada course sumber",
+      "chapters": [
+        {
+          "id": "orientasi",
+          "title": "Orientasi, Tujuan, dan Asesmen Awal"
+        },
+        {
+          "id": "konsep-1",
+          "title": "Peran Proxy dalam Alur Layanan"
+        },
+        {
+          "id": "konsep-2",
+          "title": "Pemasangan Explicit Proxy dan Pemeriksaan Jalur"
+        },
+        {
+          "id": "konsep-3",
+          "title": "ACL, Urutan Kebijakan, dan Pengujian Penolakan"
+        },
+        {
+          "id": "konsep-4",
+          "title": "Cache HTTP, Freshness, dan Validasi Ulang"
+        },
+        {
+          "id": "konsep-5",
+          "title": "HTTPS CONNECT dan Batas Visibilitas"
+        },
+        {
+          "id": "konsep-6",
+          "title": "Konfigurasi Squid, Log, Diagnosis, dan Pemulihan"
+        },
+        {
+          "id": "kasus",
+          "title": "Studi Kasus dan Proyek Terapan"
+        },
+        {
+          "id": "laboratorium",
+          "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti"
+        },
+        {
+          "id": "game",
+          "title": "Game Cache Runner"
+        },
+        {
+          "id": "refleksi",
+          "title": "Refleksi, Umpan Balik, dan Transfer"
+        },
+        {
+          "id": "evaluasi",
+          "title": "Rangkuman dan Evaluasi Akhir"
+        }
+      ],
+      "source": "modules/konfigurasi-jaringan/proxy-server/index.html",
+      "scripts": [
+        "../../../assets/js/local-instructor.js?v=1",
+        "../../../assets/js/foundation-check.js?v=ux2",
+        "../../../assets/js/module-shell.js?v=ux2",
+        "../../../assets/js/tjkt-certificate.js?v=3"
+      ],
+      "atpObjectives": [
+        "XI-K3",
+        "XI-K5"
+      ],
+      "review": "Pembahasan terkait TP tersedia; keterampilan nyata perlu bukti guru",
+      "depthMethod": "Ditinjau dari konsep, contoh beralasan, tugas/penerimaan, kondisi gagal dan transfer; jumlah halaman/istilah bukan bukti ketuntasan siswa."
+    },
+    {
+      "id": "bandwidth-qos",
+      "title": "Manajemen Bandwidth dan QoS",
+      "classLevel": "XI",
+      "role": "inti",
+      "objectives": [
+        "Membedakan kapasitas, throughput, goodput, waktu tunggu, variasi delay, dan loss.",
+        "Menghubungkan klasifikasi/marking dengan trust boundary serta penjadwalan antrean.",
+        "Membandingkan FIFO, prioritas, dan pembagian berbobot saat kongesti.",
+        "Menguji token bucket, policing, shaping, burst, serta pengaruh ukuran buffer.",
+        "Mengenali alur AAA RADIUS Linux dan penerapan profil oleh NAS.",
+        "Menyusun konfigurasi berizin, uji beban, penerimaan, dan rollback.",
+        "Membuktikan penerapan rinci ATP melalui kondisi awal, kegagalan, pemulihan dan laporan yang dapat ditinjau."
+      ],
+      "objectiveSource": "Tujuan pada course sumber",
+      "chapters": [
+        {
+          "id": "orientasi",
+          "title": "Orientasi, Tujuan, dan Asesmen Awal"
+        },
+        {
+          "id": "konsep-1",
+          "title": "Kapasitas, Throughput, dan Bottleneck"
+        },
+        {
+          "id": "konsep-2",
+          "title": "Klasifikasi, DSCP, dan Trust Boundary"
+        },
+        {
+          "id": "konsep-3",
+          "title": "FIFO, Prioritas, dan Pembagian Berbobot"
+        },
+        {
+          "id": "konsep-4",
+          "title": "Token Bucket, Policing, dan Shaping"
+        },
+        {
+          "id": "konsep-5",
+          "title": "Profil Pengguna dan Pengenalan RADIUS Linux"
+        },
+        {
+          "id": "konsep-6",
+          "title": "Konfigurasi, Uji Beban, dan Pemulihan Kebijakan"
+        },
+        {
+          "id": "kasus",
+          "title": "Studi Kasus dan Proyek Terapan"
+        },
+        {
+          "id": "laboratorium",
+          "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti"
+        },
+        {
+          "id": "game",
+          "title": "Game Queue Pilot"
+        },
+        {
+          "id": "refleksi",
+          "title": "Refleksi, Umpan Balik, dan Transfer"
+        },
+        {
+          "id": "evaluasi",
+          "title": "Rangkuman dan Evaluasi Akhir"
+        }
+      ],
+      "source": "modules/konfigurasi-jaringan/bandwidth-qos/index.html",
+      "scripts": [
+        "../../../assets/js/local-instructor.js?v=1",
+        "../../../assets/js/foundation-check.js?v=ux2",
+        "../../../assets/js/module-shell.js?v=ux2",
+        "../../../assets/js/tjkt-certificate.js?v=3"
+      ],
+      "atpObjectives": [
+        "XI-K4"
+      ],
+      "review": "Pembahasan terkait TP tersedia; keterampilan nyata perlu bukti guru",
+      "depthMethod": "Ditinjau dari konsep, contoh beralasan, tugas/penerimaan, kondisi gagal dan transfer; jumlah halaman/istilah bukan bukti ketuntasan siswa."
+    },
+    {
+      "id": "load-balancing",
+      "title": "Load Balancing dan Failover",
+      "classLevel": "XI",
+      "role": "inti",
+      "objectives": [
+        "Membedakan pembagian sesi, failover, bonding, dan kapasitas satu koneksi.",
+        "Membandingkan round robin berbobot dan klasifikasi hash beserta affinity.",
+        "Merancang target probe, jalur probe, ambang gagal/pulih, dan kriteria health.",
+        "Menelusuri sesi lama/baru, NAT, failover/failback, serta kebutuhan membangun ulang koneksi.",
+        "Menyusun konfigurasi lab, matriks gangguan, bukti penerimaan, dan rollback."
+      ],
+      "objectiveSource": "Tujuan pada course sumber",
+      "chapters": [
+        {
+          "id": "orientasi",
+          "title": "Orientasi, Tujuan, dan Asesmen Awal"
+        },
+        {
+          "id": "konsep-1",
+          "title": "Pembagian Beban, Failover, dan Kapasitas"
+        },
+        {
+          "id": "konsep-2",
+          "title": "Distribusi Per Sesi, Bobot, dan Affinity"
+        },
+        {
+          "id": "konsep-3",
+          "title": "Health Check, Target, dan Ambang Deteksi"
+        },
+        {
+          "id": "konsep-4",
+          "title": "Sesi Lama, NAT, Failover, dan Failback"
+        },
+        {
+          "id": "konsep-5",
+          "title": "Konfigurasi Dual-WAN dan Kebijakan Rute"
+        },
+        {
+          "id": "konsep-6",
+          "title": "Pengujian Gangguan, Kapasitas Cadangan, dan Rollback"
+        },
+        {
+          "id": "kasus",
+          "title": "Studi Kasus dan Proyek Terapan"
+        },
+        {
+          "id": "laboratorium",
+          "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti"
+        },
+        {
+          "id": "game",
+          "title": "Game Dual-WAN Bridgekeeper"
+        },
+        {
+          "id": "refleksi",
+          "title": "Refleksi, Umpan Balik, dan Transfer"
+        },
+        {
+          "id": "evaluasi",
+          "title": "Rangkuman dan Evaluasi Akhir"
+        }
+      ],
+      "source": "modules/konfigurasi-jaringan/load-balancing/index.html",
+      "scripts": [
+        "../../../assets/js/local-instructor.js?v=1",
+        "../../../assets/js/foundation-check.js?v=ux2",
+        "../../../assets/js/module-shell.js?v=ux2",
+        "../../../assets/js/tjkt-certificate.js?v=3"
+      ],
+      "atpObjectives": [
+        "XI-K4"
+      ],
+      "review": "Pembahasan terkait TP tersedia; keterampilan nyata perlu bukti guru",
+      "depthMethod": "Ditinjau dari konsep, contoh beralasan, tugas/penerimaan, kondisi gagal dan transfer; jumlah halaman/istilah bukan bukti ketuntasan siswa."
+    },
+    {
+      "id": "dasar-administrasi-server",
+      "title": "Dasar Administrasi Server",
+      "classLevel": "XI",
+      "role": "pendukung",
+      "objectives": [
+        "Memetakan fungsi server, pengguna, ketergantungan, sumber daya, dan batas tanggung jawab.",
+        "Membedakan akses lokal/remote, identitas, kewenangan, serta jalur pemulihan.",
+        "Memeriksa alamat, nama, listener, rute, kebijakan, dan hasil aplikasi secara berlapis.",
+        "Membedakan konfigurasi disk/proses, start/enable, validasi, reload, dan reboot.",
+        "Menggunakan log, cadangan, uji restore, dan runbook untuk perubahan yang dapat ditelusuri."
+      ],
+      "objectiveSource": "Tujuan pada course sumber",
+      "chapters": [
+        {
+          "id": "orientasi",
+          "title": "Orientasi, Tujuan, dan Asesmen Awal"
+        },
+        {
+          "id": "konsep-1",
+          "title": "Peran Server, Layanan, dan Sumber Daya"
+        },
+        {
+          "id": "konsep-2",
+          "title": "Sistem Operasi, Identitas, dan Akses Administrasi"
+        },
+        {
+          "id": "konsep-3",
+          "title": "Alamat, Nama, Listener, dan Akses Klien"
+        },
+        {
+          "id": "konsep-4",
+          "title": "Paket, Config Disk, Proses, dan Boot"
+        },
+        {
+          "id": "konsep-5",
+          "title": "Log, Penyimpanan, Cadangan, dan Restore"
+        },
+        {
+          "id": "konsep-6",
+          "title": "Runbook Administrasi dan Uji Penerimaan"
+        },
+        {
+          "id": "kasus",
+          "title": "Studi Kasus dan Proyek Terapan"
+        },
+        {
+          "id": "laboratorium",
+          "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti"
+        },
+        {
+          "id": "game",
+          "title": "Game Rack Rescue"
+        },
+        {
+          "id": "refleksi",
+          "title": "Refleksi, Umpan Balik, dan Transfer"
+        },
+        {
+          "id": "evaluasi",
+          "title": "Rangkuman dan Evaluasi Akhir"
+        }
+      ],
+      "source": "modules/administrasi-server/dasar-administrasi-server/index.html",
+      "scripts": [
+        "../../../assets/js/local-instructor.js?v=1",
+        "../../../assets/js/foundation-check.js?v=ux2",
+        "../../../assets/js/module-shell.js?v=ux2",
+        "../../../assets/js/tjkt-certificate.js?v=3"
+      ],
+      "atpObjectives": [],
+      "review": "Materi pendukung/pengayaan: melengkapi jalur belajar, bukan TP baru",
+      "depthMethod": "Ditinjau dari konsep, contoh beralasan, tugas/penerimaan, kondisi gagal dan transfer; jumlah halaman/istilah bukan bukti ketuntasan siswa."
+    },
+    {
+      "id": "virtualisasi-server",
+      "title": "Mesin Virtual Lanjutan: Proxmox VE dan VMware ESXi",
+      "classLevel": "XI",
+      "role": "pendukung",
+      "objectives": [
+        "Membedakan host, guest, hypervisor, VM, template, dan container.",
+        "Menghitung reservasi RAM serta memahami vCPU, overcommit, virtual capacity, dan storage fisik.",
+        "Menguji power VM, ketersediaan OS/media, serta respons layanan guest.",
+        "Memilih NAT, host-only, internal, atau bridged sesuai arah akses dan batas isolasi.",
+        "Menjelaskan snapshot/clone/backup, identitas guest, dan pembuktian restore setelah host gagal.",
+        "Merancang instalasi hypervisor server, jaringan manajemen, storage, backup dan uji pemulihan pada Proxmox VE/VMware ESXi."
+      ],
+      "objectiveSource": "Tujuan pada course sumber",
+      "chapters": [
+        {
+          "id": "orientasi",
+          "title": "Orientasi, Tujuan, dan Asesmen Awal"
+        },
+        {
+          "id": "konsep-1",
+          "title": "Host, Guest, Hypervisor, dan Tujuan Lab"
+        },
+        {
+          "id": "konsep-2",
+          "title": "RAM, vCPU, dan Kapasitas Storage"
+        },
+        {
+          "id": "konsep-3",
+          "title": "Membuat VM, Media, Boot, dan Shutdown"
+        },
+        {
+          "id": "konsep-4",
+          "title": "NAT, Host-only, Internal, dan Bridged"
+        },
+        {
+          "id": "konsep-5",
+          "title": "Snapshot, Clone, Archive, dan Uji Restore"
+        },
+        {
+          "id": "konsep-6",
+          "title": "Runbook Lab Virtual dan Penerimaan"
+        },
+        {
+          "id": "kasus",
+          "title": "Studi Kasus dan Proyek Terapan"
+        },
+        {
+          "id": "laboratorium",
+          "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti"
+        },
+        {
+          "id": "game",
+          "title": "Game Hypervisor Dock"
+        },
+        {
+          "id": "refleksi",
+          "title": "Refleksi, Umpan Balik, dan Transfer"
+        },
+        {
+          "id": "evaluasi",
+          "title": "Rangkuman dan Evaluasi Akhir"
+        }
+      ],
+      "source": "modules/administrasi-server/virtualisasi-server/index.html",
+      "scripts": [
+        "../../../assets/js/local-instructor.js?v=1",
+        "../../../assets/js/foundation-check.js?v=ux2",
+        "../../../assets/js/module-shell.js?v=ux2",
+        "../../../assets/js/tjkt-certificate.js?v=3"
+      ],
+      "atpObjectives": [],
+      "review": "Materi pendukung/pengayaan: melengkapi jalur belajar, bukan TP baru",
+      "depthMethod": "Ditinjau dari konsep, contoh beralasan, tugas/penerimaan, kondisi gagal dan transfer; jumlah halaman/istilah bukan bukti ketuntasan siswa."
+    },
+    {
+      "id": "administrasi-linux-windows",
+      "title": "Administrasi Linux dan Windows Server",
+      "classLevel": "XI",
+      "role": "pendukung",
+      "objectives": [
+        "Merancang instalasi VM dan membedakan OS, edisi, media serta lisensi.",
+        "Memeriksa identitas, privilege dan objek filesystem tanpa menyalin sintaks lintas OS.",
+        "Menyiapkan IP/prefix, gateway, resolver serta jalur administrasi pemulihan.",
+        "Membedakan disk, partisi, filesystem, mount dan persistensi volume.",
+        "Memasang paket/role dan memisahkan status layanan dari startup.",
+        "Merancang pembaruan, bukti penerimaan serta pemulihan yang teruji.",
+        "Melaksanakan urutan instalasi Linux server pada VM kosong dan membuktikan baseline setelah boot sebelum memasang layanan jaringan."
+      ],
+      "objectiveSource": "Tujuan pada course sumber",
+      "chapters": [
+        {
+          "id": "orientasi",
+          "title": "Orientasi, Tujuan, dan Asesmen Awal"
+        },
+        {
+          "id": "konsep-1",
+          "title": "Rencana Instalasi dan Baseline Dua OS"
+        },
+        {
+          "id": "konsep-2",
+          "title": "Shell, Identitas, Akun dan Izin"
+        },
+        {
+          "id": "konsep-3",
+          "title": "Jaringan Persisten dan Akses Administrasi"
+        },
+        {
+          "id": "konsep-4",
+          "title": "Disk, Filesystem, Volume dan Persistensi"
+        },
+        {
+          "id": "konsep-5",
+          "title": "Paket, Role, Service dan Startup"
+        },
+        {
+          "id": "konsep-6",
+          "title": "Pembaruan, Log dan Penerimaan Setelah Boot"
+        },
+        {
+          "id": "kasus",
+          "title": "Studi Kasus dan Proyek Terapan"
+        },
+        {
+          "id": "laboratorium",
+          "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti"
+        },
+        {
+          "id": "game",
+          "title": "Game Strategi: Deployment Relay"
+        },
+        {
+          "id": "refleksi",
+          "title": "Refleksi, Umpan Balik, dan Transfer"
+        },
+        {
+          "id": "evaluasi",
+          "title": "Rangkuman dan Evaluasi Akhir"
+        }
+      ],
+      "source": "modules/administrasi-server/administrasi-linux-windows/index.html",
+      "scripts": [
+        "../../../assets/js/local-instructor.js?v=1",
+        "../../../assets/js/foundation-check.js?v=ux2",
+        "../../../assets/js/module-shell.js?v=ux2",
+        "../../../assets/js/tjkt-certificate.js?v=3"
+      ],
+      "atpObjectives": [],
+      "review": "Materi pendukung/pengayaan: melengkapi jalur belajar, bukan TP baru",
+      "depthMethod": "Ditinjau dari konsep, contoh beralasan, tugas/penerimaan, kondisi gagal dan transfer; jumlah halaman/istilah bukan bukti ketuntasan siswa."
+    },
+    {
+      "id": "manajemen-pengguna-server",
+      "title": "Manajemen Pengguna dan Hak Akses",
+      "classLevel": "XI",
+      "role": "pendukung",
+      "objectives": [
+        "Membedakan identitas, autentikasi, otorisasi, sesi dan audit.",
+        "Merancang akun personal, admin dan layanan beserta siklus masuk–pindah–keluar.",
+        "Menghitung mode dasar Linux, traversal direktori dan batas ACL/mask.",
+        "Menjelaskan token grup, Allow/Deny, pewarisan dan lapisan share/NTFS Windows.",
+        "Menguji akses yang diizinkan maupun ditolak tanpa menaikkan hak berlebihan.",
+        "Menyusun matriks izin, perubahan terkontrol dan bukti pencabutan akses."
+      ],
+      "objectiveSource": "Tujuan pada course sumber",
+      "chapters": [
+        {
+          "id": "orientasi",
+          "title": "Orientasi, Tujuan, dan Asesmen Awal"
+        },
+        {
+          "id": "konsep-1",
+          "title": "Identitas, Autentikasi, Otorisasi dan Audit"
+        },
+        {
+          "id": "konsep-2",
+          "title": "Siklus Akun, Grup dan Hak Minimum"
+        },
+        {
+          "id": "konsep-3",
+          "title": "Mode Linux, Direktori dan Kepemilikan"
+        },
+        {
+          "id": "konsep-4",
+          "title": "ACL Linux, Mask dan Bukti Perubahan"
+        },
+        {
+          "id": "konsep-5",
+          "title": "Token Windows, DACL, Pewarisan dan Share"
+        },
+        {
+          "id": "konsep-6",
+          "title": "Uji Positif, Negatif, Audit dan Pencabutan"
+        },
+        {
+          "id": "kasus",
+          "title": "Studi Kasus dan Proyek Terapan"
+        },
+        {
+          "id": "laboratorium",
+          "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti"
+        },
+        {
+          "id": "game",
+          "title": "Game Strategi: Access Weaver"
+        },
+        {
+          "id": "refleksi",
+          "title": "Refleksi, Umpan Balik, dan Transfer"
+        },
+        {
+          "id": "evaluasi",
+          "title": "Rangkuman dan Evaluasi Akhir"
+        }
+      ],
+      "source": "modules/administrasi-server/manajemen-pengguna-server/index.html",
+      "scripts": [
+        "../../../assets/js/local-instructor.js?v=1",
+        "../../../assets/js/foundation-check.js?v=ux2",
+        "../../../assets/js/module-shell.js?v=ux2",
+        "../../../assets/js/tjkt-certificate.js?v=3"
+      ],
+      "atpObjectives": [],
+      "review": "Materi pendukung/pengayaan: melengkapi jalur belajar, bukan TP baru",
+      "depthMethod": "Ditinjau dari konsep, contoh beralasan, tugas/penerimaan, kondisi gagal dan transfer; jumlah halaman/istilah bukan bukti ketuntasan siswa."
+    },
+    {
+      "id": "layanan-server",
+      "title": "DHCP, DNS, dan Remote Server",
+      "classLevel": "XI",
+      "role": "inti",
+      "objectives": [
+        "Merancang scope, exclusion, reservation, lease dan opsi DHCP sesuai subnet.",
+        "Menjelaskan DORA, renew/rebind/expiry dan fungsi relay.",
+        "Membedakan resolver, authoritative zone, record, TTL serta hasil negatif.",
+        "Membuktikan pengaruh lease/opsi dan cache lama terhadap akses klien.",
+        "Mendiagnosis SSH berlapis dengan verifikasi fingerprint dan hak minimum.",
+        "Menyusun konfigurasi, perubahan, rollback serta matriks uji dari klien."
+      ],
+      "objectiveSource": "Tujuan pada course sumber",
+      "chapters": [
+        {
+          "id": "orientasi",
+          "title": "Orientasi, Tujuan, dan Asesmen Awal"
+        },
+        {
+          "id": "konsep-1",
+          "title": "Rencana Scope, Exclusion dan Reservation DHCP"
+        },
+        {
+          "id": "konsep-2",
+          "title": "DORA, Lease, Renew dan DHCP Relay"
+        },
+        {
+          "id": "konsep-3",
+          "title": "Zona DNS, Resolver dan Jenis Record"
+        },
+        {
+          "id": "konsep-4",
+          "title": "TTL, Cache dan Diagnosis Nama dari Klien"
+        },
+        {
+          "id": "konsep-5",
+          "title": "SSH, Identitas Host dan Akses Remote Berizin"
+        },
+        {
+          "id": "konsep-6",
+          "title": "Implementasi, Matriks Uji dan Pemulihan Layanan"
+        },
+        {
+          "id": "kasus",
+          "title": "Studi Kasus dan Proyek Terapan"
+        },
+        {
+          "id": "laboratorium",
+          "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti"
+        },
+        {
+          "id": "game",
+          "title": "Game Puzzle: Service Dispatch"
+        },
+        {
+          "id": "refleksi",
+          "title": "Refleksi, Umpan Balik, dan Transfer"
+        },
+        {
+          "id": "evaluasi",
+          "title": "Rangkuman dan Evaluasi Akhir"
+        }
+      ],
+      "source": "modules/administrasi-server/layanan-server/index.html",
+      "scripts": [
+        "../../../assets/js/local-instructor.js?v=1",
+        "../../../assets/js/foundation-check.js?v=ux2",
+        "../../../assets/js/module-shell.js?v=ux2",
+        "../../../assets/js/tjkt-certificate.js?v=3"
+      ],
+      "atpObjectives": [
+        "XI-A1"
+      ],
+      "review": "Pembahasan terkait TP tersedia; keterampilan nyata perlu bukti guru",
+      "depthMethod": "Ditinjau dari konsep, contoh beralasan, tugas/penerimaan, kondisi gagal dan transfer; jumlah halaman/istilah bukan bukti ketuntasan siswa."
+    },
+    {
+      "id": "ftp-server",
+      "title": "FTP Server dan Pengujian Transfer Berkas",
+      "classLevel": "XI",
+      "role": "inti",
+      "objectives": [
+        "Membedakan FTP, FTPS explicit dan SFTP beserta batas penggunaannya.",
+        "Menggambar arah koneksi kontrol/data pada mode aktif dan pasif.",
+        "Merancang akun, direktori, izin dan pembatasan layanan.",
+        "Memvalidasi konfigurasi server serta menguji LIST, STOR dan RETR dari klien.",
+        "Mendiagnosis autentikasi, kanal data, policy, permission, kapasitas dan transfer parsial.",
+        "Memverifikasi isi hasil dan menyusun laporan perubahan/rollback."
+      ],
+      "objectiveSource": "Tujuan pada course sumber",
+      "chapters": [
+        {
+          "id": "orientasi",
+          "title": "Orientasi, Tujuan, dan Asesmen Awal"
+        },
+        {
+          "id": "konsep-1",
+          "title": "FTP, FTPS dan SFTP"
+        },
+        {
+          "id": "konsep-2",
+          "title": "Kanal Kontrol, Mode Aktif dan Pasif"
+        },
+        {
+          "id": "konsep-3",
+          "title": "Akun, Direktori, Policy dan Permission"
+        },
+        {
+          "id": "konsep-4",
+          "title": "Konfigurasi vsftpd dan Pengujian Klien"
+        },
+        {
+          "id": "konsep-5",
+          "title": "Representasi, Transfer Parsial dan Integritas"
+        },
+        {
+          "id": "konsep-6",
+          "title": "Diagnosis, Pemulihan dan Laporan Penerimaan"
+        },
+        {
+          "id": "kasus",
+          "title": "Studi Kasus dan Proyek Terapan"
+        },
+        {
+          "id": "laboratorium",
+          "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti"
+        },
+        {
+          "id": "game",
+          "title": "Game Antrean: Transfer Dock"
+        },
+        {
+          "id": "refleksi",
+          "title": "Refleksi, Umpan Balik, dan Transfer"
+        },
+        {
+          "id": "evaluasi",
+          "title": "Rangkuman dan Evaluasi Akhir"
+        }
+      ],
+      "source": "modules/administrasi-server/ftp-server/index.html",
+      "scripts": [
+        "../../../assets/js/local-instructor.js?v=1",
+        "../../../assets/js/foundation-check.js?v=ux2",
+        "../../../assets/js/module-shell.js?v=ux2",
+        "../../../assets/js/tjkt-certificate.js?v=3"
+      ],
+      "atpObjectives": [
+        "XI-A1"
+      ],
+      "review": "Pembahasan terkait TP tersedia; keterampilan nyata perlu bukti guru",
+      "depthMethod": "Ditinjau dari konsep, contoh beralasan, tugas/penerimaan, kondisi gagal dan transfer; jumlah halaman/istilah bukan bukti ketuntasan siswa."
+    },
+    {
+      "id": "file-server",
+      "title": "File Server dan Berbagi Sumber Daya",
+      "classLevel": "XI",
+      "role": "inti",
+      "objectives": [
+        "Membedakan file sharing SMB dari transfer FTP dan penyimpanan lokal.",
+        "Merancang share, akun/grup, path dan hak minimum lintas klien.",
+        "Memisahkan izin share dari filesystem dan sesi lama dari identitas baru.",
+        "Mendiagnosis keterjangkauan, autentikasi, akses, kapasitas dan quota.",
+        "Menjelaskan koordinasi edit/lock, cache dan risiko perubahan bersamaan.",
+        "Membuktikan backup/restore serta menyusun matriks penerimaan positif/negatif."
+      ],
+      "objectiveSource": "Tujuan pada course sumber",
+      "chapters": [
+        {
+          "id": "orientasi",
+          "title": "Orientasi, Tujuan, dan Asesmen Awal"
+        },
+        {
+          "id": "konsep-1",
+          "title": "File Sharing, SMB dan Peta Sumber Daya"
+        },
+        {
+          "id": "konsep-2",
+          "title": "Rancangan Share, Akun dan Hak Efektif"
+        },
+        {
+          "id": "konsep-3",
+          "title": "Konfigurasi Samba dan Uji Klien"
+        },
+        {
+          "id": "konsep-4",
+          "title": "Sesi, Lock dan Perubahan Bersamaan"
+        },
+        {
+          "id": "konsep-5",
+          "title": "Kapasitas, Quota, Snapshot dan Backup"
+        },
+        {
+          "id": "konsep-6",
+          "title": "Penerimaan, Audit dan Pemulihan Gangguan"
+        },
+        {
+          "id": "kasus",
+          "title": "Studi Kasus dan Proyek Terapan"
+        },
+        {
+          "id": "laboratorium",
+          "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti"
+        },
+        {
+          "id": "game",
+          "title": "Game Puzzle: Storage Allocator"
+        },
+        {
+          "id": "refleksi",
+          "title": "Refleksi, Umpan Balik, dan Transfer"
+        },
+        {
+          "id": "evaluasi",
+          "title": "Rangkuman dan Evaluasi Akhir"
+        }
+      ],
+      "source": "modules/administrasi-server/file-server/index.html",
+      "scripts": [
+        "../../../assets/js/local-instructor.js?v=1",
+        "../../../assets/js/foundation-check.js?v=ux2",
+        "../../../assets/js/module-shell.js?v=ux2",
+        "../../../assets/js/tjkt-certificate.js?v=3"
+      ],
+      "atpObjectives": [
+        "XI-A1"
+      ],
+      "review": "Pembahasan terkait TP tersedia; keterampilan nyata perlu bukti guru",
+      "depthMethod": "Ditinjau dari konsep, contoh beralasan, tugas/penerimaan, kondisi gagal dan transfer; jumlah halaman/istilah bukan bukti ketuntasan siswa."
+    },
+    {
+      "id": "hosting-server",
+      "title": "Web dan Database Server",
+      "classLevel": "XI",
+      "role": "inti",
+      "objectives": [
+        "Memetakan DNS, TCP/TLS, HTTP, virtual host, runtime dan database.",
+        "Merancang document root, vhost serta sertifikat sesuai nama layanan.",
+        "Memisahkan status HTTP, log dan keberhasilan aplikasi.",
+        "Menentukan schema, akun aplikasi dan privilege minimum.",
+        "Menjelaskan prepared statement, transaksi dan pemulihan data.",
+        "Menyusun matriks pengujian klien serta runbook penerapan/rollback."
+      ],
+      "objectiveSource": "Tujuan pada course sumber",
+      "chapters": [
+        {
+          "id": "orientasi",
+          "title": "Orientasi, Tujuan, dan Asesmen Awal"
+        },
+        {
+          "id": "konsep-1",
+          "title": "Arsitektur Web, Aplikasi dan Database"
+        },
+        {
+          "id": "konsep-2",
+          "title": "Virtual Host, Document Root dan TLS"
+        },
+        {
+          "id": "konsep-3",
+          "title": "Runtime, HTTP, Log dan Pengujian Aplikasi"
+        },
+        {
+          "id": "konsep-4",
+          "title": "Database, Schema dan Akun Aplikasi"
+        },
+        {
+          "id": "konsep-5",
+          "title": "Transaksi, Konsistensi dan Retry"
+        },
+        {
+          "id": "konsep-6",
+          "title": "Backup, Restore dan Penerimaan End-to-End"
+        },
+        {
+          "id": "kasus",
+          "title": "Studi Kasus dan Proyek Terapan"
+        },
+        {
+          "id": "laboratorium",
+          "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti"
+        },
+        {
+          "id": "game",
+          "title": "Game Transaksi: Transaction Foundry"
+        },
+        {
+          "id": "refleksi",
+          "title": "Refleksi, Umpan Balik, dan Transfer"
+        },
+        {
+          "id": "evaluasi",
+          "title": "Rangkuman dan Evaluasi Akhir"
+        }
+      ],
+      "source": "modules/administrasi-server/hosting-server/index.html",
+      "scripts": [
+        "../../../assets/js/local-instructor.js?v=1",
+        "../../../assets/js/foundation-check.js?v=ux2",
+        "../../../assets/js/module-shell.js?v=ux2",
+        "../../../assets/js/tjkt-certificate.js?v=3"
+      ],
+      "atpObjectives": [
+        "XI-A1"
+      ],
+      "review": "Pembahasan terkait TP tersedia; keterampilan nyata perlu bukti guru",
+      "depthMethod": "Ditinjau dari konsep, contoh beralasan, tugas/penerimaan, kondisi gagal dan transfer; jumlah halaman/istilah bukan bukti ketuntasan siswa."
+    },
+    {
+      "id": "panel-layanan-hosting",
+      "title": "Control Panel, Shared Hosting, Dedicated Server, dan VPS",
+      "classLevel": "XI",
+      "role": "inti",
+      "objectives": [
+        "Membedakan control panel dari model hosting dan virtualisasi.",
+        "Membandingkan Shared, VPS dan Dedicated berdasarkan kendali, isolasi, kapasitas dan tanggung jawab.",
+        "Merancang instalasi panel pada host bersih sesuai versi/dukungan.",
+        "Memisahkan admin/provider dari pemilik akun tenant.",
+        "Memvalidasi domain/DNS, release web, database, TLS dan resource secara terpisah.",
+        "Menyusun migrasi, backup/restore serta uji penerimaan dengan batas yang jelas."
+      ],
+      "objectiveSource": "Tujuan pada course sumber",
+      "chapters": [
+        {
+          "id": "orientasi",
+          "title": "Orientasi, Tujuan, dan Asesmen Awal"
+        },
+        {
+          "id": "konsep-1",
+          "title": "Model Hosting dan Kendali Pengelolaan"
+        },
+        {
+          "id": "konsep-2",
+          "title": "Kebutuhan, Kapasitas, Biaya dan Tanggung Jawab"
+        },
+        {
+          "id": "konsep-3",
+          "title": "Instalasi Panel pada Host Bersih"
+        },
+        {
+          "id": "konsep-4",
+          "title": "Role Panel, Akun Tenant dan Provisioning Situs"
+        },
+        {
+          "id": "konsep-5",
+          "title": "Resource, Backup dan Pemulihan Akun"
+        },
+        {
+          "id": "konsep-6",
+          "title": "Migrasi, Cutover dan Penerimaan Layanan"
+        },
+        {
+          "id": "kasus",
+          "title": "Studi Kasus dan Proyek Terapan"
+        },
+        {
+          "id": "laboratorium",
+          "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti"
+        },
+        {
+          "id": "game",
+          "title": "Game Kapasitas: Hosting Broker"
+        },
+        {
+          "id": "refleksi",
+          "title": "Refleksi, Umpan Balik, dan Transfer"
+        },
+        {
+          "id": "evaluasi",
+          "title": "Rangkuman dan Evaluasi Akhir"
+        }
+      ],
+      "source": "modules/administrasi-server/panel-layanan-hosting/index.html",
+      "scripts": [
+        "../../../assets/js/local-instructor.js?v=1",
+        "../../../assets/js/foundation-check.js?v=ux2",
+        "../../../assets/js/module-shell.js?v=ux2",
+        "../../../assets/js/tjkt-certificate.js?v=3"
+      ],
+      "atpObjectives": [
+        "XI-A2"
+      ],
+      "review": "Pembahasan terkait TP tersedia; keterampilan nyata perlu bukti guru",
+      "depthMethod": "Ditinjau dari konsep, contoh beralasan, tugas/penerimaan, kondisi gagal dan transfer; jumlah halaman/istilah bukan bukti ketuntasan siswa."
+    },
+    {
+      "id": "vpn-server",
+      "title": "VPN dan Akses Jarak Jauh Aman",
+      "classLevel": "XI",
+      "role": "inti",
+      "objectives": [
+        "Membedakan remote-access/site-to-site serta tunnel dari otorisasi aplikasi.",
+        "Menjelaskan endpoint, identitas peer, key dan pencabutan akses.",
+        "Memisahkan routing OS, AllowedIPs dan firewall pada WireGuard contoh.",
+        "Membuktikan forwarding, rute balik dan dampak overlap subnet.",
+        "Membandingkan split/full IPv4, DNS, IPv6 dan kondisi tunnel down.",
+        "Menyusun konfigurasi lab, matriks uji positif/negatif serta runbook pemulihan."
+      ],
+      "objectiveSource": "Tujuan pada course sumber",
+      "chapters": [
+        {
+          "id": "orientasi",
+          "title": "Orientasi, Tujuan, dan Asesmen Awal"
+        },
+        {
+          "id": "konsep-1",
+          "title": "Tunnel, Remote Access dan Batas Perlindungan"
+        },
+        {
+          "id": "konsep-2",
+          "title": "Identitas Peer, Endpoint dan Pengelolaan Key"
+        },
+        {
+          "id": "konsep-3",
+          "title": "Routing OS, AllowedIPs dan Firewall"
+        },
+        {
+          "id": "konsep-4",
+          "title": "Forwarding, Rute Balik dan Overlap Subnet"
+        },
+        {
+          "id": "konsep-5",
+          "title": "Split/Full, DNS, IPv6 dan Kondisi Tunnel Down"
+        },
+        {
+          "id": "konsep-6",
+          "title": "Implementasi, Diagnosis dan Pencabutan Akses"
+        },
+        {
+          "id": "kasus",
+          "title": "Studi Kasus dan Proyek Terapan"
+        },
+        {
+          "id": "laboratorium",
+          "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti"
+        },
+        {
+          "id": "game",
+          "title": "Game Kebijakan: Tunnel Switchboard"
+        },
+        {
+          "id": "refleksi",
+          "title": "Refleksi, Umpan Balik, dan Transfer"
+        },
+        {
+          "id": "evaluasi",
+          "title": "Rangkuman dan Evaluasi Akhir"
+        }
+      ],
+      "source": "modules/administrasi-server/vpn-server/index.html",
+      "scripts": [
+        "../../../assets/js/local-instructor.js?v=1",
+        "../../../assets/js/foundation-check.js?v=ux2",
+        "../../../assets/js/module-shell.js?v=ux2",
+        "../../../assets/js/tjkt-certificate.js?v=3"
+      ],
+      "atpObjectives": [
+        "XI-A2"
+      ],
+      "review": "Pembahasan terkait TP tersedia; keterampilan nyata perlu bukti guru",
+      "depthMethod": "Ditinjau dari konsep, contoh beralasan, tugas/penerimaan, kondisi gagal dan transfer; jumlah halaman/istilah bukan bukti ketuntasan siswa."
+    },
+    {
+      "id": "monitoring-jaringan",
+      "title": "Sistem Kontrol, Monitoring, dan Pemeliharaan Jaringan",
+      "classLevel": "XI",
+      "role": "inti",
+      "objectives": [
+        "Membedakan observasi, alert, kontrol perubahan dan pemeliharaan.",
+        "Memilih probe/lokasi/interval/timeout/threshold sesuai pertanyaan layanan.",
+        "Membedakan status terkini, histori sampel, data stale serta notifikasi yang terkirim.",
+        "Mengorelasikan log, resource dan petunjuk ONU/OLT tanpa menebak akar masalah.",
+        "Merancang akses monitoring minimum, reverse proxy dan batas data publik.",
+        "Menyusun runbook insiden, maintenance, verifikasi serta laporan berbasis bukti.",
+        "Membuktikan penerapan rinci ATP melalui kondisi awal, kegagalan, pemulihan dan laporan yang dapat ditinjau."
+      ],
+      "objectiveSource": "Tujuan pada course sumber",
+      "chapters": [
+        {
+          "id": "orientasi",
+          "title": "Orientasi, Tujuan, dan Asesmen Awal"
+        },
+        {
+          "id": "konsep-1",
+          "title": "Tujuan Monitoring, Kontrol dan Pemeliharaan"
+        },
+        {
+          "id": "konsep-2",
+          "title": "Probe, Interval, Timeout dan Ambang"
+        },
+        {
+          "id": "konsep-3",
+          "title": "Timeline, Alert, Log dan Data Stale"
+        },
+        {
+          "id": "konsep-4",
+          "title": "Uptime Kuma, Resource dan Akses Monitoring"
+        },
+        {
+          "id": "konsep-5",
+          "title": "Monitoring Fiber, OLT/ONU dan SmartOLT"
+        },
+        {
+          "id": "konsep-6",
+          "title": "Triage, Maintenance, Pemulihan dan Kontrol"
+        },
+        {
+          "id": "kasus",
+          "title": "Studi Kasus dan Proyek Terapan"
+        },
+        {
+          "id": "laboratorium",
+          "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti"
+        },
+        {
+          "id": "game",
+          "title": "Game Penjadwalan: Incident Shift"
+        },
+        {
+          "id": "refleksi",
+          "title": "Refleksi, Umpan Balik, dan Transfer"
+        },
+        {
+          "id": "evaluasi",
+          "title": "Rangkuman dan Evaluasi Akhir"
+        }
+      ],
+      "source": "modules/administrasi-server/monitoring-jaringan/index.html",
+      "scripts": [
+        "../../../assets/js/local-instructor.js?v=1",
+        "../../../assets/js/foundation-check.js?v=ux2",
+        "../../../assets/js/module-shell.js?v=ux2",
+        "../../../assets/js/tjkt-certificate.js?v=3"
+      ],
+      "atpObjectives": [
+        "XI-A2"
+      ],
+      "review": "Pembahasan terkait TP tersedia; keterampilan nyata perlu bukti guru",
+      "depthMethod": "Ditinjau dari konsep, contoh beralasan, tugas/penerimaan, kondisi gagal dan transfer; jumlah halaman/istilah bukan bukti ketuntasan siswa."
+    },
+    {
+      "id": "backup-pemulihan-server",
+      "title": "Backup dan Pemulihan Server",
+      "classLevel": "XI",
+      "role": "pendukung",
+      "objectives": [
+        "Merancang salinan sesuai kebutuhan data dan membuktikan pemulihan beserta batas kehilangan/waktu, bukan hanya keberadaan arsip.",
+        "Menentukan apa yang harus dipulihkan sebelum memilih jadwal.",
+        "Memahami dependensi rantai, bukan hanya ukuran salinan.",
+        "Membuktikan isi, kelengkapan dan konteks salinan.",
+        "Menghindari dependensi tunggal pada sumber kegagalan.",
+        "Menghindari kerusakan tambahan saat memulihkan.",
+        "Mengukur kemampuan pulih pada skenario realistis."
+      ],
+      "objectiveSource": "Tujuan pada course sumber",
+      "chapters": [
+        {
+          "id": "orientasi",
+          "title": "Orientasi, Tujuan, dan Asesmen Awal"
+        },
+        {
+          "id": "konsep-1",
+          "title": "Kebutuhan Data, RPO dan RTO"
+        },
+        {
+          "id": "konsep-2",
+          "title": "Full, Incremental dan Differential"
+        },
+        {
+          "id": "konsep-3",
+          "title": "Konsistensi, Manifest dan Integritas"
+        },
+        {
+          "id": "konsep-4",
+          "title": "Lokasi, Akses, Enkripsi dan Retensi"
+        },
+        {
+          "id": "konsep-5",
+          "title": "Restore Terisolasi dan Verifikasi"
+        },
+        {
+          "id": "konsep-6",
+          "title": "Latihan Bencana, Bukti dan Perbaikan"
+        },
+        {
+          "id": "kasus",
+          "title": "Studi Kasus dan Proyek Terapan"
+        },
+        {
+          "id": "laboratorium",
+          "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti"
+        },
+        {
+          "id": "game",
+          "title": "Game Terapan: Archive Rescue"
+        },
+        {
+          "id": "refleksi",
+          "title": "Refleksi, Umpan Balik, dan Transfer"
+        },
+        {
+          "id": "evaluasi",
+          "title": "Rangkuman dan Evaluasi Akhir"
+        }
+      ],
+      "source": "modules/administrasi-server/backup-pemulihan-server/index.html",
+      "scripts": [
+        "../../../assets/js/local-instructor.js?v=1",
+        "../../../assets/js/foundation-check.js?v=ux2",
+        "../../../assets/js/module-shell.js?v=ux2",
+        "../../../assets/js/tjkt-certificate.js?v=3"
+      ],
+      "atpObjectives": [],
+      "review": "Materi pendukung/pengayaan: melengkapi jalur belajar, bukan TP baru",
+      "depthMethod": "Ditinjau dari konsep, contoh beralasan, tugas/penerimaan, kondisi gagal dan transfer; jumlah halaman/istilah bukan bukti ketuntasan siswa."
+    },
+    {
+      "id": "mail-server",
+      "title": "Mail Server",
+      "classLevel": "XI",
+      "role": "pengayaan",
+      "objectives": [
+        "Menelusuri penerimaan, antrean, delivery dan mailbox serta menjaga TLS, relay restriction dan identitas pengirim sesuai cakupan lab.",
+        "Membedakan peran komponen pada perjalanan pesan.",
+        "Menentukan ke mana pesan diarahkan.",
+        "Mempertahankan fungsi sah tanpa menjadi open relay.",
+        "Mendiagnosis tahap delivery tanpa menghapus bukti.",
+        "Memisahkan autentikasi domain dari kerahasiaan isi.",
+        "Menguji fungsi serta batas layanan dari klien."
+      ],
+      "objectiveSource": "Tujuan pada course sumber",
+      "chapters": [
+        {
+          "id": "orientasi",
+          "title": "Orientasi, Tujuan, dan Asesmen Awal"
+        },
+        {
+          "id": "konsep-1",
+          "title": "MUA, MSA, MTA, Delivery dan Mailbox"
+        },
+        {
+          "id": "konsep-2",
+          "title": "Domain, MX dan Identitas Tujuan"
+        },
+        {
+          "id": "konsep-3",
+          "title": "Autentikasi, TLS dan Relay Restriction"
+        },
+        {
+          "id": "konsep-4",
+          "title": "Antrean, Deferred, Bounce dan IMAP"
+        },
+        {
+          "id": "konsep-5",
+          "title": "SPF, DKIM dan DMARC"
+        },
+        {
+          "id": "konsep-6",
+          "title": "Implementasi Lab dan Penerimaan"
+        },
+        {
+          "id": "kasus",
+          "title": "Studi Kasus dan Proyek Terapan"
+        },
+        {
+          "id": "laboratorium",
+          "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti"
+        },
+        {
+          "id": "game",
+          "title": "Game Terapan: Mail Sorter"
+        },
+        {
+          "id": "refleksi",
+          "title": "Refleksi, Umpan Balik, dan Transfer"
+        },
+        {
+          "id": "evaluasi",
+          "title": "Rangkuman dan Evaluasi Akhir"
+        }
+      ],
+      "source": "modules/administrasi-server/mail-server/index.html",
+      "scripts": [
+        "../../../assets/js/local-instructor.js?v=1",
+        "../../../assets/js/foundation-check.js?v=ux2",
+        "../../../assets/js/module-shell.js?v=ux2",
+        "../../../assets/js/tjkt-certificate.js?v=3"
+      ],
+      "atpObjectives": [],
+      "review": "Materi pendukung/pengayaan: melengkapi jalur belajar, bukan TP baru",
+      "depthMethod": "Ditinjau dari konsep, contoh beralasan, tugas/penerimaan, kondisi gagal dan transfer; jumlah halaman/istilah bukan bukti ketuntasan siswa."
+    },
+    {
+      "id": "keamanan-jaringan",
+      "title": "Ancaman dan Sistem Keamanan Jaringan",
+      "classLevel": "XII",
+      "role": "inti",
+      "objectives": [
+        "Menilai risiko berdasarkan aset/alur dan membangun kebijakan first-match yang mempertahankan fungsi sah serta menolak akses tak diperlukan.",
+        "Menghubungkan kebutuhan perlindungan dengan dampak.",
+        "Menerjemahkan kebutuhan menjadi matriks aliran.",
+        "Menelusuri urutan serta aturan yang membayangi.",
+        "Membedakan translasi alamat dari izin koneksi.",
+        "Mengamankan perubahan tanpa kehilangan jalur pengelolaan.",
+        "Membedakan hasil kasus uji dari jaminan menyeluruh."
+      ],
+      "objectiveSource": "Tujuan pada course sumber",
+      "chapters": [
+        {
+          "id": "orientasi",
+          "title": "Orientasi, Tujuan, dan Asesmen Awal"
+        },
+        {
+          "id": "konsep-1",
+          "title": "Aset, Ancaman, Kerentanan dan Risiko"
+        },
+        {
+          "id": "konsep-2",
+          "title": "Kebijakan Akses dan Segmentasi"
+        },
+        {
+          "id": "konsep-3",
+          "title": "ACL dan First-Match"
+        },
+        {
+          "id": "konsep-4",
+          "title": "Stateful, NAT dan Jalur Balasan"
+        },
+        {
+          "id": "konsep-5",
+          "title": "Logging, Perubahan dan Pemulihan"
+        },
+        {
+          "id": "konsep-6",
+          "title": "Validasi Kontrol dan Risiko Tersisa"
+        },
+        {
+          "id": "kasus",
+          "title": "Studi Kasus dan Proyek Terapan"
+        },
+        {
+          "id": "laboratorium",
+          "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti"
+        },
+        {
+          "id": "game",
+          "title": "Game Terapan: Policy Weaver"
+        },
+        {
+          "id": "refleksi",
+          "title": "Refleksi, Umpan Balik, dan Transfer"
+        },
+        {
+          "id": "evaluasi",
+          "title": "Rangkuman dan Evaluasi Akhir"
+        }
+      ],
+      "source": "modules/keamanan-jaringan/keamanan-jaringan/index.html",
+      "scripts": [
+        "../../../assets/js/local-instructor.js?v=1",
+        "../../../assets/js/foundation-check.js?v=ux2",
+        "../../../assets/js/module-shell.js?v=ux2",
+        "../../../assets/js/tjkt-certificate.js?v=3"
+      ],
+      "atpObjectives": [
+        "XII-S1",
+        "MP-S1",
+        "XII-S2",
+        "MP-S2"
+      ],
+      "review": "Pembahasan terkait TP tersedia; keterampilan nyata perlu bukti guru",
+      "depthMethod": "Ditinjau dari konsep, contoh beralasan, tugas/penerimaan, kondisi gagal dan transfer; jumlah halaman/istilah bukan bukti ketuntasan siswa."
+    },
+    {
+      "id": "autentikasi-kriptografi",
+      "title": "Autentikasi dan Kriptografi",
+      "classLevel": "XII",
+      "role": "pendukung",
+      "objectives": [
+        "Membedakan identitas, faktor, otorisasi serta primitive kriptografi dan membuktikan integritas tanpa menganggap tanda tangan sebagai enkripsi.",
+        "Memisahkan autentikasi, otorisasi dan pencatatan.",
+        "Menilai independensi bukti dan risiko phishing.",
+        "Menghindari penyamaan digest dengan enkripsi.",
+        "Membedakan kerahasiaan dari autentisitas/integritas.",
+        "Memeriksa identitas tujuan sebelum akses sensitif.",
+        "Menguji normal, gagal dan pencabutan tanpa membocorkan data."
+      ],
+      "objectiveSource": "Tujuan pada course sumber",
+      "chapters": [
+        {
+          "id": "orientasi",
+          "title": "Orientasi, Tujuan, dan Asesmen Awal"
+        },
+        {
+          "id": "konsep-1",
+          "title": "Identitas, AAA dan Sesi"
+        },
+        {
+          "id": "konsep-2",
+          "title": "Faktor, MFA dan Recovery"
+        },
+        {
+          "id": "konsep-3",
+          "title": "Hash, Password Hashing dan Integritas"
+        },
+        {
+          "id": "konsep-4",
+          "title": "Enkripsi, Signature dan Key"
+        },
+        {
+          "id": "konsep-5",
+          "title": "Sertifikat, Nama, Trust dan TLS"
+        },
+        {
+          "id": "konsep-6",
+          "title": "Pengelolaan Secret dan Penerimaan"
+        },
+        {
+          "id": "kasus",
+          "title": "Studi Kasus dan Proyek Terapan"
+        },
+        {
+          "id": "laboratorium",
+          "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti"
+        },
+        {
+          "id": "game",
+          "title": "Game Terapan: Key Custody"
+        },
+        {
+          "id": "refleksi",
+          "title": "Refleksi, Umpan Balik, dan Transfer"
+        },
+        {
+          "id": "evaluasi",
+          "title": "Rangkuman dan Evaluasi Akhir"
+        }
+      ],
+      "source": "modules/keamanan-jaringan/autentikasi-kriptografi/index.html",
+      "scripts": [
+        "../../../assets/js/local-instructor.js?v=1",
+        "../../../assets/js/foundation-check.js?v=ux2",
+        "../../../assets/js/module-shell.js?v=ux2",
+        "../../../assets/js/tjkt-certificate.js?v=3"
+      ],
+      "atpObjectives": [
+        "XII-S2",
+        "MP-S2"
+      ],
+      "review": "Pembahasan terkait TP tersedia; keterampilan nyata perlu bukti guru",
+      "depthMethod": "Ditinjau dari konsep, contoh beralasan, tugas/penerimaan, kondisi gagal dan transfer; jumlah halaman/istilah bukan bukti ketuntasan siswa."
+    },
+    {
+      "id": "ids-hardening",
+      "title": "Host Hardening",
+      "classLevel": "XII",
+      "role": "inti",
+      "objectives": [
+        "Mengurangi permukaan serangan host melalui perubahan yang dapat dipulihkan sambil mempertahankan fungsi serta akses manajemen yang sah.",
+        "Mengidentifikasi kebutuhan host sebelum mematikan layanan.",
+        "Mengamankan identitas serta jalur pengelolaan.",
+        "Mengurangi paparan dengan kontrol berlapis.",
+        "Memperbaiki kelemahan tanpa mengabaikan fungsi layanan.",
+        "Melindungi bukti serta kemampuan pulih.",
+        "Menghubungkan kontrol pada bukti yang relevan."
+      ],
+      "objectiveSource": "Tujuan pada course sumber",
+      "chapters": [
+        {
+          "id": "orientasi",
+          "title": "Orientasi, Tujuan, dan Asesmen Awal"
+        },
+        {
+          "id": "konsep-1",
+          "title": "Baseline dan Permukaan Serangan"
+        },
+        {
+          "id": "konsep-2",
+          "title": "Akun, Least Privilege dan Remote Access"
+        },
+        {
+          "id": "konsep-3",
+          "title": "Layanan, Firewall dan Konfigurasi Aman"
+        },
+        {
+          "id": "konsep-4",
+          "title": "Patch, Staging dan Persistensi"
+        },
+        {
+          "id": "konsep-5",
+          "title": "Audit, Secret dan Recovery"
+        },
+        {
+          "id": "konsep-6",
+          "title": "Uji Penerimaan dan Risiko Tersisa"
+        },
+        {
+          "id": "kasus",
+          "title": "Studi Kasus dan Proyek Terapan"
+        },
+        {
+          "id": "laboratorium",
+          "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti"
+        },
+        {
+          "id": "game",
+          "title": "Game Terapan: Change Window"
+        },
+        {
+          "id": "refleksi",
+          "title": "Refleksi, Umpan Balik, dan Transfer"
+        },
+        {
+          "id": "evaluasi",
+          "title": "Rangkuman dan Evaluasi Akhir"
+        }
+      ],
+      "source": "modules/keamanan-jaringan/ids-hardening/index.html",
+      "scripts": [
+        "../../../assets/js/local-instructor.js?v=1",
+        "../../../assets/js/foundation-check.js?v=ux2",
+        "../../../assets/js/module-shell.js?v=ux2",
+        "../../../assets/js/tjkt-certificate.js?v=3"
+      ],
+      "atpObjectives": [
+        "XII-S3",
+        "MP-S3"
+      ],
+      "review": "Pembahasan terkait TP tersedia; keterampilan nyata perlu bukti guru",
+      "depthMethod": "Ditinjau dari konsep, contoh beralasan, tugas/penerimaan, kondisi gagal dan transfer; jumlah halaman/istilah bukan bukti ketuntasan siswa."
+    },
+    {
+      "id": "server-dmz",
+      "title": "Membangun dan Menguji Server DMZ",
+      "classLevel": "XII",
+      "role": "inti",
+      "objectives": [
+        "Merancang zona layanan publik dan batas antarzona serta membuktikan request/balasan, akses manajemen dan pencegahan gerak lateral pada lab.",
+        "Membatasi dampak layanan yang harus dijangkau publik.",
+        "Mendefinisikan izin minimum sebelum implementasi.",
+        "Menelusuri alamat serta izin dua arah.",
+        "Memisahkan kanal admin dari layanan publik.",
+        "Menguji keberhasilan fungsi serta penolakan jalur.",
+        "Mengoperasikan DMZ sebagai layanan yang dipelihara."
+      ],
+      "objectiveSource": "Tujuan pada course sumber",
+      "chapters": [
+        {
+          "id": "orientasi",
+          "title": "Orientasi, Tujuan, dan Asesmen Awal"
+        },
+        {
+          "id": "konsep-1",
+          "title": "Zona, Trust Boundary dan Tujuan DMZ"
+        },
+        {
+          "id": "konsep-2",
+          "title": "Matriks Aliran dan Default Deny"
+        },
+        {
+          "id": "konsep-3",
+          "title": "Routing, DNAT dan Stateful Return"
+        },
+        {
+          "id": "konsep-4",
+          "title": "Manajemen dan Pembatasan Host"
+        },
+        {
+          "id": "konsep-5",
+          "title": "Implementasi dan Uji Isolasi"
+        },
+        {
+          "id": "konsep-6",
+          "title": "Monitoring, Backup dan Risiko Tersisa"
+        },
+        {
+          "id": "kasus",
+          "title": "Studi Kasus dan Proyek Terapan"
+        },
+        {
+          "id": "laboratorium",
+          "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti"
+        },
+        {
+          "id": "game",
+          "title": "Game Terapan: DMZ Architect"
+        },
+        {
+          "id": "refleksi",
+          "title": "Refleksi, Umpan Balik, dan Transfer"
+        },
+        {
+          "id": "evaluasi",
+          "title": "Rangkuman dan Evaluasi Akhir"
+        }
+      ],
+      "source": "modules/keamanan-jaringan/server-dmz/index.html",
+      "scripts": [
+        "../../../assets/js/local-instructor.js?v=1",
+        "../../../assets/js/foundation-check.js?v=ux2",
+        "../../../assets/js/module-shell.js?v=ux2",
+        "../../../assets/js/tjkt-certificate.js?v=3"
+      ],
+      "atpObjectives": [
+        "XII-S4",
+        "MP-S4"
+      ],
+      "review": "Pembahasan terkait TP tersedia; keterampilan nyata perlu bukti guru",
+      "depthMethod": "Ditinjau dari konsep, contoh beralasan, tugas/penerimaan, kondisi gagal dan transfer; jumlah halaman/istilah bukan bukti ketuntasan siswa."
+    },
+    {
+      "id": "pengujian-keamanan",
+      "title": "Pengujian Keamanan Jaringan, Host, dan Server",
+      "classLevel": "XII",
+      "role": "inti",
+      "objectives": [
+        "Menjalankan penilaian berizin dengan lingkup jelas, bukti yang dapat ditelusuri serta perbaikan dan retest pada versi yang benar.",
+        "Menetapkan batas sebelum menjalankan pengujian.",
+        "Memilih bukti yang menjawab pertanyaan kontrol.",
+        "Menghindari klaim yang tidak didukung pengamatan.",
+        "Memilih perubahan minimum yang dapat ditinjau.",
+        "Membuktikan kondisi terbaru tanpa melewatkan efek samping.",
+        "Menyampaikan hasil agar dapat ditindaklanjuti."
+      ],
+      "objectiveSource": "Tujuan pada course sumber",
+      "chapters": [
+        {
+          "id": "orientasi",
+          "title": "Orientasi, Tujuan, dan Asesmen Awal"
+        },
+        {
+          "id": "konsep-1",
+          "title": "Tujuan, Izin dan Rules of Engagement"
+        },
+        {
+          "id": "konsep-2",
+          "title": "Inventaris dan Hipotesis Uji"
+        },
+        {
+          "id": "konsep-3",
+          "title": "Bukti, Versi dan Validasi Temuan"
+        },
+        {
+          "id": "konsep-4",
+          "title": "Perbaikan, Prioritas dan Kontrol Kompensasi"
+        },
+        {
+          "id": "konsep-5",
+          "title": "Retest, Regresi dan Kriteria Penutupan"
+        },
+        {
+          "id": "konsep-6",
+          "title": "Laporan, Kerahasiaan dan Transfer"
+        },
+        {
+          "id": "kasus",
+          "title": "Studi Kasus dan Proyek Terapan"
+        },
+        {
+          "id": "laboratorium",
+          "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti"
+        },
+        {
+          "id": "game",
+          "title": "Game Terapan: Evidence Trail"
+        },
+        {
+          "id": "refleksi",
+          "title": "Refleksi, Umpan Balik, dan Transfer"
+        },
+        {
+          "id": "evaluasi",
+          "title": "Rangkuman dan Evaluasi Akhir"
+        }
+      ],
+      "source": "modules/keamanan-jaringan/pengujian-keamanan/index.html",
+      "scripts": [
+        "../../../assets/js/local-instructor.js?v=1",
+        "../../../assets/js/foundation-check.js?v=ux2",
+        "../../../assets/js/module-shell.js?v=ux2",
+        "../../../assets/js/tjkt-certificate.js?v=3"
+      ],
+      "atpObjectives": [
+        "XII-S5",
+        "MP-S5"
+      ],
+      "review": "Pembahasan terkait TP tersedia; keterampilan nyata perlu bukti guru",
+      "depthMethod": "Ditinjau dari konsep, contoh beralasan, tugas/penerimaan, kondisi gagal dan transfer; jumlah halaman/istilah bukan bukti ketuntasan siswa."
+    },
+    {
+      "id": "ids-respons-insiden",
+      "title": "IDS/IPS dan Respons Insiden",
+      "classLevel": "XII",
+      "role": "pengayaan",
+      "objectives": [
+        "Membedakan observasi/alert/pemblokiran serta menangani insiden melalui bukti, containment terarah, pemulihan dan verifikasi sesuai kewenangan.",
+        "Menilai konteks sebelum bertindak.",
+        "Membedakan deteksi dari enforcement.",
+        "Menghubungkan pola deteksi dengan bukti yang tepat.",
+        "Membatasi dampak tanpa menghapus jejak.",
+        "Memulihkan layanan tanpa membawa kembali penyebab.",
+        "Mengubah insiden menjadi pembelajaran yang dapat ditindaklanjuti."
+      ],
+      "objectiveSource": "Tujuan pada course sumber",
+      "chapters": [
+        {
+          "id": "orientasi",
+          "title": "Orientasi, Tujuan, dan Asesmen Awal"
+        },
+        {
+          "id": "konsep-1",
+          "title": "Event, Alert dan Insiden"
+        },
+        {
+          "id": "konsep-2",
+          "title": "IDS, IPS dan Titik Penempatan"
+        },
+        {
+          "id": "konsep-3",
+          "title": "Rule, Threshold, Log dan Korelasi"
+        },
+        {
+          "id": "konsep-4",
+          "title": "Bukti, Triage dan Containment"
+        },
+        {
+          "id": "konsep-5",
+          "title": "Eradication, Recovery dan Verifikasi"
+        },
+        {
+          "id": "konsep-6",
+          "title": "Penutupan dan Perbaikan Berkelanjutan"
+        },
+        {
+          "id": "kasus",
+          "title": "Studi Kasus dan Proyek Terapan"
+        },
+        {
+          "id": "laboratorium",
+          "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti"
+        },
+        {
+          "id": "game",
+          "title": "Game Terapan: Incident Desk"
+        },
+        {
+          "id": "refleksi",
+          "title": "Refleksi, Umpan Balik, dan Transfer"
+        },
+        {
+          "id": "evaluasi",
+          "title": "Rangkuman dan Evaluasi Akhir"
+        }
+      ],
+      "source": "modules/keamanan-jaringan/ids-respons-insiden/index.html",
+      "scripts": [
+        "../../../assets/js/local-instructor.js?v=1",
+        "../../../assets/js/foundation-check.js?v=ux2",
+        "../../../assets/js/module-shell.js?v=ux2",
+        "../../../assets/js/tjkt-certificate.js?v=3"
+      ],
+      "atpObjectives": [],
+      "review": "Materi pendukung/pengayaan: melengkapi jalur belajar, bukan TP baru",
+      "depthMethod": "Ditinjau dari konsep, contoh beralasan, tugas/penerimaan, kondisi gagal dan transfer; jumlah halaman/istilah bukan bukti ketuntasan siswa."
+    },
+    {
+      "id": "proyek-integrasi-jaringan",
+      "title": "Proyek Integrasi Jaringan",
+      "classLevel": "XII",
+      "role": "pengayaan",
+      "objectives": [
+        "Mengintegrasikan kebutuhan, topologi, pengalamatan, layanan, keamanan dan pemulihan menjadi rancangan teruji serta handover yang dapat ditelusuri.",
+        "Mendefinisikan hasil sebelum merancang perangkat.",
+        "Menyelaraskan denah fisik dengan jaringan logis.",
+        "Membangun dari fondasi menuju transaksi pengguna.",
+        "Menjaga batas layanan bersama fungsi yang diperlukan.",
+        "Menguji desain pada kondisi gagal serta kembali melayani.",
+        "Menyerahkan sistem yang dapat dioperasikan pihak lain."
+      ],
+      "objectiveSource": "Tujuan pada course sumber",
+      "chapters": [
+        {
+          "id": "orientasi",
+          "title": "Orientasi, Tujuan, dan Asesmen Awal"
+        },
+        {
+          "id": "konsep-1",
+          "title": "Kebutuhan, Scope dan Kriteria Penerimaan"
+        },
+        {
+          "id": "konsep-2",
+          "title": "Topologi, VLAN dan Pengalamatan"
+        },
+        {
+          "id": "konsep-3",
+          "title": "Layanan dan Dependensi Aplikasi"
+        },
+        {
+          "id": "konsep-4",
+          "title": "Keamanan Terintegrasi dan Akses Minimum"
+        },
+        {
+          "id": "konsep-5",
+          "title": "Perubahan, Monitoring dan Pemulihan"
+        },
+        {
+          "id": "konsep-6",
+          "title": "As-built, Bukti dan Handover"
+        },
+        {
+          "id": "kasus",
+          "title": "Studi Kasus dan Proyek Terapan"
+        },
+        {
+          "id": "laboratorium",
+          "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti"
+        },
+        {
+          "id": "game",
+          "title": "Game Terapan: Campus Launch"
+        },
+        {
+          "id": "refleksi",
+          "title": "Refleksi, Umpan Balik, dan Transfer"
+        },
+        {
+          "id": "evaluasi",
+          "title": "Rangkuman dan Evaluasi Akhir"
+        }
+      ],
+      "source": "modules/proyek-integrasi/proyek-integrasi-jaringan/index.html",
+      "scripts": [
+        "../../../assets/js/local-instructor.js?v=1",
+        "../../../assets/js/foundation-check.js?v=ux2",
+        "../../../assets/js/module-shell.js?v=ux2",
+        "../../../assets/js/tjkt-certificate.js?v=3"
+      ],
+      "atpObjectives": [],
+      "review": "Materi pendukung/pengayaan: melengkapi jalur belajar, bukan TP baru",
+      "depthMethod": "Ditinjau dari konsep, contoh beralasan, tugas/penerimaan, kondisi gagal dan transfer; jumlah halaman/istilah bukan bukti ketuntasan siswa."
+    },
+    {
+      "id": "instalasi-komputer-dasar",
+      "title": "Instalasi dan Konfigurasi Dasar Sistem Komputer",
+      "classLevel": "X",
+      "role": "ATP/pendukung Fase E",
+      "objectives": [
+        "Mengidentifikasi target disk, media dan kompatibilitas sebelum instalasi.",
+        "Menjelaskan dan melaksanakan instalasi Linux desktop serta Windows desktop pada VM berizin.",
+        "Menguji boot tanpa ISO, akun, driver dan jaringan serta mendokumentasikan hasil."
+      ],
+      "objectiveSource": "Tujuan pada course sumber",
+      "chapters": [
+        {
+          "id": "orientasi",
+          "title": "Rencana instalasi dan komponen komputer"
+        },
+        {
+          "id": "persiapan",
+          "title": "Media, target disk dan keselamatan data"
+        },
+        {
+          "id": "linux-boot",
+          "title": "Ubuntu Desktop: ISO, sesi live dan awal installer"
+        },
+        {
+          "id": "linux-options",
+          "title": "Ubuntu Desktop: aplikasi, perangkat dan jaringan"
+        },
+        {
+          "id": "linux-disk",
+          "title": "Ubuntu Desktop: partisi otomatis dan manual"
+        },
+        {
+          "id": "linux-account",
+          "title": "Ubuntu Desktop: akun, waktu dan ringkasan instalasi"
+        },
+        {
+          "id": "linux-desktop",
+          "title": "Instalasi Linux desktop"
+        },
+        {
+          "id": "windows-media",
+          "title": "Windows 11: kebutuhan VM, edisi dan media"
+        },
+        {
+          "id": "windows-disk",
+          "title": "Windows 11: target disk dan tata letak boot"
+        },
+        {
+          "id": "windows-oobe",
+          "title": "Windows 11: pengaturan awal, akun dan privasi"
+        },
+        {
+          "id": "windows-desktop",
+          "title": "Instalasi Windows desktop"
+        },
+        {
+          "id": "konfigurasi",
+          "title": "Konfigurasi klien dan diagnosis"
+        },
+        {
+          "id": "laboratorium",
+          "title": "Laboratorium target instalasi dan boot"
+        },
+        {
+          "id": "refleksi",
+          "title": "Penerimaan dua OS dan transfer ke server"
+        },
+        {
+          "id": "evaluasi",
+          "title": "Evaluasi Akhir dan Sertifikat"
+        }
+      ],
+      "source": "modules/dasar-jaringan/instalasi-komputer-dasar/index.html",
+      "scripts": [
+        "../../../assets/js/local-instructor.js?v=1",
+        "../../../assets/js/foundation-course.js?v=1",
+        "../../../assets/js/tjkt-certificate.js?v=3"
+      ],
+      "atpObjectives": [
+        "X-2.5"
+      ],
+      "review": "Pembahasan terkait TP tersedia; keterampilan nyata perlu bukti guru",
+      "depthMethod": "Ditinjau dari konsep, contoh beralasan, tugas/penerimaan, kondisi gagal dan transfer; jumlah halaman/istilah bukan bukti ketuntasan siswa."
+    },
+    {
+      "id": "konfigurasi-perangkat-dasar",
+      "title": "Konfigurasi Dasar Router dan Switch",
+      "classLevel": "X",
+      "role": "ATP/pendukung Fase E",
+      "objectives": [
+        "Membedakan switching L2, alamat manajemen dan routing antar-subnet.",
+        "Menyiapkan konfigurasi awal router/switch berizin dengan rencana alamat dan pengamanan akses.",
+        "Menguji konfigurasi aktif/tersimpan dan membuktikan hasil sesudah mulai ulang."
+      ],
+      "objectiveSource": "Tujuan pada course sumber",
+      "chapters": [
+        {
+          "id": "orientasi",
+          "title": "Rancangan dua subnet dan izin praktik"
+        },
+        {
+          "id": "akses",
+          "title": "Akses awal dan identitas perangkat"
+        },
+        {
+          "id": "switch",
+          "title": "Switch L2 dan alamat manajemen"
+        },
+        {
+          "id": "router",
+          "title": "Router, interface dan gateway klien"
+        },
+        {
+          "id": "persistensi",
+          "title": "Konfigurasi aktif, simpan dan boot"
+        },
+        {
+          "id": "laboratorium",
+          "title": "Laboratorium jalur dan persistensi"
+        },
+        {
+          "id": "refleksi",
+          "title": "Penerimaan dan laporan konfigurasi"
+        },
+        {
+          "id": "evaluasi",
+          "title": "Evaluasi Akhir dan Sertifikat"
+        }
+      ],
+      "source": "modules/dasar-jaringan/konfigurasi-perangkat-dasar/index.html",
+      "scripts": [
+        "../../../assets/js/local-instructor.js?v=1",
+        "../../../assets/js/foundation-course.js?v=1",
+        "../../../assets/js/tjkt-certificate.js?v=3"
+      ],
+      "atpObjectives": [
+        "X-2.5"
+      ],
+      "review": "Pembahasan terkait TP tersedia; keterampilan nyata perlu bukti guru",
+      "depthMethod": "Ditinjau dari konsep, contoh beralasan, tugas/penerimaan, kondisi gagal dan transfer; jumlah halaman/istilah bukan bukti ketuntasan siswa."
+    },
+    {
+      "id": "virtualisasi-server-dasar",
+      "title": "Dasar Mesin Virtual: VirtualBox dan VMware Workstation",
+      "classLevel": "X",
+      "role": "ATP/pendukung Fase E",
+      "objectives": [
+        "Membuat dan membandingkan VM pada VirtualBox serta VMware Workstation.",
+        "Merencanakan resource, media dan jaringan terisolasi tanpa menghabiskan resource host.",
+        "Membedakan VM, OS guest, layanan, snapshot dan cadangan yang diuji."
+      ],
+      "objectiveSource": "Tujuan pada course sumber",
+      "chapters": [
+        {
+          "id": "orientasi",
+          "title": "Host, guest dan tujuan laboratorium"
+        },
+        {
+          "id": "host-resource",
+          "title": "Merencanakan resource host dan guest"
+        },
+        {
+          "id": "virtualbox-new",
+          "title": "Praktik membuat VM di VirtualBox"
+        },
+        {
+          "id": "vmware-new",
+          "title": "Praktik membuat VM di VMware Workstation"
+        },
+        {
+          "id": "hardware-media",
+          "title": "Settings, ISO, firmware dan boot guest"
+        },
+        {
+          "id": "jaringan",
+          "title": "Segmen, alamat dan isolasi jaringan"
+        },
+        {
+          "id": "guest-install",
+          "title": "Instalasi guest dan verifikasi boot tanpa ISO"
+        },
+        {
+          "id": "layanan",
+          "title": "Menguji peran server dari klien"
+        },
+        {
+          "id": "pemulihan",
+          "title": "Snapshot, backup dan bukti pemulihan"
+        },
+        {
+          "id": "clone-network",
+          "title": "Clone, identitas guest dan jaringan dua VM"
+        },
+        {
+          "id": "laboratorium",
+          "title": "Laboratorium rencana VM"
+        },
+        {
+          "id": "refleksi",
+          "title": "Penerimaan, laporan dan kesiapan kelas XI"
+        },
+        {
+          "id": "evaluasi",
+          "title": "Evaluasi Akhir dan Sertifikat"
+        }
+      ],
+      "source": "modules/dasar-jaringan/virtualisasi-server-dasar/index.html",
+      "scripts": [
+        "../../../assets/js/local-instructor.js?v=1",
+        "../../../assets/js/foundation-course.js?v=1",
+        "../../../assets/js/tjkt-certificate.js?v=3"
+      ],
+      "atpObjectives": [
+        "X-2.5"
+      ],
+      "review": "Pembahasan terkait TP tersedia; keterampilan nyata perlu bukti guru",
+      "depthMethod": "Ditinjau dari konsep, contoh beralasan, tugas/penerimaan, kondisi gagal dan transfer; jumlah halaman/istilah bukan bukti ketuntasan siswa."
+    }
+  ]
+}

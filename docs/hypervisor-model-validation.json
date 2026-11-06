@@ -1,0 +1,19 @@
+{
+  "result": "PASS",
+  "checks": 343,
+  "platforms": [
+    {
+      "platform": "proxmox",
+      "installed": true,
+      "guestBoot": true,
+      "snapshot": true
+    },
+    {
+      "platform": "esxi",
+      "installed": true,
+      "guestBoot": true,
+      "snapshot": true
+    }
+  ],
+  "scope": "State machines, errors, rollback, auth gates and connected guest installation. Browser validation separate."
+}

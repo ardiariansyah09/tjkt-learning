@@ -1,0 +1,39 @@
+/* Visual parity with Pengenalan Jaringan: same palette, spacing and components. */
+@import url("./learning-guide.css?v=2");
+
+body.topology-page{--bg:#f4f8fc;--surface:#fff;--text:#102a43;--muted:#64748b;--border:#e2eaf2;--primary:#0369a1;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI",Arial,sans-serif}
+body.topology-page.dark{--bg:#0b1424;--surface:#142238;--text:#f1f5f9;--muted:#a7b8cd;--border:#2a3e57;--primary:#38bdf8}
+body.topology-page .module-topbar{height:auto;min-height:76px;position:sticky;top:0;z-index:20;background:var(--surface)!important;border-bottom:1px solid var(--border);padding:12px clamp(16px,3vw,42px)}
+body.topology-page .module-brand,body.topology-page .module-brand strong{color:var(--text)!important}
+body.topology-page .module-brand small{color:var(--muted)!important}
+body.topology-page .brand-symbol{background:#e0f2fe;border-radius:12px;padding:7px}
+body.topology-page .back-button,body.topology-page .theme-button{background:var(--surface)!important;color:var(--text)!important;border:1px solid var(--border)!important;border-radius:10px;padding:9px 14px;font-size:14px;font-weight:600}
+body.topology-page .layout{grid-template-columns:295px minmax(0,1fr);max-width:1500px;min-height:calc(100vh - 76px)}
+body.topology-page .lesson-sidebar{background:var(--surface)!important;border-right:1px solid var(--border);padding:26px 17px}
+body.topology-page .lesson-sidebar h2{font-size:20px;line-height:1.35;color:var(--text)!important;margin:0 0 16px}
+body.topology-page .muted,body.topology-page .small{color:var(--muted)!important}
+body.topology-page .progress{height:10px;background:var(--border);border-radius:10px;margin:15px 0 8px}
+body.topology-page .progress span{background:#0284c7}
+body.topology-page .lesson-nav{display:block;margin:20px 0}
+body.topology-page .lesson-nav button,body.topology-page #reset{width:100%;background:var(--surface)!important;color:var(--text)!important;border:1px solid var(--border)!important;border-radius:10px;padding:12px 14px;font-size:14px;font-weight:600;margin:5px 0;text-align:left;line-height:1.35}
+body.topology-page .lesson-nav button.active{background:rgba(2,132,199,.10)!important;border-color:var(--primary)!important;color:var(--primary)!important}
+body.topology-page .lesson-nav button:disabled{opacity:.5}
+body.topology-page .lesson-main{max-width:1100px;padding:30px clamp(16px,3vw,42px)}
+body.topology-page .panel{background:var(--surface)!important;border:1px solid var(--border)!important;border-radius:16px;box-shadow:0 5px 22px rgba(15,23,42,.045);padding:26px;margin-bottom:20px;color:var(--text)!important}
+body.topology-page .panel h1,body.topology-page .panel h2,body.topology-page .panel h3{color:var(--text)!important}
+body.topology-page .lesson-hero h1{font-size:1.65rem;margin:0 0 10px}
+body.topology-page .lesson-hero p{color:var(--muted)!important}
+body.topology-page .actions{display:block}
+body.topology-page .feedback{background:var(--bg)!important;border:1px solid var(--border);border-radius:10px;padding:12px;margin:0 0 12px;min-height:45px;color:var(--text)!important}
+body.topology-page .actions button{background:#0369a1!important;color:#fff!important;border:1px solid #0369a1!important;border-radius:10px;padding:11px 17px;font-weight:700;margin:5px 6px 5px 0}
+body.topology-page .actions button:hover:not(:disabled){background:#075985!important}
+body.topology-page .actions button.secondary{background:var(--surface)!important;color:var(--text)!important;border-color:var(--border)!important}
+body.topology-page .actions button:disabled{opacity:.4}
+body.topology-page .choice,body.topology-page .top-card{background:var(--surface);color:var(--text);border:1px solid var(--border);border-radius:12px}
+body.topology-page .choice.selected{background:rgba(2,132,199,.13);border-color:var(--primary)}
+body.topology-page .info,body.topology-page .lesson-note{background:var(--bg);border-left:4px solid var(--primary);color:var(--text)}
+body.topology-page .hint{color:var(--muted)}
+body.topology-page .cert{color:#102a43;background:#fff}
+@media(max-width:760px){body.topology-page .layout{grid-template-columns:1fr}body.topology-page .lesson-sidebar{border-right:0;border-bottom:1px solid var(--border);padding:18px}body.topology-page .lesson-main{padding:16px}body.topology-page .panel{padding:18px}}
+@media(max-width:600px){body.topology-page .module-topbar{padding:10px 12px}body.topology-page .back-button{padding:9px 10px;font-size:12px}}
+@media print{body.topology-page .cert{background:#fff!important;color:#102a43!important}}

@@ -1,0 +1,124 @@
+{
+  "result": "PASS",
+  "modules": [
+    {
+      "id": "instalasi-komputer-dasar",
+      "modes": [
+        "basics:linux",
+        "basics:cmd",
+        "basics:powershell"
+      ],
+      "reports": 1
+    },
+    {
+      "id": "konfigurasi-perangkat-dasar",
+      "modes": [
+        "basics:linux",
+        "basics:cmd",
+        "basics:powershell"
+      ],
+      "reports": 1
+    },
+    {
+      "id": "dasar-administrasi-server",
+      "modes": [
+        "basics:linux",
+        "basics:cmd",
+        "basics:powershell",
+        "services:linux",
+        "services:cmd",
+        "services:powershell",
+        "ssh:linux"
+      ],
+      "reports": 1
+    },
+    {
+      "id": "administrasi-linux-windows",
+      "modes": [
+        "basics:linux",
+        "basics:cmd",
+        "basics:powershell",
+        "services:linux",
+        "services:cmd",
+        "services:powershell",
+        "windows-firewall:powershell"
+      ],
+      "reports": 1
+    },
+    {
+      "id": "manajemen-pengguna-server",
+      "modes": [
+        "basics:linux",
+        "basics:cmd",
+        "basics:powershell",
+        "ssh:linux",
+        "windows-firewall:powershell"
+      ],
+      "reports": 1
+    },
+    {
+      "id": "layanan-server",
+      "modes": [
+        "services:linux",
+        "services:cmd",
+        "services:powershell",
+        "ssh:linux",
+        "ufw:linux",
+        "fail2ban:linux"
+      ],
+      "reports": 1
+    },
+    {
+      "id": "keamanan-jaringan",
+      "modes": [
+        "ufw:linux",
+        "ssh:linux",
+        "fail2ban:linux",
+        "windows-firewall:powershell"
+      ],
+      "reports": 1
+    },
+    {
+      "id": "ids-hardening",
+      "modes": [
+        "ssh:linux",
+        "ufw:linux",
+        "fail2ban:linux",
+        "windows-firewall:powershell"
+      ],
+      "reports": 1
+    },
+    {
+      "id": "hosting-server",
+      "modes": [
+        "services:linux",
+        "services:cmd",
+        "services:powershell",
+        "ufw:linux"
+      ],
+      "reports": 1
+    },
+    {
+      "id": "monitoring-jaringan",
+      "modes": [
+        "services:linux",
+        "services:cmd",
+        "services:powershell",
+        "fail2ban:linux"
+      ],
+      "reports": 1
+    }
+  ],
+  "persistence": true,
+  "workflows": {
+    "ssh": true,
+    "fail2ban": true,
+    "windowsFirewall": true
+  },
+  "resetPreservesReports": true,
+  "mobile": {
+    "overflow": false,
+    "pageOverflow": false
+  },
+  "errors": 0
+}

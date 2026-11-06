@@ -1,0 +1,68 @@
+{
+    "moduleId":  "dasar-administrasi-server",
+    "title":  "Dasar Administrasi Server",
+    "version":  2,
+    "contentSource":  "assets/js/course-server-basics.js",
+    "chapters":  [
+                     {
+                         "id":  "orientasi",
+                         "title":  "Orientasi, Tujuan, dan Asesmen Awal",
+                         "summary":  "Menjelaskan server serta membuktikan layanan dari config, proses, boot, dan akses klien."
+                     },
+                     {
+                         "id":  "konsep-1",
+                         "title":  "Peran Server, Layanan, dan Sumber Daya",
+                         "summary":  "Memetakan apa yang dilayani sebelum memilih perangkat atau sistem operasi."
+                     },
+                     {
+                         "id":  "konsep-2",
+                         "title":  "Sistem Operasi, Identitas, dan Akses Administrasi",
+                         "summary":  "Menggunakan kewenangan serta kanal akses sesuai tujuan pemeriksaan."
+                     },
+                     {
+                         "id":  "konsep-3",
+                         "title":  "Alamat, Nama, Listener, dan Akses Klien",
+                         "summary":  "Membedakan pemeriksaan host sendiri, LAN, dan jaringan remote."
+                     },
+                     {
+                         "id":  "konsep-4",
+                         "title":  "Paket, Config Disk, Proses, dan Boot",
+                         "summary":  "Mengelola keadaan layanan tanpa menyamakan start dengan enable."
+                     },
+                     {
+                         "id":  "konsep-5",
+                         "title":  "Log, Penyimpanan, Cadangan, dan Restore",
+                         "summary":  "Menggunakan bukti untuk memilih perubahan dan membuktikan pemulihan."
+                     },
+                     {
+                         "id":  "konsep-6",
+                         "title":  "Runbook Administrasi dan Uji Penerimaan",
+                         "summary":  "Menjalankan perubahan berizin yang terarah serta dapat ditinjau."
+                     },
+                     {
+                         "id":  "kasus",
+                         "title":  "Studi Kasus dan Proyek Terapan",
+                         "summary":  "Studi Kasus dan Proyek Terapan"
+                     },
+                     {
+                         "id":  "laboratorium",
+                         "title":  "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+                         "summary":  "Laboratorium: Prediksi, Eksperimen, dan Bukti"
+                     },
+                     {
+                         "id":  "game",
+                         "title":  "Game Rack Rescue",
+                         "summary":  "Memulihkan layanan dan membuktikan akses setelah reboot melalui peta pemeliharaan."
+                     },
+                     {
+                         "id":  "refleksi",
+                         "title":  "Refleksi, Umpan Balik, dan Transfer",
+                         "summary":  "Refleksi, Umpan Balik, dan Transfer"
+                     },
+                     {
+                         "id":  "evaluasi",
+                         "title":  "Rangkuman dan Evaluasi Akhir",
+                         "summary":  "Rangkuman dan Evaluasi Akhir"
+                     }
+                 ]
+}

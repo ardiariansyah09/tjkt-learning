@@ -1,0 +1,68 @@
+{
+    "moduleId":  "mail-server",
+    "title":  "Mail Server",
+    "version":  2,
+    "contentSource":  "assets/js/course-mail-server.js",
+    "chapters":  [
+                     {
+                         "id":  "orientasi",
+                         "title":  "Orientasi, Tujuan, dan Asesmen Awal",
+                         "summary":  "SMTP, IMAP, autentikasi pengirim, TLS, dan pengujian pengiriman lokal."
+                     },
+                     {
+                         "id":  "konsep-1",
+                         "title":  "MUA, MSA, MTA, Delivery dan Mailbox",
+                         "summary":  "Membedakan peran komponen pada perjalanan pesan."
+                     },
+                     {
+                         "id":  "konsep-2",
+                         "title":  "Domain, MX dan Identitas Tujuan",
+                         "summary":  "Menentukan ke mana pesan diarahkan."
+                     },
+                     {
+                         "id":  "konsep-3",
+                         "title":  "Autentikasi, TLS dan Relay Restriction",
+                         "summary":  "Mempertahankan fungsi sah tanpa menjadi open relay."
+                     },
+                     {
+                         "id":  "konsep-4",
+                         "title":  "Antrean, Deferred, Bounce dan IMAP",
+                         "summary":  "Mendiagnosis tahap delivery tanpa menghapus bukti."
+                     },
+                     {
+                         "id":  "konsep-5",
+                         "title":  "SPF, DKIM dan DMARC",
+                         "summary":  "Memisahkan autentikasi domain dari kerahasiaan isi."
+                     },
+                     {
+                         "id":  "konsep-6",
+                         "title":  "Implementasi Lab dan Penerimaan",
+                         "summary":  "Menguji fungsi serta batas layanan dari klien."
+                     },
+                     {
+                         "id":  "kasus",
+                         "title":  "Studi Kasus dan Proyek Terapan",
+                         "summary":  "Menyusun rancangan, matriks uji dan runbook berdasarkan kebutuhan serta bukti."
+                     },
+                     {
+                         "id":  "laboratorium",
+                         "title":  "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+                         "summary":  "SMTP, IMAP, autentikasi pengirim, TLS, dan pengujian pengiriman lokal."
+                     },
+                     {
+                         "id":  "game",
+                         "title":  "Game Terapan: Mail Sorter",
+                         "summary":  "Memanipulasi objek/state dan menyelesaikan tiga misi sesuai kriteria topik."
+                     },
+                     {
+                         "id":  "refleksi",
+                         "title":  "Refleksi, Umpan Balik, dan Transfer",
+                         "summary":  "Menilai perubahan pemahaman melalui prediksi, hasil percobaan dan batas kesimpulan."
+                     },
+                     {
+                         "id":  "evaluasi",
+                         "title":  "Rangkuman dan Evaluasi Akhir",
+                         "summary":  "Memadukan konsep, bukti, risiko tersisa dan penerimaan pada kasus baru."
+                     }
+                 ]
+}

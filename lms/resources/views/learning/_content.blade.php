@@ -1,0 +1,1 @@
+<div class="learning-content">{!! \Illuminate\Support\Str::markdown($content,['html_input'=>'strip','allow_unsafe_links'=>false]) !!}</div>

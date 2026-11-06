@@ -1,0 +1,68 @@
+{
+    "moduleId":  "proxy-load-balancing",
+    "title":  "Proxy Server",
+    "version":  2,
+    "contentSource":  "assets/js/course-proxy.js",
+    "chapters":  [
+                     {
+                         "id":  "orientasi",
+                         "title":  "Orientasi, Tujuan, dan Asesmen Awal",
+                         "summary":  "Merancang forward proxy explicit, kebijakan akses, cache, dan pengujian HTTPS."
+                     },
+                     {
+                         "id":  "konsep-1",
+                         "title":  "Peran Proxy dalam Alur Layanan",
+                         "summary":  "Membedakan perantara aplikasi dari router dan translasi alamat."
+                     },
+                     {
+                         "id":  "konsep-2",
+                         "title":  "Pemasangan Explicit Proxy dan Pemeriksaan Jalur",
+                         "summary":  "Menguji konfigurasi klien, listener, DNS, dan koneksi origin secara terpisah."
+                     },
+                     {
+                         "id":  "konsep-3",
+                         "title":  "ACL, Urutan Kebijakan, dan Pengujian Penolakan",
+                         "summary":  "Membuktikan keputusan akses dari aturan pertama yang cocok."
+                     },
+                     {
+                         "id":  "konsep-4",
+                         "title":  "Cache HTTP, Freshness, dan Validasi Ulang",
+                         "summary":  "Menafsirkan HIT/MISS, respons 304, dan batas penyimpanan bersama."
+                     },
+                     {
+                         "id":  "konsep-5",
+                         "title":  "HTTPS CONNECT dan Batas Visibilitas",
+                         "summary":  "Membedakan pembentukan tunnel, isi aplikasi terenkripsi, dan kebijakan domain."
+                     },
+                     {
+                         "id":  "konsep-6",
+                         "title":  "Konfigurasi Squid, Log, Diagnosis, dan Pemulihan",
+                         "summary":  "Menerapkan rancangan explicit proxy pada lingkungan terisolasi."
+                     },
+                     {
+                         "id":  "kasus",
+                         "title":  "Studi Kasus dan Proyek Terapan",
+                         "summary":  "Studi Kasus dan Proyek Terapan"
+                     },
+                     {
+                         "id":  "laboratorium",
+                         "title":  "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+                         "summary":  "Laboratorium: Prediksi, Eksperimen, dan Bukti"
+                     },
+                     {
+                         "id":  "game",
+                         "title":  "Game Cache Runner",
+                         "summary":  "Mengantar objek melalui dua bay cache dengan batas WAN dan freshness."
+                     },
+                     {
+                         "id":  "refleksi",
+                         "title":  "Refleksi, Umpan Balik, dan Transfer",
+                         "summary":  "Refleksi, Umpan Balik, dan Transfer"
+                     },
+                     {
+                         "id":  "evaluasi",
+                         "title":  "Rangkuman dan Evaluasi Akhir",
+                         "summary":  "Rangkuman dan Evaluasi Akhir"
+                     }
+                 ]
+}

@@ -1,0 +1,23 @@
+const fs=require('node:fs'),assert=require('node:assert/strict');
+const {chromium}=require('/tmp/tjkt-browser-check/node_modules/playwright');
+const c=JSON.parse(fs.readFileSync(process.argv[2]));
+const checks=[],errors=[];let browser;
+const pass=t=>{checks.push(t);console.log('PASS '+t);};
+(async()=>{
+ browser=await chromium.launch({headless:true});
+ const ctx=await browser.newContext({viewport:{width:1440,height:1000},colorScheme:'dark'});
+ const p=await ctx.newPage();p.on('pageerror',e=>errors.push(e.message));p.setDefaultTimeout(20000);
+ const theme=()=>p.locator('html').getAttribute('data-bs-theme');
+ await p.goto(c.base_url+'/login');assert.equal(await theme(),'dark');pass('Tema awal mengikuti preferensi perangkat');
+ await p.locator('[data-theme-toggle]').click();assert.equal(await theme(),'light');await p.reload();assert.equal(await theme(),'light');pass('Pilihan tema tersimpan setelah muat ulang');
+ const credit=p.locator('.app-credit a');assert.equal(await credit.getAttribute('href'),'https://www.instagram.com/ardiariansyah07/');assert.equal(await credit.textContent(),'Ardi Ariansyah');pass('Kredit pembuat mengarah ke Instagram yang diminta');
+ await p.getByLabel('Username',{exact:true}).fill(c.accounts.admin.username);await p.getByLabel('Password',{exact:true}).fill(c.accounts.admin.password);await p.getByRole('button',{name:/^Masuk/}).click();await p.waitForURL('**/admin/dashboard');assert.equal(await theme(),'light');
+ await p.goto(`${c.base_url}/pengajaran/modul/${c.real_preview_module}/preview`);await p.locator('.path-step.is-active').waitFor();assert.equal(await p.locator('.path-step').count(),14);assert.equal(await p.locator('.path-step.is-locked').count(),0);pass('Pratinjau pengajar menampilkan peta 14 langkah yang dapat diperiksa');
+ await p.screenshot({path:'/tmp/tjkt-theme-light.png',fullPage:true});await p.locator('[data-theme-toggle]').click();assert.equal(await theme(),'dark');await p.screenshot({path:'/tmp/tjkt-theme-dark.png',fullPage:true});
+ await p.goto(`${c.base_url}/pengajaran/modul/${c.real_preview_module}/preview?mode=student`);assert.equal(await theme(),'dark');assert(await p.locator('.path-step.is-active').isVisible());pass('Tema konsisten pada pratinjau sebagai siswa');
+ await p.setViewportSize({width:390,height:844});assert(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));await p.getByRole('button',{name:/Peta perjalanan/}).click();await p.locator('.path-step.is-active').waitFor({state:'visible'});await p.screenshot({path:'/tmp/tjkt-theme-mobile.png',fullPage:true});pass('Peta belajar dan tema responsif pada lebar 390px');
+ const s=await browser.newContext({viewport:{width:1440,height:1000}});const sp=await s.newPage();sp.on('pageerror',e=>errors.push(e.message));await sp.goto(c.base_url+'/login');await sp.getByLabel('Username',{exact:true}).fill(c.accounts.student.username);await sp.getByLabel('Password',{exact:true}).fill(c.accounts.student.password);await sp.getByRole('button',{name:/^Masuk/}).click();await sp.waitForURL('**/siswa/dashboard');
+ const url=id=>`${c.base_url}/siswa/materi/${c.module}/submateri/${id}`;const [one,two,three]=c.sequence_sections;
+ await sp.goto(url(one));assert.equal(await sp.locator('.path-step.is-locked').count(),await sp.locator('.path-node').filter({hasText:'✓'}).count()?1:2);assert.equal(await sp.locator('a.path-step.is-locked').count(),0);const acknowledge=sp.getByRole('button',{name:'Saya sudah mempelajari bagian ini',exact:true});if(await acknowledge.count())await acknowledge.click();await sp.goto(url(two));assert.equal(await sp.locator('.path-step.is-complete').count(),1);assert(Number(await sp.locator('[role=progressbar]').getAttribute('aria-valuenow'))>0);assert.equal((await sp.goto(url(three))).status(),403);pass('Centang dan progres bertambah; langkah yang belum terbuka ditolak server');
+ assert.deepEqual(errors,[]);pass('Tidak ada exception JavaScript');fs.writeFileSync('/tmp/tjkt-theme-result.json',JSON.stringify({checks,completed_at:new Date().toISOString()},null,2));
+})().catch(e=>{console.error(e);process.exitCode=1;}).finally(async()=>{if(browser)await browser.close();});

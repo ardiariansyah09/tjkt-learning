@@ -1,0 +1,25 @@
+/* Sidebar stays in view while the page scrolls; no independent scroll trap. */
+@media (min-width: 761px) {
+  .layout { align-items: start; }
+  .layout > aside {
+    position: sticky !important;
+    top: 12px;
+    align-self: start;
+    max-height: calc(100dvh - 24px);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    scrollbar-width: thin;
+    z-index: 5;
+  }
+  .layout > main { min-width: 0; }
+}
+@media (max-width: 760px) {
+  .layout > aside {
+    position: static !important;
+    max-height: none;
+    overflow: visible;
+  }
+}
+@media print {
+  .layout > aside { position: static !important; max-height: none; overflow: visible; }
+}

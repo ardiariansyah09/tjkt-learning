@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Konsep dasar jaringan, arsitektur, simulasi, dan Network Arcade.">
+  <title>Pengenalan Jaringan Komputer | TJKT Learning Hub</title>
+  <link rel="stylesheet" href="../../../assets/css/intro-legacy.css">
+  <link rel="stylesheet" href="../../../assets/css/style.css">
+  <link rel="stylesheet" href="../../../assets/css/module.css">
+  <link rel="stylesheet" href="../../../assets/css/intro-deep-content.css?v=2">
+  <link rel="stylesheet" href="../../../assets/css/intro-upgrade.css">
+  <link rel="stylesheet" href="../../../assets/css/tjkt-design-system.css">
+  <link rel="stylesheet" href="../../../assets/css/intro-consistent.css?v=3">
+  <link rel="stylesheet" href="../../../assets/css/network-builder-assessment.css">
+  <link rel="stylesheet" href="../../../assets/css/client-server-simulator.css">
+  <link rel="stylesheet" href="../../../assets/css/intro-sticky-navigation.css">
+  <link rel="stylesheet" href="../../../assets/css/network-arcade-game.css?v=21">
+  <link rel="stylesheet" href="../../../assets/css/tjkt-certificate.css?v=3">
+  <link rel="stylesheet" href="../../../assets/css/contextual-practice.css?v=1">
+  <link rel="stylesheet" href="../../../assets/css/module-standard.css?v=10">
+  <script src="../../../assets/js/local-instructor.js?v=1"></script>
+</head>
+<body class="module-page module-standard intro-module" data-module-id="pengenalan-jaringan" data-standard-shell="1">
+  <a class="skip-link" href="#mainContent">Lewati ke materi</a>
+  <header class="module-topbar">
+    <a class="module-brand" href="../../../index.html" aria-label="Ke portal TJKT Learning Hub"><span class="brand-symbol" aria-hidden="true"><img src="../../../assets/images/portal-globe.svg" alt="" width="24" height="24"></span><strong>TJKT Learning Hub</strong></a>
+    <div class="topbar-actions"><a class="back-button" href="../../../index.html#catalog">← Kembali ke Portal</a><button id="introThemeToggle" class="theme-button" type="button" aria-label="Ganti tema">🌙</button></div>
+  </header>
+  <div class="layout module-layout">
+    <aside class="lesson-sidebar" aria-label="Navigasi materi">
+      <div class="sidebar-heading"><span class="eyebrow-dark">FASE E · KELAS X · DASAR-DASAR TJKT</span><h2>Pengenalan Jaringan Komputer</h2><p>Konsep dasar jaringan, arsitektur, simulasi, dan Network Arcade.</p></div>
+      <div class="progress-widget">
+        <div class="progress-label"><strong>Progres Belajar</strong><span id="standardPercent" data-progress-percent>0%</span></div>
+        <div id="progressBar" class="progress-track progress" role="progressbar" aria-label="Progres materi" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div id="bar" data-progress-fill></div></div>
+        <small id="counter" data-progress-count>Memuat progres...</small>
+      </div>
+
+      <nav id="nav" class="lesson-nav" aria-label="Daftar tahap pembelajaran"></nav>
+      <p class="sidebar-tip">Tahap berikutnya terbuka setelah evaluasi tahap saat ini lulus.</p>
+      <button id="reset" class="stage9-reset" type="button">Reset Progres Lokal</button>
+    </aside>
+    <main class="lesson-main" id="mainContent" tabindex="-1">
+      <div class="breadcrumbs"><a href="../../../index.html#fase-e">Fase E</a> <span>/</span> Pengenalan Jaringan Komputer <span>/</span> <strong id="breadcrumb" data-breadcrumb>Tahap Pembelajaran</strong></div>
+      <section class="panel lesson-hero"><span id="lessonKicker" class="lesson-kicker">MATERI 01</span><h1 id="title">Pengenalan Jaringan Komputer</h1><p id="subtitle">Konsep dasar jaringan, arsitektur, simulasi, dan Network Arcade.</p></section>
+      <article id="content" class="panel lesson-content" aria-live="polite"></article>
+      <p id="status" class="gate-message feedback" role="status" aria-live="polite"></p>
+      <div class="lesson-actions"><button id="previousLesson" class="secondary-action" type="button" disabled>← Sebelumnya</button><div class="lesson-forward-actions"><button id="check" class="primary-action" type="button">Periksa Jawaban</button><button id="next" class="primary-action" type="button" disabled>Tahap Berikutnya →</button></div></div>
+      <p id="saveNote" class="save-note" role="status">Progres tersimpan pada browser ini.</p>
+    </main>
+  </div>
+  <section id="certificate" class="cert"></section>
+  <script src="../../../assets/js/tjkt-certificate.js?v=3"></script>
+<script src="../../../assets/js/intro-deep-content.js?v=2"></script>
+<script src="../../../assets/js/network-arcade-game.js?v=21"></script>
+<script>
+'use strict';const KEY='tjkt:intro-network:v1';const lessons=[
+{id:'def',name:'Pengertian Jaringan',desc:'Jaringan komputer menghubungkan dua atau lebih perangkat untuk bertukar data dan menggunakan sumber daya bersama.',intro:'Perhatikan dua komputer yang terhubung. Jika keduanya dapat bertukar file melalui media komunikasi dan aturan yang sesuai, keduanya membentuk jaringan komputer.',q:'Pernyataan yang tepat tentang jaringan komputer adalah ...',opts:['Sekumpulan perangkat yang saling terhubung untuk bertukar data','Komputer yang selalu harus terhubung internet','Komputer yang tidak dapat berkomunikasi'],answer:0},
+{id:'benefit',name:'Manfaat Jaringan',desc:'Jaringan memudahkan berbagi file, printer, layanan, dan akses internet, serta mendukung kolaborasi.',intro:'Di laboratorium sekolah, beberapa komputer dapat memakai satu printer jaringan dan mengakses penyimpanan bersama.',q:'Manfaat jaringan yang sesuai dengan contoh tersebut adalah ...',opts:['Setiap komputer wajib memiliki printer sendiri','Berbagi perangkat dan data','Semua file otomatis aman tanpa pengaturan'],answer:1},
+{id:'scope',name:'LAN, MAN, dan WAN',desc:'LAN mencakup area lokal seperti ruang atau gedung; MAN mencakup area metropolitan; WAN menghubungkan area geografis yang luas.',intro:'Jenis jaringan sering dibedakan berdasarkan cakupan geografis. Ukuran saja tidak menentukan teknologi atau kepemilikan jaringan.',q:'Jaringan komputer dalam satu laboratorium sekolah paling tepat disebut ...',opts:['WAN','MAN','LAN'],answer:2},
+{id:'internet',name:'Internet dan Intranet',desc:'Internet adalah jaringan global antarjaringan. Intranet adalah jaringan privat organisasi yang menggunakan teknologi jaringan untuk layanan internal.',intro:'Portal absensi internal sekolah dapat berada di intranet, sedangkan situs publik dapat diakses melalui internet. Intranet bisa dihubungkan secara aman ke internet bila diperlukan.',q:'Portal internal sekolah yang hanya bisa diakses pengguna berwenang pada jaringan sekolah merupakan contoh ...',opts:['Intranet','Internet publik tanpa batasan','Bluetooth pribadi'],answer:0},
+{id:'architecture',name:'Client-Server dan Peer-to-Peer',desc:'Pada client-server, klien meminta layanan dari server. Pada peer-to-peer, perangkat dapat saling berbagi langsung tanpa server khusus untuk layanan tersebut.',intro:'Website sekolah yang dilayani server web adalah contoh client-server. Dua laptop berbagi berkas langsung dapat menjadi contoh peer-to-peer.',q:'Ketika browser meminta halaman ke web server, model komunikasinya adalah ...',opts:['Peer-to-peer saja','Client-server','Tidak menggunakan jaringan'],answer:1},
+{id:'components',name:'Komponen Jaringan',desc:'Perangkat akhir seperti komputer dan printer, perangkat penghubung seperti switch/router, media transmisi, alamat, dan protokol membentuk jaringan yang bekerja.',intro:'Switch menghubungkan perangkat dalam LAN; router meneruskan paket antarjaringan; access point menghubungkan perangkat nirkabel ke jaringan.',q:'Perangkat yang lazim dipakai untuk menghubungkan beberapa PC dalam satu LAN Ethernet adalah ...',opts:['Switch','Monitor','Keyboard'],answer:0},
+{id:'lab',name:'Virtual Network Builder',desc:'Pilih perangkat yang dibutuhkan untuk membangun LAN kecil: dua PC yang terhubung ke switch. Untuk akses internet, diperlukan router/gateway yang sesuai.',intro:'Bangun skenario: dua PC saling bertukar data dalam satu LAN kabel, tanpa membutuhkan akses internet.',q:'Pilih komponen yang tepat untuk skenario LAN tersebut.',answer:['pc1','pc2','switch']},
+{id:'games',name:'Game 2D: Loket Paket Jaringan',desc:'Antarkan permintaan dan respons melalui simpul sesuai tujuan layanan.',intro:'Pilih jalur paket pada denah dan selesaikan tiga level tanpa mengubah nilai lama.'},
+{id:'posttest',name:'Posttest dan Sertifikat',desc:'Kerjakan 10 soal acak dari bank soal. Minimal 80 untuk menyelesaikan modul.',intro:'Hasil disimpan di browser. Sertifikat bersifat mandiri, bukan sertifikat resmi sekolah.'}
+];const bank=[['Jaringan komputer memungkinkan perangkat untuk ...',['Bertukar data','Selalu mematikan firewall','Bekerja tanpa media komunikasi'],0],['Jaringan di satu ruang praktik termasuk ...',['MAN','LAN','WAN'],1],['Jaringan antarkota dalam cakupan geografis luas lazim disebut ...',['LAN','PAN','WAN'],2],['Contoh berbagi sumber daya adalah ...',['Menggunakan printer jaringan bersama','Memutus seluruh kabel','Menonaktifkan kartu jaringan'],0],['Perangkat penghubung banyak PC dalam LAN Ethernet adalah ...',['Switch','Monitor','Mouse'],0],['Router umumnya digunakan untuk ...',['Menghubungkan jaringan yang berbeda','Mengetik dokumen','Menampilkan gambar'],0],['Access point menyediakan ...',['Koneksi nirkabel ke jaringan','Penyimpanan data wajib','Layar tambahan'],0],['Layanan web server kepada browser menggunakan model ...',['Peer-to-peer wajib','Client-server','Tanpa protokol'],1],['Intranet merupakan ...',['Jaringan privat internal organisasi','Semua situs publik internet','Jenis konektor'],0],['Peer-to-peer memungkinkan ...',['Berbagi langsung antarsesama perangkat','Tidak pernah memakai jaringan','Hanya komunikasi lewat server pusat'],0],['Kabel UTP merupakan ...',['Media transmisi','Sistem operasi','Alamat IP'],0],['Internet adalah ...',['Jaringan global antarjaringan','Satu komputer saja','Nama perangkat switch'],0],['Klien dalam model client-server biasanya ...',['Meminta layanan server','Selalu menjadi router','Tidak dapat menerima data'],0],['Jaringan sekolah untuk akses berkas bersama memberikan manfaat ...',['Kolaborasi','Menghilangkan kebutuhan keamanan','Memutus komunikasi'],0],['Dua PC terhubung ke switch dan saling berkomunikasi membentuk ...',['LAN','WAN global','Tidak ada jaringan'],0],['DNS digunakan untuk ...',['Menerjemahkan nama domain ke informasi alamat','Menyusun kabel UTP','Mengatur kecerahan monitor'],0]];
+const $=id=>document.getElementById(id);let state;try{state=JSON.parse(localStorage.getItem(KEY))||{}}catch{state={}};if(!state.passed)state.passed={};if(!state.scores)state.scores={};let current=0,selection=null,gameStep=0,gameScore=0,quiz=[],quizChoices={};const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(state))}catch{}};const el=(tag,text,cls)=>{let n=document.createElement(tag);if(text!==undefined)n.textContent=text;if(cls)n.className=cls;return n};function passed(i){return !!state.passed[lessons[i].id]}function unlocked(i){return window.TJKTLocalInstructor?.isActive()||i===0||passed(i-1)}function complete(score){const l=lessons[current];state.scores[l.id]=Math.max(score,state.scores[l.id]||0);if(score>=(current>=7?80:75)){state.passed[l.id]=true;$('status').textContent=`✓ Lulus! Skor ${score}/100. Materi berikutnya terbuka.`;$('status').className='feedback success'}else{$('status').textContent=`Skor ${score}/100. Minimal ${current>=7?80:75}. Silakan ulangi.`;$('status').className='feedback error'}save();drawNav();clientServerNotice();$('next').disabled=(!window.TJKTLocalInstructor?.isActive()&&!passed(current))||current===lessons.length-1;if(current===8&&passed(8))showCertificateForm()}
+function clientServerNotice(){if(current!==4)return;const theory=!!state.passed[lessons[4].id];$('status').textContent=theory?'✓ Cek pemahaman Client–Server lulus. Praktik simulator di bawah dapat digunakan sebagai latihan tambahan.':'Jawab cek pemahaman untuk membuka materi berikutnya. Praktik simulator di bawah adalah latihan tambahan.';$('status').className='feedback '+(theory?'success':'');}function drawNav(){const done=lessons.filter((_,i)=>passed(i)).length;$('bar').style.width=(done/lessons.length*100)+'%';$('counter').textContent=`${done}/${lessons.length} tahap tuntas`;const nav=$('nav');nav.replaceChildren();lessons.forEach((l,i)=>{let b=el('button',`${passed(i)?'✓':unlocked(i)?'○':'🔒'} ${i+1}. ${l.name}`);b.disabled=!unlocked(i);if(i===current)b.className='active';b.onclick=()=>{current=i;render()};nav.append(b)})}
+function makeOptions(opts,callback){let wrap=el('div',undefined,'options');opts.forEach((opt,i)=>{let b=el('button',opt);b.type='button';b.onclick=()=>{wrap.querySelectorAll('button').forEach(x=>x.classList.remove('selected'));b.classList.add('selected');callback(i)};wrap.append(b)});return wrap}
+function render(){drawNav();const l=lessons[current];$('title').textContent=`${current+1}. ${l.name}`;$('subtitle').textContent=l.desc;let c=$('content');c.replaceChildren();c.append(el('p',l.intro));if(current<6&&window.renderDeepLesson)window.renderDeepLesson(c,current);$('status').textContent=passed(current)?`✓ Sudah lulus. Nilai terbaik: ${state.scores[l.id]}/100.`:'Kerjakan aktivitas untuk membuka tahap berikutnya.';$('status').className='feedback';$('check').hidden=false;$('check').disabled=false;$('check').textContent='Periksa Jawaban';$('next').disabled=(!window.TJKTLocalInstructor?.isActive()&&!passed(current))||current===lessons.length-1;clientServerNotice();selection=null;
+if(current===0){let d=el('div',undefined,'diagram');d.append(el('div','💻 PC A','node'),el('div',undefined,'line'),el('div','💻 PC B','node'));c.append(d)}
+if(current===2){let d=el('div',undefined,'grid');[['LAN','Ruang / Gedung'],['MAN','Area metropolitan'],['WAN','Antarwilayah luas']].forEach(([a,b])=>{let t=el('div',undefined,'tile');t.append(el('strong',a),el('p',b));d.append(t)});c.append(d)}
+if(current===4){let d=el('div',undefined,'diagram');d.append(el('div','💻 Browser / Client','node'),el('div','↔ Permintaan / Respons'),el('div','🗄️ Web Server','node'));c.append(d)}
+if(current<6){c.append(el('h3','Cek Pemahaman'),el('p',l.q),makeOptions(l.opts,i=>selection=i));$('check').onclick=()=>{if(selection===null){$('status').textContent='Pilih jawaban terlebih dahulu.';return}complete(selection===l.answer?100:0)}}
+else if(current===6){const selected=new Set();let d=el('div',undefined,'grid');[['pc1','💻 PC 1'],['pc2','💻 PC 2'],['switch','🔀 Switch'],['monitor','🖥️ Monitor'],['router','🌐 Router'],['printer','🖨️ Printer']].forEach(([id,name])=>{let b=el('button',name,'tile');b.onclick=()=>{if(selected.has(id)){selected.delete(id);b.classList.remove('selected')}else{selected.add(id);b.classList.add('selected')}};d.append(b)});c.append(el('p','Pilih tepat tiga komponen yang diperlukan:'),d);$('check').onclick=()=>{let ok=selected.size===3&&l.answer.every(x=>selected.has(x));complete(ok?100:0)}}
+else if(current===7){gameStep=0;gameScore=0;drawGame(c)}
+else{startQuiz(c)} }
+function drawGame(c){$('check').hidden=true;c.replaceChildren();import('../../../assets/js/action-game.js?v=1').then(({mountActionGame})=>{if(current===7&&c.isConnected)mountActionGame(c,{moduleId:'pengenalan-jaringan',mode:'2d',onComplete:score=>complete(score)});});}
+function startQuiz(c){quiz=bank.map((q,i)=>({q,i})).sort(()=>Math.random()-.5).slice(0,10);quizChoices={};c.append(el('p','Pilih satu jawaban pada setiap soal. Soal diacak saat halaman dibuka ulang.'));quiz.forEach(({q},n)=>{let section=el('section');section.append(el('h3',`${n+1}. ${q[0]}`),makeOptions(q[1],i=>quizChoices[n]=i));c.append(section)});$('check').onclick=()=>{if(Object.keys(quizChoices).length!==quiz.length){$('status').textContent='Jawab semua soal sebelum mengirim.';return}const correct=quiz.filter(({q},i)=>quizChoices[i]===q[2]).length;complete(correct*10)};if(passed(8))showCertificateForm()}
+function showCertificateForm(){window.TJKTCertificateFlow?.refresh();}
+window.addEventListener('tjkt:client-server-graded',()=>{drawNav();clientServerNotice();$('next').disabled=(!window.TJKTLocalInstructor?.isActive()&&!passed(current))||current===lessons.length-1;});$('next').onclick=()=>{if(current<lessons.length-1&&(window.TJKTLocalInstructor?.isActive()||passed(current))){current++;render()}};$('reset').onclick=()=>{if(confirm('Hapus seluruh progres modul Pengenalan Jaringan di browser ini?')&&prompt('Ketik RESET untuk konfirmasi:')==='RESET'){localStorage.removeItem(KEY);localStorage.removeItem('tjkt:client-server-sim:v1');location.reload()}};render();
+</script>
+<script src="../../../assets/js/intro-upgrade.js?v=ux2"></script>
+<script src="../../../assets/js/intro-theme.js"></script>
+<script src="../../../assets/js/network-builder-assessment.js"></script>
+<script defer src="../../../assets/js/client-server-simulator.js"></script>
+<script src="../../../assets/js/intro-sticky-navigation.js"></script>
+  <script type="module" src="../../../assets/js/module-shell.js?v=ux2"></script>
+</body>
+</html>

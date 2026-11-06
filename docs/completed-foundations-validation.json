@@ -1,0 +1,42 @@
+{
+  "result": "PASS",
+  "publishedLocally": 56,
+  "newStages": 36,
+  "oldProgressKeysUntouched": true,
+  "curriculumJP": 202,
+  "acyclicPrerequisites": true,
+  "models": "positive and negative paths passed",
+  "courses": [
+    {
+      "id": "virtualisasi-server-dasar",
+      "stages": 13,
+      "finalQuestions": 12,
+      "threshold": {
+        "stage": 75,
+        "final": 80
+      },
+      "key": "tjkt:virtualisasi-server-dasar:course:v3"
+    },
+    {
+      "id": "instalasi-komputer-dasar",
+      "stages": 15,
+      "finalQuestions": 14,
+      "threshold": {
+        "stage": 75,
+        "final": 80
+      },
+      "key": "tjkt:instalasi-komputer-dasar:course:v3"
+    },
+    {
+      "id": "konfigurasi-perangkat-dasar",
+      "stages": 8,
+      "finalQuestions": 7,
+      "threshold": {
+        "stage": 75,
+        "final": 80
+      },
+      "key": "tjkt:konfigurasi-perangkat-dasar:course:v2"
+    }
+  ],
+  "browser": "foundation-previews-browser.json"
+}

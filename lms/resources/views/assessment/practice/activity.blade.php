@@ -1,0 +1,13 @@
+@extends('layouts.app')
+@section('title',$activity->title)
+@section('content')
+<a class="btn btn-outline-secondary mb-4" href="{{ route('student.modules.show',$activity->module) }}">Kembali ke modul</a>
+<div class="card border-0 rounded-4 p-4 mb-4"><div class="eyebrow text-primary mb-2">PRAKTIKUM LAPTOP</div><h1 class="h3 fw-bold">{{ $activity->title }}</h1><p class="text-preline">{{ $activity->instructions }}</p><h2 class="h5">Rubrik dan bukti</h2><p class="text-preline">{{ $config['rubric']??'Ikuti instruksi praktik dari guru.' }}</p><p>KKM {{ $config['passing_score'] }} · {{ $submissions->count() }}/{{ $config['max_attempts'] }} pengumpulan · Batas waktu: {{ empty($config['due_at'])?'Tidak dibatasi':\Carbon\CarbonImmutable::parse($config['due_at'])->setTimezone(config('app.timezone'))->format('d/m/Y H:i T') }}</p>
+@php($last=$submissions->first())
+@if(!$last || $last->status==='revision_requested')
+@if($submissions->count()<$config['max_attempts'] && (empty($config['due_at'])||\Carbon\CarbonImmutable::parse($config['due_at'])->isFuture()))
+<form method="POST" enctype="multipart/form-data" action="{{ route('practice.store',$activity) }}">@csrf<input type="hidden" name="request_key" value="{{ old('request_key',(string)\Illuminate\Support\Str::uuid()) }}"><div class="mb-3"><label for="report" class="form-label fw-bold">Laporan dan refleksi praktik</label><textarea id="report" name="report" rows="7" minlength="20" maxlength="12000" required class="form-control" placeholder="Jelaskan langkah, kendala, diagnosis, dan bukti hasil pengujian.">{{ old('report') }}</textarea></div><div class="mb-3"><label for="evidence" class="form-label fw-bold">Berkas bukti</label><input type="file" id="evidence" name="evidence[]" multiple accept=".pdf,.png,.jpg,.jpeg,.webp" required class="form-control"><div class="form-text">1–3 berkas. Maksimal 1 MB per berkas dan total 2 MB. PDF, PNG, JPEG, WebP. Berkas privat hanya dapat diunduh siswa pemilik dan guru/admin yang berwenang. Jangan sertakan password atau private key.</div></div><button class="btn btn-primary">{{ $last?'Kirim bukti perbaikan':'Kirim bukti praktik' }}</button></form>
+@else<div class="alert alert-warning">Batas waktu atau kuota pengumpulan sudah tercapai. Hubungi guru jika memerlukan penyesuaian.</div>@endif
+@else<div class="alert {{ $last->status==='approved'?'alert-success':'alert-info' }}">{{ $last->status==='approved'?'Praktik sudah disetujui.':'Bukti sudah dikirim dan menunggu penilaian guru.' }} <a href="{{ route('practice.show',$last) }}">Lihat pengumpulan terakhir</a>.</div>@endif
+</div><div class="card border-0 rounded-4 p-4"><h2 class="h5">Riwayat pengumpulan</h2>@include('assessment.practice._submissions')</div>
+@endsection

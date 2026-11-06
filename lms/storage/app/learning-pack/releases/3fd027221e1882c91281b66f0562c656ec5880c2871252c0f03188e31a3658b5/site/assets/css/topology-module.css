@@ -1,0 +1,46 @@
+:root{font-family:system-ui,Segoe UI,sans-serif;color:#19324a;background:#f0f5fa}*{box-sizing:border-box}body{margin:0}header{background:#103e63;color:white;display:flex;align-items:center;justify-content:space-between;padding:16px 25px;gap:12px;flex-wrap:wrap}header a{color:#fff;text-decoration:none}button{font:inherit;cursor:pointer;border:0;background:#087f91;color:#fff;border-radius:10px;padding:11px 16px;font-weight:700}button:disabled{opacity:.45;cursor:not-allowed}.subtle{background:#e6eef5;color:#21445d}.layout{max-width:1250px;margin:auto;display:grid;grid-template-columns:260px minmax(0,1fr);min-height:calc(100vh - 65px)}aside{background:#fff;border-right:1px solid #d8e4ef;padding:20px}nav{display:grid;gap:7px;margin:20px 0}nav button{background:#edf3f9;color:#19324a;text-align:left;font-size:13px}nav button.active{background:#bceaf1;color:#065d6a}main{padding:24px;min-width:0}.panel{background:#fff;border:1px solid #dbe5ec;border-radius:16px;padding:24px;margin-bottom:17px;box-shadow:0 5px 18px #142a4110}.eyebrow{color:#087f91;font-size:12px;font-weight:800;letter-spacing:1.4px}h1{margin:10px 0}p,li{line-height:1.7}.progress{height:11px;background:#e3edf3;border-radius:20px;overflow:hidden}.progress span{display:block;height:100%;background:#0c9bab;width:0;transition:width .25s}.info{padding:14px;border-left:4px solid #0b8797;background:#eef8fb;border-radius:7px;margin:16px 0}.choice{display:block;width:100%;text-align:left;background:#f2f6fa;color:#163b54;border:1px solid #cbdce8;margin:8px 0}.choice.selected{background:#c7f1e8;border-color:#0a887b}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(165px,1fr));gap:12px}.top-card{padding:15px;border:1px solid #d7e5ef;border-radius:12px;background:#f9fcff}.top-card h3{margin:4px 0}.diagram{width:100%;max-height:330px;background:#0d2039;border-radius:13px;margin:14px 0}.diagram line{stroke:#56d6ec;stroke-width:4}.diagram circle{fill:#123e62;stroke:#69e6ed;stroke-width:3}.diagram text{fill:#fff;font-size:13px;text-anchor:middle;dominant-baseline:middle}.lab-tools{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}.lab-tools button{background:#244963}.lab-tools button.selected{background:#087f91;outline:3px solid #92ece9}.builder{background:#0b1c30;border-radius:12px;min-height:310px;position:relative;overflow:hidden;touch-action:manipulation}.builder svg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}.builder button.device{position:absolute;transform:translate(-50%,-50%);z-index:2;background:#1b5974;border:2px solid #8ae7e9;min-width:76px;padding:10px 7px;font-size:13px}.builder button.device.active{background:#dfad34;color:#182638}.builder button.device.bad{background:#a33343}.hint{color:#607b8b;font-size:13px}.actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.actions p{flex:1 1 100%;margin:0}.quiz-item{border-bottom:1px solid #e4edf3;padding:15px 0}.quiz-item h3{font-size:1rem}.cert{display:none}.dark{background:#101d2d;color:#dbeef8}.dark aside,.dark .panel{background:#192c41;color:#e6f5ff;border-color:#34506b}.dark nav button,.dark .top-card{background:#253c54;color:#e6f5ff}.dark .choice{background:#213d55;color:#fff}.dark .choice.selected{background:#075c60}.dark .info{background:#234154}@media(max-width:760px){.layout{grid-template-columns:1fr}aside{border:0;border-bottom:1px solid #d8e4ef}main{padding:12px}.panel{padding:16px}.builder{min-height:270px}}@media print{@page{size:A4 landscape;margin:0}body>*:not(.cert){display:none!important}.cert{display:flex!important}}
+
+.topology-simulator{margin:24px 0;padding:clamp(16px,3vw,24px);border:1px solid #b8d6e8;border-radius:18px;background:linear-gradient(145deg,#f7fcff,#e8f6fa)}
+.topology-simulator h2{margin-top:0;color:#123d5d}
+.topology-sim-toolbar{display:flex;flex-wrap:wrap;gap:9px;align-items:center}
+.topology-sim-toolbar select{min-height:42px;padding:8px 12px;border:1px solid #b7cad8;border-radius:10px;background:#fff;color:#173b55;font:inherit}
+.topology-sim-button{padding:10px 14px}
+.topology-sim-button.secondary{background:#dbe9f2;color:#21445d}
+.topology-sim-figure{overflow:auto;margin:14px 0;border:1px solid #294965;border-radius:14px;background:#0b1c30}
+.topology-sim-figure svg{display:block;width:100%;min-width:520px;height:auto}
+.topology-sim-link{stroke:#59d4e7;stroke-width:8;cursor:pointer;stroke-linecap:round;transition:stroke .18s}
+.topology-sim-bus-extension{stroke:#59d4e7;stroke-width:5}
+.topology-sim-terminator{fill:#e7b84c;stroke:#fff1b8;stroke-width:2}
+.topology-sim-link:hover,.topology-sim-link:focus{stroke:#fbbf24;stroke-width:9;outline:none}
+.topology-sim-link.is-broken{stroke:#fb7185;stroke-dasharray:8 8}
+.topology-sim-node{fill:#123e62;stroke:#69e6ed;stroke-width:3}
+.topology-sim-node.is-switch{fill:#155e75}
+.topology-sim-node-wrap[role=button]{cursor:pointer}
+.topology-sim-node-wrap[role=button]:focus .topology-sim-node{stroke:#fbbf24;stroke-width:5;outline:none}
+.topology-sim-node.is-offline{fill:#592a36;stroke:#fb7185}
+.topology-sim-label{fill:#fff;font-size:13px;font-weight:700;text-anchor:middle;pointer-events:none}
+.topology-sim-packet{fill:#facc15;stroke:#fff8cc;stroke-width:2;filter:drop-shadow(0 0 7px #facc15)}
+.topology-sim-status{min-height:1.5em;padding:10px 12px;border-radius:9px;background:#e3f4f6;color:#123d5d;font-weight:700}
+.topology-sim-note{color:#607b8b;font-size:.9rem}
+.link-rescue-hud{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:12px;border-radius:11px;background:#e8f7fb;color:#123d5d}
+.link-rescue-figure{overflow:auto;margin:14px 0;border:1px solid #294965;border-radius:14px;background:#0b1c30}
+.link-rescue-figure svg{display:block;width:100%;min-width:500px;height:auto}
+.link-rescue-link{stroke:#59d4e7;stroke-width:6;cursor:pointer;stroke-linecap:round}
+.link-rescue-link:hover,.link-rescue-link:focus{stroke:#fbbf24;stroke-width:10;outline:none}
+.link-rescue-link.is-damaged{stroke:#fb7185;stroke-dasharray:9 8}
+.link-rescue-node{cursor:pointer}
+.link-rescue-node circle,.link-rescue-node-circle{fill:#123e62;stroke:#69e6ed;stroke-width:3}
+.link-rescue-node.is-damaged circle{fill:#6b2734;stroke:#fb7185}
+.link-rescue-node:focus circle{stroke:#fbbf24;stroke-width:5;outline:none}
+.link-rescue-node text,.link-rescue-label{fill:#fff;font-size:13px;font-weight:700;text-anchor:middle;pointer-events:none}
+.link-rescue-status{min-height:1.5em;padding:11px;border-radius:9px;background:#e3f4f6;color:#123d5d;font-weight:700}
+.link-rescue-actions{display:flex;flex-wrap:wrap;gap:10px}
+.link-rescue-packet{fill:#facc15;stroke:#fff8cc;stroke-width:2;filter:drop-shadow(0 0 8px #facc15)}
+.dark .topology-simulator{background:#172c40;border-color:#34506b}
+.dark .topology-simulator h2,.dark .topology-sim-status{color:#c9f5ff}
+.dark .topology-sim-status{background:#203d54}
+.dark .topology-sim-toolbar select{background:#213d55;color:#fff;border-color:#45617a}
+.dark .topology-sim-button.secondary{background:#304a62;color:#fff}
+.dark .link-rescue-hud{background:#203d54;color:#e6f5ff}
+.dark .link-rescue-status{background:#203d54;color:#c9f5ff}
+@media(max-width:600px){.topology-sim-toolbar{align-items:stretch}.topology-sim-toolbar select,.topology-sim-toolbar button{width:100%}.topology-sim-figure svg{min-width:500px}}

@@ -1,0 +1,68 @@
+{
+    "moduleId":  "ftp-server",
+    "title":  "FTP Server dan Pengujian Transfer Berkas",
+    "version":  2,
+    "contentSource":  "assets/js/course-ftp.js",
+    "chapters":  [
+                     {
+                         "id":  "orientasi",
+                         "title":  "Orientasi, Tujuan, dan Asesmen Awal",
+                         "summary":  "Merancang layanan transfer lab dan pembuktian kanal, izin serta integritas."
+                     },
+                     {
+                         "id":  "konsep-1",
+                         "title":  "FTP, FTPS dan SFTP",
+                         "summary":  "Memilih protokol yang sesuai serta membedakan perlindungan kanal."
+                     },
+                     {
+                         "id":  "konsep-2",
+                         "title":  "Kanal Kontrol, Mode Aktif dan Pasif",
+                         "summary":  "Membuktikan arah koneksi untuk setiap operasi."
+                     },
+                     {
+                         "id":  "konsep-3",
+                         "title":  "Akun, Direktori, Policy dan Permission",
+                         "summary":  "Memisahkan otorisasi daemon dari hak filesystem."
+                     },
+                     {
+                         "id":  "konsep-4",
+                         "title":  "Konfigurasi vsftpd dan Pengujian Klien",
+                         "summary":  "Menyusun perubahan terkontrol pada VM lab."
+                     },
+                     {
+                         "id":  "konsep-5",
+                         "title":  "Representasi, Transfer Parsial dan Integritas",
+                         "summary":  "Membedakan respons protokol dari kesamaan isi."
+                     },
+                     {
+                         "id":  "konsep-6",
+                         "title":  "Diagnosis, Pemulihan dan Laporan Penerimaan",
+                         "summary":  "Memilih perbaikan berdasarkan lapisan kegagalan."
+                     },
+                     {
+                         "id":  "kasus",
+                         "title":  "Studi Kasus dan Proyek Terapan",
+                         "summary":  "Menyusun rancangan FTP/FTPS dan matriks penerimaan berkas."
+                     },
+                     {
+                         "id":  "laboratorium",
+                         "title":  "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+                         "summary":  "Menguji kontrol/data, izin dan byte hasil transfer."
+                     },
+                     {
+                         "id":  "game",
+                         "title":  "Game Antrean: Transfer Dock",
+                         "summary":  "Mengirim blok berurutan, mengelola dua slot dan memulihkan file rusak."
+                     },
+                     {
+                         "id":  "refleksi",
+                         "title":  "Refleksi, Umpan Balik, dan Transfer",
+                         "summary":  "Menghubungkan prediksi, bukti kanal/izin/integritas dan batas model."
+                     },
+                     {
+                         "id":  "evaluasi",
+                         "title":  "Rangkuman dan Evaluasi Akhir",
+                         "summary":  "Memadukan konfigurasi layanan dan bukti penerimaan transfer berkas."
+                     }
+                 ]
+}

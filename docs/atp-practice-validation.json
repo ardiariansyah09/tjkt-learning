@@ -1,0 +1,7 @@
+{
+  "result": "PASS",
+  "checks": 46,
+  "topics": 6,
+  "assessmentChanges": 0,
+  "scope": "Model scenarios, failures, restoration and bounded evidence. Browser tests separate."
+}

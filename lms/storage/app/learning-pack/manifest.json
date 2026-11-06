@@ -1,0 +1,4134 @@
+[
+  {
+    "id": "proses-bisnis-tjkt",
+    "title": "Proses Bisnis dan Pelayanan Pelanggan TJKT",
+    "description": "Survei kebutuhan pelanggan, strategi implementasi, budaya mutu, penanganan pelanggan, dan serah terima layanan.",
+    "phase": "E",
+    "grade": 10,
+    "category": "Wawasan Dunia Kerja Bidang Teknik Jaringan Komputer dan Telekomunikasi",
+    "path": "modules/dasar-jaringan/proses-bisnis-tjkt/",
+    "prerequisites": [],
+    "key": "tjkt:proses-bisnis-tjkt:course:v2",
+    "stages": [
+      {
+        "id": "orientasi",
+        "title": "Orientasi, Tujuan, dan Asesmen Awal",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-1",
+        "title": "Rantai Nilai dan Alur Proses Layanan",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-2",
+        "title": "Survei dan Kebutuhan Pelanggan",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-3",
+        "title": "Perencanaan, Implementasi, dan Perubahan",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-4",
+        "title": "Tiket, Prioritas, dan Kesepakatan Layanan",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-5",
+        "title": "Komunikasi, Keluhan, dan Etika Layanan",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-6",
+        "title": "Pengujian, Serah Terima, dan Mutu Berkelanjutan",
+        "threshold": 75
+      },
+      {
+        "id": "kasus",
+        "title": "Studi Kasus dan Proyek Terapan",
+        "threshold": 75
+      },
+      {
+        "id": "laboratorium",
+        "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+        "threshold": 75
+      },
+      {
+        "id": "game",
+        "title": "Game Misi Terapan",
+        "threshold": 75
+      },
+      {
+        "id": "refleksi",
+        "title": "Refleksi, Umpan Balik, dan Transfer",
+        "threshold": 75
+      },
+      {
+        "id": "evaluasi",
+        "title": "Rangkuman dan Evaluasi Akhir",
+        "threshold": 80
+      }
+    ],
+    "contentVersion": "1873c40f2c74f5e8cdb98a3b0a27dd724fb55ca87d5efbf3f40c4ef77518707e"
+  },
+  {
+    "id": "wawasan-tjkt",
+    "title": "Perkembangan Teknologi dan Isu Global TJKT",
+    "description": "Perkembangan 5G, IPv6, fiber optik, IoT, data centre, cloud computing, dan isu keamanan informasi.",
+    "phase": "E",
+    "grade": 10,
+    "category": "Wawasan Dunia Kerja Bidang Teknik Jaringan Komputer dan Telekomunikasi",
+    "path": "modules/dasar-jaringan/wawasan-tjkt/",
+    "prerequisites": [],
+    "key": "tjkt:wawasan-tjkt:course:v2",
+    "stages": [
+      {
+        "id": "orientasi",
+        "title": "Orientasi, Tujuan, dan Asesmen Awal",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-1",
+        "title": "Literasi Teknologi dan Penilaian Bukti",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-2",
+        "title": "G, Mobilitas, dan Akses Fiber",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-3",
+        "title": "IPv6 dan Internet of Things",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-4",
+        "title": "Pusat Data, Virtualisasi, Cloud, dan Edge",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-5",
+        "title": "Keamanan, Privasi, dan Ketahanan",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-6",
+        "title": "Dampak Lingkungan, Inklusi, dan Keputusan Adopsi",
+        "threshold": 75
+      },
+      {
+        "id": "kasus",
+        "title": "Studi Kasus dan Proyek Terapan",
+        "threshold": 75
+      },
+      {
+        "id": "laboratorium",
+        "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+        "threshold": 75
+      },
+      {
+        "id": "game",
+        "title": "Game Misi Terapan",
+        "threshold": 75
+      },
+      {
+        "id": "refleksi",
+        "title": "Refleksi, Umpan Balik, dan Transfer",
+        "threshold": 75
+      },
+      {
+        "id": "evaluasi",
+        "title": "Rangkuman dan Evaluasi Akhir",
+        "threshold": 80
+      }
+    ],
+    "contentVersion": "1873c40f2c74f5e8cdb98a3b0a27dd724fb55ca87d5efbf3f40c4ef77518707e"
+  },
+  {
+    "id": "profesi-kewirausahaan-tjkt",
+    "title": "Profesi dan Kewirausahaan TJKT",
+    "description": "Kenali job profile, technopreneurship, personal branding, peluang usaha, dan rancangan usaha layanan jaringan.",
+    "phase": "E",
+    "grade": 10,
+    "category": "Wawasan Dunia Kerja Bidang Teknik Jaringan Komputer dan Telekomunikasi",
+    "path": "modules/dasar-jaringan/profesi-kewirausahaan-tjkt/",
+    "prerequisites": [],
+    "key": "tjkt:profesi-kewirausahaan-tjkt:course:v2",
+    "stages": [
+      {
+        "id": "orientasi",
+        "title": "Orientasi, Tujuan, dan Asesmen Awal",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-1",
+        "title": "Peta Profesi dan Kompetensi TJKT",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-2",
+        "title": "Portofolio, Personal Branding, dan Etika",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-3",
+        "title": "Peluang Usaha dan Validasi Masalah",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-4",
+        "title": "Proposisi Nilai dan Model Usaha Layanan",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-5",
+        "title": "Biaya, Harga, Titik Impas, dan Arus Kas",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-6",
+        "title": "Proposal, Operasi, dan Rencana Pengembangan",
+        "threshold": 75
+      },
+      {
+        "id": "kasus",
+        "title": "Studi Kasus dan Proyek Terapan",
+        "threshold": 75
+      },
+      {
+        "id": "laboratorium",
+        "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+        "threshold": 75
+      },
+      {
+        "id": "game",
+        "title": "Game Misi Terapan",
+        "threshold": 75
+      },
+      {
+        "id": "refleksi",
+        "title": "Refleksi, Umpan Balik, dan Transfer",
+        "threshold": 75
+      },
+      {
+        "id": "evaluasi",
+        "title": "Rangkuman dan Evaluasi Akhir",
+        "threshold": 80
+      }
+    ],
+    "contentVersion": "1873c40f2c74f5e8cdb98a3b0a27dd724fb55ca87d5efbf3f40c4ef77518707e"
+  },
+  {
+    "id": "k3-budaya-kerja",
+    "title": "K3LH dan Budaya Kerja TJKT",
+    "description": "Identifikasi risiko listrik, ESD, fiber, ergonomi, limbah elektronik, dan prosedur kerja aman.",
+    "phase": "E",
+    "grade": 10,
+    "category": "Kecakapan Kerja Dasar (Basic Job Skills), K3LH, dan Budaya Kerja",
+    "path": "modules/dasar-jaringan/k3-budaya-kerja/",
+    "prerequisites": [],
+    "key": "tjkt:k3-budaya-kerja:course:v2",
+    "stages": [
+      {
+        "id": "orientasi",
+        "title": "Orientasi, Tujuan, dan Asesmen Awal",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-1",
+        "title": "Bahaya, Risiko, dan Penilaian Awal",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-2",
+        "title": "Hierarki Pengendalian dan JSA",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-3",
+        "title": "Keselamatan Listrik dan ESD",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-4",
+        "title": "Perkakas, Fiber Optik, dan Area Kerja",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-5",
+        "title": "Ergonomi, 5R, dan Kerja Tim",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-6",
+        "title": "Keadaan Darurat, Lingkungan, dan Izin Kerja",
+        "threshold": 75
+      },
+      {
+        "id": "kasus",
+        "title": "Studi Kasus: Audit Keselamatan Laboratorium",
+        "threshold": 75
+      },
+      {
+        "id": "laboratorium",
+        "title": "Inspeksi Area Kerja dan JSA",
+        "threshold": 75
+      },
+      {
+        "id": "game",
+        "title": "Misi Pengiriman — Game Petualangan",
+        "threshold": 75
+      },
+      {
+        "id": "refleksi",
+        "title": "Refleksi, Kolaborasi, dan Rencana Perbaikan",
+        "threshold": 75
+      },
+      {
+        "id": "evaluasi",
+        "title": "Evaluasi Akhir dan Transfer Pembelajaran",
+        "threshold": 80
+      }
+    ],
+    "contentVersion": "1873c40f2c74f5e8cdb98a3b0a27dd724fb55ca87d5efbf3f40c4ef77518707e"
+  },
+  {
+    "id": "pengenalan-jaringan",
+    "title": "Pengenalan Jaringan Komputer",
+    "description": "Konsep dasar jaringan, arsitektur, simulasi, dan Network Arcade.",
+    "phase": "E",
+    "grade": 10,
+    "category": "Media dan Jaringan Telekomunikasi",
+    "path": "modules/dasar-jaringan/pengenalan-jaringan/",
+    "prerequisites": [],
+    "key": "tjkt:intro-network:v1",
+    "stages": [
+      {
+        "id": "def",
+        "title": "Pengertian Jaringan",
+        "threshold": 75
+      },
+      {
+        "id": "benefit",
+        "title": "Manfaat Jaringan",
+        "threshold": 75
+      },
+      {
+        "id": "scope",
+        "title": "LAN, MAN, dan WAN",
+        "threshold": 75
+      },
+      {
+        "id": "internet",
+        "title": "Internet dan Intranet",
+        "threshold": 75
+      },
+      {
+        "id": "architecture",
+        "title": "Client-Server dan Peer-to-Peer",
+        "threshold": 75
+      },
+      {
+        "id": "components",
+        "title": "Komponen Jaringan",
+        "threshold": 75
+      },
+      {
+        "id": "lab",
+        "title": "Virtual Network Builder",
+        "threshold": 75
+      },
+      {
+        "id": "games",
+        "title": "Game 2D: Loket Paket Jaringan",
+        "threshold": 80
+      },
+      {
+        "id": "posttest",
+        "title": "Posttest dan Sertifikat",
+        "threshold": 80
+      }
+    ],
+    "contentVersion": "1873c40f2c74f5e8cdb98a3b0a27dd724fb55ca87d5efbf3f40c4ef77518707e"
+  },
+  {
+    "id": "perangkat-jaringan",
+    "title": "Perangkat Jaringan",
+    "description": "Pelajari NIC, switch, router, access point, modem/ONT, dan firewall melalui ilustrasi, praktikum, serta evaluasi interaktif.",
+    "phase": "E",
+    "grade": 10,
+    "category": "Media dan Jaringan Telekomunikasi",
+    "path": "modules/dasar-jaringan/perangkat-jaringan/",
+    "prerequisites": [
+      "pengenalan-jaringan"
+    ],
+    "key": "tjkt:perangkat-jaringan:progress:v1",
+    "stages": [
+      {
+        "id": "peran",
+        "title": "Peran Perangkat Jaringan",
+        "threshold": 75
+      },
+      {
+        "id": "nic",
+        "title": "NIC dan Perangkat Akhir",
+        "threshold": 75
+      },
+      {
+        "id": "switching",
+        "title": "Hub, Bridge, dan Switch",
+        "threshold": 75
+      },
+      {
+        "id": "routing",
+        "title": "Router dan Default Gateway",
+        "threshold": 75
+      },
+      {
+        "id": "wifi-keamanan",
+        "title": "Access Point, Modem/ONT, dan Firewall",
+        "threshold": 75
+      },
+      {
+        "id": "selection",
+        "title": "Device Selection Lab",
+        "threshold": 75
+      },
+      {
+        "id": "builder",
+        "title": "Virtual Network Builder",
+        "threshold": 75
+      },
+      {
+        "id": "fault",
+        "title": "Game 2D: Bengkel Modul Perangkat",
+        "threshold": 75
+      },
+      {
+        "id": "posttest",
+        "title": "Posttest Perangkat Jaringan",
+        "threshold": 80
+      }
+    ],
+    "contentVersion": "1873c40f2c74f5e8cdb98a3b0a27dd724fb55ca87d5efbf3f40c4ef77518707e"
+  },
+  {
+    "id": "topologi-jaringan",
+    "title": "Topologi Jaringan",
+    "description": "Star, Bus, Ring, Mesh, Tree, Hybrid, Topology Builder, dan game interaktif.",
+    "phase": "E",
+    "grade": 10,
+    "category": "Media dan Jaringan Telekomunikasi",
+    "path": "modules/dasar-jaringan/topologi-jaringan/",
+    "prerequisites": [
+      "perangkat-jaringan",
+      "media-transmisi"
+    ],
+    "key": "tjkt:topology:v1",
+    "stages": [
+      {
+        "id": "0",
+        "title": "Pengertian dan Fungsi Topologi",
+        "threshold": 75
+      },
+      {
+        "id": "1",
+        "title": "Topologi Bus dan Ring",
+        "threshold": 75
+      },
+      {
+        "id": "2",
+        "title": "Topologi Star dan Tree",
+        "threshold": 75
+      },
+      {
+        "id": "3",
+        "title": "Topologi Mesh dan Hybrid",
+        "threshold": 75
+      },
+      {
+        "id": "4",
+        "title": "Memilih Topologi untuk Sekolah",
+        "threshold": 75
+      },
+      {
+        "id": "5",
+        "title": "Topology Builder — Virtual Lab",
+        "threshold": 75
+      },
+      {
+        "id": "6",
+        "title": "Link Rescue: Simulasi Topologi 2D",
+        "threshold": 75
+      },
+      {
+        "id": "7",
+        "title": "Game 2D: Jaringan Tetap Terhubung",
+        "threshold": 80
+      },
+      {
+        "id": "8",
+        "title": "Posttest dan Sertifikat",
+        "threshold": 80
+      }
+    ],
+    "contentVersion": "1873c40f2c74f5e8cdb98a3b0a27dd724fb55ca87d5efbf3f40c4ef77518707e"
+  },
+  {
+    "id": "perencanaan-jaringan",
+    "title": "Analisis Kebutuhan dan Dokumentasi Jaringan",
+    "description": "Inventaris kebutuhan pengguna, kapasitas, denah, anggaran, dan dokumentasi hasil pengujian.",
+    "phase": "E",
+    "grade": 10,
+    "category": "Media dan Jaringan Telekomunikasi",
+    "path": "modules/dasar-jaringan/perencanaan-jaringan/",
+    "prerequisites": [
+      "topologi-jaringan"
+    ],
+    "key": "tjkt:perencanaan-jaringan:course:v2",
+    "stages": [
+      {
+        "id": "orientasi",
+        "title": "Orientasi, Tujuan, dan Asesmen Awal",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-1",
+        "title": "Pemangku Kepentingan dan Kebutuhan",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-2",
+        "title": "Survei Lokasi dan Inventaris",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-3",
+        "title": "Perhitungan Port, Kapasitas, dan Pertumbuhan",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-4",
+        "title": "Rancangan Fisik, Logis, dan Pengalamatan",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-5",
+        "title": "Anggaran, Pemilihan Alternatif, dan Risiko",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-6",
+        "title": "Dokumentasi, Uji Penerimaan, dan Perubahan",
+        "threshold": 75
+      },
+      {
+        "id": "kasus",
+        "title": "Studi Kasus: Rancangan Laboratorium Sekolah",
+        "threshold": 75
+      },
+      {
+        "id": "laboratorium",
+        "title": "Panel Kapasitas Switch",
+        "threshold": 75
+      },
+      {
+        "id": "game",
+        "title": "Misi Pengiriman — Game Petualangan",
+        "threshold": 75
+      },
+      {
+        "id": "refleksi",
+        "title": "Refleksi dan Review Antar-Kelompok",
+        "threshold": 75
+      },
+      {
+        "id": "evaluasi",
+        "title": "Evaluasi Akhir dan Serah Terima Rancangan",
+        "threshold": 80
+      }
+    ],
+    "contentVersion": "1873c40f2c74f5e8cdb98a3b0a27dd724fb55ca87d5efbf3f40c4ef77518707e"
+  },
+  {
+    "id": "media-transmisi",
+    "title": "Media Transmisi Jaringan",
+    "description": "Bandingkan kabel tembaga, fiber optik, dan media nirkabel melalui simulator 2D.",
+    "phase": "E",
+    "grade": 10,
+    "category": "Media dan Jaringan Telekomunikasi",
+    "path": "modules/dasar-jaringan/media-transmisi/",
+    "prerequisites": [
+      "perangkat-jaringan"
+    ],
+    "key": "tjkt:media-transmisi:course:v1",
+    "stages": [
+      {
+        "id": "pengantar",
+        "title": "Mengenal Media Transmisi",
+        "threshold": 75
+      },
+      {
+        "id": "tembaga",
+        "title": "Kabel Tembaga",
+        "threshold": 75
+      },
+      {
+        "id": "fiber",
+        "title": "Fiber Optik",
+        "threshold": 75
+      },
+      {
+        "id": "nirkabel",
+        "title": "Media Nirkabel",
+        "threshold": 75
+      },
+      {
+        "id": "memilih",
+        "title": "Memilih dan Menguji Media",
+        "threshold": 75
+      },
+      {
+        "id": "simulator",
+        "title": "Simulator Jalur Transmisi",
+        "threshold": 75
+      },
+      {
+        "id": "virtual-tester",
+        "title": "Virtual Cable Tester",
+        "threshold": 75
+      },
+      {
+        "id": "posttest",
+        "title": "Posttest Media Transmisi",
+        "threshold": 80
+      }
+    ],
+    "contentVersion": "1873c40f2c74f5e8cdb98a3b0a27dd724fb55ca87d5efbf3f40c4ef77518707e"
+  },
+  {
+    "id": "osi-tcpip",
+    "title": "Model OSI dan TCP/IP",
+    "description": "Pelajari tujuh lapisan OSI, pemetaan TCP/IP, enkapsulasi data, dan game susun protokol interaktif.",
+    "phase": "E",
+    "grade": 10,
+    "category": "Media dan Jaringan Telekomunikasi",
+    "path": "modules/dasar-jaringan/osi-tcpip/",
+    "prerequisites": [
+      "pengenalan-jaringan"
+    ],
+    "key": "tjkt:osi-tcpip:course:v1",
+    "stages": [
+      {
+        "id": "pengantar",
+        "title": "Mengenal Model Berlapis",
+        "threshold": 75
+      },
+      {
+        "id": "osi",
+        "title": "Tujuh Lapisan OSI",
+        "threshold": 75
+      },
+      {
+        "id": "tcpip",
+        "title": "Model TCP/IP",
+        "threshold": 75
+      },
+      {
+        "id": "enkapsulasi",
+        "title": "Enkapsulasi dan Dekapsulasi",
+        "threshold": 75
+      },
+      {
+        "id": "simulator",
+        "title": "Simulator Perjalanan Paket",
+        "threshold": 75
+      },
+      {
+        "id": "game",
+        "title": "Game 2D: Pabrik Enkapsulasi",
+        "threshold": 75
+      },
+      {
+        "id": "rangkuman",
+        "title": "Rangkuman",
+        "threshold": 75
+      },
+      {
+        "id": "posttest",
+        "title": "Posttest OSI dan TCP/IP",
+        "threshold": 80
+      }
+    ],
+    "contentVersion": "1873c40f2c74f5e8cdb98a3b0a27dd724fb55ca87d5efbf3f40c4ef77518707e"
+  },
+  {
+    "id": "ipv4-subnetting",
+    "title": "IP Address & Subnetting",
+    "description": "IPv4, CIDR, subnetting, VLSM, dan IP Quest.",
+    "phase": "E",
+    "grade": 10,
+    "category": "Media dan Jaringan Telekomunikasi",
+    "path": "modules/dasar-jaringan/ipv4-subnetting/",
+    "prerequisites": [
+      "osi-tcpip"
+    ],
+    "key": "tjkt:ipv4-subnetting:sequential:v2",
+    "stages": [
+      {
+        "id": "pengenalan",
+        "title": "Pengenalan IPv4",
+        "threshold": 75
+      },
+      {
+        "id": "struktur",
+        "title": "Struktur Alamat IPv4",
+        "threshold": 75
+      },
+      {
+        "id": "biner",
+        "title": "Bilangan Biner",
+        "threshold": 75
+      },
+      {
+        "id": "mask",
+        "title": "Subnet Mask & CIDR",
+        "threshold": 75
+      },
+      {
+        "id": "subnet",
+        "title": "Dasar Subnetting",
+        "threshold": 75
+      },
+      {
+        "id": "vlsm",
+        "title": "Praktikum VLSM",
+        "threshold": 75
+      },
+      {
+        "id": "network-lab",
+        "title": "Virtual Network Lab",
+        "threshold": 75
+      },
+      {
+        "id": "games",
+        "title": "Game 2D: Lahan Subnet",
+        "threshold": 80
+      },
+      {
+        "id": "posttest",
+        "title": "Posttest & Rekap",
+        "threshold": 80
+      }
+    ],
+    "contentVersion": "1873c40f2c74f5e8cdb98a3b0a27dd724fb55ca87d5efbf3f40c4ef77518707e"
+  },
+  {
+    "id": "ipv6-dasar",
+    "title": "Pengalamatan IPv6 Dasar",
+    "description": "Alamat 128 bit, penyingkatan, prefix, link-local, multicast, dan pengantar dual stack.",
+    "phase": "E",
+    "grade": 10,
+    "category": "Media dan Jaringan Telekomunikasi",
+    "path": "modules/dasar-jaringan/ipv6-dasar/",
+    "prerequisites": [
+      "ipv4-subnetting"
+    ],
+    "key": "tjkt:ipv6-dasar:course:v2",
+    "stages": [
+      {
+        "id": "orientasi",
+        "title": "Orientasi, Tujuan, dan Asesmen Awal",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-1",
+        "title": "Struktur 128 Bit dan Penulisan Kanonis",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-2",
+        "title": "Jenis, Lingkup, dan Alamat Khusus",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-3",
+        "title": "Prefix, Subnet, dan Rencana Alamat",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-4",
+        "title": "Neighbor Discovery dan Router Advertisement",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-5",
+        "title": "SLAAC, DHCPv6, DAD, dan Masa Berlaku",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-6",
+        "title": "Routing, DNS, Dual Stack, dan Keamanan",
+        "threshold": 75
+      },
+      {
+        "id": "kasus",
+        "title": "Studi Kasus: Jaringan Sekolah Dual Stack",
+        "threshold": 75
+      },
+      {
+        "id": "laboratorium",
+        "title": "Bengkel Alamat dan Prefix IPv6",
+        "threshold": 75
+      },
+      {
+        "id": "game",
+        "title": "Misi Pengiriman — Game Petualangan",
+        "threshold": 75
+      },
+      {
+        "id": "refleksi",
+        "title": "Refleksi, Bukti, dan Perbaikan Strategi",
+        "threshold": 75
+      },
+      {
+        "id": "evaluasi",
+        "title": "Evaluasi Akhir dan Transfer Kasus",
+        "threshold": 80
+      }
+    ],
+    "contentVersion": "1873c40f2c74f5e8cdb98a3b0a27dd724fb55ca87d5efbf3f40c4ef77518707e"
+  },
+  {
+    "id": "protokol-layanan",
+    "title": "Protokol dan Layanan Jaringan Dasar",
+    "description": "Pelajari DNS, DHCP, HTTP/HTTPS, port layanan, dan alur komunikasi melalui simulasi serta game interaktif.",
+    "phase": "E",
+    "grade": 10,
+    "category": "Media dan Jaringan Telekomunikasi",
+    "path": "modules/dasar-jaringan/protokol-layanan/",
+    "prerequisites": [
+      "ipv4-subnetting",
+      "osi-tcpip"
+    ],
+    "key": "tjkt:protokol-layanan:course:v1",
+    "stages": [
+      {
+        "id": "pengantar",
+        "title": "Mengenal Protokol dan Layanan",
+        "threshold": 75
+      },
+      {
+        "id": "dhcp",
+        "title": "DHCP dan Konfigurasi Otomatis",
+        "threshold": 75
+      },
+      {
+        "id": "dns",
+        "title": "DNS dan Record",
+        "threshold": 75
+      },
+      {
+        "id": "web",
+        "title": "HTTP, HTTPS, dan TLS",
+        "threshold": 75
+      },
+      {
+        "id": "ports",
+        "title": "Port dan Layanan Umum",
+        "threshold": 75
+      },
+      {
+        "id": "simulator",
+        "title": "Simulasi Perjalanan Layanan",
+        "threshold": 75
+      },
+      {
+        "id": "game",
+        "title": "Game 2D: Antrean Layanan Digital",
+        "threshold": 75
+      },
+      {
+        "id": "posttest",
+        "title": "Posttest Protokol dan Layanan",
+        "threshold": 80
+      }
+    ],
+    "contentVersion": "1873c40f2c74f5e8cdb98a3b0a27dd724fb55ca87d5efbf3f40c4ef77518707e"
+  },
+  {
+    "id": "sistem-telekomunikasi-dasar",
+    "title": "Dasar Sistem Telekomunikasi",
+    "description": "Prinsip sistem seluler, gelombang mikro, VSAT IP, jaringan optik, WLAN, dan keamanan komunikasi.",
+    "phase": "E",
+    "grade": 10,
+    "category": "Media dan Jaringan Telekomunikasi",
+    "path": "modules/dasar-jaringan/sistem-telekomunikasi-dasar/",
+    "prerequisites": [
+      "media-transmisi"
+    ],
+    "key": "tjkt:sistem-telekomunikasi-dasar:course:v2",
+    "stages": [
+      {
+        "id": "orientasi",
+        "title": "Orientasi, Tujuan, dan Asesmen Awal",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-1",
+        "title": "Model Sistem dan Representasi Sinyal",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-2",
+        "title": "Frekuensi, Kapasitas, dan Mutu Layanan",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-3",
+        "title": "Jaringan Seluler dan WLAN",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-4",
+        "title": "Radio Gelombang Mikro dan Link Terestrial",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-5",
+        "title": "Satelit, VSAT IP, dan Propagasi",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-6",
+        "title": "Jaringan Optik, Keamanan, dan Pemilihan Sistem",
+        "threshold": 75
+      },
+      {
+        "id": "kasus",
+        "title": "Studi Kasus dan Proyek Terapan",
+        "threshold": 75
+      },
+      {
+        "id": "laboratorium",
+        "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+        "threshold": 75
+      },
+      {
+        "id": "game",
+        "title": "Game Misi Terapan",
+        "threshold": 75
+      },
+      {
+        "id": "refleksi",
+        "title": "Refleksi, Umpan Balik, dan Transfer",
+        "threshold": 75
+      },
+      {
+        "id": "evaluasi",
+        "title": "Rangkuman dan Evaluasi Akhir",
+        "threshold": 80
+      }
+    ],
+    "contentVersion": "1873c40f2c74f5e8cdb98a3b0a27dd724fb55ca87d5efbf3f40c4ef77518707e"
+  },
+  {
+    "id": "troubleshooting",
+    "title": "Troubleshooting Jaringan Dasar",
+    "description": "Telusuri gangguan fisik, IP, gateway, dan DNS melalui lab diagnosa serta game pemulihan jaringan 2D.",
+    "phase": "E",
+    "grade": 10,
+    "category": "Media dan Jaringan Telekomunikasi",
+    "path": "modules/dasar-jaringan/troubleshooting/",
+    "prerequisites": [
+      "protokol-layanan"
+    ],
+    "key": "tjkt:troubleshooting:course:v1",
+    "stages": [
+      {
+        "id": "pengantar",
+        "title": "Memulai Troubleshooting",
+        "threshold": 75
+      },
+      {
+        "id": "metode",
+        "title": "Mengisolasi Lingkup Masalah",
+        "threshold": 75
+      },
+      {
+        "id": "fisik",
+        "title": "Memeriksa Link Fisik dan Tautan",
+        "threshold": 75
+      },
+      {
+        "id": "ip",
+        "title": "Memeriksa Konfigurasi IP",
+        "threshold": 75
+      },
+      {
+        "id": "layanan",
+        "title": "Menguji Gateway, Jalur, dan DNS",
+        "threshold": 75
+      },
+      {
+        "id": "alat",
+        "title": "Memilih Alat Diagnostik",
+        "threshold": 75
+      },
+      {
+        "id": "simulator",
+        "title": "Network Clinic: Lab Diagnosa",
+        "threshold": 75
+      },
+      {
+        "id": "game",
+        "title": "Game 2D: Teknisi dalam Batas Waktu",
+        "threshold": 75
+      },
+      {
+        "id": "posttest",
+        "title": "Posttest Troubleshooting Jaringan",
+        "threshold": 80
+      }
+    ],
+    "contentVersion": "1873c40f2c74f5e8cdb98a3b0a27dd724fb55ca87d5efbf3f40c4ef77518707e"
+  },
+  {
+    "id": "alat-ukur-tjkt",
+    "title": "Penggunaan dan Pemeliharaan Alat Ukur TJKT",
+    "description": "Pilih alat ukur listrik dan jaringan, baca hasil ukur, kenali batas ukur, serta lakukan perawatan sesuai prosedur K3.",
+    "phase": "E",
+    "grade": 10,
+    "category": "Penggunaan Alat Ukur",
+    "path": "modules/dasar-jaringan/alat-ukur-tjkt/",
+    "prerequisites": [
+      "k3-budaya-kerja",
+      "media-transmisi"
+    ],
+    "key": "tjkt:alat-ukur-tjkt:course:v2",
+    "stages": [
+      {
+        "id": "orientasi",
+        "title": "Orientasi, Tujuan, dan Asesmen Awal",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-1",
+        "title": "Tujuan Ukur, Besaran, dan Pemilihan Alat",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-2",
+        "title": "Keselamatan dan Pemeriksaan Sebelum Ukur",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-3",
+        "title": "Rentang, Resolusi, Akurasi, dan Ketidakpastian",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-4",
+        "title": "Pengujian Kabel Tembaga dan Dokumentasi Link",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-5",
+        "title": "Daya Optik, Rugi Sisip, dan Margin",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-6",
+        "title": "Kalibrasi, Perawatan, dan Laporan Ukur",
+        "threshold": 75
+      },
+      {
+        "id": "kasus",
+        "title": "Studi Kasus dan Proyek Terapan",
+        "threshold": 75
+      },
+      {
+        "id": "laboratorium",
+        "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+        "threshold": 75
+      },
+      {
+        "id": "game",
+        "title": "Game Misi Terapan",
+        "threshold": 75
+      },
+      {
+        "id": "refleksi",
+        "title": "Refleksi, Umpan Balik, dan Transfer",
+        "threshold": 75
+      },
+      {
+        "id": "evaluasi",
+        "title": "Rangkuman dan Evaluasi Akhir",
+        "threshold": 80
+      }
+    ],
+    "contentVersion": "1873c40f2c74f5e8cdb98a3b0a27dd724fb55ca87d5efbf3f40c4ef77518707e"
+  },
+  {
+    "id": "kebutuhan-teknis-jaringan",
+    "title": "Analisis Kebutuhan Teknis dan Peralatan Jaringan",
+    "description": "Kebutuhan teknis pengguna, inventaris peralatan, pemilihan teknologi, dan spesifikasi rancangan sesuai kebutuhan.",
+    "phase": "F",
+    "grade": 11,
+    "category": "Perencanaan dan Pengalamatan Jaringan",
+    "path": "modules/perencanaan-jaringan/kebutuhan-teknis-jaringan/",
+    "prerequisites": [
+      "perencanaan-jaringan"
+    ],
+    "key": "tjkt:kebutuhan-teknis-jaringan:course:v2",
+    "stages": [
+      {
+        "id": "orientasi",
+        "title": "Orientasi, Tujuan, dan Asesmen Awal",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-1",
+        "title": "Dari Kegiatan Pengguna ke Kebutuhan Teknis",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-2",
+        "title": "Survei, Inventaris, dan Kualitas Bukti",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-3",
+        "title": "Pengguna Bersamaan dan Profil Trafik",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-4",
+        "title": "Port, Daya, dan Kompatibilitas Peralatan",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-5",
+        "title": "Matriks Spesifikasi dan Perbandingan Alternatif",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-6",
+        "title": "Keterlacakan, Validasi, dan Penyerahan Analisis",
+        "threshold": 75
+      },
+      {
+        "id": "kasus",
+        "title": "Studi Kasus dan Proyek Terapan",
+        "threshold": 75
+      },
+      {
+        "id": "laboratorium",
+        "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+        "threshold": 75
+      },
+      {
+        "id": "game",
+        "title": "Game Gudang Peralatan",
+        "threshold": 75
+      },
+      {
+        "id": "refleksi",
+        "title": "Refleksi, Umpan Balik, dan Transfer",
+        "threshold": 75
+      },
+      {
+        "id": "evaluasi",
+        "title": "Rangkuman dan Evaluasi Akhir",
+        "threshold": 80
+      }
+    ],
+    "contentVersion": "1873c40f2c74f5e8cdb98a3b0a27dd724fb55ca87d5efbf3f40c4ef77518707e"
+  },
+  {
+    "id": "desain-topologi-arsitektur",
+    "title": "Desain Topologi, Arsitektur, dan Layout Jaringan",
+    "description": "Mapping jalur fiber pada peta, layout berskala dengan Visio/draw.io, serta dokumentasi topologi dan arsitektur jaringan.",
+    "phase": "F",
+    "grade": 11,
+    "category": "Perencanaan dan Pengalamatan Jaringan",
+    "path": "modules/perencanaan-jaringan/desain-topologi-arsitektur/",
+    "prerequisites": [
+      "kebutuhan-teknis-jaringan",
+      "topologi-jaringan"
+    ],
+    "key": "tjkt:desain-topologi-arsitektur:course:v2",
+    "stages": [
+      {
+        "id": "orientasi",
+        "title": "Orientasi, Tujuan, dan Asesmen Awal",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-1",
+        "title": "Topologi Fisik, Logis, dan Keterlacakan Kebutuhan",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-2",
+        "title": "Arsitektur Akses, Agregasi, dan Titik Kegagalan",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-3",
+        "title": "Survei Lokasi, Peta Jalur Fiber, dan Batas Pengukuran",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-4",
+        "title": "Skala, Satuan, dan Layout dengan Visio atau draw.io",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-5",
+        "title": "Penempatan Perangkat dan Estimasi Jalur Kabel",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-6",
+        "title": "Dokumentasi Desain, Review, dan Penyerahan",
+        "threshold": 75
+      },
+      {
+        "id": "kasus",
+        "title": "Studi Kasus dan Proyek Terapan",
+        "threshold": 75
+      },
+      {
+        "id": "laboratorium",
+        "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+        "threshold": 75
+      },
+      {
+        "id": "game",
+        "title": "Game Cable Route Builder",
+        "threshold": 75
+      },
+      {
+        "id": "refleksi",
+        "title": "Refleksi, Umpan Balik, dan Transfer",
+        "threshold": 75
+      },
+      {
+        "id": "evaluasi",
+        "title": "Rangkuman dan Evaluasi Akhir",
+        "threshold": 80
+      }
+    ],
+    "contentVersion": "1873c40f2c74f5e8cdb98a3b0a27dd724fb55ca87d5efbf3f40c4ef77518707e"
+  },
+  {
+    "id": "perencanaan-pengalamatan-lanjut",
+    "title": "Perancangan Pengalamatan Jaringan: Subnetting, CIDR, dan VLSM",
+    "description": "Kebutuhan alamat, subnetting, CIDR, VLSM, dan rencana IPv4/IPv6 berdasarkan desain topologi serta arsitektur jaringan.",
+    "phase": "F",
+    "grade": 11,
+    "category": "Perencanaan dan Pengalamatan Jaringan",
+    "path": "modules/perencanaan-jaringan/perencanaan-pengalamatan-lanjut/",
+    "prerequisites": [
+      "desain-topologi-arsitektur",
+      "ipv4-subnetting",
+      "ipv6-dasar"
+    ],
+    "key": "tjkt:perencanaan-pengalamatan-lanjut:course:v2",
+    "stages": [
+      {
+        "id": "orientasi",
+        "title": "Orientasi, Tujuan, dan Asesmen Awal",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-1",
+        "title": "Menurunkan Kebutuhan Alamat dari Desain",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-2",
+        "title": "CIDR, Batas Network, dan Kapasitas Subnet",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-3",
+        "title": "Menyusun VLSM dari Blok Besar ke Kecil",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-4",
+        "title": "Validasi Overlap, Gateway, dan Kebijakan Alamat",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-5",
+        "title": "Rencana IPv6 dan Dual Stack per Segmen",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-6",
+        "title": "Agregasi, Dokumentasi, dan Rencana Perubahan",
+        "threshold": 75
+      },
+      {
+        "id": "kasus",
+        "title": "Studi Kasus dan Proyek Terapan",
+        "threshold": 75
+      },
+      {
+        "id": "laboratorium",
+        "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+        "threshold": 75
+      },
+      {
+        "id": "game",
+        "title": "Game Subnet Block Builder",
+        "threshold": 75
+      },
+      {
+        "id": "refleksi",
+        "title": "Refleksi, Umpan Balik, dan Transfer",
+        "threshold": 75
+      },
+      {
+        "id": "evaluasi",
+        "title": "Rangkuman dan Evaluasi Akhir",
+        "threshold": 80
+      }
+    ],
+    "contentVersion": "1873c40f2c74f5e8cdb98a3b0a27dd724fb55ca87d5efbf3f40c4ef77518707e"
+  },
+  {
+    "id": "instalasi-kabel",
+    "title": "Instalasi dan Pengujian Jaringan Kabel",
+    "description": "Rancang jalur, terminasi kabel, pelabelan, uji wiremap, dan dokumentasi instalasi.",
+    "phase": "F",
+    "grade": 11,
+    "category": "Teknologi Jaringan Kabel dan Nirkabel",
+    "path": "modules/jaringan-kabel/instalasi-kabel/",
+    "prerequisites": [
+      "perencanaan-pengalamatan-lanjut",
+      "k3-budaya-kerja",
+      "alat-ukur-tjkt"
+    ],
+    "key": "tjkt:instalasi-kabel:course:v2",
+    "stages": [
+      {
+        "id": "orientasi",
+        "title": "Orientasi, Tujuan, dan Asesmen Awal",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-1",
+        "title": "Persiapan, Izin, dan Rencana Kerja Instalasi",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-2",
+        "title": "Struktur Permanent Link, Channel, dan Komponen",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-3",
+        "title": "Terminasi T568A/B dan Integritas Pasangan",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-4",
+        "title": "Penataan Jalur, Proses Terminasi, dan Pelabelan",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-5",
+        "title": "Wiremap, Gangguan, dan Batas Kemampuan Tester",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-6",
+        "title": "Perbaikan, Pengujian Ulang, dan Dokumentasi Penerimaan",
+        "threshold": 75
+      },
+      {
+        "id": "kasus",
+        "title": "Studi Kasus dan Proyek Terapan",
+        "threshold": 75
+      },
+      {
+        "id": "laboratorium",
+        "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+        "threshold": 75
+      },
+      {
+        "id": "game",
+        "title": "Game Patch Cord Assembly",
+        "threshold": 75
+      },
+      {
+        "id": "refleksi",
+        "title": "Refleksi, Umpan Balik, dan Transfer",
+        "threshold": 75
+      },
+      {
+        "id": "evaluasi",
+        "title": "Rangkuman dan Evaluasi Akhir",
+        "threshold": 80
+      }
+    ],
+    "contentVersion": "1873c40f2c74f5e8cdb98a3b0a27dd724fb55ca87d5efbf3f40c4ef77518707e"
+  },
+  {
+    "id": "wireless-lan",
+    "title": "Wireless LAN",
+    "description": "Instalasi dan konfigurasi access point, SSID, kanal, daya pancar, cakupan, keamanan Wi-Fi, dan pengujian WLAN sesuai fasilitas sekolah.",
+    "phase": "F",
+    "grade": 11,
+    "category": "Teknologi Jaringan Kabel dan Nirkabel",
+    "path": "modules/jaringan-nirkabel/wireless-lan/",
+    "prerequisites": [
+      "perencanaan-pengalamatan-lanjut",
+      "k3-budaya-kerja"
+    ],
+    "key": "tjkt:wireless-lan:course:v2",
+    "stages": [
+      {
+        "id": "orientasi",
+        "title": "Orientasi, Tujuan, dan Asesmen Awal",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-1",
+        "title": "Arsitektur WLAN dan Rantai Layanan",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-2",
+        "title": "Survei, RSSI, SNR, dan Kebutuhan Kapasitas",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-3",
+        "title": "Pita, Kanal, Lebar Kanal, dan Airtime",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-4",
+        "title": "Penempatan, Daya, dan Konfigurasi AP",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-5",
+        "title": "Keamanan, Segmentasi, dan Mobilitas",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-6",
+        "title": "Pengujian, Diagnosis, dan Dokumentasi WLAN",
+        "threshold": 75
+      },
+      {
+        "id": "kasus",
+        "title": "Studi Kasus dan Proyek Terapan",
+        "threshold": 75
+      },
+      {
+        "id": "laboratorium",
+        "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+        "threshold": 75
+      },
+      {
+        "id": "game",
+        "title": "Game Channel Planner",
+        "threshold": 75
+      },
+      {
+        "id": "refleksi",
+        "title": "Refleksi, Umpan Balik, dan Transfer",
+        "threshold": 75
+      },
+      {
+        "id": "evaluasi",
+        "title": "Rangkuman dan Evaluasi Akhir",
+        "threshold": 80
+      }
+    ],
+    "contentVersion": "1873c40f2c74f5e8cdb98a3b0a27dd724fb55ca87d5efbf3f40c4ef77518707e"
+  },
+  {
+    "id": "pemeliharaan-kabel-nirkabel",
+    "title": "Perawatan dan Perbaikan Jaringan Kabel dan Nirkabel",
+    "description": "Pemeriksaan berkala, isolasi gangguan kabel/radio, perbaikan terkontrol, pengujian ulang, dan dokumentasi pemeliharaan.",
+    "phase": "F",
+    "grade": 11,
+    "category": "Teknologi Jaringan Kabel dan Nirkabel",
+    "path": "modules/pemeliharaan-jaringan/pemeliharaan-kabel-nirkabel/",
+    "prerequisites": [
+      "instalasi-kabel",
+      "wireless-lan",
+      "troubleshooting"
+    ],
+    "key": "tjkt:pemeliharaan-kabel-nirkabel:course:v2",
+    "stages": [
+      {
+        "id": "orientasi",
+        "title": "Orientasi, Tujuan, dan Asesmen Awal",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-1",
+        "title": "Baseline dan Pemeliharaan Preventif",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-2",
+        "title": "Triage, Ruang Lingkup, dan Hipotesis",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-3",
+        "title": "Isolasi Gangguan Jaringan Kabel",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-4",
+        "title": "Isolasi Gangguan WLAN dan Layanan IP",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-5",
+        "title": "Perubahan Terkontrol dan Rollback",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-6",
+        "title": "Verifikasi, Penutupan Tiket, dan Pencegahan",
+        "threshold": 75
+      },
+      {
+        "id": "kasus",
+        "title": "Studi Kasus dan Proyek Terapan",
+        "threshold": 75
+      },
+      {
+        "id": "laboratorium",
+        "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+        "threshold": 75
+      },
+      {
+        "id": "game",
+        "title": "Game Bengkel Jalur Data",
+        "threshold": 75
+      },
+      {
+        "id": "refleksi",
+        "title": "Refleksi, Umpan Balik, dan Transfer",
+        "threshold": 75
+      },
+      {
+        "id": "evaluasi",
+        "title": "Rangkuman dan Evaluasi Akhir",
+        "threshold": 80
+      }
+    ],
+    "contentVersion": "1873c40f2c74f5e8cdb98a3b0a27dd724fb55ca87d5efbf3f40c4ef77518707e"
+  },
+  {
+    "id": "voip",
+    "title": "Layanan Komunikasi VoIP",
+    "description": "SIP, RTP, codec, kebutuhan bandwidth, kualitas suara, dan pengujian panggilan.",
+    "phase": "F",
+    "grade": 11,
+    "category": "Teknologi Jaringan Kabel dan Nirkabel",
+    "path": "modules/jaringan-komunikasi/voip/",
+    "prerequisites": [
+      "protokol-layanan",
+      "ipv4-subnetting"
+    ],
+    "key": "tjkt:voip:course:v2",
+    "stages": [
+      {
+        "id": "orientasi",
+        "title": "Orientasi, Tujuan, dan Asesmen Awal",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-1",
+        "title": "Arsitektur Telepon IP dan Rencana Ekstensi",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-2",
+        "title": "Registrasi dan Pembentukan Sesi SIP",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-3",
+        "title": "SDP, Codec, dan Jalur Media RTP",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-4",
+        "title": "Packetization dan Perencanaan Bandwidth",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-5",
+        "title": "Kualitas Suara dan Jitter Buffer",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-6",
+        "title": "Konfigurasi Aman, Pengujian, dan Diagnosis",
+        "threshold": 75
+      },
+      {
+        "id": "kasus",
+        "title": "Studi Kasus dan Proyek Terapan",
+        "threshold": 75
+      },
+      {
+        "id": "laboratorium",
+        "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+        "threshold": 75
+      },
+      {
+        "id": "game",
+        "title": "Game Jitter Buffer Rescue",
+        "threshold": 75
+      },
+      {
+        "id": "refleksi",
+        "title": "Refleksi, Umpan Balik, dan Transfer",
+        "threshold": 75
+      },
+      {
+        "id": "evaluasi",
+        "title": "Rangkuman dan Evaluasi Akhir",
+        "threshold": 80
+      }
+    ],
+    "contentVersion": "1873c40f2c74f5e8cdb98a3b0a27dd724fb55ca87d5efbf3f40c4ef77518707e"
+  },
+  {
+    "id": "fiber-optik",
+    "title": "Instalasi, Pengujian, dan Perbaikan Fiber Optik",
+    "description": "SOP APD dan instalasi, konektor/sambungan, anggaran optik, OPM/OLS, OTDR, serta SOP perawatan dan perbaikan fiber/FTTH.",
+    "phase": "F",
+    "grade": 11,
+    "category": "Teknologi Jaringan Kabel dan Nirkabel",
+    "path": "modules/jaringan-fiber/fiber-optik/",
+    "prerequisites": [
+      "instalasi-kabel",
+      "alat-ukur-tjkt"
+    ],
+    "key": "tjkt:fiber-optik:course:v2",
+    "stages": [
+      {
+        "id": "orientasi",
+        "title": "Orientasi, Tujuan, dan Asesmen Awal",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-1",
+        "title": "Komponen Fiber dan Kompatibilitas Link",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-2",
+        "title": "SOP K3, Survei, dan Instalasi",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-3",
+        "title": "Konektor, Inspeksi, dan Penyambungan",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-4",
+        "title": "Anggaran Rugi, Daya Terima, dan Cadangan",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-5",
+        "title": "Pengujian OPM/OLS dan Pembacaan OTDR",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-6",
+        "title": "Perawatan, Perbaikan, dan Penyerahan Fiber/FTTH",
+        "threshold": 75
+      },
+      {
+        "id": "kasus",
+        "title": "Studi Kasus dan Proyek Terapan",
+        "threshold": 75
+      },
+      {
+        "id": "laboratorium",
+        "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+        "threshold": 75
+      },
+      {
+        "id": "game",
+        "title": "Game Splice Tray Puzzle",
+        "threshold": 75
+      },
+      {
+        "id": "refleksi",
+        "title": "Refleksi, Umpan Balik, dan Transfer",
+        "threshold": 75
+      },
+      {
+        "id": "evaluasi",
+        "title": "Rangkuman dan Evaluasi Akhir",
+        "threshold": 80
+      }
+    ],
+    "contentVersion": "1873c40f2c74f5e8cdb98a3b0a27dd724fb55ca87d5efbf3f40c4ef77518707e"
+  },
+  {
+    "id": "pemasangan-perangkat-jaringan",
+    "title": "Pemasangan Perangkat ke Sistem Jaringan",
+    "description": "Memilih posisi, koneksi, konfigurasi awal, dan pengujian perangkat dalam sistem jaringan sesuai rancangan dan SOP.",
+    "phase": "F",
+    "grade": 11,
+    "category": "Konfigurasi Perangkat Jaringan",
+    "path": "modules/konfigurasi-jaringan/pemasangan-perangkat-jaringan/",
+    "prerequisites": [
+      "perencanaan-pengalamatan-lanjut",
+      "instalasi-kabel"
+    ],
+    "key": "tjkt:pemasangan-perangkat-jaringan:course:v2",
+    "stages": [
+      {
+        "id": "orientasi",
+        "title": "Orientasi, Tujuan, dan Asesmen Awal",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-1",
+        "title": "Kebutuhan Integrasi dan Kesiapan Pemasangan",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-2",
+        "title": "Pemasangan Fisik dan Pemetaan Port",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-3",
+        "title": "Konfigurasi Awal dan Akses Pengelolaan",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-4",
+        "title": "Integrasi Access, Trunk, dan Uplink",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-5",
+        "title": "Penerapan, Penyimpanan, dan Restart",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-6",
+        "title": "Uji Penerimaan dan Serah Terima",
+        "threshold": 75
+      },
+      {
+        "id": "kasus",
+        "title": "Studi Kasus dan Proyek Terapan",
+        "threshold": 75
+      },
+      {
+        "id": "laboratorium",
+        "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+        "threshold": 75
+      },
+      {
+        "id": "game",
+        "title": "Game Port Commissioning Challenge",
+        "threshold": 75
+      },
+      {
+        "id": "refleksi",
+        "title": "Refleksi, Umpan Balik, dan Transfer",
+        "threshold": 75
+      },
+      {
+        "id": "evaluasi",
+        "title": "Rangkuman dan Evaluasi Akhir",
+        "threshold": 80
+      }
+    ],
+    "contentVersion": "1873c40f2c74f5e8cdb98a3b0a27dd724fb55ca87d5efbf3f40c4ef77518707e"
+  },
+  {
+    "id": "penggantian-perangkat-jaringan",
+    "title": "Penggantian Perangkat Jaringan",
+    "description": "Analisis kebutuhan penggantian, kompatibilitas, cadangan konfigurasi, jadwal migrasi, rollback, dan verifikasi layanan.",
+    "phase": "F",
+    "grade": 11,
+    "category": "Konfigurasi Perangkat Jaringan",
+    "path": "modules/konfigurasi-jaringan/penggantian-perangkat-jaringan/",
+    "prerequisites": [
+      "pemasangan-perangkat-jaringan"
+    ],
+    "key": "tjkt:penggantian-perangkat-jaringan:course:v2",
+    "stages": [
+      {
+        "id": "orientasi",
+        "title": "Orientasi, Tujuan, dan Asesmen Awal",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-1",
+        "title": "Alasan Penggantian dan Dampak Layanan",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-2",
+        "title": "Kompatibilitas dan Pemetaan Lama–Baru",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-3",
+        "title": "Cadangan Teruji dan Staging Terisolasi",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-4",
+        "title": "Jendela Migrasi dan Cutover Terkendali",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-5",
+        "title": "Verifikasi, Perbaikan Terbatas, dan Rollback",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-6",
+        "title": "Penerimaan dan Pengelolaan Perangkat Lama",
+        "threshold": 75
+      },
+      {
+        "id": "kasus",
+        "title": "Studi Kasus dan Proyek Terapan",
+        "threshold": 75
+      },
+      {
+        "id": "laboratorium",
+        "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+        "threshold": 75
+      },
+      {
+        "id": "game",
+        "title": "Game Rack Swap Logistics",
+        "threshold": 75
+      },
+      {
+        "id": "refleksi",
+        "title": "Refleksi, Umpan Balik, dan Transfer",
+        "threshold": 75
+      },
+      {
+        "id": "evaluasi",
+        "title": "Rangkuman dan Evaluasi Akhir",
+        "threshold": 80
+      }
+    ],
+    "contentVersion": "1873c40f2c74f5e8cdb98a3b0a27dd724fb55ca87d5efbf3f40c4ef77518707e"
+  },
+  {
+    "id": "switching-vlan",
+    "title": "Switching & VLAN",
+    "description": "Pahami MAC learning, VLAN access dan trunk, inter-VLAN routing, lalu praktikkan konfigurasi switch lewat simulator dan game 2D.",
+    "phase": "F",
+    "grade": 11,
+    "category": "Konfigurasi Perangkat Jaringan",
+    "path": "modules/konfigurasi-jaringan/switching-vlan/",
+    "prerequisites": [
+      "ipv4-subnetting",
+      "topologi-jaringan"
+    ],
+    "key": "tjkt:switching-vlan:course:v1",
+    "stages": [
+      {
+        "id": "pengantar",
+        "title": "Memahami Switching dan VLAN",
+        "threshold": 75
+      },
+      {
+        "id": "switching",
+        "title": "Learning dan Forwarding MAC",
+        "threshold": 75
+      },
+      {
+        "id": "vlan",
+        "title": "VLAN dan Domain Broadcast",
+        "threshold": 75
+      },
+      {
+        "id": "access",
+        "title": "Port Access",
+        "threshold": 75
+      },
+      {
+        "id": "trunk",
+        "title": "Trunk dan IEEE 802.1Q",
+        "threshold": 75
+      },
+      {
+        "id": "routing",
+        "title": "Inter-VLAN Routing",
+        "threshold": 75
+      },
+      {
+        "id": "simulator",
+        "title": "VLAN Studio: Lab Konfigurasi",
+        "threshold": 75
+      },
+      {
+        "id": "game",
+        "title": "Game 2D: Ruang Kendali Frame",
+        "threshold": 75
+      },
+      {
+        "id": "posttest",
+        "title": "Posttest Switching & VLAN",
+        "threshold": 80
+      }
+    ],
+    "contentVersion": "1873c40f2c74f5e8cdb98a3b0a27dd724fb55ca87d5efbf3f40c4ef77518707e"
+  },
+  {
+    "id": "routing-ipv4",
+    "title": "Routing Statis",
+    "description": "Konfigurasi, pengujian, diagnosis, dan perbaikan routing statis; pengantar router berbasis server sesuai lingkungan lab.",
+    "phase": "F",
+    "grade": 11,
+    "category": "Konfigurasi Perangkat Jaringan",
+    "path": "modules/konfigurasi-jaringan/routing-ipv4/",
+    "prerequisites": [
+      "switching-vlan"
+    ],
+    "key": "tjkt:routing-ipv4:course:v2",
+    "stages": [
+      {
+        "id": "orientasi",
+        "title": "Orientasi, Tujuan, dan Asesmen Awal",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-1",
+        "title": "Jaringan Terhubung dan Fungsi Forwarding",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-2",
+        "title": "Rute Statis, Next-Hop, dan Default Route",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-3",
+        "title": "Longest-Prefix Match dan Seleksi Rute",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-4",
+        "title": "Jalur Balik, TTL, dan Loop",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-5",
+        "title": "Konfigurasi Perangkat dan Router Berbasis Server",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-6",
+        "title": "Pengujian, Diagnosis, dan Dokumentasi Rute",
+        "threshold": 75
+      },
+      {
+        "id": "kasus",
+        "title": "Studi Kasus dan Proyek Terapan",
+        "threshold": 75
+      },
+      {
+        "id": "laboratorium",
+        "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+        "threshold": 75
+      },
+      {
+        "id": "game",
+        "title": "Game TTL Route Runner",
+        "threshold": 75
+      },
+      {
+        "id": "refleksi",
+        "title": "Refleksi, Umpan Balik, dan Transfer",
+        "threshold": 75
+      },
+      {
+        "id": "evaluasi",
+        "title": "Rangkuman dan Evaluasi Akhir",
+        "threshold": 80
+      }
+    ],
+    "contentVersion": "1873c40f2c74f5e8cdb98a3b0a27dd724fb55ca87d5efbf3f40c4ef77518707e"
+  },
+  {
+    "id": "routing-dinamis",
+    "title": "Routing Dinamis OSPF",
+    "description": "Konfigurasi dan pengujian OSPF, tetangga dan rute, analisis gangguan, serta pengenalan BIRD pada router berbasis server.",
+    "phase": "F",
+    "grade": 11,
+    "category": "Konfigurasi Perangkat Jaringan",
+    "path": "modules/konfigurasi-jaringan/routing-dinamis/",
+    "prerequisites": [
+      "routing-ipv4"
+    ],
+    "key": "tjkt:routing-dinamis:course:v2",
+    "stages": [
+      {
+        "id": "orientasi",
+        "title": "Orientasi, Tujuan, dan Asesmen Awal",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-1",
+        "title": "Dari Rute Statis ke Routing Dinamis",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-2",
+        "title": "Identitas, Area, Interface, dan Neighbor",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-3",
+        "title": "LSA, LSDB, dan Konvergensi",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-4",
+        "title": "SPF, Cost Terarah, dan Jalur Setara",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-5",
+        "title": "Konfigurasi Perangkat dan Pengenalan BIRD",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-6",
+        "title": "Pengujian, Diagnosis, Pemulihan, dan Dokumentasi",
+        "threshold": 75
+      },
+      {
+        "id": "kasus",
+        "title": "Studi Kasus dan Proyek Terapan",
+        "threshold": 75
+      },
+      {
+        "id": "laboratorium",
+        "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+        "threshold": 75
+      },
+      {
+        "id": "game",
+        "title": "Game LSA Relay",
+        "threshold": 75
+      },
+      {
+        "id": "refleksi",
+        "title": "Refleksi, Umpan Balik, dan Transfer",
+        "threshold": 75
+      },
+      {
+        "id": "evaluasi",
+        "title": "Rangkuman dan Evaluasi Akhir",
+        "threshold": 80
+      }
+    ],
+    "contentVersion": "1873c40f2c74f5e8cdb98a3b0a27dd724fb55ca87d5efbf3f40c4ef77518707e"
+  },
+  {
+    "id": "nat-wan",
+    "title": "Internet Gateway dan NAT",
+    "description": "Pahami hubungan LAN dan WAN, translasi alamat, serta pengujian koneksi jaringan luar.",
+    "phase": "F",
+    "grade": 11,
+    "category": "Konfigurasi Perangkat Jaringan",
+    "path": "modules/konfigurasi-jaringan/nat-wan/",
+    "prerequisites": [
+      "routing-ipv4"
+    ],
+    "key": "tjkt:nat-wan:course:v2",
+    "stages": [
+      {
+        "id": "orientasi",
+        "title": "Orientasi, Tujuan, dan Asesmen Awal",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-1",
+        "title": "Gateway Internet, LAN–WAN, dan Jalur Balik",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-2",
+        "title": "Jenis NAT dan Istilah Alamat",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-3",
+        "title": "PAT/NAPT dan Tuple Sesi",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-4",
+        "title": "Siklus Sesi, Kapasitas, DNS, dan Bukti Uji",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-5",
+        "title": "Publikasi Layanan, Static PAT, dan Kebijakan Masuk",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-6",
+        "title": "Konfigurasi, Diagnosis Berlapis, dan Pemulihan",
+        "threshold": 75
+      },
+      {
+        "id": "kasus",
+        "title": "Studi Kasus dan Proyek Terapan",
+        "threshold": 75
+      },
+      {
+        "id": "laboratorium",
+        "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+        "threshold": 75
+      },
+      {
+        "id": "game",
+        "title": "Game Port Dispatcher",
+        "threshold": 75
+      },
+      {
+        "id": "refleksi",
+        "title": "Refleksi, Umpan Balik, dan Transfer",
+        "threshold": 75
+      },
+      {
+        "id": "evaluasi",
+        "title": "Rangkuman dan Evaluasi Akhir",
+        "threshold": 80
+      }
+    ],
+    "contentVersion": "1873c40f2c74f5e8cdb98a3b0a27dd724fb55ca87d5efbf3f40c4ef77518707e"
+  },
+  {
+    "id": "proxy-load-balancing",
+    "title": "Proxy Server",
+    "description": "Konfigurasi, pengujian, analisis gangguan, dan perbaikan proxy server; kebijakan akses, cache, dan batas penanganan HTTPS.",
+    "phase": "F",
+    "grade": 11,
+    "category": "Konfigurasi Perangkat Jaringan",
+    "path": "modules/konfigurasi-jaringan/proxy-server/",
+    "prerequisites": [
+      "nat-wan",
+      "protokol-layanan"
+    ],
+    "key": "tjkt:proxy-load-balancing:course:v2",
+    "stages": [
+      {
+        "id": "orientasi",
+        "title": "Orientasi, Tujuan, dan Asesmen Awal",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-1",
+        "title": "Peran Proxy dalam Alur Layanan",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-2",
+        "title": "Pemasangan Explicit Proxy dan Pemeriksaan Jalur",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-3",
+        "title": "ACL, Urutan Kebijakan, dan Pengujian Penolakan",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-4",
+        "title": "Cache HTTP, Freshness, dan Validasi Ulang",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-5",
+        "title": "HTTPS CONNECT dan Batas Visibilitas",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-6",
+        "title": "Konfigurasi Squid, Log, Diagnosis, dan Pemulihan",
+        "threshold": 75
+      },
+      {
+        "id": "kasus",
+        "title": "Studi Kasus dan Proyek Terapan",
+        "threshold": 75
+      },
+      {
+        "id": "laboratorium",
+        "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+        "threshold": 75
+      },
+      {
+        "id": "game",
+        "title": "Game Cache Runner",
+        "threshold": 75
+      },
+      {
+        "id": "refleksi",
+        "title": "Refleksi, Umpan Balik, dan Transfer",
+        "threshold": 75
+      },
+      {
+        "id": "evaluasi",
+        "title": "Rangkuman dan Evaluasi Akhir",
+        "threshold": 80
+      }
+    ],
+    "contentVersion": "1873c40f2c74f5e8cdb98a3b0a27dd724fb55ca87d5efbf3f40c4ef77518707e"
+  },
+  {
+    "id": "bandwidth-qos",
+    "title": "Manajemen Bandwidth dan QoS",
+    "description": "Konfigurasi dan pengujian pembagian bandwidth dan QoS; pengenalan RADIUS Linux untuk pengelolaan profil pengguna.",
+    "phase": "F",
+    "grade": 11,
+    "category": "Konfigurasi Perangkat Jaringan",
+    "path": "modules/konfigurasi-jaringan/bandwidth-qos/",
+    "prerequisites": [
+      "nat-wan"
+    ],
+    "key": "tjkt:bandwidth-qos:course:v2",
+    "stages": [
+      {
+        "id": "orientasi",
+        "title": "Orientasi, Tujuan, dan Asesmen Awal",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-1",
+        "title": "Kapasitas, Throughput, dan Bottleneck",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-2",
+        "title": "Klasifikasi, DSCP, dan Trust Boundary",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-3",
+        "title": "FIFO, Prioritas, dan Pembagian Berbobot",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-4",
+        "title": "Token Bucket, Policing, dan Shaping",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-5",
+        "title": "Profil Pengguna dan Pengenalan RADIUS Linux",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-6",
+        "title": "Konfigurasi, Uji Beban, dan Pemulihan Kebijakan",
+        "threshold": 75
+      },
+      {
+        "id": "kasus",
+        "title": "Studi Kasus dan Proyek Terapan",
+        "threshold": 75
+      },
+      {
+        "id": "laboratorium",
+        "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+        "threshold": 75
+      },
+      {
+        "id": "game",
+        "title": "Game Queue Pilot",
+        "threshold": 75
+      },
+      {
+        "id": "refleksi",
+        "title": "Refleksi, Umpan Balik, dan Transfer",
+        "threshold": 75
+      },
+      {
+        "id": "evaluasi",
+        "title": "Rangkuman dan Evaluasi Akhir",
+        "threshold": 80
+      }
+    ],
+    "contentVersion": "1873c40f2c74f5e8cdb98a3b0a27dd724fb55ca87d5efbf3f40c4ef77518707e"
+  },
+  {
+    "id": "load-balancing",
+    "title": "Load Balancing dan Failover",
+    "description": "Konfigurasi pembagian beban jalur, pemeriksaan kesehatan, failover, pengujian kegagalan, dan dokumentasi hasil.",
+    "phase": "F",
+    "grade": 11,
+    "category": "Konfigurasi Perangkat Jaringan",
+    "path": "modules/konfigurasi-jaringan/load-balancing/",
+    "prerequisites": [
+      "bandwidth-qos"
+    ],
+    "key": "tjkt:load-balancing:course:v2",
+    "stages": [
+      {
+        "id": "orientasi",
+        "title": "Orientasi, Tujuan, dan Asesmen Awal",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-1",
+        "title": "Pembagian Beban, Failover, dan Kapasitas",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-2",
+        "title": "Distribusi Per Sesi, Bobot, dan Affinity",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-3",
+        "title": "Health Check, Target, dan Ambang Deteksi",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-4",
+        "title": "Sesi Lama, NAT, Failover, dan Failback",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-5",
+        "title": "Konfigurasi Dual-WAN dan Kebijakan Rute",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-6",
+        "title": "Pengujian Gangguan, Kapasitas Cadangan, dan Rollback",
+        "threshold": 75
+      },
+      {
+        "id": "kasus",
+        "title": "Studi Kasus dan Proyek Terapan",
+        "threshold": 75
+      },
+      {
+        "id": "laboratorium",
+        "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+        "threshold": 75
+      },
+      {
+        "id": "game",
+        "title": "Game Dual-WAN Bridgekeeper",
+        "threshold": 75
+      },
+      {
+        "id": "refleksi",
+        "title": "Refleksi, Umpan Balik, dan Transfer",
+        "threshold": 75
+      },
+      {
+        "id": "evaluasi",
+        "title": "Rangkuman dan Evaluasi Akhir",
+        "threshold": 80
+      }
+    ],
+    "contentVersion": "1873c40f2c74f5e8cdb98a3b0a27dd724fb55ca87d5efbf3f40c4ef77518707e"
+  },
+  {
+    "id": "dasar-administrasi-server",
+    "title": "Dasar Administrasi Server",
+    "description": "Kenali peran server, sistem operasi server, akses lokal dan remote, serta pengelolaan layanan dasar.",
+    "phase": "F",
+    "grade": 11,
+    "category": "Administrasi Sistem Jaringan",
+    "path": "modules/administrasi-server/dasar-administrasi-server/",
+    "prerequisites": [
+      "protokol-layanan"
+    ],
+    "key": "tjkt:dasar-administrasi-server:course:v2",
+    "stages": [
+      {
+        "id": "orientasi",
+        "title": "Orientasi, Tujuan, dan Asesmen Awal",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-1",
+        "title": "Peran Server, Layanan, dan Sumber Daya",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-2",
+        "title": "Sistem Operasi, Identitas, dan Akses Administrasi",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-3",
+        "title": "Alamat, Nama, Listener, dan Akses Klien",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-4",
+        "title": "Paket, Config Disk, Proses, dan Boot",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-5",
+        "title": "Log, Penyimpanan, Cadangan, dan Restore",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-6",
+        "title": "Runbook Administrasi dan Uji Penerimaan",
+        "threshold": 75
+      },
+      {
+        "id": "kasus",
+        "title": "Studi Kasus dan Proyek Terapan",
+        "threshold": 75
+      },
+      {
+        "id": "laboratorium",
+        "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+        "threshold": 75
+      },
+      {
+        "id": "game",
+        "title": "Game Rack Rescue",
+        "threshold": 75
+      },
+      {
+        "id": "refleksi",
+        "title": "Refleksi, Umpan Balik, dan Transfer",
+        "threshold": 75
+      },
+      {
+        "id": "evaluasi",
+        "title": "Rangkuman dan Evaluasi Akhir",
+        "threshold": 80
+      }
+    ],
+    "contentVersion": "1873c40f2c74f5e8cdb98a3b0a27dd724fb55ca87d5efbf3f40c4ef77518707e"
+  },
+  {
+    "id": "virtualisasi-server",
+    "title": "Mesin Virtual Lanjutan: Proxmox VE dan VMware ESXi",
+    "description": "Lanjutan VM kelas X: hypervisor server, jaringan manajemen, storage, template, backup dan pemulihan pada Proxmox VE/VMware ESXi.",
+    "phase": "F",
+    "grade": 11,
+    "category": "Administrasi Sistem Jaringan",
+    "path": "modules/administrasi-server/virtualisasi-server/",
+    "prerequisites": [
+      "dasar-administrasi-server"
+    ],
+    "key": "tjkt:virtualisasi-server:course:v2",
+    "stages": [
+      {
+        "id": "orientasi",
+        "title": "Orientasi, Tujuan, dan Asesmen Awal",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-1",
+        "title": "Host, Guest, Hypervisor, dan Tujuan Lab",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-2",
+        "title": "RAM, vCPU, dan Kapasitas Storage",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-3",
+        "title": "Membuat VM, Media, Boot, dan Shutdown",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-4",
+        "title": "NAT, Host-only, Internal, dan Bridged",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-5",
+        "title": "Snapshot, Clone, Archive, dan Uji Restore",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-6",
+        "title": "Runbook Lab Virtual dan Penerimaan",
+        "threshold": 75
+      },
+      {
+        "id": "kasus",
+        "title": "Studi Kasus dan Proyek Terapan",
+        "threshold": 75
+      },
+      {
+        "id": "laboratorium",
+        "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+        "threshold": 75
+      },
+      {
+        "id": "game",
+        "title": "Game Hypervisor Dock",
+        "threshold": 75
+      },
+      {
+        "id": "refleksi",
+        "title": "Refleksi, Umpan Balik, dan Transfer",
+        "threshold": 75
+      },
+      {
+        "id": "evaluasi",
+        "title": "Rangkuman dan Evaluasi Akhir",
+        "threshold": 80
+      }
+    ],
+    "contentVersion": "1873c40f2c74f5e8cdb98a3b0a27dd724fb55ca87d5efbf3f40c4ef77518707e"
+  },
+  {
+    "id": "administrasi-linux-windows",
+    "title": "Administrasi Linux dan Windows Server",
+    "description": "Instalasi OS server, jaringan, penyimpanan, paket, layanan, pembaruan, dan administrasi Linux/Windows di mesin virtual.",
+    "phase": "F",
+    "grade": 11,
+    "category": "Administrasi Sistem Jaringan",
+    "path": "modules/administrasi-server/administrasi-linux-windows/",
+    "prerequisites": [
+      "virtualisasi-server"
+    ],
+    "key": "tjkt:administrasi-linux-windows:course:v2",
+    "stages": [
+      {
+        "id": "orientasi",
+        "title": "Orientasi, Tujuan, dan Asesmen Awal",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-1",
+        "title": "Rencana Instalasi dan Baseline Dua OS",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-2",
+        "title": "Shell, Identitas, Akun dan Izin",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-3",
+        "title": "Jaringan Persisten dan Akses Administrasi",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-4",
+        "title": "Disk, Filesystem, Volume dan Persistensi",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-5",
+        "title": "Paket, Role, Service dan Startup",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-6",
+        "title": "Pembaruan, Log dan Penerimaan Setelah Boot",
+        "threshold": 75
+      },
+      {
+        "id": "kasus",
+        "title": "Studi Kasus dan Proyek Terapan",
+        "threshold": 75
+      },
+      {
+        "id": "laboratorium",
+        "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+        "threshold": 75
+      },
+      {
+        "id": "game",
+        "title": "Game Strategi: Deployment Relay",
+        "threshold": 75
+      },
+      {
+        "id": "refleksi",
+        "title": "Refleksi, Umpan Balik, dan Transfer",
+        "threshold": 75
+      },
+      {
+        "id": "evaluasi",
+        "title": "Rangkuman dan Evaluasi Akhir",
+        "threshold": 80
+      }
+    ],
+    "contentVersion": "1873c40f2c74f5e8cdb98a3b0a27dd724fb55ca87d5efbf3f40c4ef77518707e"
+  },
+  {
+    "id": "manajemen-pengguna-server",
+    "title": "Manajemen Pengguna dan Hak Akses",
+    "description": "Kelola akun dan grup, izin berkas, hak administrator, serta akses server dengan prinsip hak minimum.",
+    "phase": "F",
+    "grade": 11,
+    "category": "Administrasi Sistem Jaringan",
+    "path": "modules/administrasi-server/manajemen-pengguna-server/",
+    "prerequisites": [
+      "administrasi-linux-windows"
+    ],
+    "key": "tjkt:manajemen-pengguna-server:course:v2",
+    "stages": [
+      {
+        "id": "orientasi",
+        "title": "Orientasi, Tujuan, dan Asesmen Awal",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-1",
+        "title": "Identitas, Autentikasi, Otorisasi dan Audit",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-2",
+        "title": "Siklus Akun, Grup dan Hak Minimum",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-3",
+        "title": "Mode Linux, Direktori dan Kepemilikan",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-4",
+        "title": "ACL Linux, Mask dan Bukti Perubahan",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-5",
+        "title": "Token Windows, DACL, Pewarisan dan Share",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-6",
+        "title": "Uji Positif, Negatif, Audit dan Pencabutan",
+        "threshold": 75
+      },
+      {
+        "id": "kasus",
+        "title": "Studi Kasus dan Proyek Terapan",
+        "threshold": 75
+      },
+      {
+        "id": "laboratorium",
+        "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+        "threshold": 75
+      },
+      {
+        "id": "game",
+        "title": "Game Strategi: Access Weaver",
+        "threshold": 75
+      },
+      {
+        "id": "refleksi",
+        "title": "Refleksi, Umpan Balik, dan Transfer",
+        "threshold": 75
+      },
+      {
+        "id": "evaluasi",
+        "title": "Rangkuman dan Evaluasi Akhir",
+        "threshold": 80
+      }
+    ],
+    "contentVersion": "1873c40f2c74f5e8cdb98a3b0a27dd724fb55ca87d5efbf3f40c4ef77518707e"
+  },
+  {
+    "id": "layanan-server",
+    "title": "DHCP, DNS, dan Remote Server",
+    "description": "Konfigurasi DHCP scope, reservasi, DNS zone dan record, serta administrasi remote melalui SSH; uji dari klien.",
+    "phase": "F",
+    "grade": 11,
+    "category": "Administrasi Sistem Jaringan",
+    "path": "modules/administrasi-server/layanan-server/",
+    "prerequisites": [
+      "manajemen-pengguna-server"
+    ],
+    "key": "tjkt:layanan-server:course:v2",
+    "stages": [
+      {
+        "id": "orientasi",
+        "title": "Orientasi, Tujuan, dan Asesmen Awal",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-1",
+        "title": "Rencana Scope, Exclusion dan Reservation DHCP",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-2",
+        "title": "DORA, Lease, Renew dan DHCP Relay",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-3",
+        "title": "Zona DNS, Resolver dan Jenis Record",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-4",
+        "title": "TTL, Cache dan Diagnosis Nama dari Klien",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-5",
+        "title": "SSH, Identitas Host dan Akses Remote Berizin",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-6",
+        "title": "Implementasi, Matriks Uji dan Pemulihan Layanan",
+        "threshold": 75
+      },
+      {
+        "id": "kasus",
+        "title": "Studi Kasus dan Proyek Terapan",
+        "threshold": 75
+      },
+      {
+        "id": "laboratorium",
+        "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+        "threshold": 75
+      },
+      {
+        "id": "game",
+        "title": "Game Puzzle: Service Dispatch",
+        "threshold": 75
+      },
+      {
+        "id": "refleksi",
+        "title": "Refleksi, Umpan Balik, dan Transfer",
+        "threshold": 75
+      },
+      {
+        "id": "evaluasi",
+        "title": "Rangkuman dan Evaluasi Akhir",
+        "threshold": 80
+      }
+    ],
+    "contentVersion": "1873c40f2c74f5e8cdb98a3b0a27dd724fb55ca87d5efbf3f40c4ef77518707e"
+  },
+  {
+    "id": "ftp-server",
+    "title": "FTP Server dan Pengujian Transfer Berkas",
+    "description": "Instalasi, konfigurasi, hak akses, dan pengujian FTP pada lab terisolasi; jelaskan keterbatasan keamanan FTP dan alternatif transfer aman.",
+    "phase": "F",
+    "grade": 11,
+    "category": "Administrasi Sistem Jaringan",
+    "path": "modules/administrasi-server/ftp-server/",
+    "prerequisites": [
+      "layanan-server"
+    ],
+    "key": "tjkt:ftp-server:course:v2",
+    "stages": [
+      {
+        "id": "orientasi",
+        "title": "Orientasi, Tujuan, dan Asesmen Awal",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-1",
+        "title": "FTP, FTPS dan SFTP",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-2",
+        "title": "Kanal Kontrol, Mode Aktif dan Pasif",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-3",
+        "title": "Akun, Direktori, Policy dan Permission",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-4",
+        "title": "Konfigurasi vsftpd dan Pengujian Klien",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-5",
+        "title": "Representasi, Transfer Parsial dan Integritas",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-6",
+        "title": "Diagnosis, Pemulihan dan Laporan Penerimaan",
+        "threshold": 75
+      },
+      {
+        "id": "kasus",
+        "title": "Studi Kasus dan Proyek Terapan",
+        "threshold": 75
+      },
+      {
+        "id": "laboratorium",
+        "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+        "threshold": 75
+      },
+      {
+        "id": "game",
+        "title": "Game Antrean: Transfer Dock",
+        "threshold": 75
+      },
+      {
+        "id": "refleksi",
+        "title": "Refleksi, Umpan Balik, dan Transfer",
+        "threshold": 75
+      },
+      {
+        "id": "evaluasi",
+        "title": "Rangkuman dan Evaluasi Akhir",
+        "threshold": 80
+      }
+    ],
+    "contentVersion": "1873c40f2c74f5e8cdb98a3b0a27dd724fb55ca87d5efbf3f40c4ef77518707e"
+  },
+  {
+    "id": "file-server",
+    "title": "File Server dan Berbagi Sumber Daya",
+    "description": "Konfigurasikan folder bersama, izin akses, dan penyimpanan untuk berbagi berkas di jaringan.",
+    "phase": "F",
+    "grade": 11,
+    "category": "Administrasi Sistem Jaringan",
+    "path": "modules/administrasi-server/file-server/",
+    "prerequisites": [
+      "layanan-server"
+    ],
+    "key": "tjkt:file-server:course:v2",
+    "stages": [
+      {
+        "id": "orientasi",
+        "title": "Orientasi, Tujuan, dan Asesmen Awal",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-1",
+        "title": "File Sharing, SMB dan Peta Sumber Daya",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-2",
+        "title": "Rancangan Share, Akun dan Hak Efektif",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-3",
+        "title": "Konfigurasi Samba dan Uji Klien",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-4",
+        "title": "Sesi, Lock dan Perubahan Bersamaan",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-5",
+        "title": "Kapasitas, Quota, Snapshot dan Backup",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-6",
+        "title": "Penerimaan, Audit dan Pemulihan Gangguan",
+        "threshold": 75
+      },
+      {
+        "id": "kasus",
+        "title": "Studi Kasus dan Proyek Terapan",
+        "threshold": 75
+      },
+      {
+        "id": "laboratorium",
+        "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+        "threshold": 75
+      },
+      {
+        "id": "game",
+        "title": "Game Puzzle: Storage Allocator",
+        "threshold": 75
+      },
+      {
+        "id": "refleksi",
+        "title": "Refleksi, Umpan Balik, dan Transfer",
+        "threshold": 75
+      },
+      {
+        "id": "evaluasi",
+        "title": "Rangkuman dan Evaluasi Akhir",
+        "threshold": 80
+      }
+    ],
+    "contentVersion": "1873c40f2c74f5e8cdb98a3b0a27dd724fb55ca87d5efbf3f40c4ef77518707e"
+  },
+  {
+    "id": "hosting-server",
+    "title": "Web dan Database Server",
+    "description": "Instalasi, konfigurasi, dan pengujian web server, virtual host, TLS, aplikasi, serta database dari klien lab.",
+    "phase": "F",
+    "grade": 11,
+    "category": "Administrasi Sistem Jaringan",
+    "path": "modules/administrasi-server/hosting-server/",
+    "prerequisites": [
+      "layanan-server"
+    ],
+    "key": "tjkt:hosting-server:course:v2",
+    "stages": [
+      {
+        "id": "orientasi",
+        "title": "Orientasi, Tujuan, dan Asesmen Awal",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-1",
+        "title": "Arsitektur Web, Aplikasi dan Database",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-2",
+        "title": "Virtual Host, Document Root dan TLS",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-3",
+        "title": "Runtime, HTTP, Log dan Pengujian Aplikasi",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-4",
+        "title": "Database, Schema dan Akun Aplikasi",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-5",
+        "title": "Transaksi, Konsistensi dan Retry",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-6",
+        "title": "Backup, Restore dan Penerimaan End-to-End",
+        "threshold": 75
+      },
+      {
+        "id": "kasus",
+        "title": "Studi Kasus dan Proyek Terapan",
+        "threshold": 75
+      },
+      {
+        "id": "laboratorium",
+        "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+        "threshold": 75
+      },
+      {
+        "id": "game",
+        "title": "Game Transaksi: Transaction Foundry",
+        "threshold": 75
+      },
+      {
+        "id": "refleksi",
+        "title": "Refleksi, Umpan Balik, dan Transfer",
+        "threshold": 75
+      },
+      {
+        "id": "evaluasi",
+        "title": "Rangkuman dan Evaluasi Akhir",
+        "threshold": 80
+      }
+    ],
+    "contentVersion": "1873c40f2c74f5e8cdb98a3b0a27dd724fb55ca87d5efbf3f40c4ef77518707e"
+  },
+  {
+    "id": "panel-layanan-hosting",
+    "title": "Control Panel, Shared Hosting, Dedicated Server, dan VPS",
+    "description": "Instalasi, konfigurasi, pengujian, serta perbandingan control panel hosting, shared hosting, dedicated hosting, dan virtual private server.",
+    "phase": "F",
+    "grade": 11,
+    "category": "Administrasi Sistem Jaringan",
+    "path": "modules/administrasi-server/panel-layanan-hosting/",
+    "prerequisites": [
+      "hosting-server",
+      "virtualisasi-server"
+    ],
+    "key": "tjkt:panel-layanan-hosting:course:v2",
+    "stages": [
+      {
+        "id": "orientasi",
+        "title": "Orientasi, Tujuan, dan Asesmen Awal",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-1",
+        "title": "Model Hosting dan Kendali Pengelolaan",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-2",
+        "title": "Kebutuhan, Kapasitas, Biaya dan Tanggung Jawab",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-3",
+        "title": "Instalasi Panel pada Host Bersih",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-4",
+        "title": "Role Panel, Akun Tenant dan Provisioning Situs",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-5",
+        "title": "Resource, Backup dan Pemulihan Akun",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-6",
+        "title": "Migrasi, Cutover dan Penerimaan Layanan",
+        "threshold": 75
+      },
+      {
+        "id": "kasus",
+        "title": "Studi Kasus dan Proyek Terapan",
+        "threshold": 75
+      },
+      {
+        "id": "laboratorium",
+        "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+        "threshold": 75
+      },
+      {
+        "id": "game",
+        "title": "Game Kapasitas: Hosting Broker",
+        "threshold": 75
+      },
+      {
+        "id": "refleksi",
+        "title": "Refleksi, Umpan Balik, dan Transfer",
+        "threshold": 75
+      },
+      {
+        "id": "evaluasi",
+        "title": "Rangkuman dan Evaluasi Akhir",
+        "threshold": 80
+      }
+    ],
+    "contentVersion": "1873c40f2c74f5e8cdb98a3b0a27dd724fb55ca87d5efbf3f40c4ef77518707e"
+  },
+  {
+    "id": "vpn-server",
+    "title": "VPN dan Akses Jarak Jauh Aman",
+    "description": "Tunnel, autentikasi, pemilihan rute, akses remote, dan pengujian kebocoran akses.",
+    "phase": "F",
+    "grade": 11,
+    "category": "Administrasi Sistem Jaringan",
+    "path": "modules/administrasi-server/vpn-server/",
+    "prerequisites": [
+      "layanan-server",
+      "routing-ipv4",
+      "manajemen-pengguna-server"
+    ],
+    "key": "tjkt:vpn-server:course:v2",
+    "stages": [
+      {
+        "id": "orientasi",
+        "title": "Orientasi, Tujuan, dan Asesmen Awal",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-1",
+        "title": "Tunnel, Remote Access dan Batas Perlindungan",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-2",
+        "title": "Identitas Peer, Endpoint dan Pengelolaan Key",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-3",
+        "title": "Routing OS, AllowedIPs dan Firewall",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-4",
+        "title": "Forwarding, Rute Balik dan Overlap Subnet",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-5",
+        "title": "Split/Full, DNS, IPv6 dan Kondisi Tunnel Down",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-6",
+        "title": "Implementasi, Diagnosis dan Pencabutan Akses",
+        "threshold": 75
+      },
+      {
+        "id": "kasus",
+        "title": "Studi Kasus dan Proyek Terapan",
+        "threshold": 75
+      },
+      {
+        "id": "laboratorium",
+        "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+        "threshold": 75
+      },
+      {
+        "id": "game",
+        "title": "Game Kebijakan: Tunnel Switchboard",
+        "threshold": 75
+      },
+      {
+        "id": "refleksi",
+        "title": "Refleksi, Umpan Balik, dan Transfer",
+        "threshold": 75
+      },
+      {
+        "id": "evaluasi",
+        "title": "Rangkuman dan Evaluasi Akhir",
+        "threshold": 80
+      }
+    ],
+    "contentVersion": "1873c40f2c74f5e8cdb98a3b0a27dd724fb55ca87d5efbf3f40c4ef77518707e"
+  },
+  {
+    "id": "monitoring-jaringan",
+    "title": "Sistem Kontrol, Monitoring, dan Pemeliharaan Jaringan",
+    "description": "Kontrol dan pemantauan layanan, log, sumber daya, serta pengenalan Smart OLT untuk monitoring fiber sesuai akses dan fasilitas lab.",
+    "phase": "F",
+    "grade": 11,
+    "category": "Administrasi Sistem Jaringan",
+    "path": "modules/administrasi-server/monitoring-jaringan/",
+    "prerequisites": [
+      "layanan-server",
+      "fiber-optik"
+    ],
+    "key": "tjkt:monitoring-jaringan:course:v2",
+    "stages": [
+      {
+        "id": "orientasi",
+        "title": "Orientasi, Tujuan, dan Asesmen Awal",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-1",
+        "title": "Tujuan Monitoring, Kontrol dan Pemeliharaan",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-2",
+        "title": "Probe, Interval, Timeout dan Ambang",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-3",
+        "title": "Timeline, Alert, Log dan Data Stale",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-4",
+        "title": "Uptime Kuma, Resource dan Akses Monitoring",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-5",
+        "title": "Monitoring Fiber, OLT/ONU dan SmartOLT",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-6",
+        "title": "Triage, Maintenance, Pemulihan dan Kontrol",
+        "threshold": 75
+      },
+      {
+        "id": "kasus",
+        "title": "Studi Kasus dan Proyek Terapan",
+        "threshold": 75
+      },
+      {
+        "id": "laboratorium",
+        "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+        "threshold": 75
+      },
+      {
+        "id": "game",
+        "title": "Game Penjadwalan: Incident Shift",
+        "threshold": 75
+      },
+      {
+        "id": "refleksi",
+        "title": "Refleksi, Umpan Balik, dan Transfer",
+        "threshold": 75
+      },
+      {
+        "id": "evaluasi",
+        "title": "Rangkuman dan Evaluasi Akhir",
+        "threshold": 80
+      }
+    ],
+    "contentVersion": "1873c40f2c74f5e8cdb98a3b0a27dd724fb55ca87d5efbf3f40c4ef77518707e"
+  },
+  {
+    "id": "backup-pemulihan-server",
+    "title": "Backup dan Pemulihan Server",
+    "description": "Rencanakan pencadangan data dan konfigurasi, lalu latih pemulihan layanan dari cadangan.",
+    "phase": "F",
+    "grade": 11,
+    "category": "Administrasi Sistem Jaringan",
+    "path": "modules/administrasi-server/backup-pemulihan-server/",
+    "prerequisites": [
+      "monitoring-jaringan"
+    ],
+    "key": "tjkt:backup-pemulihan-server:course:v2",
+    "stages": [
+      {
+        "id": "orientasi",
+        "title": "Orientasi, Tujuan, dan Asesmen Awal",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-1",
+        "title": "Kebutuhan Data, RPO dan RTO",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-2",
+        "title": "Full, Incremental dan Differential",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-3",
+        "title": "Konsistensi, Manifest dan Integritas",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-4",
+        "title": "Lokasi, Akses, Enkripsi dan Retensi",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-5",
+        "title": "Restore Terisolasi dan Verifikasi",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-6",
+        "title": "Latihan Bencana, Bukti dan Perbaikan",
+        "threshold": 75
+      },
+      {
+        "id": "kasus",
+        "title": "Studi Kasus dan Proyek Terapan",
+        "threshold": 75
+      },
+      {
+        "id": "laboratorium",
+        "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+        "threshold": 75
+      },
+      {
+        "id": "game",
+        "title": "Game Terapan: Archive Rescue",
+        "threshold": 75
+      },
+      {
+        "id": "refleksi",
+        "title": "Refleksi, Umpan Balik, dan Transfer",
+        "threshold": 75
+      },
+      {
+        "id": "evaluasi",
+        "title": "Rangkuman dan Evaluasi Akhir",
+        "threshold": 80
+      }
+    ],
+    "contentVersion": "1873c40f2c74f5e8cdb98a3b0a27dd724fb55ca87d5efbf3f40c4ef77518707e"
+  },
+  {
+    "id": "mail-server",
+    "title": "Mail Server",
+    "description": "SMTP, IMAP, autentikasi pengirim, TLS, dan pengujian pengiriman lokal.",
+    "phase": "F",
+    "grade": 11,
+    "category": "Administrasi Sistem Jaringan",
+    "path": "modules/administrasi-server/mail-server/",
+    "prerequisites": [
+      "hosting-server"
+    ],
+    "key": "tjkt:mail-server:course:v2",
+    "stages": [
+      {
+        "id": "orientasi",
+        "title": "Orientasi, Tujuan, dan Asesmen Awal",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-1",
+        "title": "MUA, MSA, MTA, Delivery dan Mailbox",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-2",
+        "title": "Domain, MX dan Identitas Tujuan",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-3",
+        "title": "Autentikasi, TLS dan Relay Restriction",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-4",
+        "title": "Antrean, Deferred, Bounce dan IMAP",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-5",
+        "title": "SPF, DKIM dan DMARC",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-6",
+        "title": "Implementasi Lab dan Penerimaan",
+        "threshold": 75
+      },
+      {
+        "id": "kasus",
+        "title": "Studi Kasus dan Proyek Terapan",
+        "threshold": 75
+      },
+      {
+        "id": "laboratorium",
+        "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+        "threshold": 75
+      },
+      {
+        "id": "game",
+        "title": "Game Terapan: Mail Sorter",
+        "threshold": 75
+      },
+      {
+        "id": "refleksi",
+        "title": "Refleksi, Umpan Balik, dan Transfer",
+        "threshold": 75
+      },
+      {
+        "id": "evaluasi",
+        "title": "Rangkuman dan Evaluasi Akhir",
+        "threshold": 80
+      }
+    ],
+    "contentVersion": "1873c40f2c74f5e8cdb98a3b0a27dd724fb55ca87d5efbf3f40c4ef77518707e"
+  },
+  {
+    "id": "keamanan-jaringan",
+    "title": "Ancaman dan Sistem Keamanan Jaringan",
+    "description": "Potensi ancaman/serangan, kebutuhan sistem keamanan, kebijakan akses, ACL, dan firewall pada lab berizin.",
+    "phase": "F",
+    "grade": 12,
+    "category": "Keamanan Jaringan",
+    "path": "modules/keamanan-jaringan/keamanan-jaringan/",
+    "prerequisites": [
+      "switching-vlan",
+      "nat-wan",
+      "layanan-server"
+    ],
+    "key": "tjkt:keamanan-jaringan:course:v2",
+    "stages": [
+      {
+        "id": "orientasi",
+        "title": "Orientasi, Tujuan, dan Asesmen Awal",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-1",
+        "title": "Aset, Ancaman, Kerentanan dan Risiko",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-2",
+        "title": "Kebijakan Akses dan Segmentasi",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-3",
+        "title": "ACL dan First-Match",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-4",
+        "title": "Stateful, NAT dan Jalur Balasan",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-5",
+        "title": "Logging, Perubahan dan Pemulihan",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-6",
+        "title": "Validasi Kontrol dan Risiko Tersisa",
+        "threshold": 75
+      },
+      {
+        "id": "kasus",
+        "title": "Studi Kasus dan Proyek Terapan",
+        "threshold": 75
+      },
+      {
+        "id": "laboratorium",
+        "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+        "threshold": 75
+      },
+      {
+        "id": "game",
+        "title": "Game Terapan: Policy Weaver",
+        "threshold": 75
+      },
+      {
+        "id": "refleksi",
+        "title": "Refleksi, Umpan Balik, dan Transfer",
+        "threshold": 75
+      },
+      {
+        "id": "evaluasi",
+        "title": "Rangkuman dan Evaluasi Akhir",
+        "threshold": 80
+      }
+    ],
+    "contentVersion": "1873c40f2c74f5e8cdb98a3b0a27dd724fb55ca87d5efbf3f40c4ef77518707e"
+  },
+  {
+    "id": "autentikasi-kriptografi",
+    "title": "Autentikasi dan Kriptografi",
+    "description": "AAA, MFA, sertifikat, enkripsi, hashing, dan pengelolaan identitas.",
+    "phase": "F",
+    "grade": 12,
+    "category": "Keamanan Jaringan",
+    "path": "modules/keamanan-jaringan/autentikasi-kriptografi/",
+    "prerequisites": [
+      "keamanan-jaringan",
+      "manajemen-pengguna-server"
+    ],
+    "key": "tjkt:autentikasi-kriptografi:course:v2",
+    "stages": [
+      {
+        "id": "orientasi",
+        "title": "Orientasi, Tujuan, dan Asesmen Awal",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-1",
+        "title": "Identitas, AAA dan Sesi",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-2",
+        "title": "Faktor, MFA dan Recovery",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-3",
+        "title": "Hash, Password Hashing dan Integritas",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-4",
+        "title": "Enkripsi, Signature dan Key",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-5",
+        "title": "Sertifikat, Nama, Trust dan TLS",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-6",
+        "title": "Pengelolaan Secret dan Penerimaan",
+        "threshold": 75
+      },
+      {
+        "id": "kasus",
+        "title": "Studi Kasus dan Proyek Terapan",
+        "threshold": 75
+      },
+      {
+        "id": "laboratorium",
+        "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+        "threshold": 75
+      },
+      {
+        "id": "game",
+        "title": "Game Terapan: Key Custody",
+        "threshold": 75
+      },
+      {
+        "id": "refleksi",
+        "title": "Refleksi, Umpan Balik, dan Transfer",
+        "threshold": 75
+      },
+      {
+        "id": "evaluasi",
+        "title": "Rangkuman dan Evaluasi Akhir",
+        "threshold": 80
+      }
+    ],
+    "contentVersion": "1873c40f2c74f5e8cdb98a3b0a27dd724fb55ca87d5efbf3f40c4ef77518707e"
+  },
+  {
+    "id": "ids-hardening",
+    "title": "Host Hardening",
+    "description": "Langkah penguatan host/server: pengurangan permukaan serangan, layanan, pembaruan, hak akses, konfigurasi aman, dan verifikasi.",
+    "phase": "F",
+    "grade": 12,
+    "category": "Keamanan Jaringan",
+    "path": "modules/keamanan-jaringan/ids-hardening/",
+    "prerequisites": [
+      "keamanan-jaringan",
+      "manajemen-pengguna-server"
+    ],
+    "key": "tjkt:ids-hardening:course:v2",
+    "stages": [
+      {
+        "id": "orientasi",
+        "title": "Orientasi, Tujuan, dan Asesmen Awal",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-1",
+        "title": "Baseline dan Permukaan Serangan",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-2",
+        "title": "Akun, Least Privilege dan Remote Access",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-3",
+        "title": "Layanan, Firewall dan Konfigurasi Aman",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-4",
+        "title": "Patch, Staging dan Persistensi",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-5",
+        "title": "Audit, Secret dan Recovery",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-6",
+        "title": "Uji Penerimaan dan Risiko Tersisa",
+        "threshold": 75
+      },
+      {
+        "id": "kasus",
+        "title": "Studi Kasus dan Proyek Terapan",
+        "threshold": 75
+      },
+      {
+        "id": "laboratorium",
+        "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+        "threshold": 75
+      },
+      {
+        "id": "game",
+        "title": "Game Terapan: Change Window",
+        "threshold": 75
+      },
+      {
+        "id": "refleksi",
+        "title": "Refleksi, Umpan Balik, dan Transfer",
+        "threshold": 75
+      },
+      {
+        "id": "evaluasi",
+        "title": "Rangkuman dan Evaluasi Akhir",
+        "threshold": 80
+      }
+    ],
+    "contentVersion": "1873c40f2c74f5e8cdb98a3b0a27dd724fb55ca87d5efbf3f40c4ef77518707e"
+  },
+  {
+    "id": "server-dmz",
+    "title": "Membangun dan Menguji Server DMZ",
+    "description": "Perancangan segmen DMZ, penempatan layanan publik, aturan akses antarzona, konfigurasi, dan verifikasi isolasi pada lab.",
+    "phase": "F",
+    "grade": 12,
+    "category": "Keamanan Jaringan",
+    "path": "modules/keamanan-jaringan/server-dmz/",
+    "prerequisites": [
+      "ids-hardening",
+      "nat-wan",
+      "hosting-server"
+    ],
+    "key": "tjkt:server-dmz:course:v2",
+    "stages": [
+      {
+        "id": "orientasi",
+        "title": "Orientasi, Tujuan, dan Asesmen Awal",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-1",
+        "title": "Zona, Trust Boundary dan Tujuan DMZ",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-2",
+        "title": "Matriks Aliran dan Default Deny",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-3",
+        "title": "Routing, DNAT dan Stateful Return",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-4",
+        "title": "Manajemen dan Pembatasan Host",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-5",
+        "title": "Implementasi dan Uji Isolasi",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-6",
+        "title": "Monitoring, Backup dan Risiko Tersisa",
+        "threshold": 75
+      },
+      {
+        "id": "kasus",
+        "title": "Studi Kasus dan Proyek Terapan",
+        "threshold": 75
+      },
+      {
+        "id": "laboratorium",
+        "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+        "threshold": 75
+      },
+      {
+        "id": "game",
+        "title": "Game Terapan: DMZ Architect",
+        "threshold": 75
+      },
+      {
+        "id": "refleksi",
+        "title": "Refleksi, Umpan Balik, dan Transfer",
+        "threshold": 75
+      },
+      {
+        "id": "evaluasi",
+        "title": "Rangkuman dan Evaluasi Akhir",
+        "threshold": 80
+      }
+    ],
+    "contentVersion": "1873c40f2c74f5e8cdb98a3b0a27dd724fb55ca87d5efbf3f40c4ef77518707e"
+  },
+  {
+    "id": "pengujian-keamanan",
+    "title": "Pengujian Keamanan Jaringan, Host, dan Server",
+    "description": "Menetapkan izin dan lingkup uji, memeriksa konfigurasi serta kontrol akses, mengumpulkan bukti, memperbaiki temuan, dan menguji ulang di lab.",
+    "phase": "F",
+    "grade": 12,
+    "category": "Keamanan Jaringan",
+    "path": "modules/keamanan-jaringan/pengujian-keamanan/",
+    "prerequisites": [
+      "server-dmz",
+      "ids-hardening",
+      "monitoring-jaringan"
+    ],
+    "key": "tjkt:pengujian-keamanan:course:v2",
+    "stages": [
+      {
+        "id": "orientasi",
+        "title": "Orientasi, Tujuan, dan Asesmen Awal",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-1",
+        "title": "Tujuan, Izin dan Rules of Engagement",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-2",
+        "title": "Inventaris dan Hipotesis Uji",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-3",
+        "title": "Bukti, Versi dan Validasi Temuan",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-4",
+        "title": "Perbaikan, Prioritas dan Kontrol Kompensasi",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-5",
+        "title": "Retest, Regresi dan Kriteria Penutupan",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-6",
+        "title": "Laporan, Kerahasiaan dan Transfer",
+        "threshold": 75
+      },
+      {
+        "id": "kasus",
+        "title": "Studi Kasus dan Proyek Terapan",
+        "threshold": 75
+      },
+      {
+        "id": "laboratorium",
+        "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+        "threshold": 75
+      },
+      {
+        "id": "game",
+        "title": "Game Terapan: Evidence Trail",
+        "threshold": 75
+      },
+      {
+        "id": "refleksi",
+        "title": "Refleksi, Umpan Balik, dan Transfer",
+        "threshold": 75
+      },
+      {
+        "id": "evaluasi",
+        "title": "Rangkuman dan Evaluasi Akhir",
+        "threshold": 80
+      }
+    ],
+    "contentVersion": "1873c40f2c74f5e8cdb98a3b0a27dd724fb55ca87d5efbf3f40c4ef77518707e"
+  },
+  {
+    "id": "ids-respons-insiden",
+    "title": "IDS/IPS dan Respons Insiden",
+    "description": "Pengayaan deteksi intrusi, analisis peringatan dan log, serta pencatatan respons insiden sesuai kewenangan.",
+    "phase": "F",
+    "grade": 12,
+    "category": "Keamanan Jaringan",
+    "path": "modules/keamanan-jaringan/ids-respons-insiden/",
+    "prerequisites": [
+      "pengujian-keamanan"
+    ],
+    "key": "tjkt:ids-respons-insiden:course:v2",
+    "stages": [
+      {
+        "id": "orientasi",
+        "title": "Orientasi, Tujuan, dan Asesmen Awal",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-1",
+        "title": "Event, Alert dan Insiden",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-2",
+        "title": "IDS, IPS dan Titik Penempatan",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-3",
+        "title": "Rule, Threshold, Log dan Korelasi",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-4",
+        "title": "Bukti, Triage dan Containment",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-5",
+        "title": "Eradication, Recovery dan Verifikasi",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-6",
+        "title": "Penutupan dan Perbaikan Berkelanjutan",
+        "threshold": 75
+      },
+      {
+        "id": "kasus",
+        "title": "Studi Kasus dan Proyek Terapan",
+        "threshold": 75
+      },
+      {
+        "id": "laboratorium",
+        "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+        "threshold": 75
+      },
+      {
+        "id": "game",
+        "title": "Game Terapan: Incident Desk",
+        "threshold": 75
+      },
+      {
+        "id": "refleksi",
+        "title": "Refleksi, Umpan Balik, dan Transfer",
+        "threshold": 75
+      },
+      {
+        "id": "evaluasi",
+        "title": "Rangkuman dan Evaluasi Akhir",
+        "threshold": 80
+      }
+    ],
+    "contentVersion": "1873c40f2c74f5e8cdb98a3b0a27dd724fb55ca87d5efbf3f40c4ef77518707e"
+  },
+  {
+    "id": "proyek-integrasi-jaringan",
+    "title": "Proyek Integrasi Jaringan",
+    "description": "Rancang, konfigurasi, uji, dan dokumentasikan jaringan terpadu berdasarkan kebutuhan pengguna.",
+    "phase": "F",
+    "grade": 12,
+    "category": "Proyek Integrasi Lintas Elemen",
+    "path": "modules/proyek-integrasi/proyek-integrasi-jaringan/",
+    "prerequisites": [
+      "perencanaan-pengalamatan-lanjut",
+      "wireless-lan",
+      "nat-wan",
+      "layanan-server",
+      "pengujian-keamanan",
+      "backup-pemulihan-server"
+    ],
+    "key": "tjkt:proyek-integrasi-jaringan:course:v2",
+    "stages": [
+      {
+        "id": "orientasi",
+        "title": "Orientasi, Tujuan, dan Asesmen Awal",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-1",
+        "title": "Kebutuhan, Scope dan Kriteria Penerimaan",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-2",
+        "title": "Topologi, VLAN dan Pengalamatan",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-3",
+        "title": "Layanan dan Dependensi Aplikasi",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-4",
+        "title": "Keamanan Terintegrasi dan Akses Minimum",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-5",
+        "title": "Perubahan, Monitoring dan Pemulihan",
+        "threshold": 75
+      },
+      {
+        "id": "konsep-6",
+        "title": "As-built, Bukti dan Handover",
+        "threshold": 75
+      },
+      {
+        "id": "kasus",
+        "title": "Studi Kasus dan Proyek Terapan",
+        "threshold": 75
+      },
+      {
+        "id": "laboratorium",
+        "title": "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+        "threshold": 75
+      },
+      {
+        "id": "game",
+        "title": "Game Terapan: Campus Launch",
+        "threshold": 75
+      },
+      {
+        "id": "refleksi",
+        "title": "Refleksi, Umpan Balik, dan Transfer",
+        "threshold": 75
+      },
+      {
+        "id": "evaluasi",
+        "title": "Rangkuman dan Evaluasi Akhir",
+        "threshold": 80
+      }
+    ],
+    "contentVersion": "1873c40f2c74f5e8cdb98a3b0a27dd724fb55ca87d5efbf3f40c4ef77518707e"
+  },
+  {
+    "id": "instalasi-komputer-dasar",
+    "title": "Instalasi dan Konfigurasi Dasar Sistem Komputer",
+    "description": "Mengidentifikasi target disk, media dan kompatibilitas sebelum instalasi. Menjelaskan dan melaksanakan instalasi Linux desktop serta Windows desktop pada VM berizin. Menguji boot tanpa ISO, akun, driver dan jaringan serta mendokumentasikan hasil.",
+    "phase": "E",
+    "grade": 10,
+    "category": "Kecakapan Kerja Dasar (Basic Job Skills), K3LH, dan Budaya Kerja",
+    "path": "modules/dasar-jaringan/instalasi-komputer-dasar/",
+    "prerequisites": [
+      "virtualisasi-server-dasar"
+    ],
+    "key": "tjkt:instalasi-komputer-dasar:course:v3",
+    "stages": [
+      {
+        "id": "orientasi",
+        "title": "Rencana instalasi dan komponen komputer",
+        "threshold": 75
+      },
+      {
+        "id": "persiapan",
+        "title": "Media, target disk dan keselamatan data",
+        "threshold": 75
+      },
+      {
+        "id": "linux-boot",
+        "title": "Ubuntu Desktop: ISO, sesi live dan awal installer",
+        "threshold": 75
+      },
+      {
+        "id": "linux-options",
+        "title": "Ubuntu Desktop: aplikasi, perangkat dan jaringan",
+        "threshold": 75
+      },
+      {
+        "id": "linux-disk",
+        "title": "Ubuntu Desktop: partisi otomatis dan manual",
+        "threshold": 75
+      },
+      {
+        "id": "linux-account",
+        "title": "Ubuntu Desktop: akun, waktu dan ringkasan instalasi",
+        "threshold": 75
+      },
+      {
+        "id": "linux-desktop",
+        "title": "Instalasi Linux desktop",
+        "threshold": 75
+      },
+      {
+        "id": "windows-media",
+        "title": "Windows 11: kebutuhan VM, edisi dan media",
+        "threshold": 75
+      },
+      {
+        "id": "windows-disk",
+        "title": "Windows 11: target disk dan tata letak boot",
+        "threshold": 75
+      },
+      {
+        "id": "windows-oobe",
+        "title": "Windows 11: pengaturan awal, akun dan privasi",
+        "threshold": 75
+      },
+      {
+        "id": "windows-desktop",
+        "title": "Instalasi Windows desktop",
+        "threshold": 75
+      },
+      {
+        "id": "konfigurasi",
+        "title": "Konfigurasi klien dan diagnosis",
+        "threshold": 75
+      },
+      {
+        "id": "laboratorium",
+        "title": "Laboratorium target instalasi dan boot",
+        "threshold": 75
+      },
+      {
+        "id": "refleksi",
+        "title": "Penerimaan dua OS dan transfer ke server",
+        "threshold": 75
+      },
+      {
+        "id": "evaluasi",
+        "title": "Evaluasi Akhir dan Sertifikat",
+        "threshold": 80
+      }
+    ],
+    "contentVersion": "1873c40f2c74f5e8cdb98a3b0a27dd724fb55ca87d5efbf3f40c4ef77518707e"
+  },
+  {
+    "id": "konfigurasi-perangkat-dasar",
+    "title": "Konfigurasi Dasar Router dan Switch",
+    "description": "Membedakan switching L2, alamat manajemen dan routing antar-subnet. Menyiapkan konfigurasi awal router/switch berizin dengan rencana alamat dan pengamanan akses. Menguji konfigurasi aktif/tersimpan dan membuktikan hasil sesudah mulai ulang.",
+    "phase": "E",
+    "grade": 10,
+    "category": "Kecakapan Kerja Dasar (Basic Job Skills), K3LH, dan Budaya Kerja",
+    "path": "modules/dasar-jaringan/konfigurasi-perangkat-dasar/",
+    "prerequisites": [
+      "instalasi-komputer-dasar",
+      "ipv4-subnetting",
+      "protokol-layanan"
+    ],
+    "key": "tjkt:konfigurasi-perangkat-dasar:course:v2",
+    "stages": [
+      {
+        "id": "orientasi",
+        "title": "Rancangan dua subnet dan izin praktik",
+        "threshold": 75
+      },
+      {
+        "id": "akses",
+        "title": "Akses awal dan identitas perangkat",
+        "threshold": 75
+      },
+      {
+        "id": "switch",
+        "title": "Switch L2 dan alamat manajemen",
+        "threshold": 75
+      },
+      {
+        "id": "router",
+        "title": "Router, interface dan gateway klien",
+        "threshold": 75
+      },
+      {
+        "id": "persistensi",
+        "title": "Konfigurasi aktif, simpan dan boot",
+        "threshold": 75
+      },
+      {
+        "id": "laboratorium",
+        "title": "Laboratorium jalur dan persistensi",
+        "threshold": 75
+      },
+      {
+        "id": "refleksi",
+        "title": "Penerimaan dan laporan konfigurasi",
+        "threshold": 75
+      },
+      {
+        "id": "evaluasi",
+        "title": "Evaluasi Akhir dan Sertifikat",
+        "threshold": 80
+      }
+    ],
+    "contentVersion": "1873c40f2c74f5e8cdb98a3b0a27dd724fb55ca87d5efbf3f40c4ef77518707e"
+  },
+  {
+    "id": "virtualisasi-server-dasar",
+    "title": "Dasar Mesin Virtual: VirtualBox dan VMware Workstation",
+    "description": "Membuat dan membandingkan VM pada VirtualBox serta VMware Workstation. Merencanakan resource, media dan jaringan terisolasi tanpa menghabiskan resource host. Membedakan VM, OS guest, layanan, snapshot dan cadangan yang diuji.",
+    "phase": "E",
+    "grade": 10,
+    "category": "Kecakapan Kerja Dasar (Basic Job Skills), K3LH, dan Budaya Kerja",
+    "path": "modules/dasar-jaringan/virtualisasi-server-dasar/",
+    "prerequisites": [
+      "k3-budaya-kerja",
+      "perangkat-jaringan"
+    ],
+    "key": "tjkt:virtualisasi-server-dasar:course:v3",
+    "stages": [
+      {
+        "id": "orientasi",
+        "title": "Host, guest dan tujuan laboratorium",
+        "threshold": 75
+      },
+      {
+        "id": "host-resource",
+        "title": "Merencanakan resource host dan guest",
+        "threshold": 75
+      },
+      {
+        "id": "virtualbox-new",
+        "title": "Praktik membuat VM di VirtualBox",
+        "threshold": 75
+      },
+      {
+        "id": "vmware-new",
+        "title": "Praktik membuat VM di VMware Workstation",
+        "threshold": 75
+      },
+      {
+        "id": "hardware-media",
+        "title": "Settings, ISO, firmware dan boot guest",
+        "threshold": 75
+      },
+      {
+        "id": "jaringan",
+        "title": "Segmen, alamat dan isolasi jaringan",
+        "threshold": 75
+      },
+      {
+        "id": "guest-install",
+        "title": "Instalasi guest dan verifikasi boot tanpa ISO",
+        "threshold": 75
+      },
+      {
+        "id": "layanan",
+        "title": "Menguji peran server dari klien",
+        "threshold": 75
+      },
+      {
+        "id": "pemulihan",
+        "title": "Snapshot, backup dan bukti pemulihan",
+        "threshold": 75
+      },
+      {
+        "id": "clone-network",
+        "title": "Clone, identitas guest dan jaringan dua VM",
+        "threshold": 75
+      },
+      {
+        "id": "laboratorium",
+        "title": "Laboratorium rencana VM",
+        "threshold": 75
+      },
+      {
+        "id": "refleksi",
+        "title": "Penerimaan, laporan dan kesiapan kelas XI",
+        "threshold": 75
+      },
+      {
+        "id": "evaluasi",
+        "title": "Evaluasi Akhir dan Sertifikat",
+        "threshold": 80
+      }
+    ],
+    "contentVersion": "1873c40f2c74f5e8cdb98a3b0a27dd724fb55ca87d5efbf3f40c4ef77518707e"
+  }
+]

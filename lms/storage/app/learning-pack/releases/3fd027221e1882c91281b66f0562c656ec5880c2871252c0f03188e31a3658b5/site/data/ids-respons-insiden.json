@@ -1,0 +1,68 @@
+{
+    "moduleId":  "ids-respons-insiden",
+    "title":  "IDS/IPS dan Respons Insiden",
+    "version":  2,
+    "contentSource":  "assets/js/course-ids-respons-insiden.js",
+    "chapters":  [
+                     {
+                         "id":  "orientasi",
+                         "title":  "Orientasi, Tujuan, dan Asesmen Awal",
+                         "summary":  "Pengayaan deteksi intrusi, analisis peringatan dan log, serta pencatatan respons insiden sesuai kewenangan."
+                     },
+                     {
+                         "id":  "konsep-1",
+                         "title":  "Event, Alert dan Insiden",
+                         "summary":  "Menilai konteks sebelum bertindak."
+                     },
+                     {
+                         "id":  "konsep-2",
+                         "title":  "IDS, IPS dan Titik Penempatan",
+                         "summary":  "Membedakan deteksi dari enforcement."
+                     },
+                     {
+                         "id":  "konsep-3",
+                         "title":  "Rule, Threshold, Log dan Korelasi",
+                         "summary":  "Menghubungkan pola deteksi dengan bukti yang tepat."
+                     },
+                     {
+                         "id":  "konsep-4",
+                         "title":  "Bukti, Triage dan Containment",
+                         "summary":  "Membatasi dampak tanpa menghapus jejak."
+                     },
+                     {
+                         "id":  "konsep-5",
+                         "title":  "Eradication, Recovery dan Verifikasi",
+                         "summary":  "Memulihkan layanan tanpa membawa kembali penyebab."
+                     },
+                     {
+                         "id":  "konsep-6",
+                         "title":  "Penutupan dan Perbaikan Berkelanjutan",
+                         "summary":  "Mengubah insiden menjadi pembelajaran yang dapat ditindaklanjuti."
+                     },
+                     {
+                         "id":  "kasus",
+                         "title":  "Studi Kasus dan Proyek Terapan",
+                         "summary":  "Menyusun rancangan, matriks uji dan runbook berdasarkan kebutuhan serta bukti."
+                     },
+                     {
+                         "id":  "laboratorium",
+                         "title":  "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+                         "summary":  "Pengayaan deteksi intrusi, analisis peringatan dan log, serta pencatatan respons insiden sesuai kewenangan."
+                     },
+                     {
+                         "id":  "game",
+                         "title":  "Game Terapan: Incident Desk",
+                         "summary":  "Memanipulasi objek/state dan menyelesaikan tiga misi sesuai kriteria topik."
+                     },
+                     {
+                         "id":  "refleksi",
+                         "title":  "Refleksi, Umpan Balik, dan Transfer",
+                         "summary":  "Menilai perubahan pemahaman melalui prediksi, hasil percobaan dan batas kesimpulan."
+                     },
+                     {
+                         "id":  "evaluasi",
+                         "title":  "Rangkuman dan Evaluasi Akhir",
+                         "summary":  "Memadukan konsep, bukti, risiko tersisa dan penerimaan pada kasus baru."
+                     }
+                 ]
+}

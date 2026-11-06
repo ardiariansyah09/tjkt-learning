@@ -1,0 +1,1 @@
+<span class="app-credit">Dibuat oleh <a href="https://www.instagram.com/ardiariansyah07/" target="_blank" rel="noopener noreferrer" aria-label="Instagram Ardi Ariansyah"><i class="bi bi-instagram me-1" aria-hidden="true"></i>Ardi Ariansyah</a></span>

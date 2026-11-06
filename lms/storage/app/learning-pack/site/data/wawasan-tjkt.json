@@ -1,0 +1,68 @@
+{
+    "moduleId":  "wawasan-tjkt",
+    "title":  "Perkembangan Teknologi dan Isu Global TJKT",
+    "version":  2,
+    "contentSource":  "assets/js/course-technology.js",
+    "chapters":  [
+                     {
+                         "id":  "orientasi",
+                         "title":  "Orientasi, Tujuan, dan Asesmen Awal",
+                         "summary":  "Mengidentifikasi persoalan, tujuan, dan bukti belajar."
+                     },
+                     {
+                         "id":  "konsep-1",
+                         "title":  "Literasi Teknologi dan Penilaian Bukti",
+                         "summary":  "Membedakan standar, kemampuan produk, kondisi uji, dan klaim pemasaran."
+                     },
+                     {
+                         "id":  "konsep-2",
+                         "title":  "5G, Mobilitas, dan Akses Fiber",
+                         "summary":  "Membedakan skenario layanan radio dengan jaringan pengangkut dan akses optik."
+                     },
+                     {
+                         "id":  "konsep-3",
+                         "title":  "IPv6 dan Internet of Things",
+                         "summary":  "Menelusuri identitas, konektivitas, data, dan pengelolaan perangkat terhubung."
+                     },
+                     {
+                         "id":  "konsep-4",
+                         "title":  "Pusat Data, Virtualisasi, Cloud, dan Edge",
+                         "summary":  "Membedakan lokasi, model layanan, dan pembagian tanggung jawab."
+                     },
+                     {
+                         "id":  "konsep-5",
+                         "title":  "Keamanan, Privasi, dan Ketahanan",
+                         "summary":  "Menghubungkan aset, ancaman, pengendalian, pemantauan, dan pemulihan."
+                     },
+                     {
+                         "id":  "konsep-6",
+                         "title":  "Dampak Lingkungan, Inklusi, dan Keputusan Adopsi",
+                         "summary":  "Menilai siklus hidup, aksesibilitas, kesenjangan akses, dan biaya perpindahan."
+                     },
+                     {
+                         "id":  "kasus",
+                         "title":  "Studi Kasus dan Proyek Terapan",
+                         "summary":  "Studi Kasus dan Proyek Terapan"
+                     },
+                     {
+                         "id":  "laboratorium",
+                         "title":  "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+                         "summary":  "Laboratorium: Prediksi, Eksperimen, dan Bukti"
+                     },
+                     {
+                         "id":  "game",
+                         "title":  "Game Misi Terapan",
+                         "summary":  "Game Misi: Petualangan 2D dan 3D"
+                     },
+                     {
+                         "id":  "refleksi",
+                         "title":  "Refleksi, Umpan Balik, dan Transfer",
+                         "summary":  "Refleksi, Umpan Balik, dan Transfer"
+                     },
+                     {
+                         "id":  "evaluasi",
+                         "title":  "Rangkuman dan Evaluasi Akhir",
+                         "summary":  "Rangkuman dan Evaluasi Akhir"
+                     }
+                 ]
+}

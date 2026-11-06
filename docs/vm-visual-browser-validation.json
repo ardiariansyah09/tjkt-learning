@@ -1,0 +1,136 @@
+{
+  "installers": [
+    {
+      "name": "Audit-ubuntu",
+      "screens": [
+        "language",
+        "accessibility",
+        "keyboard",
+        "network",
+        "welcome",
+        "method",
+        "applications",
+        "drivers",
+        "disk",
+        "account",
+        "timezone",
+        "review",
+        "copy",
+        "copy",
+        "copy",
+        "copy",
+        "restart"
+      ],
+      "manual": false,
+      "protectedDiskRejected": true,
+      "mediaGuard": true,
+      "snapshotRestored": true
+    },
+    {
+      "name": "Audit-windows",
+      "screens": [
+        "language",
+        "keyboard",
+        "setup",
+        "product",
+        "edition",
+        "license",
+        "disk",
+        "review",
+        "copy",
+        "copy",
+        "copy",
+        "copy",
+        "restart",
+        "region",
+        "network",
+        "account",
+        "privacy"
+      ],
+      "manual": false,
+      "protectedDiskRejected": true,
+      "mediaGuard": true,
+      "snapshotRestored": true
+    },
+    {
+      "name": "Audit-Server",
+      "screens": [
+        "language",
+        "keyboard",
+        "network",
+        "proxy",
+        "mirror",
+        "disk",
+        "account",
+        "ssh",
+        "featured",
+        "review",
+        "copy",
+        "copy",
+        "copy",
+        "copy",
+        "restart"
+      ],
+      "manual": false,
+      "protectedDiskRejected": true,
+      "mediaGuard": true,
+      "snapshotRestored": true
+    }
+  ],
+  "images": [
+    {
+      "platform": "VirtualBox",
+      "images": 2,
+      "textCharacters": 2989
+    },
+    {
+      "platform": "Workstation",
+      "images": 1
+    },
+    {
+      "platform": "Proxmox",
+      "images": 2
+    },
+    {
+      "platform": "ESXi",
+      "images": 1
+    }
+  ],
+  "scenarios": [
+    {
+      "initialVisibleActions": 1,
+      "legacy": {
+        "scenarios": 11,
+        "resources": true,
+        "network": true,
+        "clone": true,
+        "snapshot": true,
+        "archive": true,
+        "staleEvidence": true
+      },
+      "scenarios": [
+        {
+          "scenario": "boot",
+          "steps": 2
+        },
+        {
+          "scenario": "resource",
+          "steps": 4
+        },
+        {
+          "scenario": "snapshot",
+          "steps": 8
+        },
+        {
+          "scenario": "recovery",
+          "steps": 7
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "automaticCopy": true,
+  "guidedMobile": true,
+  "result": "PASS",
+  "existingProgressPreserved": true
+}

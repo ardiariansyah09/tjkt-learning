@@ -1,0 +1,15 @@
+/* Network Builder Visual 3.0 - scoped to .nva */
+.nva{margin-top:24px}.nva-board{position:relative;width:100%;height:380px;overflow:hidden;border:1px solid #cbd5e1;border-radius:16px;background:radial-gradient(circle at 1px 1px,#cbd5e1 1px,transparent 0) 0 0/20px 20px,#f8fbff}
+.nva-lines{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:1}.nva-device{position:absolute;transform:translate(-50%,-50%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;width:110px;min-height:84px;padding:8px;border:2px solid #a5c8df;border-radius:14px;background:#fff;color:#17344e;box-shadow:0 4px 14px #0f172a17;cursor:pointer;z-index:2;font:inherit}.nva-device:hover,.nva-device:focus-visible{border-color:#0284c7;outline:3px solid #7dd3fc;outline-offset:1px}.nva-device.nva-selected{background:#dbeafe;border-color:#0369a1}.nva-emoji{font-size:27px}.nva-device strong{font-size:13px}.nva-toolbar{display:flex;gap:10px;flex-wrap:wrap;margin-top:15px}.nva-btn{background:#0369a1;color:#fff;border:1px solid #0369a1;border-radius:10px;padding:11px 15px;font-weight:700;cursor:pointer}.nva-btn:hover{background:#075985}.nva-btn.nva-secondary{background:transparent;color:#0369a1}.nva-status{padding:13px;margin-top:14px;background:#e0f2fe;color:#164e63;border-radius:10px;font-weight:600;min-height:48px}.nva-cables,.nva-note{font-size:13px;color:#64748b;line-height:1.7;margin-top:9px;overflow-wrap:anywhere}body.dark .nva-board{background:radial-gradient(circle at 1px 1px,#334155 1px,transparent 0) 0 0/20px 20px,#111e32;border-color:#334155}body.dark .nva-device{background:#203550;color:#f1f5f9;border-color:#475569}body.dark .nva-selected{background:#164e63}body.dark .nva-status{background:#164e63;color:#e0f2fe}body.dark .nva-cables,body.dark .nva-note{color:#cbd5e1}body.dark .nva-btn.nva-secondary{color:#7dd3fc}
+@media(max-width:650px){.nva-board{height:300px}.nva-device{width:76px;min-height:70px;padding:5px}.nva-device strong{font-size:11px}.nva-emoji{font-size:22px}.nva-toolbar{display:grid;grid-template-columns:1fr}.nva-btn{width:100%}}
+@media print{.nva{display:none!important}}
+
+.nva-grade{background:#0f766e!important;color:white!important;font-weight:800!important}
+.nva-status{border-left:4px solid #0284c7;padding:12px;background:#eff6ff;color:#0f3554;border-radius:8px}
+.nva-hint{font-size:.88rem;color:#64748b;line-height:1.6}
+.nva-report{overflow-wrap:anywhere}
+
+/* SVG wires are aligned to the real device boxes. */
+.nva-board{isolation:isolate}
+.nva-wires{position:absolute;inset:0;width:100%;height:100%;z-index:1;pointer-events:none;overflow:hidden}
+.nva-device{z-index:2}

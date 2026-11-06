@@ -1,0 +1,628 @@
+{
+  "moduleId": "instalasi-komputer-dasar",
+  "title": "Instalasi dan Konfigurasi Dasar Sistem Komputer",
+  "version": 3,
+  "classLevel": "X",
+  "phase": "E",
+  "atpReference": {
+    "file": "ATP-TJKT X - NEW 27.xlsx",
+    "sheet": "ATP",
+    "tp": [
+      "2.5"
+    ]
+  },
+  "objectives": [
+    "Mengidentifikasi target disk, media dan kompatibilitas sebelum instalasi.",
+    "Menjelaskan dan melaksanakan instalasi Linux desktop serta Windows desktop pada VM berizin.",
+    "Menguji boot tanpa ISO, akun, driver dan jaringan serta mendokumentasikan hasil."
+  ],
+  "chapters": [
+    {
+      "id": "orientasi",
+      "title": "Rencana instalasi dan komponen komputer",
+      "summary": "Rencana instalasi dan komponen komputer",
+      "questions": [
+        {
+          "question": "Komputer boot tetapi NIC belum dikenali. Langkah awal paling tepat ...",
+          "options": [
+            "Mengubah DNS tanpa NIC",
+            "Cocokkan dukungan NIC dan driver dengan OS yang dipakai",
+            "Format semua disk"
+          ],
+          "answer": 1,
+          "explanation": "Link dan driver mendahului diagnosis alamat, resolver serta aplikasi."
+        }
+      ],
+      "html": "<h3>Tujuan dan prasyarat</h3><p>Peserta mampu menjelaskan hubungan komponen–firmware–OS–driver–aplikasi, merencanakan instalasi pada target latihan, mengonfigurasi antarmuka klien, dan menunjukkan hasil uji setelah mulai ulang. Prasyarat: K3LH; pengenalan perangkat; konsep IP sebelum konfigurasi jaringan. Tidak memerlukan modul administrasi server kelas XI.</p><h3>1. Orientasi: komputer menyala belum tentu siap dipakai</h3><p>Kasus: PC perpustakaan menyala, tetapi sistem operasi gagal dimuat. Setelah media boot diperbaiki, OS berjalan tetapi NIC belum dapat digunakan. Setelah driver sesuai tersedia, akses web tetap gagal karena DNS salah. Ketiga gejala berasal dari lapisan berbeda; mengganti RAM bukan jawaban otomatis.</p><p>Tulis tiga dugaan, bukti pembeda dan batas tindakan siswa. Produk akhir: inventaris, rencana instalasi, tabel konfigurasi, hasil uji dan satu laporan pemulihan. Guru menyetujui mesin/VM dan target disk sebelum praktik.</p><h3>2. Komponen, kompatibilitas dan pemeriksaan awal</h3><p>CPU menjalankan instruksi; RAM menyimpan keadaan kerja sementara; penyimpanan menampung OS dan data; NIC menghubungkan host dengan jaringan. Firmware menginisialisasi perangkat dan memulai proses boot. OS mengelola sumber daya; driver menghubungkan pengelolaan OS dengan perangkat yang didukung. Kapasitas besar tidak memperbaiki ketidakcocokan arsitektur atau driver.</p><p>Periksa model, CPU/arsitektur, RAM, kapasitas disk, firmware, NIC dan dukungan OS dari dokumentasi perangkat. Bedakan kapasitas disk dengan ruang kosong. Catat kebutuhan minimum dan ruang untuk penggunaan nyata; minimum instalasi bukan janji performa. Jangan membuka PSU atau menangani perangkat berenergi. Penanganan komponen hanya setelah guru mengamankan perangkat sesuai SOP.</p><p>Latihan: cocokkan kebutuhan ruang belajar dengan dua spesifikasi fiktif. Tandai informasi yang belum diketahui. Hasil yang dinilai adalah alasan kompatibilitas, bukan memilih spesifikasi paling mahal.</p><figure><svg viewBox=\"0 0 800 130\" role=\"img\" aria-label=\"ISO installer menuju Disk virtual menuju Boot OS menuju Uji perangkat\" style=\"width:100%;height:auto\"><rect x=\"5\" y=\"25\" width=\"175\" height=\"65\" rx=\"10\" fill=\"#075b83\"/><text x=\"92\" y=\"63\" text-anchor=\"middle\" font-size=\"17\" fill=\"white\">ISO installer</text><path d=\"M 180 57 h 23 l -6 -5 m 6 5 l -6 5\" stroke=\"#1680a5\" fill=\"none\" stroke-width=\"3\"/><rect x=\"205\" y=\"25\" width=\"175\" height=\"65\" rx=\"10\" fill=\"#075b83\"/><text x=\"292\" y=\"63\" text-anchor=\"middle\" font-size=\"17\" fill=\"white\">Disk virtual</text><path d=\"M 380 57 h 23 l -6 -5 m 6 5 l -6 5\" stroke=\"#1680a5\" fill=\"none\" stroke-width=\"3\"/><rect x=\"405\" y=\"25\" width=\"175\" height=\"65\" rx=\"10\" fill=\"#075b83\"/><text x=\"492\" y=\"63\" text-anchor=\"middle\" font-size=\"17\" fill=\"white\">Boot OS</text><path d=\"M 580 57 h 23 l -6 -5 m 6 5 l -6 5\" stroke=\"#1680a5\" fill=\"none\" stroke-width=\"3\"/><rect x=\"605\" y=\"25\" width=\"175\" height=\"65\" rx=\"10\" fill=\"#075b83\"/><text x=\"692\" y=\"63\" text-anchor=\"middle\" font-size=\"17\" fill=\"white\">Uji perangkat</text></svg><figcaption>Hubungan konseptual: ISO installer → Disk virtual → Boot OS → Uji perangkat. Panah bukan bukti seluruh lapisan sudah bekerja; gunakan uji pada tiap tahap.</figcaption></figure>"
+    },
+    {
+      "id": "persiapan",
+      "title": "Media, target disk dan keselamatan data",
+      "summary": "Media, target disk dan keselamatan data",
+      "questions": [
+        {
+          "question": "Installer menampilkan disk host yang berisi data, belum ada persetujuan/cadangan. Apa keputusan Anda?",
+          "options": [
+            "Lanjut karena installer siap",
+            "Hentikan dan verifikasi target disk virtual kosong bersama guru",
+            "Hapus partisi terbesar"
+          ],
+          "answer": 1,
+          "explanation": "Identitas target, izin dan perlindungan data mendahului operasi disk."
+        }
+      ],
+      "html": "<h3>3. Persiapan media dan rencana instalasi</h3><p>Gunakan media resmi dengan lisensi/izin yang sesuai; catat versi dan verifikasi integritas jika checksum tepercaya tersedia. Tentukan mesin target, nama inventaris, media boot, firmware dan disk target. UEFI dan legacy boot berbeda; pengaturan mengikuti dukungan OS serta perangkat. Jangan mengubah Secure Boot atau firmware tanpa alasan dan persetujuan guru.</p><p>Pemasangan OS dan partisi dapat menghapus data. Gunakan VM dengan disk latihan kosong agar tidak menyentuh disk pengguna. Pada mesin fisik, guru memastikan identitas disk, izin, cadangan dan cara pemulihan. Cadangan baru dapat dipercaya sesuai cakupan setelah isinya diperiksa dan pemulihannya diuji.</p><p>Checklist sebelum mulai: target disetujui; data penting terlindungi; media diketahui; daya stabil; akun latihan disiapkan; rencana jaringan terisolasi; prosedur kembali tersedia. Berhenti bila satu butir kritis belum jelas.</p><h3>4. Instalasi, akun dan driver</h3><p>Pada VM kosong yang disediakan guru: pasang media, jalankan installer, konfirmasi disk virtual, tentukan bahasa/waktu, buat akun latihan sesuai kebijakan, ikuti installer dan catat keputusan. Nama menu berbeda antar-OS/versi; dokumentasikan versi yang dipakai. Setelah selesai, lepaskan media boot sesuai pengelola dan mulai ulang untuk membuktikan boot dari disk.</p><p>Periksa versi OS, disk, perangkat dan NIC. Gunakan driver serta pembaruan dari sumber yang disetujui. Jangan memasang paket driver acak untuk menghilangkan tanda peringatan. Akun sehari-hari berbeda dari hak administrasi; jangan menaruh sandi dalam laporan. Tidak perlu bergabung ke domain atau memasang layanan produksi pada tahap dasar ini.</p>"
+    },
+    {
+      "id": "linux-boot",
+      "title": "Ubuntu Desktop: ISO, sesi live dan awal installer",
+      "summary": "Ubuntu Desktop: ISO, sesi live dan awal installer",
+      "html": "<p>Acuan latihan adalah Ubuntu Desktop 24.04 LTS. Buat guest Ubuntu dengan media sesuai dan disk kosong. Boot ISO menampilkan pilihan bahasa, aksesibilitas, keyboard, jaringan, serta Try/Install. Tulisan dan urutan dapat berbeda pada point release; konsep boot media tetap sama.</p><p>Pilih Try Ubuntu untuk mengamati live session. Periksa bahwa disk belum berisi OS; kembali melalui Install Ubuntu. Selanjutnya gunakan Interactive installation agar setiap keputusan dapat dijelaskan. Automated installation di luar lingkup model dan ditolak bila dipilih.</p><p>Praktik: sengaja gunakan ISO kosong dahulu untuk melihat kegagalan boot, perbaiki media, lalu bandingkan sesi live dengan installer. Catat bukti sebelum dan sesudah. Tidak ada ISO asli yang diunduh oleh halaman.</p>",
+      "questions": [
+        {
+          "question": "Sesi live berjalan. Bukti apa yang masih diperlukan untuk menyatakan instalasi selesai?",
+          "options": [
+            "Desktop terlihat",
+            "Instalasi disk selesai dan boot berhasil tanpa ISO",
+            "Bahasa sudah dipilih"
+          ],
+          "answer": 1,
+          "explanation": "Sesi ISO tidak membuktikan disk bootable."
+        }
+      ]
+    },
+    {
+      "id": "linux-options",
+      "title": "Ubuntu Desktop: aplikasi, perangkat dan jaringan",
+      "summary": "Ubuntu Desktop: aplikasi, perangkat dan jaringan",
+      "html": "<p>Default selection dan Extended selection membedakan kelompok aplikasi pada installer yang dijadikan acuan. Kebutuhan pembelajaran, ruang dan ketersediaan jaringan memengaruhi pilihan. Third-party support tidak berarti semua perangkat selalu memerlukan driver tambahan.</p><p>Pada skenario isolated, pilih koneksi tidak tersedia dan jelaskan bahwa repository/pembaruan belum diuji. Model mencatat pilihan jaringan serta aplikasi tetapi tidak mengunduh driver atau memeriksa hardware nyata. Jangan menyimpulkan instalasi model membuktikan driver laptop peserta didukung.</p><p>Bandingkan pilihan aplikasi dan dukungan perangkat pada dua percobaan. Tuliskan akibat yang diwakili model dan hal yang perlu dibuktikan pada VM produk asli.</p>",
+      "questions": [
+        {
+          "question": "Repository tidak tersedia di lab terisolasi. Laporan yang benar ...",
+          "options": [
+            "Seluruh pembaruan pasti terpasang",
+            "Nyatakan pembaruan/paket daring belum diuji dan rencanakan akses berizin",
+            "Matikan verifikasi sumber paket"
+          ],
+          "answer": 1,
+          "explanation": "Keputusan dan keterbatasan bukti harus dibedakan dari klaim keberhasilan."
+        }
+      ]
+    },
+    {
+      "id": "linux-disk",
+      "title": "Ubuntu Desktop: partisi otomatis dan manual",
+      "summary": "Ubuntu Desktop: partisi otomatis dan manual",
+      "html": "<p>Disk 0 adalah target virtual kosong; Disk 1 adalah DATA latihan yang dilindungi. Pilih Erase Disk 0 untuk tata letak otomatis, atau Manual partitioning untuk menyiapkan EFI FAT32 pada /boot/efi dan root ext4 pada /. Nilai partisi dalam simulator adalah batas model, bukan ukuran wajib universal installer.</p><p>Latihan manual: tambahkan /boot/efi FAT32 1 GiB, kemudian / ext4 40 GiB pada disk 64 GiB. Sisanya dapat digunakan /home sesuai kebutuhan. Model menolak root hilang, filesystem keliru, mount ganda dan jumlah ukuran melebihi kapasitas.</p><p>Sengaja pilih Disk 1 dan amati penolakan aman. Kembali ke Disk 0, tinjau rencana, kemudian lanjut. Pada perangkat nyata formatting bisa menghancurkan data; disk, izin dan cadangan harus diverifikasi sebelum perubahan.</p>",
+      "questions": [
+        {
+          "question": "Rencana Ubuntu manual hanya memiliki /home ext4, tanpa root dan EFI. Model ...",
+          "options": [
+            "Menerima karena ada partisi",
+            "Menolak karena struktur boot/root profil belum terpenuhi",
+            "Membuat OS dari nama VM"
+          ],
+          "answer": 1,
+          "explanation": "Mount, filesystem dan kapasitas perlu konsisten agar profil boot yang dipilih dapat dipenuhi."
+        }
+      ]
+    },
+    {
+      "id": "linux-account",
+      "title": "Ubuntu Desktop: akun, waktu dan ringkasan instalasi",
+      "summary": "Ubuntu Desktop: akun, waktu dan ringkasan instalasi",
+      "html": "<p>Nama akun dan hostname berbeda dari nama VM. Gunakan identitas fiktif seperti siswa dan lab-ubuntu, lalu dua sandi latihan yang cocok minimal delapan karakter. Sandi hanya diperiksa sementara dan tidak disimpan ke sesi/log/ekspor.</p><p>Pilih zona waktu lalu tinjau ringkasan OS, disk, resource serta partisi. Konfirmasi hanya jika target benar. Tombol Back mengizinkan revisi sebelum penyalinan; setelah penyalinan dimulai, perubahan disk dianggap sudah diterapkan pada model.</p><p>Pada Windows, sebagian pengaturan akun terjadi setelah boot awal; jangan memaksakan urutan Ubuntu pada semua OS. Penempatan profil akun adalah bagian perbandingan kedua installer.</p>",
+      "questions": [
+        {
+          "question": "Hostname, nama VM dan username ...",
+          "options": [
+            "Selalu berubah bersama",
+            "Adalah identitas berbeda yang perlu dicatat dan diuji",
+            "Selalu berisi alamat IP"
+          ],
+          "answer": 1,
+          "explanation": "Identitas pengelola, OS dan akun mempunyai fungsi berbeda."
+        }
+      ]
+    },
+    {
+      "id": "linux-desktop",
+      "title": "Instalasi Linux desktop",
+      "summary": "Instalasi Linux desktop",
+      "questions": [
+        {
+          "question": "Desktop Ubuntu dapat dipakai saat ISO terpasang tetapi disk tidak dapat boot setelah ISO dilepas. Kemungkinan yang perlu diuji ...",
+          "options": [
+            "Sesi live digunakan tanpa instalasi selesai ke disk",
+            "Semua Linux memerlukan ISO selamanya",
+            "DNS menyebabkan disk tidak boot"
+          ],
+          "answer": 0,
+          "explanation": "Sesi mencoba OS dari ISO berbeda dari OS yang terpasang dan boot pada disk."
+        }
+      ],
+      "html": "<h3>Jalur praktik A — Instalasi Linux desktop di kelas X</h3><p>Gunakan Ubuntu Desktop sebagai contoh, bukan menyamakan semua distribusi Linux. Guru menetapkan versi/media resmi dan memeriksa kebutuhan resource sesuai versi tersebut. Siapkan VM kosong dengan nama berbeda dari VM Windows, disk virtual khusus, media ISO dan jaringan lab yang disetujui. Baca checksum dari penerbit dan cocokkan hasilnya sebelum digunakan.</p><p>Langkah: mulai VM dari ISO; pilih bahasa/keyboard; pilih alur instalasi; tentukan opsi jaringan sesuai fasilitas; identifikasi target disk virtual; baca ringkasan perubahan; buat akun latihan; tinjau lokasi/waktu jika diminta; jalankan pemasangan; mulai ulang dan lepaskan ISO ketika prosedur mengharuskan. Pilihan menghapus disk hanya untuk disk virtual kosong yang telah diverifikasi guru. Jika installer menyediakan sesi mencoba desktop, itu bukan bukti OS sudah terpasang pada disk.</p><p>Sesudah boot, masuk ke desktop, periksa versi, akun, ruang disk, NIC serta pengaturan jaringan. Bedakan pengelola berkas dari terminal; latih perintah baca pwd, ls dan identitas OS. Periksa pembaruan melalui fasilitas resmi bila repository dapat dijangkau. Integrasi guest mengikuti hypervisor dan OS yang dipakai, bukan memasang semua paket tanpa kebutuhan. Buktikan boot lagi tanpa ISO dan satu tugas pengguna seperti membuat berkas latihan serta membuka aplikasi lokal.</p><p>Kasus diagnosis: desktop dapat dipakai dari sesi ISO tetapi tidak boot ketika ISO dilepas. Periksa apakah instalasi ke disk sudah dilakukan dan media boot benar, sebelum mengganti OS. Bukti penerimaan harus menampilkan versi OS terpasang, disk, hasil boot tanpa ISO dan satu tugas yang tetap tersedia setelah reboot.</p><p>Referensi: <a href=\"https://ubuntu.com/tutorials/install-ubuntu-desktop\" target=\"_blank\" rel=\"noopener\">panduan instalasi Ubuntu Desktop</a>. Urutan layar dapat berubah; catat versi yang digunakan.</p><section class=\"foundation-lab\"><h3>Praktik VM dan installer di browser</h3><p>Mulai dengan New, siapkan VM dan ISO, Start, lalu ikuti installer sampai boot dari disk. Ubah satu keputusan untuk mengamati penyebab gagal. Sesi disimpan otomatis untuk latihan ini; sandi latihan tidak disimpan.</p><div data-virtual-lab data-os=\"ubuntu\" data-session=\"os-ubuntu\"></div></section>"
+    },
+    {
+      "id": "windows-media",
+      "title": "Windows 11: kebutuhan VM, edisi dan media",
+      "summary": "Windows 11: kebutuhan VM, edisi dan media",
+      "html": "<p>Acuan kedua adalah alur instalasi bersih Windows 11 pada VM. Siapkan RAM, vCPU, disk, UEFI, TPM serta kemampuan Secure Boot sesuai profil. Model memeriksa sebagian parameter; kompatibilitas CPU, grafis, lisensi dan dukungan hypervisor nyata tetap diverifikasi pada produk.</p><p>Mulai ISO, pilih bahasa/keyboard, alur instalasi bersih, product key kemudian dan edisi latihan. Tidak ada product key nyata diminta. Tinjau kebutuhan lisensi; centang latihan bukan aktivasi atau persetujuan lisensi vendor.</p><p>Edisi/build dapat mengubah pilihan dan urutan layar. Simulator tidak menyatakan meniru semua build identik dan tidak menawarkan bypass persyaratan resmi. Pilih edisi/media yang disetujui sekolah.</p>",
+      "questions": [
+        {
+          "question": "VM gagal memenuhi TPM/UEFI profil Windows. Tindakan ...",
+          "options": [
+            "Gunakan bypass tanpa verifikasi",
+            "Perbaiki dukungan/pengaturan yang sah dan periksa kebutuhan resmi",
+            "Ganti nama ISO saja"
+          ],
+          "answer": 1,
+          "explanation": "Kesesuaian hardware virtual dan kebutuhan guest harus diperiksa sebelum installer."
+        }
+      ]
+    },
+    {
+      "id": "windows-disk",
+      "title": "Windows 11: target disk dan tata letak boot",
+      "summary": "Windows 11: target disk dan tata letak boot",
+      "html": "<p>Pilih Disk 0 Unallocated Space pada VM latihan. Profil otomatis merepresentasikan area EFI, MSR, Windows dan Recovery. Besaran yang ditampilkan adalah representasi latihan, bukan ukuran tetap setiap build Windows.</p><p>Disk 1 DATA tidak boleh dihapus untuk menyelesaikan misi. Jika salah disk dipilih, simulator menghentikan langkah sebelum penyalinan. Pada produk nyata, baca nomor, kapasitas, identitas dan ringkasan perubahan; jangan menjadikan nomor Disk 0 sebagai jaminan target selalu benar.</p><p>Setelah ringkasan dikonfirmasi, jalankan empat fase penyalinan model. Lepas ISO sebelum Restart untuk membuktikan boot disk. Model penyalinan tidak menyalin file Windows asli atau menyatakan aktivasi berhasil.</p>",
+      "questions": [
+        {
+          "question": "Disk 1 berisi data, Disk 0 kosong. Target untuk skenario ini ...",
+          "options": [
+            "Disk 1 karena lebih besar",
+            "Disk 0 yang telah diverifikasi kosong; pertahankan Disk 1",
+            "Hapus keduanya"
+          ],
+          "answer": 1,
+          "explanation": "Pemilihan disk berdasarkan identitas dan kebutuhan, bukan ukuran terbesar."
+        }
+      ]
+    },
+    {
+      "id": "windows-oobe",
+      "title": "Windows 11: pengaturan awal, akun dan privasi",
+      "summary": "Windows 11: pengaturan awal, akun dan privasi",
+      "html": "<p>Sesudah restart disk, selesaikan wilayah, jaringan, identitas latihan dan privasi. Pada Windows nyata, persyaratan Internet/akun bergantung edisi dan kebijakan. Simulator menggunakan identitas fiktif dan tidak meniru login Microsoft atau mengirim data ke layanan tersebut.</p><p>Gunakan hostname dan username yang valid serta sandi fiktif yang cocok. Catat edisi, waktu, pengaturan jaringan dan batas uji. Pengaturan privasi di model hanya pilihan representasi; tidak ada telemetri Windows yang diaktifkan.</p><p>Setelah desktop, periksa boot source disk dan identitas. Shut down, Start tanpa ISO lalu periksa lagi. Uji ini berbeda dari sekadar mencapai persentase instalasi 100%.</p>",
+      "questions": [
+        {
+          "question": "Pengaturan akun pada simulator selesai. Kesimpulan yang benar ...",
+          "options": [
+            "Akun Microsoft nyata telah dibuat",
+            "Hanya identitas fiktif model; persyaratan akun produk nyata tetap perlu diperiksa",
+            "Windows otomatis berlisensi"
+          ],
+          "answer": 1,
+          "explanation": "Simulator tidak membuat akun daring atau mengaktifkan produk."
+        }
+      ]
+    },
+    {
+      "id": "windows-desktop",
+      "title": "Instalasi Windows desktop",
+      "summary": "Instalasi Windows desktop",
+      "questions": [
+        {
+          "question": "Kebutuhan firmware/TPM virtual suatu edisi Windows belum terpenuhi. Pilihan yang tepat ...",
+          "options": [
+            "Gunakan cara tidak resmi untuk melewati semua pemeriksaan",
+            "Verifikasi dukungan hypervisor, kebutuhan resmi dan edisi/media yang disetujui",
+            "Anggap Windows desktop sama dengan Windows Server"
+          ],
+          "answer": 1,
+          "explanation": "Kebutuhan guest, lisensi/edisi dan dukungan platform harus diperiksa sebelum instalasi."
+        }
+      ],
+      "html": "<h3>Jalur praktik B — Instalasi Windows desktop di kelas X</h3><p>Windows desktop dan Windows Server adalah produk/tujuan berbeda. Gunakan media Windows desktop resmi dengan edisi, lisensi serta dukungan yang disetujui sekolah. Guru memastikan arsitektur, firmware, TPM/Secure Boot virtual jika dipersyaratkan, RAM dan disk memenuhi kebutuhan versi. Jangan melewati pemeriksaan kompatibilitas dengan modifikasi tidak resmi.</p><p>Pada VM khusus kosong: pasang ISO; boot installer; pilih bahasa/keyboard; pilih alur instalasi yang tepat; tentukan edisi sesuai hak penggunaan; baca ketentuan; identifikasi disk virtual dan tinjau perubahan partisi; jalankan instalasi; selesaikan pengaturan awal akun, privasi dan jaringan sesuai kebijakan sekolah. Jangan memasukkan akun pribadi pada layar yang direkam. Persyaratan aktivasi atau koneksi mengikuti edisi/versi, bukan diasumsikan sama untuk semua media.</p><p>Sesudah boot, periksa edisi/build, status aktivasi sesuai lisensi, perangkat/driver, jaringan dan pembaruan resmi. Gunakan Device Manager untuk memeriksa perangkat, pengelola disk untuk membaca volume dan ipconfig untuk konfigurasi jaringan. Latih lokasi berkas serta hak pengguna; hak admin tidak diperlukan untuk semua tugas. Guest tools dipasang hanya dari sumber hypervisor yang sesuai dan bila diperlukan.</p><p>Kasus diagnosis: Windows boot tetapi NIC tidak dikenali. Cocokkan dukungan adapter virtual dan driver, jangan mengubah DNS sebagai jawaban pertama. Ulangi boot tanpa ISO dan buktikan berkas latihan serta konfigurasi tetap ada. Gunakan tabel perbandingan Linux desktop/Windows: media, akun, alat inspeksi, driver, pembaruan dan bukti penerimaan. Penilaian berfokus pada alasan keputusan, bukan menghafal tampilan installer.</p><p>Referensi: <a href=\"https://support.microsoft.com/en-gb/windows/deployment/install-upgrade/create-installation-media-for-windows\" target=\"_blank\" rel=\"noopener\">media instalasi Windows</a> dan <a href=\"https://support.microsoft.com/en-US/Windows/deployment/install-upgrade/reinstall-windows-with-the-installation-media\" target=\"_blank\" rel=\"noopener\">instalasi ulang Windows</a>.</p><section class=\"foundation-lab\"><h3>Praktik VM dan installer di browser</h3><p>Mulai dengan New, siapkan VM dan ISO, Start, lalu ikuti installer sampai boot dari disk. Ubah satu keputusan untuk mengamati penyebab gagal. Sesi disimpan otomatis untuk latihan ini; sandi latihan tidak disimpan.</p><div data-virtual-lab data-os=\"windows\" data-session=\"os-windows\"></div></section>"
+    },
+    {
+      "id": "konfigurasi",
+      "title": "Konfigurasi klien dan diagnosis",
+      "summary": "Konfigurasi klien dan diagnosis",
+      "questions": [
+        {
+          "question": "Akses server menggunakan IP berhasil, nama gagal. Fokus berikutnya ...",
+          "options": [
+            "Langsung instal ulang",
+            "Periksa resolver yang dipakai dan jawaban DNS",
+            "Ganti CPU"
+          ],
+          "answer": 1,
+          "explanation": "Resolusi nama perlu diuji terpisah dari keterjangkauan alamat IP."
+        }
+      ],
+      "html": "<h3>5. Konfigurasi klien dan diagnosis berlapis</h3><p>Skenario terisolasi: klien 192.168.10.10/24, gateway 192.168.10.1 dan resolver lab 192.168.10.2 yang benar-benar disediakan guru. Jika resolver belum tersedia, tandai uji nama belum dapat dilakukan; jangan mengarang hasil. Pilih statis atau DHCP sesuai rancangan, bukan mengaktifkan keduanya tanpa memahami keadaan antarmuka.</p><p>Urutan bukti: antarmuka/link; alamat/prefix; gateway; tujuan lokal; tujuan antarsegmen jika tersedia; query nama; aplikasi. Pada Windows alat baca dapat berupa ipconfig dan nslookup; pada Linux ip address, ip route dan alat resolver yang tersedia. Nama antarmuka, pengelola jaringan dan cara menyimpan pengaturan berbeda menurut OS. Ping gagal tidak selalu berarti host mati karena kebijakan ICMP dapat membatasi respons.</p>"
+    },
+    {
+      "id": "laboratorium",
+      "title": "Laboratorium target instalasi dan boot",
+      "summary": "Laboratorium target instalasi dan boot",
+      "questions": [
+        {
+          "question": "Pada model, installer selesai tetapi ISO belum dilepas. Bukti tambahan yang diperlukan ...",
+          "options": [
+            "Boot dari disk setelah ISO dilepas",
+            "Hanya menekan install lagi",
+            "Menghapus disk host"
+          ],
+          "answer": 0,
+          "explanation": "Pengujian tanpa ISO membedakan ketergantungan sesi media dari instalasi disk."
+        }
+      ],
+      "html": "<p>Bandingkan bukti dari dua simulator pada tahap Linux desktop dan Windows desktop: media, disk, partisi, akun, penyalinan, restart dan boot disk. Uji sekurangnya satu kegagalan pada setiap OS lalu jelaskan perbaikannya. Tidak perlu mengulang instalasi yang sama hanya untuk menyalin laporan.</p><p>Bukti model dan bukti praktik produk asli ditandai terpisah. Tidak ada disk perangkat peserta yang diakses.</p>"
+    },
+    {
+      "id": "refleksi",
+      "title": "Penerimaan dua OS dan transfer ke server",
+      "summary": "Penerimaan dua OS dan transfer ke server",
+      "questions": [
+        {
+          "question": "Laporan instalasi yang dapat ditinjau memuat ...",
+          "options": [
+            "Hanya nilai kuis",
+            "Media/versi, target, keputusan, hasil boot, akun/driver/jaringan dan batas uji tanpa sandi",
+            "Password asli semua akun"
+          ],
+          "answer": 1,
+          "explanation": "Bukti harus dapat ditelusuri tanpa mengungkap kredensial."
+        }
+      ],
+      "html": "<h3>7. Refleksi, asesmen dan pengembangan berikutnya</h3><p>Kasus transfer: klien dapat membuka server dengan IP tetapi nama gagal. Peserta menyebut bukti, menguji resolver dan menghindari instal ulang OS tanpa alasan. Nilai melalui empat dimensi 0–3: ketepatan konfigurasi, bukti uji, keselamatan/pemulihan, penjelasan. Asesmen praktik memakai observasi guru; kuis LMS kelak tidak menggantikannya. Tidak ada game wajib bila tidak memperjelas konsep.</p><p>Laporan satu halaman: tujuan; mesin/versi; langkah penting; input; hasil asli; satu kegagalan; perbaikan; hasil uji ulang; batas kesimpulan. Jangan sertakan kredensial atau data pribadi.</p><p>Referensi pelaksanaan yang harus dipilih sesuai OS/versi saat implementasi: dokumentasi resmi instalasi OS, manual perangkat dan SOP lab sekolah. Draft ini belum mengunci distribusi/versi sehingga belum menyediakan perintah instalasi yang dapat disalahgunakan pada disk nyata.</p>"
+    },
+    {
+      "id": "evaluasi",
+      "title": "Evaluasi Akhir dan Sertifikat",
+      "summary": "Menilai konsep dan menjelaskan transfer pembelajaran.",
+      "questions": [
+        {
+          "question": "Komputer boot tetapi NIC belum dikenali. Langkah awal paling tepat ...",
+          "options": [
+            "Mengubah DNS tanpa NIC",
+            "Cocokkan dukungan NIC dan driver dengan OS yang dipakai",
+            "Format semua disk"
+          ],
+          "answer": 1,
+          "explanation": "Link dan driver mendahului diagnosis alamat, resolver serta aplikasi."
+        },
+        {
+          "question": "Installer menampilkan disk host yang berisi data, belum ada persetujuan/cadangan. Apa keputusan Anda?",
+          "options": [
+            "Lanjut karena installer siap",
+            "Hentikan dan verifikasi target disk virtual kosong bersama guru",
+            "Hapus partisi terbesar"
+          ],
+          "answer": 1,
+          "explanation": "Identitas target, izin dan perlindungan data mendahului operasi disk."
+        },
+        {
+          "question": "Sesi live berjalan. Bukti apa yang masih diperlukan untuk menyatakan instalasi selesai?",
+          "options": [
+            "Desktop terlihat",
+            "Instalasi disk selesai dan boot berhasil tanpa ISO",
+            "Bahasa sudah dipilih"
+          ],
+          "answer": 1,
+          "explanation": "Sesi ISO tidak membuktikan disk bootable."
+        },
+        {
+          "question": "Repository tidak tersedia di lab terisolasi. Laporan yang benar ...",
+          "options": [
+            "Seluruh pembaruan pasti terpasang",
+            "Nyatakan pembaruan/paket daring belum diuji dan rencanakan akses berizin",
+            "Matikan verifikasi sumber paket"
+          ],
+          "answer": 1,
+          "explanation": "Keputusan dan keterbatasan bukti harus dibedakan dari klaim keberhasilan."
+        },
+        {
+          "question": "Rencana Ubuntu manual hanya memiliki /home ext4, tanpa root dan EFI. Model ...",
+          "options": [
+            "Menerima karena ada partisi",
+            "Menolak karena struktur boot/root profil belum terpenuhi",
+            "Membuat OS dari nama VM"
+          ],
+          "answer": 1,
+          "explanation": "Mount, filesystem dan kapasitas perlu konsisten agar profil boot yang dipilih dapat dipenuhi."
+        },
+        {
+          "question": "Hostname, nama VM dan username ...",
+          "options": [
+            "Selalu berubah bersama",
+            "Adalah identitas berbeda yang perlu dicatat dan diuji",
+            "Selalu berisi alamat IP"
+          ],
+          "answer": 1,
+          "explanation": "Identitas pengelola, OS dan akun mempunyai fungsi berbeda."
+        },
+        {
+          "question": "Desktop Ubuntu dapat dipakai saat ISO terpasang tetapi disk tidak dapat boot setelah ISO dilepas. Kemungkinan yang perlu diuji ...",
+          "options": [
+            "Sesi live digunakan tanpa instalasi selesai ke disk",
+            "Semua Linux memerlukan ISO selamanya",
+            "DNS menyebabkan disk tidak boot"
+          ],
+          "answer": 0,
+          "explanation": "Sesi mencoba OS dari ISO berbeda dari OS yang terpasang dan boot pada disk."
+        },
+        {
+          "question": "VM gagal memenuhi TPM/UEFI profil Windows. Tindakan ...",
+          "options": [
+            "Gunakan bypass tanpa verifikasi",
+            "Perbaiki dukungan/pengaturan yang sah dan periksa kebutuhan resmi",
+            "Ganti nama ISO saja"
+          ],
+          "answer": 1,
+          "explanation": "Kesesuaian hardware virtual dan kebutuhan guest harus diperiksa sebelum installer."
+        },
+        {
+          "question": "Disk 1 berisi data, Disk 0 kosong. Target untuk skenario ini ...",
+          "options": [
+            "Disk 1 karena lebih besar",
+            "Disk 0 yang telah diverifikasi kosong; pertahankan Disk 1",
+            "Hapus keduanya"
+          ],
+          "answer": 1,
+          "explanation": "Pemilihan disk berdasarkan identitas dan kebutuhan, bukan ukuran terbesar."
+        },
+        {
+          "question": "Pengaturan akun pada simulator selesai. Kesimpulan yang benar ...",
+          "options": [
+            "Akun Microsoft nyata telah dibuat",
+            "Hanya identitas fiktif model; persyaratan akun produk nyata tetap perlu diperiksa",
+            "Windows otomatis berlisensi"
+          ],
+          "answer": 1,
+          "explanation": "Simulator tidak membuat akun daring atau mengaktifkan produk."
+        },
+        {
+          "question": "Kebutuhan firmware/TPM virtual suatu edisi Windows belum terpenuhi. Pilihan yang tepat ...",
+          "options": [
+            "Gunakan cara tidak resmi untuk melewati semua pemeriksaan",
+            "Verifikasi dukungan hypervisor, kebutuhan resmi dan edisi/media yang disetujui",
+            "Anggap Windows desktop sama dengan Windows Server"
+          ],
+          "answer": 1,
+          "explanation": "Kebutuhan guest, lisensi/edisi dan dukungan platform harus diperiksa sebelum instalasi."
+        },
+        {
+          "question": "Akses server menggunakan IP berhasil, nama gagal. Fokus berikutnya ...",
+          "options": [
+            "Langsung instal ulang",
+            "Periksa resolver yang dipakai dan jawaban DNS",
+            "Ganti CPU"
+          ],
+          "answer": 1,
+          "explanation": "Resolusi nama perlu diuji terpisah dari keterjangkauan alamat IP."
+        },
+        {
+          "question": "Pada model, installer selesai tetapi ISO belum dilepas. Bukti tambahan yang diperlukan ...",
+          "options": [
+            "Boot dari disk setelah ISO dilepas",
+            "Hanya menekan install lagi",
+            "Menghapus disk host"
+          ],
+          "answer": 0,
+          "explanation": "Pengujian tanpa ISO membedakan ketergantungan sesi media dari instalasi disk."
+        },
+        {
+          "question": "Laporan instalasi yang dapat ditinjau memuat ...",
+          "options": [
+            "Hanya nilai kuis",
+            "Media/versi, target, keputusan, hasil boot, akun/driver/jaringan dan batas uji tanpa sandi",
+            "Password asli semua akun"
+          ],
+          "answer": 1,
+          "explanation": "Bukti harus dapat ditelusuri tanpa mengungkap kredensial."
+        }
+      ],
+      "html": "<p>Jawab seluruh 14 soal yang mewakili tahap materi. Jawab semua soal dengan nilai minimal 80. Bila belum lulus, periksa umpan balik dan kembali ke materi terkait. Semua tahap sebelumnya harus lulus minimal 75 agar sertifikat tersedia. Sertifikat LMS membuktikan penyelesaian modul, bukan sertifikasi profesi atau pengganti observasi praktik oleh guru.</p><p>Serahkan laporan singkat: tujuan, lingkungan/media, tindakan, hasil, alasan dan perbaikan. Jelaskan satu perbedaan model dengan praktik nyata. Jangan memasukkan kata sandi dalam laporan.</p>"
+    }
+  ],
+  "legacyChapters": [
+    {
+      "id": "orientasi",
+      "title": "Rencana instalasi dan komponen komputer",
+      "summary": "Rencana instalasi dan komponen komputer",
+      "questions": [
+        {
+          "question": "Komputer boot tetapi NIC belum dikenali. Langkah awal paling tepat ...",
+          "options": [
+            "Mengubah DNS tanpa NIC",
+            "Cocokkan dukungan NIC dan driver dengan OS yang dipakai",
+            "Format semua disk"
+          ],
+          "answer": 1,
+          "explanation": "Link dan driver mendahului diagnosis alamat, resolver serta aplikasi."
+        }
+      ],
+      "html": "<h3>Tujuan dan prasyarat</h3><p>Peserta mampu menjelaskan hubungan komponen–firmware–OS–driver–aplikasi, merencanakan instalasi pada target latihan, mengonfigurasi antarmuka klien, dan menunjukkan hasil uji setelah mulai ulang. Prasyarat: K3LH; pengenalan perangkat; konsep IP sebelum konfigurasi jaringan. Tidak memerlukan modul administrasi server kelas XI.</p><h3>1. Orientasi: komputer menyala belum tentu siap dipakai</h3><p>Kasus: PC perpustakaan menyala, tetapi sistem operasi gagal dimuat. Setelah media boot diperbaiki, OS berjalan tetapi NIC belum dapat digunakan. Setelah driver sesuai tersedia, akses web tetap gagal karena DNS salah. Ketiga gejala berasal dari lapisan berbeda; mengganti RAM bukan jawaban otomatis.</p><p>Tulis tiga dugaan, bukti pembeda dan batas tindakan siswa. Produk akhir: inventaris, rencana instalasi, tabel konfigurasi, hasil uji dan satu laporan pemulihan. Guru menyetujui mesin/VM dan target disk sebelum praktik.</p><h3>2. Komponen, kompatibilitas dan pemeriksaan awal</h3><p>CPU menjalankan instruksi; RAM menyimpan keadaan kerja sementara; penyimpanan menampung OS dan data; NIC menghubungkan host dengan jaringan. Firmware menginisialisasi perangkat dan memulai proses boot. OS mengelola sumber daya; driver menghubungkan pengelolaan OS dengan perangkat yang didukung. Kapasitas besar tidak memperbaiki ketidakcocokan arsitektur atau driver.</p><p>Periksa model, CPU/arsitektur, RAM, kapasitas disk, firmware, NIC dan dukungan OS dari dokumentasi perangkat. Bedakan kapasitas disk dengan ruang kosong. Catat kebutuhan minimum dan ruang untuk penggunaan nyata; minimum instalasi bukan janji performa. Jangan membuka PSU atau menangani perangkat berenergi. Penanganan komponen hanya setelah guru mengamankan perangkat sesuai SOP.</p><p>Latihan: cocokkan kebutuhan ruang belajar dengan dua spesifikasi fiktif. Tandai informasi yang belum diketahui. Hasil yang dinilai adalah alasan kompatibilitas, bukan memilih spesifikasi paling mahal.</p><figure><svg viewBox=\"0 0 800 130\" role=\"img\" aria-label=\"ISO installer menuju Disk virtual menuju Boot OS menuju Uji perangkat\" style=\"width:100%;height:auto\"><rect x=\"5\" y=\"25\" width=\"175\" height=\"65\" rx=\"10\" fill=\"#075b83\"/><text x=\"92\" y=\"63\" text-anchor=\"middle\" font-size=\"17\" fill=\"white\">ISO installer</text><path d=\"M 180 57 h 23 l -6 -5 m 6 5 l -6 5\" stroke=\"#1680a5\" fill=\"none\" stroke-width=\"3\"/><rect x=\"205\" y=\"25\" width=\"175\" height=\"65\" rx=\"10\" fill=\"#075b83\"/><text x=\"292\" y=\"63\" text-anchor=\"middle\" font-size=\"17\" fill=\"white\">Disk virtual</text><path d=\"M 380 57 h 23 l -6 -5 m 6 5 l -6 5\" stroke=\"#1680a5\" fill=\"none\" stroke-width=\"3\"/><rect x=\"405\" y=\"25\" width=\"175\" height=\"65\" rx=\"10\" fill=\"#075b83\"/><text x=\"492\" y=\"63\" text-anchor=\"middle\" font-size=\"17\" fill=\"white\">Boot OS</text><path d=\"M 580 57 h 23 l -6 -5 m 6 5 l -6 5\" stroke=\"#1680a5\" fill=\"none\" stroke-width=\"3\"/><rect x=\"605\" y=\"25\" width=\"175\" height=\"65\" rx=\"10\" fill=\"#075b83\"/><text x=\"692\" y=\"63\" text-anchor=\"middle\" font-size=\"17\" fill=\"white\">Uji perangkat</text></svg><figcaption>Hubungan konseptual: ISO installer → Disk virtual → Boot OS → Uji perangkat. Panah bukan bukti seluruh lapisan sudah bekerja; gunakan uji pada tiap tahap.</figcaption></figure>"
+    },
+    {
+      "id": "persiapan",
+      "title": "Media, target disk dan keselamatan data",
+      "summary": "Media, target disk dan keselamatan data",
+      "questions": [
+        {
+          "question": "Installer menampilkan disk host yang berisi data, belum ada persetujuan/cadangan. Apa keputusan Anda?",
+          "options": [
+            "Lanjut karena installer siap",
+            "Hentikan dan verifikasi target disk virtual kosong bersama guru",
+            "Hapus partisi terbesar"
+          ],
+          "answer": 1,
+          "explanation": "Identitas target, izin dan perlindungan data mendahului operasi disk."
+        }
+      ],
+      "html": "<h3>3. Persiapan media dan rencana instalasi</h3><p>Gunakan media resmi dengan lisensi/izin yang sesuai; catat versi dan verifikasi integritas jika checksum tepercaya tersedia. Tentukan mesin target, nama inventaris, media boot, firmware dan disk target. UEFI dan legacy boot berbeda; pengaturan mengikuti dukungan OS serta perangkat. Jangan mengubah Secure Boot atau firmware tanpa alasan dan persetujuan guru.</p><p>Pemasangan OS dan partisi dapat menghapus data. Gunakan VM dengan disk latihan kosong agar tidak menyentuh disk pengguna. Pada mesin fisik, guru memastikan identitas disk, izin, cadangan dan cara pemulihan. Cadangan baru dapat dipercaya sesuai cakupan setelah isinya diperiksa dan pemulihannya diuji.</p><p>Checklist sebelum mulai: target disetujui; data penting terlindungi; media diketahui; daya stabil; akun latihan disiapkan; rencana jaringan terisolasi; prosedur kembali tersedia. Berhenti bila satu butir kritis belum jelas.</p><h3>4. Instalasi, akun dan driver</h3><p>Pada VM kosong yang disediakan guru: pasang media, jalankan installer, konfirmasi disk virtual, tentukan bahasa/waktu, buat akun latihan sesuai kebijakan, ikuti installer dan catat keputusan. Nama menu berbeda antar-OS/versi; dokumentasikan versi yang dipakai. Setelah selesai, lepaskan media boot sesuai pengelola dan mulai ulang untuk membuktikan boot dari disk.</p><p>Periksa versi OS, disk, perangkat dan NIC. Gunakan driver serta pembaruan dari sumber yang disetujui. Jangan memasang paket driver acak untuk menghilangkan tanda peringatan. Akun sehari-hari berbeda dari hak administrasi; jangan menaruh sandi dalam laporan. Tidak perlu bergabung ke domain atau memasang layanan produksi pada tahap dasar ini.</p>"
+    },
+    {
+      "id": "linux-desktop",
+      "title": "Instalasi Linux desktop",
+      "summary": "Instalasi Linux desktop",
+      "questions": [
+        {
+          "question": "Desktop Ubuntu dapat dipakai saat ISO terpasang tetapi disk tidak dapat boot setelah ISO dilepas. Kemungkinan yang perlu diuji ...",
+          "options": [
+            "Sesi live digunakan tanpa instalasi selesai ke disk",
+            "Semua Linux memerlukan ISO selamanya",
+            "DNS menyebabkan disk tidak boot"
+          ],
+          "answer": 0,
+          "explanation": "Sesi mencoba OS dari ISO berbeda dari OS yang terpasang dan boot pada disk."
+        }
+      ],
+      "html": "<h3>Jalur praktik A — Instalasi Linux desktop di kelas X</h3><p>Gunakan Ubuntu Desktop sebagai contoh, bukan menyamakan semua distribusi Linux. Guru menetapkan versi/media resmi dan memeriksa kebutuhan resource sesuai versi tersebut. Siapkan VM kosong dengan nama berbeda dari VM Windows, disk virtual khusus, media ISO dan jaringan lab yang disetujui. Baca checksum dari penerbit dan cocokkan hasilnya sebelum digunakan.</p><p>Langkah: mulai VM dari ISO; pilih bahasa/keyboard; pilih alur instalasi; tentukan opsi jaringan sesuai fasilitas; identifikasi target disk virtual; baca ringkasan perubahan; buat akun latihan; tinjau lokasi/waktu jika diminta; jalankan pemasangan; mulai ulang dan lepaskan ISO ketika prosedur mengharuskan. Pilihan menghapus disk hanya untuk disk virtual kosong yang telah diverifikasi guru. Jika installer menyediakan sesi mencoba desktop, itu bukan bukti OS sudah terpasang pada disk.</p><p>Sesudah boot, masuk ke desktop, periksa versi, akun, ruang disk, NIC serta pengaturan jaringan. Bedakan pengelola berkas dari terminal; latih perintah baca pwd, ls dan identitas OS. Periksa pembaruan melalui fasilitas resmi bila repository dapat dijangkau. Integrasi guest mengikuti hypervisor dan OS yang dipakai, bukan memasang semua paket tanpa kebutuhan. Buktikan boot lagi tanpa ISO dan satu tugas pengguna seperti membuat berkas latihan serta membuka aplikasi lokal.</p><p>Kasus diagnosis: desktop dapat dipakai dari sesi ISO tetapi tidak boot ketika ISO dilepas. Periksa apakah instalasi ke disk sudah dilakukan dan media boot benar, sebelum mengganti OS. Bukti penerimaan harus menampilkan versi OS terpasang, disk, hasil boot tanpa ISO dan satu tugas yang tetap tersedia setelah reboot.</p><p>Referensi: <a href=\"https://ubuntu.com/tutorials/install-ubuntu-desktop\" target=\"_blank\" rel=\"noopener\">panduan instalasi Ubuntu Desktop</a>. Urutan layar dapat berubah; catat versi yang digunakan.</p>"
+    },
+    {
+      "id": "windows-desktop",
+      "title": "Instalasi Windows desktop",
+      "summary": "Instalasi Windows desktop",
+      "questions": [
+        {
+          "question": "Kebutuhan firmware/TPM virtual suatu edisi Windows belum terpenuhi. Pilihan yang tepat ...",
+          "options": [
+            "Gunakan cara tidak resmi untuk melewati semua pemeriksaan",
+            "Verifikasi dukungan hypervisor, kebutuhan resmi dan edisi/media yang disetujui",
+            "Anggap Windows desktop sama dengan Windows Server"
+          ],
+          "answer": 1,
+          "explanation": "Kebutuhan guest, lisensi/edisi dan dukungan platform harus diperiksa sebelum instalasi."
+        }
+      ],
+      "html": "<h3>Jalur praktik B — Instalasi Windows desktop di kelas X</h3><p>Windows desktop dan Windows Server adalah produk/tujuan berbeda. Gunakan media Windows desktop resmi dengan edisi, lisensi serta dukungan yang disetujui sekolah. Guru memastikan arsitektur, firmware, TPM/Secure Boot virtual jika dipersyaratkan, RAM dan disk memenuhi kebutuhan versi. Jangan melewati pemeriksaan kompatibilitas dengan modifikasi tidak resmi.</p><p>Pada VM khusus kosong: pasang ISO; boot installer; pilih bahasa/keyboard; pilih alur instalasi yang tepat; tentukan edisi sesuai hak penggunaan; baca ketentuan; identifikasi disk virtual dan tinjau perubahan partisi; jalankan instalasi; selesaikan pengaturan awal akun, privasi dan jaringan sesuai kebijakan sekolah. Jangan memasukkan akun pribadi pada layar yang direkam. Persyaratan aktivasi atau koneksi mengikuti edisi/versi, bukan diasumsikan sama untuk semua media.</p><p>Sesudah boot, periksa edisi/build, status aktivasi sesuai lisensi, perangkat/driver, jaringan dan pembaruan resmi. Gunakan Device Manager untuk memeriksa perangkat, pengelola disk untuk membaca volume dan ipconfig untuk konfigurasi jaringan. Latih lokasi berkas serta hak pengguna; hak admin tidak diperlukan untuk semua tugas. Guest tools dipasang hanya dari sumber hypervisor yang sesuai dan bila diperlukan.</p><p>Kasus diagnosis: Windows boot tetapi NIC tidak dikenali. Cocokkan dukungan adapter virtual dan driver, jangan mengubah DNS sebagai jawaban pertama. Ulangi boot tanpa ISO dan buktikan berkas latihan serta konfigurasi tetap ada. Gunakan tabel perbandingan Linux desktop/Windows: media, akun, alat inspeksi, driver, pembaruan dan bukti penerimaan. Penilaian berfokus pada alasan keputusan, bukan menghafal tampilan installer.</p><p>Referensi: <a href=\"https://support.microsoft.com/en-gb/windows/deployment/install-upgrade/create-installation-media-for-windows\" target=\"_blank\" rel=\"noopener\">media instalasi Windows</a> dan <a href=\"https://support.microsoft.com/en-US/Windows/deployment/install-upgrade/reinstall-windows-with-the-installation-media\" target=\"_blank\" rel=\"noopener\">instalasi ulang Windows</a>.</p>"
+    },
+    {
+      "id": "konfigurasi",
+      "title": "Konfigurasi klien dan diagnosis",
+      "summary": "Konfigurasi klien dan diagnosis",
+      "questions": [
+        {
+          "question": "Akses server menggunakan IP berhasil, nama gagal. Fokus berikutnya ...",
+          "options": [
+            "Langsung instal ulang",
+            "Periksa resolver yang dipakai dan jawaban DNS",
+            "Ganti CPU"
+          ],
+          "answer": 1,
+          "explanation": "Resolusi nama perlu diuji terpisah dari keterjangkauan alamat IP."
+        }
+      ],
+      "html": "<h3>5. Konfigurasi klien dan diagnosis berlapis</h3><p>Skenario terisolasi: klien 192.168.10.10/24, gateway 192.168.10.1 dan resolver lab 192.168.10.2 yang benar-benar disediakan guru. Jika resolver belum tersedia, tandai uji nama belum dapat dilakukan; jangan mengarang hasil. Pilih statis atau DHCP sesuai rancangan, bukan mengaktifkan keduanya tanpa memahami keadaan antarmuka.</p><p>Urutan bukti: antarmuka/link; alamat/prefix; gateway; tujuan lokal; tujuan antarsegmen jika tersedia; query nama; aplikasi. Pada Windows alat baca dapat berupa ipconfig dan nslookup; pada Linux ip address, ip route dan alat resolver yang tersedia. Nama antarmuka, pengelola jaringan dan cara menyimpan pengaturan berbeda menurut OS. Ping gagal tidak selalu berarti host mati karena kebijakan ICMP dapat membatasi respons.</p>"
+    },
+    {
+      "id": "laboratorium",
+      "title": "Laboratorium target instalasi dan boot",
+      "summary": "Laboratorium target instalasi dan boot",
+      "questions": [
+        {
+          "question": "Pada model, installer selesai tetapi ISO belum dilepas. Bukti tambahan yang diperlukan ...",
+          "options": [
+            "Boot dari disk setelah ISO dilepas",
+            "Hanya menekan install lagi",
+            "Menghapus disk host"
+          ],
+          "answer": 0,
+          "explanation": "Pengujian tanpa ISO membedakan ketergantungan sesi media dari instalasi disk."
+        }
+      ],
+      "html": "<section class=\"foundation-lab\"><h3>Praktik VM dan installer di browser</h3><p>Mulai dengan New, siapkan VM dan ISO, Start, lalu ikuti installer sampai boot dari disk. Ubah satu keputusan untuk mengamati penyebab gagal. Sesi disimpan otomatis untuk latihan ini; sandi latihan tidak disimpan.</p><div data-virtual-lab data-os=\"ubuntu\" data-session=\"os-ubuntu\"></div></section><section class=\"foundation-lab\"><h3>Praktik VM dan installer di browser</h3><p>Mulai dengan New, siapkan VM dan ISO, Start, lalu ikuti installer sampai boot dari disk. Ubah satu keputusan untuk mengamati penyebab gagal. Sesi disimpan otomatis untuk latihan ini; sandi latihan tidak disimpan.</p><div data-virtual-lab data-os=\"windows\" data-session=\"os-windows\"></div></section>"
+    },
+    {
+      "id": "refleksi",
+      "title": "Penerimaan dua OS dan transfer ke server",
+      "summary": "Penerimaan dua OS dan transfer ke server",
+      "questions": [
+        {
+          "question": "Laporan instalasi yang dapat ditinjau memuat ...",
+          "options": [
+            "Hanya nilai kuis",
+            "Media/versi, target, keputusan, hasil boot, akun/driver/jaringan dan batas uji tanpa sandi",
+            "Password asli semua akun"
+          ],
+          "answer": 1,
+          "explanation": "Bukti harus dapat ditelusuri tanpa mengungkap kredensial."
+        }
+      ],
+      "html": "<h3>7. Refleksi, asesmen dan pengembangan berikutnya</h3><p>Kasus transfer: klien dapat membuka server dengan IP tetapi nama gagal. Peserta menyebut bukti, menguji resolver dan menghindari instal ulang OS tanpa alasan. Nilai melalui empat dimensi 0–3: ketepatan konfigurasi, bukti uji, keselamatan/pemulihan, penjelasan. Asesmen praktik memakai observasi guru; kuis LMS kelak tidak menggantikannya. Tidak ada game wajib bila tidak memperjelas konsep.</p><p>Laporan satu halaman: tujuan; mesin/versi; langkah penting; input; hasil asli; satu kegagalan; perbaikan; hasil uji ulang; batas kesimpulan. Jangan sertakan kredensial atau data pribadi.</p><p>Referensi pelaksanaan yang harus dipilih sesuai OS/versi saat implementasi: dokumentasi resmi instalasi OS, manual perangkat dan SOP lab sekolah. Draft ini belum mengunci distribusi/versi sehingga belum menyediakan perintah instalasi yang dapat disalahgunakan pada disk nyata.</p>"
+    },
+    {
+      "id": "evaluasi",
+      "title": "Evaluasi Akhir dan Sertifikat",
+      "summary": "Menilai konsep dan menjelaskan transfer pembelajaran.",
+      "questions": [
+        {
+          "question": "Komputer boot tetapi NIC belum dikenali. Langkah awal paling tepat ...",
+          "options": [
+            "Mengubah DNS tanpa NIC",
+            "Cocokkan dukungan NIC dan driver dengan OS yang dipakai",
+            "Format semua disk"
+          ],
+          "answer": 1,
+          "explanation": "Link dan driver mendahului diagnosis alamat, resolver serta aplikasi."
+        },
+        {
+          "question": "Installer menampilkan disk host yang berisi data, belum ada persetujuan/cadangan. Apa keputusan Anda?",
+          "options": [
+            "Lanjut karena installer siap",
+            "Hentikan dan verifikasi target disk virtual kosong bersama guru",
+            "Hapus partisi terbesar"
+          ],
+          "answer": 1,
+          "explanation": "Identitas target, izin dan perlindungan data mendahului operasi disk."
+        },
+        {
+          "question": "Desktop Ubuntu dapat dipakai saat ISO terpasang tetapi disk tidak dapat boot setelah ISO dilepas. Kemungkinan yang perlu diuji ...",
+          "options": [
+            "Sesi live digunakan tanpa instalasi selesai ke disk",
+            "Semua Linux memerlukan ISO selamanya",
+            "DNS menyebabkan disk tidak boot"
+          ],
+          "answer": 0,
+          "explanation": "Sesi mencoba OS dari ISO berbeda dari OS yang terpasang dan boot pada disk."
+        },
+        {
+          "question": "Kebutuhan firmware/TPM virtual suatu edisi Windows belum terpenuhi. Pilihan yang tepat ...",
+          "options": [
+            "Gunakan cara tidak resmi untuk melewati semua pemeriksaan",
+            "Verifikasi dukungan hypervisor, kebutuhan resmi dan edisi/media yang disetujui",
+            "Anggap Windows desktop sama dengan Windows Server"
+          ],
+          "answer": 1,
+          "explanation": "Kebutuhan guest, lisensi/edisi dan dukungan platform harus diperiksa sebelum instalasi."
+        },
+        {
+          "question": "Akses server menggunakan IP berhasil, nama gagal. Fokus berikutnya ...",
+          "options": [
+            "Langsung instal ulang",
+            "Periksa resolver yang dipakai dan jawaban DNS",
+            "Ganti CPU"
+          ],
+          "answer": 1,
+          "explanation": "Resolusi nama perlu diuji terpisah dari keterjangkauan alamat IP."
+        },
+        {
+          "question": "Pada model, installer selesai tetapi ISO belum dilepas. Bukti tambahan yang diperlukan ...",
+          "options": [
+            "Boot dari disk setelah ISO dilepas",
+            "Hanya menekan install lagi",
+            "Menghapus disk host"
+          ],
+          "answer": 0,
+          "explanation": "Pengujian tanpa ISO membedakan ketergantungan sesi media dari instalasi disk."
+        },
+        {
+          "question": "Laporan instalasi yang dapat ditinjau memuat ...",
+          "options": [
+            "Hanya nilai kuis",
+            "Media/versi, target, keputusan, hasil boot, akun/driver/jaringan dan batas uji tanpa sandi",
+            "Password asli semua akun"
+          ],
+          "answer": 1,
+          "explanation": "Bukti harus dapat ditelusuri tanpa mengungkap kredensial."
+        }
+      ],
+      "html": "<p>Jawab semua soal dengan nilai minimal 80. Bila belum lulus, periksa umpan balik dan kembali ke materi terkait. Semua tahap sebelumnya harus lulus minimal 75 agar sertifikat tersedia. Sertifikat LMS membuktikan penyelesaian modul, bukan sertifikasi profesi atau pengganti observasi praktik oleh guru.</p><p>Serahkan laporan singkat: tujuan, lingkungan/media, tindakan, hasil, alasan dan perbaikan. Jelaskan satu perbedaan model dengan praktik nyata. Jangan memasukkan kata sandi dalam laporan.</p>"
+    }
+  ],
+  "progressVersion": 3
+}

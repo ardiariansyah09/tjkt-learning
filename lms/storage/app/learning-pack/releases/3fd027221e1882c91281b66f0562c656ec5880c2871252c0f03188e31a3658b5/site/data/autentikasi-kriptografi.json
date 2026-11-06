@@ -1,0 +1,68 @@
+{
+    "moduleId":  "autentikasi-kriptografi",
+    "title":  "Autentikasi dan Kriptografi",
+    "version":  2,
+    "contentSource":  "assets/js/course-autentikasi-kriptografi.js",
+    "chapters":  [
+                     {
+                         "id":  "orientasi",
+                         "title":  "Orientasi, Tujuan, dan Asesmen Awal",
+                         "summary":  "AAA, MFA, sertifikat, enkripsi, hashing, dan pengelolaan identitas."
+                     },
+                     {
+                         "id":  "konsep-1",
+                         "title":  "Identitas, AAA dan Sesi",
+                         "summary":  "Memisahkan autentikasi, otorisasi dan pencatatan."
+                     },
+                     {
+                         "id":  "konsep-2",
+                         "title":  "Faktor, MFA dan Recovery",
+                         "summary":  "Menilai independensi bukti dan risiko phishing."
+                     },
+                     {
+                         "id":  "konsep-3",
+                         "title":  "Hash, Password Hashing dan Integritas",
+                         "summary":  "Menghindari penyamaan digest dengan enkripsi."
+                     },
+                     {
+                         "id":  "konsep-4",
+                         "title":  "Enkripsi, Signature dan Key",
+                         "summary":  "Membedakan kerahasiaan dari autentisitas/integritas."
+                     },
+                     {
+                         "id":  "konsep-5",
+                         "title":  "Sertifikat, Nama, Trust dan TLS",
+                         "summary":  "Memeriksa identitas tujuan sebelum akses sensitif."
+                     },
+                     {
+                         "id":  "konsep-6",
+                         "title":  "Pengelolaan Secret dan Penerimaan",
+                         "summary":  "Menguji normal, gagal dan pencabutan tanpa membocorkan data."
+                     },
+                     {
+                         "id":  "kasus",
+                         "title":  "Studi Kasus dan Proyek Terapan",
+                         "summary":  "Menyusun rancangan, matriks uji dan runbook berdasarkan kebutuhan serta bukti."
+                     },
+                     {
+                         "id":  "laboratorium",
+                         "title":  "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+                         "summary":  "AAA, MFA, sertifikat, enkripsi, hashing, dan pengelolaan identitas."
+                     },
+                     {
+                         "id":  "game",
+                         "title":  "Game Terapan: Key Custody",
+                         "summary":  "Memanipulasi objek/state dan menyelesaikan tiga misi sesuai kriteria topik."
+                     },
+                     {
+                         "id":  "refleksi",
+                         "title":  "Refleksi, Umpan Balik, dan Transfer",
+                         "summary":  "Menilai perubahan pemahaman melalui prediksi, hasil percobaan dan batas kesimpulan."
+                     },
+                     {
+                         "id":  "evaluasi",
+                         "title":  "Rangkuman dan Evaluasi Akhir",
+                         "summary":  "Memadukan konsep, bukti, risiko tersisa dan penerimaan pada kasus baru."
+                     }
+                 ]
+}

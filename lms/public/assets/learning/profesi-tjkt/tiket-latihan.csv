@@ -1,0 +1,4 @@
+﻿nomor,waktu,lokasi,keluhan,pembanding,izin
+T-101,07.20,LAB-03,Tidak membuka LMS,LAB-04 berhasil pada alamat sama,Hanya pengamatan dan pencatatan
+T-102,08.00,Ruang B - delapan komputer,Tidak mengakses layanan; waktu mulai hampir bersamaan,Ruang A normal,Belum ada tindakan
+T-103,08.15,Pengguna simulasi,Pesan meminta password melalui tautan tidak dikenal,Belum diketahui apakah password dimasukkan,Catat aman dan laporkan; jangan buka tautan

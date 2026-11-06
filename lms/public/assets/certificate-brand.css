@@ -1,0 +1,12 @@
+/* Certificate identity: bundled assets, no server-specific URLs. */
+:root,[data-bs-theme=light]{--navy:#071d3b;--blue:#00649a;--cyan:#00b9e5;--ui-bg:#f4f8fb;--ui-ink:#071d3b;--ui-line:#cfe3ee;--ui-primary:#00649a;--ui-primary-hover:#004e7c;--ui-link:#00649a;--ui-soft:#eaf7fc}
+[data-bs-theme=dark]{--navy:#071d3b;--blue:#0089bd;--cyan:#00b9e5;--ui-primary:#00649a;--ui-primary-hover:#007eb4;--ui-link:#72def4}
+.sidebar{border-right:2px solid #00b9e5}.sidebar .offcanvas-body{background:#071d3b}.sidebar .brand{padding-bottom:20px;border-bottom:1px solid #00b9e550}.sidebar .nav-link.active{background:#123a60;border-left:3px solid #00b9e5}.brand-mark{background:#fff;border-radius:5px;width:60px;height:60px;overflow:hidden}.tjkt-brand-logo{display:block;width:56px;height:56px;object-fit:contain;background:#fff}.guest-body .brand-mark{width:100px;height:100px}.guest-body .tjkt-brand-logo{width:96px;height:96px}.topbar{border-top:4px solid #071d3b;border-bottom:1px solid #91d7eb}.welcome-banner{background:#071d3b;border-left:4px solid #00b9e5;border-top:3px solid #ed1528}.guest-body{background:linear-gradient(125deg,#071d3b 65%,#0c3557);border-top:5px solid #00b9e5}.guest-body .card{border-top:4px solid #00b9e5!important}
+
+/* Native LMS lessons keep their existing content and assessment versions. */
+body.lms-course-page:not(.dark):not([data-bs-theme=dark]){--primary:#00649a;--border:#cfe3ee}
+#lms-learning-root .lesson-hero{border-top:3px solid #00b9e5}
+#lms-learning-outline .lesson-sidebar{border-top:2px solid #00b9e5}
+#lms-learning-root .lesson-hero h1{letter-spacing:-.025em}
+#lms-learning-outline .lesson-nav-item.active{border-left:3px solid #00b9e5}
+.lms-course-context{border-bottom:1px solid #91d7eb}

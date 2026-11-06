@@ -1,0 +1,68 @@
+{
+    "moduleId":  "pengujian-keamanan",
+    "title":  "Pengujian Keamanan Jaringan, Host, dan Server",
+    "version":  2,
+    "contentSource":  "assets/js/course-pengujian-keamanan.js",
+    "chapters":  [
+                     {
+                         "id":  "orientasi",
+                         "title":  "Orientasi, Tujuan, dan Asesmen Awal",
+                         "summary":  "Menetapkan izin dan lingkup uji, memeriksa konfigurasi serta kontrol akses, mengumpulkan bukti, memperbaiki temuan, dan menguji ulang di lab."
+                     },
+                     {
+                         "id":  "konsep-1",
+                         "title":  "Tujuan, Izin dan Rules of Engagement",
+                         "summary":  "Menetapkan batas sebelum menjalankan pengujian."
+                     },
+                     {
+                         "id":  "konsep-2",
+                         "title":  "Inventaris dan Hipotesis Uji",
+                         "summary":  "Memilih bukti yang menjawab pertanyaan kontrol."
+                     },
+                     {
+                         "id":  "konsep-3",
+                         "title":  "Bukti, Versi dan Validasi Temuan",
+                         "summary":  "Menghindari klaim yang tidak didukung pengamatan."
+                     },
+                     {
+                         "id":  "konsep-4",
+                         "title":  "Perbaikan, Prioritas dan Kontrol Kompensasi",
+                         "summary":  "Memilih perubahan minimum yang dapat ditinjau."
+                     },
+                     {
+                         "id":  "konsep-5",
+                         "title":  "Retest, Regresi dan Kriteria Penutupan",
+                         "summary":  "Membuktikan kondisi terbaru tanpa melewatkan efek samping."
+                     },
+                     {
+                         "id":  "konsep-6",
+                         "title":  "Laporan, Kerahasiaan dan Transfer",
+                         "summary":  "Menyampaikan hasil agar dapat ditindaklanjuti."
+                     },
+                     {
+                         "id":  "kasus",
+                         "title":  "Studi Kasus dan Proyek Terapan",
+                         "summary":  "Menyusun rancangan, matriks uji dan runbook berdasarkan kebutuhan serta bukti."
+                     },
+                     {
+                         "id":  "laboratorium",
+                         "title":  "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+                         "summary":  "Menetapkan izin dan lingkup uji, memeriksa konfigurasi serta kontrol akses, mengumpulkan bukti, memperbaiki temuan, dan menguji ulang di lab."
+                     },
+                     {
+                         "id":  "game",
+                         "title":  "Game Terapan: Evidence Trail",
+                         "summary":  "Memanipulasi objek/state dan menyelesaikan tiga misi sesuai kriteria topik."
+                     },
+                     {
+                         "id":  "refleksi",
+                         "title":  "Refleksi, Umpan Balik, dan Transfer",
+                         "summary":  "Menilai perubahan pemahaman melalui prediksi, hasil percobaan dan batas kesimpulan."
+                     },
+                     {
+                         "id":  "evaluasi",
+                         "title":  "Rangkuman dan Evaluasi Akhir",
+                         "summary":  "Memadukan konsep, bukti, risiko tersisa dan penerimaan pada kasus baru."
+                     }
+                 ]
+}

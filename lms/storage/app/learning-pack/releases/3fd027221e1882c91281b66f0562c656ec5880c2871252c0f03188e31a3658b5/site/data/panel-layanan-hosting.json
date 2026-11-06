@@ -1,0 +1,68 @@
+{
+    "moduleId":  "panel-layanan-hosting",
+    "title":  "Control Panel, Shared Hosting, Dedicated Server, dan VPS",
+    "version":  2,
+    "contentSource":  "assets/js/course-hosting.js",
+    "chapters":  [
+                     {
+                         "id":  "orientasi",
+                         "title":  "Orientasi, Tujuan, dan Asesmen Awal",
+                         "summary":  "Memilih hosting dan mengelola panel berizin dengan bukti layanan klien."
+                     },
+                     {
+                         "id":  "konsep-1",
+                         "title":  "Model Hosting dan Kendali Pengelolaan",
+                         "summary":  "Memisahkan lingkungan layanan dari antarmuka administrasi."
+                     },
+                     {
+                         "id":  "konsep-2",
+                         "title":  "Kebutuhan, Kapasitas, Biaya dan Tanggung Jawab",
+                         "summary":  "Membandingkan pilihan dengan data serta asumsi yang dapat diuji."
+                     },
+                     {
+                         "id":  "konsep-3",
+                         "title":  "Instalasi Panel pada Host Bersih",
+                         "summary":  "Merencanakan perubahan besar menurut prasyarat produk."
+                     },
+                     {
+                         "id":  "konsep-4",
+                         "title":  "Role Panel, Akun Tenant dan Provisioning Situs",
+                         "summary":  "Mengelola domain/release/data pada batas kewenangan yang tepat."
+                     },
+                     {
+                         "id":  "konsep-5",
+                         "title":  "Resource, Backup dan Pemulihan Akun",
+                         "summary":  "Membedakan batas tenant, penggunaan host dan cakupan salinan."
+                     },
+                     {
+                         "id":  "konsep-6",
+                         "title":  "Migrasi, Cutover dan Penerimaan Layanan",
+                         "summary":  "Menyusun perpindahan yang dapat dipulihkan dan dibuktikan."
+                     },
+                     {
+                         "id":  "kasus",
+                         "title":  "Studi Kasus dan Proyek Terapan",
+                         "summary":  "Menyusun pilihan hosting, tanggung jawab dan runbook migrasi/pemulihan."
+                     },
+                     {
+                         "id":  "laboratorium",
+                         "title":  "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+                         "summary":  "Menguji role panel, quota, provisioning dan restore akun."
+                     },
+                     {
+                         "id":  "game",
+                         "title":  "Game Kapasitas: Hosting Broker",
+                         "summary":  "Menempatkan workload sesuai batas kendali, isolasi, kapasitas dan budget."
+                     },
+                     {
+                         "id":  "refleksi",
+                         "title":  "Refleksi, Umpan Balik, dan Transfer",
+                         "summary":  "Menghubungkan kebutuhan, bukti provisioning dan batas keputusan."
+                     },
+                     {
+                         "id":  "evaluasi",
+                         "title":  "Rangkuman dan Evaluasi Akhir",
+                         "summary":  "Memadukan pilihan hosting dan penerimaan layanan panel."
+                     }
+                 ]
+}

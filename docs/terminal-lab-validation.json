@@ -1,0 +1,8 @@
+{
+  "result": "PASS",
+  "checks": 205,
+  "modules": 10,
+  "topics": 6,
+  "profiles": 3,
+  "scope": "Deterministic model transitions and command grammar; not equivalence tests against real OS. Browser tests separate."
+}

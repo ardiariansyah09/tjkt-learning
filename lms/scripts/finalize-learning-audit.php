@@ -1,0 +1,10 @@
+<?php
+require __DIR__.'/../vendor/autoload.php';$app=require __DIR__.'/../bootstrap/app.php';$app->make(Illuminate\Contracts\Console\Kernel::class)->bootstrap();
+if(base_path()!=='/home/adminnazh/tjkt-lms-review-20261028'||config('database.default')!=='sqlite')throw new RuntimeException('Review only.');
+$directory=storage_path('app/review-artifacts');$full=json_decode(file_get_contents($directory.'/audit-all-learning.json'),true,512,JSON_THROW_ON_ERROR);$repeat=json_decode(file_get_contents($directory.'/audit-corrected-evaluations.json'),true,512,JSON_THROW_ON_ERROR);
+foreach($full['modules'] as &$module)if(in_array($module['id'],['k3-budaya-kerja','perencanaan-jaringan','ipv6-dasar'],true))foreach($repeat['modules'] as $replacement)if($replacement['id']===$module['id']){$module=$replacement;$module['correctedEvaluationRetested']=true;break;}
+unset($module);
+if(count($full['modules'])!==53||array_sum(array_map(fn($m)=>count($m['stages']),$full['modules']))!==606)throw new RuntimeException('Incomplete full audit.');
+$student=App\Models\User::where('username','review.siswa')->firstOrFail();$stored=[];
+foreach(App\Models\Module::whereNotNull('package_slug')->get() as $module){$row=App\Models\ModuleProgress::where('user_id',$student->id)->where('module_id',$module->id)->firstOrFail();$snapshot=app(App\Services\LearningPackage::class)->snapshot($student,$module);if($row->status!=='completed'||$row->completion_percent!==100.0||!$snapshot)throw new RuntimeException('Database completion mismatch.');$stored[]=['id'=>$module->package_slug,'completed'=>$row->completed_items,'required'=>$row->required_items,'finalScore'=>$row->final_score,'snapshotRevision'=>$snapshot->revision];}
+$full['databaseVerification']=$stored;$full['checkedAt']=now()->toIso8601String();file_put_contents($directory.'/audit-all-learning.json',json_encode($full,JSON_PRETTY_PRINT|JSON_UNESCAPED_UNICODE));echo 'PASS final audit: 53 modules, 606 stages, real-control completion, certificate calls and 53 matching database records.'."\n";

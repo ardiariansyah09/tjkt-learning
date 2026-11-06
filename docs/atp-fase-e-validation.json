@@ -1,0 +1,666 @@
+{
+  "source": {
+    "file": "modul/ATP-TJKT X - NEW 27.xlsx",
+    "sheet": "ATP",
+    "rows": "18–22"
+  },
+  "totalJP": 202,
+  "elements": 4,
+  "existingModules": 16,
+  "drafts": 3,
+  "objectivesMapped": 19,
+  "stageAndQuestionDefinitions": {
+    "profesi-kewirausahaan-tjkt": [
+      [
+        "orientasi",
+        [
+          {
+            "question": "Langkah pertama ketika informasi kasus belum lengkap adalah ...",
+            "options": [
+              "Mencatat fakta, asumsi, dan pertanyaan klarifikasi",
+              "Menetapkan jawaban tanpa data",
+              "Menyalin keputusan kelompok lain"
+            ],
+            "answer": 0,
+            "explanation": "Klarifikasi membuat keputusan dapat ditelusuri dan mencegah asumsi diperlakukan sebagai fakta."
+          }
+        ]
+      ],
+      [
+        "konsep-1",
+        [
+          {
+            "question": "Bukti kompetensi yang paling relevan adalah ...",
+            "options": [
+              "Daftar istilah yang dihafal",
+              "Hasil praktik, alasan keputusan, dan dokumentasi yang dapat ditinjau",
+              "Jumlah pengikut akun"
+            ],
+            "answer": 1,
+            "explanation": "Kompetensi perlu bukti penerapan dengan lingkup dan proses yang jelas."
+          }
+        ]
+      ],
+      [
+        "konsep-2",
+        [
+          {
+            "question": "Sebelum mempublikasikan hasil proyek pelanggan, perlu ...",
+            "options": [
+              "Mengunggah semua bukti agar terlihat lengkap",
+              "Menyembunyikan nama saja lalu bebas mengunggah",
+              "Memeriksa izin dan menyingkirkan informasi sensitif sesuai kebijakan"
+            ],
+            "answer": 2,
+            "explanation": "Izin publikasi dan perlindungan informasi merupakan bagian etika profesi."
+          }
+        ]
+      ],
+      [
+        "konsep-3",
+        [
+          {
+            "question": "Pertanyaan validasi yang paling berguna adalah ...",
+            "options": [
+              "Kapan terakhir gangguan terjadi dan bagaimana Anda mengatasinya?",
+              "Setuju kan ide kami paling bagus?",
+              "Mau memberi nilai sempurna?"
+            ],
+            "answer": 0,
+            "explanation": "Pengalaman nyata memberi bukti masalah tanpa mengarahkan jawaban."
+          }
+        ]
+      ],
+      [
+        "konsep-4",
+        [
+          {
+            "question": "Paket layanan yang paling jelas menyebut ...",
+            "options": [
+              "Jaminan tanpa batas",
+              "Ruang lingkup, keluaran, penerimaan, dukungan, dan pengecualian",
+              "Hanya slogan"
+            ],
+            "answer": 1,
+            "explanation": "Batas dan hasil yang terukur mengurangi kesalahpahaman layanan."
+          }
+        ]
+      ],
+      [
+        "konsep-5",
+        [
+          {
+            "question": "Harga sama dengan biaya variabel dan biaya tetap positif berarti ...",
+            "options": [
+              "Laba pasti naik saat volume ditambah",
+              "Impas pada satu layanan",
+              "Tidak ada titik impas volume dalam model sederhana"
+            ],
+            "answer": 2,
+            "explanation": "Kontribusi nol tidak menyediakan dana untuk menutup biaya tetap."
+          }
+        ]
+      ],
+      [
+        "konsep-6",
+        [
+          {
+            "question": "Target belajar paling dapat dinilai adalah ...",
+            "options": [
+              "Menyusun tiga diagram yang lolos kriteria tinjauan dalam 30 hari",
+              "Menjadi paling terkenal",
+              "Mempelajari semuanya segera"
+            ],
+            "answer": 0,
+            "explanation": "Target menyebut produk, kriteria, dan waktu sehingga kemajuan dapat diperiksa."
+          }
+        ]
+      ],
+      [
+        "kasus",
+        [
+          {
+            "question": "Kapasitas 12 dan permintaan tervalidasi 8 berarti ...",
+            "options": [
+              "Pendapatan boleh diasumsikan 12 pekerjaan",
+              "Kapasitas dan permintaan harus dipisahkan; hitung dengan bukti permintaan",
+              "Usaha pasti impas"
+            ],
+            "answer": 1,
+            "explanation": "Kapasitas adalah batas kemampuan operasi, bukan jumlah pekerjaan yang pasti dibeli."
+          }
+        ]
+      ],
+      [
+        "laboratorium",
+        [
+          {
+            "question": "Sepuluh pekerjaan menghasilkan pendapatan Rp1.500.000 dan total biaya Rp1.500.000. Hasil modelnya ...",
+            "options": [
+              "Laba Rp1.500.000",
+              "Impas, dengan arus kas tetap perlu diperiksa terpisah",
+              "Kas pasti tersedia seluruhnya"
+            ],
+            "answer": 1,
+            "explanation": "Pendapatan sama dengan biaya berarti laba nol; waktu pembayaran menentukan kas."
+          }
+        ]
+      ],
+      [
+        "game",
+        []
+      ],
+      [
+        "refleksi",
+        [
+          {
+            "question": "Refleksi yang paling kuat memuat ...",
+            "options": [
+              "Hanya skor permainan",
+              "Prediksi, bukti, alasan perubahan, batas, dan rencana uji berikutnya",
+              "Daftar istilah tanpa hubungan"
+            ],
+            "answer": 1,
+            "explanation": "Refleksi mendalam menilai proses berpikir menggunakan bukti serta menetapkan transfer yang dapat diuji."
+          }
+        ]
+      ],
+      [
+        "evaluasi",
+        []
+      ]
+    ],
+    "k3-budaya-kerja": [
+      [
+        "orientasi",
+        [
+          {
+            "question": "Jika kondisi alat belum aman dan SOP belum dipahami, tindakan yang tepat adalah ...",
+            "options": [
+              "Hentikan kegiatan dan minta penjelasan/pengamanan dari guru",
+              "Tetap lanjut karena tugas harus selesai",
+              "Minta teman mencoba lebih dahulu"
+            ],
+            "answer": 0,
+            "explanation": "Pekerjaan dilanjutkan setelah kondisi serta kewenangan kerja jelas."
+          }
+        ]
+      ],
+      [
+        "konsep-1",
+        [
+          {
+            "question": "Pernyataan yang tepat adalah ...",
+            "options": [
+              "Bahaya dan risiko selalu memiliki arti sama",
+              "Risiko mempertimbangkan kemungkinan serta konsekuensi pada konteks paparan",
+              "Risiko hilang jika tidak dicatat"
+            ],
+            "answer": 1,
+            "explanation": "Penilaian menghubungkan sumber bahaya dengan paparan dan akibat."
+          }
+        ]
+      ],
+      [
+        "konsep-2",
+        [
+          {
+            "question": "Pengendalian yang paling kuat jika memungkinkan adalah ...",
+            "options": [
+              "Menghilangkan sumber bahaya",
+              "Menambahkan poster saja",
+              "Mengandalkan semua orang selalu berhati-hati"
+            ],
+            "answer": 0,
+            "explanation": "Eliminasi mengurangi ketergantungan pada perilaku setiap orang."
+          }
+        ]
+      ],
+      [
+        "konsep-3",
+        [
+          {
+            "question": "Gelang antistatis terutama digunakan untuk ...",
+            "options": [
+              "Memberi izin bekerja pada penghantar hidup",
+              "Mengurangi risiko pelepasan elektrostatik pada komponen sesuai prosedur",
+              "Membuktikan catu daya tidak menyimpan energi"
+            ],
+            "answer": 1,
+            "explanation": "ESD adalah persoalan perlindungan komponen, bukan pengganti isolasi listrik."
+          }
+        ]
+      ],
+      [
+        "konsep-4",
+        [
+          {
+            "question": "Cara yang harus dihindari saat memeriksa fiber adalah ...",
+            "options": [
+              "Menggunakan prosedur pemeriksaan yang disetujui",
+              "Menatap langsung ujung konektor untuk mencari cahaya",
+              "Menutup konektor yang tidak dipakai"
+            ],
+            "answer": 1,
+            "explanation": "Sumber optik dapat memancarkan panjang gelombang yang tidak terlihat."
+          }
+        ]
+      ],
+      [
+        "konsep-5",
+        [
+          {
+            "question": "Unsur Rawat dalam 5R menekankan ...",
+            "options": [
+              "Memelihara kondisi serta standar yang telah ditata",
+              "Membersihkan hanya saat dinilai",
+              "Menyimpan semua alat tanpa label"
+            ],
+            "answer": 0,
+            "explanation": "Rawat membantu praktik baik tetap berlangsung setelah penataan awal."
+          }
+        ]
+      ],
+      [
+        "konsep-6",
+        [
+          {
+            "question": "Ketika menemukan kondisi darurat di luar kompetensi, siswa sebaiknya ...",
+            "options": [
+              "Mengikuti prosedur sekolah dan meminta bantuan pihak berwenang",
+              "Mencoba semua tindakan yang pernah dilihat di video",
+              "Menyembunyikan kejadian agar praktik tidak terganggu"
+            ],
+            "answer": 0,
+            "explanation": "Tindakan awal harus mengurangi paparan tanpa menambah risiko."
+          }
+        ]
+      ],
+      [
+        "kasus",
+        [
+          {
+            "question": "Bukti paling berguna untuk menindaklanjuti temuan adalah ...",
+            "options": [
+              "Pernyataan semua alat berbahaya",
+              "Lokasi, kondisi teramati, orang terpapar, dan rencana verifikasi",
+              "Nama merek saja"
+            ],
+            "answer": 1,
+            "explanation": "Tindak lanjut membutuhkan kondisi yang spesifik dan dapat ditelusuri."
+          }
+        ]
+      ],
+      [
+        "laboratorium",
+        [
+          {
+            "question": "Hasil simulasi inspeksi digunakan untuk ...",
+            "options": [
+              "Menggantikan verifikasi petugas",
+              "Melatih penalaran JSA dan mengidentifikasi tindak lanjut",
+              "Mengesahkan pekerjaan listrik"
+            ],
+            "answer": 1,
+            "explanation": "Kondisi aman harus diverifikasi melalui prosedur nyata dan pihak yang berwenang."
+          }
+        ]
+      ],
+      [
+        "game",
+        [
+          {
+            "question": "Debrief permainan yang berguna menghubungkan ...",
+            "options": [
+              "Hanya warna karakter",
+              "Pengamatan, perubahan strategi, dan batas model",
+              "Klik tercepat saja"
+            ],
+            "answer": 1,
+            "explanation": "Debrief menautkan keputusan pada bukti dan menjelaskan batas penerapannya."
+          }
+        ]
+      ],
+      [
+        "refleksi",
+        [
+          {
+            "question": "Rencana perbaikan yang dapat dinilai adalah ...",
+            "options": [
+              "Lebih hati-hati kapan saja",
+              "Memeriksa dan mencatat kondisi jalur sebelum praktik berikutnya, ditinjau guru",
+              "Tidak lagi bertanya"
+            ],
+            "answer": 1,
+            "explanation": "Tindakan, waktu, dan bukti pengamatan membuat tindak lanjut dapat diperiksa."
+          }
+        ]
+      ],
+      [
+        "evaluasi",
+        []
+      ]
+    ],
+    "wawasan-tjkt": [
+      [
+        "orientasi",
+        [
+          {
+            "question": "Langkah pertama ketika informasi kasus belum lengkap adalah ...",
+            "options": [
+              "Mencatat fakta, asumsi, dan pertanyaan klarifikasi",
+              "Menetapkan jawaban tanpa data",
+              "Menyalin keputusan kelompok lain"
+            ],
+            "answer": 0,
+            "explanation": "Klarifikasi membuat keputusan dapat ditelusuri dan mencegah asumsi diperlakukan sebagai fakta."
+          }
+        ]
+      ],
+      [
+        "konsep-1",
+        [
+          {
+            "question": "Angka kecepatan maksimum pada brosur sebaiknya ...",
+            "options": [
+              "Dianggap jaminan di semua lokasi",
+              "Diperiksa kondisi uji dan kesesuaiannya dengan kebutuhan",
+              "Dijumlahkan dengan semua angka lain"
+            ],
+            "answer": 1,
+            "explanation": "Angka maksimum bergantung pada kondisi dan tidak sama dengan hasil layanan pengguna."
+          }
+        ]
+      ],
+      [
+        "konsep-2",
+        [
+          {
+            "question": "Pernyataan yang tepat adalah ...",
+            "options": [
+              "Semua 5G menjamin latensi ujung ke ujung yang sama",
+              "Fiber selalu menghapus kebutuhan router",
+              "Kinerja layanan dipengaruhi seluruh jalur, bukan radio saja"
+            ],
+            "answer": 2,
+            "explanation": "Radio, backhaul, jaringan inti, antrean, dan server berkontribusi pada hasil layanan."
+          }
+        ]
+      ],
+      [
+        "konsep-3",
+        [
+          {
+            "question": "Sistem IoT yang dapat ditelusuri perlu menyertakan ...",
+            "options": [
+              "Nilai, satuan, waktu, dan identitas sumber yang tepat",
+              "Hanya angka tanpa konteks",
+              "Kata sandi bersama yang ditampilkan publik"
+            ],
+            "answer": 0,
+            "explanation": "Konteks pengukuran diperlukan untuk menafsirkan dan memeriksa data."
+          }
+        ]
+      ],
+      [
+        "konsep-4",
+        [
+          {
+            "question": "Virtualisasi saja ...",
+            "options": [
+              "Selalu memenuhi semua ciri cloud",
+              "Menghapus tanggung jawab pengguna",
+              "Belum membuktikan suatu sistem memenuhi ciri cloud"
+            ],
+            "answer": 2,
+            "explanation": "Cloud memiliki karakteristik layanan selain pemisahan lingkungan virtual."
+          }
+        ]
+      ],
+      [
+        "konsep-5",
+        [
+          {
+            "question": "Jika tujuan cukup dipenuhi sensor suhu, keputusan paling hemat data adalah ...",
+            "options": [
+              "Tetap merekam semua wajah",
+              "Menggunakan data suhu yang relevan dan membatasi retensinya",
+              "Membuka seluruh data ke publik"
+            ],
+            "answer": 1,
+            "explanation": "Minimasi mengurangi pengumpulan yang tidak diperlukan untuk tujuan layanan."
+          }
+        ]
+      ],
+      [
+        "konsep-6",
+        [
+          {
+            "question": "Pilot teknologi sebaiknya dinilai dengan ...",
+            "options": [
+              "Jumlah istilah baru pada presentasi",
+              "Logo penyedia terbesar",
+              "Indikator kebutuhan, risiko, akses, dan hasil yang ditetapkan sebelum uji"
+            ],
+            "answer": 2,
+            "explanation": "Indikator awal mencegah hasil dipilih hanya untuk membenarkan pembelian."
+          }
+        ]
+      ],
+      [
+        "kasus",
+        [
+          {
+            "question": "Alasan memilih edge yang dapat diuji adalah ...",
+            "options": [
+              "Semua cloud pasti buruk",
+              "Alarm perlu tetap lokal saat koneksi luar putus, lalu diuji melalui skenario putus berizin",
+              "Edge selalu tanpa pemeliharaan"
+            ],
+            "answer": 1,
+            "explanation": "Kebutuhan operasional dan uji kegagalan memberikan dasar keputusan yang terukur."
+          }
+        ]
+      ],
+      [
+        "laboratorium",
+        [
+          {
+            "question": "Mengurangi interval dari 60 menjadi 30 detik dengan parameter lain tetap akan ...",
+            "options": [
+              "Menggandakan jumlah sampel dan volume model",
+              "Mengurangi data menjadi separuh",
+              "Menjamin akurasi dua kali lipat"
+            ],
+            "answer": 0,
+            "explanation": "Frekuensi sampel menjadi dua kali; kualitas sensor dan informasi tidak otomatis berlipat."
+          }
+        ]
+      ],
+      [
+        "game",
+        []
+      ],
+      [
+        "refleksi",
+        [
+          {
+            "question": "Refleksi yang paling kuat memuat ...",
+            "options": [
+              "Hanya skor permainan",
+              "Prediksi, bukti, alasan perubahan, batas, dan rencana uji berikutnya",
+              "Daftar istilah tanpa hubungan"
+            ],
+            "answer": 1,
+            "explanation": "Refleksi mendalam menilai proses berpikir menggunakan bukti serta menetapkan transfer yang dapat diuji."
+          }
+        ]
+      ],
+      [
+        "evaluasi",
+        []
+      ]
+    ],
+    "sistem-telekomunikasi-dasar": [
+      [
+        "orientasi",
+        [
+          {
+            "question": "Langkah pertama ketika informasi kasus belum lengkap adalah ...",
+            "options": [
+              "Mencatat fakta, asumsi, dan pertanyaan klarifikasi",
+              "Menetapkan jawaban tanpa data",
+              "Menyalin keputusan kelompok lain"
+            ],
+            "answer": 0,
+            "explanation": "Klarifikasi membuat keputusan dapat ditelusuri dan mencegah asumsi diperlakukan sebagai fakta."
+          }
+        ]
+      ],
+      [
+        "konsep-1",
+        [
+          {
+            "question": "Fungsi kanal adalah ...",
+            "options": [
+              "Membawa sinyal dan dapat menambahkan gangguan",
+              "Menjamin pesan selalu benar",
+              "Selalu menyimpan semua data"
+            ],
+            "answer": 0,
+            "explanation": "Kanal merupakan lintasan fisik dengan karakteristik dan keterbatasan tertentu."
+          }
+        ]
+      ],
+      [
+        "konsep-2",
+        [
+          {
+            "question": "Rumus panjang lintasan dibagi kecepatan rambat menghitung ...",
+            "options": [
+              "Laju bit aplikasi",
+              "Delay propagasi satu arah",
+              "Jumlah pelanggan"
+            ],
+            "answer": 1,
+            "explanation": "Rumus tersebut tidak mencakup antrean, pemrosesan, maupun serialisasi."
+          }
+        ]
+      ],
+      [
+        "konsep-3",
+        [
+          {
+            "question": "Banyak klien aktif pada WLAN terutama perlu ditinjau dari ...",
+            "options": [
+              "Warna AP",
+              "Hanya nama SSID",
+              "Pembagian airtime, kanal, uplink, dan kebutuhan aplikasi"
+            ],
+            "answer": 2,
+            "explanation": "Kapasitas dipengaruhi seluruh sumber daya bersama pada jalur layanan."
+          }
+        ]
+      ],
+      [
+        "konsep-4",
+        [
+          {
+            "question": "Margin model positif berarti ...",
+            "options": [
+              "Pasti legal dan tersedia 100%",
+              "Ada selisih terhadap ambang pada asumsi model, masih perlu validasi",
+              "Tidak perlu survei"
+            ],
+            "answer": 1,
+            "explanation": "Anggaran link hanya salah satu bagian rancangan dan tidak menghapus ketidakpastian lintasan."
+          }
+        ]
+      ],
+      [
+        "konsep-5",
+        [
+          {
+            "question": "Lintasan total 72.000 km pada 300.000 km/s menghasilkan ...",
+            "options": [
+              "24 ms satu arah",
+              "240 ms RTT",
+              "240 ms satu arah, sebelum komponen lain"
+            ],
+            "answer": 2,
+            "explanation": "72.000/300.000 = 0,24 detik; RTT ideal simetris dua kali nilai tersebut."
+          }
+        ]
+      ],
+      [
+        "konsep-6",
+        [
+          {
+            "question": "Dua layanan yang melewati satu kabel fisik ...",
+            "options": [
+              "Dapat gagal bersama saat kabel putus",
+              "Selalu independen",
+              "Menghapus semua risiko"
+            ],
+            "answer": 0,
+            "explanation": "Ketergantungan fisik yang sama perlu ditinjau dalam rancangan cadangan."
+          }
+        ]
+      ],
+      [
+        "kasus",
+        [
+          {
+            "question": "Data cakupan lokasi terpencil belum tersedia. Keputusan yang tepat ...",
+            "options": [
+              "Menjamin satu media pasti berhasil",
+              "Memilih hanya dari iklan",
+              "Menyatakan kebutuhan survei dan kriteria sebelum keputusan final"
+            ],
+            "answer": 2,
+            "explanation": "Ketidakpastian perlu dinyatakan dan ditangani melalui rencana pengumpulan bukti."
+          }
+        ]
+      ],
+      [
+        "laboratorium",
+        [
+          {
+            "question": "Hasil propagasi 5 ms satu arah berarti ...",
+            "options": [
+              "RTT layanan pasti 5 ms",
+              "Komponen propagasi satu arah 5 ms; komponen lain masih menambah delay",
+              "Throughput pasti 5 Mbit/s"
+            ],
+            "answer": 1,
+            "explanation": "Delay propagasi tidak mewakili seluruh delay atau laju data."
+          }
+        ]
+      ],
+      [
+        "game",
+        []
+      ],
+      [
+        "refleksi",
+        [
+          {
+            "question": "Refleksi yang paling kuat memuat ...",
+            "options": [
+              "Hanya skor permainan",
+              "Prediksi, bukti, alasan perubahan, batas, dan rencana uji berikutnya",
+              "Daftar istilah tanpa hubungan"
+            ],
+            "answer": 1,
+            "explanation": "Refleksi mendalam menilai proses berpikir menggunakan bukti serta menetapkan transfer yang dapat diuji."
+          }
+        ]
+      ],
+      [
+        "evaluasi",
+        []
+      ]
+    ]
+  },
+  "result": "PASS"
+}

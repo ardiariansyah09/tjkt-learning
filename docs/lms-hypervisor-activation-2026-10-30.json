@@ -1,0 +1,7 @@
+{
+    "activated": true,
+    "backup": "\/home\/adminnazh\/tjkt-lms-backups\/hypervisor-20261030-20261030-012840",
+    "release": "1873c40f2c74f5e8cdb98a3b0a27dd724fb55ca87d5efbf3f40c4ef77518707e",
+    "learnerRecordsPreserved": true,
+    "strategy": "Compatible content revision; prior assessment versions and snapshots unchanged."
+}

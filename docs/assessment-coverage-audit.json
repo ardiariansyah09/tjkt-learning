@@ -1,0 +1,1234 @@
+[
+  {
+    "id": "proses-bisnis-tjkt",
+    "questions": 10,
+    "covered": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ],
+    "expected": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ]
+  },
+  {
+    "id": "wawasan-tjkt",
+    "questions": 10,
+    "covered": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ],
+    "expected": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ]
+  },
+  {
+    "id": "profesi-kewirausahaan-tjkt",
+    "questions": 10,
+    "covered": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ],
+    "expected": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ]
+  },
+  {
+    "id": "k3-budaya-kerja",
+    "questions": 10,
+    "covered": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ],
+    "expected": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ]
+  },
+  {
+    "id": "perencanaan-jaringan",
+    "questions": 10,
+    "covered": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ],
+    "expected": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ]
+  },
+  {
+    "id": "ipv6-dasar",
+    "questions": 10,
+    "covered": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ],
+    "expected": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ]
+  },
+  {
+    "id": "sistem-telekomunikasi-dasar",
+    "questions": 10,
+    "covered": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ],
+    "expected": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ]
+  },
+  {
+    "id": "alat-ukur-tjkt",
+    "questions": 10,
+    "covered": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ],
+    "expected": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ]
+  },
+  {
+    "id": "kebutuhan-teknis-jaringan",
+    "questions": 10,
+    "covered": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ],
+    "expected": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ]
+  },
+  {
+    "id": "desain-topologi-arsitektur",
+    "questions": 10,
+    "covered": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ],
+    "expected": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ]
+  },
+  {
+    "id": "perencanaan-pengalamatan-lanjut",
+    "questions": 10,
+    "covered": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ],
+    "expected": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ]
+  },
+  {
+    "id": "instalasi-kabel",
+    "questions": 10,
+    "covered": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ],
+    "expected": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ]
+  },
+  {
+    "id": "wireless-lan",
+    "questions": 10,
+    "covered": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ],
+    "expected": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ]
+  },
+  {
+    "id": "pemeliharaan-kabel-nirkabel",
+    "questions": 10,
+    "covered": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ],
+    "expected": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ]
+  },
+  {
+    "id": "voip",
+    "questions": 10,
+    "covered": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ],
+    "expected": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ]
+  },
+  {
+    "id": "fiber-optik",
+    "questions": 10,
+    "covered": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ],
+    "expected": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ]
+  },
+  {
+    "id": "pemasangan-perangkat-jaringan",
+    "questions": 10,
+    "covered": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ],
+    "expected": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ]
+  },
+  {
+    "id": "penggantian-perangkat-jaringan",
+    "questions": 10,
+    "covered": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ],
+    "expected": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ]
+  },
+  {
+    "id": "routing-ipv4",
+    "questions": 10,
+    "covered": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ],
+    "expected": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ]
+  },
+  {
+    "id": "routing-dinamis",
+    "questions": 10,
+    "covered": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ],
+    "expected": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ]
+  },
+  {
+    "id": "nat-wan",
+    "questions": 10,
+    "covered": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ],
+    "expected": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ]
+  },
+  {
+    "id": "proxy-load-balancing",
+    "questions": 10,
+    "covered": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ],
+    "expected": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ]
+  },
+  {
+    "id": "bandwidth-qos",
+    "questions": 10,
+    "covered": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ],
+    "expected": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ]
+  },
+  {
+    "id": "load-balancing",
+    "questions": 10,
+    "covered": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ],
+    "expected": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ]
+  },
+  {
+    "id": "dasar-administrasi-server",
+    "questions": 10,
+    "covered": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ],
+    "expected": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ]
+  },
+  {
+    "id": "virtualisasi-server",
+    "questions": 10,
+    "covered": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ],
+    "expected": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ]
+  },
+  {
+    "id": "administrasi-linux-windows",
+    "questions": 10,
+    "covered": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ],
+    "expected": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ]
+  },
+  {
+    "id": "manajemen-pengguna-server",
+    "questions": 10,
+    "covered": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ],
+    "expected": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ]
+  },
+  {
+    "id": "layanan-server",
+    "questions": 10,
+    "covered": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ],
+    "expected": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ]
+  },
+  {
+    "id": "ftp-server",
+    "questions": 10,
+    "covered": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ],
+    "expected": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ]
+  },
+  {
+    "id": "file-server",
+    "questions": 10,
+    "covered": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ],
+    "expected": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ]
+  },
+  {
+    "id": "hosting-server",
+    "questions": 10,
+    "covered": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ],
+    "expected": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ]
+  },
+  {
+    "id": "panel-layanan-hosting",
+    "questions": 10,
+    "covered": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ],
+    "expected": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ]
+  },
+  {
+    "id": "vpn-server",
+    "questions": 10,
+    "covered": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ],
+    "expected": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ]
+  },
+  {
+    "id": "monitoring-jaringan",
+    "questions": 10,
+    "covered": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ],
+    "expected": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ]
+  },
+  {
+    "id": "backup-pemulihan-server",
+    "questions": 10,
+    "covered": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ],
+    "expected": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ]
+  },
+  {
+    "id": "mail-server",
+    "questions": 10,
+    "covered": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ],
+    "expected": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ]
+  },
+  {
+    "id": "keamanan-jaringan",
+    "questions": 10,
+    "covered": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ],
+    "expected": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ]
+  },
+  {
+    "id": "autentikasi-kriptografi",
+    "questions": 10,
+    "covered": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ],
+    "expected": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ]
+  },
+  {
+    "id": "ids-hardening",
+    "questions": 10,
+    "covered": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ],
+    "expected": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ]
+  },
+  {
+    "id": "server-dmz",
+    "questions": 10,
+    "covered": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ],
+    "expected": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ]
+  },
+  {
+    "id": "pengujian-keamanan",
+    "questions": 10,
+    "covered": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ],
+    "expected": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ]
+  },
+  {
+    "id": "ids-respons-insiden",
+    "questions": 10,
+    "covered": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ],
+    "expected": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ]
+  },
+  {
+    "id": "proyek-integrasi-jaringan",
+    "questions": 10,
+    "covered": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ],
+    "expected": [
+      "orientasi",
+      "konsep-1",
+      "konsep-2",
+      "konsep-3",
+      "konsep-4",
+      "konsep-5",
+      "konsep-6",
+      "kasus",
+      "laboratorium",
+      "refleksi"
+    ]
+  }
+]

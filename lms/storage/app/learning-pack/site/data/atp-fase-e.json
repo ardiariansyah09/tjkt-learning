@@ -1,0 +1,145 @@
+{
+  "school": "SMK Wikrama Bogor",
+  "schoolYear": "2026-2027",
+  "phase": "E",
+  "classLevel": "X",
+  "source": {
+    "file": "modul/ATP-TJKT X - NEW 27.xlsx",
+    "sheet": "ATP",
+    "rows": "18–22"
+  },
+  "totalJP": 202,
+  "elements": [
+    {
+      "id": 1,
+      "category": "Wawasan Dunia Kerja Bidang Teknik Jaringan Komputer dan Telekomunikasi",
+      "jp": 28,
+      "moduleIds": [
+        "profesi-kewirausahaan-tjkt",
+        "proses-bisnis-tjkt",
+        "wawasan-tjkt"
+      ]
+    },
+    {
+      "id": 2,
+      "category": "Kecakapan Kerja Dasar (Basic Job Skills), K3LH, dan Budaya Kerja",
+      "jp": 24,
+      "moduleIds": [
+        "k3-budaya-kerja",
+        "virtualisasi-server-dasar",
+        "instalasi-komputer-dasar",
+        "konfigurasi-perangkat-dasar"
+      ]
+    },
+    {
+      "id": 3,
+      "category": "Media dan Jaringan Telekomunikasi",
+      "jp": 132,
+      "moduleIds": [
+        "pengenalan-jaringan",
+        "perangkat-jaringan",
+        "topologi-jaringan",
+        "perencanaan-jaringan",
+        "media-transmisi",
+        "osi-tcpip",
+        "ipv4-subnetting",
+        "ipv6-dasar",
+        "protokol-layanan",
+        "sistem-telekomunikasi-dasar",
+        "troubleshooting"
+      ]
+    },
+    {
+      "id": 4,
+      "category": "Penggunaan Alat Ukur",
+      "jp": 18,
+      "moduleIds": [
+        "alat-ukur-tjkt"
+      ]
+    }
+  ],
+  "objectiveModules": {
+    "profesi-kewirausahaan-tjkt": [
+      "1.1",
+      "1.2",
+      "1.3"
+    ],
+    "proses-bisnis-tjkt": [
+      "1.4"
+    ],
+    "wawasan-tjkt": [
+      "1.5"
+    ],
+    "k3-budaya-kerja": [
+      "2.1",
+      "2.2",
+      "2.3",
+      "2.4"
+    ],
+    "ipv4-subnetting": [
+      "3.1"
+    ],
+    "ipv6-dasar": [
+      "3.1"
+    ],
+    "osi-tcpip": [
+      "3.2"
+    ],
+    "protokol-layanan": [
+      "3.2",
+      "3.3"
+    ],
+    "sistem-telekomunikasi-dasar": [
+      "3.3",
+      "3.4",
+      "3.5"
+    ],
+    "alat-ukur-tjkt": [
+      "4.1",
+      "4.2",
+      "4.3",
+      "4.4"
+    ],
+    "virtualisasi-server-dasar": [
+      "2.5"
+    ],
+    "instalasi-komputer-dasar": [
+      "2.5"
+    ],
+    "konfigurasi-perangkat-dasar": [
+      "2.5"
+    ]
+  },
+  "drafts": [],
+  "notes": [
+    "JP adalah alokasi elemen, bukan durasi otomatis LMS.",
+    "Nama produk mengikuti arahan instruktur sebagai pelaksanaan TP 2.5.",
+    "Modul baru disiapkan lokal; server LMS belum diubah."
+  ],
+  "newModules": [
+    {
+      "id": "virtualisasi-server-dasar",
+      "tp": [
+        "2.5"
+      ],
+      "status": "published",
+      "scope": "Modul lokal; simulasi konseptual dan asesmen konsep. Praktik nyata dinilai guru."
+    },
+    {
+      "id": "instalasi-komputer-dasar",
+      "tp": [
+        "2.5"
+      ],
+      "status": "published",
+      "scope": "Modul lokal; simulasi konseptual dan asesmen konsep. Praktik nyata dinilai guru."
+    },
+    {
+      "id": "konfigurasi-perangkat-dasar",
+      "tp": [
+        "2.5"
+      ],
+      "status": "published",
+      "scope": "Modul lokal; simulasi konseptual dan asesmen konsep. Praktik nyata dinilai guru."
+    }
+  ]
+}

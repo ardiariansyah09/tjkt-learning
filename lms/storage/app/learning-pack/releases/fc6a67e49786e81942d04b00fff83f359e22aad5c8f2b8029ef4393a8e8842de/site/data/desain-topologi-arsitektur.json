@@ -1,0 +1,68 @@
+{
+    "moduleId":  "desain-topologi-arsitektur",
+    "title":  "Desain Topologi, Arsitektur, dan Layout Jaringan",
+    "version":  2,
+    "contentSource":  "assets/js/course-layout.js",
+    "chapters":  [
+                     {
+                         "id":  "orientasi",
+                         "title":  "Orientasi, Tujuan, dan Asesmen Awal",
+                         "summary":  "Menentukan keluaran desain dan informasi lokasi."
+                     },
+                     {
+                         "id":  "konsep-1",
+                         "title":  "Topologi Fisik, Logis, dan Keterlacakan Kebutuhan",
+                         "summary":  "Memilih jenis diagram sesuai pertanyaan yang perlu dijawab."
+                     },
+                     {
+                         "id":  "konsep-2",
+                         "title":  "Arsitektur Akses, Agregasi, dan Titik Kegagalan",
+                         "summary":  "Menilai fungsi dan ketergantungan tanpa memaksakan satu arsitektur pada semua lokasi."
+                     },
+                     {
+                         "id":  "konsep-3",
+                         "title":  "Survei Lokasi, Peta Jalur Fiber, dan Batas Pengukuran",
+                         "summary":  "Membedakan pengukuran rencana pada peta dengan jalur yang telah disetujui di lapangan."
+                     },
+                     {
+                         "id":  "konsep-4",
+                         "title":  "Skala, Satuan, dan Layout dengan Visio atau draw.io",
+                         "summary":  "Menghubungkan ukuran nyata dengan ukuran gambar serta menjaga konsistensi saat ekspor."
+                     },
+                     {
+                         "id":  "konsep-5",
+                         "title":  "Penempatan Perangkat dan Estimasi Jalur Kabel",
+                         "summary":  "Menentukan lintasan yang layak sambil menyatakan apa yang belum dihitung model."
+                     },
+                     {
+                         "id":  "konsep-6",
+                         "title":  "Dokumentasi Desain, Review, dan Penyerahan",
+                         "summary":  "Menyiapkan gambar dan daftar link yang dapat dipakai oleh perancang alamat serta pelaksana."
+                     },
+                     {
+                         "id":  "kasus",
+                         "title":  "Studi Kasus dan Proyek Terapan",
+                         "summary":  "Studi Kasus dan Proyek Terapan"
+                     },
+                     {
+                         "id":  "laboratorium",
+                         "title":  "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+                         "summary":  "Laboratorium: Prediksi, Eksperimen, dan Bukti"
+                     },
+                     {
+                         "id":  "game",
+                         "title":  "Game Cable Route Builder",
+                         "summary":  "Game Cable Route Builder"
+                     },
+                     {
+                         "id":  "refleksi",
+                         "title":  "Refleksi, Umpan Balik, dan Transfer",
+                         "summary":  "Refleksi, Umpan Balik, dan Transfer"
+                     },
+                     {
+                         "id":  "evaluasi",
+                         "title":  "Rangkuman dan Evaluasi Akhir",
+                         "summary":  "Rangkuman dan Evaluasi Akhir"
+                     }
+                 ]
+}

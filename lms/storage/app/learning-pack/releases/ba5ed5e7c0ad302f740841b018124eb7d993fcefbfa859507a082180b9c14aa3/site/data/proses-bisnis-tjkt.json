@@ -1,0 +1,68 @@
+{
+    "moduleId":  "proses-bisnis-tjkt",
+    "title":  "Proses Bisnis dan Pelayanan Pelanggan TJKT",
+    "version":  2,
+    "contentSource":  "assets/js/course-business.js",
+    "chapters":  [
+                     {
+                         "id":  "orientasi",
+                         "title":  "Orientasi, Tujuan, dan Asesmen Awal",
+                         "summary":  "Mengidentifikasi persoalan, tujuan, dan bukti belajar."
+                     },
+                     {
+                         "id":  "konsep-1",
+                         "title":  "Rantai Nilai dan Alur Proses Layanan",
+                         "summary":  "Membedakan masukan, kegiatan, keluaran, hasil, dan pihak yang terlibat."
+                     },
+                     {
+                         "id":  "konsep-2",
+                         "title":  "Survei dan Kebutuhan Pelanggan",
+                         "summary":  "Mengumpulkan data relevan dan menyepakati ruang lingkup tanpa menjanjikan solusi prematur."
+                     },
+                     {
+                         "id":  "konsep-3",
+                         "title":  "Perencanaan, Implementasi, dan Perubahan",
+                         "summary":  "Menghubungkan sumber daya, jadwal, risiko, izin, dan rencana pemulihan."
+                     },
+                     {
+                         "id":  "konsep-4",
+                         "title":  "Tiket, Prioritas, dan Kesepakatan Layanan",
+                         "summary":  "Membedakan respons, penyelesaian, dampak, urgensi, serta eskalasi."
+                     },
+                     {
+                         "id":  "konsep-5",
+                         "title":  "Komunikasi, Keluhan, dan Etika Layanan",
+                         "summary":  "Menanggapi pelanggan dengan empati, kejelasan, dan perlindungan informasi."
+                     },
+                     {
+                         "id":  "konsep-6",
+                         "title":  "Pengujian, Serah Terima, dan Mutu Berkelanjutan",
+                         "summary":  "Menutup layanan menggunakan hasil uji dan mengubah temuan menjadi perbaikan proses."
+                     },
+                     {
+                         "id":  "kasus",
+                         "title":  "Studi Kasus dan Proyek Terapan",
+                         "summary":  "Studi Kasus dan Proyek Terapan"
+                     },
+                     {
+                         "id":  "laboratorium",
+                         "title":  "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+                         "summary":  "Laboratorium: Prediksi, Eksperimen, dan Bukti"
+                     },
+                     {
+                         "id":  "game",
+                         "title":  "Game Misi Terapan",
+                         "summary":  "Game Misi: Petualangan 2D dan 3D"
+                     },
+                     {
+                         "id":  "refleksi",
+                         "title":  "Refleksi, Umpan Balik, dan Transfer",
+                         "summary":  "Refleksi, Umpan Balik, dan Transfer"
+                     },
+                     {
+                         "id":  "evaluasi",
+                         "title":  "Rangkuman dan Evaluasi Akhir",
+                         "summary":  "Rangkuman dan Evaluasi Akhir"
+                     }
+                 ]
+}

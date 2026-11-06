@@ -1,0 +1,60 @@
+{
+  "result": "PASS",
+  "actionAssertions": 274,
+  "scenarios": [
+    {
+      "os": "ubuntu",
+      "manual": false,
+      "screens": 17,
+      "evidence": {
+        "created": true,
+        "installed": true,
+        "diskBoot": true,
+        "network": true,
+        "restored": true
+      }
+    },
+    {
+      "os": "ubuntu",
+      "manual": true,
+      "screens": 17,
+      "evidence": {
+        "created": true,
+        "installed": true,
+        "diskBoot": true,
+        "network": true,
+        "restored": true
+      }
+    },
+    {
+      "os": "windows",
+      "manual": false,
+      "screens": 17,
+      "evidence": {
+        "created": true,
+        "installed": true,
+        "diskBoot": true,
+        "network": true,
+        "restored": true
+      }
+    },
+    {
+      "os": "ubuntu-server",
+      "manual": false,
+      "screens": 15,
+      "evidence": {
+        "created": true,
+        "installed": true,
+        "diskBoot": true,
+        "network": true,
+        "restored": true
+      }
+    }
+  ],
+  "stageCounts": {
+    "virtualisasi-server-dasar": 13,
+    "instalasi-komputer-dasar": 15
+  },
+  "legacy8StageProgressPreserved": true,
+  "scope": "Pure models and curriculum structure; browser report separate"
+}

@@ -1,0 +1,981 @@
+[
+  {
+    "id": "proses-bisnis-tjkt",
+    "title": "Proses Bisnis dan Pelayanan Pelanggan TJKT",
+    "phase": "E",
+    "classLevel": "X",
+    "prerequisites": [],
+    "sourceCount": 2,
+    "contentStructure": "objectives/examples/transfer/misconceptions/questions checked",
+    "structuralIssues": [],
+    "sequentialStages": 12,
+    "simulationChecks": 12,
+    "instructionsChecked": true,
+    "certificatePrinted": true,
+    "databaseRestored": true,
+    "studentUsability": "requires classroom observation; not established by automated audit"
+  },
+  {
+    "id": "wawasan-tjkt",
+    "title": "Perkembangan Teknologi dan Isu Global TJKT",
+    "phase": "E",
+    "classLevel": "X",
+    "prerequisites": [],
+    "sourceCount": 4,
+    "contentStructure": "objectives/examples/transfer/misconceptions/questions checked",
+    "structuralIssues": [],
+    "sequentialStages": 12,
+    "simulationChecks": 12,
+    "instructionsChecked": true,
+    "certificatePrinted": true,
+    "databaseRestored": true,
+    "studentUsability": "requires classroom observation; not established by automated audit"
+  },
+  {
+    "id": "profesi-kewirausahaan-tjkt",
+    "title": "Profesi dan Kewirausahaan TJKT",
+    "phase": "E",
+    "classLevel": "X",
+    "prerequisites": [
+      "proses-bisnis-tjkt"
+    ],
+    "sourceCount": 2,
+    "contentStructure": "objectives/examples/transfer/misconceptions/questions checked",
+    "structuralIssues": [],
+    "sequentialStages": 12,
+    "simulationChecks": 12,
+    "instructionsChecked": true,
+    "certificatePrinted": true,
+    "databaseRestored": true,
+    "studentUsability": "requires classroom observation; not established by automated audit"
+  },
+  {
+    "id": "k3-budaya-kerja",
+    "title": "K3LH dan Budaya Kerja TJKT",
+    "phase": "E",
+    "classLevel": "X",
+    "prerequisites": [],
+    "sourceCount": 3,
+    "contentStructure": "objectives/examples/transfer/misconceptions/questions checked",
+    "structuralIssues": [],
+    "sequentialStages": 12,
+    "simulationChecks": 12,
+    "instructionsChecked": true,
+    "certificatePrinted": true,
+    "databaseRestored": true,
+    "studentUsability": "requires classroom observation; not established by automated audit"
+  },
+  {
+    "id": "pengenalan-jaringan",
+    "title": "Pengenalan Jaringan Komputer",
+    "phase": "E",
+    "classLevel": "X",
+    "prerequisites": [],
+    "sourceCount": null,
+    "contentStructure": "rendered legacy lesson review",
+    "structuralIssues": [],
+    "sequentialStages": 9,
+    "simulationChecks": 9,
+    "instructionsChecked": true,
+    "certificatePrinted": true,
+    "databaseRestored": true,
+    "studentUsability": "requires classroom observation; not established by automated audit"
+  },
+  {
+    "id": "perangkat-jaringan",
+    "title": "Perangkat Jaringan",
+    "phase": "E",
+    "classLevel": "X",
+    "prerequisites": [
+      "pengenalan-jaringan"
+    ],
+    "sourceCount": null,
+    "contentStructure": "rendered legacy lesson review",
+    "structuralIssues": [],
+    "sequentialStages": 9,
+    "simulationChecks": 9,
+    "instructionsChecked": true,
+    "certificatePrinted": true,
+    "databaseRestored": true,
+    "studentUsability": "requires classroom observation; not established by automated audit"
+  },
+  {
+    "id": "topologi-jaringan",
+    "title": "Topologi Jaringan",
+    "phase": "E",
+    "classLevel": "X",
+    "prerequisites": [
+      "perangkat-jaringan",
+      "media-transmisi"
+    ],
+    "sourceCount": null,
+    "contentStructure": "rendered legacy lesson review",
+    "structuralIssues": [],
+    "sequentialStages": 9,
+    "simulationChecks": 9,
+    "instructionsChecked": true,
+    "certificatePrinted": true,
+    "databaseRestored": true,
+    "studentUsability": "requires classroom observation; not established by automated audit"
+  },
+  {
+    "id": "perencanaan-jaringan",
+    "title": "Analisis Kebutuhan dan Dokumentasi Jaringan",
+    "phase": "E",
+    "classLevel": "X",
+    "prerequisites": [
+      "topologi-jaringan"
+    ],
+    "sourceCount": 2,
+    "contentStructure": "objectives/examples/transfer/misconceptions/questions checked",
+    "structuralIssues": [],
+    "sequentialStages": 12,
+    "simulationChecks": 12,
+    "instructionsChecked": true,
+    "certificatePrinted": true,
+    "databaseRestored": true,
+    "studentUsability": "requires classroom observation; not established by automated audit"
+  },
+  {
+    "id": "media-transmisi",
+    "title": "Media Transmisi Jaringan",
+    "phase": "E",
+    "classLevel": "X",
+    "prerequisites": [
+      "perangkat-jaringan"
+    ],
+    "sourceCount": null,
+    "contentStructure": "rendered legacy lesson review",
+    "structuralIssues": [],
+    "sequentialStages": 8,
+    "simulationChecks": 8,
+    "instructionsChecked": true,
+    "certificatePrinted": true,
+    "databaseRestored": true,
+    "studentUsability": "requires classroom observation; not established by automated audit"
+  },
+  {
+    "id": "osi-tcpip",
+    "title": "Model OSI dan TCP/IP",
+    "phase": "E",
+    "classLevel": "X",
+    "prerequisites": [
+      "pengenalan-jaringan"
+    ],
+    "sourceCount": null,
+    "contentStructure": "rendered legacy lesson review",
+    "structuralIssues": [],
+    "sequentialStages": 8,
+    "simulationChecks": 8,
+    "instructionsChecked": true,
+    "certificatePrinted": true,
+    "databaseRestored": true,
+    "studentUsability": "requires classroom observation; not established by automated audit"
+  },
+  {
+    "id": "ipv4-subnetting",
+    "title": "IP Address & Subnetting",
+    "phase": "E",
+    "classLevel": "X",
+    "prerequisites": [
+      "osi-tcpip"
+    ],
+    "sourceCount": null,
+    "contentStructure": "rendered legacy lesson review",
+    "structuralIssues": [],
+    "sequentialStages": 9,
+    "simulationChecks": 9,
+    "instructionsChecked": true,
+    "certificatePrinted": true,
+    "databaseRestored": true,
+    "studentUsability": "requires classroom observation; not established by automated audit"
+  },
+  {
+    "id": "ipv6-dasar",
+    "title": "Pengalamatan IPv6 Dasar",
+    "phase": "E",
+    "classLevel": "X",
+    "prerequisites": [
+      "ipv4-subnetting"
+    ],
+    "sourceCount": 6,
+    "contentStructure": "objectives/examples/transfer/misconceptions/questions checked",
+    "structuralIssues": [],
+    "sequentialStages": 12,
+    "simulationChecks": 12,
+    "instructionsChecked": true,
+    "certificatePrinted": true,
+    "databaseRestored": true,
+    "studentUsability": "requires classroom observation; not established by automated audit"
+  },
+  {
+    "id": "protokol-layanan",
+    "title": "Protokol dan Layanan Jaringan Dasar",
+    "phase": "E",
+    "classLevel": "X",
+    "prerequisites": [
+      "ipv4-subnetting",
+      "osi-tcpip"
+    ],
+    "sourceCount": null,
+    "contentStructure": "rendered legacy lesson review",
+    "structuralIssues": [],
+    "sequentialStages": 8,
+    "simulationChecks": 8,
+    "instructionsChecked": true,
+    "certificatePrinted": true,
+    "databaseRestored": true,
+    "studentUsability": "requires classroom observation; not established by automated audit"
+  },
+  {
+    "id": "sistem-telekomunikasi-dasar",
+    "title": "Dasar Sistem Telekomunikasi",
+    "phase": "E",
+    "classLevel": "X",
+    "prerequisites": [
+      "media-transmisi"
+    ],
+    "sourceCount": 3,
+    "contentStructure": "objectives/examples/transfer/misconceptions/questions checked",
+    "structuralIssues": [],
+    "sequentialStages": 12,
+    "simulationChecks": 12,
+    "instructionsChecked": true,
+    "certificatePrinted": true,
+    "databaseRestored": true,
+    "studentUsability": "requires classroom observation; not established by automated audit"
+  },
+  {
+    "id": "troubleshooting",
+    "title": "Troubleshooting Jaringan Dasar",
+    "phase": "E",
+    "classLevel": "X",
+    "prerequisites": [
+      "protokol-layanan"
+    ],
+    "sourceCount": null,
+    "contentStructure": "rendered legacy lesson review",
+    "structuralIssues": [],
+    "sequentialStages": 9,
+    "simulationChecks": 9,
+    "instructionsChecked": true,
+    "certificatePrinted": true,
+    "databaseRestored": true,
+    "studentUsability": "requires classroom observation; not established by automated audit"
+  },
+  {
+    "id": "alat-ukur-tjkt",
+    "title": "Penggunaan dan Pemeliharaan Alat Ukur TJKT",
+    "phase": "E",
+    "classLevel": "X",
+    "prerequisites": [
+      "k3-budaya-kerja",
+      "media-transmisi"
+    ],
+    "sourceCount": 3,
+    "contentStructure": "objectives/examples/transfer/misconceptions/questions checked",
+    "structuralIssues": [],
+    "sequentialStages": 12,
+    "simulationChecks": 12,
+    "instructionsChecked": true,
+    "certificatePrinted": true,
+    "databaseRestored": true,
+    "studentUsability": "requires classroom observation; not established by automated audit"
+  },
+  {
+    "id": "kebutuhan-teknis-jaringan",
+    "title": "Analisis Kebutuhan Teknis dan Peralatan Jaringan",
+    "phase": "F",
+    "classLevel": "XI",
+    "prerequisites": [
+      "perencanaan-jaringan"
+    ],
+    "sourceCount": 3,
+    "contentStructure": "objectives/examples/transfer/misconceptions/questions checked",
+    "structuralIssues": [],
+    "sequentialStages": 12,
+    "simulationChecks": 12,
+    "instructionsChecked": true,
+    "certificatePrinted": true,
+    "databaseRestored": true,
+    "studentUsability": "requires classroom observation; not established by automated audit"
+  },
+  {
+    "id": "desain-topologi-arsitektur",
+    "title": "Desain Topologi, Arsitektur, dan Layout Jaringan",
+    "phase": "F",
+    "classLevel": "XI",
+    "prerequisites": [
+      "kebutuhan-teknis-jaringan",
+      "topologi-jaringan"
+    ],
+    "sourceCount": 4,
+    "contentStructure": "objectives/examples/transfer/misconceptions/questions checked",
+    "structuralIssues": [],
+    "sequentialStages": 12,
+    "simulationChecks": 12,
+    "instructionsChecked": true,
+    "certificatePrinted": true,
+    "databaseRestored": true,
+    "studentUsability": "requires classroom observation; not established by automated audit"
+  },
+  {
+    "id": "perencanaan-pengalamatan-lanjut",
+    "title": "Perancangan Pengalamatan Jaringan: Subnetting, CIDR, dan VLSM",
+    "phase": "F",
+    "classLevel": "XI",
+    "prerequisites": [
+      "desain-topologi-arsitektur",
+      "ipv4-subnetting",
+      "ipv6-dasar"
+    ],
+    "sourceCount": 4,
+    "contentStructure": "objectives/examples/transfer/misconceptions/questions checked",
+    "structuralIssues": [],
+    "sequentialStages": 12,
+    "simulationChecks": 12,
+    "instructionsChecked": true,
+    "certificatePrinted": true,
+    "databaseRestored": true,
+    "studentUsability": "requires classroom observation; not established by automated audit"
+  },
+  {
+    "id": "instalasi-kabel",
+    "title": "Instalasi dan Pengujian Jaringan Kabel",
+    "phase": "F",
+    "classLevel": "XI",
+    "prerequisites": [
+      "perencanaan-pengalamatan-lanjut",
+      "k3-budaya-kerja",
+      "alat-ukur-tjkt"
+    ],
+    "sourceCount": 5,
+    "contentStructure": "objectives/examples/transfer/misconceptions/questions checked",
+    "structuralIssues": [],
+    "sequentialStages": 12,
+    "simulationChecks": 12,
+    "instructionsChecked": true,
+    "certificatePrinted": true,
+    "databaseRestored": true,
+    "studentUsability": "requires classroom observation; not established by automated audit"
+  },
+  {
+    "id": "wireless-lan",
+    "title": "Wireless LAN",
+    "phase": "F",
+    "classLevel": "XI",
+    "prerequisites": [
+      "perencanaan-pengalamatan-lanjut",
+      "k3-budaya-kerja"
+    ],
+    "sourceCount": 4,
+    "contentStructure": "objectives/examples/transfer/misconceptions/questions checked",
+    "structuralIssues": [],
+    "sequentialStages": 12,
+    "simulationChecks": 12,
+    "instructionsChecked": true,
+    "certificatePrinted": true,
+    "databaseRestored": true,
+    "studentUsability": "requires classroom observation; not established by automated audit"
+  },
+  {
+    "id": "pemeliharaan-kabel-nirkabel",
+    "title": "Perawatan dan Perbaikan Jaringan Kabel dan Nirkabel",
+    "phase": "F",
+    "classLevel": "XI",
+    "prerequisites": [
+      "instalasi-kabel",
+      "wireless-lan",
+      "troubleshooting"
+    ],
+    "sourceCount": 3,
+    "contentStructure": "objectives/examples/transfer/misconceptions/questions checked",
+    "structuralIssues": [],
+    "sequentialStages": 12,
+    "simulationChecks": 12,
+    "instructionsChecked": true,
+    "certificatePrinted": true,
+    "databaseRestored": true,
+    "studentUsability": "requires classroom observation; not established by automated audit"
+  },
+  {
+    "id": "voip",
+    "title": "Layanan Komunikasi VoIP",
+    "phase": "F",
+    "classLevel": "XI",
+    "prerequisites": [
+      "protokol-layanan",
+      "ipv4-subnetting"
+    ],
+    "sourceCount": 4,
+    "contentStructure": "objectives/examples/transfer/misconceptions/questions checked",
+    "structuralIssues": [],
+    "sequentialStages": 12,
+    "simulationChecks": 12,
+    "instructionsChecked": true,
+    "certificatePrinted": true,
+    "databaseRestored": true,
+    "studentUsability": "requires classroom observation; not established by automated audit"
+  },
+  {
+    "id": "fiber-optik",
+    "title": "Instalasi, Pengujian, dan Perbaikan Fiber Optik",
+    "phase": "F",
+    "classLevel": "XI",
+    "prerequisites": [
+      "instalasi-kabel",
+      "alat-ukur-tjkt"
+    ],
+    "sourceCount": 5,
+    "contentStructure": "objectives/examples/transfer/misconceptions/questions checked",
+    "structuralIssues": [],
+    "sequentialStages": 12,
+    "simulationChecks": 12,
+    "instructionsChecked": true,
+    "certificatePrinted": true,
+    "databaseRestored": true,
+    "studentUsability": "requires classroom observation; not established by automated audit"
+  },
+  {
+    "id": "pemasangan-perangkat-jaringan",
+    "title": "Pemasangan Perangkat ke Sistem Jaringan",
+    "phase": "F",
+    "classLevel": "XI",
+    "prerequisites": [
+      "perencanaan-pengalamatan-lanjut",
+      "instalasi-kabel"
+    ],
+    "sourceCount": 3,
+    "contentStructure": "objectives/examples/transfer/misconceptions/questions checked",
+    "structuralIssues": [],
+    "sequentialStages": 12,
+    "simulationChecks": 12,
+    "instructionsChecked": true,
+    "certificatePrinted": true,
+    "databaseRestored": true,
+    "studentUsability": "requires classroom observation; not established by automated audit"
+  },
+  {
+    "id": "penggantian-perangkat-jaringan",
+    "title": "Penggantian Perangkat Jaringan",
+    "phase": "F",
+    "classLevel": "XI",
+    "prerequisites": [
+      "pemasangan-perangkat-jaringan"
+    ],
+    "sourceCount": 3,
+    "contentStructure": "objectives/examples/transfer/misconceptions/questions checked",
+    "structuralIssues": [],
+    "sequentialStages": 12,
+    "simulationChecks": 12,
+    "instructionsChecked": true,
+    "certificatePrinted": true,
+    "databaseRestored": true,
+    "studentUsability": "requires classroom observation; not established by automated audit"
+  },
+  {
+    "id": "switching-vlan",
+    "title": "Switching & VLAN",
+    "phase": "F",
+    "classLevel": "XI",
+    "prerequisites": [
+      "ipv4-subnetting",
+      "topologi-jaringan"
+    ],
+    "sourceCount": null,
+    "contentStructure": "rendered legacy lesson review",
+    "structuralIssues": [],
+    "sequentialStages": 9,
+    "simulationChecks": 9,
+    "instructionsChecked": true,
+    "certificatePrinted": true,
+    "databaseRestored": true,
+    "studentUsability": "requires classroom observation; not established by automated audit"
+  },
+  {
+    "id": "routing-ipv4",
+    "title": "Routing Statis",
+    "phase": "F",
+    "classLevel": "XI",
+    "prerequisites": [
+      "switching-vlan"
+    ],
+    "sourceCount": 4,
+    "contentStructure": "objectives/examples/transfer/misconceptions/questions checked",
+    "structuralIssues": [],
+    "sequentialStages": 12,
+    "simulationChecks": 12,
+    "instructionsChecked": true,
+    "certificatePrinted": true,
+    "databaseRestored": true,
+    "studentUsability": "requires classroom observation; not established by automated audit"
+  },
+  {
+    "id": "routing-dinamis",
+    "title": "Routing Dinamis OSPF",
+    "phase": "F",
+    "classLevel": "XI",
+    "prerequisites": [
+      "routing-ipv4"
+    ],
+    "sourceCount": 5,
+    "contentStructure": "objectives/examples/transfer/misconceptions/questions checked",
+    "structuralIssues": [],
+    "sequentialStages": 12,
+    "simulationChecks": 12,
+    "instructionsChecked": true,
+    "certificatePrinted": true,
+    "databaseRestored": true,
+    "studentUsability": "requires classroom observation; not established by automated audit"
+  },
+  {
+    "id": "nat-wan",
+    "title": "Internet Gateway dan NAT",
+    "phase": "F",
+    "classLevel": "XI",
+    "prerequisites": [
+      "routing-ipv4"
+    ],
+    "sourceCount": 6,
+    "contentStructure": "objectives/examples/transfer/misconceptions/questions checked",
+    "structuralIssues": [],
+    "sequentialStages": 12,
+    "simulationChecks": 12,
+    "instructionsChecked": true,
+    "certificatePrinted": true,
+    "databaseRestored": true,
+    "studentUsability": "requires classroom observation; not established by automated audit"
+  },
+  {
+    "id": "proxy-load-balancing",
+    "title": "Proxy Server",
+    "phase": "F",
+    "classLevel": "XI",
+    "prerequisites": [
+      "nat-wan",
+      "protokol-layanan"
+    ],
+    "sourceCount": 5,
+    "contentStructure": "objectives/examples/transfer/misconceptions/questions checked",
+    "structuralIssues": [],
+    "sequentialStages": 12,
+    "simulationChecks": 12,
+    "instructionsChecked": true,
+    "certificatePrinted": true,
+    "databaseRestored": true,
+    "studentUsability": "requires classroom observation; not established by automated audit"
+  },
+  {
+    "id": "bandwidth-qos",
+    "title": "Manajemen Bandwidth dan QoS",
+    "phase": "F",
+    "classLevel": "XI",
+    "prerequisites": [
+      "nat-wan"
+    ],
+    "sourceCount": 6,
+    "contentStructure": "objectives/examples/transfer/misconceptions/questions checked",
+    "structuralIssues": [],
+    "sequentialStages": 12,
+    "simulationChecks": 12,
+    "instructionsChecked": true,
+    "certificatePrinted": true,
+    "databaseRestored": true,
+    "studentUsability": "requires classroom observation; not established by automated audit"
+  },
+  {
+    "id": "load-balancing",
+    "title": "Load Balancing dan Failover",
+    "phase": "F",
+    "classLevel": "XI",
+    "prerequisites": [
+      "bandwidth-qos"
+    ],
+    "sourceCount": 4,
+    "contentStructure": "objectives/examples/transfer/misconceptions/questions checked",
+    "structuralIssues": [],
+    "sequentialStages": 12,
+    "simulationChecks": 12,
+    "instructionsChecked": true,
+    "certificatePrinted": true,
+    "databaseRestored": true,
+    "studentUsability": "requires classroom observation; not established by automated audit"
+  },
+  {
+    "id": "dasar-administrasi-server",
+    "title": "Dasar Administrasi Server",
+    "phase": "F",
+    "classLevel": "XI",
+    "prerequisites": [
+      "protokol-layanan"
+    ],
+    "sourceCount": 6,
+    "contentStructure": "objectives/examples/transfer/misconceptions/questions checked",
+    "structuralIssues": [],
+    "sequentialStages": 12,
+    "simulationChecks": 12,
+    "instructionsChecked": true,
+    "certificatePrinted": true,
+    "databaseRestored": true,
+    "studentUsability": "requires classroom observation; not established by automated audit"
+  },
+  {
+    "id": "virtualisasi-server",
+    "title": "Virtualisasi Server Dasar",
+    "phase": "F",
+    "classLevel": "XI",
+    "prerequisites": [
+      "dasar-administrasi-server"
+    ],
+    "sourceCount": 3,
+    "contentStructure": "objectives/examples/transfer/misconceptions/questions checked",
+    "structuralIssues": [],
+    "sequentialStages": 12,
+    "simulationChecks": 12,
+    "instructionsChecked": true,
+    "certificatePrinted": true,
+    "databaseRestored": true,
+    "studentUsability": "requires classroom observation; not established by automated audit"
+  },
+  {
+    "id": "administrasi-linux-windows",
+    "title": "Administrasi Linux dan Windows Server",
+    "phase": "F",
+    "classLevel": "XI",
+    "prerequisites": [
+      "virtualisasi-server"
+    ],
+    "sourceCount": 6,
+    "contentStructure": "objectives/examples/transfer/misconceptions/questions checked",
+    "structuralIssues": [],
+    "sequentialStages": 12,
+    "simulationChecks": 12,
+    "instructionsChecked": true,
+    "certificatePrinted": true,
+    "databaseRestored": true,
+    "studentUsability": "requires classroom observation; not established by automated audit"
+  },
+  {
+    "id": "manajemen-pengguna-server",
+    "title": "Manajemen Pengguna dan Hak Akses",
+    "phase": "F",
+    "classLevel": "XI",
+    "prerequisites": [
+      "administrasi-linux-windows"
+    ],
+    "sourceCount": 5,
+    "contentStructure": "objectives/examples/transfer/misconceptions/questions checked",
+    "structuralIssues": [],
+    "sequentialStages": 12,
+    "simulationChecks": 12,
+    "instructionsChecked": true,
+    "certificatePrinted": true,
+    "databaseRestored": true,
+    "studentUsability": "requires classroom observation; not established by automated audit"
+  },
+  {
+    "id": "layanan-server",
+    "title": "DHCP, DNS, dan Remote Server",
+    "phase": "F",
+    "classLevel": "XI",
+    "prerequisites": [
+      "manajemen-pengguna-server"
+    ],
+    "sourceCount": 7,
+    "contentStructure": "objectives/examples/transfer/misconceptions/questions checked",
+    "structuralIssues": [],
+    "sequentialStages": 12,
+    "simulationChecks": 12,
+    "instructionsChecked": true,
+    "certificatePrinted": true,
+    "databaseRestored": true,
+    "studentUsability": "requires classroom observation; not established by automated audit"
+  },
+  {
+    "id": "ftp-server",
+    "title": "FTP Server dan Pengujian Transfer Berkas",
+    "phase": "F",
+    "classLevel": "XI",
+    "prerequisites": [
+      "layanan-server"
+    ],
+    "sourceCount": 5,
+    "contentStructure": "objectives/examples/transfer/misconceptions/questions checked",
+    "structuralIssues": [],
+    "sequentialStages": 12,
+    "simulationChecks": 12,
+    "instructionsChecked": true,
+    "certificatePrinted": true,
+    "databaseRestored": true,
+    "studentUsability": "requires classroom observation; not established by automated audit"
+  },
+  {
+    "id": "file-server",
+    "title": "File Server dan Berbagi Sumber Daya",
+    "phase": "F",
+    "classLevel": "XI",
+    "prerequisites": [
+      "layanan-server"
+    ],
+    "sourceCount": 5,
+    "contentStructure": "objectives/examples/transfer/misconceptions/questions checked",
+    "structuralIssues": [],
+    "sequentialStages": 12,
+    "simulationChecks": 12,
+    "instructionsChecked": true,
+    "certificatePrinted": true,
+    "databaseRestored": true,
+    "studentUsability": "requires classroom observation; not established by automated audit"
+  },
+  {
+    "id": "hosting-server",
+    "title": "Web dan Database Server",
+    "phase": "F",
+    "classLevel": "XI",
+    "prerequisites": [
+      "layanan-server"
+    ],
+    "sourceCount": 6,
+    "contentStructure": "objectives/examples/transfer/misconceptions/questions checked",
+    "structuralIssues": [],
+    "sequentialStages": 12,
+    "simulationChecks": 12,
+    "instructionsChecked": true,
+    "certificatePrinted": true,
+    "databaseRestored": true,
+    "studentUsability": "requires classroom observation; not established by automated audit"
+  },
+  {
+    "id": "panel-layanan-hosting",
+    "title": "Control Panel, Shared Hosting, Dedicated Server, dan VPS",
+    "phase": "F",
+    "classLevel": "XI",
+    "prerequisites": [
+      "hosting-server",
+      "virtualisasi-server"
+    ],
+    "sourceCount": 5,
+    "contentStructure": "objectives/examples/transfer/misconceptions/questions checked",
+    "structuralIssues": [],
+    "sequentialStages": 12,
+    "simulationChecks": 12,
+    "instructionsChecked": true,
+    "certificatePrinted": true,
+    "databaseRestored": true,
+    "studentUsability": "requires classroom observation; not established by automated audit"
+  },
+  {
+    "id": "vpn-server",
+    "title": "VPN dan Akses Jarak Jauh Aman",
+    "phase": "F",
+    "classLevel": "XI",
+    "prerequisites": [
+      "layanan-server",
+      "routing-ipv4",
+      "manajemen-pengguna-server"
+    ],
+    "sourceCount": 5,
+    "contentStructure": "objectives/examples/transfer/misconceptions/questions checked",
+    "structuralIssues": [],
+    "sequentialStages": 12,
+    "simulationChecks": 12,
+    "instructionsChecked": true,
+    "certificatePrinted": true,
+    "databaseRestored": true,
+    "studentUsability": "requires classroom observation; not established by automated audit"
+  },
+  {
+    "id": "monitoring-jaringan",
+    "title": "Sistem Kontrol, Monitoring, dan Pemeliharaan Jaringan",
+    "phase": "F",
+    "classLevel": "XI",
+    "prerequisites": [
+      "layanan-server",
+      "fiber-optik"
+    ],
+    "sourceCount": 6,
+    "contentStructure": "objectives/examples/transfer/misconceptions/questions checked",
+    "structuralIssues": [],
+    "sequentialStages": 12,
+    "simulationChecks": 12,
+    "instructionsChecked": true,
+    "certificatePrinted": true,
+    "databaseRestored": true,
+    "studentUsability": "requires classroom observation; not established by automated audit"
+  },
+  {
+    "id": "backup-pemulihan-server",
+    "title": "Backup dan Pemulihan Server",
+    "phase": "F",
+    "classLevel": "XI",
+    "prerequisites": [
+      "monitoring-jaringan"
+    ],
+    "sourceCount": 2,
+    "contentStructure": "objectives/examples/transfer/misconceptions/questions checked",
+    "structuralIssues": [],
+    "sequentialStages": 12,
+    "simulationChecks": 12,
+    "instructionsChecked": true,
+    "certificatePrinted": true,
+    "databaseRestored": true,
+    "studentUsability": "requires classroom observation; not established by automated audit"
+  },
+  {
+    "id": "mail-server",
+    "title": "Mail Server",
+    "phase": "F",
+    "classLevel": "XI",
+    "prerequisites": [
+      "hosting-server"
+    ],
+    "sourceCount": 4,
+    "contentStructure": "objectives/examples/transfer/misconceptions/questions checked",
+    "structuralIssues": [],
+    "sequentialStages": 12,
+    "simulationChecks": 12,
+    "instructionsChecked": true,
+    "certificatePrinted": true,
+    "databaseRestored": true,
+    "studentUsability": "requires classroom observation; not established by automated audit"
+  },
+  {
+    "id": "keamanan-jaringan",
+    "title": "Ancaman dan Sistem Keamanan Jaringan",
+    "phase": "F",
+    "classLevel": "XII",
+    "prerequisites": [
+      "switching-vlan",
+      "nat-wan",
+      "layanan-server"
+    ],
+    "sourceCount": 2,
+    "contentStructure": "objectives/examples/transfer/misconceptions/questions checked",
+    "structuralIssues": [],
+    "sequentialStages": 12,
+    "simulationChecks": 12,
+    "instructionsChecked": true,
+    "certificatePrinted": true,
+    "databaseRestored": true,
+    "studentUsability": "requires classroom observation; not established by automated audit"
+  },
+  {
+    "id": "autentikasi-kriptografi",
+    "title": "Autentikasi dan Kriptografi",
+    "phase": "F",
+    "classLevel": "XII",
+    "prerequisites": [
+      "keamanan-jaringan",
+      "manajemen-pengguna-server"
+    ],
+    "sourceCount": 3,
+    "contentStructure": "objectives/examples/transfer/misconceptions/questions checked",
+    "structuralIssues": [],
+    "sequentialStages": 12,
+    "simulationChecks": 12,
+    "instructionsChecked": true,
+    "certificatePrinted": true,
+    "databaseRestored": true,
+    "studentUsability": "requires classroom observation; not established by automated audit"
+  },
+  {
+    "id": "ids-hardening",
+    "title": "Host Hardening",
+    "phase": "F",
+    "classLevel": "XII",
+    "prerequisites": [
+      "keamanan-jaringan",
+      "manajemen-pengguna-server"
+    ],
+    "sourceCount": 3,
+    "contentStructure": "objectives/examples/transfer/misconceptions/questions checked",
+    "structuralIssues": [],
+    "sequentialStages": 12,
+    "simulationChecks": 12,
+    "instructionsChecked": true,
+    "certificatePrinted": true,
+    "databaseRestored": true,
+    "studentUsability": "requires classroom observation; not established by automated audit"
+  },
+  {
+    "id": "server-dmz",
+    "title": "Membangun dan Menguji Server DMZ",
+    "phase": "F",
+    "classLevel": "XII",
+    "prerequisites": [
+      "ids-hardening",
+      "nat-wan",
+      "hosting-server"
+    ],
+    "sourceCount": 2,
+    "contentStructure": "objectives/examples/transfer/misconceptions/questions checked",
+    "structuralIssues": [],
+    "sequentialStages": 12,
+    "simulationChecks": 12,
+    "instructionsChecked": true,
+    "certificatePrinted": true,
+    "databaseRestored": true,
+    "studentUsability": "requires classroom observation; not established by automated audit"
+  },
+  {
+    "id": "pengujian-keamanan",
+    "title": "Pengujian Keamanan Jaringan, Host, dan Server",
+    "phase": "F",
+    "classLevel": "XII",
+    "prerequisites": [
+      "server-dmz",
+      "ids-hardening",
+      "monitoring-jaringan"
+    ],
+    "sourceCount": 2,
+    "contentStructure": "objectives/examples/transfer/misconceptions/questions checked",
+    "structuralIssues": [],
+    "sequentialStages": 12,
+    "simulationChecks": 12,
+    "instructionsChecked": true,
+    "certificatePrinted": true,
+    "databaseRestored": true,
+    "studentUsability": "requires classroom observation; not established by automated audit"
+  },
+  {
+    "id": "ids-respons-insiden",
+    "title": "IDS/IPS dan Respons Insiden",
+    "phase": "F",
+    "classLevel": "XII",
+    "prerequisites": [
+      "pengujian-keamanan"
+    ],
+    "sourceCount": 3,
+    "contentStructure": "objectives/examples/transfer/misconceptions/questions checked",
+    "structuralIssues": [],
+    "sequentialStages": 12,
+    "simulationChecks": 12,
+    "instructionsChecked": true,
+    "certificatePrinted": true,
+    "databaseRestored": true,
+    "studentUsability": "requires classroom observation; not established by automated audit"
+  },
+  {
+    "id": "proyek-integrasi-jaringan",
+    "title": "Proyek Integrasi Jaringan",
+    "phase": "F",
+    "classLevel": "XII",
+    "prerequisites": [
+      "perencanaan-pengalamatan-lanjut",
+      "wireless-lan",
+      "nat-wan",
+      "layanan-server",
+      "pengujian-keamanan",
+      "backup-pemulihan-server"
+    ],
+    "sourceCount": 3,
+    "contentStructure": "objectives/examples/transfer/misconceptions/questions checked",
+    "structuralIssues": [],
+    "sequentialStages": 12,
+    "simulationChecks": 12,
+    "instructionsChecked": true,
+    "certificatePrinted": true,
+    "databaseRestored": true,
+    "studentUsability": "requires classroom observation; not established by automated audit"
+  }
+]

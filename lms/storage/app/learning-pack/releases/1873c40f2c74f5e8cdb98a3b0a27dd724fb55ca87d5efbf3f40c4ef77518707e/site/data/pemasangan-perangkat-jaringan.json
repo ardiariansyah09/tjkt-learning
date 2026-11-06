@@ -1,0 +1,68 @@
+{
+    "moduleId":  "pemasangan-perangkat-jaringan",
+    "title":  "Pemasangan Perangkat ke Sistem Jaringan",
+    "version":  2,
+    "contentSource":  "assets/js/course-installation.js",
+    "chapters":  [
+                     {
+                         "id":  "orientasi",
+                         "title":  "Orientasi, Tujuan, dan Asesmen Awal",
+                         "summary":  "Mengintegrasikan perangkat berdasarkan rancangan, SOP, serta bukti penerimaan."
+                     },
+                     {
+                         "id":  "konsep-1",
+                         "title":  "Kebutuhan Integrasi dan Kesiapan Pemasangan",
+                         "summary":  "Memastikan perangkat yang dipasang sesuai fungsi, lokasi, dan kewenangan."
+                     },
+                     {
+                         "id":  "konsep-2",
+                         "title":  "Pemasangan Fisik dan Pemetaan Port",
+                         "summary":  "Menghubungkan perangkat sesuai dokumen tanpa menimbulkan sambungan tak terencana."
+                     },
+                     {
+                         "id":  "konsep-3",
+                         "title":  "Konfigurasi Awal dan Akses Pengelolaan",
+                         "summary":  "Menyiapkan identitas serta jalur administrasi yang dapat diuji dan dipulihkan."
+                     },
+                     {
+                         "id":  "konsep-4",
+                         "title":  "Integrasi Access, Trunk, dan Uplink",
+                         "summary":  "Menyelaraskan koneksi fisik dengan segmen dan perangkat di sisi lain."
+                     },
+                     {
+                         "id":  "konsep-5",
+                         "title":  "Penerapan, Penyimpanan, dan Restart",
+                         "summary":  "Memisahkan rancangan input, konfigurasi berjalan, dan konfigurasi startup."
+                     },
+                     {
+                         "id":  "konsep-6",
+                         "title":  "Uji Penerimaan dan Serah Terima",
+                         "summary":  "Menutup pekerjaan melalui bukti fungsi, batas, dan dokumentasi yang dapat dilanjutkan."
+                     },
+                     {
+                         "id":  "kasus",
+                         "title":  "Studi Kasus dan Proyek Terapan",
+                         "summary":  "Studi Kasus dan Proyek Terapan"
+                     },
+                     {
+                         "id":  "laboratorium",
+                         "title":  "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+                         "summary":  "Laboratorium: Prediksi, Eksperimen, dan Bukti"
+                     },
+                     {
+                         "id":  "game",
+                         "title":  "Game Port Commissioning Challenge",
+                         "summary":  "Memasang perangkat sesuai media, port, PoE, dan persediaan adaptor."
+                     },
+                     {
+                         "id":  "refleksi",
+                         "title":  "Refleksi, Umpan Balik, dan Transfer",
+                         "summary":  "Refleksi, Umpan Balik, dan Transfer"
+                     },
+                     {
+                         "id":  "evaluasi",
+                         "title":  "Rangkuman dan Evaluasi Akhir",
+                         "summary":  "Rangkuman dan Evaluasi Akhir"
+                     }
+                 ]
+}

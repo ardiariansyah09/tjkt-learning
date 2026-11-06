@@ -1,0 +1,68 @@
+{
+    "moduleId":  "instalasi-kabel",
+    "title":  "Instalasi dan Pengujian Jaringan Kabel",
+    "version":  2,
+    "contentSource":  "assets/js/course-cabling.js",
+    "chapters":  [
+                     {
+                         "id":  "orientasi",
+                         "title":  "Orientasi, Tujuan, dan Asesmen Awal",
+                         "summary":  "Menentukan lingkup instalasi dan bukti penerimaan kabel."
+                     },
+                     {
+                         "id":  "konsep-1",
+                         "title":  "Persiapan, Izin, dan Rencana Kerja Instalasi",
+                         "summary":  "Menghubungkan desain dengan bahan, alat, risiko, dan urutan pekerjaan."
+                     },
+                     {
+                         "id":  "konsep-2",
+                         "title":  "Struktur Permanent Link, Channel, dan Komponen",
+                         "summary":  "Membedakan cakupan instalasi tetap dan rangkaian end-to-end yang diuji."
+                     },
+                     {
+                         "id":  "konsep-3",
+                         "title":  "Terminasi T568A/B dan Integritas Pasangan",
+                         "summary":  "Membaca pin dan pasangan secara konsisten serta mengenali arti straight-through."
+                     },
+                     {
+                         "id":  "konsep-4",
+                         "title":  "Penataan Jalur, Proses Terminasi, dan Pelabelan",
+                         "summary":  "Menjaga kualitas mekanis dan keterlacakan tanpa mengarang spesifikasi pemasangan."
+                     },
+                     {
+                         "id":  "konsep-5",
+                         "title":  "Wiremap, Gangguan, dan Batas Kemampuan Tester",
+                         "summary":  "Membedakan open, short, crossed/reversed pair, split pair, serta pengujian performa."
+                     },
+                     {
+                         "id":  "konsep-6",
+                         "title":  "Perbaikan, Pengujian Ulang, dan Dokumentasi Penerimaan",
+                         "summary":  "Mengubah hasil uji menjadi tindakan dan bukti yang dapat ditelusuri."
+                     },
+                     {
+                         "id":  "kasus",
+                         "title":  "Studi Kasus dan Proyek Terapan",
+                         "summary":  "Studi Kasus dan Proyek Terapan"
+                     },
+                     {
+                         "id":  "laboratorium",
+                         "title":  "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+                         "summary":  "Laboratorium: Prediksi, Eksperimen, dan Bukti"
+                     },
+                     {
+                         "id":  "game",
+                         "title":  "Game Patch Cord Assembly",
+                         "summary":  "Game Patch Cord Assembly"
+                     },
+                     {
+                         "id":  "refleksi",
+                         "title":  "Refleksi, Umpan Balik, dan Transfer",
+                         "summary":  "Refleksi, Umpan Balik, dan Transfer"
+                     },
+                     {
+                         "id":  "evaluasi",
+                         "title":  "Rangkuman dan Evaluasi Akhir",
+                         "summary":  "Rangkuman dan Evaluasi Akhir"
+                     }
+                 ]
+}

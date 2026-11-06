@@ -1,0 +1,15 @@
+<?php
+$production='/var/www/tjkt-learning';$review='/home/adminnazh/tjkt-lms-review-20261028';require $production.'/vendor/autoload.php';$app=require $production.'/bootstrap/app.php';$app->make(Illuminate\Contracts\Console\Kernel::class)->bootstrap();
+use Illuminate\Support\Facades\DB;
+$service=app(App\Services\LearningPackage::class);$modules=App\Models\Module::whereNotNull('package_slug')->where('status','published')->get();if($modules->count()!==56)throw new RuntimeException('Published count.');
+$new=['virtualisasi-server-dasar'=>13,'instalasi-komputer-dasar'=>15,'konfigurasi-perangkat-dasar'=>8];$stages=0;$html=0;
+foreach($modules as $module){
+ $entry=$service->entry($module);$stages+=count($entry['stages']);$source=$service->asset($entry,$entry['path'].'index.html');if(!str_contains(strtolower($source),'<!doctype html>'))throw new RuntimeException('HTML invalid.');$html++;
+ $render=app(App\Services\NativeLessonRenderer::class)->render($module,$entry,'/materi');if(str_contains($render['content'],'TJKT Learning Hub')||str_contains($render['content'],'Kembali ke Portal')||str_contains($render['content'],'<iframe'))throw new RuntimeException('Native LMS regression.');
+ if(isset($new[$module->package_slug])){if(count($entry['stages'])!==$new[$module->package_slug])throw new RuntimeException('New stage count.');$json=json_decode($service->asset($entry,'data/'.$module->package_slug.'.json'),true);if(count($json['chapters'])!==$new[$module->package_slug])throw new RuntimeException('New material missing.');}
+}
+$missing=0;$classes=App\Models\Rombel::where('is_active',true)->get();foreach($classes as $class){$ids=$class->modules()->where('status','published')->pluck('modules.id')->all();foreach(App\Models\Module::whereIn('id',$ids)->get() as $module)foreach($module->prerequisites()->pluck('required_module_id') as $id)if(!in_array($id,$ids))$missing++;}
+$activeRelease=DB::table('learning_package_content_revisions')->value('release');$assets=DB::table('learning_package_assets')->where('release',$activeRelease)->get();foreach($assets as $asset)if(hash('sha256',base64_decode($asset->content_base64,true))!==$asset->sha256)throw new RuntimeException('Database asset corrupt.');
+$body=file_get_contents('https://learning.tkjwikrama.my.id/login');if(!str_contains($body,'Masuk ke ruang belajar'))throw new RuntimeException('HTTPS login invalid.');
+$result=['publishedModules'=>$modules->count(),'stages'=>$stages,'phaseE'=>$modules->where('phase','E')->count(),'phaseF'=>$modules->where('phase','F')->count(),'nativeModuleHtml'=>$html,'databaseAssetsCurrentRelease'=>$assets->count(),'compatibleContentRevisions'=>DB::table('learning_package_content_revisions')->count(),'classes'=>$classes->count(),'missingAssignedPrerequisites'=>$missing,'maintenanceOff'=>!is_file($production.'/storage/framework/down'),'httpsLogin'=>true];
+if($stages!==642||$missing||!$result['maintenanceOff'])throw new RuntimeException('Production verification failed.');file_put_contents($review.'/storage/app/review-artifacts/curriculum-verification.json',json_encode($result,JSON_PRETTY_PRINT));echo json_encode($result,JSON_PRETTY_PRINT)."\n";

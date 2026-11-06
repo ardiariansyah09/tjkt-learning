@@ -1,0 +1,57 @@
+{
+  "result": "PASS",
+  "platforms": [
+    {
+      "platform": "proxmox",
+      "diskGuard": true,
+      "mediaGuard": true,
+      "networkGuard": true,
+      "authGuard": true,
+      "wizardStages": [
+        "General",
+        "OS",
+        "System",
+        "Disks",
+        "CPU",
+        "Memory",
+        "Network",
+        "Confirm"
+      ],
+      "consoleConnected": true,
+      "guestBootDisk": true,
+      "terminal": true,
+      "snapshotRestore": true,
+      "windowsGuest": {
+        "guestBootDisk": true,
+        "terminal": true
+      },
+      "restored": true
+    },
+    {
+      "platform": "esxi",
+      "diskGuard": true,
+      "mediaGuard": true,
+      "networkGuard": true,
+      "authGuard": true,
+      "wizardStages": [
+        "Select creation type",
+        "Select a name and guest OS",
+        "Select storage",
+        "Customize settings",
+        "Ready to complete"
+      ],
+      "consoleConnected": true,
+      "guestBootDisk": true,
+      "terminal": true,
+      "snapshotRestore": true,
+      "windowsGuest": {
+        "guestBootDisk": true,
+        "terminal": true
+      },
+      "restored": true
+    }
+  ],
+  "errors": [],
+  "mobile": true,
+  "unrelatedProgressPreserved": true
+}

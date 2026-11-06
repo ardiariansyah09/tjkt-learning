@@ -1,0 +1,1 @@
+<button type="button" class="btn btn-outline-secondary theme-toggle flex-shrink-0" data-theme-toggle aria-label="Ganti mode terang atau gelap" title="Ganti mode terang atau gelap"><i class="bi bi-moon-stars" aria-hidden="true"></i><span class="d-none d-md-inline ms-2" data-theme-label>Mode gelap</span></button>

@@ -1,0 +1,2 @@
+@php($required=$module->prerequisites()->with('requiredModule')->get())
+@if($required->isNotEmpty())<div class="d-flex flex-wrap gap-2 mt-3">@foreach($required as $rule)@if($rule->requiredModule && app(\App\Services\LearningAccessService::class)->discover(auth()->user(),$rule->requiredModule))<a class="btn btn-sm btn-outline-primary" href="{{ route('student.modules.show',$rule->requiredModule) }}">Pelajari: {{ $rule->requiredModule->title }}</a>@endif @endforeach</div>@endif

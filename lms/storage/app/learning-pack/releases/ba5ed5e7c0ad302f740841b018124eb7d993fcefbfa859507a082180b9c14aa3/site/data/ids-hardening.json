@@ -1,0 +1,68 @@
+{
+    "moduleId":  "ids-hardening",
+    "title":  "Host Hardening",
+    "version":  2,
+    "contentSource":  "assets/js/course-ids-hardening.js",
+    "chapters":  [
+                     {
+                         "id":  "orientasi",
+                         "title":  "Orientasi, Tujuan, dan Asesmen Awal",
+                         "summary":  "Langkah penguatan host/server: pengurangan permukaan serangan, layanan, pembaruan, hak akses, konfigurasi aman, dan verifikasi."
+                     },
+                     {
+                         "id":  "konsep-1",
+                         "title":  "Baseline dan Permukaan Serangan",
+                         "summary":  "Mengidentifikasi kebutuhan host sebelum mematikan layanan."
+                     },
+                     {
+                         "id":  "konsep-2",
+                         "title":  "Akun, Least Privilege dan Remote Access",
+                         "summary":  "Mengamankan identitas serta jalur pengelolaan."
+                     },
+                     {
+                         "id":  "konsep-3",
+                         "title":  "Layanan, Firewall dan Konfigurasi Aman",
+                         "summary":  "Mengurangi paparan dengan kontrol berlapis."
+                     },
+                     {
+                         "id":  "konsep-4",
+                         "title":  "Patch, Staging dan Persistensi",
+                         "summary":  "Memperbaiki kelemahan tanpa mengabaikan fungsi layanan."
+                     },
+                     {
+                         "id":  "konsep-5",
+                         "title":  "Audit, Secret dan Recovery",
+                         "summary":  "Melindungi bukti serta kemampuan pulih."
+                     },
+                     {
+                         "id":  "konsep-6",
+                         "title":  "Uji Penerimaan dan Risiko Tersisa",
+                         "summary":  "Menghubungkan kontrol pada bukti yang relevan."
+                     },
+                     {
+                         "id":  "kasus",
+                         "title":  "Studi Kasus dan Proyek Terapan",
+                         "summary":  "Menyusun rancangan, matriks uji dan runbook berdasarkan kebutuhan serta bukti."
+                     },
+                     {
+                         "id":  "laboratorium",
+                         "title":  "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+                         "summary":  "Langkah penguatan host/server: pengurangan permukaan serangan, layanan, pembaruan, hak akses, konfigurasi aman, dan verifikasi."
+                     },
+                     {
+                         "id":  "game",
+                         "title":  "Game Terapan: Change Window",
+                         "summary":  "Memanipulasi objek/state dan menyelesaikan tiga misi sesuai kriteria topik."
+                     },
+                     {
+                         "id":  "refleksi",
+                         "title":  "Refleksi, Umpan Balik, dan Transfer",
+                         "summary":  "Menilai perubahan pemahaman melalui prediksi, hasil percobaan dan batas kesimpulan."
+                     },
+                     {
+                         "id":  "evaluasi",
+                         "title":  "Rangkuman dan Evaluasi Akhir",
+                         "summary":  "Memadukan konsep, bukti, risiko tersisa dan penerimaan pada kasus baru."
+                     }
+                 ]
+}

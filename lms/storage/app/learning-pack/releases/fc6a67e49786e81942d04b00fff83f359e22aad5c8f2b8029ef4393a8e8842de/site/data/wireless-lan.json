@@ -1,0 +1,68 @@
+{
+    "moduleId":  "wireless-lan",
+    "title":  "Wireless LAN",
+    "version":  2,
+    "contentSource":  "assets/js/course-wlan.js",
+    "chapters":  [
+                     {
+                         "id":  "orientasi",
+                         "title":  "Orientasi, Tujuan, dan Asesmen Awal",
+                         "summary":  "Menentukan kebutuhan layanan WLAN dan bukti survei."
+                     },
+                     {
+                         "id":  "konsep-1",
+                         "title":  "Arsitektur WLAN dan Rantai Layanan",
+                         "summary":  "Menelusuri hubungan radio, AP, uplink, segmen, dan layanan jaringan."
+                     },
+                     {
+                         "id":  "konsep-2",
+                         "title":  "Survei, RSSI, SNR, dan Kebutuhan Kapasitas",
+                         "summary":  "Membedakan sampel sinyal, noise, kebutuhan pengguna, dan hasil aplikasi."
+                     },
+                     {
+                         "id":  "konsep-3",
+                         "title":  "Pita, Kanal, Lebar Kanal, dan Airtime",
+                         "summary":  "Mengelola pemakaian ulang kanal tanpa menyamakan semua gangguan."
+                     },
+                     {
+                         "id":  "konsep-4",
+                         "title":  "Penempatan, Daya, dan Konfigurasi AP",
+                         "summary":  "Menerapkan rencana dan menilai hubungan dua arah tanpa klaim radius cakupan palsu."
+                     },
+                     {
+                         "id":  "konsep-5",
+                         "title":  "Keamanan, Segmentasi, dan Mobilitas",
+                         "summary":  "Menghubungkan akses WLAN dengan identitas, kebijakan, serta pengujian perpindahan."
+                     },
+                     {
+                         "id":  "konsep-6",
+                         "title":  "Pengujian, Diagnosis, dan Dokumentasi WLAN",
+                         "summary":  "Membuktikan layanan melalui urutan uji serta meninjau perubahan berbasis data."
+                     },
+                     {
+                         "id":  "kasus",
+                         "title":  "Studi Kasus dan Proyek Terapan",
+                         "summary":  "Studi Kasus dan Proyek Terapan"
+                     },
+                     {
+                         "id":  "laboratorium",
+                         "title":  "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+                         "summary":  "Laboratorium: Prediksi, Eksperimen, dan Bukti"
+                     },
+                     {
+                         "id":  "game",
+                         "title":  "Game Channel Planner",
+                         "summary":  "Game Channel Planner"
+                     },
+                     {
+                         "id":  "refleksi",
+                         "title":  "Refleksi, Umpan Balik, dan Transfer",
+                         "summary":  "Refleksi, Umpan Balik, dan Transfer"
+                     },
+                     {
+                         "id":  "evaluasi",
+                         "title":  "Rangkuman dan Evaluasi Akhir",
+                         "summary":  "Rangkuman dan Evaluasi Akhir"
+                     }
+                 ]
+}

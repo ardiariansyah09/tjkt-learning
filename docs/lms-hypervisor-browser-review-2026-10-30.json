@@ -1,0 +1,20 @@
+{
+  "platforms": [
+    {
+      "platform": "proxmox",
+      "hostInstalled": true,
+      "guestBoot": true,
+      "databaseRestored": true
+    },
+    {
+      "platform": "esxi",
+      "hostInstalled": true,
+      "guestBoot": true,
+      "databaseRestored": true
+    }
+  ],
+  "errors": [],
+  "nativeProject": true,
+  "result": "PASS",
+  "modulePages": 56
+}

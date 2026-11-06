@@ -1,0 +1,9 @@
+.account-trigger{display:flex;align-items:center;gap:10px;max-width:270px;border:1px solid transparent!important;background:transparent!important;color:var(--ui-ink)!important;border-radius:12px;padding:5px 8px;min-height:48px}
+.account-trigger:hover,.account-trigger:focus-visible{border-color:var(--ui-line)!important;background:var(--ui-surface-2)!important}
+.account-name-block{display:flex;flex-direction:column;min-width:0;text-align:right;max-width:180px}.account-name-block strong{font-size:13px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.account-name-block small{font-size:12px;color:var(--ui-muted)}
+.account-avatar{width:40px;height:40px;flex:none;border-radius:50%;object-fit:cover}.account-dropdown{min-width:230px;max-width:min(320px,calc(100vw - 24px));padding:8px 0;background:var(--ui-surface);border-color:var(--ui-line);box-shadow:0 12px 32px #0b1f3826;color:var(--ui-ink)}
+.account-dropdown .dropdown-item{display:flex;align-items:center;padding:10px 16px;color:var(--ui-ink);font-size:14px}.account-dropdown .dropdown-item:hover,.account-dropdown .dropdown-item:focus{background:var(--ui-soft)}.account-dropdown .account-full-name{overflow-wrap:anywhere}.account-dropdown form{margin:0}
+.profile-page{max-width:760px}.profile-photo-preview{width:84px;height:84px;flex:none;border-radius:50%;object-fit:cover;font-size:28px}.profile-page input[type=file]{max-width:100%}
+.profile-page .d-flex.align-items-center>div{min-width:0;flex:1 1 230px}
+.topbar>div:first-child{min-width:0;flex:1}.topbar>div:first-child>span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.topbar>div:last-child{flex-shrink:0}
+@media(max-width:767px){.account-name-block{display:none}.account-trigger{padding:4px;gap:6px;min-width:54px}.profile-page .d-flex.align-items-center{align-items:flex-start!important;flex-wrap:wrap}}

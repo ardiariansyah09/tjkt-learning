@@ -1,0 +1,736 @@
+{
+  "modules": [
+    {
+      "id": "proses-bisnis-tjkt",
+      "stages": 12,
+      "additionalSecurityPanels": 0,
+      "combinedAdminOperations": 0,
+      "compactConceptPalettes": 0,
+      "projectReference": false,
+      "conceptualActivities": [
+        {
+          "type": "tickets",
+          "hasModelLabel": true
+        }
+      ]
+    },
+    {
+      "id": "wawasan-tjkt",
+      "stages": 12,
+      "additionalSecurityPanels": 0,
+      "combinedAdminOperations": 0,
+      "compactConceptPalettes": 0,
+      "projectReference": false,
+      "conceptualActivities": [
+        {
+          "type": "sensors",
+          "hasModelLabel": true
+        }
+      ]
+    },
+    {
+      "id": "profesi-kewirausahaan-tjkt",
+      "stages": 12,
+      "additionalSecurityPanels": 0,
+      "combinedAdminOperations": 0,
+      "compactConceptPalettes": 0,
+      "projectReference": false,
+      "conceptualActivities": [
+        {
+          "type": "venture",
+          "hasModelLabel": true
+        }
+      ]
+    },
+    {
+      "id": "k3-budaya-kerja",
+      "stages": 12,
+      "additionalSecurityPanels": 0,
+      "combinedAdminOperations": 0,
+      "compactConceptPalettes": 0,
+      "projectReference": false,
+      "conceptualActivities": [
+        {
+          "type": "safety",
+          "hasModelLabel": true
+        }
+      ]
+    },
+    {
+      "id": "pengenalan-jaringan",
+      "stages": 9,
+      "additionalSecurityPanels": 0,
+      "combinedAdminOperations": 0,
+      "compactConceptPalettes": 0,
+      "projectReference": false,
+      "conceptualActivities": []
+    },
+    {
+      "id": "perangkat-jaringan",
+      "stages": 9,
+      "additionalSecurityPanels": 0,
+      "combinedAdminOperations": 0,
+      "compactConceptPalettes": 0,
+      "projectReference": false,
+      "conceptualActivities": []
+    },
+    {
+      "id": "topologi-jaringan",
+      "stages": 9,
+      "additionalSecurityPanels": 0,
+      "combinedAdminOperations": 0,
+      "compactConceptPalettes": 0,
+      "projectReference": false,
+      "conceptualActivities": []
+    },
+    {
+      "id": "perencanaan-jaringan",
+      "stages": 12,
+      "additionalSecurityPanels": 0,
+      "combinedAdminOperations": 0,
+      "compactConceptPalettes": 0,
+      "projectReference": false,
+      "conceptualActivities": [
+        {
+          "type": "ports",
+          "hasModelLabel": true
+        }
+      ]
+    },
+    {
+      "id": "media-transmisi",
+      "stages": 8,
+      "additionalSecurityPanels": 0,
+      "combinedAdminOperations": 0,
+      "compactConceptPalettes": 0,
+      "projectReference": false,
+      "conceptualActivities": []
+    },
+    {
+      "id": "osi-tcpip",
+      "stages": 8,
+      "additionalSecurityPanels": 0,
+      "combinedAdminOperations": 0,
+      "compactConceptPalettes": 0,
+      "projectReference": false,
+      "conceptualActivities": []
+    },
+    {
+      "id": "ipv4-subnetting",
+      "stages": 9,
+      "additionalSecurityPanels": 0,
+      "combinedAdminOperations": 0,
+      "compactConceptPalettes": 0,
+      "projectReference": false,
+      "conceptualActivities": []
+    },
+    {
+      "id": "ipv6-dasar",
+      "stages": 12,
+      "additionalSecurityPanels": 0,
+      "combinedAdminOperations": 0,
+      "compactConceptPalettes": 0,
+      "projectReference": false,
+      "conceptualActivities": [
+        {
+          "type": "ipv6",
+          "hasModelLabel": true
+        }
+      ]
+    },
+    {
+      "id": "protokol-layanan",
+      "stages": 8,
+      "additionalSecurityPanels": 0,
+      "combinedAdminOperations": 0,
+      "compactConceptPalettes": 0,
+      "projectReference": false,
+      "conceptualActivities": []
+    },
+    {
+      "id": "sistem-telekomunikasi-dasar",
+      "stages": 12,
+      "additionalSecurityPanels": 0,
+      "combinedAdminOperations": 0,
+      "compactConceptPalettes": 0,
+      "projectReference": false,
+      "conceptualActivities": [
+        {
+          "type": "propagation",
+          "hasModelLabel": true
+        }
+      ]
+    },
+    {
+      "id": "troubleshooting",
+      "stages": 9,
+      "additionalSecurityPanels": 0,
+      "combinedAdminOperations": 0,
+      "compactConceptPalettes": 0,
+      "projectReference": false,
+      "conceptualActivities": []
+    },
+    {
+      "id": "alat-ukur-tjkt",
+      "stages": 12,
+      "additionalSecurityPanels": 0,
+      "combinedAdminOperations": 0,
+      "compactConceptPalettes": 0,
+      "projectReference": false,
+      "conceptualActivities": [
+        {
+          "type": "optical",
+          "hasModelLabel": true
+        }
+      ]
+    },
+    {
+      "id": "kebutuhan-teknis-jaringan",
+      "stages": 12,
+      "additionalSecurityPanels": 0,
+      "combinedAdminOperations": 0,
+      "compactConceptPalettes": 0,
+      "projectReference": false,
+      "conceptualActivities": [
+        {
+          "type": "requirements",
+          "hasModelLabel": true
+        }
+      ]
+    },
+    {
+      "id": "desain-topologi-arsitektur",
+      "stages": 12,
+      "additionalSecurityPanels": 0,
+      "combinedAdminOperations": 0,
+      "compactConceptPalettes": 0,
+      "projectReference": false,
+      "conceptualActivities": [
+        {
+          "type": "layout",
+          "hasModelLabel": true
+        }
+      ]
+    },
+    {
+      "id": "perencanaan-pengalamatan-lanjut",
+      "stages": 12,
+      "additionalSecurityPanels": 0,
+      "combinedAdminOperations": 0,
+      "compactConceptPalettes": 0,
+      "projectReference": false,
+      "conceptualActivities": [
+        {
+          "type": "address-plan",
+          "hasModelLabel": true
+        }
+      ]
+    },
+    {
+      "id": "instalasi-kabel",
+      "stages": 12,
+      "additionalSecurityPanels": 0,
+      "combinedAdminOperations": 0,
+      "compactConceptPalettes": 0,
+      "projectReference": false,
+      "conceptualActivities": [
+        {
+          "type": "cabling",
+          "hasModelLabel": true
+        }
+      ]
+    },
+    {
+      "id": "wireless-lan",
+      "stages": 12,
+      "additionalSecurityPanels": 0,
+      "combinedAdminOperations": 0,
+      "compactConceptPalettes": 0,
+      "projectReference": false,
+      "conceptualActivities": [
+        {
+          "type": "wlan",
+          "hasModelLabel": true
+        }
+      ]
+    },
+    {
+      "id": "pemeliharaan-kabel-nirkabel",
+      "stages": 12,
+      "additionalSecurityPanels": 0,
+      "combinedAdminOperations": 0,
+      "compactConceptPalettes": 0,
+      "projectReference": false,
+      "conceptualActivities": [
+        {
+          "type": "maintenance",
+          "hasModelLabel": true
+        }
+      ]
+    },
+    {
+      "id": "voip",
+      "stages": 12,
+      "additionalSecurityPanels": 0,
+      "combinedAdminOperations": 0,
+      "compactConceptPalettes": 0,
+      "projectReference": false,
+      "conceptualActivities": [
+        {
+          "type": "voip",
+          "hasModelLabel": true
+        }
+      ]
+    },
+    {
+      "id": "fiber-optik",
+      "stages": 12,
+      "additionalSecurityPanels": 0,
+      "combinedAdminOperations": 0,
+      "compactConceptPalettes": 0,
+      "projectReference": false,
+      "conceptualActivities": [
+        {
+          "type": "fiber",
+          "hasModelLabel": true
+        }
+      ]
+    },
+    {
+      "id": "pemasangan-perangkat-jaringan",
+      "stages": 12,
+      "additionalSecurityPanels": 0,
+      "combinedAdminOperations": 0,
+      "compactConceptPalettes": 0,
+      "projectReference": false,
+      "conceptualActivities": [
+        {
+          "type": "installation",
+          "hasModelLabel": true
+        }
+      ]
+    },
+    {
+      "id": "penggantian-perangkat-jaringan",
+      "stages": 12,
+      "additionalSecurityPanels": 0,
+      "combinedAdminOperations": 0,
+      "compactConceptPalettes": 1,
+      "projectReference": false,
+      "conceptualActivities": [
+        {
+          "type": "replacement",
+          "hasModelLabel": true
+        }
+      ]
+    },
+    {
+      "id": "switching-vlan",
+      "stages": 9,
+      "additionalSecurityPanels": 0,
+      "combinedAdminOperations": 0,
+      "compactConceptPalettes": 0,
+      "projectReference": false,
+      "conceptualActivities": []
+    },
+    {
+      "id": "routing-ipv4",
+      "stages": 12,
+      "additionalSecurityPanels": 0,
+      "combinedAdminOperations": 0,
+      "compactConceptPalettes": 0,
+      "projectReference": false,
+      "conceptualActivities": [
+        {
+          "type": "static-routing",
+          "hasModelLabel": true
+        }
+      ]
+    },
+    {
+      "id": "routing-dinamis",
+      "stages": 12,
+      "additionalSecurityPanels": 0,
+      "combinedAdminOperations": 0,
+      "compactConceptPalettes": 0,
+      "projectReference": false,
+      "conceptualActivities": [
+        {
+          "type": "dynamic-routing",
+          "hasModelLabel": true
+        }
+      ]
+    },
+    {
+      "id": "nat-wan",
+      "stages": 12,
+      "additionalSecurityPanels": 0,
+      "combinedAdminOperations": 0,
+      "compactConceptPalettes": 0,
+      "projectReference": false,
+      "conceptualActivities": [
+        {
+          "type": "nat",
+          "hasModelLabel": true
+        }
+      ]
+    },
+    {
+      "id": "proxy-load-balancing",
+      "stages": 12,
+      "additionalSecurityPanels": 0,
+      "combinedAdminOperations": 0,
+      "compactConceptPalettes": 0,
+      "projectReference": false,
+      "conceptualActivities": [
+        {
+          "type": "proxy",
+          "hasModelLabel": true
+        }
+      ]
+    },
+    {
+      "id": "bandwidth-qos",
+      "stages": 12,
+      "additionalSecurityPanels": 0,
+      "combinedAdminOperations": 0,
+      "compactConceptPalettes": 0,
+      "projectReference": false,
+      "conceptualActivities": [
+        {
+          "type": "qos",
+          "hasModelLabel": true
+        }
+      ]
+    },
+    {
+      "id": "load-balancing",
+      "stages": 12,
+      "additionalSecurityPanels": 0,
+      "combinedAdminOperations": 0,
+      "compactConceptPalettes": 0,
+      "projectReference": false,
+      "conceptualActivities": [
+        {
+          "type": "dual-wan",
+          "hasModelLabel": true
+        }
+      ]
+    },
+    {
+      "id": "dasar-administrasi-server",
+      "stages": 12,
+      "additionalSecurityPanels": 0,
+      "combinedAdminOperations": 0,
+      "compactConceptPalettes": 1,
+      "projectReference": false,
+      "conceptualActivities": [
+        {
+          "type": "server-basics",
+          "hasModelLabel": true
+        }
+      ]
+    },
+    {
+      "id": "virtualisasi-server",
+      "stages": 12,
+      "additionalSecurityPanels": 0,
+      "combinedAdminOperations": 0,
+      "compactConceptPalettes": 0,
+      "projectReference": false,
+      "conceptualActivities": [
+        {
+          "type": "virtualization",
+          "hasModelLabel": true
+        }
+      ]
+    },
+    {
+      "id": "administrasi-linux-windows",
+      "stages": 12,
+      "additionalSecurityPanels": 0,
+      "combinedAdminOperations": 0,
+      "compactConceptPalettes": 0,
+      "projectReference": true,
+      "conceptualActivities": [
+        {
+          "type": "standalone-reference",
+          "hasModelLabel": false
+        }
+      ]
+    },
+    {
+      "id": "manajemen-pengguna-server",
+      "stages": 12,
+      "additionalSecurityPanels": 0,
+      "combinedAdminOperations": 0,
+      "compactConceptPalettes": 0,
+      "projectReference": false,
+      "conceptualActivities": [
+        {
+          "type": "access",
+          "hasModelLabel": true
+        }
+      ]
+    },
+    {
+      "id": "layanan-server",
+      "stages": 12,
+      "additionalSecurityPanels": 0,
+      "combinedAdminOperations": 0,
+      "compactConceptPalettes": 1,
+      "projectReference": false,
+      "conceptualActivities": [
+        {
+          "type": "services",
+          "hasModelLabel": true
+        }
+      ]
+    },
+    {
+      "id": "ftp-server",
+      "stages": 12,
+      "additionalSecurityPanels": 0,
+      "combinedAdminOperations": 0,
+      "compactConceptPalettes": 1,
+      "projectReference": false,
+      "conceptualActivities": [
+        {
+          "type": "ftp",
+          "hasModelLabel": true
+        }
+      ]
+    },
+    {
+      "id": "file-server",
+      "stages": 12,
+      "additionalSecurityPanels": 0,
+      "combinedAdminOperations": 0,
+      "compactConceptPalettes": 1,
+      "projectReference": false,
+      "conceptualActivities": [
+        {
+          "type": "file-share",
+          "hasModelLabel": true
+        }
+      ]
+    },
+    {
+      "id": "hosting-server",
+      "stages": 12,
+      "additionalSecurityPanels": 0,
+      "combinedAdminOperations": 0,
+      "compactConceptPalettes": 1,
+      "projectReference": false,
+      "conceptualActivities": [
+        {
+          "type": "web-db",
+          "hasModelLabel": true
+        }
+      ]
+    },
+    {
+      "id": "panel-layanan-hosting",
+      "stages": 12,
+      "additionalSecurityPanels": 0,
+      "combinedAdminOperations": 0,
+      "compactConceptPalettes": 1,
+      "projectReference": false,
+      "conceptualActivities": [
+        {
+          "type": "hosting",
+          "hasModelLabel": true
+        }
+      ]
+    },
+    {
+      "id": "vpn-server",
+      "stages": 12,
+      "additionalSecurityPanels": 0,
+      "combinedAdminOperations": 0,
+      "compactConceptPalettes": 1,
+      "projectReference": false,
+      "conceptualActivities": [
+        {
+          "type": "vpn",
+          "hasModelLabel": true
+        }
+      ]
+    },
+    {
+      "id": "monitoring-jaringan",
+      "stages": 12,
+      "additionalSecurityPanels": 0,
+      "combinedAdminOperations": 0,
+      "compactConceptPalettes": 0,
+      "projectReference": false,
+      "conceptualActivities": [
+        {
+          "type": "monitoring",
+          "hasModelLabel": true
+        }
+      ]
+    },
+    {
+      "id": "backup-pemulihan-server",
+      "stages": 12,
+      "additionalSecurityPanels": 0,
+      "combinedAdminOperations": 0,
+      "compactConceptPalettes": 1,
+      "projectReference": false,
+      "conceptualActivities": [
+        {
+          "type": "final-backup",
+          "hasModelLabel": true
+        }
+      ]
+    },
+    {
+      "id": "mail-server",
+      "stages": 12,
+      "additionalSecurityPanels": 0,
+      "combinedAdminOperations": 0,
+      "compactConceptPalettes": 0,
+      "projectReference": false,
+      "conceptualActivities": [
+        {
+          "type": "final-mail",
+          "hasModelLabel": true
+        }
+      ]
+    },
+    {
+      "id": "keamanan-jaringan",
+      "stages": 12,
+      "additionalSecurityPanels": 0,
+      "combinedAdminOperations": 0,
+      "compactConceptPalettes": 0,
+      "projectReference": false,
+      "conceptualActivities": [
+        {
+          "type": "final-policy",
+          "hasModelLabel": true
+        }
+      ]
+    },
+    {
+      "id": "autentikasi-kriptografi",
+      "stages": 12,
+      "additionalSecurityPanels": 0,
+      "combinedAdminOperations": 0,
+      "compactConceptPalettes": 0,
+      "projectReference": false,
+      "conceptualActivities": [
+        {
+          "type": "final-identity",
+          "hasModelLabel": true
+        }
+      ]
+    },
+    {
+      "id": "ids-hardening",
+      "stages": 12,
+      "additionalSecurityPanels": 0,
+      "combinedAdminOperations": 0,
+      "compactConceptPalettes": 1,
+      "projectReference": false,
+      "conceptualActivities": [
+        {
+          "type": "final-hardening",
+          "hasModelLabel": true
+        }
+      ]
+    },
+    {
+      "id": "server-dmz",
+      "stages": 12,
+      "additionalSecurityPanels": 0,
+      "combinedAdminOperations": 0,
+      "compactConceptPalettes": 0,
+      "projectReference": false,
+      "conceptualActivities": [
+        {
+          "type": "final-dmz",
+          "hasModelLabel": true
+        }
+      ]
+    },
+    {
+      "id": "pengujian-keamanan",
+      "stages": 12,
+      "additionalSecurityPanels": 0,
+      "combinedAdminOperations": 0,
+      "compactConceptPalettes": 0,
+      "projectReference": false,
+      "conceptualActivities": [
+        {
+          "type": "final-assessment",
+          "hasModelLabel": true
+        }
+      ]
+    },
+    {
+      "id": "ids-respons-insiden",
+      "stages": 12,
+      "additionalSecurityPanels": 0,
+      "combinedAdminOperations": 0,
+      "compactConceptPalettes": 1,
+      "projectReference": false,
+      "conceptualActivities": [
+        {
+          "type": "final-response",
+          "hasModelLabel": true
+        }
+      ]
+    },
+    {
+      "id": "proyek-integrasi-jaringan",
+      "stages": 12,
+      "additionalSecurityPanels": 0,
+      "combinedAdminOperations": 0,
+      "compactConceptPalettes": 0,
+      "projectReference": false,
+      "conceptualActivities": [
+        {
+          "type": "final-campus",
+          "hasModelLabel": true
+        }
+      ]
+    },
+    {
+      "id": "instalasi-komputer-dasar",
+      "stages": 15,
+      "additionalSecurityPanels": 0,
+      "combinedAdminOperations": 0,
+      "compactConceptPalettes": 0,
+      "projectReference": false,
+      "conceptualActivities": []
+    },
+    {
+      "id": "konfigurasi-perangkat-dasar",
+      "stages": 8,
+      "additionalSecurityPanels": 0,
+      "combinedAdminOperations": 0,
+      "compactConceptPalettes": 0,
+      "projectReference": false,
+      "conceptualActivities": []
+    },
+    {
+      "id": "virtualisasi-server-dasar",
+      "stages": 13,
+      "additionalSecurityPanels": 0,
+      "combinedAdminOperations": 0,
+      "compactConceptPalettes": 0,
+      "projectReference": false,
+      "conceptualActivities": []
+    }
+  ],
+  "errors": [],
+  "scope": "Local activity composition, conceptual toolbar limits and project isolation; not full native product equivalence.",
+  "project": {
+    "separateProgress": true,
+    "saved": true
+  },
+  "result": "PASS",
+  "moduleCount": 56
+}

@@ -1,0 +1,4 @@
+<?php
+require '/var/www/tjkt-learning/vendor/autoload.php';
+$app=require '/var/www/tjkt-learning/bootstrap/app.php';$app->make(Illuminate\Contracts\Console\Kernel::class)->bootstrap();
+echo json_encode(['oldModules'=>App\Models\Module::whereNull('package_slug')->get(['id','title','status']),'packages'=>App\Models\Module::whereNotNull('package_slug')->count(),'activeClasses'=>App\Models\Rombel::where('is_active',true)->select('grade')->selectRaw('COUNT(*) as total')->groupBy('grade')->get(),'oldHistory'=>Illuminate\Support\Facades\DB::table('module_progress')->whereIn('module_id',App\Models\Module::whereNull('package_slug')->select('id'))->count(),'dependenciesOnOld'=>Illuminate\Support\Facades\DB::table('module_prerequisites')->whereIn('required_module_id',App\Models\Module::whereNull('package_slug')->select('id'))->count()],JSON_PRETTY_PRINT|JSON_UNESCAPED_UNICODE)."\n";

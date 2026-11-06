@@ -1,0 +1,10 @@
+{
+  "result": "PASS",
+  "checks": 167,
+  "unchangedAssessmentBanks": 2,
+  "unchangedFoundationDefinitions": 2,
+  "legacyProgressPreserved": true,
+  "guestIdentityAndFiles": true,
+  "guestShellSnapshotRestored": true,
+  "scope": "Local source and model checks; no LMS/server deployment."
+}

@@ -1,0 +1,124 @@
+{
+  "result": "PASS",
+  "catalog": {
+    "cards": 56,
+    "drafts": 0,
+    "groups": 4
+  },
+  "drafts": [
+    {
+      "id": "virtualisasi-server-dasar",
+      "interactive": true,
+      "stagesPassed": 13,
+      "certificatePrint": true,
+      "failedFinalBlocked": true,
+      "reloadRestored": true,
+      "mobileOverflow": false,
+      "legacyCompletionPreserved": true,
+      "installers": [
+        {
+          "name": "Guest-vm-main",
+          "screens": [
+            "language",
+            "accessibility",
+            "keyboard",
+            "network",
+            "welcome",
+            "method",
+            "applications",
+            "drivers",
+            "disk",
+            "account",
+            "timezone",
+            "review",
+            "copy",
+            "copy",
+            "copy",
+            "copy",
+            "restart"
+          ],
+          "manual": true,
+          "protectedDiskRejected": true,
+          "mediaGuard": true,
+          "snapshotRestored": true
+        }
+      ]
+    },
+    {
+      "id": "instalasi-komputer-dasar",
+      "interactive": true,
+      "stagesPassed": 15,
+      "certificatePrint": true,
+      "failedFinalBlocked": true,
+      "reloadRestored": true,
+      "mobileOverflow": false,
+      "legacyCompletionPreserved": true,
+      "installers": [
+        {
+          "name": "Guest-os-ubuntu",
+          "screens": [
+            "language",
+            "accessibility",
+            "keyboard",
+            "network",
+            "welcome",
+            "method",
+            "applications",
+            "drivers",
+            "disk",
+            "account",
+            "timezone",
+            "review",
+            "copy",
+            "copy",
+            "copy",
+            "copy",
+            "restart"
+          ],
+          "manual": false,
+          "protectedDiskRejected": true,
+          "mediaGuard": true,
+          "snapshotRestored": true
+        },
+        {
+          "name": "Guest-os-windows",
+          "screens": [
+            "language",
+            "keyboard",
+            "setup",
+            "product",
+            "edition",
+            "license",
+            "disk",
+            "review",
+            "copy",
+            "copy",
+            "copy",
+            "copy",
+            "restart",
+            "region",
+            "network",
+            "account",
+            "privacy"
+          ],
+          "manual": false,
+          "protectedDiskRejected": true,
+          "mediaGuard": true,
+          "snapshotRestored": true
+        }
+      ]
+    },
+    {
+      "id": "konfigurasi-perangkat-dasar",
+      "interactive": true,
+      "stagesPassed": 8,
+      "certificatePrint": true,
+      "failedFinalBlocked": true,
+      "reloadRestored": true,
+      "mobileOverflow": false,
+      "legacyCompletionPreserved": false,
+      "installers": []
+    }
+  ],
+  "javascriptErrors": 0
+}

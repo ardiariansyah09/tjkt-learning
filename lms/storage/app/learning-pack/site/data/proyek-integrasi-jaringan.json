@@ -1,0 +1,68 @@
+{
+    "moduleId":  "proyek-integrasi-jaringan",
+    "title":  "Proyek Integrasi Jaringan",
+    "version":  2,
+    "contentSource":  "assets/js/course-proyek-integrasi-jaringan.js",
+    "chapters":  [
+                     {
+                         "id":  "orientasi",
+                         "title":  "Orientasi, Tujuan, dan Asesmen Awal",
+                         "summary":  "Rancang, konfigurasi, uji, dan dokumentasikan jaringan terpadu berdasarkan kebutuhan pengguna."
+                     },
+                     {
+                         "id":  "konsep-1",
+                         "title":  "Kebutuhan, Scope dan Kriteria Penerimaan",
+                         "summary":  "Mendefinisikan hasil sebelum merancang perangkat."
+                     },
+                     {
+                         "id":  "konsep-2",
+                         "title":  "Topologi, VLAN dan Pengalamatan",
+                         "summary":  "Menyelaraskan denah fisik dengan jaringan logis."
+                     },
+                     {
+                         "id":  "konsep-3",
+                         "title":  "Layanan dan Dependensi Aplikasi",
+                         "summary":  "Membangun dari fondasi menuju transaksi pengguna."
+                     },
+                     {
+                         "id":  "konsep-4",
+                         "title":  "Keamanan Terintegrasi dan Akses Minimum",
+                         "summary":  "Menjaga batas layanan bersama fungsi yang diperlukan."
+                     },
+                     {
+                         "id":  "konsep-5",
+                         "title":  "Perubahan, Monitoring dan Pemulihan",
+                         "summary":  "Menguji desain pada kondisi gagal serta kembali melayani."
+                     },
+                     {
+                         "id":  "konsep-6",
+                         "title":  "As-built, Bukti dan Handover",
+                         "summary":  "Menyerahkan sistem yang dapat dioperasikan pihak lain."
+                     },
+                     {
+                         "id":  "kasus",
+                         "title":  "Studi Kasus dan Proyek Terapan",
+                         "summary":  "Menyusun rancangan, matriks uji dan runbook berdasarkan kebutuhan serta bukti."
+                     },
+                     {
+                         "id":  "laboratorium",
+                         "title":  "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+                         "summary":  "Rancang, konfigurasi, uji, dan dokumentasikan jaringan terpadu berdasarkan kebutuhan pengguna."
+                     },
+                     {
+                         "id":  "game",
+                         "title":  "Game Terapan: Campus Launch",
+                         "summary":  "Memanipulasi objek/state dan menyelesaikan tiga misi sesuai kriteria topik."
+                     },
+                     {
+                         "id":  "refleksi",
+                         "title":  "Refleksi, Umpan Balik, dan Transfer",
+                         "summary":  "Menilai perubahan pemahaman melalui prediksi, hasil percobaan dan batas kesimpulan."
+                     },
+                     {
+                         "id":  "evaluasi",
+                         "title":  "Rangkuman dan Evaluasi Akhir",
+                         "summary":  "Memadukan konsep, bukti, risiko tersisa dan penerimaan pada kasus baru."
+                     }
+                 ]
+}

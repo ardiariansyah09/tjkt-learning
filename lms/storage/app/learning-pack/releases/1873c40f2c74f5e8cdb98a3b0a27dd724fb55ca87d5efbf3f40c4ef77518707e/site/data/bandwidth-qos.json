@@ -1,0 +1,68 @@
+{
+    "moduleId":  "bandwidth-qos",
+    "title":  "Manajemen Bandwidth dan QoS",
+    "version":  2,
+    "contentSource":  "assets/js/course-qos.js",
+    "chapters":  [
+                     {
+                         "id":  "orientasi",
+                         "title":  "Orientasi, Tujuan, dan Asesmen Awal",
+                         "summary":  "Merancang layanan pada bottleneck dan membuktikan dampak antrean serta pembatas."
+                     },
+                     {
+                         "id":  "konsep-1",
+                         "title":  "Kapasitas, Throughput, dan Bottleneck",
+                         "summary":  "Menggunakan satuan serta titik ukur yang benar sebelum menyusun pembatas."
+                     },
+                     {
+                         "id":  "konsep-2",
+                         "title":  "Klasifikasi, DSCP, dan Trust Boundary",
+                         "summary":  "Menentukan kelas berdasarkan bukti, bukan mempercayai seluruh tanda dari pengguna."
+                     },
+                     {
+                         "id":  "konsep-3",
+                         "title":  "FIFO, Prioritas, dan Pembagian Berbobot",
+                         "summary":  "Membandingkan keterlambatan, drop, dan layanan antarkelas saat padat."
+                     },
+                     {
+                         "id":  "konsep-4",
+                         "title":  "Token Bucket, Policing, dan Shaping",
+                         "summary":  "Membedakan pembuangan paket dari penundaan untuk menyesuaikan laju."
+                     },
+                     {
+                         "id":  "konsep-5",
+                         "title":  "Profil Pengguna dan Pengenalan RADIUS Linux",
+                         "summary":  "Memisahkan autentikasi/otorisasi dari penegakan laju pada NAS."
+                     },
+                     {
+                         "id":  "konsep-6",
+                         "title":  "Konfigurasi, Uji Beban, dan Pemulihan Kebijakan",
+                         "summary":  "Menerjemahkan rancangan menjadi kebijakan yang dapat diverifikasi."
+                     },
+                     {
+                         "id":  "kasus",
+                         "title":  "Studi Kasus dan Proyek Terapan",
+                         "summary":  "Studi Kasus dan Proyek Terapan"
+                     },
+                     {
+                         "id":  "laboratorium",
+                         "title":  "Laboratorium: Prediksi, Eksperimen, dan Bukti",
+                         "summary":  "Laboratorium: Prediksi, Eksperimen, dan Bukti"
+                     },
+                     {
+                         "id":  "game",
+                         "title":  "Game Queue Pilot",
+                         "summary":  "Menjadwalkan suara tepat waktu dan data hingga tuntas melalui slot terbatas."
+                     },
+                     {
+                         "id":  "refleksi",
+                         "title":  "Refleksi, Umpan Balik, dan Transfer",
+                         "summary":  "Refleksi, Umpan Balik, dan Transfer"
+                     },
+                     {
+                         "id":  "evaluasi",
+                         "title":  "Rangkuman dan Evaluasi Akhir",
+                         "summary":  "Rangkuman dan Evaluasi Akhir"
+                     }
+                 ]
+}
